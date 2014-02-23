@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Samoyloff;
 
 namespace GreenLight
 {
@@ -13,6 +14,7 @@ namespace GreenLight
     {
         DataTable dt_tableconfig;
         string[] table_db_names = {"Clients","CredProgr"};
+        int last_table_index = -1;
 
         public TableStructureEdit()
         {
@@ -135,12 +137,33 @@ namespace GreenLight
 
         private void TableStructureEdit_FormClosing(object sender, FormClosingEventArgs e)
         {
-            SaveData();
+            switch (Tools.ProceedWithChanges(dt_tableconfig))
+            {
+                case Tools.ProceedWithChangesAnswers.SaveAndProceed:
+                    SaveData();
+                    break;
+                case Tools.ProceedWithChangesAnswers.Cancel:
+                    cbTables.SelectedIndex = last_table_index;
+                    return;
+            }
         }
   
         private void cbTables_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (last_table_index == cbTables.SelectedIndex)
+                return;
+
+            switch (Tools.ProceedWithChanges(dt_tableconfig))
+            {
+                case Tools.ProceedWithChangesAnswers.SaveAndProceed:
+                    SaveData();
+                    break;
+                case Tools.ProceedWithChangesAnswers.Cancel:
+                    cbTables.SelectedIndex = last_table_index;
+                    return;
+            }
             FillDataGrid();
+            last_table_index = cbTables.SelectedIndex;
         }
 
         private void dt_TableNewRow(object sender, DataTableNewRowEventArgs e)
@@ -271,7 +294,5 @@ namespace GreenLight
                 dt_tableconfig.DefaultView.RowFilter = rf_text;
             }
         }
-
-
      }
 }
