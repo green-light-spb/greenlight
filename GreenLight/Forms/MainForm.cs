@@ -18,7 +18,7 @@ namespace GreenLight
         {
             InitializeComponent();
 
-            session_start = DateTime.Now;
+            session_start = (DateTime)DBFunctions.ReadScalarFromDB("SELECT current_timestamp()");
             Session_ID = (int)DBFunctions.ReadScalarFromDB("SELECT new_session_id()");
             UpdateSessionInfo();
 
@@ -32,10 +32,12 @@ namespace GreenLight
         {
             DBFunctions.ExecuteScript("DELETE FROM active_sessions WHERE SessionID = " + Convert.ToString(Session_ID));
 
+            DateTime curr_datetime = (DateTime)DBFunctions.ReadScalarFromDB("SELECT current_timestamp()");
+
             DBFunctions.ExecuteScript("INSERT INTO active_sessions SET SessionID = " + Convert.ToString(Session_ID) + ","
                 + "Computer_Name='" + Environment.MachineName + "',"
                 + "DomainUser='" + SystemInformation.UserName + "',"
-                + "LastActivity='" + DateTime.Now.ToString("s") + "',"
+                + "LastActivity='" + curr_datetime.ToString("s") + "',"
                 + "SessionStart='" + session_start.ToString("s") + "'");
         }
 
