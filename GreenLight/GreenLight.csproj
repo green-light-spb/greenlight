@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E5573F8-F042-43A8-90CC-368C1458DE47}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GreenLight</RootNamespace>
+    <AssemblyName>GreenLight</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data">
+      <HintPath>C:\Program Files (x86)\MySQL\Connector NET 6.4.4\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Tables.cs" />
+    <Compile Include="Forms\ActivityMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ActivityMonitor.Designer.cs">
+      <DependentUpon>ActivityMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClauseEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClauseEditor.Designer.cs">
+      <DependentUpon>ClauseEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\DBFunctions.cs" />
+    <Compile Include="Classes\DBStructure.cs" />
+    <Compile Include="Forms\DataCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataCopy.Designer.cs">
+      <DependentUpon>DataCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HierarchicalRefEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HierarchicalRefEdit.Designer.cs">
+      <DependentUpon>HierarchicalRefEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\OfferSelector.cs" />
+    <Compile Include="Forms\OfferSelectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OfferSelectorForm.Designer.cs">
+      <DependentUpon>OfferSelectorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Questionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Questionary.Designer.cs">
+      <DependentUpon>Questionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuestionaryEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuestionaryEditor.Designer.cs">
+      <DependentUpon>QuestionaryEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuestionaryFilterEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuestionaryFilterEditor.Designer.cs">
+      <DependentUpon>QuestionaryFilterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReferenceStructureEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReferenceStructureEdit.Designer.cs">
+      <DependentUpon>ReferenceStructureEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StringReplaseSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StringReplaseSettings.Designer.cs">
+      <DependentUpon>StringReplaseSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TableRecordEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TableRecordEditor.Designer.cs">
+      <DependentUpon>TableRecordEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UniversalQuestionaryOfferSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UniversalQuestionaryOfferSelect.Designer.cs">
+      <DependentUpon>UniversalQuestionaryOfferSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\TableEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TableEditor.Designer.cs">
+      <DependentUpon>TableEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TableStructureEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TableStructureEdit.Designer.cs">
+      <DependentUpon>TableStructureEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestUnit.cs" />
+    <EmbeddedResource Include="Forms\ActivityMonitor.resx">
+      <DependentUpon>ActivityMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClauseEditor.resx">
+      <DependentUpon>ClauseEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataCopy.resx">
+      <DependentUpon>DataCopy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HierarchicalRefEdit.resx">
+      <DependentUpon>HierarchicalRefEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OfferSelectorForm.resx">
+      <DependentUpon>OfferSelectorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Questionary.resx">
+      <DependentUpon>Questionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuestionaryEditor.resx">
+      <DependentUpon>QuestionaryEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuestionaryFilterEditor.resx">
+      <DependentUpon>QuestionaryFilterEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReferenceStructureEdit.resx">
+      <DependentUpon>ReferenceStructureEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StringReplaseSettings.resx">
+      <DependentUpon>StringReplaseSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TableRecordEditor.resx">
+      <DependentUpon>TableRecordEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UniversalQuestionaryOfferSelect.resx">
+      <DependentUpon>UniversalQuestionaryOfferSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\TableEditor.resx">
+      <DependentUpon>TableEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TableStructureEdit.resx">
+      <DependentUpon>TableStructureEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

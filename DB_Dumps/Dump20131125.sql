@@ -1,0 +1,12559 @@
+CREATE DATABASE  IF NOT EXISTS `greenlight` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `greenlight`;
+-- MySQL dump 10.13  Distrib 5.6.12, for Win64 (x86_64)
+--
+-- Host: localhost    Database: greenlight
+-- ------------------------------------------------------
+-- Server version	5.6.12
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `multiref_clients_planir_region`
+--
+
+DROP TABLE IF EXISTS `multiref_clients_planir_region`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_clients_planir_region` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_clients_planir_region`
+--
+
+LOCK TABLES `multiref_clients_planir_region` WRITE;
+/*!40000 ALTER TABLE `multiref_clients_planir_region` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_clients_planir_region` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_clients_podtv_dohod_poruch`
+--
+
+DROP TABLE IF EXISTS `multiref_clients_podtv_dohod_poruch`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_clients_podtv_dohod_poruch` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_clients_podtv_dohod_poruch`
+--
+
+LOCK TABLES `multiref_clients_podtv_dohod_poruch` WRITE;
+/*!40000 ALTER TABLE `multiref_clients_podtv_dohod_poruch` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_clients_podtv_dohod_poruch` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_clients_podtv_dohod_supr`
+--
+
+DROP TABLE IF EXISTS `multiref_clients_podtv_dohod_supr`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_clients_podtv_dohod_supr` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_clients_podtv_dohod_supr`
+--
+
+LOCK TABLES `multiref_clients_podtv_dohod_supr` WRITE;
+/*!40000 ALTER TABLE `multiref_clients_podtv_dohod_supr` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_clients_podtv_dohod_supr` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_clients_raschetni_schet_v_banke_poruch`
+--
+
+DROP TABLE IF EXISTS `multiref_clients_raschetni_schet_v_banke_poruch`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_clients_raschetni_schet_v_banke_poruch` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_clients_raschetni_schet_v_banke_poruch`
+--
+
+LOCK TABLES `multiref_clients_raschetni_schet_v_banke_poruch` WRITE;
+/*!40000 ALTER TABLE `multiref_clients_raschetni_schet_v_banke_poruch` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_clients_raschetni_schet_v_banke_poruch` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_clients_raschetni_schet_v_banke_supr`
+--
+
+DROP TABLE IF EXISTS `multiref_clients_raschetni_schet_v_banke_supr`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_clients_raschetni_schet_v_banke_supr` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_clients_raschetni_schet_v_banke_supr`
+--
+
+LOCK TABLES `multiref_clients_raschetni_schet_v_banke_supr` WRITE;
+/*!40000 ALTER TABLE `multiref_clients_raschetni_schet_v_banke_supr` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_clients_raschetni_schet_v_banke_supr` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_clients_region_bisnesa`
+--
+
+DROP TABLE IF EXISTS `multiref_clients_region_bisnesa`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_clients_region_bisnesa` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_clients_region_bisnesa`
+--
+
+LOCK TABLES `multiref_clients_region_bisnesa` WRITE;
+/*!40000 ALTER TABLE `multiref_clients_region_bisnesa` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_clients_region_bisnesa` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_clients_vid_deyateln_predpr`
+--
+
+DROP TABLE IF EXISTS `multiref_clients_vid_deyateln_predpr`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_clients_vid_deyateln_predpr` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_clients_vid_deyateln_predpr`
+--
+
+LOCK TABLES `multiref_clients_vid_deyateln_predpr` WRITE;
+/*!40000 ALTER TABLE `multiref_clients_vid_deyateln_predpr` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_clients_vid_deyateln_predpr` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_clients_vid_deyatelnosti_org_poruch`
+--
+
+DROP TABLE IF EXISTS `multiref_clients_vid_deyatelnosti_org_poruch`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_clients_vid_deyatelnosti_org_poruch` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_clients_vid_deyatelnosti_org_poruch`
+--
+
+LOCK TABLES `multiref_clients_vid_deyatelnosti_org_poruch` WRITE;
+/*!40000 ALTER TABLE `multiref_clients_vid_deyatelnosti_org_poruch` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_clients_vid_deyatelnosti_org_poruch` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_clients_vid_deyatelnosti_org_supr`
+--
+
+DROP TABLE IF EXISTS `multiref_clients_vid_deyatelnosti_org_supr`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_clients_vid_deyatelnosti_org_supr` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_clients_vid_deyatelnosti_org_supr`
+--
+
+LOCK TABLES `multiref_clients_vid_deyatelnosti_org_supr` WRITE;
+/*!40000 ALTER TABLE `multiref_clients_vid_deyatelnosti_org_supr` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_clients_vid_deyatelnosti_org_supr` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_clients_vid_deyatelnosti_org_zaem`
+--
+
+DROP TABLE IF EXISTS `multiref_clients_vid_deyatelnosti_org_zaem`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_clients_vid_deyatelnosti_org_zaem` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_clients_vid_deyatelnosti_org_zaem`
+--
+
+LOCK TABLES `multiref_clients_vid_deyatelnosti_org_zaem` WRITE;
+/*!40000 ALTER TABLE `multiref_clients_vid_deyatelnosti_org_zaem` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_clients_vid_deyatelnosti_org_zaem` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_clients_zarplatnaya_karta_poruch`
+--
+
+DROP TABLE IF EXISTS `multiref_clients_zarplatnaya_karta_poruch`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_clients_zarplatnaya_karta_poruch` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_clients_zarplatnaya_karta_poruch`
+--
+
+LOCK TABLES `multiref_clients_zarplatnaya_karta_poruch` WRITE;
+/*!40000 ALTER TABLE `multiref_clients_zarplatnaya_karta_poruch` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_clients_zarplatnaya_karta_poruch` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_clients_zarplatnaya_karta_supr`
+--
+
+DROP TABLE IF EXISTS `multiref_clients_zarplatnaya_karta_supr`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_clients_zarplatnaya_karta_supr` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_clients_zarplatnaya_karta_supr`
+--
+
+LOCK TABLES `multiref_clients_zarplatnaya_karta_supr` WRITE;
+/*!40000 ALTER TABLE `multiref_clients_zarplatnaya_karta_supr` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_clients_zarplatnaya_karta_supr` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_adr_fll_dop_ofiss`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_adr_fll_dop_ofiss`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_adr_fll_dop_ofiss` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_adr_fll_dop_ofiss`
+--
+
+LOCK TABLES `multiref_credprogr_adr_fll_dop_ofiss` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_adr_fll_dop_ofiss` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_credprogr_adr_fll_dop_ofiss` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_avtosalony`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_avtosalony`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_avtosalony` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_avtosalony`
+--
+
+LOCK TABLES `multiref_credprogr_avtosalony` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_avtosalony` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_credprogr_avtosalony` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_balans`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_balans`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_balans` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_balans`
+--
+
+LOCK TABLES `multiref_credprogr_balans` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_balans` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_credprogr_balans` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_ck_akkred`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_ck_akkred`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_ck_akkred` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_ck_akkred`
+--
+
+LOCK TABLES `multiref_credprogr_ck_akkred` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_ck_akkred` DISABLE KEYS */;
+INSERT INTO `multiref_credprogr_ck_akkred` VALUES (23,5),(23,6),(23,7),(23,8),(23,9),(23,10),(23,11),(23,12),(23,13),(23,14),(23,16),(23,17),(23,18),(23,19),(23,20),(23,21),(23,22),(23,23),(23,24),(23,25),(23,26),(23,27),(23,28),(23,29),(23,30),(23,31),(23,32),(23,33),(23,34),(23,35),(23,36),(23,37),(23,38),(23,39),(23,40),(23,41),(23,42),(23,43),(23,44),(23,45),(23,46),(23,47),(23,48),(23,49),(23,50),(23,51),(23,52),(23,53),(23,54),(23,55),(23,56),(23,57),(23,58),(23,59),(29,5),(29,6),(29,7),(29,8),(29,9),(29,10),(29,11),(29,12),(29,13),(29,14),(29,16),(29,18),(29,19),(29,20),(29,21),(29,23),(29,24),(29,25),(29,26),(29,27),(29,28),(29,29),(29,30),(29,31),(29,32),(29,33),(29,34),(29,35),(29,36),(29,37),(30,5),(30,6),(30,7),(30,8),(30,9),(30,10),(30,11),(30,12),(30,13),(30,14),(30,16),(30,18),(30,19),(30,20),(30,21),(30,23),(30,24),(30,25),(30,26),(30,27),(30,28),(30,29),(30,30),(30,31),(30,32),(30,33),(30,34),(30,35),(30,36),(30,37),(31,4),(31,5),(31,6),(31,7),(31,8),(31,9),(31,10),(31,11),(31,12),(31,13),(31,14),(31,16),(31,18),(31,19),(31,20),(31,21),(31,23),(31,24),(31,25),(31,26),(31,27),(31,28),(31,29),(31,30),(31,31),(31,32),(31,33),(31,34),(31,35),(31,36),(31,37),(32,22),(33,22),(34,22),(35,22),(36,22),(37,22),(38,22),(39,22),(40,22),(41,22),(42,22),(43,22),(44,4),(44,5),(44,6),(44,7),(44,8),(44,9),(44,10),(44,11),(44,12),(44,13),(44,14),(44,16),(44,17),(44,18),(44,19),(44,20),(44,21),(44,23),(44,25),(44,26),(44,28),(44,32),(44,33),(44,34),(44,35),(44,38),(44,39),(44,40),(44,41),(44,42),(44,43),(44,44),(44,45),(44,46),(44,47),(44,48),(44,49),(44,50),(44,51),(44,52),(44,53),(44,54),(44,55),(44,56),(45,4),(45,5),(45,6),(45,7),(45,8),(45,9),(45,10),(45,11),(45,12),(45,13),(45,14),(45,16),(45,17),(45,18),(45,19),(45,20),(45,21),(45,23),(45,25),(45,26),(45,28),(45,32),(45,33),(45,34),(45,35),(45,38),(45,39),(45,40),(45,41),(45,42),(45,43),(45,44),(45,45),(45,46),(45,47),(45,48),(45,49),(45,50),(45,51),(45,52),(45,53),(45,54),(45,55),(45,56),(46,4),(46,5),(46,6),(46,7),(46,8),(46,9),(46,10),(46,11),(46,12),(46,13),(46,14),(46,16),(46,17),(46,18),(46,19),(46,20),(46,21),(46,23),(46,25),(46,26),(46,28),(46,32),(46,33),(46,34),(46,35),(46,38),(46,39),(46,40),(46,41),(46,42),(46,43),(46,44),(46,45),(46,46),(46,47),(46,48),(46,49),(46,50),(46,51),(46,52),(46,53),(46,54),(46,55),(46,56),(48,4),(48,5),(48,6),(48,7),(48,8),(48,9),(48,10),(48,11),(48,12),(48,13),(48,14),(48,16),(48,17),(48,18),(48,19),(48,20),(48,21),(48,23),(48,25),(48,26),(48,28),(48,32),(48,33),(48,34),(48,35),(48,38),(48,39),(48,40),(48,41),(48,42),(48,43),(48,44),(48,45),(48,46),(48,47),(48,48),(48,49),(48,50),(48,51),(48,52),(48,53),(48,54),(48,55),(48,56),(49,4),(49,5),(49,6),(49,7),(49,8),(49,9),(49,10),(49,11),(49,12),(49,13),(49,14),(49,16),(49,17),(49,18),(49,19),(49,20),(49,21),(49,23),(49,25),(49,26),(49,28),(49,32),(49,33),(49,34),(49,35),(49,38),(49,39),(49,40),(49,41),(49,42),(49,43),(49,44),(49,45),(49,46),(49,47),(49,48),(49,49),(49,50),(49,51),(49,52),(49,53),(49,54),(49,55),(49,56),(50,4),(50,5),(50,6),(50,7),(50,8),(50,9),(50,10),(50,11),(50,12),(50,13),(50,14),(50,16),(50,17),(50,18),(50,19),(50,20),(50,21),(50,23),(50,25),(50,26),(50,28),(50,32),(50,33),(50,34),(50,35),(50,38),(50,39),(50,40),(50,41),(50,42),(50,43),(50,44),(50,45),(50,46),(50,47),(50,48),(50,49),(50,50),(50,51),(50,52),(50,53),(50,54),(50,55),(50,56),(51,4),(51,5),(51,6),(51,7),(51,8),(51,9),(51,10),(51,11),(51,12),(51,13),(51,14),(51,16),(51,17),(51,18),(51,19),(51,20),(51,21),(51,23),(51,25),(51,26),(51,28),(51,32),(51,33),(51,34),(51,35),(51,38),(51,39),(51,40),(51,41),(51,42),(51,43),(51,44),(51,45),(51,46),(51,47),(51,48),(51,49),(51,50),(51,51),(51,52),(51,53),(51,54),(51,55),(51,56),(52,4),(52,5),(52,6),(52,7),(52,8),(52,9),(52,10),(52,11),(52,12),(52,13),(52,14),(52,16),(52,17),(52,18),(52,19),(52,20),(52,21),(52,23),(52,25),(52,26),(52,28),(52,32),(52,33),(52,34),(52,35),(52,38),(52,39),(52,40),(52,41),(52,42),(52,43),(52,44),(52,45),(52,46),(52,47),(52,48),(52,49),(52,50),(52,51),(52,52),(52,53),(52,54),(52,55),(52,56),(53,4),(53,5),(53,6),(53,7),(53,8),(53,9),(53,10),(53,11),(53,12),(53,13),(53,14),(53,16),(53,17),(53,18),(53,19),(53,20),(53,21),(53,23),(53,25),(53,26),(53,28),(53,32),(53,33),(53,34),(53,35),(53,38),(53,39),(53,40),(53,41),(53,42),(53,43),(53,44),(53,45),(53,46),(53,47),(53,48),(53,49),(53,50),(53,51),(53,52),(53,53),(53,54),(53,55),(53,56),(54,4),(54,5),(54,6),(54,7),(54,8),(54,9),(54,10),(54,11),(54,12),(54,13),(54,14),(54,16),(54,17),(54,18),(54,19),(54,20),(54,21),(54,23),(54,25),(54,26),(54,28),(54,32),(54,33),(54,34),(54,35),(54,38),(54,39),(54,40),(54,41),(54,42),(54,43),(54,44),(54,45),(54,46),(54,47),(54,48),(54,49),(54,50),(54,51),(54,52),(54,53),(54,54),(54,55),(54,56),(56,4),(56,5),(56,6),(56,7),(56,8),(56,9),(56,10),(56,11),(56,12),(56,13),(56,14),(56,16),(56,17),(56,18),(56,19),(56,20),(56,21),(56,23),(56,25),(56,26),(56,28),(56,32),(56,33),(56,34),(56,35),(56,38),(56,39),(56,40),(56,41),(56,42),(56,43),(56,44),(56,45),(56,46),(56,47),(56,48),(56,49),(56,50),(56,51),(56,52),(56,53),(56,54),(56,55),(56,56),(58,4),(58,5),(58,6),(58,7),(58,8),(58,9),(58,10),(58,11),(58,12),(58,13),(58,14),(58,16),(58,17),(58,18),(58,19),(58,20),(58,21),(58,23),(58,25),(58,26),(58,28),(58,32),(58,33),(58,34),(58,35),(58,38),(58,39),(58,40),(58,41),(58,42),(58,43),(58,44),(58,45),(58,46),(58,47),(58,48),(58,49),(58,50),(58,51),(58,52),(58,53),(58,54),(58,55),(58,56),(59,4),(59,5),(59,6),(59,7),(59,8),(59,9),(59,10),(59,11),(59,12),(59,13),(59,14),(59,16),(59,17),(59,18),(59,19),(59,20),(59,21),(59,23),(59,25),(59,26),(59,28),(59,32),(59,33),(59,34),(59,35),(59,38),(59,39),(59,40),(59,41),(59,42),(59,43),(59,44),(59,45),(59,46),(59,47),(59,48),(59,49),(59,50),(59,51),(59,52),(59,53),(59,54),(59,55),(59,56),(61,5),(61,6),(61,8),(61,9),(61,10),(61,11),(61,12),(61,14),(61,16),(61,19),(61,21),(61,24),(61,32),(61,39),(61,43),(61,44),(61,57),(61,58),(61,59),(62,5),(62,6),(62,8),(62,9),(62,10),(62,11),(62,12),(62,14),(62,16),(62,19),(62,21),(62,24),(62,28),(62,39),(62,43),(62,44),(62,57),(62,58),(62,59),(63,5),(63,6),(63,8),(63,9),(63,10),(63,11),(63,12),(63,14),(63,16),(63,19),(63,21),(63,24),(63,32),(63,39),(63,43),(63,44),(63,57),(63,58),(63,59),(64,5),(64,6),(64,8),(64,9),(64,10),(64,11),(64,12),(64,14),(64,16),(64,19),(64,21),(64,24),(64,32),(64,39),(64,43),(64,44),(64,57),(64,58),(64,59),(65,5),(65,6),(65,8),(65,9),(65,10),(65,11),(65,12),(65,14),(65,16),(65,19),(65,21),(65,24),(65,32),(65,39),(65,43),(65,44),(65,57),(65,58),(65,59),(66,5),(66,6),(66,8),(66,9),(66,10),(66,11),(66,12),(66,14),(66,16),(66,19),(66,21),(66,24),(66,32),(66,39),(66,43),(66,44),(66,57),(66,58),(66,59),(67,5),(67,6),(67,8),(67,9),(67,10),(67,11),(67,12),(67,14),(67,16),(67,19),(67,21),(67,24),(67,32),(67,39),(67,43),(67,44),(67,57),(67,58),(67,59),(68,5),(68,6),(68,8),(68,9),(68,10),(68,11),(68,12),(68,14),(68,16),(68,19),(68,21),(68,24),(68,32),(68,39),(68,43),(68,44),(68,57),(68,58),(68,59),(69,5),(69,6),(69,8),(69,9),(69,10),(69,11),(69,12),(69,14),(69,16),(69,19),(69,21),(69,24),(69,32),(69,39),(69,43),(69,44),(69,57),(69,58),(69,59),(70,5),(70,6),(70,8),(70,9),(70,10),(70,11),(70,12),(70,14),(70,16),(70,19),(70,21),(70,24),(70,32),(70,39),(70,43),(70,44),(70,57),(70,58),(70,59),(71,5),(71,6),(71,8),(71,9),(71,10),(71,11),(71,12),(71,14),(71,16),(71,19),(71,21),(71,24),(71,32),(71,39),(71,43),(71,44),(71,57),(71,58),(71,59),(72,5),(72,6),(72,8),(72,9),(72,10),(72,11),(72,12),(72,14),(72,16),(72,19),(72,21),(72,24),(72,32),(72,39),(72,43),(72,44),(72,57),(72,58),(72,59),(73,5),(73,6),(73,8),(73,9),(73,10),(73,11),(73,12),(73,14),(73,16),(73,19),(73,21),(73,24),(73,32),(73,39),(73,43),(73,44),(73,57),(73,58),(73,59),(74,5),(74,6),(74,8),(74,9),(74,10),(74,11),(74,12),(74,14),(74,16),(74,19),(74,21),(74,24),(74,32),(74,39),(74,43),(74,44),(74,57),(74,58),(74,59),(75,5),(75,6),(75,8),(75,9),(75,10),(75,11),(75,12),(75,14),(75,16),(75,19),(75,21),(75,24),(75,32),(75,39),(75,43),(75,44),(75,57),(75,58),(75,59),(76,5),(76,6),(76,8),(76,9),(76,10),(76,11),(76,12),(76,14),(76,16),(76,19),(76,21),(76,24),(76,32),(76,39),(76,43),(76,44),(76,57),(76,58),(76,59),(77,5),(77,6),(77,8),(77,9),(77,10),(77,11),(77,12),(77,14),(77,16),(77,19),(77,21),(77,24),(77,32),(77,39),(77,43),(77,44),(77,57),(77,58),(77,59),(78,5),(78,6),(78,8),(78,9),(78,10),(78,11),(78,12),(78,14),(78,16),(78,19),(78,21),(78,24),(78,32),(78,39),(78,43),(78,44),(78,57),(78,58),(78,59),(79,5),(79,6),(79,8),(79,9),(79,10),(79,11),(79,12),(79,14),(79,16),(79,19),(79,21),(79,24),(79,32),(79,39),(79,43),(79,44),(79,57),(79,58),(79,59),(80,5),(80,6),(80,8),(80,9),(80,10),(80,11),(80,12),(80,14),(80,16),(80,19),(80,21),(80,24),(80,32),(80,39),(80,44),(80,45),(80,57),(80,58),(80,59),(81,5),(81,6),(81,8),(81,9),(81,10),(81,11),(81,12),(81,14),(81,16),(81,19),(81,21),(81,24),(81,32),(81,39),(81,43),(81,44),(81,57),(81,58),(81,59),(82,5),(82,6),(82,8),(82,9),(82,10),(82,11),(82,12),(82,14),(82,16),(82,19),(82,21),(82,24),(82,32),(82,39),(82,43),(82,44),(82,57),(82,58),(82,59),(83,5),(83,6),(83,8),(83,9),(83,10),(83,11),(83,12),(83,14),(83,16),(83,19),(83,21),(83,24),(83,32),(83,39),(83,43),(83,44),(83,57),(83,58),(83,59),(84,5),(84,6),(84,8),(84,9),(84,10),(84,11),(84,12),(84,14),(84,16),(84,19),(84,21),(84,24),(84,32),(84,39),(84,43),(84,44),(84,57),(84,58),(84,59),(85,5),(85,6),(85,8),(85,9),(85,10),(85,11),(85,12),(85,14),(85,16),(85,19),(85,21),(85,24),(85,32),(85,39),(85,43),(85,44),(85,57),(85,58),(85,59),(86,5),(86,6),(86,8),(86,9),(86,10),(86,11),(86,12),(86,14),(86,16),(86,19),(86,21),(86,24),(86,32),(86,39),(86,43),(86,44),(86,57),(86,58),(86,59),(87,5),(87,6),(87,8),(87,9),(87,10),(87,11),(87,12),(87,14),(87,16),(87,19),(87,21),(87,24),(87,32),(87,39),(87,43),(87,44),(87,57),(87,58),(87,59),(88,5),(88,6),(88,8),(88,9),(88,10),(88,11),(88,12),(88,14),(88,16),(88,19),(88,21),(88,24),(88,32),(88,39),(88,43),(88,44),(88,57),(88,58),(88,59),(89,5),(89,6),(89,8),(89,9),(89,10),(89,11),(89,12),(89,14),(89,16),(89,19),(89,21),(89,24),(89,32),(89,39),(89,43),(89,44),(89,57),(89,58),(89,59),(90,5),(90,6),(90,8),(90,9),(90,10),(90,11),(90,12),(90,14),(90,16),(90,19),(90,21),(90,24),(90,32),(90,39),(90,43),(90,44),(90,57),(90,58),(90,59),(91,5),(91,6),(91,8),(91,9),(91,10),(91,11),(91,12),(91,14),(91,16),(91,19),(91,21),(91,24),(91,32),(91,39),(91,43),(91,44),(91,57),(91,58),(91,59),(92,5),(92,6),(92,8),(92,9),(92,10),(92,11),(92,12),(92,14),(92,16),(92,19),(92,21),(92,24),(92,32),(92,39),(92,43),(92,44),(92,57),(92,58),(92,59),(93,5),(93,6),(93,8),(93,9),(93,10),(93,11),(93,12),(93,14),(93,16),(93,19),(93,21),(93,24),(93,32),(93,39),(93,43),(93,44),(93,57),(93,58),(93,59),(94,5),(94,6),(94,8),(94,9),(94,10),(94,11),(94,12),(94,14),(94,16),(94,19),(94,21),(94,24),(94,32),(94,39),(94,43),(94,44),(94,57),(94,58),(94,59),(95,5),(95,6),(95,8),(95,9),(95,10),(95,11),(95,12),(95,14),(95,16),(95,19),(95,21),(95,24),(95,32),(95,39),(95,43),(95,44),(95,57),(95,58),(95,59),(96,5),(96,6),(96,8),(96,9),(96,10),(96,11),(96,12),(96,14),(96,16),(96,19),(96,21),(96,24),(96,32),(96,39),(96,43),(96,44),(96,57),(96,58),(96,59),(103,5),(103,9),(103,11),(103,14),(104,5),(104,9),(104,11),(104,14),(109,5),(109,6),(109,8),(109,9),(109,10),(109,11),(109,12),(109,14),(109,16),(109,19),(109,21),(109,24),(109,32),(109,39),(109,43),(109,44),(109,57),(109,58),(109,59),(111,5),(111,9),(111,11),(111,14),(112,5),(112,9),(112,11),(112,14),(113,5),(113,9),(113,11),(113,14),(114,5),(114,9),(114,11),(114,14),(118,5),(118,9),(118,11),(118,14),(119,5),(119,9),(119,11),(119,14),(120,5),(120,9),(120,11),(120,14),(121,5),(121,9),(121,11),(121,14),(122,5),(122,9),(122,11),(122,14),(123,5),(123,9),(123,11),(123,14),(124,5),(124,9),(124,11),(124,14),(125,5),(125,9),(125,11),(125,14),(126,5),(126,9),(126,11),(126,14),(127,5),(127,9),(127,11),(127,14),(128,5),(128,9),(128,11),(128,14),(129,5),(129,9),(129,11),(129,14),(130,5),(130,9),(130,11),(130,14),(131,5),(131,9),(131,11),(131,14),(132,5),(132,9),(132,11),(132,14),(133,5),(133,9),(133,11),(133,14),(134,5),(134,9),(134,11),(134,14),(135,5),(135,9),(135,11),(135,14),(136,5),(136,9),(136,11),(136,14),(137,5),(137,9),(137,11),(137,14),(138,5),(138,9),(138,11),(138,14),(139,5),(139,9),(139,11),(139,14),(140,5),(140,9),(140,11),(140,14),(141,5),(141,9),(141,11),(141,14),(142,5),(142,9),(142,11),(142,14),(143,5),(143,9),(143,11),(143,14),(144,5),(144,9),(144,11),(144,14),(145,5),(145,9),(145,11),(145,14),(146,5),(146,9),(146,11),(146,14),(147,5),(147,9),(147,11),(147,14),(148,5),(148,9),(148,11),(148,14),(149,5),(149,9),(149,11),(149,14),(150,5),(150,9),(150,11),(150,14),(151,5),(151,9),(151,11),(151,14),(152,5),(152,9),(152,11),(152,14),(153,5),(153,9),(153,11),(153,14),(154,5),(154,9),(154,11),(154,14),(155,5),(155,9),(155,11),(155,14),(156,5),(156,9),(156,11),(156,14),(157,5),(157,9),(157,11),(157,14),(158,5),(158,9),(158,11),(158,14),(159,5),(159,9),(159,11),(159,14),(160,5),(160,9),(160,11),(160,14),(161,5),(161,9),(161,11),(161,14),(162,5),(162,9),(162,11),(162,14),(163,5),(163,9),(163,11),(163,14),(164,5),(164,9),(164,11),(164,14),(165,5),(165,9),(165,11),(165,14),(166,5),(166,9),(166,11),(166,14),(167,5),(167,9),(167,11),(167,14),(168,5),(168,9),(168,11),(168,14),(169,5),(169,9),(169,11),(169,14),(170,5),(170,9),(170,11),(170,14),(171,5),(171,9),(171,11),(171,14),(172,5),(172,9),(172,11),(172,14),(173,5),(173,9),(173,11),(173,14),(174,5),(174,9),(174,11),(174,14),(175,5),(175,9),(175,11),(175,14),(177,5),(177,9),(177,11),(177,14),(178,5),(178,9),(178,11),(178,14),(179,5),(179,9),(179,11),(179,14),(180,5),(180,9),(180,11),(180,14),(181,5),(181,9),(181,11),(181,14),(182,5),(182,9),(182,11),(182,14),(183,5),(183,9),(183,11),(183,14),(225,5),(225,6),(225,7),(225,8),(225,9),(225,10),(225,11),(225,12),(225,13),(225,14),(225,16),(225,17),(225,18),(225,19),(225,20),(225,21),(225,22),(225,23),(225,24),(225,25),(225,26),(225,27),(225,28),(225,29),(225,30),(225,31),(225,32),(225,33),(225,34),(225,35),(225,36),(225,37),(225,38),(225,39),(225,40),(225,41),(225,42),(225,43),(225,44),(225,45),(225,46),(225,47),(225,48),(225,49),(225,50),(225,51),(225,52),(225,53),(225,54),(225,55),(225,56),(225,57),(225,58),(225,59),(280,4),(280,5),(280,6),(280,7),(280,8),(280,9),(280,10),(280,11),(280,12),(280,13),(280,14),(280,16),(280,17),(280,18),(280,19),(280,20),(280,21),(280,23),(280,25),(280,26),(280,28),(280,32),(280,33),(280,34),(280,35),(280,38),(280,39),(280,40),(280,41),(280,42),(280,43),(280,44),(280,45),(280,46),(280,47),(280,48),(280,49),(280,50),(280,51),(280,52),(280,53),(280,54),(280,55),(280,56),(281,4),(281,5),(281,6),(281,7),(281,8),(281,9),(281,10),(281,11),(281,12),(281,13),(281,14),(281,16),(281,17),(281,18),(281,19),(281,20),(281,21),(281,23),(281,25),(281,26),(281,28),(281,32),(281,33),(281,34),(281,35),(281,38),(281,39),(281,40),(281,41),(281,42),(281,43),(281,44),(281,45),(281,46),(281,47),(281,48),(281,49),(281,50),(281,51),(281,52),(281,53),(281,54),(281,55),(281,56),(282,4),(282,5),(282,6),(282,7),(282,8),(282,9),(282,10),(282,11),(282,12),(282,13),(282,14),(282,16),(282,17),(282,18),(282,19),(282,20),(282,21),(282,23),(282,25),(282,26),(282,28),(282,32),(282,33),(282,34),(282,35),(282,38),(282,39),(282,40),(282,41),(282,42),(282,43),(282,44),(282,45),(282,46),(282,47),(282,48),(282,49),(282,50),(282,51),(282,52),(282,53),(282,54),(282,55),(282,56),(283,4),(283,5),(283,6),(283,7),(283,8),(283,9),(283,10),(283,11),(283,12),(283,13),(283,14),(283,16),(283,17),(283,18),(283,19),(283,20),(283,21),(283,23),(283,25),(283,26),(283,28),(283,32),(283,33),(283,34),(283,35),(283,38),(283,39),(283,40),(283,41),(283,42),(283,43),(283,44),(283,45),(283,46),(283,47),(283,48),(283,49),(283,50),(283,51),(283,52),(283,53),(283,54),(283,55),(283,56);
+/*!40000 ALTER TABLE `multiref_credprogr_ck_akkred` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_grazhdanstvo_gen_direktora`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_grazhdanstvo_gen_direktora`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_grazhdanstvo_gen_direktora` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_grazhdanstvo_gen_direktora`
+--
+
+LOCK TABLES `multiref_credprogr_grazhdanstvo_gen_direktora` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_grazhdanstvo_gen_direktora` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_credprogr_grazhdanstvo_gen_direktora` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_grazhdanstvo_poruchitelya`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_grazhdanstvo_poruchitelya`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_grazhdanstvo_poruchitelya` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_grazhdanstvo_poruchitelya`
+--
+
+LOCK TABLES `multiref_credprogr_grazhdanstvo_poruchitelya` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_grazhdanstvo_poruchitelya` DISABLE KEYS */;
+INSERT INTO `multiref_credprogr_grazhdanstvo_poruchitelya` VALUES (23,4),(29,4),(30,4),(31,4),(32,4),(33,4),(34,4),(35,4),(36,4),(37,4),(38,4),(39,4),(40,4),(41,4),(42,4),(43,4),(44,4),(61,4),(98,4),(103,4),(225,4),(280,4),(281,4),(282,4),(283,4),(285,4);
+/*!40000 ALTER TABLE `multiref_credprogr_grazhdanstvo_poruchitelya` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_grazhdanstvo_uchereditelei`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_grazhdanstvo_uchereditelei`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_grazhdanstvo_uchereditelei` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_grazhdanstvo_uchereditelei`
+--
+
+LOCK TABLES `multiref_credprogr_grazhdanstvo_uchereditelei` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_grazhdanstvo_uchereditelei` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_credprogr_grazhdanstvo_uchereditelei` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_grazhdanstvo_zayomschika`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_grazhdanstvo_zayomschika`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_grazhdanstvo_zayomschika` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_grazhdanstvo_zayomschika`
+--
+
+LOCK TABLES `multiref_credprogr_grazhdanstvo_zayomschika` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_grazhdanstvo_zayomschika` DISABLE KEYS */;
+INSERT INTO `multiref_credprogr_grazhdanstvo_zayomschika` VALUES (23,4),(29,4),(30,4),(31,4),(32,4),(33,4),(34,4),(35,4),(36,4),(37,4),(38,4),(39,4),(40,4),(41,4),(42,4),(43,4),(44,4),(61,4),(98,4),(103,4),(225,4),(280,4),(281,4),(282,4),(283,4),(285,4);
+/*!40000 ALTER TABLE `multiref_credprogr_grazhdanstvo_zayomschika` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_kateg_ts`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_kateg_ts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_kateg_ts` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_kateg_ts`
+--
+
+LOCK TABLES `multiref_credprogr_kateg_ts` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_kateg_ts` DISABLE KEYS */;
+INSERT INTO `multiref_credprogr_kateg_ts` VALUES (23,4),(24,4),(25,5),(25,6),(25,7),(26,5),(26,6),(26,7),(29,4),(30,4),(31,5),(31,6),(32,4),(32,5),(32,6),(33,4),(33,5),(33,6),(34,4),(34,5),(34,6),(35,4),(35,5),(35,6),(36,4),(36,5),(36,6),(37,4),(37,5),(37,6),(38,4),(38,5),(38,6),(39,4),(39,5),(39,6),(40,4),(40,5),(40,6),(41,4),(41,5),(41,6),(42,4),(42,5),(42,6),(43,4),(43,5),(43,6),(44,4),(44,5),(44,6),(44,7),(61,4),(61,5),(61,6),(98,4),(98,5),(98,6),(98,7),(103,4),(104,4),(111,4),(112,4),(113,4),(114,4),(117,4),(118,4),(119,4),(120,4),(121,4),(122,4),(123,4),(124,4),(125,4),(126,4),(127,4),(128,4),(129,4),(130,4),(131,4),(132,4),(133,4),(134,4),(135,4),(136,4),(137,4),(138,4),(139,4),(140,4),(141,4),(142,4),(143,4),(144,4),(145,4),(146,4),(147,4),(148,4),(149,4),(150,4),(151,4),(152,4),(153,4),(154,4),(155,4),(156,4),(157,4),(158,4),(159,5),(159,6),(159,7),(160,5),(160,6),(160,7),(161,5),(161,6),(161,7),(162,5),(162,6),(162,7),(163,5),(163,6),(163,7),(164,5),(164,6),(164,7),(165,5),(165,6),(165,7),(166,5),(166,6),(166,7),(167,5),(167,6),(167,7),(168,5),(168,6),(168,7),(169,5),(169,6),(169,7),(170,5),(170,6),(170,7),(171,5),(171,6),(171,7),(172,5),(172,6),(172,7),(173,5),(173,6),(173,7),(174,5),(174,6),(174,7),(175,5),(175,6),(175,7),(177,5),(177,6),(177,7),(178,5),(178,6),(178,7),(179,5),(179,6),(179,7),(180,5),(180,6),(180,7),(181,5),(181,6),(181,7),(182,5),(182,6),(182,7),(183,5),(183,6),(183,7),(225,5),(225,6),(225,7),(280,4),(280,5),(280,6),(281,4),(281,5),(281,6),(282,4),(282,5),(282,6),(283,4),(283,5),(283,6),(285,4),(285,5),(285,6);
+/*!40000 ALTER TABLE `multiref_credprogr_kateg_ts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_kategoria_clienta`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_kategoria_clienta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_kategoria_clienta` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_kategoria_clienta`
+--
+
+LOCK TABLES `multiref_credprogr_kategoria_clienta` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_kategoria_clienta` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_credprogr_kategoria_clienta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_marki_modeli`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_marki_modeli`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_marki_modeli` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_marki_modeli`
+--
+
+LOCK TABLES `multiref_credprogr_marki_modeli` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_marki_modeli` DISABLE KEYS */;
+INSERT INTO `multiref_credprogr_marki_modeli` VALUES (23,4),(23,5),(23,6),(25,4),(25,5),(25,6),(29,4),(29,5),(29,6),(30,4),(30,5),(30,6),(31,4),(31,5),(32,4),(32,5),(32,6),(33,4),(33,5),(33,6),(34,4),(34,5),(34,6),(35,4),(35,5),(35,6),(36,4),(36,5),(36,6),(37,4),(37,5),(37,6),(38,4),(38,5),(38,6),(39,4),(39,5),(39,6),(40,4),(40,5),(40,6),(41,4),(41,5),(41,6),(42,4),(42,5),(42,6),(43,4),(43,5),(43,6),(44,4),(44,5),(44,6),(61,4),(61,5),(61,6),(98,4),(98,5),(98,6),(103,4),(103,5),(225,4),(225,5),(225,6),(280,4),(280,5),(281,4),(281,5),(282,4),(282,5),(283,4),(283,5),(285,4),(285,5),(285,6);
+/*!40000 ALTER TABLE `multiref_credprogr_marki_modeli` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_monitoring_sistema`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_monitoring_sistema`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_monitoring_sistema` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_monitoring_sistema`
+--
+
+LOCK TABLES `multiref_credprogr_monitoring_sistema` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_monitoring_sistema` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_credprogr_monitoring_sistema` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_new_old`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_new_old`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_new_old` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_new_old`
+--
+
+LOCK TABLES `multiref_credprogr_new_old` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_new_old` DISABLE KEYS */;
+INSERT INTO `multiref_credprogr_new_old` VALUES (23,4),(24,4),(25,4),(26,4),(29,4),(30,4),(31,4),(32,4),(33,5),(34,5),(35,4),(36,4),(37,5),(38,4),(39,5),(40,4),(41,5),(42,4),(43,5),(44,4),(44,5),(45,4),(45,5),(46,4),(46,5),(47,4),(47,5),(48,4),(48,5),(49,4),(49,5),(50,4),(50,5),(51,4),(52,4),(52,5),(53,4),(53,5),(54,4),(54,5),(55,4),(55,5),(56,4),(56,5),(58,4),(58,5),(59,4),(59,5),(60,4),(60,5),(61,4),(62,4),(63,4),(64,4),(65,4),(66,4),(67,4),(68,4),(69,4),(70,4),(71,4),(72,4),(73,4),(74,4),(75,4),(76,4),(77,4),(78,4),(79,5),(80,5),(81,5),(82,5),(83,5),(84,5),(85,5),(86,5),(87,5),(88,5),(89,5),(90,5),(91,5),(92,5),(93,5),(94,5),(95,5),(103,4),(104,4),(109,5),(111,5),(112,5),(113,4),(114,4),(118,4),(119,4),(120,4),(121,5),(122,5),(123,4),(124,4),(125,5),(126,5),(127,4),(128,5),(129,4),(130,5),(131,4),(132,4),(133,5),(134,5),(135,4),(136,4),(137,5),(138,5),(139,4),(140,4),(141,5),(142,5),(143,4),(144,4),(145,5),(146,5),(147,4),(148,4),(149,5),(150,5),(151,4),(152,4),(153,5),(154,5),(155,4),(156,4),(157,5),(158,5),(159,4),(160,4),(161,5),(162,5),(163,4),(164,4),(165,5),(166,5),(167,4),(168,4),(169,5),(170,5),(171,4),(172,4),(173,5),(174,5),(175,4),(177,4),(178,5),(179,5),(180,4),(181,4),(182,5),(183,5),(184,4),(185,4),(186,4),(187,4),(188,4),(189,4),(190,4),(191,4),(192,4),(193,5),(194,4),(195,4),(196,4),(197,4),(198,4),(199,4),(200,4),(201,5),(202,5),(203,4),(204,5),(205,4),(206,4),(207,4),(208,4),(209,4),(210,4),(211,4),(212,5),(213,5),(214,5),(215,5),(216,4),(217,5),(218,4),(219,4),(220,4),(221,4),(222,4),(223,4),(224,4),(225,5),(226,5),(227,5),(228,5),(229,5),(230,5),(231,5),(232,4),(233,4),(234,4),(235,4),(236,4),(237,4),(238,4),(239,5),(240,5),(241,5),(242,5),(243,5),(244,5),(245,5),(246,5),(247,4),(248,4),(249,4),(250,4),(251,4),(252,5),(253,5),(254,5),(255,5),(256,5),(257,5),(258,5),(259,5),(260,4),(261,4),(262,4),(263,5),(264,5),(265,5),(266,5),(267,5),(268,5),(269,5),(270,4),(271,5),(272,5),(273,5),(274,5),(275,5),(276,5),(277,5),(278,5),(279,5),(280,4),(281,4),(282,5),(283,5);
+/*!40000 ALTER TABLE `multiref_credprogr_new_old` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_opf`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_opf`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_opf` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_opf`
+--
+
+LOCK TABLES `multiref_credprogr_opf` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_opf` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_credprogr_opf` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_otrasl`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_otrasl`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_otrasl` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_otrasl`
+--
+
+LOCK TABLES `multiref_credprogr_otrasl` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_otrasl` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_credprogr_otrasl` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_poryadok_pogasheniya`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_poryadok_pogasheniya`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_poryadok_pogasheniya` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_poryadok_pogasheniya`
+--
+
+LOCK TABLES `multiref_credprogr_poryadok_pogasheniya` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_poryadok_pogasheniya` DISABLE KEYS */;
+INSERT INTO `multiref_credprogr_poryadok_pogasheniya` VALUES (23,4),(29,4),(29,5),(30,4),(30,5),(31,4),(31,5),(32,5),(33,5),(34,5),(35,5),(36,5),(37,5),(38,5),(39,5),(40,5),(41,5),(42,5),(43,5),(44,4),(61,4),(98,4),(103,4),(225,4),(280,4),(281,4),(282,4),(283,4);
+/*!40000 ALTER TABLE `multiref_credprogr_poryadok_pogasheniya` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_predmet_zaloga`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_predmet_zaloga`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_predmet_zaloga` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_predmet_zaloga`
+--
+
+LOCK TABLES `multiref_credprogr_predmet_zaloga` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_predmet_zaloga` DISABLE KEYS */;
+INSERT INTO `multiref_credprogr_predmet_zaloga` VALUES (23,4),(29,4),(30,4),(31,4),(32,4),(33,4),(34,4),(35,4),(36,4),(37,4),(38,4),(39,4),(40,4),(41,4),(42,4),(43,4),(44,4),(61,4),(103,4),(225,4),(280,4),(281,4),(282,4),(283,4),(285,4);
+/*!40000 ALTER TABLE `multiref_credprogr_predmet_zaloga` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_proishozhdenie_avto`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_proishozhdenie_avto`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_proishozhdenie_avto` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_proishozhdenie_avto`
+--
+
+LOCK TABLES `multiref_credprogr_proishozhdenie_avto` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_proishozhdenie_avto` DISABLE KEYS */;
+INSERT INTO `multiref_credprogr_proishozhdenie_avto` VALUES (23,13),(23,14),(23,15),(29,13),(29,14),(29,15),(30,13),(30,14),(30,15),(31,13),(31,14),(32,13),(32,14),(32,15),(33,13),(33,14),(33,15),(34,13),(34,14),(34,15),(35,13),(35,14),(35,15),(36,13),(36,14),(36,15),(37,13),(37,14),(37,15),(38,13),(38,14),(38,15),(39,13),(39,14),(39,15),(40,13),(40,14),(40,15),(41,13),(41,14),(41,15),(42,13),(42,14),(42,15),(43,13),(43,14),(43,15),(44,13),(44,14),(44,15),(61,13),(61,14),(61,15),(103,13),(103,14),(103,15),(225,13),(225,14),(225,15),(280,13),(280,14),(280,15),(281,13),(281,14),(281,15),(282,13),(282,14),(282,15),(283,13),(283,14),(283,15);
+/*!40000 ALTER TABLE `multiref_credprogr_proishozhdenie_avto` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_region_registracii_poruchitelya`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_region_registracii_poruchitelya`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_region_registracii_poruchitelya` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_region_registracii_poruchitelya`
+--
+
+LOCK TABLES `multiref_credprogr_region_registracii_poruchitelya` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_region_registracii_poruchitelya` DISABLE KEYS */;
+INSERT INTO `multiref_credprogr_region_registracii_poruchitelya` VALUES (23,3296),(23,3297),(23,3298),(23,3299),(23,3300),(23,3301),(23,3302),(23,3303),(23,3304),(23,3305),(23,3306),(23,3307),(23,3308),(23,3309),(23,3310),(23,3311),(23,3312),(23,3313),(23,3314),(23,3315),(23,3316),(23,3317),(23,3318),(23,3319),(23,3320),(23,3321),(23,3322),(23,3323),(23,3324),(23,3325),(23,3326),(23,3327),(23,3328),(23,3329),(23,3330),(23,3331),(23,3332),(23,3333),(23,3334),(23,3335),(23,3336),(23,3337),(23,3338),(23,3339),(23,3340),(23,3341),(23,3342),(23,3343),(23,3344),(23,3345),(23,3346),(23,3347),(23,3348),(23,3349),(23,3350),(23,3351),(23,3563),(23,3564),(23,3565),(23,3566),(23,3567),(23,3568),(23,3569),(23,3570),(23,3571),(23,3572),(23,3573),(23,3574),(23,3575),(23,3576),(23,3577),(23,3578),(23,3579),(23,3580),(23,3581),(23,3582),(23,3583),(23,3584),(23,3585),(23,3586),(23,3587),(23,3588),(23,3589),(23,3590),(23,3591),(23,3592),(23,3593),(23,3594),(23,3595),(23,3596),(23,3597),(23,3598),(23,3599),(23,3600),(23,3601),(23,3602),(23,3603),(23,3604),(23,3605),(23,3606),(23,3607),(23,3608),(23,3609),(23,3610),(23,3611),(23,3612),(23,3613),(23,3614),(23,3615),(23,3616),(23,3617),(23,3618),(23,3619),(23,3620),(23,3621),(23,3622),(23,3623),(23,3624),(23,3625),(23,3626),(23,3627),(23,3628),(23,3629),(23,3784),(23,3785),(23,3786),(23,3787),(23,3788),(23,3789),(23,3790),(23,3791),(23,3792),(23,3793),(23,3794),(23,3795),(23,3796),(23,3797),(23,3798),(23,3799),(23,3800),(23,3801),(23,3802),(23,3803),(23,3804),(23,3805),(23,3806),(23,3807),(23,3808),(23,3809),(23,3810),(23,3811),(23,3812),(23,3813),(23,3814),(23,3815),(23,3816),(23,3817),(23,3818),(23,3819),(23,3820),(23,3821),(23,3822),(23,3823),(23,3824),(23,3825),(23,3826),(23,3841),(23,3842),(23,3843),(23,3844),(23,3845),(23,3846),(23,3847),(23,3848),(23,3849),(23,3850),(23,3851),(23,3852),(23,3853),(23,3854),(23,3855),(23,3856),(23,3857),(23,3858),(23,3859),(23,3860),(23,3861),(23,3862),(23,3863),(23,3864),(23,3865),(23,3866),(23,3867),(23,3868),(23,3869),(23,3870),(23,3871),(23,4312),(23,4313),(23,4314),(23,4315),(23,4316),(23,4317),(23,4318),(23,4319),(23,4320),(23,4321),(23,4322),(23,4323),(23,4324),(23,4325),(23,4326),(23,4327),(23,4328),(23,4329),(23,4330),(23,4331),(23,4332),(23,4333),(23,4334),(23,4335),(23,4336),(23,4337),(23,4338),(23,4339),(23,4340),(23,4341),(23,4342),(23,4343),(23,4344),(23,4345),(23,4346),(23,4347),(23,4348),(23,4349),(23,4350),(23,4351),(23,4352),(23,4353),(23,4354),(23,4355),(23,4356),(23,4357),(23,4358),(23,4359),(23,4360),(23,4361),(23,4362),(23,4363),(23,4364),(23,4365),(23,4366),(23,4367),(23,4368),(23,4369),(23,4370),(23,4371),(23,4372),(23,4373),(23,4374),(23,4375),(23,4376),(23,4377),(23,4378),(23,4379),(23,4380),(23,4381),(23,4382),(23,4383),(23,4384),(23,4385),(23,4386),(23,4387),(23,4388),(23,4389),(23,4390),(23,4391),(23,4392),(23,4393),(23,4394),(23,4395),(23,4396),(23,4397),(23,4398),(23,4399),(23,4400),(23,4401),(23,4402),(23,4403),(23,4404),(23,4405),(23,4406),(23,4407),(23,4408),(23,4409),(23,4410),(23,4411),(23,4412),(23,4413),(23,4414),(23,4415),(23,4416),(23,4417),(23,4418),(23,4419),(23,4420),(23,4421),(23,4422),(23,4423),(23,4424),(23,4425),(23,4426),(23,4427),(23,4428),(23,4429),(23,4430),(23,4431),(23,4432),(23,4433),(23,4434),(23,4435),(23,4436),(23,4437),(23,4438),(23,4439),(23,4440),(23,4441),(23,4442),(23,4443),(23,4444),(23,4445),(23,4446),(23,4447),(23,4448),(23,4449),(23,4450),(23,4451),(23,4452),(23,4453),(23,4454),(23,4455),(23,4456),(23,4457),(23,4458),(23,4459),(23,4460),(23,4461),(23,4462),(23,4463),(23,4464),(23,4465),(23,4466),(23,4467),(23,4468),(23,4469),(23,4470),(23,4471),(23,4472),(23,4473),(23,4474),(23,4475),(23,4476),(23,4477),(23,4478),(23,4479),(23,4480),(23,4689),(23,4690),(23,4691),(23,4692),(23,4693),(23,4694),(23,4695),(23,4696),(23,4697),(23,4698),(23,4699),(23,4700),(23,4701),(23,4702),(23,4703),(23,4704),(23,4705),(23,4706),(23,4707),(23,4708),(23,4709),(23,4710),(23,4711),(23,4712),(23,4713),(23,4714),(23,4715),(23,4716),(23,4717),(23,4718),(23,4719),(23,4720),(23,4721),(23,4722),(23,4723),(23,4724),(23,4725),(23,4726),(23,4727),(23,4728),(23,4729),(23,4730),(23,4731),(23,4732),(23,4733),(23,4861),(23,4862),(23,4863),(23,4864),(23,4865),(23,4866),(23,4867),(23,4868),(23,4869),(23,4870),(23,4871),(23,4872),(23,4873),(23,4874),(23,4875),(23,4876),(23,4877),(23,4878),(23,4879),(23,4880),(23,4881),(23,4882),(23,4883),(23,4884),(23,4885),(23,4886),(23,4887),(23,4888),(23,4889),(23,4890),(23,4891),(23,4892),(23,4893),(23,4894),(23,4895),(23,4896),(23,4897),(23,4898),(23,4899),(23,4900),(23,4901),(23,4902),(23,4903),(23,4904),(23,4905),(23,4906),(23,4907),(23,4908),(23,4909),(23,4910),(23,4911),(23,4912),(23,4913),(23,4914),(23,4915),(23,4916),(23,4917),(23,4918),(23,4919),(23,4920),(23,4921),(23,4922),(23,4923),(23,4924),(23,4925),(23,4926),(23,4927),(23,4928),(23,4929),(23,4930),(23,4931),(23,4932),(23,4933),(23,4934),(23,4935),(23,4936),(23,4937),(23,4938),(23,4939),(23,4940),(23,4941),(23,4942),(23,4943),(23,4944),(23,4945),(23,4946),(23,4947),(23,4948),(23,4949),(23,4950),(23,4952),(23,4953),(23,4954),(23,4955),(23,4956),(23,4957),(23,4958),(23,4959),(23,4960),(23,4961),(23,4962),(23,4964),(23,4965),(23,4966),(23,4967),(23,4968),(23,5080),(23,5081),(23,5082),(23,5083),(23,5084),(23,5085),(23,5086),(23,5087),(23,5088),(23,5089),(23,5090),(23,5091),(23,5092),(23,5093),(23,5094),(23,5095),(23,5096),(23,5097),(23,5098),(23,5099),(23,5100),(23,5101),(23,5102),(23,5103),(23,5104),(23,5105),(23,5106),(23,5107),(23,5108),(23,5109),(23,5110),(23,5111),(23,5112),(23,5113),(23,5114),(23,5115),(23,5116),(23,5117),(23,5118),(23,5119),(23,5120),(23,5121),(23,5122),(23,5123),(23,5124),(23,5125),(23,5126),(23,5127),(23,5128),(23,5129),(23,5130),(23,5131),(23,5132),(23,5133),(23,5134),(23,5135),(23,5136),(23,5137),(23,5138),(23,5139),(23,5140),(23,5141),(23,5142),(23,5143),(23,5144),(23,5145),(23,5146),(23,5147),(23,5148),(23,5149),(23,5150),(23,5161),(23,5162),(23,5163),(23,5164),(23,5165),(23,5166),(23,5167),(23,5168),(23,5169),(23,5170),(23,5171),(23,5172),(23,5173),(23,5174),(23,5175),(23,5176),(23,5177),(23,5178),(23,5179),(23,5180),(23,5181),(23,5182),(23,5183),(23,5184),(23,5185),(23,5186),(23,5187),(23,5188),(23,5189),(23,5190),(23,5246),(23,5247),(23,5248),(23,5249),(23,5250),(23,5251),(23,5252),(23,5253),(23,5254),(23,5255),(23,5256),(23,5257),(23,5258),(23,5259),(23,5260),(23,5261),(23,5262),(23,5263),(23,5264),(23,5265),(23,5266),(23,5267),(23,5268),(23,5269),(23,5270),(23,5271),(23,5272),(23,5273),(23,5274),(23,5275),(23,5276),(23,5277),(23,5278),(23,5279),(23,5280),(23,5281),(23,5282),(23,5283),(23,5284),(23,5285),(23,5286),(23,5287),(23,5288),(23,5289),(23,5290),(23,5326),(23,5327),(23,5328),(23,5329),(23,5330),(23,5331),(23,5332),(23,5333),(23,5334),(23,5335),(23,5336),(23,5337),(23,5338),(23,5339),(23,5340),(23,5341),(23,5342),(23,5343),(23,5344),(23,5345),(23,5346),(23,5347),(23,5348),(23,5349),(23,5350),(23,5351),(23,5352),(23,5353),(23,5354),(23,5355),(23,5356),(23,5357),(23,5358),(23,5359),(23,5360),(23,5361),(23,5362),(23,5363),(23,5364),(23,5365),(23,5366),(23,5367),(23,5368),(23,5369),(23,5370),(23,5371),(23,5372),(23,5373),(23,5376),(23,5378),(23,5379),(23,5380),(23,5381),(23,5384),(23,5385),(23,5386),(23,5387),(23,5389),(23,5390),(23,5391),(23,5392),(23,5393),(23,5394),(23,5395),(23,5396),(23,5397),(23,5398),(23,5399),(23,5400),(23,5401),(23,5402),(23,5403),(23,5507),(23,5508),(23,5509),(23,5510),(23,5511),(23,5512),(23,5513),(23,5514),(23,5515),(23,5516),(23,5517),(23,5518),(23,5519),(23,5520),(23,5521),(23,5522),(23,5523),(23,5524),(23,5525),(23,5526),(23,5527),(23,5528),(23,5529),(23,5530),(23,5531),(23,5532),(23,5533),(23,5534),(23,5535),(23,5536),(23,5537),(23,5538),(23,5539),(23,5540),(23,5541),(23,5542),(23,5625),(23,5626),(23,5627),(23,5628),(23,5629),(23,5630),(23,5631),(23,5632),(23,5633),(23,5634),(23,5635),(23,5636),(23,5637),(23,5638),(23,5639),(23,5640),(23,5641),(23,5642),(23,5643),(23,5644),(23,5645),(23,5646),(23,1923662),(23,1924532),(23,1929637),(23,2005016),(23,2019672),(23,2184457),(23,2185271),(23,2411629),(23,2499082),(23,3118538),(23,3138841),(23,3408643),(23,3473821),(23,4093520),(23,4276360),(23,4285366),(23,4285519),(23,4778496),(23,5020665),(23,6454651),(23,7592923),(23,7593075),(23,10500023),(23,10500476),(23,10504604),(23,11911051),(29,4400),(29,4925),(29,4926),(29,4927),(29,4928),(29,4929),(29,4930),(29,4931),(29,4932),(29,4933),(29,4934),(29,4935),(29,4936),(29,4937),(29,4938),(29,4939),(29,4940),(29,4941),(29,4942),(29,4943),(29,4944),(29,4945),(29,4946),(29,4947),(29,4948),(29,4949),(29,4950),(29,4952),(29,4953),(29,4954),(29,4955),(29,4956),(29,4957),(29,4958),(29,4959),(29,4960),(29,4961),(29,4962),(29,4964),(29,4965),(29,4966),(29,4967),(29,4968),(29,1924532),(29,10500023),(29,10504604),(30,4400),(30,4925),(30,4926),(30,4927),(30,4928),(30,4929),(30,4930),(30,4931),(30,4932),(30,4933),(30,4934),(30,4935),(30,4936),(30,4937),(30,4938),(30,4939),(30,4940),(30,4941),(30,4942),(30,4943),(30,4944),(30,4945),(30,4946),(30,4947),(30,4948),(30,4949),(30,4950),(30,4952),(30,4953),(30,4954),(30,4955),(30,4956),(30,4957),(30,4958),(30,4959),(30,4960),(30,4961),(30,4962),(30,4964),(30,4965),(30,4966),(30,4967),(30,4968),(30,1924532),(30,10500023),(30,10504604),(31,3612),(31,3770),(31,4400),(31,4925),(31,4926),(31,4927),(31,4928),(31,4929),(31,4930),(31,4931),(31,4932),(31,4933),(31,4934),(31,4935),(31,4936),(31,4937),(31,4938),(31,4939),(31,4940),(31,4941),(31,4942),(31,4943),(31,4944),(31,4945),(31,4946),(31,4947),(31,4948),(31,4949),(31,4950),(31,4952),(31,4953),(31,4954),(31,4955),(31,4956),(31,4957),(31,4958),(31,4959),(31,4960),(31,4961),(31,4962),(31,4964),(31,4965),(31,4966),(31,4967),(31,4968),(31,1924532),(31,10500023),(31,10504604),(32,4925),(32,4926),(32,4927),(32,4928),(32,4929),(32,4930),(32,4931),(32,4932),(32,4933),(32,4934),(32,4935),(32,4936),(32,4937),(32,4938),(32,4939),(32,4940),(32,4941),(32,4942),(32,4943),(32,4944),(32,4945),(32,4946),(32,4947),(32,4948),(32,4949),(32,4950),(32,4952),(32,4953),(32,4954),(32,4955),(32,4956),(32,4957),(32,4958),(32,4959),(32,4960),(32,4961),(32,4962),(32,4964),(32,4965),(32,4966),(32,4967),(32,4968),(32,1924532),(32,10500023),(32,10504604),(33,4925),(33,4926),(33,4927),(33,4928),(33,4929),(33,4930),(33,4931),(33,4932),(33,4933),(33,4934),(33,4935),(33,4936),(33,4937),(33,4938),(33,4939),(33,4940),(33,4941),(33,4942),(33,4943),(33,4944),(33,4945),(33,4946),(33,4947),(33,4948),(33,4949),(33,4950),(33,4952),(33,4953),(33,4954),(33,4955),(33,4956),(33,4957),(33,4958),(33,4959),(33,4960),(33,4961),(33,4962),(33,4964),(33,4965),(33,4966),(33,4967),(33,4968),(33,1924532),(33,10500023),(33,10504604),(34,4925),(34,4926),(34,4927),(34,4928),(34,4929),(34,4930),(34,4931),(34,4932),(34,4933),(34,4934),(34,4935),(34,4936),(34,4937),(34,4938),(34,4939),(34,4940),(34,4941),(34,4942),(34,4943),(34,4944),(34,4945),(34,4946),(34,4947),(34,4948),(34,4949),(34,4950),(34,4952),(34,4953),(34,4954),(34,4955),(34,4956),(34,4957),(34,4958),(34,4959),(34,4960),(34,4961),(34,4962),(34,4964),(34,4965),(34,4966),(34,4967),(34,4968),(34,1924532),(34,10500023),(34,10504604),(35,4925),(35,4926),(35,4927),(35,4928),(35,4929),(35,4930),(35,4931),(35,4932),(35,4933),(35,4934),(35,4935),(35,4936),(35,4937),(35,4938),(35,4939),(35,4940),(35,4941),(35,4942),(35,4943),(35,4944),(35,4945),(35,4946),(35,4947),(35,4948),(35,4949),(35,4950),(35,4952),(35,4953),(35,4954),(35,4955),(35,4956),(35,4957),(35,4958),(35,4959),(35,4960),(35,4961),(35,4962),(35,4964),(35,4965),(35,4966),(35,4967),(35,4968),(35,1924532),(35,10500023),(35,10504604),(36,4925),(36,4926),(36,4927),(36,4928),(36,4929),(36,4930),(36,4931),(36,4932),(36,4933),(36,4934),(36,4935),(36,4936),(36,4937),(36,4938),(36,4939),(36,4940),(36,4941),(36,4942),(36,4943),(36,4944),(36,4945),(36,4946),(36,4947),(36,4948),(36,4949),(36,4950),(36,4952),(36,4953),(36,4954),(36,4955),(36,4956),(36,4957),(36,4958),(36,4959),(36,4960),(36,4961),(36,4962),(36,4964),(36,4965),(36,4966),(36,4967),(36,4968),(36,1924532),(36,10500023),(36,10504604),(37,4925),(37,4926),(37,4927),(37,4928),(37,4929),(37,4930),(37,4931),(37,4932),(37,4933),(37,4934),(37,4935),(37,4936),(37,4937),(37,4938),(37,4939),(37,4940),(37,4941),(37,4942),(37,4943),(37,4944),(37,4945),(37,4946),(37,4947),(37,4948),(37,4949),(37,4950),(37,4952),(37,4953),(37,4954),(37,4955),(37,4956),(37,4957),(37,4958),(37,4959),(37,4960),(37,4961),(37,4962),(37,4964),(37,4965),(37,4966),(37,4967),(37,4968),(37,1924532),(37,10500023),(37,10504604),(38,4925),(38,4926),(38,4927),(38,4928),(38,4929),(38,4930),(38,4931),(38,4932),(38,4933),(38,4934),(38,4935),(38,4936),(38,4937),(38,4938),(38,4939),(38,4940),(38,4941),(38,4942),(38,4943),(38,4944),(38,4945),(38,4946),(38,4947),(38,4948),(38,4949),(38,4950),(38,4952),(38,4953),(38,4954),(38,4955),(38,4956),(38,4957),(38,4958),(38,4959),(38,4960),(38,4961),(38,4962),(38,4964),(38,4965),(38,4966),(38,4967),(38,4968),(38,1924532),(38,10500023),(38,10504604),(39,4925),(39,4926),(39,4927),(39,4928),(39,4929),(39,4930),(39,4931),(39,4932),(39,4933),(39,4934),(39,4935),(39,4936),(39,4937),(39,4938),(39,4939),(39,4940),(39,4941),(39,4942),(39,4943),(39,4944),(39,4945),(39,4946),(39,4947),(39,4948),(39,4949),(39,4950),(39,4952),(39,4953),(39,4954),(39,4955),(39,4956),(39,4957),(39,4958),(39,4959),(39,4960),(39,4961),(39,4962),(39,4964),(39,4965),(39,4966),(39,4967),(39,4968),(39,1924532),(39,10500023),(39,10504604),(40,4925),(40,4926),(40,4927),(40,4928),(40,4929),(40,4930),(40,4931),(40,4932),(40,4933),(40,4934),(40,4935),(40,4936),(40,4937),(40,4938),(40,4939),(40,4940),(40,4941),(40,4942),(40,4943),(40,4944),(40,4945),(40,4946),(40,4947),(40,4948),(40,4949),(40,4950),(40,4952),(40,4953),(40,4954),(40,4955),(40,4956),(40,4957),(40,4958),(40,4959),(40,4960),(40,4961),(40,4962),(40,4964),(40,4965),(40,4966),(40,4967),(40,4968),(40,1924532),(40,10500023),(40,10504604),(41,4925),(41,4926),(41,4927),(41,4928),(41,4929),(41,4930),(41,4931),(41,4932),(41,4933),(41,4934),(41,4935),(41,4936),(41,4937),(41,4938),(41,4939),(41,4940),(41,4941),(41,4942),(41,4943),(41,4944),(41,4945),(41,4946),(41,4947),(41,4948),(41,4949),(41,4950),(41,4952),(41,4953),(41,4954),(41,4955),(41,4956),(41,4957),(41,4958),(41,4959),(41,4960),(41,4961),(41,4962),(41,4964),(41,4965),(41,4966),(41,4967),(41,4968),(41,1924532),(41,10500023),(41,10504604),(42,3159),(42,3160),(42,3161),(42,3162),(42,3163),(42,3164),(42,3165),(42,3166),(42,3167),(42,3168),(42,3169),(42,3170),(42,3171),(42,3172),(42,3173),(42,3174),(42,3175),(42,3176),(42,3177),(42,3178),(42,3179),(42,3180),(42,3181),(42,3182),(42,3183),(42,3184),(42,3185),(42,3186),(42,3187),(42,3188),(42,3189),(42,3190),(42,3191),(42,3192),(42,3193),(42,3194),(42,3195),(42,3196),(42,3197),(42,3198),(42,3199),(42,3200),(42,3201),(42,3202),(42,3203),(42,3204),(42,3205),(42,3206),(42,3207),(42,3208),(42,3209),(42,3210),(42,3211),(42,3212),(42,3213),(42,3214),(42,3215),(42,3216),(42,3217),(42,3218),(42,3219),(42,3220),(42,3221),(42,3222),(42,3223),(42,3224),(42,3225),(42,3226),(42,3227),(42,3228),(42,3229),(42,3230),(42,3231),(42,3232),(42,3233),(42,3234),(42,3235),(42,3236),(42,3237),(42,3238),(42,3239),(42,3240),(42,3241),(42,3242),(42,3243),(42,3244),(42,3245),(42,3246),(42,3247),(42,3248),(42,3249),(42,3250),(42,3251),(42,3252),(42,3253),(42,3254),(42,3255),(42,3256),(42,3257),(42,3258),(42,3259),(42,3260),(42,3261),(42,3262),(42,3263),(42,3264),(42,3265),(42,3266),(42,3267),(42,3268),(42,3269),(42,3270),(42,3271),(42,3272),(42,3273),(42,3274),(42,3275),(42,3276),(42,3277),(42,3278),(42,3279),(42,3280),(42,3281),(42,3282),(42,3283),(42,3284),(42,3285),(42,3286),(42,3287),(42,3288),(42,3289),(42,3290),(42,3291),(42,3292),(42,3293),(42,3294),(42,3295),(42,3296),(42,3297),(42,3298),(42,3299),(42,3300),(42,3301),(42,3302),(42,3303),(42,3304),(42,3305),(42,3306),(42,3307),(42,3308),(42,3309),(42,3310),(42,3311),(42,3312),(42,3313),(42,3314),(42,3315),(42,3316),(42,3317),(42,3318),(42,3319),(42,3320),(42,3321),(42,3322),(42,3323),(42,3324),(42,3325),(42,3326),(42,3327),(42,3328),(42,3329),(42,3330),(42,3331),(42,3332),(42,3333),(42,3334),(42,3335),(42,3336),(42,3337),(42,3338),(42,3339),(42,3340),(42,3341),(42,3342),(42,3343),(42,3344),(42,3345),(42,3346),(42,3347),(42,3348),(42,3349),(42,3350),(42,3351),(42,3352),(42,3353),(42,3354),(42,3355),(42,3356),(42,3357),(42,3358),(42,3359),(42,3360),(42,3361),(42,3362),(42,3363),(42,3364),(42,3365),(42,3366),(42,3367),(42,3368),(42,3369),(42,3370),(42,3371),(42,3372),(42,3373),(42,3374),(42,3375),(42,3376),(42,3377),(42,3378),(42,3379),(42,3380),(42,3381),(42,3382),(42,3383),(42,3384),(42,3385),(42,3386),(42,3387),(42,3388),(42,3389),(42,3390),(42,3391),(42,3392),(42,3393),(42,3394),(42,3395),(42,3396),(42,3397),(42,3398),(42,3399),(42,3400),(42,3401),(42,3402),(42,3403),(42,3404),(42,3405),(42,3406),(42,3407),(42,3408),(42,3409),(42,3410),(42,3411),(42,3412),(42,3413),(42,3414),(42,3415),(42,3416),(42,3417),(42,3418),(42,3419),(42,3420),(42,3421),(42,3422),(42,3423),(42,3424),(42,3425),(42,3426),(42,3427),(42,3428),(42,3429),(42,3430),(42,3431),(42,3432),(42,3433),(42,3434),(42,3435),(42,3436),(42,3437),(42,3438),(42,3439),(42,3440),(42,3441),(42,3442),(42,3443),(42,3444),(42,3445),(42,3446),(42,3447),(42,3448),(42,3449),(42,3450),(42,3451),(42,3452),(42,3453),(42,3454),(42,3455),(42,3456),(42,3457),(42,3458),(42,3459),(42,3460),(42,3461),(42,3462),(42,3463),(42,3464),(42,3465),(42,3466),(42,3467),(42,3468),(42,3469),(42,3470),(42,3471),(42,3472),(42,3473),(42,3474),(42,3475),(42,3476),(42,3477),(42,3478),(42,3479),(42,3480),(42,3481),(42,3482),(42,3483),(42,3484),(42,3485),(42,3486),(42,3487),(42,3488),(42,3489),(42,3490),(42,3491),(42,3492),(42,3493),(42,3494),(42,3495),(42,3496),(42,3497),(42,3498),(42,3499),(42,3500),(42,3501),(42,3502),(42,3503),(42,3504),(42,3505),(42,3506),(42,3507),(42,3508),(42,3509),(42,3510),(42,3511),(42,3512),(42,3513),(42,3514),(42,3515),(42,3516),(42,3517),(42,3518),(42,3519),(42,3520),(42,3521),(42,3522),(42,3523),(42,3524),(42,3525),(42,3526),(42,3527),(42,3528),(42,3529),(42,3530),(42,3531),(42,3532),(42,3533),(42,3534),(42,3535),(42,3536),(42,3537),(42,3538),(42,3539),(42,3540),(42,3541),(42,3542),(42,3543),(42,3544),(42,3545),(42,3546),(42,3547),(42,3548),(42,3549),(42,3550),(42,3551),(42,3552),(42,3553),(42,3554),(42,3555),(42,3556),(42,3557),(42,3558),(42,3559),(42,3560),(42,3561),(42,3562),(42,3563),(42,3564),(42,3565),(42,3566),(42,3567),(42,3568),(42,3569),(42,3570),(42,3571),(42,3572),(42,3573),(42,3574),(42,3575),(42,3576),(42,3577),(42,3578),(42,3579),(42,3580),(42,3581),(42,3582),(42,3583),(42,3584),(42,3585),(42,3586),(42,3587),(42,3588),(42,3589),(42,3590),(42,3591),(42,3592),(42,3593),(42,3594),(42,3595),(42,3596),(42,3597),(42,3598),(42,3599),(42,3600),(42,3601),(42,3602),(42,3603),(42,3604),(42,3605),(42,3606),(42,3607),(42,3608),(42,3609),(42,3610),(42,3611),(42,3612),(42,3613),(42,3614),(42,3615),(42,3616),(42,3617),(42,3618),(42,3619),(42,3620),(42,3621),(42,3622),(42,3623),(42,3624),(42,3625),(42,3626),(42,3627),(42,3628),(42,3629),(42,3630),(42,3631),(42,3632),(42,3633),(42,3634),(42,3635),(42,3636),(42,3637),(42,3638),(42,3639),(42,3640),(42,3641),(42,3642),(42,3643),(42,3644),(42,3645),(42,3646),(42,3647),(42,3648),(42,3649),(42,3650),(42,3651),(42,3652),(42,3653),(42,3654),(42,3655),(42,3656),(42,3657),(42,3658),(42,3659),(42,3660),(42,3661),(42,3662),(42,3663),(42,3664),(42,3665),(42,3666),(42,3667),(42,3668),(42,3669),(42,3670),(42,3671),(42,3672),(42,3673),(42,3674),(42,3675),(42,3676),(42,3677),(42,3678),(42,3679),(42,3680),(42,3681),(42,3682),(42,3683),(42,3684),(42,3685),(42,3686),(42,3687),(42,3688),(42,3689),(42,3690),(42,3691),(42,3692),(42,3693),(42,3694),(42,3695),(42,3696),(42,3697),(42,3698),(42,3699),(42,3700),(42,3701),(42,3702),(42,3703),(42,3704),(42,3705),(42,3706),(42,3707),(42,3708),(42,3709),(42,3710),(42,3711),(42,3712),(42,3713),(42,3714),(42,3715),(42,3716),(42,3717),(42,3718),(42,3719),(42,3720),(42,3721),(42,3722),(42,3723),(42,3724),(42,3725),(42,3726),(42,3727),(42,3728),(42,3729),(42,3730),(42,3731),(42,3732),(42,3733),(42,3734),(42,3735),(42,3736),(42,3737),(42,3738),(42,3739),(42,3740),(42,3741),(42,3742),(42,3743),(42,3744),(42,3745),(42,3746),(42,3747),(42,3748),(42,3749),(42,3750),(42,3751),(42,3752),(42,3753),(42,3754),(42,3755),(42,3756),(42,3757),(42,3758),(42,3759),(42,3760),(42,3761),(42,3762),(42,3763),(42,3764),(42,3765),(42,3766),(42,3767),(42,3768),(42,3769),(42,3770),(42,3771),(42,3772),(42,3773),(42,3774),(42,3775),(42,3776),(42,3777),(42,3778),(42,3779),(42,3780),(42,3781),(42,3782),(42,3783),(42,3784),(42,3785),(42,3786),(42,3787),(42,3788),(42,3789),(42,3790),(42,3791),(42,3792),(42,3793),(42,3794),(42,3795),(42,3796),(42,3797),(42,3798),(42,3799),(42,3800),(42,3801),(42,3802),(42,3803),(42,3804),(42,3805),(42,3806),(42,3807),(42,3808),(42,3809),(42,3810),(42,3811),(42,3812),(42,3813),(42,3814),(42,3815),(42,3816),(42,3817),(42,3818),(42,3819),(42,3820),(42,3821),(42,3822),(42,3823),(42,3824),(42,3825),(42,3826),(42,3827),(42,3828),(42,3829),(42,3830),(42,3831),(42,3832),(42,3833),(42,3834),(42,3835),(42,3836),(42,3837),(42,3838),(42,3839),(42,3840),(42,3841),(42,3842),(42,3843),(42,3844),(42,3845),(42,3846),(42,3847),(42,3848),(42,3849),(42,3850),(42,3851),(42,3852),(42,3853),(42,3854),(42,3855),(42,3856),(42,3857),(42,3858),(42,3859),(42,3860),(42,3861),(42,3862),(42,3863),(42,3864),(42,3865),(42,3866),(42,3867),(42,3868),(42,3869),(42,3870),(42,3871),(42,3872),(42,3873),(42,3874),(42,3875),(42,3876),(42,3877),(42,3878),(42,3879),(42,3880),(42,3881),(42,3882),(42,3883),(42,3884),(42,3885),(42,3886),(42,3887),(42,3888),(42,3889),(42,3890),(42,3891),(42,3892),(42,3893),(42,3894),(42,3895),(42,3896),(42,3897),(42,3898),(42,3899),(42,3900),(42,3901),(42,3902),(42,3903),(42,3904),(42,3905),(42,3906),(42,3907),(42,3908),(42,3909),(42,3910),(42,3911),(42,3912),(42,3913),(42,3914),(42,3915),(42,3916),(42,3917),(42,3918),(42,3919),(42,3920),(42,3921),(42,3922),(42,3923),(42,3924),(42,3925),(42,3926),(42,3927),(42,3928),(42,3929),(42,3930),(42,3931),(42,3932),(42,3933),(42,3934),(42,3935),(42,3936),(42,3937),(42,3938),(42,3939),(42,3940),(42,3941),(42,3942),(42,3943),(42,3944),(42,3945),(42,3946),(42,3947),(42,3948),(42,3949),(42,3950),(42,3951),(42,3952),(42,3953),(42,3954),(42,3955),(42,3956),(42,3957),(42,3958),(42,3959),(42,3960),(42,3961),(42,3962),(42,3963),(42,3964),(42,3965),(42,3966),(42,3967),(42,3968),(42,3969),(42,3970),(42,3971),(42,3972),(42,3973),(42,3974),(42,3975),(42,3976),(42,3977),(42,3978),(42,3979),(42,3980),(42,3981),(42,3982),(42,3983),(42,3984),(42,3985),(42,3986),(42,3987),(42,3988),(42,3989),(42,3990),(42,3991),(42,3992),(42,3993),(42,3994),(42,3995),(42,3996),(42,3997),(42,3998),(42,3999),(42,4000),(42,4001),(42,4002),(42,4003),(42,4004),(42,4005),(42,4006),(42,4007),(42,4008),(42,4009),(42,4010),(42,4011),(42,4012),(42,4013),(42,4014),(42,4015),(42,4016),(42,4017),(42,4018),(42,4019),(42,4020),(42,4021),(42,4022),(42,4023),(42,4024),(42,4025),(42,4026),(42,4027),(42,4028),(42,4029),(42,4030),(42,4031),(42,4032),(42,4033),(42,4034),(42,4035),(42,4036),(42,4037),(42,4038),(42,4039),(42,4040),(42,4041),(42,4042),(42,4043),(42,4044),(42,4045),(42,4046),(42,4047),(42,4048),(42,4049),(42,4050),(42,4051),(42,4052),(42,4053),(42,4054),(42,4055),(42,4056),(42,4057),(42,4058),(42,4059),(42,4060),(42,4061),(42,4062),(42,4063),(42,4064),(42,4065),(42,4066),(42,4067),(42,4068),(42,4069),(42,4070),(42,4071),(42,4072),(42,4073),(42,4074),(42,4075),(42,4076),(42,4077),(42,4078),(42,4079),(42,4080),(42,4081),(42,4082),(42,4083),(42,4084),(42,4085),(42,4086),(42,4087),(42,4088),(42,4089),(42,4090),(42,4091),(42,4092),(42,4093),(42,4094),(42,4095),(42,4096),(42,4097),(42,4098),(42,4099),(42,4100),(42,4101),(42,4102),(42,4103),(42,4104),(42,4105),(42,4106),(42,4107),(42,4108),(42,4109),(42,4110),(42,4111),(42,4112),(42,4113),(42,4114),(42,4115),(42,4116),(42,4117),(42,4118),(42,4119),(42,4120),(42,4121),(42,4122),(42,4123),(42,4124),(42,4125),(42,4126),(42,4127),(42,4128),(42,4129),(42,4130),(42,4131),(42,4132),(42,4133),(42,4134),(42,4135),(42,4136),(42,4137),(42,4138),(42,4139),(42,4140),(42,4141),(42,4142),(42,4143),(42,4144),(42,4145),(42,4146),(42,4147),(42,4148),(42,4149),(42,4150),(42,4151),(42,4152),(42,4153),(42,4154),(42,4155),(42,4156),(42,4157),(42,4158),(42,4159),(42,4160),(42,4161),(42,4162),(42,4163),(42,4164),(42,4165),(42,4166),(42,4167),(42,4168),(42,4169),(42,4170),(42,4171),(42,4172),(42,4173),(42,4174),(42,4175),(42,4176),(42,4177),(42,4178),(42,4179),(42,4180),(42,4181),(42,4182),(42,4183),(42,4184),(42,4185),(42,4186),(42,4187),(42,4188),(42,4189),(42,4190),(42,4191),(42,4192),(42,4193),(42,4194),(42,4195),(42,4196),(42,4197),(42,4198),(42,4199),(42,4200),(42,4201),(42,4202),(42,4203),(42,4204),(42,4205),(42,4206),(42,4207),(42,4208),(42,4209),(42,4210),(42,4211),(42,4212),(42,4213),(42,4214),(42,4215),(42,4216),(42,4217),(42,4218),(42,4219),(42,4220),(42,4221),(42,4222),(42,4223),(42,4224),(42,4225),(42,4226),(42,4227),(42,4228),(42,4229),(42,4230),(42,4231),(42,4232),(42,4233),(42,4234),(42,4235),(42,4236),(42,4237),(42,4238),(42,4239),(42,4240),(42,4241),(42,4242),(42,4243),(42,4244),(42,4245),(42,4246),(42,4247),(42,4248),(42,4249),(42,4250),(42,4251),(42,4252),(42,4253),(42,4254),(42,4255),(42,4256),(42,4257),(42,4258),(42,4259),(42,4260),(42,4261),(42,4262),(42,4263),(42,4264),(42,4265),(42,4266),(42,4267),(42,4268),(42,4269),(42,4270),(42,4271),(42,4272),(42,4273),(42,4274),(42,4275),(42,4276),(42,4277),(42,4278),(42,4279),(42,4280),(42,4281),(42,4282),(42,4283),(42,4284),(42,4285),(42,4286),(42,4287),(42,4288),(42,4289),(42,4290),(42,4291),(42,4292),(42,4293),(42,4294),(42,4295),(42,4296),(42,4297),(42,4298),(42,4299),(42,4300),(42,4301),(42,4302),(42,4303),(42,4304),(42,4305),(42,4306),(42,4307),(42,4308),(42,4309),(42,4310),(42,4311),(42,4312),(42,4313),(42,4314),(42,4315),(42,4316),(42,4317),(42,4318),(42,4319),(42,4320),(42,4321),(42,4322),(42,4323),(42,4324),(42,4325),(42,4326),(42,4327),(42,4328),(42,4329),(42,4330),(42,4331),(42,4332),(42,4333),(42,4334),(42,4335),(42,4336),(42,4337),(42,4338),(42,4339),(42,4340),(42,4341),(42,4342),(42,4343),(42,4344),(42,4345),(42,4346),(42,4347),(42,4348),(42,4349),(42,4350),(42,4351),(42,4352),(42,4353),(42,4354),(42,4355),(42,4356),(42,4357),(42,4358),(42,4359),(42,4360),(42,4361),(42,4362),(42,4363),(42,4364),(42,4365),(42,4366),(42,4367),(42,4368),(42,4369),(42,4370),(42,4371),(42,4372),(42,4373),(42,4374),(42,4375),(42,4376),(42,4377),(42,4378),(42,4379),(42,4380),(42,4381),(42,4382),(42,4383),(42,4384),(42,4385),(42,4386),(42,4387),(42,4388),(42,4389),(42,4390),(42,4391),(42,4392),(42,4393),(42,4394),(42,4395),(42,4396),(42,4397),(42,4398),(42,4399),(42,4400),(42,4401),(42,4402),(42,4403),(42,4404),(42,4405),(42,4406),(42,4407),(42,4408),(42,4409),(42,4410),(42,4411),(42,4412),(42,4413),(42,4414),(42,4415),(42,4416),(42,4417),(42,4418),(42,4419),(42,4420),(42,4421),(42,4422),(42,4423),(42,4424),(42,4425),(42,4426),(42,4427),(42,4428),(42,4429),(42,4430),(42,4431),(42,4432),(42,4433),(42,4434),(42,4435),(42,4436),(42,4437),(42,4438),(42,4439),(42,4440),(42,4441),(42,4442),(42,4443),(42,4444),(42,4445),(42,4446),(42,4447),(42,4448),(42,4449),(42,4450),(42,4451),(42,4452),(42,4453),(42,4454),(42,4455),(42,4456),(42,4457),(42,4458),(42,4459),(42,4460),(42,4461),(42,4462),(42,4463),(42,4464),(42,4465),(42,4466),(42,4467),(42,4468),(42,4469),(42,4470),(42,4471),(42,4472),(42,4473),(42,4474),(42,4475),(42,4476),(42,4477),(42,4478),(42,4479),(42,4480),(42,4481),(42,4482),(42,4483),(42,4484),(42,4485),(42,4486),(42,4487),(42,4488),(42,4489),(42,4490),(42,4491),(42,4492),(42,4493),(42,4494),(42,4495),(42,4496),(42,4497),(42,4498),(42,4499),(42,4500),(42,4501),(42,4502),(42,4503),(42,4504),(42,4505),(42,4506),(42,4507),(42,4508),(42,4509),(42,4510),(42,4511),(42,4512),(42,4513),(42,4514),(42,4515),(42,4516),(42,4517),(42,4518),(42,4519),(42,4520),(42,4521),(42,4522),(42,4523),(42,4524),(42,4525),(42,4526),(42,4527),(42,4528),(42,4529),(42,4530),(42,4531),(42,4532),(42,4533),(42,4534),(42,4535),(42,4536),(42,4537),(42,4538),(42,4539),(42,4540),(42,4541),(42,4542),(42,4543),(42,4544),(42,4545),(42,4546),(42,4547),(42,4548),(42,4549),(42,4550),(42,4551),(42,4552),(42,4553),(42,4554),(42,4555),(42,4556),(42,4557),(42,4558),(42,4559),(42,4560),(42,4561),(42,4562),(42,4563),(42,4564),(42,4565),(42,4566),(42,4567),(42,4568),(42,4569),(42,4570),(42,4571),(42,4572),(42,4573),(42,4574),(42,4575),(42,4576),(42,4577),(42,4578),(42,4579),(42,4580),(42,4581),(42,4582),(42,4583),(42,4584),(42,4585),(42,4586),(42,4587),(42,4588),(42,4589),(42,4590),(42,4591),(42,4592),(42,4593),(42,4594),(42,4595),(42,4596),(42,4597),(42,4598),(42,4599),(42,4600),(42,4601),(42,4602),(42,4603),(42,4604),(42,4605),(42,4606),(42,4607),(42,4608),(42,4609),(42,4610),(42,4611),(42,4612),(42,4613),(42,4614),(42,4615),(42,4616),(42,4617),(42,4618),(42,4619),(42,4620),(42,4621),(42,4622),(42,4623),(42,4624),(42,4625),(42,4626),(42,4627),(42,4628),(42,4629),(42,4630),(42,4631),(42,4632),(42,4633),(42,4634),(42,4635),(42,4636),(42,4637),(42,4638),(42,4639),(42,4640),(42,4641),(42,4642),(42,4643),(42,4644),(42,4645),(42,4646),(42,4647),(42,4648),(42,4649),(42,4650),(42,4651),(42,4652),(42,4653),(42,4654),(42,4655),(42,4656),(42,4657),(42,4658),(42,4659),(42,4660),(42,4661),(42,4662),(42,4663),(42,4664),(42,4665),(42,4666),(42,4667),(42,4668),(42,4669),(42,4670),(42,4671),(42,4672),(42,4673),(42,4674),(42,4675),(42,4676),(42,4677),(42,4678),(42,4679),(42,4680),(42,4681),(42,4682),(42,4683),(42,4684),(42,4685),(42,4686),(42,4687),(42,4688),(42,4689),(42,4690),(42,4691),(42,4692),(42,4693),(42,4694),(42,4695),(42,4696),(42,4697),(42,4698),(42,4699),(42,4700),(42,4701),(42,4702),(42,4703),(42,4704),(42,4705),(42,4706),(42,4707),(42,4708),(42,4709),(42,4710),(42,4711),(42,4712),(42,4713),(42,4714),(42,4715),(42,4716),(42,4717),(42,4718),(42,4719),(42,4720),(42,4721),(42,4722),(42,4723),(42,4724),(42,4725),(42,4726),(42,4727),(42,4728),(42,4729),(42,4730),(42,4731),(42,4732),(42,4733),(42,4734),(42,4735),(42,4736),(42,4737),(42,4738),(42,4739),(42,4740),(42,4741),(42,4742),(42,4743),(42,4744),(42,4745),(42,4746),(42,4747),(42,4748),(42,4749),(42,4750),(42,4751),(42,4752),(42,4753),(42,4754),(42,4755),(42,4756),(42,4757),(42,4758),(42,4759),(42,4760),(42,4761),(42,4762),(42,4763),(42,4764),(42,4765),(42,4766),(42,4767),(42,4768),(42,4769),(42,4770),(42,4771),(42,4772),(42,4773),(42,4774),(42,4775),(42,4776),(42,4777),(42,4778),(42,4779),(42,4780),(42,4781),(42,4782),(42,4783),(42,4784),(42,4785),(42,4786),(42,4787),(42,4788),(42,4789),(42,4790),(42,4791),(42,4792),(42,4793),(42,4794),(42,4795),(42,4796),(42,4797),(42,4798),(42,4799),(42,4800),(42,4801),(42,4802),(42,4803),(42,4804),(42,4805),(42,4806),(42,4807),(42,4808),(42,4809),(42,4810),(42,4811),(42,4812),(42,4813),(42,4814),(42,4815),(42,4816),(42,4817),(42,4818),(42,4819),(42,4820),(42,4821),(42,4822),(42,4823),(42,4824),(42,4825),(42,4826),(42,4827),(42,4828),(42,4829),(42,4830),(42,4831),(42,4832),(42,4833),(42,4834),(42,4835),(42,4836),(42,4837),(42,4838),(42,4839),(42,4840),(42,4841),(42,4842),(42,4843),(42,4844),(42,4845),(42,4846),(42,4847),(42,4848),(42,4849),(42,4850),(42,4851),(42,4852),(42,4853),(42,4854),(42,4855),(42,4856),(42,4857),(42,4858),(42,4859),(42,4860),(42,4861),(42,4862),(42,4863),(42,4864),(42,4865),(42,4866),(42,4867),(42,4868),(42,4869),(42,4870),(42,4871),(42,4872),(42,4873),(42,4874),(42,4875),(42,4876),(42,4877),(42,4878),(42,4879),(42,4880),(42,4881),(42,4882),(42,4883),(42,4884),(42,4885),(42,4886),(42,4887),(42,4888),(42,4889),(42,4890),(42,4891),(42,4892),(42,4893),(42,4894),(42,4895),(42,4896),(42,4897),(42,4898),(42,4899),(42,4900),(42,4901),(42,4902),(42,4903),(42,4904),(42,4905),(42,4906),(42,4907),(42,4908),(42,4909),(42,4910),(42,4911),(42,4912),(42,4913),(42,4914),(42,4915),(42,4916),(42,4917),(42,4918),(42,4919),(42,4920),(42,4921),(42,4922),(42,4923),(42,4924),(42,4925),(42,4926),(42,4927),(42,4928),(42,4929),(42,4930),(42,4931),(42,4932),(42,4933),(42,4934),(42,4935),(42,4936),(42,4937),(42,4938),(42,4939),(42,4940),(42,4941),(42,4942),(42,4943),(42,4944),(42,4945),(42,4946),(42,4947),(42,4948),(42,4949),(42,4950),(42,4952),(42,4953),(42,4954),(42,4955),(42,4956),(42,4957),(42,4958),(42,4959),(42,4960),(42,4961),(42,4962),(42,4964),(42,4965),(42,4966),(42,4967),(42,4968),(42,4969),(42,4970),(42,4971),(42,4972),(42,4973),(42,4974),(42,4975),(42,4976),(42,4977),(42,4978),(42,4979),(42,4980),(42,4981),(42,4982),(42,4983),(42,4984),(42,4985),(42,4986),(42,4987),(42,4988),(42,4989),(42,4990),(42,4991),(42,4992),(42,4993),(42,4994),(42,4995),(42,4996),(42,4997),(42,4998),(42,4999),(42,5000),(42,5001),(42,5002),(42,5003),(42,5004),(42,5005),(42,5006),(42,5007),(42,5008),(42,5009),(42,5010),(42,5011),(42,5012),(42,5013),(42,5014),(42,5015),(42,5016),(42,5017),(42,5018),(42,5019),(42,5020),(42,5021),(42,5022),(42,5023),(42,5024),(42,5025),(42,5026),(42,5027),(42,5028),(42,5029),(42,5030),(42,5031),(42,5032),(42,5033),(42,5034),(42,5035),(42,5036),(42,5037),(42,5038),(42,5039),(42,5040),(42,5041),(42,5042),(42,5043),(42,5044),(42,5045),(42,5046),(42,5047),(42,5048),(42,5049),(42,5050),(42,5051),(42,5052),(42,5053),(42,5054),(42,5055),(42,5056),(42,5057),(42,5058),(42,5059),(42,5060),(42,5061),(42,5062),(42,5063),(42,5064),(42,5065),(42,5066),(42,5067),(42,5068),(42,5069),(42,5070),(42,5071),(42,5072),(42,5073),(42,5074),(42,5075),(42,5076),(42,5077),(42,5078),(42,5079),(42,5080),(42,5081),(42,5082),(42,5083),(42,5084),(42,5085),(42,5086),(42,5087),(42,5088),(42,5089),(42,5090),(42,5091),(42,5092),(42,5093),(42,5094),(42,5095),(42,5096),(42,5097),(42,5098),(42,5099),(42,5100),(42,5101),(42,5102),(42,5103),(42,5104),(42,5105),(42,5106),(42,5107),(42,5108),(42,5109),(42,5110),(42,5111),(42,5112),(42,5113),(42,5114),(42,5115),(42,5116),(42,5117),(42,5118),(42,5119),(42,5120),(42,5121),(42,5122),(42,5123),(42,5124),(42,5125),(42,5126),(42,5127),(42,5128),(42,5129),(42,5130),(42,5131),(42,5132),(42,5133),(42,5134),(42,5135),(42,5136),(42,5137),(42,5138),(42,5139),(42,5140),(42,5141),(42,5142),(42,5143),(42,5144),(42,5145),(42,5146),(42,5147),(42,5148),(42,5149),(42,5150),(42,5151),(42,5152),(42,5153),(42,5154),(42,5155),(42,5156),(42,5157),(42,5158),(42,5159),(42,5160),(42,5161),(42,5162),(42,5163),(42,5164),(42,5165),(42,5166),(42,5167),(42,5168),(42,5169),(42,5170),(42,5171),(42,5172),(42,5173),(42,5174),(42,5175),(42,5176),(42,5177),(42,5178),(42,5179),(42,5180),(42,5181),(42,5182),(42,5183),(42,5184),(42,5185),(42,5186),(42,5187),(42,5188),(42,5189),(42,5190),(42,5191),(42,5192),(42,5193),(42,5194),(42,5195),(42,5196),(42,5197),(42,5198),(42,5199),(42,5200),(42,5201),(42,5202),(42,5203),(42,5204),(42,5205),(42,5206),(42,5207),(42,5208),(42,5209),(42,5210),(42,5211),(42,5212),(42,5213),(42,5214),(42,5215),(42,5216),(42,5217),(42,5218),(42,5219),(42,5220),(42,5221),(42,5222),(42,5223),(42,5224),(42,5225),(42,5226),(42,5227),(42,5228),(42,5229),(42,5230),(42,5231),(42,5232),(42,5233),(42,5234),(42,5235),(42,5236),(42,5237),(42,5238),(42,5239),(42,5240),(42,5241),(42,5242),(42,5243),(42,5244),(42,5245),(42,5246),(42,5247),(42,5248),(42,5249),(42,5250),(42,5251),(42,5252),(42,5253),(42,5254),(42,5255),(42,5256),(42,5257),(42,5258),(42,5259),(42,5260),(42,5261),(42,5262),(42,5263),(42,5264),(42,5265),(42,5266),(42,5267),(42,5268),(42,5269),(42,5270),(42,5271),(42,5272),(42,5273),(42,5274),(42,5275),(42,5276),(42,5277),(42,5278),(42,5279),(42,5280),(42,5281),(42,5282),(42,5283),(42,5284),(42,5285),(42,5286),(42,5287),(42,5288),(42,5289),(42,5290),(42,5291),(42,5292),(42,5293),(42,5294),(42,5295),(42,5296),(42,5297),(42,5298),(42,5299),(42,5300),(42,5301),(42,5302),(42,5303),(42,5304),(42,5305),(42,5306),(42,5307),(42,5308),(42,5309),(42,5310),(42,5311),(42,5312),(42,5313),(42,5314),(42,5315),(42,5316),(42,5317),(42,5318),(42,5319),(42,5320),(42,5321),(42,5322),(42,5323),(42,5324),(42,5325),(42,5326),(42,5327),(42,5328),(42,5329),(42,5330),(42,5331),(42,5332),(42,5333),(42,5334),(42,5335),(42,5336),(42,5337),(42,5338),(42,5339),(42,5340),(42,5341),(42,5342),(42,5343),(42,5344),(42,5345),(42,5346),(42,5347),(42,5348),(42,5349),(42,5350),(42,5351),(42,5352),(42,5353),(42,5354),(42,5355),(42,5356),(42,5357),(42,5358),(42,5359),(42,5360),(42,5361),(42,5362),(42,5363),(42,5364),(42,5365),(42,5366),(42,5367),(42,5368),(42,5369),(42,5370),(42,5371),(42,5372),(42,5373),(42,5374),(42,5375),(42,5376),(42,5377),(42,5378),(42,5379),(42,5380),(42,5381),(42,5382),(42,5383),(42,5384),(42,5385),(42,5386),(42,5387),(42,5388),(42,5389),(42,5390),(42,5391),(42,5392),(42,5393),(42,5394),(42,5395),(42,5396),(42,5397),(42,5398),(42,5399),(42,5400),(42,5401),(42,5402),(42,5403),(42,5404),(42,5405),(42,5406),(42,5407),(42,5408),(42,5409),(42,5410),(42,5411),(42,5412),(42,5413),(42,5414),(42,5415),(42,5416),(42,5417),(42,5418),(42,5419),(42,5420),(42,5421),(42,5422),(42,5423),(42,5424),(42,5425),(42,5426),(42,5427),(42,5428),(42,5429),(42,5430),(42,5431),(42,5432),(42,5433),(42,5434),(42,5435),(42,5436),(42,5437),(42,5438),(42,5439),(42,5440),(42,5441),(42,5442),(42,5443),(42,5444),(42,5445),(42,5446),(42,5447),(42,5448),(42,5449),(42,5450),(42,5451),(42,5452),(42,5453),(42,5454),(42,5455),(42,5456),(42,5457),(42,5458),(42,5459),(42,5460),(42,5461),(42,5462),(42,5463),(42,5464),(42,5465),(42,5466),(42,5467),(42,5468),(42,5469),(42,5470),(42,5471),(42,5472),(42,5473),(42,5474),(42,5475),(42,5476),(42,5477),(42,5478),(42,5479),(42,5480),(42,5481),(42,5482),(42,5483),(42,5484),(42,5485),(42,5486),(42,5487),(42,5488),(42,5489),(42,5490),(42,5491),(42,5492),(42,5493),(42,5494),(42,5495),(42,5496),(42,5497),(42,5498),(42,5499),(42,5500),(42,5501),(42,5502),(42,5503),(42,5504),(42,5505),(42,5506),(42,5507),(42,5508),(42,5509),(42,5510),(42,5511),(42,5512),(42,5513),(42,5514),(42,5515),(42,5516),(42,5517),(42,5518),(42,5519),(42,5520),(42,5521),(42,5522),(42,5523),(42,5524),(42,5525),(42,5526),(42,5527),(42,5528),(42,5529),(42,5530),(42,5531),(42,5532),(42,5533),(42,5534),(42,5535),(42,5536),(42,5537),(42,5538),(42,5539),(42,5540),(42,5541),(42,5542),(42,5543),(42,5544),(42,5545),(42,5546),(42,5547),(42,5548),(42,5549),(42,5550),(42,5551),(42,5552),(42,5553),(42,5554),(42,5555),(42,5556),(42,5557),(42,5558),(42,5559),(42,5560),(42,5561),(42,5562),(42,5563),(42,5564),(42,5565),(42,5566),(42,5567),(42,5568),(42,5569),(42,5570),(42,5571),(42,5572),(42,5573),(42,5574),(42,5575),(42,5576),(42,5577),(42,5578),(42,5579),(42,5580),(42,5581),(42,5582),(42,5583),(42,5584),(42,5585),(42,5586),(42,5587),(42,5588),(42,5589),(42,5590),(42,5591),(42,5592),(42,5593),(42,5594),(42,5595),(42,5596),(42,5597),(42,5598),(42,5599),(42,5600),(42,5601),(42,5602),(42,5603),(42,5604),(42,5605),(42,5606),(42,5607),(42,5608),(42,5609),(42,5610),(42,5611),(42,5612),(42,5613),(42,5614),(42,5615),(42,5616),(42,5617),(42,5618),(42,5619),(42,5620),(42,5621),(42,5622),(42,5623),(42,5624),(42,5625),(42,5626),(42,5627),(42,5628),(42,5629),(42,5630),(42,5631),(42,5632),(42,5633),(42,5634),(42,5635),(42,5636),(42,5637),(42,5638),(42,5639),(42,5640),(42,5641),(42,5642),(42,5643),(42,5644),(42,5645),(42,5646),(42,279078),(42,1923662),(42,1924171),(42,1924532),(42,1925143),(42,1929637),(42,1998532),(42,1998542),(42,1998584),(42,2005016),(42,2019672),(42,2052982),(42,2116660),(42,2184457),(42,2185271),(42,2185858),(42,2316497),(42,2316517),(42,2411629),(42,2413243),(42,2415585),(42,2415620),(42,2479040),(42,2499002),(42,2499035),(42,2499082),(42,2812698),(42,3118538),(42,3138835),(42,3138841),(42,3145145),(42,3408643),(42,3409478),(42,3411630),(42,3411741),(42,3473821),(42,3474011),(42,3535020),(42,3881459),(42,4041912),(42,4093520),(42,4093692),(42,4156345),(42,4276360),(42,4285366),(42,4285519),(42,4777963),(42,4778470),(42,4778496),(42,4778522),(42,4869166),(42,5019394),(42,5019404),(42,5020365),(42,5020595),(42,5020614),(42,5020665),(42,5020681),(42,5252498),(42,5498759),(42,5555962),(42,5556050),(42,5641077),(42,5908265),(42,5908547),(42,6113699),(42,6454651),(42,6456567),(42,6711408),(42,7592215),(42,7592923),(42,7593075),(42,7593225),(42,7717502),(42,7717702),(42,7718652),(42,10498697),(42,10499269),(42,10499672),(42,10500023),(42,10500094),(42,10500382),(42,10500476),(42,10501002),(42,10502714),(42,10504604),(42,10505475),(42,10688837),(42,10689767),(42,11567319),(42,11569100),(42,11569394),(42,11910622),(42,11911051),(42,12364794),(42,12370243),(42,12370942),(42,12371093),(42,12371094),(43,4925),(43,4926),(43,4927),(43,4928),(43,4929),(43,4930),(43,4931),(43,4932),(43,4933),(43,4934),(43,4935),(43,4936),(43,4937),(43,4938),(43,4939),(43,4940),(43,4941),(43,4942),(43,4943),(43,4944),(43,4945),(43,4946),(43,4947),(43,4948),(43,4949),(43,4950),(43,4952),(43,4953),(43,4954),(43,4955),(43,4956),(43,4957),(43,4958),(43,4959),(43,4960),(43,4961),(43,4962),(43,4964),(43,4965),(43,4966),(43,4967),(43,4968),(43,1924532),(43,10500023),(43,10504604),(61,3159),(61,3160),(61,3161),(61,3162),(61,3163),(61,3164),(61,3165),(61,3166),(61,3167),(61,3168),(61,3169),(61,3170),(61,3171),(61,3172),(61,3173),(61,3174),(61,3175),(61,3176),(61,3177),(61,3178),(61,3179),(61,3180),(61,3181),(61,3182),(61,3183),(61,3184),(61,3185),(61,3186),(61,3187),(61,3188),(61,3189),(61,3190),(61,3191),(61,3192),(61,3193),(61,3194),(61,3195),(61,3196),(61,3197),(61,3198),(61,3199),(61,3200),(61,3201),(61,3202),(61,3203),(61,3204),(61,3205),(61,3206),(61,3207),(61,3208),(61,3209),(61,3210),(61,3211),(61,3212),(61,3213),(61,3214),(61,3215),(61,3216),(61,3217),(61,3218),(61,3219),(61,3220),(61,3221),(61,3222),(61,3223),(61,3224),(61,3225),(61,3226),(61,3227),(61,3228),(61,3229),(61,3230),(61,3231),(61,3232),(61,3233),(61,3234),(61,3235),(61,3236),(61,3237),(61,3238),(61,3239),(61,3240),(61,3241),(61,3242),(61,3243),(61,3244),(61,3245),(61,3246),(61,3247),(61,3248),(61,3249),(61,3250),(61,3251),(61,3252),(61,3253),(61,3254),(61,3255),(61,3256),(61,3257),(61,3258),(61,3259),(61,3260),(61,3261),(61,3262),(61,3263),(61,3264),(61,3265),(61,3266),(61,3267),(61,3268),(61,3269),(61,3270),(61,3271),(61,3272),(61,3273),(61,3274),(61,3275),(61,3276),(61,3277),(61,3278),(61,3279),(61,3280),(61,3281),(61,3282),(61,3283),(61,3284),(61,3285),(61,3286),(61,3287),(61,3288),(61,3289),(61,3290),(61,3291),(61,3292),(61,3293),(61,3294),(61,3295),(61,3296),(61,3297),(61,3298),(61,3299),(61,3300),(61,3301),(61,3302),(61,3303),(61,3304),(61,3305),(61,3306),(61,3307),(61,3308),(61,3309),(61,3310),(61,3311),(61,3312),(61,3313),(61,3314),(61,3315),(61,3316),(61,3317),(61,3318),(61,3319),(61,3320),(61,3321),(61,3322),(61,3323),(61,3324),(61,3325),(61,3326),(61,3327),(61,3328),(61,3329),(61,3330),(61,3331),(61,3332),(61,3333),(61,3334),(61,3335),(61,3336),(61,3337),(61,3338),(61,3339),(61,3340),(61,3341),(61,3342),(61,3343),(61,3344),(61,3345),(61,3346),(61,3347),(61,3348),(61,3349),(61,3350),(61,3351),(61,3352),(61,3353),(61,3354),(61,3355),(61,3356),(61,3357),(61,3358),(61,3359),(61,3360),(61,3361),(61,3362),(61,3363),(61,3364),(61,3365),(61,3366),(61,3367),(61,3368),(61,3369),(61,3370),(61,3371),(61,3372),(61,3373),(61,3374),(61,3375),(61,3376),(61,3377),(61,3378),(61,3379),(61,3380),(61,3381),(61,3382),(61,3383),(61,3384),(61,3385),(61,3386),(61,3387),(61,3388),(61,3389),(61,3390),(61,3391),(61,3392),(61,3393),(61,3394),(61,3395),(61,3396),(61,3397),(61,3398),(61,3399),(61,3400),(61,3401),(61,3402),(61,3403),(61,3404),(61,3405),(61,3406),(61,3407),(61,3408),(61,3409),(61,3410),(61,3411),(61,3412),(61,3413),(61,3414),(61,3415),(61,3416),(61,3417),(61,3418),(61,3419),(61,3420),(61,3421),(61,3422),(61,3423),(61,3424),(61,3425),(61,3426),(61,3427),(61,3428),(61,3429),(61,3430),(61,3431),(61,3432),(61,3433),(61,3434),(61,3435),(61,3436),(61,3437),(61,3438),(61,3439),(61,3440),(61,3441),(61,3442),(61,3443),(61,3444),(61,3445),(61,3446),(61,3447),(61,3448),(61,3449),(61,3450),(61,3451),(61,3452),(61,3453),(61,3454),(61,3455),(61,3456),(61,3457),(61,3458),(61,3459),(61,3460),(61,3461),(61,3462),(61,3463),(61,3464),(61,3465),(61,3466),(61,3467),(61,3468),(61,3469),(61,3470),(61,3471),(61,3472),(61,3473),(61,3474),(61,3475),(61,3476),(61,3477),(61,3478),(61,3479),(61,3480),(61,3481),(61,3482),(61,3483),(61,3484),(61,3485),(61,3486),(61,3487),(61,3488),(61,3489),(61,3490),(61,3491),(61,3492),(61,3493),(61,3494),(61,3495),(61,3496),(61,3497),(61,3498),(61,3499),(61,3500),(61,3501),(61,3502),(61,3503),(61,3504),(61,3505),(61,3506),(61,3507),(61,3508),(61,3509),(61,3510),(61,3511),(61,3512),(61,3513),(61,3514),(61,3515),(61,3516),(61,3517),(61,3518),(61,3519),(61,3520),(61,3521),(61,3522),(61,3523),(61,3524),(61,3525),(61,3526),(61,3527),(61,3528),(61,3529),(61,3530),(61,3531),(61,3532),(61,3533),(61,3534),(61,3535),(61,3536),(61,3537),(61,3538),(61,3539),(61,3540),(61,3541),(61,3542),(61,3543),(61,3544),(61,3545),(61,3546),(61,3547),(61,3548),(61,3549),(61,3550),(61,3551),(61,3552),(61,3553),(61,3554),(61,3555),(61,3556),(61,3557),(61,3558),(61,3559),(61,3560),(61,3561),(61,3562),(61,3563),(61,3564),(61,3565),(61,3566),(61,3567),(61,3568),(61,3569),(61,3570),(61,3571),(61,3572),(61,3573),(61,3574),(61,3575),(61,3576),(61,3577),(61,3578),(61,3579),(61,3580),(61,3581),(61,3582),(61,3583),(61,3584),(61,3585),(61,3586),(61,3587),(61,3588),(61,3589),(61,3590),(61,3591),(61,3592),(61,3593),(61,3594),(61,3595),(61,3596),(61,3597),(61,3598),(61,3599),(61,3600),(61,3601),(61,3602),(61,3603),(61,3604),(61,3605),(61,3606),(61,3607),(61,3608),(61,3609),(61,3610),(61,3611),(61,3612),(61,3613),(61,3614),(61,3615),(61,3616),(61,3617),(61,3618),(61,3619),(61,3620),(61,3621),(61,3622),(61,3623),(61,3624),(61,3625),(61,3626),(61,3627),(61,3628),(61,3629),(61,3630),(61,3631),(61,3632),(61,3633),(61,3634),(61,3635),(61,3636),(61,3637),(61,3638),(61,3639),(61,3640),(61,3641),(61,3642),(61,3643),(61,3644),(61,3645),(61,3646),(61,3647),(61,3648),(61,3649),(61,3650),(61,3651),(61,3652),(61,3653),(61,3654),(61,3655),(61,3656),(61,3657),(61,3658),(61,3659),(61,3660),(61,3661),(61,3662),(61,3663),(61,3664),(61,3665),(61,3666),(61,3667),(61,3668),(61,3669),(61,3670),(61,3671),(61,3672),(61,3673),(61,3674),(61,3675),(61,3676),(61,3677),(61,3678),(61,3679),(61,3680),(61,3681),(61,3682),(61,3683),(61,3684),(61,3685),(61,3686),(61,3687),(61,3688),(61,3689),(61,3690),(61,3691),(61,3692),(61,3693),(61,3694),(61,3695),(61,3696),(61,3697),(61,3698),(61,3699),(61,3700),(61,3701),(61,3702),(61,3703),(61,3704),(61,3705),(61,3706),(61,3707),(61,3708),(61,3709),(61,3710),(61,3711),(61,3712),(61,3713),(61,3714),(61,3715),(61,3716),(61,3717),(61,3718),(61,3719),(61,3720),(61,3721),(61,3722),(61,3723),(61,3724),(61,3725),(61,3726),(61,3727),(61,3728),(61,3729),(61,3730),(61,3731),(61,3732),(61,3733),(61,3734),(61,3735),(61,3736),(61,3737),(61,3738),(61,3739),(61,3740),(61,3741),(61,3742),(61,3743),(61,3744),(61,3745),(61,3746),(61,3747),(61,3748),(61,3749),(61,3750),(61,3751),(61,3752),(61,3753),(61,3754),(61,3755),(61,3756),(61,3757),(61,3758),(61,3759),(61,3760),(61,3761),(61,3762),(61,3763),(61,3764),(61,3765),(61,3766),(61,3767),(61,3768),(61,3769),(61,3770),(61,3771),(61,3772),(61,3773),(61,3774),(61,3775),(61,3776),(61,3777),(61,3778),(61,3779),(61,3780),(61,3781),(61,3782),(61,3783),(61,3784),(61,3785),(61,3786),(61,3787),(61,3788),(61,3789),(61,3790),(61,3791),(61,3792),(61,3793),(61,3794),(61,3795),(61,3796),(61,3797),(61,3798),(61,3799),(61,3800),(61,3801),(61,3802),(61,3803),(61,3804),(61,3805),(61,3806),(61,3807),(61,3808),(61,3809),(61,3810),(61,3811),(61,3812),(61,3813),(61,3814),(61,3815),(61,3816),(61,3817),(61,3818),(61,3819),(61,3820),(61,3821),(61,3822),(61,3823),(61,3824),(61,3825),(61,3826),(61,3827),(61,3828),(61,3829),(61,3830),(61,3831),(61,3832),(61,3833),(61,3834),(61,3835),(61,3836),(61,3837),(61,3838),(61,3839),(61,3840),(61,3841),(61,3842),(61,3843),(61,3844),(61,3845),(61,3846),(61,3847),(61,3848),(61,3849),(61,3850),(61,3851),(61,3852),(61,3853),(61,3854),(61,3855),(61,3856),(61,3857),(61,3858),(61,3859),(61,3860),(61,3861),(61,3862),(61,3863),(61,3864),(61,3865),(61,3866),(61,3867),(61,3868),(61,3869),(61,3870),(61,3871),(61,3872),(61,3873),(61,3874),(61,3875),(61,3876),(61,3877),(61,3878),(61,3879),(61,3880),(61,3881),(61,3882),(61,3883),(61,3884),(61,3885),(61,3886),(61,3887),(61,3888),(61,3889),(61,3890),(61,3891),(61,3892),(61,3893),(61,3894),(61,3895),(61,3896),(61,3897),(61,3898),(61,3899),(61,3900),(61,3901),(61,3902),(61,3903),(61,3904),(61,3905),(61,3906),(61,3907),(61,3908),(61,3909),(61,3910),(61,3911),(61,3912),(61,3913),(61,3914),(61,3915),(61,3916),(61,3917),(61,3918),(61,3919),(61,3920),(61,3921),(61,3922),(61,3923),(61,3924),(61,3925),(61,3926),(61,3927),(61,3928),(61,3929),(61,3930),(61,3931),(61,3932),(61,3933),(61,3934),(61,3935),(61,3936),(61,3937),(61,3938),(61,3939),(61,3940),(61,3941),(61,3942),(61,3943),(61,3944),(61,3945),(61,3946),(61,3947),(61,3948),(61,3949),(61,3950),(61,3951),(61,3952),(61,3953),(61,3954),(61,3955),(61,3956),(61,3957),(61,3958),(61,3959),(61,3960),(61,3961),(61,3962),(61,3963),(61,3964),(61,3965),(61,3966),(61,3967),(61,3968),(61,3969),(61,3970),(61,3971),(61,3972),(61,3973),(61,3974),(61,3975),(61,3976),(61,3977),(61,3978),(61,3979),(61,3980),(61,3981),(61,3982),(61,3983),(61,3984),(61,3985),(61,3986),(61,3987),(61,3988),(61,3989),(61,3990),(61,3991),(61,3992),(61,3993),(61,3994),(61,3995),(61,3996),(61,3997),(61,3998),(61,3999),(61,4000),(61,4001),(61,4002),(61,4003),(61,4004),(61,4005),(61,4006),(61,4007),(61,4008),(61,4009),(61,4010),(61,4011),(61,4012),(61,4013),(61,4014),(61,4015),(61,4016),(61,4017),(61,4018),(61,4019),(61,4020),(61,4021),(61,4022),(61,4023),(61,4024),(61,4025),(61,4026),(61,4027),(61,4028),(61,4029),(61,4030),(61,4031),(61,4032),(61,4033),(61,4034),(61,4035),(61,4036),(61,4037),(61,4038),(61,4039),(61,4040),(61,4041),(61,4042),(61,4043),(61,4044),(61,4045),(61,4046),(61,4047),(61,4048),(61,4049),(61,4050),(61,4051),(61,4052),(61,4053),(61,4054),(61,4055),(61,4056),(61,4057),(61,4058),(61,4059),(61,4060),(61,4061),(61,4062),(61,4063),(61,4064),(61,4065),(61,4066),(61,4067),(61,4068),(61,4069),(61,4070),(61,4071),(61,4072),(61,4073),(61,4074),(61,4075),(61,4076),(61,4077),(61,4078),(61,4079),(61,4080),(61,4081),(61,4082),(61,4083),(61,4084),(61,4085),(61,4086),(61,4087),(61,4088),(61,4089),(61,4090),(61,4091),(61,4092),(61,4093),(61,4094),(61,4095),(61,4096),(61,4097),(61,4098),(61,4099),(61,4100),(61,4101),(61,4102),(61,4103),(61,4104),(61,4105),(61,4106),(61,4107),(61,4108),(61,4109),(61,4110),(61,4111),(61,4112),(61,4113),(61,4114),(61,4115),(61,4116),(61,4117),(61,4118),(61,4119),(61,4120),(61,4121),(61,4122),(61,4123),(61,4124),(61,4125),(61,4126),(61,4127),(61,4128),(61,4129),(61,4130),(61,4131),(61,4132),(61,4133),(61,4134),(61,4135),(61,4136),(61,4137),(61,4138),(61,4139),(61,4140),(61,4141),(61,4142),(61,4143),(61,4144),(61,4145),(61,4146),(61,4147),(61,4148),(61,4149),(61,4150),(61,4151),(61,4152),(61,4153),(61,4154),(61,4155),(61,4156),(61,4157),(61,4158),(61,4159),(61,4160),(61,4161),(61,4162),(61,4163),(61,4164),(61,4165),(61,4166),(61,4167),(61,4168),(61,4169),(61,4170),(61,4171),(61,4172),(61,4173),(61,4174),(61,4175),(61,4176),(61,4177),(61,4178),(61,4179),(61,4180),(61,4181),(61,4182),(61,4183),(61,4184),(61,4185),(61,4186),(61,4187),(61,4188),(61,4189),(61,4190),(61,4191),(61,4192),(61,4193),(61,4194),(61,4195),(61,4196),(61,4197),(61,4198),(61,4199),(61,4200),(61,4201),(61,4202),(61,4203),(61,4204),(61,4205),(61,4206),(61,4207),(61,4208),(61,4209),(61,4210),(61,4211),(61,4212),(61,4213),(61,4214),(61,4215),(61,4216),(61,4217),(61,4218),(61,4219),(61,4220),(61,4221),(61,4222),(61,4223),(61,4224),(61,4225),(61,4226),(61,4227),(61,4228),(61,4229),(61,4230),(61,4231),(61,4232),(61,4233),(61,4234),(61,4235),(61,4236),(61,4237),(61,4238),(61,4239),(61,4240),(61,4241),(61,4242),(61,4243),(61,4244),(61,4245),(61,4246),(61,4247),(61,4248),(61,4249),(61,4250),(61,4251),(61,4252),(61,4253),(61,4254),(61,4255),(61,4256),(61,4257),(61,4258),(61,4259),(61,4260),(61,4261),(61,4262),(61,4263),(61,4264),(61,4265),(61,4266),(61,4267),(61,4268),(61,4269),(61,4270),(61,4271),(61,4272),(61,4273),(61,4274),(61,4275),(61,4276),(61,4277),(61,4278),(61,4279),(61,4280),(61,4281),(61,4282),(61,4283),(61,4284),(61,4285),(61,4286),(61,4287),(61,4288),(61,4289),(61,4290),(61,4291),(61,4292),(61,4293),(61,4294),(61,4295),(61,4296),(61,4297),(61,4298),(61,4299),(61,4300),(61,4301),(61,4302),(61,4303),(61,4304),(61,4305),(61,4306),(61,4307),(61,4308),(61,4309),(61,4310),(61,4311),(61,4312),(61,4313),(61,4314),(61,4315),(61,4316),(61,4317),(61,4318),(61,4319),(61,4320),(61,4321),(61,4322),(61,4323),(61,4324),(61,4325),(61,4326),(61,4327),(61,4328),(61,4329),(61,4330),(61,4331),(61,4332),(61,4333),(61,4334),(61,4335),(61,4336),(61,4337),(61,4338),(61,4339),(61,4340),(61,4341),(61,4342),(61,4343),(61,4344),(61,4345),(61,4346),(61,4347),(61,4348),(61,4349),(61,4350),(61,4351),(61,4352),(61,4353),(61,4354),(61,4355),(61,4356),(61,4357),(61,4358),(61,4359),(61,4360),(61,4361),(61,4362),(61,4363),(61,4364),(61,4365),(61,4366),(61,4367),(61,4368),(61,4369),(61,4370),(61,4371),(61,4372),(61,4373),(61,4374),(61,4375),(61,4376),(61,4377),(61,4378),(61,4379),(61,4380),(61,4381),(61,4382),(61,4383),(61,4384),(61,4385),(61,4386),(61,4387),(61,4388),(61,4389),(61,4390),(61,4391),(61,4392),(61,4393),(61,4394),(61,4395),(61,4396),(61,4397),(61,4398),(61,4399),(61,4400),(61,4401),(61,4402),(61,4403),(61,4404),(61,4405),(61,4406),(61,4407),(61,4408),(61,4409),(61,4410),(61,4411),(61,4412),(61,4413),(61,4414),(61,4415),(61,4416),(61,4417),(61,4418),(61,4419),(61,4420),(61,4421),(61,4422),(61,4423),(61,4424),(61,4425),(61,4426),(61,4427),(61,4428),(61,4429),(61,4430),(61,4431),(61,4432),(61,4433),(61,4434),(61,4435),(61,4436),(61,4437),(61,4438),(61,4439),(61,4440),(61,4441),(61,4442),(61,4443),(61,4444),(61,4445),(61,4446),(61,4447),(61,4448),(61,4449),(61,4450),(61,4451),(61,4452),(61,4453),(61,4454),(61,4455),(61,4456),(61,4457),(61,4458),(61,4459),(61,4460),(61,4461),(61,4462),(61,4463),(61,4464),(61,4465),(61,4466),(61,4467),(61,4468),(61,4469),(61,4470),(61,4471),(61,4472),(61,4473),(61,4474),(61,4475),(61,4476),(61,4477),(61,4478),(61,4479),(61,4480),(61,4481),(61,4482),(61,4483),(61,4484),(61,4485),(61,4486),(61,4487),(61,4488),(61,4489),(61,4490),(61,4491),(61,4492),(61,4493),(61,4494),(61,4495),(61,4496),(61,4497),(61,4498),(61,4499),(61,4500),(61,4501),(61,4502),(61,4503),(61,4504),(61,4505),(61,4506),(61,4507),(61,4508),(61,4509),(61,4510),(61,4511),(61,4512),(61,4513),(61,4514),(61,4515),(61,4516),(61,4517),(61,4518),(61,4519),(61,4520),(61,4521),(61,4522),(61,4523),(61,4524),(61,4525),(61,4526),(61,4527),(61,4528),(61,4529),(61,4530),(61,4531),(61,4532),(61,4533),(61,4534),(61,4535),(61,4536),(61,4537),(61,4538),(61,4539),(61,4540),(61,4541),(61,4542),(61,4543),(61,4544),(61,4545),(61,4546),(61,4547),(61,4548),(61,4549),(61,4550),(61,4551),(61,4552),(61,4553),(61,4554),(61,4555),(61,4556),(61,4557),(61,4558),(61,4559),(61,4560),(61,4561),(61,4562),(61,4563),(61,4564),(61,4565),(61,4566),(61,4567),(61,4568),(61,4569),(61,4570),(61,4571),(61,4572),(61,4573),(61,4574),(61,4575),(61,4576),(61,4577),(61,4578),(61,4579),(61,4580),(61,4581),(61,4582),(61,4583),(61,4584),(61,4585),(61,4586),(61,4587),(61,4588),(61,4589),(61,4590),(61,4591),(61,4592),(61,4593),(61,4594),(61,4595),(61,4596),(61,4597),(61,4598),(61,4599),(61,4600),(61,4601),(61,4602),(61,4603),(61,4604),(61,4605),(61,4606),(61,4607),(61,4608),(61,4609),(61,4610),(61,4611),(61,4612),(61,4613),(61,4614),(61,4615),(61,4616),(61,4617),(61,4618),(61,4619),(61,4620),(61,4621),(61,4622),(61,4623),(61,4624),(61,4625),(61,4626),(61,4627),(61,4628),(61,4629),(61,4630),(61,4631),(61,4632),(61,4633),(61,4634),(61,4635),(61,4636),(61,4637),(61,4638),(61,4639),(61,4640),(61,4641),(61,4642),(61,4643),(61,4644),(61,4645),(61,4646),(61,4647),(61,4648),(61,4649),(61,4650),(61,4651),(61,4652),(61,4653),(61,4654),(61,4655),(61,4656),(61,4657),(61,4658),(61,4659),(61,4660),(61,4661),(61,4662),(61,4663),(61,4664),(61,4665),(61,4666),(61,4667),(61,4668),(61,4669),(61,4670),(61,4671),(61,4672),(61,4673),(61,4674),(61,4675),(61,4676),(61,4677),(61,4678),(61,4679),(61,4680),(61,4681),(61,4682),(61,4683),(61,4684),(61,4685),(61,4686),(61,4687),(61,4688),(61,4689),(61,4690),(61,4691),(61,4692),(61,4693),(61,4694),(61,4695),(61,4696),(61,4697),(61,4698),(61,4699),(61,4700),(61,4701),(61,4702),(61,4703),(61,4704),(61,4705),(61,4706),(61,4707),(61,4708),(61,4709),(61,4710),(61,4711),(61,4712),(61,4713),(61,4714),(61,4715),(61,4716),(61,4717),(61,4718),(61,4719),(61,4720),(61,4721),(61,4722),(61,4723),(61,4724),(61,4725),(61,4726),(61,4727),(61,4728),(61,4729),(61,4730),(61,4731),(61,4732),(61,4733),(61,4734),(61,4735),(61,4736),(61,4737),(61,4738),(61,4739),(61,4740),(61,4741),(61,4742),(61,4743),(61,4744),(61,4745),(61,4746),(61,4747),(61,4748),(61,4749),(61,4750),(61,4751),(61,4752),(61,4753),(61,4754),(61,4755),(61,4756),(61,4757),(61,4758),(61,4759),(61,4760),(61,4761),(61,4762),(61,4763),(61,4764),(61,4765),(61,4766),(61,4767),(61,4768),(61,4769),(61,4770),(61,4771),(61,4772),(61,4773),(61,4774),(61,4775),(61,4776),(61,4777),(61,4778),(61,4779),(61,4780),(61,4781),(61,4782),(61,4783),(61,4784),(61,4785),(61,4786),(61,4787),(61,4788),(61,4789),(61,4790),(61,4791),(61,4792),(61,4793),(61,4794),(61,4795),(61,4796),(61,4797),(61,4798),(61,4799),(61,4800),(61,4801),(61,4802),(61,4803),(61,4804),(61,4805),(61,4806),(61,4807),(61,4808),(61,4809),(61,4810),(61,4811),(61,4812),(61,4813),(61,4814),(61,4815),(61,4816),(61,4817),(61,4818),(61,4819),(61,4820),(61,4821),(61,4822),(61,4823),(61,4824),(61,4825),(61,4826),(61,4827),(61,4828),(61,4829),(61,4830),(61,4831),(61,4832),(61,4833),(61,4834),(61,4835),(61,4836),(61,4837),(61,4838),(61,4839),(61,4840),(61,4841),(61,4842),(61,4843),(61,4844),(61,4845),(61,4846),(61,4847),(61,4848),(61,4849),(61,4850),(61,4851),(61,4852),(61,4853),(61,4854),(61,4855),(61,4856),(61,4857),(61,4858),(61,4859),(61,4860),(61,4861),(61,4862),(61,4863),(61,4864),(61,4865),(61,4866),(61,4867),(61,4868),(61,4869),(61,4870),(61,4871),(61,4872),(61,4873),(61,4874),(61,4875),(61,4876),(61,4877),(61,4878),(61,4879),(61,4880),(61,4881),(61,4882),(61,4883),(61,4884),(61,4885),(61,4886),(61,4887),(61,4888),(61,4889),(61,4890),(61,4891),(61,4892),(61,4893),(61,4894),(61,4895),(61,4896),(61,4897),(61,4898),(61,4899),(61,4900),(61,4901),(61,4902),(61,4903),(61,4904),(61,4905),(61,4906),(61,4907),(61,4908),(61,4909),(61,4910),(61,4911),(61,4912),(61,4913),(61,4914),(61,4915),(61,4916),(61,4917),(61,4918),(61,4919),(61,4920),(61,4921),(61,4922),(61,4923),(61,4924),(61,4925),(61,4926),(61,4927),(61,4928),(61,4929),(61,4930),(61,4931),(61,4932),(61,4933),(61,4934),(61,4935),(61,4936),(61,4937),(61,4938),(61,4939),(61,4940),(61,4941),(61,4942),(61,4943),(61,4944),(61,4945),(61,4946),(61,4947),(61,4948),(61,4949),(61,4950),(61,4952),(61,4953),(61,4954),(61,4955),(61,4956),(61,4957),(61,4958),(61,4959),(61,4960),(61,4961),(61,4962),(61,4964),(61,4965),(61,4966),(61,4967),(61,4968),(61,4969),(61,4970),(61,4971),(61,4972),(61,4973),(61,4974),(61,4975),(61,4976),(61,4977),(61,4978),(61,4979),(61,4980),(61,4981),(61,4982),(61,4983),(61,4984),(61,4985),(61,4986),(61,4987),(61,4988),(61,4989),(61,4990),(61,4991),(61,4992),(61,4993),(61,4994),(61,4995),(61,4996),(61,4997),(61,4998),(61,4999),(61,5000),(61,5001),(61,5002),(61,5003),(61,5004),(61,5005),(61,5006),(61,5007),(61,5008),(61,5009),(61,5010),(61,5011),(61,5012),(61,5013),(61,5014),(61,5015),(61,5016),(61,5017),(61,5018),(61,5019),(61,5020),(61,5021),(61,5022),(61,5023),(61,5024),(61,5025),(61,5026),(61,5027),(61,5028),(61,5029),(61,5030),(61,5031),(61,5032),(61,5033),(61,5034),(61,5035),(61,5036),(61,5037),(61,5038),(61,5039),(61,5040),(61,5041),(61,5042),(61,5043),(61,5044),(61,5045),(61,5046),(61,5047),(61,5048),(61,5049),(61,5050),(61,5051),(61,5052),(61,5053),(61,5054),(61,5055),(61,5056),(61,5057),(61,5058),(61,5059),(61,5060),(61,5061),(61,5062),(61,5063),(61,5064),(61,5065),(61,5066),(61,5067),(61,5068),(61,5069),(61,5070),(61,5071),(61,5072),(61,5073),(61,5074),(61,5075),(61,5076),(61,5077),(61,5078),(61,5079),(61,5080),(61,5081),(61,5082),(61,5083),(61,5084),(61,5085),(61,5086),(61,5087),(61,5088),(61,5089),(61,5090),(61,5091),(61,5092),(61,5093),(61,5094),(61,5095),(61,5096),(61,5097),(61,5098),(61,5099),(61,5100),(61,5101),(61,5102),(61,5103),(61,5104),(61,5105),(61,5106),(61,5107),(61,5108),(61,5109),(61,5110),(61,5111),(61,5112),(61,5113),(61,5114),(61,5115),(61,5116),(61,5117),(61,5118),(61,5119),(61,5120),(61,5121),(61,5122),(61,5123),(61,5124),(61,5125),(61,5126),(61,5127),(61,5128),(61,5129),(61,5130),(61,5131),(61,5132),(61,5133),(61,5134),(61,5135),(61,5136),(61,5137),(61,5138),(61,5139),(61,5140),(61,5141),(61,5142),(61,5143),(61,5144),(61,5145),(61,5146),(61,5147),(61,5148),(61,5149),(61,5150),(61,5151),(61,5152),(61,5153),(61,5154),(61,5155),(61,5156),(61,5157),(61,5158),(61,5159),(61,5160),(61,5161),(61,5162),(61,5163),(61,5164),(61,5165),(61,5166),(61,5167),(61,5168),(61,5169),(61,5170),(61,5171),(61,5172),(61,5173),(61,5174),(61,5175),(61,5176),(61,5177),(61,5178),(61,5179),(61,5180),(61,5181),(61,5182),(61,5183),(61,5184),(61,5185),(61,5186),(61,5187),(61,5188),(61,5189),(61,5190),(61,5191),(61,5192),(61,5193),(61,5194),(61,5195),(61,5196),(61,5197),(61,5198),(61,5199),(61,5200),(61,5201),(61,5202),(61,5203),(61,5204),(61,5205),(61,5206),(61,5207),(61,5208),(61,5209),(61,5210),(61,5211),(61,5212),(61,5213),(61,5214),(61,5215),(61,5216),(61,5217),(61,5218),(61,5219),(61,5220),(61,5221),(61,5222),(61,5223),(61,5224),(61,5225),(61,5226),(61,5227),(61,5228),(61,5229),(61,5230),(61,5231),(61,5232),(61,5233),(61,5234),(61,5235),(61,5236),(61,5237),(61,5238),(61,5239),(61,5240),(61,5241),(61,5242),(61,5243),(61,5244),(61,5245),(61,5246),(61,5247),(61,5248),(61,5249),(61,5250),(61,5251),(61,5252),(61,5253),(61,5254),(61,5255),(61,5256),(61,5257),(61,5258),(61,5259),(61,5260),(61,5261),(61,5262),(61,5263),(61,5264),(61,5265),(61,5266),(61,5267),(61,5268),(61,5269),(61,5270),(61,5271),(61,5272),(61,5273),(61,5274),(61,5275),(61,5276),(61,5277),(61,5278),(61,5279),(61,5280),(61,5281),(61,5282),(61,5283),(61,5284),(61,5285),(61,5286),(61,5287),(61,5288),(61,5289),(61,5290),(61,5291),(61,5292),(61,5293),(61,5294),(61,5295),(61,5296),(61,5297),(61,5298),(61,5299),(61,5300),(61,5301),(61,5302),(61,5303),(61,5304),(61,5305),(61,5306),(61,5307),(61,5308),(61,5309),(61,5310),(61,5311),(61,5312),(61,5313),(61,5314),(61,5315),(61,5316),(61,5317),(61,5318),(61,5319),(61,5320),(61,5321),(61,5322),(61,5323),(61,5324),(61,5325),(61,5326),(61,5327),(61,5328),(61,5329),(61,5330),(61,5331),(61,5332),(61,5333),(61,5334),(61,5335),(61,5336),(61,5337),(61,5338),(61,5339),(61,5340),(61,5341),(61,5342),(61,5343),(61,5344),(61,5345),(61,5346),(61,5347),(61,5348),(61,5349),(61,5350),(61,5351),(61,5352),(61,5353),(61,5354),(61,5355),(61,5356),(61,5357),(61,5358),(61,5359),(61,5360),(61,5361),(61,5362),(61,5363),(61,5364),(61,5365),(61,5366),(61,5367),(61,5368),(61,5369),(61,5370),(61,5371),(61,5372),(61,5373),(61,5374),(61,5375),(61,5376),(61,5377),(61,5378),(61,5379),(61,5380),(61,5381),(61,5382),(61,5383),(61,5384),(61,5385),(61,5386),(61,5387),(61,5388),(61,5389),(61,5390),(61,5391),(61,5392),(61,5393),(61,5394),(61,5395),(61,5396),(61,5397),(61,5398),(61,5399),(61,5400),(61,5401),(61,5402),(61,5403),(61,5404),(61,5405),(61,5406),(61,5407),(61,5408),(61,5409),(61,5410),(61,5411),(61,5412),(61,5413),(61,5414),(61,5415),(61,5416),(61,5417),(61,5418),(61,5419),(61,5420),(61,5421),(61,5422),(61,5423),(61,5424),(61,5425),(61,5426),(61,5427),(61,5428),(61,5429),(61,5430),(61,5431),(61,5432),(61,5433),(61,5434),(61,5435),(61,5436),(61,5437),(61,5438),(61,5439),(61,5440),(61,5441),(61,5442),(61,5443),(61,5444),(61,5445),(61,5446),(61,5447),(61,5448),(61,5449),(61,5450),(61,5451),(61,5452),(61,5453),(61,5454),(61,5455),(61,5456),(61,5457),(61,5458),(61,5459),(61,5460),(61,5461),(61,5462),(61,5463),(61,5464),(61,5465),(61,5466),(61,5467),(61,5468),(61,5469),(61,5470),(61,5471),(61,5472),(61,5473),(61,5474),(61,5475),(61,5476),(61,5477),(61,5478),(61,5479),(61,5480),(61,5481),(61,5482),(61,5483),(61,5484),(61,5485),(61,5486),(61,5487),(61,5488),(61,5489),(61,5490),(61,5491),(61,5492),(61,5493),(61,5494),(61,5495),(61,5496),(61,5497),(61,5498),(61,5499),(61,5500),(61,5501),(61,5502),(61,5503),(61,5504),(61,5505),(61,5506),(61,5507),(61,5508),(61,5509),(61,5510),(61,5511),(61,5512),(61,5513),(61,5514),(61,5515),(61,5516),(61,5517),(61,5518),(61,5519),(61,5520),(61,5521),(61,5522),(61,5523),(61,5524),(61,5525),(61,5526),(61,5527),(61,5528),(61,5529),(61,5530),(61,5531),(61,5532),(61,5533),(61,5534),(61,5535),(61,5536),(61,5537),(61,5538),(61,5539),(61,5540),(61,5541),(61,5542),(61,5543),(61,5544),(61,5545),(61,5546),(61,5547),(61,5548),(61,5549),(61,5550),(61,5551),(61,5552),(61,5553),(61,5554),(61,5555),(61,5556),(61,5557),(61,5558),(61,5559),(61,5560),(61,5561),(61,5562),(61,5563),(61,5564),(61,5565),(61,5566),(61,5567),(61,5568),(61,5569),(61,5570),(61,5571),(61,5572),(61,5573),(61,5574),(61,5575),(61,5576),(61,5577),(61,5578),(61,5579),(61,5580),(61,5581),(61,5582),(61,5583),(61,5584),(61,5585),(61,5586),(61,5587),(61,5588),(61,5589),(61,5590),(61,5591),(61,5592),(61,5593),(61,5594),(61,5595),(61,5596),(61,5597),(61,5598),(61,5599),(61,5600),(61,5601),(61,5602),(61,5603),(61,5604),(61,5605),(61,5606),(61,5607),(61,5608),(61,5609),(61,5610),(61,5611),(61,5612),(61,5613),(61,5614),(61,5615),(61,5616),(61,5617),(61,5618),(61,5619),(61,5620),(61,5621),(61,5622),(61,5623),(61,5624),(61,5625),(61,5626),(61,5627),(61,5628),(61,5629),(61,5630),(61,5631),(61,5632),(61,5633),(61,5634),(61,5635),(61,5636),(61,5637),(61,5638),(61,5639),(61,5640),(61,5641),(61,5642),(61,5643),(61,5644),(61,5645),(61,5646),(61,279078),(61,1923662),(61,1924171),(61,1924532),(61,1925143),(61,1929637),(61,1998532),(61,1998542),(61,1998584),(61,2005016),(61,2019672),(61,2052982),(61,2116660),(61,2184457),(61,2185271),(61,2185858),(61,2316497),(61,2316517),(61,2411629),(61,2413243),(61,2415585),(61,2415620),(61,2479040),(61,2499002),(61,2499035),(61,2499082),(61,2812698),(61,3118538),(61,3138835),(61,3138841),(61,3145145),(61,3408643),(61,3409478),(61,3411630),(61,3411741),(61,3473821),(61,3474011),(61,3535020),(61,3881459),(61,4041912),(61,4093520),(61,4093692),(61,4156345),(61,4276360),(61,4285366),(61,4285519),(61,4777963),(61,4778470),(61,4778496),(61,4778522),(61,4869166),(61,5019394),(61,5019404),(61,5020365),(61,5020595),(61,5020614),(61,5020665),(61,5020681),(61,5252498),(61,5498759),(61,5555962),(61,5556050),(61,5641077),(61,5908265),(61,5908547),(61,6113699),(61,6454651),(61,6456567),(61,6711408),(61,7592215),(61,7592923),(61,7593075),(61,7593225),(61,7717502),(61,7717702),(61,7718652),(61,10498697),(61,10499269),(61,10499672),(61,10500023),(61,10500094),(61,10500382),(61,10500476),(61,10501002),(61,10502714),(61,10504604),(61,10505475),(61,10688837),(61,10689767),(61,11567319),(61,11569100),(61,11569394),(61,11910622),(61,11911051),(61,12364794),(61,12370243),(61,12370942),(61,12371093),(61,12371094),(98,3253),(98,3271),(98,3277),(98,3345),(98,3472),(98,3473),(98,3477),(98,3480),(98,3483),(98,3501),(98,3538),(98,3598),(98,3607),(98,3612),(98,3770),(98,3963),(98,4017),(98,4018),(98,4019),(98,4021),(98,4070),(98,4079),(98,4088),(98,4094),(98,4099),(98,4238),(98,4400),(98,4402),(98,4421),(98,4478),(98,4496),(98,4549),(98,4682),(98,4717),(98,4720),(98,4730),(98,4802),(98,4811),(98,4839),(98,4848),(98,4851),(98,4917),(98,4919),(98,4934),(98,4962),(98,5005),(98,5010),(98,5106),(98,5310),(98,5395),(98,5539),(98,5619),(98,5020681),(98,10688837),(98,11569100),(98,12364794),(98,12371094),(103,3166),(103,3354),(103,3376),(103,3538),(103,3612),(103,3770),(103,3854),(103,3863),(103,4019),(103,4025),(103,4057),(103,4079),(103,4084),(103,4352),(103,4371),(103,4400),(103,4421),(103,4438),(103,4440),(103,4453),(103,4469),(103,4475),(103,4549),(103,4698),(103,4707),(103,4708),(103,4711),(103,4720),(103,4721),(103,4848),(103,4879),(103,4917),(103,4962),(103,5106),(103,5395),(103,5634),(103,5643),(103,5646),(103,3118538),(225,3345),(225,3538),(225,4036),(225,4400),(225,4617),(225,4720),(225,4879),(225,4911),(225,4917),(225,4918),(225,4919),(225,4962),(225,5106),(225,5393),(225,5456),(225,5517),(225,5522),(225,5526),(225,5528),(225,5539),(225,5541),(225,5646),(280,3163),(280,3166),(280,3168),(280,3170),(280,3171),(280,3180),(280,3181),(280,3183),(280,3192),(280,3194),(280,3199),(280,3207),(280,3226),(280,3227),(280,3228),(280,3231),(280,3232),(280,3237),(280,3244),(280,3247),(280,3248),(280,3253),(280,3267),(280,3272),(280,3277),(280,3283),(280,3293),(280,3302),(280,3305),(280,3306),(280,3314),(280,3322),(280,3328),(280,3329),(280,3332),(280,3335),(280,3336),(280,3338),(280,3343),(280,3344),(280,3345),(280,3351),(280,3353),(280,3354),(280,3360),(280,3367),(280,3370),(280,3376),(280,3386),(280,3432),(280,3435),(280,3446),(280,3457),(280,3461),(280,3472),(280,3473),(280,3474),(280,3480),(280,3494),(280,3509),(280,3514),(280,3526),(280,3538),(280,3539),(280,3557),(280,3558),(280,3565),(280,3598),(280,3607),(280,3612),(280,3658),(280,3674),(280,3684),(280,3707),(280,3719),(280,3722),(280,3730),(280,3731),(280,3739),(280,3741),(280,3742),(280,3744),(280,3745),(280,3746),(280,3750),(280,3754),(280,3756),(280,3763),(280,3764),(280,3766),(280,3770),(280,3779),(280,3782),(280,3790),(280,3817),(280,3823),(280,3854),(280,3857),(280,3863),(280,3887),(280,3903),(280,3905),(280,3906),(280,3909),(280,3912),(280,3915),(280,3917),(280,3922),(280,3924),(280,3926),(280,3928),(280,3933),(280,3934),(280,3936),(280,3937),(280,3938),(280,3939),(280,3940),(280,3941),(280,3942),(280,3944),(280,3949),(280,3963),(280,3964),(280,3984),(280,4001),(280,4019),(280,4025),(280,4029),(280,4030),(280,4036),(280,4037),(280,4050),(280,4055),(280,4057),(280,4062),(280,4079),(280,4080),(280,4088),(280,4094),(280,4098),(280,4099),(280,4101),(280,4112),(280,4157),(280,4183),(280,4205),(280,4210),(280,4211),(280,4228),(280,4232),(280,4236),(280,4238),(280,4254),(280,4271),(280,4274),(280,4276),(280,4300),(280,4305),(280,4306),(280,4319),(280,4324),(280,4329),(280,4338),(280,4340),(280,4341),(280,4342),(280,4348),(280,4350),(280,4352),(280,4358),(280,4359),(280,4362),(280,4363),(280,4366),(280,4367),(280,4375),(280,4376),(280,4377),(280,4383),(280,4385),(280,4392),(280,4394),(280,4400),(280,4402),(280,4411),(280,4416),(280,4417),(280,4421),(280,4426),(280,4429),(280,4430),(280,4438),(280,4440),(280,4441),(280,4443),(280,4446),(280,4452),(280,4453),(280,4461),(280,4463),(280,4469),(280,4470),(280,4475),(280,4477),(280,4478),(280,4479),(280,4480),(280,4482),(280,4489),(280,4491),(280,4493),(280,4495),(280,4496),(280,4501),(280,4517),(280,4530),(280,4531),(280,4537),(280,4538),(280,4549),(280,4562),(280,4580),(280,4602),(280,4617),(280,4618),(280,4650),(280,4673),(280,4682),(280,4691),(280,4693),(280,4697),(280,4708),(280,4720),(280,4721),(280,4731),(280,4737),(280,4741),(280,4753),(280,4756),(280,4759),(280,4760),(280,4765),(280,4767),(280,4775),(280,4790),(280,4793),(280,4801),(280,4806),(280,4811),(280,4828),(280,4839),(280,4848),(280,4851),(280,4859),(280,4879),(280,4883),(280,4900),(280,4904),(280,4911),(280,4917),(280,4918),(280,4919),(280,4932),(280,4933),(280,4934),(280,4935),(280,4937),(280,4941),(280,4942),(280,4943),(280,4945),(280,4946),(280,4947),(280,4949),(280,4950),(280,4954),(280,4955),(280,4956),(280,4957),(280,4958),(280,4961),(280,4962),(280,4964),(280,4965),(280,4966),(280,4967),(280,4968),(280,4972),(280,4974),(280,4978),(280,4984),(280,5000),(280,5003),(280,5005),(280,5010),(280,5033),(280,5034),(280,5051),(280,5055),(280,5079),(280,5091),(280,5092),(280,5095),(280,5106),(280,5115),(280,5116),(280,5121),(280,5122),(280,5123),(280,5124),(280,5126),(280,5128),(280,5130),(280,5133),(280,5136),(280,5137),(280,5140),(280,5147),(280,5153),(280,5156),(280,5165),(280,5181),(280,5184),(280,5190),(280,5195),(280,5196),(280,5200),(280,5201),(280,5204),(280,5209),(280,5210),(280,5217),(280,5219),(280,5233),(280,5242),(280,5247),(280,5252),(280,5260),(280,5266),(280,5268),(280,5269),(280,5278),(280,5281),(280,5282),(280,5310),(280,5328),(280,5337),(280,5338),(280,5341),(280,5344),(280,5345),(280,5348),(280,5351),(280,5352),(280,5353),(280,5354),(280,5368),(280,5370),(280,5394),(280,5395),(280,5401),(280,5406),(280,5408),(280,5409),(280,5414),(280,5423),(280,5438),(280,5456),(280,5482),(280,5484),(280,5485),(280,5492),(280,5500),(280,5504),(280,5517),(280,5519),(280,5522),(280,5527),(280,5528),(280,5538),(280,5539),(280,5562),(280,5564),(280,5572),(280,5575),(280,5583),(280,5589),(280,5594),(280,5596),(280,5597),(280,5599),(280,5615),(280,5619),(280,5631),(280,5638),(280,5643),(280,5644),(280,5646),(280,1924532),(280,1929637),(280,2052982),(280,2499035),(280,2499082),(280,3145145),(280,3409478),(280,3411630),(280,4093692),(280,4156345),(280,4285366),(280,4778496),(280,4869166),(280,5020365),(280,5020614),(280,5020681),(280,5252498),(280,5555962),(280,5908547),(280,6113699),(280,7593225),(280,7717702),(280,7718652),(280,10501002),(280,10504604),(280,10689767),(280,12371094),(281,3163),(281,3166),(281,3168),(281,3170),(281,3171),(281,3180),(281,3181),(281,3183),(281,3192),(281,3194),(281,3199),(281,3207),(281,3226),(281,3227),(281,3228),(281,3231),(281,3232),(281,3237),(281,3244),(281,3247),(281,3248),(281,3253),(281,3267),(281,3272),(281,3277),(281,3283),(281,3293),(281,3302),(281,3305),(281,3306),(281,3314),(281,3322),(281,3328),(281,3329),(281,3332),(281,3335),(281,3336),(281,3338),(281,3343),(281,3344),(281,3345),(281,3351),(281,3353),(281,3354),(281,3360),(281,3367),(281,3370),(281,3376),(281,3386),(281,3432),(281,3435),(281,3446),(281,3457),(281,3461),(281,3472),(281,3473),(281,3474),(281,3480),(281,3494),(281,3509),(281,3514),(281,3526),(281,3538),(281,3539),(281,3557),(281,3558),(281,3565),(281,3598),(281,3607),(281,3612),(281,3658),(281,3674),(281,3684),(281,3707),(281,3719),(281,3722),(281,3730),(281,3731),(281,3739),(281,3741),(281,3742),(281,3744),(281,3745),(281,3746),(281,3750),(281,3754),(281,3756),(281,3763),(281,3764),(281,3766),(281,3770),(281,3779),(281,3782),(281,3790),(281,3817),(281,3823),(281,3854),(281,3857),(281,3863),(281,3887),(281,3903),(281,3905),(281,3906),(281,3909),(281,3912),(281,3915),(281,3917),(281,3922),(281,3924),(281,3926),(281,3928),(281,3933),(281,3934),(281,3936),(281,3937),(281,3938),(281,3939),(281,3940),(281,3941),(281,3942),(281,3944),(281,3949),(281,3963),(281,3964),(281,3984),(281,4001),(281,4019),(281,4025),(281,4029),(281,4030),(281,4036),(281,4037),(281,4050),(281,4055),(281,4057),(281,4062),(281,4079),(281,4080),(281,4088),(281,4094),(281,4098),(281,4099),(281,4101),(281,4112),(281,4157),(281,4183),(281,4205),(281,4210),(281,4211),(281,4228),(281,4232),(281,4236),(281,4238),(281,4254),(281,4271),(281,4274),(281,4276),(281,4300),(281,4305),(281,4306),(281,4319),(281,4324),(281,4329),(281,4338),(281,4340),(281,4341),(281,4342),(281,4348),(281,4350),(281,4352),(281,4358),(281,4359),(281,4362),(281,4363),(281,4366),(281,4367),(281,4375),(281,4376),(281,4377),(281,4383),(281,4385),(281,4392),(281,4394),(281,4400),(281,4402),(281,4411),(281,4416),(281,4417),(281,4421),(281,4426),(281,4429),(281,4430),(281,4438),(281,4440),(281,4441),(281,4443),(281,4446),(281,4452),(281,4453),(281,4461),(281,4463),(281,4469),(281,4470),(281,4475),(281,4477),(281,4478),(281,4479),(281,4480),(281,4482),(281,4489),(281,4491),(281,4493),(281,4495),(281,4496),(281,4501),(281,4517),(281,4530),(281,4531),(281,4537),(281,4538),(281,4549),(281,4562),(281,4580),(281,4602),(281,4617),(281,4618),(281,4650),(281,4673),(281,4682),(281,4691),(281,4693),(281,4697),(281,4708),(281,4720),(281,4721),(281,4731),(281,4737),(281,4741),(281,4753),(281,4756),(281,4759),(281,4760),(281,4765),(281,4767),(281,4775),(281,4790),(281,4793),(281,4801),(281,4806),(281,4811),(281,4828),(281,4839),(281,4848),(281,4851),(281,4859),(281,4879),(281,4883),(281,4900),(281,4904),(281,4911),(281,4917),(281,4918),(281,4919),(281,4932),(281,4933),(281,4934),(281,4935),(281,4937),(281,4941),(281,4942),(281,4943),(281,4945),(281,4946),(281,4947),(281,4949),(281,4950),(281,4954),(281,4955),(281,4956),(281,4957),(281,4958),(281,4961),(281,4962),(281,4964),(281,4965),(281,4966),(281,4967),(281,4968),(281,4972),(281,4974),(281,4978),(281,4984),(281,5000),(281,5003),(281,5005),(281,5010),(281,5033),(281,5034),(281,5051),(281,5055),(281,5079),(281,5091),(281,5092),(281,5095),(281,5106),(281,5115),(281,5116),(281,5121),(281,5122),(281,5123),(281,5124),(281,5126),(281,5128),(281,5130),(281,5133),(281,5136),(281,5137),(281,5140),(281,5147),(281,5153),(281,5156),(281,5165),(281,5181),(281,5184),(281,5190),(281,5195),(281,5196),(281,5200),(281,5201),(281,5204),(281,5209),(281,5210),(281,5217),(281,5219),(281,5233),(281,5242),(281,5247),(281,5252),(281,5260),(281,5266),(281,5268),(281,5269),(281,5278),(281,5281),(281,5282),(281,5310),(281,5328),(281,5337),(281,5338),(281,5341),(281,5344),(281,5345),(281,5348),(281,5351),(281,5352),(281,5353),(281,5354),(281,5368),(281,5370),(281,5394),(281,5395),(281,5401),(281,5406),(281,5408),(281,5409),(281,5414),(281,5423),(281,5438),(281,5456),(281,5482),(281,5484),(281,5485),(281,5492),(281,5500),(281,5504),(281,5517),(281,5519),(281,5522),(281,5527),(281,5528),(281,5538),(281,5539),(281,5562),(281,5564),(281,5572),(281,5575),(281,5583),(281,5589),(281,5594),(281,5596),(281,5597),(281,5599),(281,5615),(281,5619),(281,5631),(281,5638),(281,5643),(281,5644),(281,5646),(281,1924532),(281,1929637),(281,2052982),(281,2499035),(281,2499082),(281,3145145),(281,3409478),(281,3411630),(281,4093692),(281,4156345),(281,4285366),(281,4778496),(281,4869166),(281,5020365),(281,5020614),(281,5020681),(281,5252498),(281,5555962),(281,5908547),(281,6113699),(281,7593225),(281,7717702),(281,7718652),(281,10501002),(281,10504604),(281,10689767),(281,12371094),(282,3163),(282,3166),(282,3168),(282,3170),(282,3171),(282,3180),(282,3181),(282,3183),(282,3192),(282,3194),(282,3199),(282,3207),(282,3226),(282,3227),(282,3228),(282,3231),(282,3232),(282,3237),(282,3244),(282,3247),(282,3248),(282,3253),(282,3267),(282,3272),(282,3277),(282,3283),(282,3293),(282,3302),(282,3305),(282,3306),(282,3314),(282,3322),(282,3328),(282,3329),(282,3332),(282,3335),(282,3336),(282,3338),(282,3343),(282,3344),(282,3345),(282,3351),(282,3353),(282,3354),(282,3360),(282,3367),(282,3370),(282,3376),(282,3386),(282,3432),(282,3435),(282,3446),(282,3457),(282,3461),(282,3472),(282,3473),(282,3474),(282,3480),(282,3494),(282,3509),(282,3514),(282,3526),(282,3538),(282,3539),(282,3557),(282,3558),(282,3565),(282,3598),(282,3607),(282,3612),(282,3658),(282,3674),(282,3684),(282,3707),(282,3719),(282,3722),(282,3730),(282,3731),(282,3739),(282,3741),(282,3742),(282,3744),(282,3745),(282,3746),(282,3750),(282,3754),(282,3756),(282,3763),(282,3764),(282,3766),(282,3770),(282,3779),(282,3782),(282,3790),(282,3817),(282,3823),(282,3854),(282,3857),(282,3863),(282,3887),(282,3903),(282,3905),(282,3906),(282,3909),(282,3912),(282,3915),(282,3917),(282,3922),(282,3924),(282,3926),(282,3928),(282,3933),(282,3934),(282,3936),(282,3937),(282,3938),(282,3939),(282,3940),(282,3941),(282,3942),(282,3944),(282,3949),(282,3963),(282,3964),(282,3984),(282,4001),(282,4019),(282,4025),(282,4029),(282,4030),(282,4036),(282,4037),(282,4050),(282,4055),(282,4057),(282,4062),(282,4079),(282,4080),(282,4088),(282,4094),(282,4098),(282,4099),(282,4101),(282,4112),(282,4157),(282,4183),(282,4205),(282,4210),(282,4211),(282,4228),(282,4232),(282,4236),(282,4238),(282,4254),(282,4271),(282,4274),(282,4276),(282,4300),(282,4305),(282,4306),(282,4319),(282,4324),(282,4329),(282,4338),(282,4340),(282,4341),(282,4342),(282,4348),(282,4350),(282,4352),(282,4358),(282,4359),(282,4362),(282,4363),(282,4366),(282,4367),(282,4375),(282,4376),(282,4377),(282,4383),(282,4385),(282,4392),(282,4394),(282,4400),(282,4402),(282,4411),(282,4416),(282,4417),(282,4421),(282,4426),(282,4429),(282,4430),(282,4438),(282,4440),(282,4441),(282,4443),(282,4446),(282,4452),(282,4453),(282,4461),(282,4463),(282,4469),(282,4470),(282,4475),(282,4477),(282,4478),(282,4479),(282,4480),(282,4482),(282,4489),(282,4491),(282,4493),(282,4495),(282,4496),(282,4501),(282,4517),(282,4530),(282,4531),(282,4537),(282,4538),(282,4549),(282,4562),(282,4580),(282,4602),(282,4617),(282,4618),(282,4650),(282,4673),(282,4682),(282,4691),(282,4693),(282,4697),(282,4708),(282,4720),(282,4721),(282,4731),(282,4737),(282,4741),(282,4753),(282,4756),(282,4759),(282,4760),(282,4765),(282,4767),(282,4775),(282,4790),(282,4793),(282,4801),(282,4806),(282,4811),(282,4828),(282,4839),(282,4848),(282,4851),(282,4859),(282,4879),(282,4883),(282,4900),(282,4904),(282,4911),(282,4917),(282,4918),(282,4919),(282,4932),(282,4933),(282,4934),(282,4935),(282,4937),(282,4941),(282,4942),(282,4943),(282,4945),(282,4946),(282,4947),(282,4949),(282,4950),(282,4954),(282,4955),(282,4956),(282,4957),(282,4958),(282,4961),(282,4962),(282,4964),(282,4965),(282,4966),(282,4967),(282,4968),(282,4972),(282,4974),(282,4978),(282,4984),(282,5000),(282,5003),(282,5005),(282,5010),(282,5033),(282,5034),(282,5051),(282,5055),(282,5079),(282,5091),(282,5092),(282,5095),(282,5106),(282,5115),(282,5116),(282,5121),(282,5122),(282,5123),(282,5124),(282,5126),(282,5128),(282,5130),(282,5133),(282,5136),(282,5137),(282,5140),(282,5147),(282,5153),(282,5156),(282,5165),(282,5181),(282,5184),(282,5190),(282,5195),(282,5196),(282,5200),(282,5201),(282,5204),(282,5209),(282,5210),(282,5217),(282,5219),(282,5233),(282,5242),(282,5247),(282,5252),(282,5260),(282,5266),(282,5268),(282,5269),(282,5278),(282,5281),(282,5282),(282,5310),(282,5328),(282,5337),(282,5338),(282,5341),(282,5344),(282,5345),(282,5348),(282,5351),(282,5352),(282,5353),(282,5354),(282,5368),(282,5370),(282,5394),(282,5395),(282,5401),(282,5406),(282,5408),(282,5409),(282,5414),(282,5423),(282,5438),(282,5456),(282,5482),(282,5484),(282,5485),(282,5492),(282,5500),(282,5504),(282,5517),(282,5519),(282,5522),(282,5527),(282,5528),(282,5538),(282,5539),(282,5562),(282,5564),(282,5572),(282,5575),(282,5583),(282,5589),(282,5594),(282,5596),(282,5597),(282,5599),(282,5615),(282,5619),(282,5631),(282,5638),(282,5643),(282,5644),(282,5646),(282,1924532),(282,1929637),(282,2052982),(282,2499035),(282,2499082),(282,3145145),(282,3409478),(282,3411630),(282,4093692),(282,4156345),(282,4285366),(282,4778496),(282,4869166),(282,5020365),(282,5020614),(282,5020681),(282,5252498),(282,5555962),(282,5908547),(282,6113699),(282,7593225),(282,7717702),(282,7718652),(282,10501002),(282,10504604),(282,10689767),(282,12371094),(283,3163),(283,3166),(283,3168),(283,3170),(283,3171),(283,3180),(283,3181),(283,3183),(283,3192),(283,3194),(283,3199),(283,3207),(283,3226),(283,3227),(283,3228),(283,3231),(283,3232),(283,3237),(283,3244),(283,3247),(283,3248),(283,3253),(283,3267),(283,3272),(283,3277),(283,3283),(283,3293),(283,3302),(283,3305),(283,3306),(283,3314),(283,3322),(283,3328),(283,3329),(283,3332),(283,3335),(283,3336),(283,3338),(283,3343),(283,3344),(283,3345),(283,3351),(283,3353),(283,3354),(283,3360),(283,3367),(283,3370),(283,3376),(283,3386),(283,3432),(283,3435),(283,3446),(283,3457),(283,3461),(283,3472),(283,3473),(283,3474),(283,3480),(283,3494),(283,3509),(283,3514),(283,3526),(283,3538),(283,3539),(283,3557),(283,3558),(283,3565),(283,3598),(283,3607),(283,3612),(283,3658),(283,3674),(283,3684),(283,3707),(283,3719),(283,3722),(283,3730),(283,3731),(283,3739),(283,3741),(283,3742),(283,3744),(283,3745),(283,3746),(283,3750),(283,3754),(283,3756),(283,3763),(283,3764),(283,3766),(283,3770),(283,3779),(283,3782),(283,3790),(283,3817),(283,3823),(283,3854),(283,3857),(283,3863),(283,3887),(283,3903),(283,3905),(283,3906),(283,3909),(283,3912),(283,3915),(283,3917),(283,3922),(283,3924),(283,3926),(283,3928),(283,3933),(283,3934),(283,3936),(283,3937),(283,3938),(283,3939),(283,3940),(283,3941),(283,3942),(283,3944),(283,3949),(283,3963),(283,3964),(283,3984),(283,4001),(283,4019),(283,4025),(283,4029),(283,4030),(283,4036),(283,4037),(283,4050),(283,4055),(283,4057),(283,4062),(283,4079),(283,4080),(283,4088),(283,4094),(283,4098),(283,4099),(283,4101),(283,4112),(283,4157),(283,4183),(283,4205),(283,4210),(283,4211),(283,4228),(283,4232),(283,4236),(283,4238),(283,4254),(283,4271),(283,4274),(283,4276),(283,4300),(283,4305),(283,4306),(283,4319),(283,4324),(283,4329),(283,4338),(283,4340),(283,4341),(283,4342),(283,4348),(283,4350),(283,4352),(283,4358),(283,4359),(283,4362),(283,4363),(283,4366),(283,4367),(283,4375),(283,4376),(283,4377),(283,4383),(283,4385),(283,4392),(283,4394),(283,4400),(283,4402),(283,4411),(283,4416),(283,4417),(283,4421),(283,4426),(283,4429),(283,4430),(283,4438),(283,4440),(283,4441),(283,4443),(283,4446),(283,4452),(283,4453),(283,4461),(283,4463),(283,4469),(283,4470),(283,4475),(283,4477),(283,4478),(283,4479),(283,4480),(283,4482),(283,4489),(283,4491),(283,4493),(283,4495),(283,4496),(283,4501),(283,4517),(283,4530),(283,4531),(283,4537),(283,4538),(283,4549),(283,4562),(283,4580),(283,4602),(283,4617),(283,4618),(283,4650),(283,4673),(283,4682),(283,4691),(283,4693),(283,4697),(283,4708),(283,4720),(283,4721),(283,4731),(283,4737),(283,4741),(283,4753),(283,4756),(283,4759),(283,4760),(283,4765),(283,4767),(283,4775),(283,4790),(283,4793),(283,4801),(283,4806),(283,4811),(283,4828),(283,4839),(283,4848),(283,4851),(283,4859),(283,4879),(283,4883),(283,4900),(283,4904),(283,4911),(283,4917),(283,4918),(283,4919),(283,4932),(283,4933),(283,4934),(283,4935),(283,4937),(283,4941),(283,4942),(283,4943),(283,4945),(283,4946),(283,4947),(283,4949),(283,4950),(283,4954),(283,4955),(283,4956),(283,4957),(283,4958),(283,4961),(283,4962),(283,4964),(283,4965),(283,4966),(283,4967),(283,4968),(283,4972),(283,4974),(283,4978),(283,4984),(283,5000),(283,5003),(283,5005),(283,5010),(283,5033),(283,5034),(283,5051),(283,5055),(283,5079),(283,5091),(283,5092),(283,5095),(283,5106),(283,5115),(283,5116),(283,5121),(283,5122),(283,5123),(283,5124),(283,5126),(283,5128),(283,5130),(283,5133),(283,5136),(283,5137),(283,5140),(283,5147),(283,5153),(283,5156),(283,5165),(283,5181),(283,5184),(283,5190),(283,5195),(283,5196),(283,5200),(283,5201),(283,5204),(283,5209),(283,5210),(283,5217),(283,5219),(283,5233),(283,5242),(283,5247),(283,5252),(283,5260),(283,5266),(283,5268),(283,5269),(283,5278),(283,5281),(283,5282),(283,5310),(283,5328),(283,5337),(283,5338),(283,5341),(283,5344),(283,5345),(283,5348),(283,5351),(283,5352),(283,5353),(283,5354),(283,5368),(283,5370),(283,5394),(283,5395),(283,5401),(283,5406),(283,5408),(283,5409),(283,5414),(283,5423),(283,5438),(283,5456),(283,5482),(283,5484),(283,5485),(283,5492),(283,5500),(283,5504),(283,5517),(283,5519),(283,5522),(283,5527),(283,5528),(283,5538),(283,5539),(283,5562),(283,5564),(283,5572),(283,5575),(283,5583),(283,5589),(283,5594),(283,5596),(283,5597),(283,5599),(283,5615),(283,5619),(283,5631),(283,5638),(283,5643),(283,5644),(283,5646),(283,1924532),(283,1929637),(283,2052982),(283,2499035),(283,2499082),(283,3145145),(283,3409478),(283,3411630),(283,4093692),(283,4156345),(283,4285366),(283,4778496),(283,4869166),(283,5020365),(283,5020614),(283,5020681),(283,5252498),(283,5555962),(283,5908547),(283,6113699),(283,7593225),(283,7717702),(283,7718652),(283,10501002),(283,10504604),(283,10689767),(283,12371094),(285,3343),(285,3345),(285,3612),(285,4079),(285,4319),(285,4329),(285,4343),(285,4358),(285,4363),(285,4394),(285,4400),(285,4402),(285,4411),(285,4421),(285,4426),(285,4463),(285,4475),(285,4549),(285,4580),(285,4720),(285,4848),(285,4917),(285,4962),(285,5106),(285,5395),(285,5527),(285,5539),(285,3118538);
+/*!40000 ALTER TABLE `multiref_credprogr_region_registracii_poruchitelya` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_region_reistracii_zayomschika`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_region_reistracii_zayomschika`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_region_reistracii_zayomschika` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_region_reistracii_zayomschika`
+--
+
+LOCK TABLES `multiref_credprogr_region_reistracii_zayomschika` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_region_reistracii_zayomschika` DISABLE KEYS */;
+INSERT INTO `multiref_credprogr_region_reistracii_zayomschika` VALUES (23,3296),(23,3297),(23,3298),(23,3299),(23,3300),(23,3301),(23,3302),(23,3303),(23,3304),(23,3305),(23,3306),(23,3307),(23,3308),(23,3309),(23,3310),(23,3311),(23,3312),(23,3313),(23,3314),(23,3315),(23,3316),(23,3317),(23,3318),(23,3319),(23,3320),(23,3321),(23,3322),(23,3323),(23,3324),(23,3325),(23,3326),(23,3327),(23,3328),(23,3329),(23,3330),(23,3331),(23,3332),(23,3333),(23,3334),(23,3335),(23,3336),(23,3337),(23,3338),(23,3339),(23,3340),(23,3341),(23,3342),(23,3343),(23,3344),(23,3345),(23,3346),(23,3347),(23,3348),(23,3349),(23,3350),(23,3351),(23,3563),(23,3564),(23,3565),(23,3566),(23,3567),(23,3568),(23,3569),(23,3570),(23,3571),(23,3572),(23,3573),(23,3574),(23,3575),(23,3576),(23,3577),(23,3578),(23,3579),(23,3580),(23,3581),(23,3582),(23,3583),(23,3584),(23,3585),(23,3586),(23,3587),(23,3588),(23,3589),(23,3590),(23,3591),(23,3592),(23,3593),(23,3594),(23,3595),(23,3596),(23,3597),(23,3598),(23,3599),(23,3600),(23,3601),(23,3602),(23,3603),(23,3604),(23,3605),(23,3606),(23,3607),(23,3608),(23,3609),(23,3610),(23,3611),(23,3612),(23,3613),(23,3614),(23,3615),(23,3616),(23,3617),(23,3618),(23,3619),(23,3620),(23,3621),(23,3622),(23,3623),(23,3624),(23,3625),(23,3626),(23,3627),(23,3628),(23,3629),(23,3784),(23,3785),(23,3786),(23,3787),(23,3788),(23,3789),(23,3790),(23,3791),(23,3792),(23,3793),(23,3794),(23,3795),(23,3796),(23,3797),(23,3798),(23,3799),(23,3800),(23,3801),(23,3802),(23,3803),(23,3804),(23,3805),(23,3806),(23,3807),(23,3808),(23,3809),(23,3810),(23,3811),(23,3812),(23,3813),(23,3814),(23,3815),(23,3816),(23,3817),(23,3818),(23,3819),(23,3820),(23,3821),(23,3822),(23,3823),(23,3824),(23,3825),(23,3826),(23,3841),(23,3842),(23,3843),(23,3844),(23,3845),(23,3846),(23,3847),(23,3848),(23,3849),(23,3850),(23,3851),(23,3852),(23,3853),(23,3854),(23,3855),(23,3856),(23,3857),(23,3858),(23,3859),(23,3860),(23,3861),(23,3862),(23,3863),(23,3864),(23,3865),(23,3866),(23,3867),(23,3868),(23,3869),(23,3870),(23,3871),(23,4312),(23,4313),(23,4314),(23,4315),(23,4316),(23,4317),(23,4318),(23,4319),(23,4320),(23,4321),(23,4322),(23,4323),(23,4324),(23,4325),(23,4326),(23,4327),(23,4328),(23,4329),(23,4330),(23,4331),(23,4332),(23,4333),(23,4334),(23,4335),(23,4336),(23,4337),(23,4338),(23,4339),(23,4340),(23,4341),(23,4342),(23,4343),(23,4344),(23,4345),(23,4346),(23,4347),(23,4348),(23,4349),(23,4350),(23,4351),(23,4352),(23,4353),(23,4354),(23,4355),(23,4356),(23,4357),(23,4358),(23,4359),(23,4360),(23,4361),(23,4362),(23,4363),(23,4364),(23,4365),(23,4366),(23,4367),(23,4368),(23,4369),(23,4370),(23,4371),(23,4372),(23,4373),(23,4374),(23,4375),(23,4376),(23,4377),(23,4378),(23,4379),(23,4380),(23,4381),(23,4382),(23,4383),(23,4384),(23,4385),(23,4386),(23,4387),(23,4388),(23,4389),(23,4390),(23,4391),(23,4392),(23,4393),(23,4394),(23,4395),(23,4396),(23,4397),(23,4398),(23,4399),(23,4400),(23,4401),(23,4402),(23,4403),(23,4404),(23,4405),(23,4406),(23,4407),(23,4408),(23,4409),(23,4410),(23,4411),(23,4412),(23,4413),(23,4414),(23,4415),(23,4416),(23,4417),(23,4418),(23,4419),(23,4420),(23,4421),(23,4422),(23,4423),(23,4424),(23,4425),(23,4426),(23,4427),(23,4428),(23,4429),(23,4430),(23,4431),(23,4432),(23,4433),(23,4434),(23,4435),(23,4436),(23,4437),(23,4438),(23,4439),(23,4440),(23,4441),(23,4442),(23,4443),(23,4444),(23,4445),(23,4446),(23,4447),(23,4448),(23,4449),(23,4450),(23,4451),(23,4452),(23,4453),(23,4454),(23,4455),(23,4456),(23,4457),(23,4458),(23,4459),(23,4460),(23,4461),(23,4462),(23,4463),(23,4464),(23,4465),(23,4466),(23,4467),(23,4468),(23,4469),(23,4470),(23,4471),(23,4472),(23,4473),(23,4474),(23,4475),(23,4476),(23,4477),(23,4478),(23,4479),(23,4480),(23,4689),(23,4690),(23,4691),(23,4692),(23,4693),(23,4694),(23,4695),(23,4696),(23,4697),(23,4698),(23,4699),(23,4700),(23,4701),(23,4702),(23,4703),(23,4704),(23,4705),(23,4706),(23,4707),(23,4708),(23,4709),(23,4710),(23,4711),(23,4712),(23,4713),(23,4714),(23,4715),(23,4716),(23,4717),(23,4718),(23,4719),(23,4720),(23,4721),(23,4722),(23,4723),(23,4724),(23,4725),(23,4726),(23,4727),(23,4728),(23,4729),(23,4730),(23,4731),(23,4732),(23,4733),(23,4861),(23,4862),(23,4863),(23,4864),(23,4865),(23,4866),(23,4867),(23,4868),(23,4869),(23,4870),(23,4871),(23,4872),(23,4873),(23,4874),(23,4875),(23,4876),(23,4877),(23,4878),(23,4879),(23,4880),(23,4881),(23,4882),(23,4883),(23,4884),(23,4885),(23,4886),(23,4887),(23,4888),(23,4889),(23,4890),(23,4891),(23,4892),(23,4893),(23,4894),(23,4895),(23,4896),(23,4897),(23,4898),(23,4899),(23,4900),(23,4901),(23,4902),(23,4903),(23,4904),(23,4905),(23,4906),(23,4907),(23,4908),(23,4909),(23,4910),(23,4911),(23,4912),(23,4913),(23,4914),(23,4915),(23,4916),(23,4917),(23,4918),(23,4919),(23,4920),(23,4921),(23,4922),(23,4923),(23,4924),(23,4925),(23,4926),(23,4927),(23,4928),(23,4929),(23,4930),(23,4931),(23,4932),(23,4933),(23,4934),(23,4935),(23,4936),(23,4937),(23,4938),(23,4939),(23,4940),(23,4941),(23,4942),(23,4943),(23,4944),(23,4945),(23,4946),(23,4947),(23,4948),(23,4949),(23,4950),(23,4952),(23,4953),(23,4954),(23,4955),(23,4956),(23,4957),(23,4958),(23,4959),(23,4960),(23,4961),(23,4962),(23,4964),(23,4965),(23,4966),(23,4967),(23,4968),(23,5080),(23,5081),(23,5082),(23,5083),(23,5084),(23,5085),(23,5086),(23,5087),(23,5088),(23,5089),(23,5090),(23,5091),(23,5092),(23,5093),(23,5094),(23,5095),(23,5096),(23,5097),(23,5098),(23,5099),(23,5100),(23,5101),(23,5102),(23,5103),(23,5104),(23,5105),(23,5106),(23,5107),(23,5108),(23,5109),(23,5110),(23,5111),(23,5112),(23,5113),(23,5114),(23,5115),(23,5116),(23,5117),(23,5118),(23,5119),(23,5120),(23,5121),(23,5122),(23,5123),(23,5124),(23,5125),(23,5126),(23,5127),(23,5128),(23,5129),(23,5130),(23,5131),(23,5132),(23,5133),(23,5134),(23,5135),(23,5136),(23,5137),(23,5138),(23,5139),(23,5140),(23,5141),(23,5142),(23,5143),(23,5144),(23,5145),(23,5146),(23,5147),(23,5148),(23,5149),(23,5150),(23,5161),(23,5162),(23,5163),(23,5164),(23,5165),(23,5166),(23,5167),(23,5168),(23,5169),(23,5170),(23,5171),(23,5172),(23,5173),(23,5174),(23,5175),(23,5176),(23,5177),(23,5178),(23,5179),(23,5180),(23,5181),(23,5182),(23,5183),(23,5184),(23,5185),(23,5186),(23,5187),(23,5188),(23,5189),(23,5190),(23,5246),(23,5247),(23,5248),(23,5249),(23,5250),(23,5251),(23,5252),(23,5253),(23,5254),(23,5255),(23,5256),(23,5257),(23,5258),(23,5259),(23,5260),(23,5261),(23,5262),(23,5263),(23,5264),(23,5265),(23,5266),(23,5267),(23,5268),(23,5269),(23,5270),(23,5271),(23,5272),(23,5273),(23,5274),(23,5275),(23,5276),(23,5277),(23,5278),(23,5279),(23,5280),(23,5281),(23,5282),(23,5283),(23,5284),(23,5285),(23,5286),(23,5287),(23,5288),(23,5289),(23,5290),(23,5326),(23,5327),(23,5328),(23,5329),(23,5330),(23,5331),(23,5332),(23,5333),(23,5334),(23,5335),(23,5336),(23,5337),(23,5338),(23,5339),(23,5340),(23,5341),(23,5342),(23,5343),(23,5344),(23,5345),(23,5346),(23,5347),(23,5348),(23,5349),(23,5350),(23,5351),(23,5352),(23,5353),(23,5354),(23,5355),(23,5356),(23,5357),(23,5358),(23,5359),(23,5360),(23,5361),(23,5362),(23,5363),(23,5364),(23,5365),(23,5366),(23,5367),(23,5368),(23,5369),(23,5370),(23,5371),(23,5372),(23,5373),(23,5375),(23,5376),(23,5378),(23,5379),(23,5380),(23,5381),(23,5384),(23,5385),(23,5386),(23,5387),(23,5389),(23,5390),(23,5391),(23,5393),(23,5394),(23,5395),(23,5396),(23,5397),(23,5398),(23,5399),(23,5400),(23,5401),(23,5402),(23,5403),(23,5507),(23,5508),(23,5509),(23,5510),(23,5511),(23,5512),(23,5513),(23,5514),(23,5515),(23,5516),(23,5517),(23,5518),(23,5519),(23,5520),(23,5521),(23,5522),(23,5523),(23,5524),(23,5525),(23,5526),(23,5527),(23,5528),(23,5529),(23,5530),(23,5531),(23,5532),(23,5533),(23,5534),(23,5535),(23,5536),(23,5537),(23,5538),(23,5539),(23,5540),(23,5541),(23,5542),(23,5625),(23,5626),(23,5627),(23,5628),(23,5629),(23,5630),(23,5631),(23,5632),(23,5633),(23,5634),(23,5635),(23,5636),(23,5637),(23,5638),(23,5639),(23,5640),(23,5641),(23,5642),(23,5643),(23,5644),(23,5645),(23,5646),(23,1923662),(23,1924532),(23,1929637),(23,2005016),(23,2019672),(23,2184457),(23,2185271),(23,2411629),(23,2499082),(23,3118538),(23,3138841),(23,3408643),(23,3473821),(23,4093520),(23,4276360),(23,4285366),(23,4285519),(23,4778496),(23,5020665),(23,6454651),(23,7592923),(23,7593075),(23,10500023),(23,10500476),(23,10504604),(23,11911051),(25,4925),(25,4926),(25,4927),(25,4928),(25,4929),(25,4930),(25,4931),(25,4932),(25,4933),(25,4934),(25,4935),(25,4936),(25,4937),(25,4938),(25,4939),(25,4940),(25,4941),(25,4942),(25,4943),(25,4944),(25,4945),(25,4946),(25,4947),(25,4948),(25,4949),(25,4950),(25,4952),(25,4953),(25,4954),(25,4955),(25,4956),(25,4957),(25,4958),(25,4959),(25,4960),(25,4961),(25,4962),(25,4964),(25,4965),(25,4966),(25,4967),(25,4968),(25,1924532),(25,10500023),(25,10504604),(29,4400),(29,4925),(29,4926),(29,4927),(29,4928),(29,4929),(29,4930),(29,4931),(29,4932),(29,4933),(29,4934),(29,4935),(29,4936),(29,4937),(29,4938),(29,4939),(29,4940),(29,4941),(29,4942),(29,4943),(29,4944),(29,4945),(29,4946),(29,4947),(29,4948),(29,4949),(29,4950),(29,4952),(29,4953),(29,4954),(29,4955),(29,4956),(29,4957),(29,4958),(29,4959),(29,4960),(29,4961),(29,4962),(29,4964),(29,4965),(29,4966),(29,4967),(29,4968),(29,1924532),(29,10500023),(29,10504604),(30,4400),(30,4925),(30,4926),(30,4927),(30,4928),(30,4929),(30,4930),(30,4931),(30,4932),(30,4933),(30,4934),(30,4935),(30,4936),(30,4937),(30,4938),(30,4939),(30,4940),(30,4941),(30,4942),(30,4943),(30,4944),(30,4945),(30,4946),(30,4947),(30,4948),(30,4949),(30,4950),(30,4952),(30,4953),(30,4954),(30,4955),(30,4956),(30,4957),(30,4958),(30,4959),(30,4960),(30,4961),(30,4962),(30,4964),(30,4965),(30,4966),(30,4967),(30,4968),(30,1924532),(30,10500023),(30,10504604),(31,3612),(31,3770),(31,4400),(31,4925),(31,4926),(31,4927),(31,4928),(31,4929),(31,4930),(31,4931),(31,4932),(31,4933),(31,4934),(31,4935),(31,4936),(31,4937),(31,4938),(31,4939),(31,4940),(31,4941),(31,4942),(31,4943),(31,4944),(31,4945),(31,4946),(31,4947),(31,4948),(31,4949),(31,4950),(31,4952),(31,4953),(31,4954),(31,4955),(31,4956),(31,4957),(31,4958),(31,4959),(31,4960),(31,4961),(31,4962),(31,4964),(31,4965),(31,4966),(31,4967),(31,4968),(31,1924532),(31,10500023),(31,10504604),(32,4925),(32,4926),(32,4927),(32,4928),(32,4929),(32,4930),(32,4931),(32,4932),(32,4933),(32,4934),(32,4935),(32,4936),(32,4937),(32,4938),(32,4939),(32,4940),(32,4941),(32,4942),(32,4943),(32,4944),(32,4945),(32,4946),(32,4947),(32,4948),(32,4949),(32,4950),(32,4952),(32,4953),(32,4954),(32,4955),(32,4956),(32,4957),(32,4958),(32,4959),(32,4960),(32,4961),(32,4962),(32,4964),(32,4965),(32,4966),(32,4967),(32,4968),(32,1924532),(32,10500023),(32,10504604),(33,4925),(33,4926),(33,4927),(33,4928),(33,4929),(33,4930),(33,4931),(33,4932),(33,4933),(33,4934),(33,4935),(33,4936),(33,4937),(33,4938),(33,4939),(33,4940),(33,4941),(33,4942),(33,4943),(33,4944),(33,4945),(33,4946),(33,4947),(33,4948),(33,4949),(33,4950),(33,4952),(33,4953),(33,4954),(33,4955),(33,4956),(33,4957),(33,4958),(33,4959),(33,4960),(33,4961),(33,4962),(33,4964),(33,4965),(33,4966),(33,4967),(33,4968),(33,1924532),(33,10500023),(33,10504604),(34,4925),(34,4926),(34,4927),(34,4928),(34,4929),(34,4930),(34,4931),(34,4932),(34,4933),(34,4934),(34,4935),(34,4936),(34,4937),(34,4938),(34,4939),(34,4940),(34,4941),(34,4942),(34,4943),(34,4944),(34,4945),(34,4946),(34,4947),(34,4948),(34,4949),(34,4950),(34,4952),(34,4953),(34,4954),(34,4955),(34,4956),(34,4957),(34,4958),(34,4959),(34,4960),(34,4961),(34,4962),(34,4964),(34,4965),(34,4966),(34,4967),(34,4968),(34,1924532),(34,10500023),(34,10504604),(35,4925),(35,4926),(35,4927),(35,4928),(35,4929),(35,4930),(35,4931),(35,4932),(35,4933),(35,4934),(35,4935),(35,4936),(35,4937),(35,4938),(35,4939),(35,4940),(35,4941),(35,4942),(35,4943),(35,4944),(35,4945),(35,4946),(35,4947),(35,4948),(35,4949),(35,4950),(35,4952),(35,4953),(35,4954),(35,4955),(35,4956),(35,4957),(35,4958),(35,4959),(35,4960),(35,4961),(35,4962),(35,4964),(35,4965),(35,4966),(35,4967),(35,4968),(35,1924532),(35,10500023),(35,10504604),(36,4925),(36,4926),(36,4927),(36,4928),(36,4929),(36,4930),(36,4931),(36,4932),(36,4933),(36,4934),(36,4935),(36,4936),(36,4937),(36,4938),(36,4939),(36,4940),(36,4941),(36,4942),(36,4943),(36,4944),(36,4945),(36,4946),(36,4947),(36,4948),(36,4949),(36,4950),(36,4952),(36,4953),(36,4954),(36,4955),(36,4956),(36,4957),(36,4958),(36,4959),(36,4960),(36,4961),(36,4962),(36,4964),(36,4965),(36,4966),(36,4967),(36,4968),(36,1924532),(36,10500023),(36,10504604),(37,4925),(37,4926),(37,4927),(37,4928),(37,4929),(37,4930),(37,4931),(37,4932),(37,4933),(37,4934),(37,4935),(37,4936),(37,4937),(37,4938),(37,4939),(37,4940),(37,4941),(37,4942),(37,4943),(37,4944),(37,4945),(37,4946),(37,4947),(37,4948),(37,4949),(37,4950),(37,4952),(37,4953),(37,4954),(37,4955),(37,4956),(37,4957),(37,4958),(37,4959),(37,4960),(37,4961),(37,4962),(37,4964),(37,4965),(37,4966),(37,4967),(37,4968),(37,1924532),(37,10500023),(37,10504604),(38,4925),(38,4926),(38,4927),(38,4928),(38,4929),(38,4930),(38,4931),(38,4932),(38,4933),(38,4934),(38,4935),(38,4936),(38,4937),(38,4938),(38,4939),(38,4940),(38,4941),(38,4942),(38,4943),(38,4944),(38,4945),(38,4946),(38,4947),(38,4948),(38,4949),(38,4950),(38,4952),(38,4953),(38,4954),(38,4955),(38,4956),(38,4957),(38,4958),(38,4959),(38,4960),(38,4961),(38,4962),(38,4964),(38,4965),(38,4966),(38,4967),(38,4968),(38,4969),(38,4970),(38,4971),(38,4972),(38,4973),(38,4974),(38,4975),(38,4976),(38,4977),(38,4978),(38,4979),(38,4980),(38,4981),(38,4982),(38,4983),(38,4984),(38,4985),(38,4986),(38,4987),(38,4988),(38,4989),(38,4990),(38,4991),(38,4992),(38,4993),(38,4994),(38,4995),(38,4996),(38,4997),(38,4998),(38,4999),(38,5000),(38,5001),(38,5002),(38,5003),(38,5004),(38,5005),(38,5006),(38,5007),(38,5008),(38,5009),(38,5010),(38,1924532),(38,10500023),(38,10504604),(39,4925),(39,4926),(39,4927),(39,4928),(39,4929),(39,4930),(39,4931),(39,4932),(39,4933),(39,4934),(39,4935),(39,4936),(39,4937),(39,4938),(39,4939),(39,4940),(39,4941),(39,4942),(39,4943),(39,4944),(39,4945),(39,4946),(39,4947),(39,4948),(39,4949),(39,4950),(39,4952),(39,4953),(39,4954),(39,4955),(39,4956),(39,4957),(39,4958),(39,4959),(39,4960),(39,4961),(39,4962),(39,4964),(39,4965),(39,4966),(39,4967),(39,4968),(39,1924532),(39,10500023),(39,10504604),(40,4925),(40,4926),(40,4927),(40,4928),(40,4929),(40,4930),(40,4931),(40,4932),(40,4933),(40,4934),(40,4935),(40,4936),(40,4937),(40,4938),(40,4939),(40,4940),(40,4941),(40,4942),(40,4943),(40,4944),(40,4945),(40,4946),(40,4947),(40,4948),(40,4949),(40,4950),(40,4952),(40,4953),(40,4954),(40,4955),(40,4956),(40,4957),(40,4958),(40,4959),(40,4960),(40,4961),(40,4962),(40,4964),(40,4965),(40,4966),(40,4967),(40,4968),(40,1924532),(40,10500023),(40,10504604),(41,4925),(41,4926),(41,4927),(41,4928),(41,4929),(41,4930),(41,4931),(41,4932),(41,4933),(41,4934),(41,4935),(41,4936),(41,4937),(41,4938),(41,4939),(41,4940),(41,4941),(41,4942),(41,4943),(41,4944),(41,4945),(41,4946),(41,4947),(41,4948),(41,4949),(41,4950),(41,4952),(41,4953),(41,4954),(41,4955),(41,4956),(41,4957),(41,4958),(41,4959),(41,4960),(41,4961),(41,4962),(41,4964),(41,4965),(41,4966),(41,4967),(41,4968),(41,1924532),(41,10500023),(41,10504604),(42,4925),(42,4926),(42,4927),(42,4928),(42,4929),(42,4930),(42,4931),(42,4932),(42,4933),(42,4934),(42,4935),(42,4936),(42,4937),(42,4938),(42,4939),(42,4940),(42,4941),(42,4942),(42,4943),(42,4944),(42,4945),(42,4946),(42,4947),(42,4948),(42,4949),(42,4950),(42,4952),(42,4953),(42,4954),(42,4955),(42,4956),(42,4957),(42,4958),(42,4959),(42,4960),(42,4961),(42,4962),(42,4964),(42,4965),(42,4966),(42,4967),(42,4968),(42,1924532),(42,10500023),(42,10504604),(43,4925),(43,4926),(43,4927),(43,4928),(43,4929),(43,4930),(43,4931),(43,4932),(43,4933),(43,4934),(43,4935),(43,4936),(43,4937),(43,4938),(43,4939),(43,4940),(43,4941),(43,4942),(43,4943),(43,4944),(43,4945),(43,4946),(43,4947),(43,4948),(43,4949),(43,4950),(43,4952),(43,4953),(43,4954),(43,4955),(43,4956),(43,4957),(43,4958),(43,4959),(43,4960),(43,4961),(43,4962),(43,4964),(43,4965),(43,4966),(43,4967),(43,4968),(43,1924532),(43,10500023),(43,10504604),(44,3163),(44,3166),(44,3168),(44,3170),(44,3180),(44,3181),(44,3183),(44,3192),(44,3194),(44,3199),(44,3207),(44,3226),(44,3227),(44,3228),(44,3231),(44,3232),(44,3237),(44,3244),(44,3247),(44,3248),(44,3253),(44,3267),(44,3272),(44,3277),(44,3283),(44,3302),(44,3305),(44,3306),(44,3314),(44,3322),(44,3329),(44,3332),(44,3335),(44,3336),(44,3338),(44,3343),(44,3345),(44,3353),(44,3354),(44,3360),(44,3367),(44,3368),(44,3370),(44,3376),(44,3386),(44,3432),(44,3435),(44,3446),(44,3457),(44,3461),(44,3472),(44,3473),(44,3474),(44,3480),(44,3494),(44,3509),(44,3514),(44,3526),(44,3538),(44,3539),(44,3553),(44,3557),(44,3558),(44,3565),(44,3598),(44,3607),(44,3612),(44,3658),(44,3674),(44,3684),(44,3707),(44,3719),(44,3722),(44,3730),(44,3731),(44,3739),(44,3741),(44,3744),(44,3745),(44,3746),(44,3750),(44,3754),(44,3756),(44,3763),(44,3764),(44,3766),(44,3770),(44,3779),(44,3782),(44,3790),(44,3817),(44,3823),(44,3854),(44,3857),(44,3863),(44,3887),(44,3903),(44,3905),(44,3906),(44,3909),(44,3912),(44,3915),(44,3917),(44,3922),(44,3924),(44,3926),(44,3928),(44,3933),(44,3934),(44,3936),(44,3937),(44,3938),(44,3939),(44,3940),(44,3941),(44,3942),(44,3944),(44,3949),(44,3963),(44,3964),(44,3984),(44,4001),(44,4019),(44,4025),(44,4029),(44,4030),(44,4036),(44,4037),(44,4050),(44,4055),(44,4057),(44,4062),(44,4079),(44,4080),(44,4088),(44,4094),(44,4098),(44,4099),(44,4101),(44,4112),(44,4149),(44,4157),(44,4160),(44,4183),(44,4205),(44,4210),(44,4211),(44,4228),(44,4232),(44,4236),(44,4238),(44,4254),(44,4271),(44,4274),(44,4276),(44,4300),(44,4305),(44,4306),(44,4311),(44,4319),(44,4324),(44,4329),(44,4338),(44,4340),(44,4341),(44,4342),(44,4348),(44,4350),(44,4352),(44,4358),(44,4359),(44,4362),(44,4363),(44,4366),(44,4367),(44,4371),(44,4376),(44,4377),(44,4383),(44,4385),(44,4392),(44,4394),(44,4400),(44,4402),(44,4403),(44,4404),(44,4409),(44,4411),(44,4416),(44,4417),(44,4421),(44,4426),(44,4429),(44,4430),(44,4438),(44,4440),(44,4441),(44,4443),(44,4446),(44,4452),(44,4453),(44,4461),(44,4463),(44,4469),(44,4470),(44,4475),(44,4477),(44,4478),(44,4479),(44,4480),(44,4482),(44,4489),(44,4491),(44,4495),(44,4496),(44,4501),(44,4517),(44,4530),(44,4531),(44,4537),(44,4538),(44,4549),(44,4562),(44,4580),(44,4602),(44,4617),(44,4618),(44,4650),(44,4673),(44,4682),(44,4691),(44,4693),(44,4697),(44,4708),(44,4720),(44,4721),(44,4731),(44,4737),(44,4741),(44,4753),(44,4756),(44,4759),(44,4760),(44,4765),(44,4767),(44,4775),(44,4790),(44,4793),(44,4801),(44,4806),(44,4811),(44,4828),(44,4839),(44,4848),(44,4851),(44,4859),(44,4879),(44,4883),(44,4900),(44,4904),(44,4911),(44,4917),(44,4918),(44,4919),(44,4932),(44,4933),(44,4934),(44,4935),(44,4937),(44,4941),(44,4942),(44,4943),(44,4945),(44,4947),(44,4949),(44,4950),(44,4954),(44,4955),(44,4957),(44,4958),(44,4961),(44,4962),(44,4964),(44,4965),(44,4966),(44,4967),(44,4968),(44,4972),(44,4974),(44,4978),(44,4984),(44,5000),(44,5003),(44,5005),(44,5010),(44,5033),(44,5034),(44,5051),(44,5055),(44,5079),(44,5084),(44,5091),(44,5092),(44,5095),(44,5106),(44,5115),(44,5116),(44,5121),(44,5122),(44,5123),(44,5124),(44,5126),(44,5128),(44,5130),(44,5133),(44,5136),(44,5137),(44,5140),(44,5147),(44,5153),(44,5156),(44,5165),(44,5181),(44,5184),(44,5190),(44,5195),(44,5196),(44,5200),(44,5201),(44,5204),(44,5209),(44,5210),(44,5217),(44,5219),(44,5233),(44,5242),(44,5247),(44,5260),(44,5266),(44,5268),(44,5269),(44,5278),(44,5281),(44,5282),(44,5310),(44,5328),(44,5337),(44,5338),(44,5341),(44,5344),(44,5345),(44,5348),(44,5351),(44,5352),(44,5353),(44,5354),(44,5368),(44,5370),(44,5394),(44,5395),(44,5401),(44,5406),(44,5408),(44,5409),(44,5414),(44,5423),(44,5438),(44,5456),(44,5482),(44,5484),(44,5485),(44,5492),(44,5500),(44,5504),(44,5517),(44,5519),(44,5522),(44,5527),(44,5528),(44,5538),(44,5539),(44,5562),(44,5564),(44,5572),(44,5575),(44,5583),(44,5589),(44,5594),(44,5596),(44,5597),(44,5599),(44,5615),(44,5619),(44,5631),(44,5638),(44,5642),(44,5643),(44,5644),(44,5646),(44,1929637),(44,2052982),(44,2499035),(44,2499082),(44,3118538),(44,3138841),(44,3145145),(44,3409478),(44,3411630),(44,4093520),(44,4093692),(44,4156345),(44,4285366),(44,4778496),(44,4869166),(44,5020365),(44,5020614),(44,5020681),(44,5252498),(44,5555962),(44,5908547),(44,6113699),(44,7593075),(44,7593225),(44,7717702),(44,7718652),(44,10501002),(44,10504604),(44,10689767),(44,12371094),(61,3159),(61,3160),(61,3161),(61,3162),(61,3163),(61,3164),(61,3165),(61,3166),(61,3167),(61,3168),(61,3169),(61,3170),(61,3171),(61,3172),(61,3173),(61,3174),(61,3175),(61,3176),(61,3177),(61,3178),(61,3179),(61,3180),(61,3181),(61,3182),(61,3183),(61,3184),(61,3185),(61,3186),(61,3187),(61,3188),(61,3189),(61,3190),(61,3191),(61,3192),(61,3193),(61,3194),(61,3195),(61,3196),(61,3197),(61,3198),(61,3199),(61,3200),(61,3201),(61,3202),(61,3203),(61,3204),(61,3205),(61,3206),(61,3207),(61,3208),(61,3209),(61,3210),(61,3211),(61,3212),(61,3213),(61,3214),(61,3215),(61,3216),(61,3217),(61,3218),(61,3219),(61,3220),(61,3221),(61,3222),(61,3223),(61,3224),(61,3225),(61,3226),(61,3227),(61,3228),(61,3229),(61,3230),(61,3231),(61,3232),(61,3233),(61,3234),(61,3235),(61,3236),(61,3237),(61,3238),(61,3239),(61,3240),(61,3241),(61,3242),(61,3243),(61,3244),(61,3245),(61,3246),(61,3247),(61,3248),(61,3249),(61,3250),(61,3251),(61,3252),(61,3253),(61,3254),(61,3255),(61,3256),(61,3257),(61,3258),(61,3259),(61,3260),(61,3261),(61,3262),(61,3263),(61,3264),(61,3265),(61,3266),(61,3267),(61,3268),(61,3269),(61,3270),(61,3271),(61,3272),(61,3273),(61,3274),(61,3275),(61,3276),(61,3277),(61,3278),(61,3279),(61,3280),(61,3281),(61,3282),(61,3283),(61,3284),(61,3285),(61,3286),(61,3287),(61,3288),(61,3289),(61,3290),(61,3291),(61,3292),(61,3293),(61,3294),(61,3295),(61,3296),(61,3297),(61,3298),(61,3299),(61,3300),(61,3301),(61,3302),(61,3303),(61,3304),(61,3305),(61,3306),(61,3307),(61,3308),(61,3309),(61,3310),(61,3311),(61,3312),(61,3313),(61,3314),(61,3315),(61,3316),(61,3317),(61,3318),(61,3319),(61,3320),(61,3321),(61,3322),(61,3323),(61,3324),(61,3325),(61,3326),(61,3327),(61,3328),(61,3329),(61,3330),(61,3331),(61,3332),(61,3333),(61,3334),(61,3335),(61,3336),(61,3337),(61,3338),(61,3339),(61,3340),(61,3341),(61,3342),(61,3343),(61,3344),(61,3345),(61,3346),(61,3347),(61,3348),(61,3349),(61,3350),(61,3351),(61,3352),(61,3353),(61,3354),(61,3355),(61,3356),(61,3357),(61,3358),(61,3359),(61,3360),(61,3361),(61,3362),(61,3363),(61,3364),(61,3365),(61,3366),(61,3367),(61,3368),(61,3369),(61,3370),(61,3371),(61,3372),(61,3373),(61,3374),(61,3375),(61,3376),(61,3377),(61,3378),(61,3379),(61,3380),(61,3381),(61,3382),(61,3383),(61,3384),(61,3385),(61,3386),(61,3387),(61,3388),(61,3389),(61,3390),(61,3391),(61,3392),(61,3393),(61,3394),(61,3395),(61,3396),(61,3397),(61,3398),(61,3399),(61,3400),(61,3401),(61,3402),(61,3403),(61,3404),(61,3405),(61,3406),(61,3407),(61,3408),(61,3409),(61,3410),(61,3411),(61,3412),(61,3413),(61,3414),(61,3415),(61,3416),(61,3417),(61,3418),(61,3419),(61,3420),(61,3421),(61,3422),(61,3423),(61,3424),(61,3425),(61,3426),(61,3427),(61,3428),(61,3429),(61,3430),(61,3431),(61,3432),(61,3433),(61,3434),(61,3435),(61,3436),(61,3437),(61,3438),(61,3439),(61,3440),(61,3441),(61,3442),(61,3443),(61,3444),(61,3445),(61,3446),(61,3447),(61,3448),(61,3449),(61,3450),(61,3451),(61,3452),(61,3453),(61,3454),(61,3455),(61,3456),(61,3457),(61,3458),(61,3459),(61,3460),(61,3461),(61,3462),(61,3463),(61,3464),(61,3465),(61,3466),(61,3467),(61,3468),(61,3469),(61,3470),(61,3471),(61,3472),(61,3473),(61,3474),(61,3475),(61,3476),(61,3477),(61,3478),(61,3479),(61,3480),(61,3481),(61,3482),(61,3483),(61,3484),(61,3485),(61,3486),(61,3487),(61,3488),(61,3489),(61,3490),(61,3491),(61,3492),(61,3493),(61,3494),(61,3495),(61,3496),(61,3497),(61,3498),(61,3499),(61,3500),(61,3501),(61,3502),(61,3503),(61,3504),(61,3505),(61,3506),(61,3507),(61,3508),(61,3509),(61,3510),(61,3511),(61,3512),(61,3513),(61,3514),(61,3515),(61,3516),(61,3517),(61,3518),(61,3519),(61,3520),(61,3521),(61,3522),(61,3523),(61,3524),(61,3525),(61,3526),(61,3527),(61,3528),(61,3529),(61,3530),(61,3531),(61,3532),(61,3533),(61,3534),(61,3535),(61,3536),(61,3537),(61,3538),(61,3539),(61,3540),(61,3541),(61,3542),(61,3543),(61,3544),(61,3545),(61,3546),(61,3547),(61,3548),(61,3549),(61,3550),(61,3551),(61,3552),(61,3553),(61,3554),(61,3555),(61,3556),(61,3557),(61,3558),(61,3559),(61,3560),(61,3561),(61,3562),(61,3563),(61,3564),(61,3565),(61,3566),(61,3567),(61,3568),(61,3569),(61,3570),(61,3571),(61,3572),(61,3573),(61,3574),(61,3575),(61,3576),(61,3577),(61,3578),(61,3579),(61,3580),(61,3581),(61,3582),(61,3583),(61,3584),(61,3585),(61,3586),(61,3587),(61,3588),(61,3589),(61,3590),(61,3591),(61,3592),(61,3593),(61,3594),(61,3595),(61,3596),(61,3597),(61,3598),(61,3599),(61,3600),(61,3601),(61,3602),(61,3603),(61,3604),(61,3605),(61,3606),(61,3607),(61,3608),(61,3609),(61,3610),(61,3611),(61,3612),(61,3613),(61,3614),(61,3615),(61,3616),(61,3617),(61,3618),(61,3619),(61,3620),(61,3621),(61,3622),(61,3623),(61,3624),(61,3625),(61,3626),(61,3627),(61,3628),(61,3629),(61,3630),(61,3631),(61,3632),(61,3633),(61,3634),(61,3635),(61,3636),(61,3637),(61,3638),(61,3639),(61,3640),(61,3641),(61,3642),(61,3643),(61,3644),(61,3645),(61,3646),(61,3647),(61,3648),(61,3649),(61,3650),(61,3651),(61,3652),(61,3653),(61,3654),(61,3655),(61,3656),(61,3657),(61,3658),(61,3659),(61,3660),(61,3661),(61,3662),(61,3663),(61,3664),(61,3665),(61,3666),(61,3667),(61,3668),(61,3669),(61,3670),(61,3671),(61,3672),(61,3673),(61,3674),(61,3675),(61,3676),(61,3677),(61,3678),(61,3679),(61,3680),(61,3681),(61,3682),(61,3683),(61,3684),(61,3685),(61,3686),(61,3687),(61,3688),(61,3689),(61,3690),(61,3691),(61,3692),(61,3693),(61,3694),(61,3695),(61,3696),(61,3697),(61,3698),(61,3699),(61,3700),(61,3701),(61,3702),(61,3703),(61,3704),(61,3705),(61,3706),(61,3707),(61,3708),(61,3709),(61,3710),(61,3711),(61,3712),(61,3713),(61,3714),(61,3715),(61,3716),(61,3717),(61,3718),(61,3719),(61,3720),(61,3721),(61,3722),(61,3723),(61,3724),(61,3725),(61,3726),(61,3727),(61,3728),(61,3729),(61,3730),(61,3731),(61,3732),(61,3733),(61,3734),(61,3735),(61,3736),(61,3737),(61,3738),(61,3739),(61,3740),(61,3741),(61,3742),(61,3743),(61,3744),(61,3745),(61,3746),(61,3747),(61,3748),(61,3749),(61,3750),(61,3751),(61,3752),(61,3753),(61,3754),(61,3755),(61,3756),(61,3757),(61,3758),(61,3759),(61,3760),(61,3761),(61,3762),(61,3763),(61,3764),(61,3765),(61,3766),(61,3767),(61,3768),(61,3769),(61,3770),(61,3771),(61,3772),(61,3773),(61,3774),(61,3775),(61,3776),(61,3777),(61,3778),(61,3779),(61,3780),(61,3781),(61,3782),(61,3783),(61,3784),(61,3785),(61,3786),(61,3787),(61,3788),(61,3789),(61,3790),(61,3791),(61,3792),(61,3793),(61,3794),(61,3795),(61,3796),(61,3797),(61,3798),(61,3799),(61,3800),(61,3801),(61,3802),(61,3803),(61,3804),(61,3805),(61,3806),(61,3807),(61,3808),(61,3809),(61,3810),(61,3811),(61,3812),(61,3813),(61,3814),(61,3815),(61,3816),(61,3817),(61,3818),(61,3819),(61,3820),(61,3821),(61,3822),(61,3823),(61,3824),(61,3825),(61,3826),(61,3827),(61,3828),(61,3829),(61,3830),(61,3831),(61,3832),(61,3833),(61,3834),(61,3835),(61,3836),(61,3837),(61,3838),(61,3839),(61,3840),(61,3841),(61,3842),(61,3843),(61,3844),(61,3845),(61,3846),(61,3847),(61,3848),(61,3849),(61,3850),(61,3851),(61,3852),(61,3853),(61,3854),(61,3855),(61,3856),(61,3857),(61,3858),(61,3859),(61,3860),(61,3861),(61,3862),(61,3863),(61,3864),(61,3865),(61,3866),(61,3867),(61,3868),(61,3869),(61,3870),(61,3871),(61,3872),(61,3873),(61,3874),(61,3875),(61,3876),(61,3877),(61,3878),(61,3879),(61,3880),(61,3881),(61,3882),(61,3883),(61,3884),(61,3885),(61,3886),(61,3887),(61,3888),(61,3889),(61,3890),(61,3891),(61,3892),(61,3893),(61,3894),(61,3895),(61,3896),(61,3897),(61,3898),(61,3899),(61,3900),(61,3901),(61,3902),(61,3903),(61,3904),(61,3905),(61,3906),(61,3907),(61,3908),(61,3909),(61,3910),(61,3911),(61,3912),(61,3913),(61,3914),(61,3915),(61,3916),(61,3917),(61,3918),(61,3919),(61,3920),(61,3921),(61,3922),(61,3923),(61,3924),(61,3925),(61,3926),(61,3927),(61,3928),(61,3929),(61,3930),(61,3931),(61,3932),(61,3933),(61,3934),(61,3935),(61,3936),(61,3937),(61,3938),(61,3939),(61,3940),(61,3941),(61,3942),(61,3943),(61,3944),(61,3945),(61,3946),(61,3947),(61,3948),(61,3949),(61,3950),(61,3951),(61,3952),(61,3953),(61,3954),(61,3955),(61,3956),(61,3957),(61,3958),(61,3959),(61,3960),(61,3961),(61,3962),(61,3963),(61,3964),(61,3965),(61,3966),(61,3967),(61,3968),(61,3969),(61,3970),(61,3971),(61,3972),(61,3973),(61,3974),(61,3975),(61,3976),(61,3977),(61,3978),(61,3979),(61,3980),(61,3981),(61,3982),(61,3983),(61,3984),(61,3985),(61,3986),(61,3987),(61,3988),(61,3989),(61,3990),(61,3991),(61,3992),(61,3993),(61,3994),(61,3995),(61,3996),(61,3997),(61,3998),(61,3999),(61,4000),(61,4001),(61,4002),(61,4003),(61,4004),(61,4005),(61,4006),(61,4007),(61,4008),(61,4009),(61,4010),(61,4011),(61,4012),(61,4013),(61,4014),(61,4015),(61,4016),(61,4017),(61,4018),(61,4019),(61,4020),(61,4021),(61,4022),(61,4023),(61,4024),(61,4025),(61,4026),(61,4027),(61,4028),(61,4029),(61,4030),(61,4031),(61,4032),(61,4033),(61,4034),(61,4035),(61,4036),(61,4037),(61,4038),(61,4039),(61,4040),(61,4041),(61,4042),(61,4043),(61,4044),(61,4045),(61,4046),(61,4047),(61,4048),(61,4049),(61,4050),(61,4051),(61,4052),(61,4053),(61,4054),(61,4055),(61,4056),(61,4057),(61,4058),(61,4059),(61,4060),(61,4061),(61,4062),(61,4063),(61,4064),(61,4065),(61,4066),(61,4067),(61,4068),(61,4069),(61,4070),(61,4071),(61,4072),(61,4073),(61,4074),(61,4075),(61,4076),(61,4077),(61,4078),(61,4079),(61,4080),(61,4081),(61,4082),(61,4083),(61,4084),(61,4085),(61,4086),(61,4087),(61,4088),(61,4089),(61,4090),(61,4091),(61,4092),(61,4093),(61,4094),(61,4095),(61,4096),(61,4097),(61,4098),(61,4099),(61,4100),(61,4101),(61,4102),(61,4103),(61,4104),(61,4105),(61,4106),(61,4107),(61,4108),(61,4109),(61,4110),(61,4111),(61,4112),(61,4113),(61,4114),(61,4115),(61,4116),(61,4117),(61,4118),(61,4119),(61,4120),(61,4121),(61,4122),(61,4123),(61,4124),(61,4125),(61,4126),(61,4127),(61,4128),(61,4129),(61,4130),(61,4131),(61,4132),(61,4133),(61,4134),(61,4135),(61,4136),(61,4137),(61,4138),(61,4139),(61,4140),(61,4141),(61,4142),(61,4143),(61,4144),(61,4145),(61,4146),(61,4147),(61,4148),(61,4149),(61,4150),(61,4151),(61,4152),(61,4153),(61,4154),(61,4155),(61,4156),(61,4157),(61,4158),(61,4159),(61,4160),(61,4161),(61,4162),(61,4163),(61,4164),(61,4165),(61,4166),(61,4167),(61,4168),(61,4169),(61,4170),(61,4171),(61,4172),(61,4173),(61,4174),(61,4175),(61,4176),(61,4177),(61,4178),(61,4179),(61,4180),(61,4181),(61,4182),(61,4183),(61,4184),(61,4185),(61,4186),(61,4187),(61,4188),(61,4189),(61,4190),(61,4191),(61,4192),(61,4193),(61,4194),(61,4195),(61,4196),(61,4197),(61,4198),(61,4199),(61,4200),(61,4201),(61,4202),(61,4203),(61,4204),(61,4205),(61,4206),(61,4207),(61,4208),(61,4209),(61,4210),(61,4211),(61,4212),(61,4213),(61,4214),(61,4215),(61,4216),(61,4217),(61,4218),(61,4219),(61,4220),(61,4221),(61,4222),(61,4223),(61,4224),(61,4225),(61,4226),(61,4227),(61,4228),(61,4229),(61,4230),(61,4231),(61,4232),(61,4233),(61,4234),(61,4235),(61,4236),(61,4237),(61,4238),(61,4239),(61,4240),(61,4241),(61,4242),(61,4243),(61,4244),(61,4245),(61,4246),(61,4247),(61,4248),(61,4249),(61,4250),(61,4251),(61,4252),(61,4253),(61,4254),(61,4255),(61,4256),(61,4257),(61,4258),(61,4259),(61,4260),(61,4261),(61,4262),(61,4263),(61,4264),(61,4265),(61,4266),(61,4267),(61,4268),(61,4269),(61,4270),(61,4271),(61,4272),(61,4273),(61,4274),(61,4275),(61,4276),(61,4277),(61,4278),(61,4279),(61,4280),(61,4281),(61,4282),(61,4283),(61,4284),(61,4285),(61,4286),(61,4287),(61,4288),(61,4289),(61,4290),(61,4291),(61,4292),(61,4293),(61,4294),(61,4295),(61,4296),(61,4297),(61,4298),(61,4299),(61,4300),(61,4301),(61,4302),(61,4303),(61,4304),(61,4305),(61,4306),(61,4307),(61,4308),(61,4309),(61,4310),(61,4311),(61,4312),(61,4313),(61,4314),(61,4315),(61,4316),(61,4317),(61,4318),(61,4319),(61,4320),(61,4321),(61,4322),(61,4323),(61,4324),(61,4325),(61,4326),(61,4327),(61,4328),(61,4329),(61,4330),(61,4331),(61,4332),(61,4333),(61,4334),(61,4335),(61,4336),(61,4337),(61,4338),(61,4339),(61,4340),(61,4341),(61,4342),(61,4343),(61,4344),(61,4345),(61,4346),(61,4347),(61,4348),(61,4349),(61,4350),(61,4351),(61,4352),(61,4353),(61,4354),(61,4355),(61,4356),(61,4357),(61,4358),(61,4359),(61,4360),(61,4361),(61,4362),(61,4363),(61,4364),(61,4365),(61,4366),(61,4367),(61,4368),(61,4369),(61,4370),(61,4371),(61,4372),(61,4373),(61,4374),(61,4375),(61,4376),(61,4377),(61,4378),(61,4379),(61,4380),(61,4381),(61,4382),(61,4383),(61,4384),(61,4385),(61,4386),(61,4387),(61,4388),(61,4389),(61,4390),(61,4391),(61,4392),(61,4393),(61,4394),(61,4395),(61,4396),(61,4397),(61,4398),(61,4399),(61,4400),(61,4401),(61,4402),(61,4403),(61,4404),(61,4405),(61,4406),(61,4407),(61,4408),(61,4409),(61,4410),(61,4411),(61,4412),(61,4413),(61,4414),(61,4415),(61,4416),(61,4417),(61,4418),(61,4419),(61,4420),(61,4421),(61,4422),(61,4423),(61,4424),(61,4425),(61,4426),(61,4427),(61,4428),(61,4429),(61,4430),(61,4431),(61,4432),(61,4433),(61,4434),(61,4435),(61,4436),(61,4437),(61,4438),(61,4439),(61,4440),(61,4441),(61,4442),(61,4443),(61,4444),(61,4445),(61,4446),(61,4447),(61,4448),(61,4449),(61,4450),(61,4451),(61,4452),(61,4453),(61,4454),(61,4455),(61,4456),(61,4457),(61,4458),(61,4459),(61,4460),(61,4461),(61,4462),(61,4463),(61,4464),(61,4465),(61,4466),(61,4467),(61,4468),(61,4469),(61,4470),(61,4471),(61,4472),(61,4473),(61,4474),(61,4475),(61,4476),(61,4477),(61,4478),(61,4479),(61,4480),(61,4481),(61,4482),(61,4483),(61,4484),(61,4485),(61,4486),(61,4487),(61,4488),(61,4489),(61,4490),(61,4491),(61,4492),(61,4493),(61,4494),(61,4495),(61,4496),(61,4497),(61,4498),(61,4499),(61,4500),(61,4501),(61,4502),(61,4503),(61,4504),(61,4505),(61,4506),(61,4507),(61,4508),(61,4509),(61,4510),(61,4511),(61,4512),(61,4513),(61,4514),(61,4515),(61,4516),(61,4517),(61,4518),(61,4519),(61,4520),(61,4521),(61,4522),(61,4523),(61,4524),(61,4525),(61,4526),(61,4527),(61,4528),(61,4529),(61,4530),(61,4531),(61,4532),(61,4533),(61,4534),(61,4535),(61,4536),(61,4537),(61,4538),(61,4539),(61,4540),(61,4541),(61,4542),(61,4543),(61,4544),(61,4545),(61,4546),(61,4547),(61,4548),(61,4549),(61,4550),(61,4551),(61,4552),(61,4553),(61,4554),(61,4555),(61,4556),(61,4557),(61,4558),(61,4559),(61,4560),(61,4561),(61,4562),(61,4563),(61,4564),(61,4565),(61,4566),(61,4567),(61,4568),(61,4569),(61,4570),(61,4571),(61,4572),(61,4573),(61,4574),(61,4575),(61,4576),(61,4577),(61,4578),(61,4579),(61,4580),(61,4581),(61,4582),(61,4583),(61,4584),(61,4585),(61,4586),(61,4587),(61,4588),(61,4589),(61,4590),(61,4591),(61,4592),(61,4593),(61,4594),(61,4595),(61,4596),(61,4597),(61,4598),(61,4599),(61,4600),(61,4601),(61,4602),(61,4603),(61,4604),(61,4605),(61,4606),(61,4607),(61,4608),(61,4609),(61,4610),(61,4611),(61,4612),(61,4613),(61,4614),(61,4615),(61,4616),(61,4617),(61,4618),(61,4619),(61,4620),(61,4621),(61,4622),(61,4623),(61,4624),(61,4625),(61,4626),(61,4627),(61,4628),(61,4629),(61,4630),(61,4631),(61,4632),(61,4633),(61,4634),(61,4635),(61,4636),(61,4637),(61,4638),(61,4639),(61,4640),(61,4641),(61,4642),(61,4643),(61,4644),(61,4645),(61,4646),(61,4647),(61,4648),(61,4649),(61,4650),(61,4651),(61,4652),(61,4653),(61,4654),(61,4655),(61,4656),(61,4657),(61,4658),(61,4659),(61,4660),(61,4661),(61,4662),(61,4663),(61,4664),(61,4665),(61,4666),(61,4667),(61,4668),(61,4669),(61,4670),(61,4671),(61,4672),(61,4673),(61,4674),(61,4675),(61,4676),(61,4677),(61,4678),(61,4679),(61,4680),(61,4681),(61,4682),(61,4683),(61,4684),(61,4685),(61,4686),(61,4687),(61,4688),(61,4689),(61,4690),(61,4691),(61,4692),(61,4693),(61,4694),(61,4695),(61,4696),(61,4697),(61,4698),(61,4699),(61,4700),(61,4701),(61,4702),(61,4703),(61,4704),(61,4705),(61,4706),(61,4707),(61,4708),(61,4709),(61,4710),(61,4711),(61,4712),(61,4713),(61,4714),(61,4715),(61,4716),(61,4717),(61,4718),(61,4719),(61,4720),(61,4721),(61,4722),(61,4723),(61,4724),(61,4725),(61,4726),(61,4727),(61,4728),(61,4729),(61,4730),(61,4731),(61,4732),(61,4733),(61,4734),(61,4735),(61,4736),(61,4737),(61,4738),(61,4739),(61,4740),(61,4741),(61,4742),(61,4743),(61,4744),(61,4745),(61,4746),(61,4747),(61,4748),(61,4749),(61,4750),(61,4751),(61,4752),(61,4753),(61,4754),(61,4755),(61,4756),(61,4757),(61,4758),(61,4759),(61,4760),(61,4761),(61,4762),(61,4763),(61,4764),(61,4765),(61,4766),(61,4767),(61,4768),(61,4769),(61,4770),(61,4771),(61,4772),(61,4773),(61,4774),(61,4775),(61,4776),(61,4777),(61,4778),(61,4779),(61,4780),(61,4781),(61,4782),(61,4783),(61,4784),(61,4785),(61,4786),(61,4787),(61,4788),(61,4789),(61,4790),(61,4791),(61,4792),(61,4793),(61,4794),(61,4795),(61,4796),(61,4797),(61,4798),(61,4799),(61,4800),(61,4801),(61,4802),(61,4803),(61,4804),(61,4805),(61,4806),(61,4807),(61,4808),(61,4809),(61,4810),(61,4811),(61,4812),(61,4813),(61,4814),(61,4815),(61,4816),(61,4817),(61,4818),(61,4819),(61,4820),(61,4821),(61,4822),(61,4823),(61,4824),(61,4825),(61,4826),(61,4827),(61,4828),(61,4829),(61,4830),(61,4831),(61,4832),(61,4833),(61,4834),(61,4835),(61,4836),(61,4837),(61,4838),(61,4839),(61,4840),(61,4841),(61,4842),(61,4843),(61,4844),(61,4845),(61,4846),(61,4847),(61,4848),(61,4849),(61,4850),(61,4851),(61,4852),(61,4853),(61,4854),(61,4855),(61,4856),(61,4857),(61,4858),(61,4859),(61,4860),(61,4861),(61,4862),(61,4863),(61,4864),(61,4865),(61,4866),(61,4867),(61,4868),(61,4869),(61,4870),(61,4871),(61,4872),(61,4873),(61,4874),(61,4875),(61,4876),(61,4877),(61,4878),(61,4879),(61,4880),(61,4881),(61,4882),(61,4883),(61,4884),(61,4885),(61,4886),(61,4887),(61,4888),(61,4889),(61,4890),(61,4891),(61,4892),(61,4893),(61,4894),(61,4895),(61,4896),(61,4897),(61,4898),(61,4899),(61,4900),(61,4901),(61,4902),(61,4903),(61,4904),(61,4905),(61,4906),(61,4907),(61,4908),(61,4909),(61,4910),(61,4911),(61,4912),(61,4913),(61,4914),(61,4915),(61,4916),(61,4917),(61,4918),(61,4919),(61,4920),(61,4921),(61,4922),(61,4923),(61,4924),(61,4925),(61,4926),(61,4927),(61,4928),(61,4929),(61,4930),(61,4931),(61,4932),(61,4933),(61,4934),(61,4935),(61,4936),(61,4937),(61,4938),(61,4939),(61,4940),(61,4941),(61,4942),(61,4943),(61,4944),(61,4945),(61,4946),(61,4947),(61,4948),(61,4949),(61,4950),(61,4952),(61,4953),(61,4954),(61,4955),(61,4956),(61,4957),(61,4958),(61,4959),(61,4960),(61,4961),(61,4962),(61,4964),(61,4965),(61,4966),(61,4967),(61,4968),(61,4969),(61,4970),(61,4971),(61,4972),(61,4973),(61,4974),(61,4975),(61,4976),(61,4977),(61,4978),(61,4979),(61,4980),(61,4981),(61,4982),(61,4983),(61,4984),(61,4985),(61,4986),(61,4987),(61,4988),(61,4989),(61,4990),(61,4991),(61,4992),(61,4993),(61,4994),(61,4995),(61,4996),(61,4997),(61,4998),(61,4999),(61,5000),(61,5001),(61,5002),(61,5003),(61,5004),(61,5005),(61,5006),(61,5007),(61,5008),(61,5009),(61,5010),(61,5011),(61,5012),(61,5013),(61,5014),(61,5015),(61,5016),(61,5017),(61,5018),(61,5019),(61,5020),(61,5021),(61,5022),(61,5023),(61,5024),(61,5025),(61,5026),(61,5027),(61,5028),(61,5029),(61,5030),(61,5031),(61,5032),(61,5033),(61,5034),(61,5035),(61,5036),(61,5037),(61,5038),(61,5039),(61,5040),(61,5041),(61,5042),(61,5043),(61,5044),(61,5045),(61,5046),(61,5047),(61,5048),(61,5049),(61,5050),(61,5051),(61,5052),(61,5053),(61,5054),(61,5055),(61,5056),(61,5057),(61,5058),(61,5059),(61,5060),(61,5061),(61,5062),(61,5063),(61,5064),(61,5065),(61,5066),(61,5067),(61,5068),(61,5069),(61,5070),(61,5071),(61,5072),(61,5073),(61,5074),(61,5075),(61,5076),(61,5077),(61,5078),(61,5079),(61,5080),(61,5081),(61,5082),(61,5083),(61,5084),(61,5085),(61,5086),(61,5087),(61,5088),(61,5089),(61,5090),(61,5091),(61,5092),(61,5093),(61,5094),(61,5095),(61,5096),(61,5097),(61,5098),(61,5099),(61,5100),(61,5101),(61,5102),(61,5103),(61,5104),(61,5105),(61,5106),(61,5107),(61,5108),(61,5109),(61,5110),(61,5111),(61,5112),(61,5113),(61,5114),(61,5115),(61,5116),(61,5117),(61,5118),(61,5119),(61,5120),(61,5121),(61,5122),(61,5123),(61,5124),(61,5125),(61,5126),(61,5127),(61,5128),(61,5129),(61,5130),(61,5131),(61,5132),(61,5133),(61,5134),(61,5135),(61,5136),(61,5137),(61,5138),(61,5139),(61,5140),(61,5141),(61,5142),(61,5143),(61,5144),(61,5145),(61,5146),(61,5147),(61,5148),(61,5149),(61,5150),(61,5151),(61,5152),(61,5153),(61,5154),(61,5155),(61,5156),(61,5157),(61,5158),(61,5159),(61,5160),(61,5161),(61,5162),(61,5163),(61,5164),(61,5165),(61,5166),(61,5167),(61,5168),(61,5169),(61,5170),(61,5171),(61,5172),(61,5173),(61,5174),(61,5175),(61,5176),(61,5177),(61,5178),(61,5179),(61,5180),(61,5181),(61,5182),(61,5183),(61,5184),(61,5185),(61,5186),(61,5187),(61,5188),(61,5189),(61,5190),(61,5191),(61,5192),(61,5193),(61,5194),(61,5195),(61,5196),(61,5197),(61,5198),(61,5199),(61,5200),(61,5201),(61,5202),(61,5203),(61,5204),(61,5205),(61,5206),(61,5207),(61,5208),(61,5209),(61,5210),(61,5211),(61,5212),(61,5213),(61,5214),(61,5215),(61,5216),(61,5217),(61,5218),(61,5219),(61,5220),(61,5221),(61,5222),(61,5223),(61,5224),(61,5225),(61,5226),(61,5227),(61,5228),(61,5229),(61,5230),(61,5231),(61,5232),(61,5233),(61,5234),(61,5235),(61,5236),(61,5237),(61,5238),(61,5239),(61,5240),(61,5241),(61,5242),(61,5243),(61,5244),(61,5245),(61,5246),(61,5247),(61,5248),(61,5249),(61,5250),(61,5251),(61,5252),(61,5253),(61,5254),(61,5255),(61,5256),(61,5257),(61,5258),(61,5259),(61,5260),(61,5261),(61,5262),(61,5263),(61,5264),(61,5265),(61,5266),(61,5267),(61,5268),(61,5269),(61,5270),(61,5271),(61,5272),(61,5273),(61,5274),(61,5275),(61,5276),(61,5277),(61,5278),(61,5279),(61,5280),(61,5281),(61,5282),(61,5283),(61,5284),(61,5285),(61,5286),(61,5287),(61,5288),(61,5289),(61,5290),(61,5291),(61,5292),(61,5293),(61,5294),(61,5295),(61,5296),(61,5297),(61,5298),(61,5299),(61,5300),(61,5301),(61,5302),(61,5303),(61,5304),(61,5305),(61,5306),(61,5307),(61,5308),(61,5309),(61,5310),(61,5311),(61,5312),(61,5313),(61,5314),(61,5315),(61,5316),(61,5317),(61,5318),(61,5319),(61,5320),(61,5321),(61,5322),(61,5323),(61,5324),(61,5325),(61,5326),(61,5327),(61,5328),(61,5329),(61,5330),(61,5331),(61,5332),(61,5333),(61,5334),(61,5335),(61,5336),(61,5337),(61,5338),(61,5339),(61,5340),(61,5341),(61,5342),(61,5343),(61,5344),(61,5345),(61,5346),(61,5347),(61,5348),(61,5349),(61,5350),(61,5351),(61,5352),(61,5353),(61,5354),(61,5355),(61,5356),(61,5357),(61,5358),(61,5359),(61,5360),(61,5361),(61,5362),(61,5363),(61,5364),(61,5365),(61,5366),(61,5367),(61,5368),(61,5369),(61,5370),(61,5371),(61,5372),(61,5373),(61,5374),(61,5375),(61,5376),(61,5377),(61,5378),(61,5379),(61,5380),(61,5381),(61,5382),(61,5383),(61,5384),(61,5385),(61,5386),(61,5387),(61,5388),(61,5389),(61,5390),(61,5391),(61,5392),(61,5393),(61,5394),(61,5395),(61,5396),(61,5397),(61,5398),(61,5399),(61,5400),(61,5401),(61,5402),(61,5403),(61,5404),(61,5405),(61,5406),(61,5407),(61,5408),(61,5409),(61,5410),(61,5411),(61,5412),(61,5413),(61,5414),(61,5415),(61,5416),(61,5417),(61,5418),(61,5419),(61,5420),(61,5421),(61,5422),(61,5423),(61,5424),(61,5425),(61,5426),(61,5427),(61,5428),(61,5429),(61,5430),(61,5431),(61,5432),(61,5433),(61,5434),(61,5435),(61,5436),(61,5437),(61,5438),(61,5439),(61,5440),(61,5441),(61,5442),(61,5443),(61,5444),(61,5445),(61,5446),(61,5447),(61,5448),(61,5449),(61,5450),(61,5451),(61,5452),(61,5453),(61,5454),(61,5455),(61,5456),(61,5457),(61,5458),(61,5459),(61,5460),(61,5461),(61,5462),(61,5463),(61,5464),(61,5465),(61,5466),(61,5467),(61,5468),(61,5469),(61,5470),(61,5471),(61,5472),(61,5473),(61,5474),(61,5475),(61,5476),(61,5477),(61,5478),(61,5479),(61,5480),(61,5481),(61,5482),(61,5483),(61,5484),(61,5485),(61,5486),(61,5487),(61,5488),(61,5489),(61,5490),(61,5491),(61,5492),(61,5493),(61,5494),(61,5495),(61,5496),(61,5497),(61,5498),(61,5499),(61,5500),(61,5501),(61,5502),(61,5503),(61,5504),(61,5505),(61,5506),(61,5507),(61,5508),(61,5509),(61,5510),(61,5511),(61,5512),(61,5513),(61,5514),(61,5515),(61,5516),(61,5517),(61,5518),(61,5519),(61,5520),(61,5521),(61,5522),(61,5523),(61,5524),(61,5525),(61,5526),(61,5527),(61,5528),(61,5529),(61,5530),(61,5531),(61,5532),(61,5533),(61,5534),(61,5535),(61,5536),(61,5537),(61,5538),(61,5539),(61,5540),(61,5541),(61,5542),(61,5543),(61,5544),(61,5545),(61,5546),(61,5547),(61,5548),(61,5549),(61,5550),(61,5551),(61,5552),(61,5553),(61,5554),(61,5555),(61,5556),(61,5557),(61,5558),(61,5559),(61,5560),(61,5561),(61,5562),(61,5563),(61,5564),(61,5565),(61,5566),(61,5567),(61,5568),(61,5569),(61,5570),(61,5571),(61,5572),(61,5573),(61,5574),(61,5575),(61,5576),(61,5577),(61,5578),(61,5579),(61,5580),(61,5581),(61,5582),(61,5583),(61,5584),(61,5585),(61,5586),(61,5587),(61,5588),(61,5589),(61,5590),(61,5591),(61,5592),(61,5593),(61,5594),(61,5595),(61,5596),(61,5597),(61,5598),(61,5599),(61,5600),(61,5601),(61,5602),(61,5603),(61,5604),(61,5605),(61,5606),(61,5607),(61,5608),(61,5609),(61,5610),(61,5611),(61,5612),(61,5613),(61,5614),(61,5615),(61,5616),(61,5617),(61,5618),(61,5619),(61,5620),(61,5621),(61,5622),(61,5623),(61,5624),(61,5625),(61,5626),(61,5627),(61,5628),(61,5629),(61,5630),(61,5631),(61,5632),(61,5633),(61,5634),(61,5635),(61,5636),(61,5637),(61,5638),(61,5639),(61,5640),(61,5641),(61,5642),(61,5643),(61,5644),(61,5645),(61,5646),(61,279078),(61,1923662),(61,1924171),(61,1924532),(61,1925143),(61,1929637),(61,1998532),(61,1998542),(61,1998584),(61,2005016),(61,2019672),(61,2052982),(61,2116660),(61,2184457),(61,2185271),(61,2185858),(61,2316497),(61,2316517),(61,2411629),(61,2413243),(61,2415585),(61,2415620),(61,2479040),(61,2499002),(61,2499035),(61,2499082),(61,2812698),(61,3118538),(61,3138835),(61,3138841),(61,3145145),(61,3408643),(61,3409478),(61,3411630),(61,3411741),(61,3473821),(61,3474011),(61,3535020),(61,3881459),(61,4041912),(61,4093520),(61,4093692),(61,4156345),(61,4276360),(61,4285366),(61,4285519),(61,4777963),(61,4778470),(61,4778496),(61,4778522),(61,4869166),(61,5019394),(61,5019404),(61,5020365),(61,5020595),(61,5020614),(61,5020665),(61,5020681),(61,5252498),(61,5498759),(61,5555962),(61,5556050),(61,5641077),(61,5908265),(61,5908547),(61,6113699),(61,6454651),(61,6456567),(61,6711408),(61,7592215),(61,7592923),(61,7593075),(61,7593225),(61,7717502),(61,7717702),(61,7718652),(61,10498697),(61,10499269),(61,10499672),(61,10500023),(61,10500094),(61,10500382),(61,10500476),(61,10501002),(61,10502714),(61,10504604),(61,10505475),(61,10688837),(61,10689767),(61,11567319),(61,11569100),(61,11569394),(61,11910622),(61,11911051),(61,12364794),(61,12370243),(61,12370942),(61,12371093),(61,12371094),(98,3253),(98,3271),(98,3277),(98,3283),(98,3345),(98,3472),(98,3473),(98,3477),(98,3480),(98,3501),(98,3538),(98,3598),(98,3607),(98,3612),(98,3770),(98,3963),(98,4017),(98,4018),(98,4019),(98,4021),(98,4070),(98,4079),(98,4088),(98,4094),(98,4099),(98,4238),(98,4400),(98,4402),(98,4421),(98,4478),(98,4496),(98,4549),(98,4682),(98,4717),(98,4720),(98,4730),(98,4802),(98,4811),(98,4839),(98,4848),(98,4851),(98,4917),(98,4919),(98,4934),(98,4962),(98,5005),(98,5010),(98,5106),(98,5310),(98,5395),(98,5539),(98,5619),(98,5020681),(98,10688837),(98,11569100),(98,12364794),(98,12371094),(103,3166),(103,3354),(103,3376),(103,3538),(103,3612),(103,3770),(103,3854),(103,3863),(103,4019),(103,4025),(103,4057),(103,4079),(103,4084),(103,4352),(103,4371),(103,4400),(103,4421),(103,4438),(103,4440),(103,4453),(103,4469),(103,4475),(103,4549),(103,4698),(103,4707),(103,4708),(103,4711),(103,4720),(103,4721),(103,4848),(103,4879),(103,4917),(103,4962),(103,5106),(103,5395),(103,5634),(103,5643),(103,5646),(103,3118538),(225,3345),(225,3538),(225,4036),(225,4400),(225,4617),(225,4720),(225,4879),(225,4911),(225,4917),(225,4918),(225,4919),(225,4962),(225,5106),(225,5393),(225,5456),(225,5517),(225,5522),(225,5526),(225,5528),(225,5539),(225,5541),(225,5646),(280,3163),(280,3166),(280,3168),(280,3170),(280,3180),(280,3181),(280,3183),(280,3192),(280,3194),(280,3199),(280,3207),(280,3226),(280,3227),(280,3228),(280,3231),(280,3232),(280,3237),(280,3244),(280,3247),(280,3248),(280,3267),(280,3272),(280,3277),(280,3283),(280,3293),(280,3302),(280,3305),(280,3306),(280,3314),(280,3322),(280,3329),(280,3330),(280,3332),(280,3335),(280,3336),(280,3338),(280,3343),(280,3344),(280,3345),(280,3351),(280,3353),(280,3354),(280,3360),(280,3367),(280,3368),(280,3370),(280,3376),(280,3386),(280,3432),(280,3435),(280,3446),(280,3457),(280,3461),(280,3472),(280,3473),(280,3474),(280,3480),(280,3494),(280,3509),(280,3514),(280,3526),(280,3538),(280,3539),(280,3553),(280,3557),(280,3558),(280,3565),(280,3598),(280,3607),(280,3612),(280,3658),(280,3674),(280,3684),(280,3707),(280,3719),(280,3722),(280,3730),(280,3731),(280,3739),(280,3741),(280,3742),(280,3744),(280,3745),(280,3746),(280,3750),(280,3754),(280,3756),(280,3763),(280,3764),(280,3766),(280,3770),(280,3779),(280,3782),(280,3790),(280,3817),(280,3823),(280,3854),(280,3857),(280,3863),(280,3887),(280,3903),(280,3905),(280,3906),(280,3909),(280,3912),(280,3915),(280,3917),(280,3922),(280,3924),(280,3926),(280,3928),(280,3933),(280,3934),(280,3936),(280,3937),(280,3938),(280,3939),(280,3940),(280,3941),(280,3944),(280,3949),(280,3963),(280,3964),(280,3984),(280,4001),(280,4019),(280,4025),(280,4029),(280,4030),(280,4036),(280,4037),(280,4050),(280,4055),(280,4057),(280,4062),(280,4079),(280,4080),(280,4088),(280,4094),(280,4098),(280,4099),(280,4101),(280,4112),(280,4149),(280,4157),(280,4183),(280,4205),(280,4210),(280,4211),(280,4228),(280,4232),(280,4236),(280,4238),(280,4254),(280,4271),(280,4274),(280,4276),(280,4300),(280,4305),(280,4306),(280,4311),(280,4319),(280,4329),(280,4338),(280,4340),(280,4341),(280,4342),(280,4348),(280,4350),(280,4352),(280,4358),(280,4359),(280,4362),(280,4366),(280,4367),(280,4371),(280,4375),(280,4376),(280,4377),(280,4383),(280,4385),(280,4392),(280,4394),(280,4400),(280,4402),(280,4403),(280,4404),(280,4409),(280,4411),(280,4416),(280,4417),(280,4421),(280,4426),(280,4429),(280,4430),(280,4438),(280,4440),(280,4441),(280,4443),(280,4446),(280,4452),(280,4453),(280,4461),(280,4463),(280,4469),(280,4470),(280,4477),(280,4478),(280,4479),(280,4480),(280,4482),(280,4489),(280,4491),(280,4493),(280,4495),(280,4496),(280,4501),(280,4517),(280,4530),(280,4531),(280,4537),(280,4538),(280,4549),(280,4562),(280,4580),(280,4602),(280,4617),(280,4618),(280,4650),(280,4673),(280,4682),(280,4691),(280,4693),(280,4697),(280,4708),(280,4720),(280,4721),(280,4731),(280,4737),(280,4741),(280,4753),(280,4756),(280,4759),(280,4760),(280,4765),(280,4767),(280,4775),(280,4790),(280,4793),(280,4801),(280,4806),(280,4811),(280,4828),(280,4839),(280,4848),(280,4851),(280,4859),(280,4879),(280,4883),(280,4900),(280,4904),(280,4911),(280,4917),(280,4918),(280,4919),(280,4932),(280,4933),(280,4934),(280,4935),(280,4937),(280,4941),(280,4942),(280,4943),(280,4945),(280,4946),(280,4947),(280,4949),(280,4950),(280,4954),(280,4955),(280,4957),(280,4958),(280,4960),(280,4961),(280,4962),(280,4964),(280,4965),(280,4966),(280,4967),(280,4968),(280,4972),(280,4974),(280,4978),(280,4984),(280,5000),(280,5003),(280,5005),(280,5010),(280,5033),(280,5034),(280,5051),(280,5055),(280,5079),(280,5084),(280,5091),(280,5092),(280,5095),(280,5106),(280,5115),(280,5116),(280,5121),(280,5122),(280,5123),(280,5124),(280,5125),(280,5128),(280,5130),(280,5133),(280,5136),(280,5137),(280,5140),(280,5147),(280,5153),(280,5156),(280,5165),(280,5181),(280,5184),(280,5190),(280,5195),(280,5196),(280,5200),(280,5201),(280,5204),(280,5209),(280,5210),(280,5217),(280,5219),(280,5233),(280,5242),(280,5247),(280,5252),(280,5260),(280,5266),(280,5268),(280,5269),(280,5278),(280,5281),(280,5282),(280,5310),(280,5328),(280,5337),(280,5338),(280,5341),(280,5344),(280,5345),(280,5348),(280,5351),(280,5352),(280,5353),(280,5354),(280,5368),(280,5370),(280,5394),(280,5395),(280,5401),(280,5406),(280,5408),(280,5409),(280,5414),(280,5423),(280,5438),(280,5457),(280,5482),(280,5484),(280,5485),(280,5492),(280,5500),(280,5504),(280,5517),(280,5519),(280,5522),(280,5527),(280,5528),(280,5538),(280,5539),(280,5562),(280,5564),(280,5572),(280,5575),(280,5583),(280,5589),(280,5594),(280,5596),(280,5597),(280,5599),(280,5615),(280,5619),(280,5631),(280,5638),(280,5643),(280,5644),(280,5646),(280,1929637),(280,2052982),(280,2499035),(280,2499082),(280,3118538),(280,3138841),(280,3145145),(280,3409478),(280,3411630),(280,4093692),(280,4156345),(280,4285366),(280,4869166),(280,5020365),(280,5020614),(280,5020681),(280,5252498),(280,5555962),(280,5908547),(280,6113699),(280,7593075),(280,7593225),(280,7717702),(280,7718652),(280,10501002),(280,10504604),(280,10689767),(280,12371094),(281,3163),(281,3166),(281,3168),(281,3170),(281,3180),(281,3181),(281,3183),(281,3192),(281,3194),(281,3199),(281,3207),(281,3226),(281,3227),(281,3228),(281,3231),(281,3232),(281,3237),(281,3244),(281,3247),(281,3248),(281,3267),(281,3272),(281,3277),(281,3283),(281,3293),(281,3302),(281,3305),(281,3306),(281,3314),(281,3322),(281,3329),(281,3330),(281,3332),(281,3335),(281,3336),(281,3338),(281,3343),(281,3344),(281,3345),(281,3351),(281,3353),(281,3354),(281,3360),(281,3367),(281,3368),(281,3370),(281,3376),(281,3386),(281,3432),(281,3435),(281,3446),(281,3457),(281,3461),(281,3472),(281,3473),(281,3474),(281,3480),(281,3494),(281,3509),(281,3514),(281,3526),(281,3538),(281,3539),(281,3553),(281,3557),(281,3558),(281,3565),(281,3598),(281,3607),(281,3612),(281,3658),(281,3674),(281,3684),(281,3707),(281,3719),(281,3722),(281,3730),(281,3731),(281,3739),(281,3741),(281,3742),(281,3744),(281,3745),(281,3746),(281,3750),(281,3754),(281,3756),(281,3763),(281,3764),(281,3766),(281,3770),(281,3779),(281,3782),(281,3790),(281,3817),(281,3823),(281,3854),(281,3857),(281,3863),(281,3887),(281,3903),(281,3905),(281,3906),(281,3909),(281,3912),(281,3915),(281,3917),(281,3922),(281,3924),(281,3926),(281,3928),(281,3933),(281,3934),(281,3936),(281,3937),(281,3938),(281,3939),(281,3940),(281,3941),(281,3944),(281,3949),(281,3963),(281,3964),(281,3984),(281,4001),(281,4019),(281,4025),(281,4029),(281,4030),(281,4036),(281,4037),(281,4050),(281,4055),(281,4057),(281,4062),(281,4079),(281,4080),(281,4088),(281,4094),(281,4098),(281,4099),(281,4101),(281,4112),(281,4149),(281,4157),(281,4183),(281,4205),(281,4210),(281,4211),(281,4228),(281,4232),(281,4236),(281,4238),(281,4254),(281,4271),(281,4274),(281,4276),(281,4300),(281,4305),(281,4306),(281,4311),(281,4319),(281,4329),(281,4338),(281,4340),(281,4341),(281,4342),(281,4348),(281,4350),(281,4352),(281,4358),(281,4359),(281,4362),(281,4366),(281,4367),(281,4371),(281,4375),(281,4376),(281,4377),(281,4383),(281,4385),(281,4392),(281,4394),(281,4400),(281,4402),(281,4403),(281,4404),(281,4409),(281,4411),(281,4416),(281,4417),(281,4421),(281,4426),(281,4429),(281,4430),(281,4438),(281,4440),(281,4441),(281,4443),(281,4446),(281,4452),(281,4453),(281,4461),(281,4463),(281,4469),(281,4470),(281,4477),(281,4478),(281,4479),(281,4480),(281,4482),(281,4489),(281,4491),(281,4493),(281,4495),(281,4496),(281,4501),(281,4517),(281,4530),(281,4531),(281,4537),(281,4538),(281,4549),(281,4562),(281,4580),(281,4602),(281,4617),(281,4618),(281,4650),(281,4673),(281,4682),(281,4691),(281,4693),(281,4697),(281,4708),(281,4720),(281,4721),(281,4731),(281,4737),(281,4741),(281,4753),(281,4756),(281,4759),(281,4760),(281,4765),(281,4767),(281,4775),(281,4790),(281,4793),(281,4801),(281,4806),(281,4811),(281,4828),(281,4839),(281,4848),(281,4851),(281,4859),(281,4879),(281,4883),(281,4900),(281,4904),(281,4911),(281,4917),(281,4918),(281,4919),(281,4932),(281,4933),(281,4934),(281,4935),(281,4937),(281,4941),(281,4942),(281,4943),(281,4945),(281,4946),(281,4947),(281,4949),(281,4950),(281,4954),(281,4955),(281,4957),(281,4958),(281,4960),(281,4961),(281,4962),(281,4964),(281,4965),(281,4966),(281,4967),(281,4968),(281,4972),(281,4974),(281,4978),(281,4984),(281,5000),(281,5003),(281,5005),(281,5010),(281,5033),(281,5034),(281,5051),(281,5055),(281,5079),(281,5084),(281,5091),(281,5092),(281,5095),(281,5106),(281,5115),(281,5116),(281,5121),(281,5122),(281,5123),(281,5124),(281,5125),(281,5128),(281,5130),(281,5133),(281,5136),(281,5137),(281,5140),(281,5147),(281,5153),(281,5156),(281,5165),(281,5181),(281,5184),(281,5190),(281,5195),(281,5196),(281,5200),(281,5201),(281,5204),(281,5209),(281,5210),(281,5217),(281,5219),(281,5233),(281,5242),(281,5247),(281,5252),(281,5260),(281,5266),(281,5268),(281,5269),(281,5278),(281,5281),(281,5282),(281,5310),(281,5328),(281,5337),(281,5338),(281,5341),(281,5344),(281,5345),(281,5348),(281,5351),(281,5352),(281,5353),(281,5354),(281,5368),(281,5370),(281,5394),(281,5395),(281,5401),(281,5406),(281,5408),(281,5409),(281,5414),(281,5423),(281,5438),(281,5457),(281,5482),(281,5484),(281,5485),(281,5492),(281,5500),(281,5504),(281,5517),(281,5519),(281,5522),(281,5527),(281,5528),(281,5538),(281,5539),(281,5562),(281,5564),(281,5572),(281,5575),(281,5583),(281,5589),(281,5594),(281,5596),(281,5597),(281,5599),(281,5615),(281,5619),(281,5631),(281,5638),(281,5643),(281,5644),(281,5646),(281,1929637),(281,2052982),(281,2499035),(281,2499082),(281,3118538),(281,3138841),(281,3145145),(281,3409478),(281,3411630),(281,4093692),(281,4156345),(281,4285366),(281,4869166),(281,5020365),(281,5020614),(281,5020681),(281,5252498),(281,5555962),(281,5908547),(281,6113699),(281,7593075),(281,7593225),(281,7717702),(281,7718652),(281,10501002),(281,10504604),(281,10689767),(281,12371094),(282,3163),(282,3166),(282,3168),(282,3170),(282,3180),(282,3181),(282,3183),(282,3192),(282,3194),(282,3199),(282,3207),(282,3226),(282,3227),(282,3228),(282,3231),(282,3232),(282,3237),(282,3244),(282,3247),(282,3248),(282,3267),(282,3272),(282,3277),(282,3283),(282,3293),(282,3302),(282,3305),(282,3306),(282,3314),(282,3322),(282,3329),(282,3330),(282,3332),(282,3335),(282,3336),(282,3338),(282,3343),(282,3344),(282,3345),(282,3351),(282,3353),(282,3354),(282,3360),(282,3367),(282,3368),(282,3370),(282,3376),(282,3386),(282,3432),(282,3435),(282,3446),(282,3457),(282,3461),(282,3472),(282,3473),(282,3474),(282,3480),(282,3494),(282,3509),(282,3514),(282,3526),(282,3538),(282,3539),(282,3553),(282,3557),(282,3558),(282,3565),(282,3598),(282,3607),(282,3612),(282,3658),(282,3674),(282,3684),(282,3707),(282,3719),(282,3722),(282,3730),(282,3731),(282,3739),(282,3741),(282,3742),(282,3744),(282,3745),(282,3746),(282,3750),(282,3754),(282,3756),(282,3763),(282,3764),(282,3766),(282,3770),(282,3779),(282,3782),(282,3790),(282,3817),(282,3823),(282,3854),(282,3857),(282,3863),(282,3887),(282,3903),(282,3905),(282,3906),(282,3909),(282,3912),(282,3915),(282,3917),(282,3922),(282,3924),(282,3926),(282,3928),(282,3933),(282,3934),(282,3936),(282,3937),(282,3938),(282,3939),(282,3940),(282,3941),(282,3944),(282,3949),(282,3963),(282,3964),(282,3984),(282,4001),(282,4019),(282,4025),(282,4029),(282,4030),(282,4036),(282,4037),(282,4050),(282,4055),(282,4057),(282,4062),(282,4079),(282,4080),(282,4088),(282,4094),(282,4098),(282,4099),(282,4101),(282,4112),(282,4149),(282,4157),(282,4183),(282,4205),(282,4210),(282,4211),(282,4228),(282,4232),(282,4236),(282,4238),(282,4254),(282,4271),(282,4274),(282,4276),(282,4300),(282,4305),(282,4306),(282,4311),(282,4319),(282,4329),(282,4338),(282,4340),(282,4341),(282,4342),(282,4348),(282,4350),(282,4352),(282,4358),(282,4359),(282,4362),(282,4366),(282,4367),(282,4371),(282,4375),(282,4376),(282,4377),(282,4383),(282,4385),(282,4392),(282,4394),(282,4400),(282,4402),(282,4403),(282,4404),(282,4409),(282,4411),(282,4416),(282,4417),(282,4421),(282,4426),(282,4429),(282,4430),(282,4438),(282,4440),(282,4441),(282,4443),(282,4446),(282,4452),(282,4453),(282,4461),(282,4463),(282,4469),(282,4470),(282,4477),(282,4478),(282,4479),(282,4480),(282,4482),(282,4489),(282,4491),(282,4493),(282,4495),(282,4496),(282,4501),(282,4517),(282,4530),(282,4531),(282,4537),(282,4538),(282,4549),(282,4562),(282,4580),(282,4602),(282,4617),(282,4618),(282,4650),(282,4673),(282,4682),(282,4691),(282,4693),(282,4697),(282,4708),(282,4720),(282,4721),(282,4731),(282,4737),(282,4741),(282,4753),(282,4756),(282,4759),(282,4760),(282,4765),(282,4767),(282,4775),(282,4790),(282,4793),(282,4801),(282,4806),(282,4811),(282,4828),(282,4839),(282,4848),(282,4851),(282,4859),(282,4879),(282,4883),(282,4900),(282,4904),(282,4911),(282,4917),(282,4918),(282,4919),(282,4932),(282,4933),(282,4934),(282,4935),(282,4937),(282,4941),(282,4942),(282,4943),(282,4945),(282,4946),(282,4947),(282,4949),(282,4950),(282,4954),(282,4955),(282,4957),(282,4958),(282,4960),(282,4961),(282,4962),(282,4964),(282,4965),(282,4966),(282,4967),(282,4968),(282,4972),(282,4974),(282,4978),(282,4984),(282,5000),(282,5003),(282,5005),(282,5010),(282,5033),(282,5034),(282,5051),(282,5055),(282,5079),(282,5084),(282,5091),(282,5092),(282,5095),(282,5106),(282,5115),(282,5116),(282,5121),(282,5122),(282,5123),(282,5124),(282,5125),(282,5128),(282,5130),(282,5133),(282,5136),(282,5137),(282,5140),(282,5147),(282,5153),(282,5156),(282,5165),(282,5181),(282,5184),(282,5190),(282,5195),(282,5196),(282,5200),(282,5201),(282,5204),(282,5209),(282,5210),(282,5217),(282,5219),(282,5233),(282,5242),(282,5247),(282,5252),(282,5260),(282,5266),(282,5268),(282,5269),(282,5278),(282,5281),(282,5282),(282,5310),(282,5328),(282,5337),(282,5338),(282,5341),(282,5344),(282,5345),(282,5348),(282,5351),(282,5352),(282,5353),(282,5354),(282,5368),(282,5370),(282,5394),(282,5395),(282,5401),(282,5406),(282,5408),(282,5409),(282,5414),(282,5423),(282,5438),(282,5457),(282,5482),(282,5484),(282,5485),(282,5492),(282,5500),(282,5504),(282,5517),(282,5519),(282,5522),(282,5527),(282,5528),(282,5538),(282,5539),(282,5562),(282,5564),(282,5572),(282,5575),(282,5583),(282,5589),(282,5594),(282,5596),(282,5597),(282,5599),(282,5615),(282,5619),(282,5631),(282,5638),(282,5643),(282,5644),(282,5646),(282,1929637),(282,2052982),(282,2499035),(282,2499082),(282,3118538),(282,3138841),(282,3145145),(282,3409478),(282,3411630),(282,4093692),(282,4156345),(282,4285366),(282,4869166),(282,5020365),(282,5020614),(282,5020681),(282,5252498),(282,5555962),(282,5908547),(282,6113699),(282,7593075),(282,7593225),(282,7717702),(282,7718652),(282,10501002),(282,10504604),(282,10689767),(282,12371094),(283,3163),(283,3166),(283,3168),(283,3170),(283,3180),(283,3181),(283,3183),(283,3192),(283,3194),(283,3199),(283,3207),(283,3226),(283,3227),(283,3228),(283,3231),(283,3232),(283,3237),(283,3244),(283,3247),(283,3248),(283,3267),(283,3272),(283,3277),(283,3283),(283,3293),(283,3302),(283,3305),(283,3306),(283,3314),(283,3322),(283,3329),(283,3330),(283,3332),(283,3335),(283,3336),(283,3338),(283,3343),(283,3344),(283,3345),(283,3351),(283,3353),(283,3354),(283,3360),(283,3367),(283,3368),(283,3370),(283,3376),(283,3386),(283,3432),(283,3435),(283,3446),(283,3457),(283,3461),(283,3472),(283,3473),(283,3474),(283,3480),(283,3494),(283,3509),(283,3514),(283,3526),(283,3538),(283,3539),(283,3553),(283,3557),(283,3558),(283,3565),(283,3598),(283,3607),(283,3612),(283,3658),(283,3674),(283,3684),(283,3707),(283,3719),(283,3722),(283,3730),(283,3731),(283,3739),(283,3741),(283,3742),(283,3744),(283,3745),(283,3746),(283,3750),(283,3754),(283,3756),(283,3763),(283,3764),(283,3766),(283,3770),(283,3779),(283,3782),(283,3790),(283,3817),(283,3823),(283,3854),(283,3857),(283,3863),(283,3887),(283,3903),(283,3905),(283,3906),(283,3909),(283,3912),(283,3915),(283,3917),(283,3922),(283,3924),(283,3926),(283,3928),(283,3933),(283,3934),(283,3936),(283,3937),(283,3938),(283,3939),(283,3940),(283,3941),(283,3944),(283,3949),(283,3963),(283,3964),(283,3984),(283,4001),(283,4019),(283,4025),(283,4029),(283,4030),(283,4036),(283,4037),(283,4050),(283,4055),(283,4057),(283,4062),(283,4079),(283,4080),(283,4088),(283,4094),(283,4098),(283,4099),(283,4101),(283,4112),(283,4149),(283,4157),(283,4183),(283,4205),(283,4210),(283,4211),(283,4228),(283,4232),(283,4236),(283,4238),(283,4254),(283,4271),(283,4274),(283,4276),(283,4300),(283,4305),(283,4306),(283,4311),(283,4319),(283,4329),(283,4338),(283,4340),(283,4341),(283,4342),(283,4348),(283,4350),(283,4352),(283,4358),(283,4359),(283,4362),(283,4366),(283,4367),(283,4371),(283,4375),(283,4376),(283,4377),(283,4383),(283,4385),(283,4392),(283,4394),(283,4400),(283,4402),(283,4403),(283,4404),(283,4409),(283,4411),(283,4416),(283,4417),(283,4421),(283,4426),(283,4429),(283,4430),(283,4438),(283,4440),(283,4441),(283,4443),(283,4446),(283,4452),(283,4453),(283,4461),(283,4463),(283,4469),(283,4470),(283,4477),(283,4478),(283,4479),(283,4480),(283,4482),(283,4489),(283,4491),(283,4493),(283,4495),(283,4496),(283,4501),(283,4517),(283,4530),(283,4531),(283,4537),(283,4538),(283,4549),(283,4562),(283,4580),(283,4602),(283,4617),(283,4618),(283,4650),(283,4673),(283,4682),(283,4691),(283,4693),(283,4697),(283,4708),(283,4720),(283,4721),(283,4731),(283,4737),(283,4741),(283,4753),(283,4756),(283,4759),(283,4760),(283,4765),(283,4767),(283,4775),(283,4790),(283,4793),(283,4801),(283,4806),(283,4811),(283,4828),(283,4839),(283,4848),(283,4851),(283,4859),(283,4879),(283,4883),(283,4900),(283,4904),(283,4911),(283,4917),(283,4918),(283,4919),(283,4932),(283,4933),(283,4934),(283,4935),(283,4937),(283,4941),(283,4942),(283,4943),(283,4945),(283,4946),(283,4947),(283,4949),(283,4950),(283,4954),(283,4955),(283,4957),(283,4958),(283,4960),(283,4961),(283,4962),(283,4964),(283,4965),(283,4966),(283,4967),(283,4968),(283,4972),(283,4974),(283,4978),(283,4984),(283,5000),(283,5003),(283,5005),(283,5010),(283,5033),(283,5034),(283,5051),(283,5055),(283,5079),(283,5084),(283,5091),(283,5092),(283,5095),(283,5106),(283,5115),(283,5116),(283,5121),(283,5122),(283,5123),(283,5124),(283,5125),(283,5128),(283,5130),(283,5133),(283,5136),(283,5137),(283,5140),(283,5147),(283,5153),(283,5156),(283,5165),(283,5181),(283,5184),(283,5190),(283,5195),(283,5196),(283,5200),(283,5201),(283,5204),(283,5209),(283,5210),(283,5217),(283,5219),(283,5233),(283,5242),(283,5247),(283,5252),(283,5260),(283,5266),(283,5268),(283,5269),(283,5278),(283,5281),(283,5282),(283,5310),(283,5328),(283,5337),(283,5338),(283,5341),(283,5344),(283,5345),(283,5348),(283,5351),(283,5352),(283,5353),(283,5354),(283,5368),(283,5370),(283,5394),(283,5395),(283,5401),(283,5406),(283,5408),(283,5409),(283,5414),(283,5423),(283,5438),(283,5457),(283,5482),(283,5484),(283,5485),(283,5492),(283,5500),(283,5504),(283,5517),(283,5519),(283,5522),(283,5527),(283,5528),(283,5538),(283,5539),(283,5562),(283,5564),(283,5572),(283,5575),(283,5583),(283,5589),(283,5594),(283,5596),(283,5597),(283,5599),(283,5615),(283,5619),(283,5631),(283,5638),(283,5643),(283,5644),(283,5646),(283,1929637),(283,2052982),(283,2499035),(283,2499082),(283,3118538),(283,3138841),(283,3145145),(283,3409478),(283,3411630),(283,4093692),(283,4156345),(283,4285366),(283,4869166),(283,5020365),(283,5020614),(283,5020681),(283,5252498),(283,5555962),(283,5908547),(283,6113699),(283,7593075),(283,7593225),(283,7717702),(283,7718652),(283,10501002),(283,10504604),(283,10689767),(283,12371094),(285,3343),(285,3345),(285,3612),(285,4079),(285,4319),(285,4329),(285,4343),(285,4358),(285,4363),(285,4394),(285,4400),(285,4402),(285,4411),(285,4421),(285,4426),(285,4463),(285,4475),(285,4549),(285,4580),(285,4720),(285,4848),(285,4917),(285,4962),(285,5106),(285,5395),(285,5527),(285,5539),(285,3118538);
+/*!40000 ALTER TABLE `multiref_credprogr_region_reistracii_zayomschika` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_region_vedenia_businesa`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_region_vedenia_businesa`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_region_vedenia_businesa` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_region_vedenia_businesa`
+--
+
+LOCK TABLES `multiref_credprogr_region_vedenia_businesa` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_region_vedenia_businesa` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_credprogr_region_vedenia_businesa` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_rko_tekus_sceta`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_rko_tekus_sceta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_rko_tekus_sceta` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_rko_tekus_sceta`
+--
+
+LOCK TABLES `multiref_credprogr_rko_tekus_sceta` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_rko_tekus_sceta` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_credprogr_rko_tekus_sceta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_sistema_nalogobl`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_sistema_nalogobl`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_sistema_nalogobl` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_sistema_nalogobl`
+--
+
+LOCK TABLES `multiref_credprogr_sistema_nalogobl` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_sistema_nalogobl` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_credprogr_sistema_nalogobl` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_spisok_documentovl`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_spisok_documentovl`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_spisok_documentovl` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_spisok_documentovl`
+--
+
+LOCK TABLES `multiref_credprogr_spisok_documentovl` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_spisok_documentovl` DISABLE KEYS */;
+INSERT INTO `multiref_credprogr_spisok_documentovl` VALUES (23,4),(23,5),(23,10),(23,13),(29,4),(29,5),(29,10),(29,11),(29,29),(29,30),(30,4),(30,10),(30,11),(30,29),(30,30),(31,4),(31,5),(31,10),(31,11),(31,23),(31,24),(31,25),(31,27),(31,29),(31,30),(32,4),(32,10),(32,11),(32,15),(32,16),(32,17),(32,18),(32,23),(32,24),(32,25),(32,26),(32,27),(32,28),(32,29),(32,30),(32,31),(32,32),(33,4),(33,6),(33,10),(33,11),(33,15),(33,16),(33,17),(33,18),(33,22),(33,23),(33,24),(33,25),(33,26),(33,27),(33,28),(33,29),(33,30),(33,31),(33,32),(34,4),(34,6),(34,10),(34,11),(34,15),(34,16),(34,17),(34,18),(34,22),(34,23),(34,24),(34,25),(34,26),(34,27),(34,28),(34,29),(34,30),(34,31),(34,32),(35,4),(35,6),(35,10),(35,11),(35,15),(35,16),(35,17),(35,18),(35,22),(35,23),(35,24),(35,25),(35,26),(35,27),(35,28),(35,29),(35,30),(35,31),(35,32),(36,4),(36,6),(36,10),(36,11),(36,15),(36,16),(36,17),(36,18),(36,22),(36,23),(36,24),(36,25),(36,26),(36,27),(36,28),(36,29),(36,30),(36,31),(36,32),(37,4),(37,6),(37,10),(37,11),(37,15),(37,16),(37,17),(37,18),(37,22),(37,23),(37,24),(37,25),(37,26),(37,27),(37,28),(37,29),(37,30),(37,31),(37,32),(38,4),(38,10),(38,11),(38,15),(38,16),(38,17),(38,18),(38,22),(38,23),(38,24),(38,25),(38,26),(38,27),(38,28),(38,29),(38,30),(38,31),(38,32),(39,4),(39,10),(39,11),(39,15),(39,16),(39,17),(39,18),(39,22),(39,23),(39,24),(39,25),(39,26),(39,27),(39,28),(39,29),(39,30),(39,31),(39,32),(40,4),(40,6),(40,10),(40,11),(40,15),(40,16),(40,17),(40,18),(40,22),(40,23),(40,24),(40,25),(40,26),(40,27),(40,28),(40,29),(40,30),(40,31),(40,32),(41,4),(41,10),(41,11),(41,15),(41,16),(41,17),(41,18),(41,22),(41,23),(41,24),(41,25),(41,26),(41,27),(41,28),(41,29),(41,30),(41,31),(41,32),(42,4),(42,6),(42,10),(42,11),(42,15),(42,16),(42,17),(42,18),(42,22),(42,23),(42,24),(42,25),(42,26),(42,27),(42,28),(42,29),(42,30),(42,31),(42,32),(43,4),(43,6),(43,11),(43,15),(43,16),(43,17),(43,18),(43,22),(43,23),(43,24),(43,25),(43,26),(43,27),(43,28),(43,29),(43,30),(43,31),(43,32),(44,4),(44,11),(44,28),(44,29),(44,30),(44,31),(44,32),(61,4),(61,11),(61,23),(61,27),(61,29),(61,30),(98,4),(98,6),(98,11),(98,23),(98,24),(98,25),(98,26),(98,27),(103,4),(103,5),(103,11),(103,22),(103,23),(103,24),(103,25),(103,26),(103,27),(225,4),(225,5),(225,6),(225,10),(225,11),(225,13),(225,23),(225,24),(225,25),(225,26),(225,27),(225,29),(225,30),(225,31),(225,32),(225,34),(225,35),(225,36),(280,4),(280,9),(280,11),(280,18),(280,23),(280,24),(280,25),(280,26),(280,27),(280,29),(280,30),(280,31),(280,32),(281,4),(281,9),(281,11),(281,18),(281,23),(281,24),(281,25),(281,26),(281,27),(281,29),(281,30),(281,31),(281,32),(282,4),(282,9),(282,11),(282,18),(282,23),(282,24),(282,25),(282,26),(282,27),(282,29),(282,30),(282,31),(282,32),(283,4),(283,9),(283,11),(283,18),(283,23),(283,24),(283,25),(283,26),(283,27),(283,29),(283,30),(283,31),(283,32);
+/*!40000 ALTER TABLE `multiref_credprogr_spisok_documentovl` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_trbuemye_documenty_na_priobret_avto`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_trbuemye_documenty_na_priobret_avto`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_trbuemye_documenty_na_priobret_avto` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_trbuemye_documenty_na_priobret_avto`
+--
+
+LOCK TABLES `multiref_credprogr_trbuemye_documenty_na_priobret_avto` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_trbuemye_documenty_na_priobret_avto` DISABLE KEYS */;
+INSERT INTO `multiref_credprogr_trbuemye_documenty_na_priobret_avto` VALUES (23,4),(23,5),(23,6),(29,4),(30,4),(31,4),(32,4),(32,5),(32,7),(33,4),(33,7),(34,4),(34,5),(34,7),(35,4),(35,5),(35,7),(36,4),(36,5),(36,7),(37,4),(37,5),(37,7),(38,4),(38,5),(38,7),(39,4),(39,5),(39,7),(40,4),(40,5),(40,7),(41,4),(41,5),(41,7),(42,4),(42,5),(42,7),(43,4),(43,5),(43,7),(44,4),(44,5),(44,7),(61,4),(103,5),(225,4),(280,4),(281,4),(282,4),(283,4),(285,4),(285,5);
+/*!40000 ALTER TABLE `multiref_credprogr_trbuemye_documenty_na_priobret_avto` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `multiref_credprogr_vid_deytelnosti`
+--
+
+DROP TABLE IF EXISTS `multiref_credprogr_vid_deytelnosti`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `multiref_credprogr_vid_deytelnosti` (
+  `TableID` int(11) NOT NULL,
+  `RefID` int(11) NOT NULL,
+  PRIMARY KEY (`TableID`,`RefID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `multiref_credprogr_vid_deytelnosti`
+--
+
+LOCK TABLES `multiref_credprogr_vid_deytelnosti` WRITE;
+/*!40000 ALTER TABLE `multiref_credprogr_vid_deytelnosti` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiref_credprogr_vid_deytelnosti` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `questionary`
+--
+
+DROP TABLE IF EXISTS `questionary`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `questionary` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` varchar(100) DEFAULT NULL,
+  `TableDBName` varchar(45) DEFAULT NULL,
+  `first_question_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `questionary`
+--
+
+LOCK TABLES `questionary` WRITE;
+/*!40000 ALTER TABLE `questionary` DISABLE KEYS */;
+INSERT INTO `questionary` VALUES (1,'Анкета клиента','Clients',10);
+/*!40000 ALTER TABLE `questionary` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `questionary_answers`
+--
+
+DROP TABLE IF EXISTS `questionary_answers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `questionary_answers` (
+  `question_id` int(11) NOT NULL DEFAULT '1',
+  `answer` int(11) NOT NULL DEFAULT '1',
+  `answer_next_question_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`question_id`,`answer`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `questionary_answers`
+--
+
+LOCK TABLES `questionary_answers` WRITE;
+/*!40000 ALTER TABLE `questionary_answers` DISABLE KEYS */;
+INSERT INTO `questionary_answers` VALUES (1,5,10),(1,6,11),(1,7,11),(1,8,11),(3,4,5),(3,5,4),(4,4,3),(4,5,4),(7,4,8),(7,5,9),(13,4,15),(13,5,14),(19,7,21),(19,8,21),(19,9,20),(20,4,40),(20,5,40),(20,6,22),(21,4,22),(21,5,22),(22,4,19),(22,5,NULL),(31,4,32),(31,5,33),(33,4,34),(33,5,37),(34,4,35),(34,5,37),(40,4,41),(40,5,NULL),(40,6,NULL),(40,7,NULL);
+/*!40000 ALTER TABLE `questionary_answers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `questionary_questions`
+--
+
+DROP TABLE IF EXISTS `questionary_questions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `questionary_questions` (
+  `question_id` int(11) NOT NULL AUTO_INCREMENT,
+  `questionary_id` int(11) DEFAULT NULL,
+  `question_text` varchar(300) DEFAULT NULL,
+  `question_variation` tinyint(1) DEFAULT '0',
+  `question_type` varchar(45) DEFAULT NULL,
+  `question_reference` varchar(45) DEFAULT NULL,
+  `question_next` int(11) DEFAULT NULL,
+  `question_dest_column_db_name` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`question_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `questionary_questions`
+--
+
+LOCK TABLES `questionary_questions` WRITE;
+/*!40000 ALTER TABLE `questionary_questions` DISABLE KEYS */;
+INSERT INTO `questionary_questions` VALUES (10,1,'Категория ТС',0,'Справочник','KategoriyaTS',16,'Kategoriya_TS'),(11,1,'Количество единиц техники',0,'Целое число',NULL,13,'Skolko_ed_tehniki'),(12,1,'Марка, модель техники',0,'Справочник','Cars',11,'Marka_model_TC'),(13,1,'Новое ТС или б/у',1,'Справочник','New_am',15,'Novoe_ili_bu'),(14,1,'Срок эксплуатации ТС на дату погашения',0,'Целое число',NULL,15,'Vozrast_TC_na_datu_pogashenia'),(15,1,'Год выпуска приобретаемого ТС',0,'Целое число',NULL,17,'God_vipuska_TC'),(16,1,'Страна-производитель ТС',0,'Справочник','citizenship',12,'Strana_proizvoditel'),(17,1,'Стоимость приоретаемого ТС',0,'Целое число',NULL,18,'Stoimost_TC'),(18,1,'Срок кредита, месяцев',0,'Целое число',NULL,19,'Srok_kredita'),(19,1,'Аванс',1,'Справочник','Avans',NULL,'Avans'),(20,1,'Готовы предоставить дополнительный залог?',1,'Справочник','Tip_obespecheniya',NULL,'Dop_zalog'),(21,1,'Готовы предоставить дополнительный залог?',0,'Справочник','Tip_obespecheniya',40,'Dop_zalog'),(22,1,'Готовы внести аванс больше 10 %',1,'Справочник','Yes_No',NULL,'Avans_bolee_10'),(23,1,'Включить страхование жизни в сумму кредита?',0,'Справочник','Yes_No',24,'Strah_gizni_v_kredit'),(24,1,'Включить страхование КАСКО в сумму кредита?',0,'Справочник','Yes_No',25,'KACKO_v_kredit'),(25,1,'Пол Заёмщика',0,'Справочник','Gender',26,'Pol_zaem'),(26,1,'Возраст Заёмщика',0,'Целое число',NULL,27,'Vozrast_zaem'),(27,1,'Трудовой стаж на последнем месте работы Заёмщика, месяцев',0,'Целое число',NULL,28,'Stag_na_posled_meste_zaem'),(28,1,'Подтверждение доходов Заёмщика',0,'Справочник','Document_list',29,'Podtv_dohod_zaem'),(29,1,'Количество иждивенцев Заёмщика ',0,'Целое число',NULL,30,'Kol_vo_igdivencev_zaem'),(30,1,'Среднемесячный доход Заёмщика',0,'Целое число',NULL,42,'Dohod_zaem'),(31,1,'Есть действующие кредиты у Заёмщика?',1,'Справочник','Yes_No',32,'Nalichie_dolg_obyaz_zaem'),(32,1,'Сумма ежемесячных платежей по действующим кредитам',0,'Целое число',NULL,34,'Plategi_po_deystv_kreditam_zaem'),(33,1,'Брали ли Вы кредиты за последние 3 года?',1,'Справочник','Yes_No',NULL,'Kredit_za_3_goda'),(34,1,'Были ли просрочки погашения?',1,'Справочник','Yes_No',NULL,'Prosrochki_pogashenia'),(35,1,'Сколько раз были просрочки?',0,'Целое число',NULL,36,'Skolko_prosrochek'),(36,1,'По сколько дней были просрочки?',0,'Целое число',NULL,37,'Skolko_dnei_prosrochki'),(37,1,'Есть ли действующее поручительство?',0,'Справочник','Yes_No',38,'Poruchit_zaem'),(38,1,'Сущ-ет ли невыполненное судебное решение?',0,'Справочник','Yes_No',39,'Sudeb_resheniya'),(39,1,'Были ли решения суда об ограничении дееспособности?',0,'Справочник','Yes_No',NULL,'Sudimosti'),(40,1,'В качестве кого хотите получить кредит?',1,'Справочник','Tip_klienta',NULL,'Tip_klienta'),(41,1,'Регион регистрации Заёмщика',0,'Справочник','Regions',23,'Region_registr_zaem'),(42,1,'Есть ли ТС в собственности Заёмщика?',0,'Справочник','Yes_No',31,'Nalichie_TC_zaem');
+/*!40000 ALTER TABLE `questionary_questions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_data_addaprove`
+--
+
+DROP TABLE IF EXISTS `ref_data_addaprove`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_addaprove` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_addaprove`
+--
+
+LOCK TABLES `ref_data_addaprove` WRITE;
+/*!40000 ALTER TABLE `ref_data_addaprove` DISABLE KEYS */;
+INSERT INTO `ref_data_addaprove` VALUES (4,0,'Да'),(5,0,'Нет'),(6,0,'Необходимо согласование');
+/*!40000 ALTER TABLE `ref_data_addaprove` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `AddAprove_after_insert` AFTER INSERT ON `ref_data_AddAprove`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_AddAprove(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `AddAprove_after_update` AFTER UPDATE ON `ref_data_AddAprove`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_AddAprove(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_affiliates`
+--
+
+DROP TABLE IF EXISTS `ref_data_affiliates`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_affiliates` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_affiliates`
+--
+
+LOCK TABLES `ref_data_affiliates` WRITE;
+/*!40000 ALTER TABLE `ref_data_affiliates` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ref_data_affiliates` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Affiliates_after_insert` AFTER INSERT ON `ref_data_Affiliates`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Affiliates(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Affiliates_after_update` AFTER UPDATE ON `ref_data_Affiliates`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Affiliates(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_avans`
+--
+
+DROP TABLE IF EXISTS `ref_data_avans`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_avans` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_avans`
+--
+
+LOCK TABLES `ref_data_avans` WRITE;
+/*!40000 ALTER TABLE `ref_data_avans` DISABLE KEYS */;
+INSERT INTO `ref_data_avans` VALUES (7,0,'10 - 30 %'),(8,0,'Больше 30 %'),(9,0,'меньше 10 %');
+/*!40000 ALTER TABLE `ref_data_avans` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Avans_after_insert` AFTER INSERT ON `ref_data_Avans`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Avans(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Avans_after_update` AFTER UPDATE ON `ref_data_Avans`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Avans(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_balans`
+--
+
+DROP TABLE IF EXISTS `ref_data_balans`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_balans` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_balans`
+--
+
+LOCK TABLES `ref_data_balans` WRITE;
+/*!40000 ALTER TABLE `ref_data_balans` DISABLE KEYS */;
+INSERT INTO `ref_data_balans` VALUES (4,0,'Лизингодатель'),(5,0,'Лизингополучатель');
+/*!40000 ALTER TABLE `ref_data_balans` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `balans_after_insert` AFTER INSERT ON `ref_data_balans`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_balans(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `balans_after_update` AFTER UPDATE ON `ref_data_balans`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_balans(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_bank`
+--
+
+DROP TABLE IF EXISTS `ref_data_bank`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_bank` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_bank`
+--
+
+LOCK TABLES `ref_data_bank` WRITE;
+/*!40000 ALTER TABLE `ref_data_bank` DISABLE KEYS */;
+INSERT INTO `ref_data_bank` VALUES (4,0,'ВТБ 24'),(5,0,'Сбербанк'),(6,0,'Росгосстрах Банк'),(8,0,'ОПМ банк'),(9,0,'Банк Москвы'),(10,0,'Примсоцбанк'),(11,0,'Абсолют Банк'),(12,0,'Мособлбанк'),(13,0,'Российский капитал'),(14,0,'Народный кредит'),(15,0,'Татфондбанк'),(16,0,'АФ Банк'),(17,0,'АйманиБанк'),(18,0,'Агропромкредит'),(19,0,'Александровский'),(20,0,'Транскапитал'),(21,0,'НЕТ');
+/*!40000 ALTER TABLE `ref_data_bank` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `bank_after_insert` AFTER INSERT ON `ref_data_bank`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_bank(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `bank_after_update` AFTER UPDATE ON `ref_data_bank`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_bank(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_branch`
+--
+
+DROP TABLE IF EXISTS `ref_data_branch`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_branch` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_branch`
+--
+
+LOCK TABLES `ref_data_branch` WRITE;
+/*!40000 ALTER TABLE `ref_data_branch` DISABLE KEYS */;
+INSERT INTO `ref_data_branch` VALUES (1,0,'Сельское и лесное хоз-во, рыболовство'),(2,0,'Добыча полезных ископаемых'),(3,0,'Обрабатывающая промышленность'),(4,0,'Пр-во и распр-ие электроэнергии, газа, воды'),(5,0,'Строительство'),(6,0,'Торговля'),(7,0,'Транспорт и связь'),(8,0,'Образование и здравоохранение'),(9,0,'Финансы и услуги'),(10,0,'Госуправление и военная безопасность');
+/*!40000 ALTER TABLE `ref_data_branch` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `branch_after_insert` AFTER INSERT ON `ref_data_branch`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_branch(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `branch_after_update` AFTER UPDATE ON `ref_data_branch`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_branch(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_cars`
+--
+
+DROP TABLE IF EXISTS `ref_data_cars`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_cars` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_cars`
+--
+
+LOCK TABLES `ref_data_cars` WRITE;
+/*!40000 ALTER TABLE `ref_data_cars` DISABLE KEYS */;
+INSERT INTO `ref_data_cars` VALUES (4,0,'Легковые'),(5,0,'Грузовые'),(6,0,'Спецтехника');
+/*!40000 ALTER TABLE `ref_data_cars` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Cars_after_insert` AFTER INSERT ON `ref_data_Cars`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Cars(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Cars_after_update` AFTER UPDATE ON `ref_data_Cars`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Cars(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_cel_pokupki`
+--
+
+DROP TABLE IF EXISTS `ref_data_cel_pokupki`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_cel_pokupki` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_cel_pokupki`
+--
+
+LOCK TABLES `ref_data_cel_pokupki` WRITE;
+/*!40000 ALTER TABLE `ref_data_cel_pokupki` DISABLE KEYS */;
+INSERT INTO `ref_data_cel_pokupki` VALUES (4,0,'цель для юрлиц'),(5,0,'цель для физлиц'),(6,0,'обновление парка'),(7,0,'для личных нужд'),(8,0,'другое'),(9,4,'для основного вида деятельности'),(10,0,'start up (начало)'),(11,5,'расширение деятельности'),(12,4,'для нового вида деят-ти в той же отрасли'),(13,4,'для нового видя деятельности в новой отрасли'),(14,4,'для нужд учредителей/руководителей'),(15,4,'другое');
+/*!40000 ALTER TABLE `ref_data_cel_pokupki` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Cel_pokupki_after_insert` AFTER INSERT ON `ref_data_Cel_pokupki`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Cel_pokupki(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Cel_pokupki_after_update` AFTER UPDATE ON `ref_data_Cel_pokupki`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Cel_pokupki(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_citizenship`
+--
+
+DROP TABLE IF EXISTS `ref_data_citizenship`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_citizenship` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_citizenship`
+--
+
+LOCK TABLES `ref_data_citizenship` WRITE;
+/*!40000 ALTER TABLE `ref_data_citizenship` DISABLE KEYS */;
+INSERT INTO `ref_data_citizenship` VALUES (4,0,'РФ'),(5,0,'СНГ'),(6,0,'Прочее');
+/*!40000 ALTER TABLE `ref_data_citizenship` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `citizenship_after_insert` AFTER INSERT ON `ref_data_citizenship`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_citizenship(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `citizenship_after_update` AFTER UPDATE ON `ref_data_citizenship`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_citizenship(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_cuntry`
+--
+
+DROP TABLE IF EXISTS `ref_data_cuntry`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_cuntry` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_cuntry`
+--
+
+LOCK TABLES `ref_data_cuntry` WRITE;
+/*!40000 ALTER TABLE `ref_data_cuntry` DISABLE KEYS */;
+INSERT INTO `ref_data_cuntry` VALUES (11,4,'Новый элемент'),(12,4,'Китайские'),(13,0,'РФ'),(14,0,'Иностранные кроме китайских'),(15,0,'Китай');
+/*!40000 ALTER TABLE `ref_data_cuntry` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `cuntry_after_insert` AFTER INSERT ON `ref_data_cuntry`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_cuntry(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `cuntry_after_update` AFTER UPDATE ON `ref_data_cuntry`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_cuntry(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_document_list`
+--
+
+DROP TABLE IF EXISTS `ref_data_document_list`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_document_list` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_document_list`
+--
+
+LOCK TABLES `ref_data_document_list` WRITE;
+/*!40000 ALTER TABLE `ref_data_document_list` DISABLE KEYS */;
+INSERT INTO `ref_data_document_list` VALUES (4,0,'Паспорт РФ'),(5,0,'Вод. удостоверение'),(6,0,'Пенсионные свидетельство'),(7,0,'Справка о доходах по фрме 2-НДФЛ'),(8,0,'Справка о доходах в свободной форме'),(9,0,'Заверенная копия трудовой книжки'),(10,0,'Военный билет'),(11,0,'Анкета/Заявка'),(12,0,'Согласие на обработку перс.дан.'),(13,0,'Загранпаспорт'),(14,0,'Справка о доходах по форме банка'),(15,0,'Документы, подтверждающие кредитную историю'),(16,15,'Договоры - кредитные/займа/к-п с рассрочкой'),(17,15,'Справка из банка о ссудной задолж.'),(18,15,'Выписка по ссудному счету/справка'),(19,0,'Спрвка 3-НДФЛ'),(20,0,'Налоговая декларация'),(21,0,'Свид-во о гос.регистрации ИП'),(22,0,'Для наемных сотрудников'),(23,22,'Справка 2НДФЛ'),(24,22,'Справка 3НДФЛ'),(25,22,'Справка 4 НДФЛ'),(26,22,'Завер. копия трудовой книжки/трудового договора'),(27,22,'Справка о доходах по форме банка'),(28,0,'Для ИП'),(29,28,'Свид-во о гос. регистрации'),(30,28,'Свид-во о постановке на налоговый учет'),(31,28,'Декларация о доходах на посл. отч. дату'),(32,28,'Квитанция об оплате налогов'),(33,0,'Для собственников бизнеса'),(34,33,'Учредительные док-ты, изменения к ним'),(35,33,'Свид-во о постановке на налоговй учет юрлица'),(36,33,'Отчетность юрлица на посл. отчетную дату');
+/*!40000 ALTER TABLE `ref_data_document_list` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Document_list_after_insert` AFTER INSERT ON `ref_data_Document_list`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Document_list(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Document_list_after_update` AFTER UPDATE ON `ref_data_Document_list`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Document_list(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_dokumenty_ts`
+--
+
+DROP TABLE IF EXISTS `ref_data_dokumenty_ts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_dokumenty_ts` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_dokumenty_ts`
+--
+
+LOCK TABLES `ref_data_dokumenty_ts` WRITE;
+/*!40000 ALTER TABLE `ref_data_dokumenty_ts` DISABLE KEYS */;
+INSERT INTO `ref_data_dokumenty_ts` VALUES (4,0,'ПТС'),(5,0,'ПСМ'),(6,0,'ПШТС'),(7,0,'Док-ты подтвержд. полномочия продовца как дилера'),(8,0,'Счет от продавца');
+/*!40000 ALTER TABLE `ref_data_dokumenty_ts` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Dokumenty_TS_after_insert` AFTER INSERT ON `ref_data_Dokumenty_TS`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Dokumenty_TS(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Dokumenty_TS_after_update` AFTER UPDATE ON `ref_data_Dokumenty_TS`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Dokumenty_TS(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_gender`
+--
+
+DROP TABLE IF EXISTS `ref_data_gender`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_gender` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_gender`
+--
+
+LOCK TABLES `ref_data_gender` WRITE;
+/*!40000 ALTER TABLE `ref_data_gender` DISABLE KEYS */;
+INSERT INTO `ref_data_gender` VALUES (4,0,'М'),(5,0,'Ж');
+/*!40000 ALTER TABLE `ref_data_gender` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `Gender_after_insert` AFTER INSERT ON `ref_data_Gender`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Gender(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `Gender_after_update` AFTER UPDATE ON `ref_data_Gender`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Gender(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_kat`
+--
+
+DROP TABLE IF EXISTS `ref_data_kat`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_kat` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_kat`
+--
+
+LOCK TABLES `ref_data_kat` WRITE;
+/*!40000 ALTER TABLE `ref_data_kat` DISABLE KEYS */;
+INSERT INTO `ref_data_kat` VALUES (4,0,'1'),(5,0,'2'),(7,0,'3'),(8,0,'4'),(9,0,'5'),(10,0,'6');
+/*!40000 ALTER TABLE `ref_data_kat` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Kat_after_insert` AFTER INSERT ON `ref_data_Kat`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Kat(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Kat_after_update` AFTER UPDATE ON `ref_data_Kat`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Kat(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_kategorii_dolgnostey`
+--
+
+DROP TABLE IF EXISTS `ref_data_kategorii_dolgnostey`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_kategorii_dolgnostey` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_kategorii_dolgnostey`
+--
+
+LOCK TABLES `ref_data_kategorii_dolgnostey` WRITE;
+/*!40000 ALTER TABLE `ref_data_kategorii_dolgnostey` DISABLE KEYS */;
+INSERT INTO `ref_data_kategorii_dolgnostey` VALUES (4,0,'высший управленец/высший чиновник'),(5,0,'учредитель предприятия'),(6,0,'руководитель среднего звена'),(7,0,'высококвалифицированный специалист'),(8,0,'неквалицицированный рабочий'),(9,0,'пенсионер (неработающий)'),(10,0,'студент (неработающий)'),(11,0,'госслужащий'),(12,0,'специалист'),(13,0,'военнослужащий'),(14,0,'другое');
+/*!40000 ALTER TABLE `ref_data_kategorii_dolgnostey` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Kategorii_dolgnostey_after_insert` AFTER INSERT ON `ref_data_Kategorii_dolgnostey`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Kategorii_dolgnostey(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Kategorii_dolgnostey_after_update` AFTER UPDATE ON `ref_data_Kategorii_dolgnostey`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Kategorii_dolgnostey(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_kategoriyats`
+--
+
+DROP TABLE IF EXISTS `ref_data_kategoriyats`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_kategoriyats` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_kategoriyats`
+--
+
+LOCK TABLES `ref_data_kategoriyats` WRITE;
+/*!40000 ALTER TABLE `ref_data_kategoriyats` DISABLE KEYS */;
+INSERT INTO `ref_data_kategoriyats` VALUES (4,0,'B'),(5,0,'C'),(6,0,'D'),(7,0,'E');
+/*!40000 ALTER TABLE `ref_data_kategoriyats` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `KategoriyaTS_after_insert` AFTER INSERT ON `ref_data_KategoriyaTS`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_KategoriyaTS(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `KategoriyaTS_after_update` AFTER UPDATE ON `ref_data_KategoriyaTS`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_KategoriyaTS(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_kolichestvo_sotrudnikov`
+--
+
+DROP TABLE IF EXISTS `ref_data_kolichestvo_sotrudnikov`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_kolichestvo_sotrudnikov` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_kolichestvo_sotrudnikov`
+--
+
+LOCK TABLES `ref_data_kolichestvo_sotrudnikov` WRITE;
+/*!40000 ALTER TABLE `ref_data_kolichestvo_sotrudnikov` DISABLE KEYS */;
+INSERT INTO `ref_data_kolichestvo_sotrudnikov` VALUES (4,0,'до 10'),(5,0,'11-30'),(6,0,'31-50'),(7,0,'51-100'),(8,0,'101-500'),(9,0,'501-1000'),(10,0,'от 1001');
+/*!40000 ALTER TABLE `ref_data_kolichestvo_sotrudnikov` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Kolichestvo_sotrudnikov_after_insert` AFTER INSERT ON `ref_data_Kolichestvo_sotrudnikov`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Kolichestvo_sotrudnikov(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Kolichestvo_sotrudnikov_after_update` AFTER UPDATE ON `ref_data_Kolichestvo_sotrudnikov`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Kolichestvo_sotrudnikov(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_msss`
+--
+
+DROP TABLE IF EXISTS `ref_data_msss`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_msss` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_msss`
+--
+
+LOCK TABLES `ref_data_msss` WRITE;
+/*!40000 ALTER TABLE `ref_data_msss` DISABLE KEYS */;
+INSERT INTO `ref_data_msss` VALUES (4,0,'нет'),(5,0,'ТМТ'),(6,0,'Иная');
+/*!40000 ALTER TABLE `ref_data_msss` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `msss_after_insert` AFTER INSERT ON `ref_data_msss`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_msss(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `msss_after_update` AFTER UPDATE ON `ref_data_msss`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_msss(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_nalogsystem`
+--
+
+DROP TABLE IF EXISTS `ref_data_nalogsystem`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_nalogsystem` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_nalogsystem`
+--
+
+LOCK TABLES `ref_data_nalogsystem` WRITE;
+/*!40000 ALTER TABLE `ref_data_nalogsystem` DISABLE KEYS */;
+INSERT INTO `ref_data_nalogsystem` VALUES (4,0,'Общая'),(5,34,'Упрощенная'),(8,0,'Особые режимы налогообложения'),(9,8,'ЕНВД'),(10,8,'УСН'),(11,8,'ЕСХН'),(12,8,'Патент');
+/*!40000 ALTER TABLE `ref_data_nalogsystem` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Nalogsystem_after_insert` AFTER INSERT ON `ref_data_Nalogsystem`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Nalogsystem(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Nalogsystem_after_update` AFTER UPDATE ON `ref_data_Nalogsystem`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Nalogsystem(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_new_am`
+--
+
+DROP TABLE IF EXISTS `ref_data_new_am`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_new_am` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_new_am`
+--
+
+LOCK TABLES `ref_data_new_am` WRITE;
+/*!40000 ALTER TABLE `ref_data_new_am` DISABLE KEYS */;
+INSERT INTO `ref_data_new_am` VALUES (4,0,'Новые а/м'),(5,0,'б/у а/м');
+/*!40000 ALTER TABLE `ref_data_new_am` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `New_am_after_insert` AFTER INSERT ON `ref_data_New_am`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_New_am(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `New_am_after_update` AFTER UPDATE ON `ref_data_New_am`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_New_am(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_obekt_progivania`
+--
+
+DROP TABLE IF EXISTS `ref_data_obekt_progivania`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_obekt_progivania` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_obekt_progivania`
+--
+
+LOCK TABLES `ref_data_obekt_progivania` WRITE;
+/*!40000 ALTER TABLE `ref_data_obekt_progivania` DISABLE KEYS */;
+INSERT INTO `ref_data_obekt_progivania` VALUES (4,0,'собственная квартира'),(8,0,'у родственников'),(9,0,'социальный найм'),(10,0,'аренда'),(11,0,'общежитие'),(12,0,'коммунальная квартира'),(13,0,'Другое');
+/*!40000 ALTER TABLE `ref_data_obekt_progivania` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Obekt_progivania_after_insert` AFTER INSERT ON `ref_data_Obekt_progivania`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Obekt_progivania(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Obekt_progivania_after_update` AFTER UPDATE ON `ref_data_Obekt_progivania`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Obekt_progivania(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_obrazovanie`
+--
+
+DROP TABLE IF EXISTS `ref_data_obrazovanie`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_obrazovanie` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_obrazovanie`
+--
+
+LOCK TABLES `ref_data_obrazovanie` WRITE;
+/*!40000 ALTER TABLE `ref_data_obrazovanie` DISABLE KEYS */;
+INSERT INTO `ref_data_obrazovanie` VALUES (4,0,'Ученая степень / МВА'),(5,0,'Второе высшее'),(6,0,'Высшее'),(7,0,'Незаконченное высшее'),(8,0,'Среднее специальное'),(9,0,'Ниже среднего');
+/*!40000 ALTER TABLE `ref_data_obrazovanie` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Obrazovanie_after_insert` AFTER INSERT ON `ref_data_Obrazovanie`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Obrazovanie(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Obrazovanie_after_update` AFTER UPDATE ON `ref_data_Obrazovanie`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Obrazovanie(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_opf`
+--
+
+DROP TABLE IF EXISTS `ref_data_opf`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_opf` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_opf`
+--
+
+LOCK TABLES `ref_data_opf` WRITE;
+/*!40000 ALTER TABLE `ref_data_opf` DISABLE KEYS */;
+INSERT INTO `ref_data_opf` VALUES (16,5,'Цель приобретения имущества'),(17,0,'ООО'),(18,0,'ОАО'),(19,0,'ЗАО'),(20,0,'ИП'),(21,0,'ПТ'),(22,0,'ТнВ'),(23,0,'ОДО'),(24,0,'Унитарное предприятие'),(27,0,'ФГУП'),(29,0,'МУП'),(30,0,'Крестьянское хозяйство');
+/*!40000 ALTER TABLE `ref_data_opf` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `OPF_after_insert` AFTER INSERT ON `ref_data_OPF`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_OPF(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `OPF_after_update` AFTER UPDATE ON `ref_data_OPF`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_OPF(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_pp`
+--
+
+DROP TABLE IF EXISTS `ref_data_pp`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_pp` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_pp`
+--
+
+LOCK TABLES `ref_data_pp` WRITE;
+/*!40000 ALTER TABLE `ref_data_pp` DISABLE KEYS */;
+INSERT INTO `ref_data_pp` VALUES (4,0,'Аннуитетный платеж'),(5,0,'Убывающий график'),(6,0,'Индивидуальный график');
+/*!40000 ALTER TABLE `ref_data_pp` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `PP_after_insert` AFTER INSERT ON `ref_data_PP`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_PP(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `PP_after_update` AFTER UPDATE ON `ref_data_PP`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_PP(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_predmet_zaloga`
+--
+
+DROP TABLE IF EXISTS `ref_data_predmet_zaloga`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_predmet_zaloga` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_predmet_zaloga`
+--
+
+LOCK TABLES `ref_data_predmet_zaloga` WRITE;
+/*!40000 ALTER TABLE `ref_data_predmet_zaloga` DISABLE KEYS */;
+INSERT INTO `ref_data_predmet_zaloga` VALUES (4,0,'Приобретаемое иммущ.'),(5,0,'Имеющ. иммущ.');
+/*!40000 ALTER TABLE `ref_data_predmet_zaloga` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `predmet_zaloga_after_insert` AFTER INSERT ON `ref_data_predmet_zaloga`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_predmet_zaloga(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `predmet_zaloga_after_update` AFTER UPDATE ON `ref_data_predmet_zaloga`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_predmet_zaloga(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_procedure for repayment`
+--
+
+DROP TABLE IF EXISTS `ref_data_procedure for repayment`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_procedure for repayment` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_procedure for repayment`
+--
+
+LOCK TABLES `ref_data_procedure for repayment` WRITE;
+/*!40000 ALTER TABLE `ref_data_procedure for repayment` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ref_data_procedure for repayment` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_data_regions`
+--
+
+DROP TABLE IF EXISTS `ref_data_regions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_regions` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=12371095 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_regions`
+--
+
+LOCK TABLES `ref_data_regions` WRITE;
+/*!40000 ALTER TABLE `ref_data_regions` DISABLE KEYS */;
+INSERT INTO `ref_data_regions` VALUES (3159,0,'Российская федерация'),(3160,3159,'Алтайский край'),(3161,3160,'Акташ'),(3162,3160,'Акутиха'),(3163,3160,'Алейск'),(3164,3160,'Алтайский'),(3165,3160,'Баево'),(3166,3160,'Барнаул'),(3167,3160,'Белово'),(3168,3160,'Белокуриха'),(3169,3160,'Белоярск'),(3170,3160,'Бийск'),(3171,3160,'Благовещенск'),(3172,3160,'Боровлянка'),(3173,3160,'Бурла'),(3174,3160,'Бурсоль'),(3175,3160,'Волчиха'),(3176,3160,'Горно-Алтайск'),(3177,3160,'Горняк'),(3178,3160,'Ельцовка'),(3179,3160,'Залесово'),(3180,3160,'Заринск'),(3181,3160,'Заток'),(3182,3160,'Змеиногорск'),(3183,3160,'Камень-на-Оби'),(3184,3160,'Ключи'),(3185,3160,'Кош-Агач'),(3186,3160,'Красногорское'),(3187,3160,'Краснощеково'),(3188,3160,'Кулунда'),(3189,3160,'Кытманово'),(3190,3160,'Мамонтово'),(3191,3160,'Новичиха'),(3192,3160,'Новоалтайск'),(3193,3160,'Онгудай'),(3194,3160,'Павловск'),(3195,3160,'Петропавловское'),(3196,3160,'Поспелиха'),(3197,3160,'Ребриха'),(3198,3160,'Родино'),(3199,3160,'Рубцовск'),(3200,3160,'Славгород'),(3201,3160,'Смоленское'),(3202,3160,'Солонешное'),(3203,3160,'Солтон'),(3204,3160,'Староаллейское'),(3205,3160,'Табуны'),(3206,3160,'Тальменка'),(3207,3160,'Топчиха'),(3208,3160,'Троицкое'),(3209,3160,'Турочак'),(3210,3160,'Тюменцево'),(3211,3160,'Угловское'),(3212,3160,'Усть-Калманка'),(3213,3160,'Усть-Кан'),(3214,3160,'Усть-Кокса'),(3215,3160,'Усть-Улаган'),(3216,3160,'Усть-Чарышская Пристань'),(3217,3160,'Хабары'),(3218,3160,'Целинное'),(3219,3160,'Чарышское'),(3220,3160,'Шебалино'),(3221,3160,'Шелаболиха'),(3222,3160,'Шипуново'),(3223,3159,'Амурская обл.'),(3224,3223,'Айгунь'),(3225,3223,'Архара'),(3226,3223,'Белогорск'),(3227,3223,'Благовещенск (Амурская обл.)'),(3228,3223,'Бурея'),(3229,3223,'Возжаевка'),(3230,3223,'Екатеринославка'),(3231,3223,'Ерофей Павлович'),(3232,3223,'Завитинск'),(3233,3223,'Зея'),(3234,3223,'Златоустовск'),(3235,3223,'Ивановка'),(3236,3223,'Коболдо'),(3237,3223,'Магдагачи'),(3238,3223,'Новобурейский'),(3239,3223,'Поярково'),(3240,3223,'Райчихинск'),(3241,3223,'Ромны'),(3242,3223,'Свободный'),(3243,3223,'Серышево'),(3244,3223,'Сковородино'),(3245,3223,'Стойба'),(3246,3223,'Тамбовка'),(3247,3223,'Тында'),(3248,3223,'Шимановск'),(3249,3223,'Экимчан'),(3250,3223,'Ядрино'),(3251,3159,'Архангельская обл.'),(3252,3251,'Амдерма'),(3253,3251,'Архангельск'),(3254,3251,'Березник'),(3255,3251,'Вельск'),(3256,3251,'Верхняя Тойма'),(3257,3251,'Волошка'),(3258,3251,'Вычегодский'),(3259,3251,'Емца'),(3260,3251,'Илеза'),(3261,3251,'Ильинско-Подомское'),(3262,3251,'Каргополь'),(3263,3251,'Карпогоры'),(3264,3251,'Кодино'),(3265,3251,'Коноша'),(3266,3251,'Коряжма'),(3267,3251,'Котлас'),(3268,3251,'Красноборск'),(3269,3251,'Лешуконское'),(3270,3251,'Мезень'),(3271,3251,'Нарьян-Мар'),(3272,3251,'Новодвинск'),(3273,3251,'Няндома'),(3274,3251,'Онега'),(3275,3251,'Пинега'),(3276,3251,'Плесецк'),(3277,3251,'Северодвинск'),(3278,3251,'Сольвычегодск'),(3279,3251,'Холмогоры'),(3280,3251,'Шенкурск'),(3281,3251,'Яренск'),(3282,3159,'Астраханская обл.'),(3283,3282,'Астрахань'),(3284,3282,'Ахтубинск'),(3285,3282,'Верхний Баскунчак'),(3286,3282,'Володарский'),(3287,3282,'Енотаевка'),(3288,3282,'Икряное'),(3289,3282,'Камызяк'),(3290,3282,'Капустин Яр'),(3291,3282,'Красный Яр'),(3292,3282,'Лиман'),(3293,3282,'Началово'),(3294,3282,'Харабали'),(3295,3282,'Черный Яр'),(3296,3159,'Башкортостан(Башкирия)'),(3297,3296,'Аксаково'),(3298,3296,'Амзя'),(3299,3296,'Аскино'),(3300,3296,'Баймак'),(3301,3296,'Бакалы'),(3302,3296,'Белебей'),(3303,3296,'Белорецк'),(3304,3296,'Бижбуляк'),(3305,3296,'Бирск'),(3306,3296,'Благовещенск'),(3307,3296,'Большеустьикинское'),(3308,3296,'Верхнеяркеево'),(3309,3296,'Верхние Киги'),(3310,3296,'Верхние Татышлы'),(3311,3296,'Верхний Авзян'),(3312,3296,'Давлеканово'),(3313,3296,'Дуван'),(3314,3296,'Дюртюли'),(3315,3296,'Ермекеево'),(3316,3296,'Ермолаево'),(3317,3296,'Зилаир'),(3318,3296,'Зирган'),(3319,3296,'Иглино'),(3320,3296,'Инзер'),(3321,3296,'Исянгулово'),(3322,3296,'Ишимбай'),(3323,3296,'Кананикольское'),(3324,3296,'Кандры'),(3325,3296,'Караидель'),(3326,3296,'Караидельский'),(3327,3296,'Киргиз-Мияки'),(3328,3296,'Красноусольский'),(3329,3296,'Кумертау'),(3330,3296,'Кушнаренково'),(3331,3296,'Малояз'),(3332,3296,'Мелеуз'),(3333,3296,'Месягутово'),(3334,3296,'Мраково'),(3335,3296,'Нефтекамск'),(3336,3296,'Октябрьский'),(3337,3296,'Раевский'),(3338,3296,'Салават'),(3339,3296,'Сибай'),(3340,3296,'Старобалтачево'),(3341,3296,'Старосубхангулово'),(3342,3296,'Стерлибашево'),(3343,3296,'Стерлитамак'),(3344,3296,'Туймазы'),(3345,3296,'Уфа'),(3346,3296,'Учалы'),(3347,3296,'Федоровка'),(3348,3296,'Чекмагуш'),(3349,3296,'Чишмы'),(3350,3296,'Шаран'),(3351,3296,'Янаул'),(3352,3159,'Белгородская обл.'),(3353,3352,'Алексеевка'),(3354,3352,'Белгород'),(3355,3352,'Борисовка'),(3356,3352,'Валуйки'),(3357,3352,'Вейделевка'),(3358,3352,'Волоконовка'),(3359,3352,'Грайворон'),(3360,3352,'Губкин'),(3361,3352,'Ивня'),(3362,3352,'Короча'),(3363,3352,'Красногвардейское'),(3364,3352,'Новый Оскол'),(3365,3352,'Ракитное'),(3366,3352,'Ровеньки'),(3367,3352,'Старый Оскол'),(3368,3352,'Строитель'),(3369,3352,'Чернянка'),(3370,3352,'Шебекино'),(3371,3159,'Брянская обл.'),(3372,3371,'Алтухово'),(3373,3371,'Белая Березка'),(3374,3371,'Белые Берега'),(3375,3371,'Большое Полпино'),(3376,3371,'Брянск'),(3377,3371,'Бытошь'),(3378,3371,'Выгоничи'),(3379,3371,'Вышков'),(3380,3371,'Гордеевка'),(3381,3371,'Дубровка'),(3382,3371,'Жирятино'),(3383,3371,'Жуковка'),(3384,3371,'Злынка'),(3385,3371,'Ивот'),(3386,3371,'Карачев'),(3387,3371,'Клетня'),(3388,3371,'Климово'),(3389,3371,'Клинцы'),(3390,3371,'Кокаревка'),(3391,3371,'Комаричи'),(3392,3371,'Красная Гора'),(3393,3371,'Локоть'),(3394,3371,'Мглин'),(3395,3371,'Навля'),(3396,3371,'Новозыбков'),(3397,3371,'Погар'),(3398,3371,'Почеп'),(3399,3371,'Ржаница'),(3400,3371,'Рогнедино'),(3401,3371,'Севск'),(3402,3371,'Стародуб'),(3403,3371,'Суземка'),(3404,3371,'Сураж'),(3405,3371,'Трубчевск'),(3406,3371,'Унеча'),(3407,3159,'Бурятия'),(3408,3407,'Бабушкин'),(3409,3407,'Багдарин'),(3410,3407,'Баргузин'),(3411,3407,'Баянгол'),(3412,3407,'Бичура'),(3413,3407,'Выдрино'),(3414,3407,'Гусиное Озеро'),(3415,3407,'Гусиноозерск'),(3416,3407,'Заиграево'),(3417,3407,'Закаменск'),(3418,3407,'Иволгинск'),(3419,3407,'Илька'),(3420,3407,'Кабанск'),(3421,3407,'Каменск'),(3422,3407,'Кижинга'),(3423,3407,'Курумкан'),(3424,3407,'Кырен'),(3425,3407,'Кяхта'),(3426,3407,'Монды'),(3427,3407,'Мухоршибирь'),(3428,3407,'Нижнеангарск'),(3429,3407,'Орлик'),(3430,3407,'Петропавловка'),(3431,3407,'Романовка'),(3432,3407,'Селенгинск'),(3433,3407,'Сосново-Озерское'),(3434,3407,'Турунтаево'),(3435,3407,'Улан-Удэ'),(3436,3407,'Хоринск'),(3437,3159,'Владимирская обл.'),(3438,3437,'Александров'),(3439,3437,'Андреево'),(3440,3437,'Анопино'),(3441,3437,'Бавлены'),(3442,3437,'Балакирево'),(3443,3437,'Боголюбово'),(3444,3437,'Великодворский'),(3445,3437,'Вербовский'),(3446,3437,'Владимир'),(3447,3437,'Вязники'),(3448,3437,'Городищи'),(3449,3437,'Гороховец'),(3450,3437,'Гусевский'),(3451,3437,'Гусь Хрустальный'),(3452,3437,'Золотково'),(3453,3437,'Иванищи'),(3454,3437,'Камешково'),(3455,3437,'Карабаново'),(3456,3437,'Киржач'),(3457,3437,'Ковров'),(3458,3437,'Кольчугино'),(3459,3437,'Красная Горбатка'),(3460,3437,'Меленки'),(3461,3437,'Муром'),(3462,3437,'Петушки'),(3463,3437,'Покров'),(3464,3437,'Собинка'),(3465,3437,'Судогда'),(3466,3437,'Суздаль'),(3467,3437,'Юрьев-Польский'),(3468,3159,'Волгоградская обл.'),(3469,3468,'Алексеевская'),(3470,3468,'Алущевск'),(3471,3468,'Быково'),(3472,3468,'Волгоград'),(3473,3468,'Волжский'),(3474,3468,'Городище'),(3475,3468,'Дубовка'),(3476,3468,'Елань'),(3477,3468,'Жирновск'),(3478,3468,'Иловля'),(3479,3468,'Калач-на-Дону'),(3480,3468,'Камышин'),(3481,3468,'Клетский'),(3482,3468,'Котельниково'),(3483,3468,'Котово'),(3484,3468,'Кумылженская'),(3485,3468,'Ленинск'),(3486,3468,'Михайловка'),(3487,3468,'Нехаевский'),(3488,3468,'Николаевск'),(3489,3468,'Новоаннинский'),(3490,3468,'Новониколаевский'),(3491,3468,'Ольховка'),(3492,3468,'Палласовка'),(3493,3468,'Рудня'),(3494,3468,'Светлый Яр'),(3495,3468,'Серафимович'),(3496,3468,'Средняя Ахтуба'),(3497,3468,'Сталинград'),(3498,3468,'Старая Полтавка'),(3499,3468,'Суровикино'),(3500,3468,'Урюпинск'),(3501,3468,'Фролово'),(3502,3468,'Чернышковский'),(3503,3159,'Вологодская обл.'),(3504,3503,'Бабаево'),(3505,3503,'Белозерск'),(3506,3503,'Великий Устюг'),(3507,3503,'Верховажье'),(3508,3503,'Вожега'),(3509,3503,'Вологда'),(3510,3503,'Вохтога'),(3511,3503,'Вытегра'),(3512,3503,'Грязовец'),(3513,3503,'Кадников'),(3514,3503,'Кадуй'),(3515,3503,'Кичменгский Городок'),(3516,3503,'Липин Бор'),(3517,3503,'Никольск'),(3518,3503,'Нюксеница'),(3519,3503,'Сокол'),(3520,3503,'Сямжа'),(3521,3503,'Тарногский Городок'),(3522,3503,'Тотьма'),(3523,3503,'Устюжна'),(3524,3503,'Харовск'),(3525,3503,'Чагода'),(3526,3503,'Череповец'),(3527,3503,'Шексна'),(3528,3503,'Шуйское'),(3529,3159,'Воронежская обл.'),(3530,3529,'Анна'),(3531,3529,'Бобров'),(3532,3529,'Богучар'),(3533,3529,'Борисоглебск'),(3534,3529,'Бутурлиновка'),(3535,3529,'Верхний Мамон'),(3536,3529,'Верхняя Хава'),(3537,3529,'Воробьевка'),(3538,3529,'Воронеж'),(3539,3529,'Лиски'),(3540,3529,'Грибановский'),(3541,3529,'Давыдовка'),(3542,3529,'Елань-Коленовский'),(3543,3529,'Калач'),(3544,3529,'Кантемировка'),(3545,3529,'Нижнедевицк'),(3546,3529,'Новая Усмань'),(3547,3529,'Новохоперск'),(3548,3529,'Ольховатка'),(3549,3529,'Острогожск'),(3550,3529,'Павловск'),(3551,3529,'Панино'),(3552,3529,'Петропавловка'),(3553,3529,'Поворино'),(3554,3529,'Подгоренский'),(3555,3529,'Рамонь'),(3556,3529,'Репьевка'),(3557,3529,'Россошь'),(3558,3529,'Семилуки'),(3559,3529,'Таловая'),(3560,3529,'Терновка'),(3561,3529,'Хохольский'),(3562,3529,'Эртиль'),(3563,3159,'Нижегородская (Горьковская)'),(3564,3563,'Ардатов'),(3565,3563,'Арзамас'),(3566,3563,'Арья'),(3567,3563,'Балахна'),(3568,3563,'Богородск'),(3569,3563,'Большереченск'),(3570,3563,'Большое Болдино'),(3571,3563,'Большое Козино'),(3572,3563,'Большое Мурашкино'),(3573,3563,'Большое Пикино'),(3574,3563,'Бор'),(3575,3563,'Бутурлино'),(3576,3563,'Вад'),(3577,3563,'Варнавино'),(3578,3563,'Васильсурск'),(3579,3563,'Вахтан'),(3580,3563,'Вача'),(3581,3563,'Велетьма'),(3582,3563,'Ветлуга'),(3583,3563,'Виля'),(3584,3563,'Вознесенское'),(3585,3563,'Володарск'),(3586,3563,'Воротынец'),(3587,3563,'Ворсма'),(3588,3563,'Воскресенское'),(3589,3563,'Выездное'),(3590,3563,'Выкса'),(3591,3563,'Гагино'),(3592,3563,'Гидроторф'),(3593,3563,'Горбатов'),(3594,3563,'Горбатовка'),(3595,3563,'Городец'),(3596,3563,'Горький'),(3597,3563,'Дальнее Константиново'),(3598,3563,'Дзержинск'),(3599,3563,'Дивеево'),(3600,3563,'Досчатое'),(3601,3563,'Заволжье'),(3602,3563,'Катунки'),(3603,3563,'Керженец'),(3604,3563,'Княгинино'),(3605,3563,'Ковернино'),(3606,3563,'Красные Баки'),(3607,3563,'Кстово'),(3608,3563,'Кулебаки'),(3609,3563,'Лукоянов'),(3610,3563,'Лысково'),(3611,3563,'Навашино'),(3612,3563,'Нижний Новгород'),(3613,3563,'Павлово'),(3614,3563,'Первомайск'),(3615,3563,'Перевоз'),(3616,3563,'Пильна'),(3617,3563,'Починки'),(3618,3563,'Сергач'),(3619,3563,'Сеченово'),(3620,3563,'Сосновское'),(3621,3563,'Спасское'),(3622,3563,'Тонкино'),(3623,3563,'Тоншаево'),(3624,3563,'Уразовка'),(3625,3563,'Урень'),(3626,3563,'Чкаловск'),(3627,3563,'Шаранга'),(3628,3563,'Шатки'),(3629,3563,'Шахунья'),(3630,3159,'Дагестан'),(3631,3630,'Агвали'),(3632,3630,'Акуша'),(3633,3630,'Ахты'),(3634,3630,'Ачису'),(3635,3630,'Бабаюрт'),(3636,3630,'Бежта'),(3637,3630,'Ботлих'),(3638,3630,'Буйнакск'),(3639,3630,'Вачи'),(3640,3630,'Гергебиль'),(3641,3630,'Гуниб'),(3642,3630,'Дагестанские Огни'),(3643,3630,'Дербент'),(3644,3630,'Дылым'),(3645,3630,'Ершовка'),(3646,3630,'Избербаш'),(3647,3630,'Карабудахкент'),(3648,3630,'Карата'),(3649,3630,'Каспийск'),(3650,3630,'Касумкент'),(3651,3630,'Кизилюрт'),(3652,3630,'Кизляр'),(3653,3630,'Кочубей'),(3654,3630,'Кумух'),(3655,3630,'Курах'),(3656,3630,'Магарамкент'),(3657,3630,'Маджалис'),(3658,3630,'Махачкала'),(3659,3630,'Мехельта'),(3660,3630,'Новолакское'),(3661,3630,'Рутул'),(3662,3630,'Советское'),(3663,3630,'Тарумовка'),(3664,3630,'Терекли-Мектеб'),(3665,3630,'Тлярата'),(3666,3630,'Тпиг'),(3667,3630,'Уркарах'),(3668,3630,'Хасавюрт'),(3669,3630,'Хив'),(3670,3630,'Хунзах'),(3671,3630,'Цуриб'),(3672,3630,'Южно-Сухокумск'),(3673,3159,'Еврейская обл.'),(3674,3673,'Биробиджан'),(3675,3159,'Ивановская обл.'),(3676,3675,'Архиповка'),(3677,3675,'Верхний Ландех'),(3678,3675,'Вичуга'),(3679,3675,'Гаврилов Посад'),(3680,3675,'Долматовский'),(3681,3675,'Дуляпино'),(3682,3675,'Заволжск'),(3683,3675,'Заречный'),(3684,3675,'Иваново'),(3685,3675,'Иваньковский'),(3686,3675,'Ильинское-Хованское'),(3687,3675,'Каминский'),(3688,3675,'Кинешма'),(3689,3675,'Комсомольск'),(3690,3675,'Лух'),(3691,3675,'Палех'),(3692,3675,'Пестяки'),(3693,3675,'Приволжск'),(3694,3675,'Пучеж'),(3695,3675,'Родники'),(3696,3675,'Савино'),(3697,3675,'Сокольское'),(3698,3675,'Тейково'),(3699,3675,'Фурманов'),(3700,3675,'Шуя'),(3701,3675,'Южа'),(3702,3675,'Юрьевец'),(3703,3159,'Иркутская обл.'),(3704,3703,'Алексеевск'),(3705,3703,'Алзамай'),(3706,3703,'Алыгжер'),(3707,3703,'Ангарск'),(3708,3703,'Артемовский'),(3709,3703,'Атагай'),(3710,3703,'Байкал'),(3711,3703,'Байкальск'),(3712,3703,'Балаганск'),(3713,3703,'Баяндай'),(3714,3703,'Бирюсинск'),(3715,3703,'Бодайбо'),(3716,3703,'Большая Речка'),(3717,3703,'Большой Луг'),(3718,3703,'Бохан'),(3719,3703,'Братск'),(3720,3703,'Видим'),(3721,3703,'Витимский'),(3722,3703,'Вихоревка'),(3723,3703,'Еланцы'),(3724,3703,'Ербогачен'),(3725,3703,'Железногорск-Илимский'),(3726,3703,'Жигалово'),(3727,3703,'Забитуй'),(3728,3703,'Залари'),(3729,3703,'Звездный'),(3730,3703,'Зима'),(3731,3703,'Иркутск'),(3732,3703,'Казачинское'),(3733,3703,'Качуг'),(3734,3703,'Квиток'),(3735,3703,'Киренск'),(3736,3703,'Куйтун'),(3737,3703,'Кутулик'),(3738,3703,'Мама'),(3739,3703,'Нижнеудинск'),(3740,3703,'Оса'),(3741,3703,'Слюдянка'),(3742,3703,'Тайшет'),(3743,3703,'Тулун'),(3744,3703,'Усолье-Сибирское'),(3745,3703,'Усть-Илимск'),(3746,3703,'Усть-Кут'),(3747,3703,'Усть-Ордынский'),(3748,3703,'Усть-Уда'),(3749,3703,'Черемхово'),(3750,3703,'Шелехов'),(3751,3159,'Кабардино-Балкария'),(3752,3751,'Баксан'),(3753,3751,'Майский'),(3754,3751,'Нальчик'),(3755,3751,'Нарткала'),(3756,3751,'Прохладный'),(3757,3751,'Советское'),(3758,3751,'Терек'),(3759,3751,'Тырныауз'),(3760,3751,'Чегем-Первый'),(3761,3159,'Калининградская обл.'),(3762,3761,'Багратионовск'),(3763,3761,'Балтийск'),(3764,3761,'Гвардейск'),(3765,3761,'Гурьевск'),(3766,3761,'Гусев'),(3767,3761,'Железнодорожный'),(3768,3761,'Зеленоградск'),(3769,3761,'Знаменск'),(3770,3761,'Калининград'),(3771,3761,'Кенисберг'),(3772,3761,'Краснознаменск'),(3773,3761,'Мамоново'),(3774,3761,'Неман'),(3775,3761,'Нестеров'),(3776,3761,'Озерск'),(3777,3761,'Полесск'),(3778,3761,'Правдинск'),(3779,3761,'Светлогорск'),(3780,3761,'Светлый'),(3781,3761,'Славск'),(3782,3761,'Советск'),(3783,3761,'Черняховск'),(3784,3159,'Тверская обл.'),(3785,3784,'Андреаполь'),(3786,3784,'Бежецк'),(3787,3784,'Белый'),(3788,3784,'Белый Городок'),(3789,3784,'Березайка'),(3790,3784,'Бологое'),(3791,3784,'Васильевский Мох'),(3792,3784,'Выползово'),(3793,3784,'Вышний Волочек'),(3794,3784,'Жарковский'),(3795,3784,'Западная Двина'),(3796,3784,'Заречье'),(3797,3784,'Зубцов'),(3798,3784,'Изоплит'),(3799,3784,'Калашниково'),(3800,3784,'Калинин'),(3801,3784,'Калязин'),(3802,3784,'Кашин'),(3803,3784,'Кесова Гора'),(3804,3784,'Кимры'),(3805,3784,'Конаково'),(3806,3784,'Красный Холм'),(3807,3784,'Кувшиново'),(3808,3784,'Лесное'),(3809,3784,'Лихославль'),(3810,3784,'Максатиха'),(3811,3784,'Молоково'),(3812,3784,'Нелидово'),(3813,3784,'Оленино'),(3814,3784,'Осташков'),(3815,3784,'Пено'),(3816,3784,'Рамешки'),(3817,3784,'Ржев'),(3818,3784,'Сандово'),(3819,3784,'Селижарово'),(3820,3784,'Сонково'),(3821,3784,'Спирово'),(3822,3784,'Старица'),(3823,3784,'Тверь'),(3824,3784,'Торжок'),(3825,3784,'Торопец'),(3826,3784,'Фирово'),(3827,3159,'Калмыкия'),(3828,3827,'Аршань'),(3829,3827,'Каспийский'),(3830,3827,'Комсомольский'),(3831,3827,'Малые Дербеты'),(3832,3827,'Приютное'),(3833,3827,'Советское'),(3834,3827,'Троицкое'),(3835,3827,'Утта'),(3836,3827,'Цаган-Аман'),(3837,3827,'Элиста'),(3838,3827,'Юста'),(3839,3827,'Яшалта'),(3840,3827,'Яшкуль'),(3841,3159,'Калужская обл.'),(3842,3841,'Бабынино'),(3843,3841,'Балабаново'),(3844,3841,'Барятино'),(3845,3841,'Белоусово'),(3846,3841,'Бетлица'),(3847,3841,'Боровск'),(3848,3841,'Дугна'),(3849,3841,'Дудоровский'),(3850,3841,'Думиничи'),(3851,3841,'Еленский'),(3852,3841,'Жиздра'),(3853,3841,'Износки'),(3854,3841,'Калуга'),(3855,3841,'Киров'),(3856,3841,'Козельск'),(3857,3841,'Кондрово'),(3858,3841,'Людиново'),(3859,3841,'Малоярославец'),(3860,3841,'Медынь'),(3861,3841,'Мещовск'),(3862,3841,'Мосальск'),(3863,3841,'Обнинск'),(3864,3841,'Перемышль'),(3865,3841,'Спас-Деменск'),(3866,3841,'Сухиничи'),(3867,3841,'Таруса'),(3868,3841,'Ульяново'),(3869,3841,'Ферзиково'),(3870,3841,'Хвастовичи'),(3871,3841,'Юхнов'),(3872,3159,'Камчатская обл.'),(3873,3872,'Атласово'),(3874,3872,'Аянка'),(3875,3872,'Большерецк'),(3876,3872,'Ильпырский'),(3877,3872,'Каменское'),(3878,3872,'Кировский'),(3879,3872,'Ключи'),(3880,3872,'Крапивная'),(3881,3872,'Мильково'),(3882,3872,'Никольское'),(3883,3872,'Оссора'),(3884,3872,'Палана'),(3885,3872,'Парень'),(3886,3872,'Пахачи'),(3887,3872,'Петропавловск-Камчатский'),(3888,3872,'Тигиль'),(3889,3872,'Тиличики'),(3890,3872,'Усть-Большерецк'),(3891,3872,'Усть-Камчатск'),(3892,3159,'Карелия'),(3893,3892,'Амбарный'),(3894,3892,'Беломорск'),(3895,3892,'Валаам'),(3896,3892,'Вирандозеро'),(3897,3892,'Гирвас'),(3898,3892,'Деревянка'),(3899,3892,'Идель'),(3900,3892,'Ильинский'),(3901,3892,'Импалахти'),(3902,3892,'Калевала'),(3903,3892,'Кемь'),(3904,3892,'Кестеньга'),(3905,3892,'Кондопога'),(3906,3892,'Костомукша'),(3907,3892,'Лахденпохья'),(3908,3892,'Лоухи'),(3909,3892,'Медвежьегорск'),(3910,3892,'Муезерский'),(3911,3892,'Олонец'),(3912,3892,'Петрозаводск'),(3913,3892,'Питкяранта'),(3914,3892,'Повенец'),(3915,3892,'Пряжа'),(3916,3892,'Пудож'),(3917,3892,'Сегежа'),(3918,3892,'Сортавала'),(3919,3892,'Софпорог'),(3920,3892,'Суоярви'),(3921,3159,'Кемеровская обл.'),(3922,3921,'Анжеро-Судженск'),(3923,3921,'Барзас'),(3924,3921,'Белово'),(3925,3921,'Белогорск'),(3926,3921,'Березовский'),(3927,3921,'Грамотеино'),(3928,3921,'Гурьевск'),(3929,3921,'Ижморский'),(3930,3921,'Итатский'),(3931,3921,'Калтан'),(3932,3921,'Кедровка'),(3933,3921,'Кемерово'),(3934,3921,'Киселевск'),(3935,3921,'Крапивинский'),(3936,3921,'Ленинск-Кузнецкий'),(3937,3921,'Мариинск'),(3938,3921,'Междуреченск'),(3939,3921,'Мыски'),(3940,3921,'Новокузнецк'),(3941,3921,'Осинники'),(3942,3921,'Прокопьевск'),(3943,3921,'Промышленная'),(3944,3921,'Тайга'),(3945,3921,'Таштагол'),(3946,3921,'Тисуль'),(3947,3921,'Топки'),(3948,3921,'Тяжинский'),(3949,3921,'Юрга'),(3950,3921,'Яшкино'),(3951,3921,'Яя'),(3952,3159,'Кировская обл.'),(3953,3952,'Арбаж'),(3954,3952,'Аркуль'),(3955,3952,'Белая Холуница'),(3956,3952,'Богородское'),(3957,3952,'Боровой'),(3958,3952,'Верхошижемье'),(3959,3952,'Зуевка'),(3960,3952,'Каринторф'),(3961,3952,'Кикнур'),(3962,3952,'Кильмезь'),(3963,3952,'Киров'),(3964,3952,'Кирово-Чепецк'),(3965,3952,'Кирс'),(3966,3952,'Кобра'),(3967,3952,'Котельнич'),(3968,3952,'Кумены'),(3969,3952,'Ленинское'),(3970,3952,'Луза'),(3971,3952,'Малмыж'),(3972,3952,'Мураши'),(3973,3952,'Нагорск'),(3974,3952,'Нема'),(3975,3952,'Нововятск'),(3976,3952,'Нолинск'),(3977,3952,'Омутнинск'),(3978,3952,'Опарино'),(3979,3952,'Оричи'),(3980,3952,'Пижанка'),(3981,3952,'Подосиновец'),(3982,3952,'Санчурск'),(3983,3952,'Свеча'),(3984,3952,'Слободской'),(3985,3952,'Советск'),(3986,3952,'Суна'),(3987,3952,'Тужа'),(3988,3952,'Уни'),(3989,3952,'Уржум'),(3990,3952,'Фаленки'),(3991,3952,'Халтурин'),(3992,3952,'Юрья'),(3993,3952,'Яранск'),(3994,3159,'Коми'),(3995,3994,'Абезь'),(3996,3994,'Айкино'),(3997,3994,'Верхняя Инта'),(3998,3994,'Визинга'),(3999,3994,'Водный'),(4000,3994,'Вожаель'),(4001,3994,'Воркута'),(4002,3994,'Вуктыл'),(4003,3994,'Гешарт'),(4004,3994,'Елецкий'),(4005,3994,'Емва'),(4006,3994,'Заполярный'),(4007,3994,'Ижма'),(4008,3994,'Инта'),(4009,3994,'Ираель'),(4010,3994,'Каджером'),(4011,3994,'Кажым'),(4012,3994,'Кожым'),(4013,3994,'Койгородок'),(4014,3994,'Корткерос'),(4015,3994,'Кослан'),(4016,3994,'Объячево'),(4017,3994,'Печора'),(4018,3994,'Сосногорск'),(4019,3994,'Сыктывкар'),(4020,3994,'Троицко-Печерск'),(4021,3994,'Усинск'),(4022,3994,'Усогорск'),(4023,3994,'Усть-Кулом'),(4024,3994,'Усть-Цильма'),(4025,3994,'Ухта'),(4026,3159,'Костромская обл.'),(4027,4026,'Антропово'),(4028,4026,'Боговарово'),(4029,4026,'Буй'),(4030,4026,'Волгореченск'),(4031,4026,'Галич'),(4032,4026,'Горчуха'),(4033,4026,'Зебляки'),(4034,4026,'Кадый'),(4035,4026,'Кологрив'),(4036,4026,'Кострома'),(4037,4026,'Красное-на-Волге'),(4038,4026,'Макарьев'),(4039,4026,'Мантурово'),(4040,4026,'Нерехта'),(4041,4026,'Нея'),(4042,4026,'Островское'),(4043,4026,'Павино'),(4044,4026,'Парфентьево'),(4045,4026,'Поназырево'),(4046,4026,'Солигалич'),(4047,4026,'Судиславль'),(4048,4026,'Сусанино'),(4049,4026,'Чухлома'),(4050,4026,'Шарья'),(4051,4026,'Шемятино'),(4052,3159,'Краснодарский край'),(4053,4052,'Абинск'),(4054,4052,'Абрау-Дюрсо'),(4055,4052,'Анапа'),(4056,4052,'Апшеронск'),(4057,4052,'Армавир'),(4058,4052,'Архипо-Осиповка'),(4059,4052,'Афипский'),(4060,4052,'Ахтырский'),(4061,4052,'Ачуево'),(4062,4052,'Белореченск'),(4063,4052,'Верхнебаканский'),(4064,4052,'Выселки'),(4065,4052,'Геленджик'),(4066,4052,'Гиагинская'),(4067,4052,'Горячий Ключ'),(4068,4052,'Джубга'),(4069,4052,'Динская'),(4070,4052,'Ейск'),(4071,4052,'Ильский'),(4072,4052,'Кабардинка'),(4073,4052,'Калинино'),(4074,4052,'Калининская'),(4075,4052,'Каменномостский'),(4076,4052,'Каневская'),(4077,4052,'Кореновск'),(4078,4052,'Красноармейская'),(4079,4052,'Краснодар'),(4080,4052,'Кропоткин'),(4081,4052,'Крыловская'),(4082,4052,'Крымск'),(4083,4052,'Кущевская'),(4084,4052,'Лабинск'),(4085,4052,'Лениградская'),(4086,4052,'Майкоп'),(4087,4052,'Мостовской'),(4088,4052,'Новороссийск'),(4089,4052,'Отрадная'),(4090,4052,'Павловская'),(4091,4052,'Приморско-Ахтарск'),(4092,4052,'Северская'),(4093,4052,'Славянск-на-Кубани'),(4094,4052,'Сочи'),(4095,4052,'Староминская'),(4096,4052,'Старощербиновская'),(4097,4052,'Тбилисская'),(4098,4052,'Темрюк'),(4099,4052,'Тимашевск'),(4100,4052,'Тихорецк'),(4101,4052,'Туапсе'),(4102,4052,'Тульский'),(4103,4052,'Усть-Лабинск'),(4104,4052,'Шовгеновский'),(4105,3159,'Красноярский край'),(4106,4105,'Абаза'),(4107,4105,'Абакан'),(4108,4105,'Абан'),(4109,4105,'Агинское'),(4110,4105,'Артемовск'),(4111,4105,'Аскиз'),(4112,4105,'Ачинск'),(4113,4105,'Байкит'),(4114,4105,'Балахта'),(4115,4105,'Балыкса'),(4116,4105,'Белый Яр'),(4117,4105,'Бельтырский'),(4118,4105,'Бея'),(4119,4105,'Бискамжа'),(4120,4105,'Боготол'),(4121,4105,'Боград'),(4122,4105,'Богучаны'),(4123,4105,'Большая Мурта'),(4124,4105,'Большой Улуй'),(4125,4105,'Бородино'),(4126,4105,'Ванавара'),(4127,4105,'Верхнеимбатск'),(4128,4105,'Горячегорск'),(4129,4105,'Дзержинское'),(4130,4105,'Дивногорск'),(4131,4105,'Диксон'),(4132,4105,'Дудинка'),(4133,4105,'Емельяново'),(4134,4105,'Енисейск'),(4135,4105,'Ермаковское'),(4136,4105,'Заозерный'),(4137,4105,'Игарка'),(4138,4105,'Идринское'),(4139,4105,'Иланский'),(4140,4105,'Ирбейское'),(4141,4105,'Казачинское'),(4142,4105,'Канск'),(4143,4105,'Каратузское'),(4144,4105,'Караул'),(4145,4105,'Кежма'),(4146,4105,'Козулька'),(4147,4105,'Копьево'),(4148,4105,'Краснотуранск'),(4149,4105,'Красноярск'),(4150,4105,'Курагино'),(4151,4105,'Лесосибирск'),(4152,4105,'Минусинск'),(4153,4105,'Мотыгино'),(4154,4105,'Назарово'),(4155,4105,'Нижний Ингаш'),(4156,4105,'Новоселово'),(4157,4105,'Норильск'),(4158,4105,'Партизанское'),(4159,4105,'Пировское'),(4160,4105,'Саяногорск'),(4161,4105,'Северо-Енисейский'),(4162,4105,'Тасеево'),(4163,4105,'Таштып'),(4164,4105,'Тура'),(4165,4105,'Туруханск'),(4166,4105,'Тюхтет'),(4167,4105,'Ужур'),(4168,4105,'Усть-Авам'),(4169,4105,'Уяр'),(4170,4105,'Хатанга'),(4171,4105,'Черемушки'),(4172,4105,'Черногорск'),(4173,4105,'Шалинское'),(4174,4105,'Шира'),(4175,4105,'Шушенское'),(4176,3159,'Курганская обл.'),(4177,4176,'Варгаши'),(4178,4176,'Глядянское'),(4179,4176,'Далматово'),(4180,4176,'Каргаполье'),(4181,4176,'Катайск'),(4182,4176,'Кетово'),(4183,4176,'Курган'),(4184,4176,'Куртамыш'),(4185,4176,'Лебяжье'),(4186,4176,'Макушино'),(4187,4176,'Мишкино'),(4188,4176,'Мокроусово'),(4189,4176,'Петухово'),(4190,4176,'Половинное'),(4191,4176,'Сафакулево'),(4192,4176,'Целинное'),(4193,4176,'Шадринск'),(4194,4176,'Шатрово'),(4195,4176,'Шумиха'),(4196,4176,'Щучье'),(4197,4176,'Юргамыш'),(4198,3159,'Курская обл.'),(4199,4198,'Альменево'),(4200,4198,'Белая'),(4201,4198,'Большое Солдатское'),(4202,4198,'Глушково'),(4203,4198,'Горшечное'),(4204,4198,'Дмитриев-Льговский'),(4205,4198,'Железногорск'),(4206,4198,'Золотухино'),(4207,4198,'Касторное'),(4208,4198,'Конышевка'),(4209,4198,'Коренево'),(4210,4198,'Курск'),(4211,4198,'Курчатов'),(4212,4198,'Кшенский'),(4213,4198,'Льгов'),(4214,4198,'Мантурово'),(4215,4198,'Медвенка'),(4216,4198,'Обоянь'),(4217,4198,'Поныри'),(4218,4198,'Пристень'),(4219,4198,'Прямицыно'),(4220,4198,'Рыльск'),(4221,4198,'Суджа'),(4222,4198,'Тим'),(4223,4198,'Фатеж'),(4224,4198,'Хомутовка'),(4225,4198,'Черемисиново'),(4226,4198,'Щигры'),(4227,3159,'Липецкая обл.'),(4228,4227,'Грязи'),(4229,4227,'Данхов'),(4230,4227,'Доброе'),(4231,4227,'Долгоруково'),(4232,4227,'Елец'),(4233,4227,'Задонск'),(4234,4227,'Измалково'),(4235,4227,'Казинка'),(4236,4227,'Лебедянь'),(4237,4227,'Лев Толстой'),(4238,4227,'Липецк'),(4239,4227,'Тербуны'),(4240,4227,'Усмань'),(4241,4227,'Хлевное'),(4242,4227,'Чаплыгин'),(4243,3159,'Магаданская обл.'),(4244,4243,'Анадырь'),(4245,4243,'Атка'),(4246,4243,'Балыгычан'),(4247,4243,'Беринговский'),(4248,4243,'Билибино'),(4249,4243,'Большевик'),(4250,4243,'Ванкарем'),(4251,4243,'Иульитин'),(4252,4243,'Кадыкчан'),(4253,4243,'Лаврентия'),(4254,4243,'Магадан'),(4255,4243,'Мыс Шмидта'),(4256,4243,'Ола'),(4257,4243,'Омонск'),(4258,4243,'Омсукчан'),(4259,4243,'Палатка'),(4260,4243,'Певек'),(4261,4243,'Провидения'),(4262,4243,'Сеймчан'),(4263,4243,'Синегорье'),(4264,4243,'Сусуман'),(4265,4243,'Усть-Белая'),(4266,4243,'Усть-Омчуг'),(4267,4243,'Эвенск'),(4268,4243,'Эгвекинот'),(4269,4243,'Ягодное'),(4270,3159,'Марий Эл'),(4271,4270,'Волжск'),(4272,4270,'Дубовский'),(4273,4270,'Звенигово'),(4274,4270,'Йошкар-Ола'),(4275,4270,'Килемары'),(4276,4270,'Козьмодемьянск'),(4277,4270,'Куженер'),(4278,4270,'Мари-Турек'),(4279,4270,'Медведево'),(4280,4270,'Морки'),(4281,4270,'Новый Торьял'),(4282,4270,'Оршанка'),(4283,4270,'Параньга'),(4284,4270,'Сернур'),(4285,4270,'Советский'),(4286,4270,'Юрино'),(4287,3159,'Мордовия'),(4288,4287,'Ардатов'),(4289,4287,'Атюрьево'),(4290,4287,'Атяшево'),(4291,4287,'Большие Березники'),(4292,4287,'Большое Игнатово'),(4293,4287,'Выша'),(4294,4287,'Ельники'),(4295,4287,'Зубова Поляна'),(4296,4287,'Инсар'),(4297,4287,'Кадошкино'),(4298,4287,'Кемля'),(4299,4287,'Ковылкино'),(4300,4287,'Комсомольский'),(4301,4287,'Кочкурово'),(4302,4287,'Краснослободск'),(4303,4287,'Лямбирь'),(4304,4287,'Ромоданово'),(4305,4287,'Рузаевка'),(4306,4287,'Саранск'),(4307,4287,'Старое Шайгово'),(4308,4287,'Темников'),(4309,4287,'Теньгушево'),(4310,4287,'Торбеево'),(4311,4287,'Чамзинка'),(4312,3159,'Москва и Московская обл.'),(4313,4312,'Абрамцево'),(4314,4312,'Алабино'),(4315,4312,'Апрелевка'),(4316,4312,'Архангельское'),(4317,4312,'Ашитково'),(4318,4312,'Бакшеево'),(4319,4312,'Балашиха'),(4320,4312,'Барыбино'),(4321,4312,'Белоомут'),(4322,4312,'Белые Столбы'),(4323,4312,'Бородино'),(4324,4312,'Бронницы'),(4325,4312,'Быково'),(4326,4312,'Валуево'),(4327,4312,'Вербилки'),(4328,4312,'Верея'),(4329,4312,'Видное'),(4330,4312,'Внуково'),(4331,4312,'Вождь Пролетариата'),(4332,4312,'Волоколамск'),(4333,4312,'Вороново'),(4334,4312,'Воскресенск'),(4335,4312,'Восточный'),(4336,4312,'Востряково'),(4337,4312,'Высоковск'),(4338,4312,'Голицино'),(4339,4312,'Деденево'),(4340,4312,'Дедовск'),(4341,4312,'Джержинский'),(4342,4312,'Дмитров'),(4343,4312,'Долгопрудный'),(4344,4312,'Домодедово'),(4345,4312,'Дорохово'),(4346,4312,'Дрезна'),(4347,4312,'Дубки'),(4348,4312,'Дубна'),(4349,4312,'Егорьевск'),(4350,4312,'Железнодорожный'),(4351,4312,'Жилево'),(4352,4312,'Жуковский'),(4353,4312,'Загорск'),(4354,4312,'Загорянский'),(4355,4312,'Запрудная'),(4356,4312,'Зарайск'),(4357,4312,'Звенигород'),(4358,4312,'Зеленоград'),(4359,4312,'Ивантеевка'),(4360,4312,'Икша'),(4361,4312,'Ильинский'),(4362,4312,'Истра'),(4363,4312,'Королёв'),(4364,4312,'Кашира'),(4365,4312,'Керва'),(4366,4312,'Климовск'),(4367,4312,'Клин'),(4368,4312,'Клязьма'),(4369,4312,'Кожино'),(4370,4312,'Кокошкино'),(4371,4312,'Коломна'),(4372,4312,'Колюбакино'),(4373,4312,'Косино'),(4374,4312,'Котельники'),(4375,4312,'Красково'),(4376,4312,'Красноармейск'),(4377,4312,'Красногорск'),(4378,4312,'Краснозаводск'),(4379,4312,'Красный Ткач'),(4380,4312,'Крюково'),(4381,4312,'Кубинка'),(4382,4312,'Купавна'),(4383,4312,'Куровское'),(4384,4312,'Лесной Городок'),(4385,4312,'Ликино-Дулево'),(4386,4312,'Лобня'),(4387,4312,'Лопатинский'),(4388,4312,'Лосино-Петровский'),(4389,4312,'Лотошино'),(4390,4312,'Лукино'),(4391,4312,'Луховицы'),(4392,4312,'Лыткарино'),(4393,4312,'Львовский'),(4394,4312,'Люберцы'),(4395,4312,'Малаховка'),(4396,4312,'Михайловское'),(4397,4312,'Михнево'),(4398,4312,'Можайск'),(4399,4312,'Монино'),(4400,4312,'Москва'),(4401,4312,'Муханово'),(4402,4312,'Мытищи'),(4403,4312,'Нарофоминск'),(4404,4312,'Нахабино'),(4405,4312,'Некрасовка'),(4406,4312,'Немчиновка'),(4407,4312,'Новобратцевский'),(4408,4312,'Новоподрезково'),(4409,4312,'Ногинск'),(4410,4312,'Обухово'),(4411,4312,'Одинцово'),(4412,4312,'Ожерелье'),(4413,4312,'Озеры'),(4414,4312,'Октябрьский'),(4415,4312,'Опалиха'),(4416,4312,'Орехово-Зуево'),(4417,4312,'Павловский Посад'),(4418,4312,'Первомайский'),(4419,4312,'Пески'),(4420,4312,'Пироговский'),(4421,4312,'Подольск'),(4422,4312,'Полушкино'),(4423,4312,'Правдинский'),(4424,4312,'Привокзальный'),(4425,4312,'Пролетарский'),(4426,4312,'Пушкино'),(4427,4312,'Пущино'),(4428,4312,'Радовицкий'),(4429,4312,'Раменское'),(4430,4312,'Реутов'),(4431,4312,'Решетниково'),(4432,4312,'Родники'),(4433,4312,'Рошаль'),(4434,4312,'Рублево'),(4435,4312,'Руза'),(4436,4312,'Салтыковка'),(4437,4312,'Северный'),(4438,4312,'Сергиев Посад'),(4439,4312,'Серебряные Пруды'),(4440,4312,'Серпухов'),(4441,4312,'Солнечногорск'),(4442,4312,'Солнцево'),(4443,4312,'Софрино'),(4444,4312,'Старая Купавна'),(4445,4312,'Старбеево'),(4446,4312,'Ступино'),(4447,4312,'Сходня'),(4448,4312,'Талдом'),(4449,4312,'Текстильщик'),(4450,4312,'Темпы'),(4451,4312,'Тишково'),(4452,4312,'Томилино'),(4453,4312,'Троицк'),(4454,4312,'Туголесский Бор'),(4455,4312,'Тучково'),(4456,4312,'Уваровка'),(4457,4312,'Удельная'),(4458,4312,'Успенское'),(4459,4312,'Фирсановка'),(4460,4312,'Фосфоритный'),(4461,4312,'Фрязино'),(4462,4312,'Фряново'),(4463,4312,'Химки'),(4464,4312,'Хорлово'),(4465,4312,'Хотьково'),(4466,4312,'Черкизово'),(4467,4312,'Черноголовка'),(4468,4312,'Черусти'),(4469,4312,'Чехов'),(4470,4312,'Шарапово'),(4471,4312,'Шатура'),(4472,4312,'Шатурторф'),(4473,4312,'Шаховская'),(4474,4312,'Шереметьевский'),(4475,4312,'Щелково'),(4476,4312,'Щербинка'),(4477,4312,'Электрогорск'),(4478,4312,'Электросталь'),(4479,4312,'Электроугли'),(4480,4312,'Яхрома'),(4481,3159,'Мурманская обл.'),(4482,4481,'Апатиты'),(4483,4481,'Африканда'),(4484,4481,'Верхнетуломский'),(4485,4481,'Заполярный'),(4486,4481,'Зареченск'),(4487,4481,'Зашеек'),(4488,4481,'Зеленоборский'),(4489,4481,'Кандалакша'),(4490,4481,'Кильдинстрой'),(4491,4481,'Кировск'),(4492,4481,'Ковдор'),(4493,4481,'Кола'),(4494,4481,'Конда'),(4495,4481,'Мончегорск'),(4496,4481,'Мурманск'),(4497,4481,'Мурмаши'),(4498,4481,'Никель'),(4499,4481,'Оленегорск'),(4500,4481,'Полярный'),(4501,4481,'Североморск'),(4502,4481,'Умба'),(4503,3159,'Новгородская обл.'),(4504,4503,'Анциферово'),(4505,4503,'Батецкий'),(4506,4503,'Большая Вишера'),(4507,4503,'Боровичи'),(4508,4503,'Валдай'),(4509,4503,'Волот'),(4510,4503,'Деманск'),(4511,4503,'Зарубино'),(4512,4503,'Кресцы'),(4513,4503,'Любытино'),(4514,4503,'Малая Вишера'),(4515,4503,'Марево'),(4516,4503,'Мошенское'),(4517,4503,'Новгород'),(4518,4503,'Окуловка'),(4519,4503,'Парфино'),(4520,4503,'Пестово'),(4521,4503,'Поддорье'),(4522,4503,'Сольцы'),(4523,4503,'Старая Русса'),(4524,4503,'Хвойное'),(4525,4503,'Холм'),(4526,4503,'Чудово'),(4527,4503,'Шимск'),(4528,3159,'Новосибирская обл.'),(4529,4528,'Баган'),(4530,4528,'Барабинск'),(4531,4528,'Бердск'),(4532,4528,'Биаза'),(4533,4528,'Болотное'),(4534,4528,'Венгерово'),(4535,4528,'Довольное'),(4536,4528,'Завьялово'),(4537,4528,'Искитим'),(4538,4528,'Карасук'),(4539,4528,'Каргат'),(4540,4528,'Колывань'),(4541,4528,'Краснозерское'),(4542,4528,'Крутиха'),(4543,4528,'Куйбышев'),(4544,4528,'Купино'),(4545,4528,'Кыштовка'),(4546,4528,'Маслянино'),(4547,4528,'Михайловский'),(4548,4528,'Мошково'),(4549,4528,'Новосибирск'),(4550,4528,'Ордынское'),(4551,4528,'Северное'),(4552,4528,'Сузун'),(4553,4528,'Татарск'),(4554,4528,'Тогучин'),(4555,4528,'Убинское'),(4556,4528,'Усть-Тарка'),(4557,4528,'Чаны'),(4558,4528,'Черепаново'),(4559,4528,'Чистоозерное'),(4560,4528,'Чулым'),(4561,3159,'Омская обл.'),(4562,4561,'Береговой'),(4563,4561,'Большеречье'),(4564,4561,'Большие Уки'),(4565,4561,'Горьковское'),(4566,4561,'Знаменское'),(4567,4561,'Исилькуль'),(4568,4561,'Калачинск'),(4569,4561,'Колосовка'),(4570,4561,'Кормиловка'),(4571,4561,'Крутинка'),(4572,4561,'Любинский'),(4573,4561,'Марьяновка'),(4574,4561,'Муромцево'),(4575,4561,'Называевск'),(4576,4561,'Нижняя Омка'),(4577,4561,'Нововаршавка'),(4578,4561,'Одесское'),(4579,4561,'Оконешниково'),(4580,4561,'Омск'),(4581,4561,'Павлоградка'),(4582,4561,'Полтавка'),(4583,4561,'Русская Поляна'),(4584,4561,'Саргатское'),(4585,4561,'Седельниково'),(4586,4561,'Таврическое'),(4587,4561,'Тара'),(4588,4561,'Тевриз'),(4589,4561,'Тюкалинск'),(4590,4561,'Усть-Ишим'),(4591,4561,'Черлак'),(4592,4561,'Шербакуль'),(4593,3159,'Оренбургская обл.'),(4594,4593,'Абдулино'),(4595,4593,'Адамовка'),(4596,4593,'Айдырлинский'),(4597,4593,'Акбулак'),(4598,4593,'Аккермановка'),(4599,4593,'Асекеево'),(4600,4593,'Беляевка'),(4601,4593,'Бугуруслан'),(4602,4593,'Бузулук'),(4603,4593,'Гай'),(4604,4593,'Грачевка'),(4605,4593,'Домбаровский'),(4606,4593,'Дубенский'),(4607,4593,'Илек'),(4608,4593,'Ириклинский'),(4609,4593,'Кувандык'),(4610,4593,'Курманаевка'),(4611,4593,'Матвеевка'),(4612,4593,'Медногорск'),(4613,4593,'Новоорск'),(4614,4593,'Новосергиевка'),(4615,4593,'Новотроицк'),(4616,4593,'Октябрьское'),(4617,4593,'Оренбург'),(4618,4593,'Орск'),(4619,4593,'Первомайский'),(4620,4593,'Переволоцкий'),(4621,4593,'Пономаревка'),(4622,4593,'Саракташ'),(4623,4593,'Светлый'),(4624,4593,'Северное'),(4625,4593,'Соль-Илецк'),(4626,4593,'Сорочинск'),(4627,4593,'Ташла'),(4628,4593,'Тоцкое'),(4629,4593,'Тюльган'),(4630,4593,'Шарлык'),(4631,4593,'Энергетик'),(4632,4593,'Ясный'),(4633,3159,'Орловская обл.'),(4634,4633,'Болхов'),(4635,4633,'Верховье'),(4636,4633,'Глазуновка'),(4637,4633,'Дмитровск-Орловский'),(4638,4633,'Долгое'),(4639,4633,'Залегощь'),(4640,4633,'Змиевка'),(4641,4633,'Знаменское'),(4642,4633,'Колпны'),(4643,4633,'Красная Заря'),(4644,4633,'Кромы'),(4645,4633,'Ливны'),(4646,4633,'Малоархангельск'),(4647,4633,'Мценск'),(4648,4633,'Нарышкино'),(4649,4633,'Новосиль'),(4650,4633,'Орел'),(4651,4633,'Покровское'),(4652,4633,'Сосково'),(4653,4633,'Тросна'),(4654,4633,'Хомутово'),(4655,4633,'Хотынец'),(4656,4633,'Шаблыкино'),(4657,3159,'Пензенская обл.'),(4658,4657,'Башмаково'),(4659,4657,'Беднодемьяновск'),(4660,4657,'Беково'),(4661,4657,'Белинский'),(4662,4657,'Бессоновка'),(4663,4657,'Вадинск'),(4664,4657,'Верхозим'),(4665,4657,'Городище'),(4666,4657,'Евлашево'),(4667,4657,'Земетчино'),(4668,4657,'Золотаревка'),(4669,4657,'Исса'),(4670,4657,'Каменка'),(4671,4657,'Колышлей'),(4672,4657,'Кондоль'),(4673,4657,'Кузнецк'),(4674,4657,'Лопатино'),(4675,4657,'Малая Сердоба'),(4676,4657,'Мокшан'),(4677,4657,'Наровчат'),(4678,4657,'Неверкино'),(4679,4657,'Нижний Ломов'),(4680,4657,'Никольск'),(4681,4657,'Пачелма'),(4682,4657,'Пенза'),(4683,4657,'Русский Камешкир'),(4684,4657,'Сердобск'),(4685,4657,'Сосновоборск'),(4686,4657,'Сура'),(4687,4657,'Тамала'),(4688,4657,'Шемышейка'),(4689,3159,'Пермская обл.'),(4690,4689,'Барда'),(4691,4689,'Березники'),(4692,4689,'Большая Соснова'),(4693,4689,'Верещагино'),(4694,4689,'Гайны'),(4695,4689,'Горнозаводск'),(4696,4689,'Гремячинск'),(4697,4689,'Губаха'),(4698,4689,'Добрянка'),(4699,4689,'Елово'),(4700,4689,'Зюкайка'),(4701,4689,'Ильинский'),(4702,4689,'Карагай'),(4703,4689,'Керчевский'),(4704,4689,'Кизел'),(4705,4689,'Коса'),(4706,4689,'Кочево'),(4707,4689,'Красновишерск'),(4708,4689,'Краснокамск'),(4709,4689,'Кудымкар'),(4710,4689,'Куеда'),(4711,4689,'Кунгур'),(4712,4689,'Лысьва'),(4713,4689,'Ныроб'),(4714,4689,'Нытва'),(4715,4689,'Октябрьский'),(4716,4689,'Орда'),(4717,4689,'Оса'),(4718,4689,'Оханск'),(4719,4689,'Очер'),(4720,4689,'Пермь'),(4721,4689,'Соликамск'),(4722,4689,'Суксун'),(4723,4689,'Уинское'),(4724,4689,'Усолье'),(4725,4689,'Усть-Кишерть'),(4726,4689,'Чайковский'),(4727,4689,'Частые'),(4728,4689,'Чердынь'),(4729,4689,'Чернореченский'),(4730,4689,'Чернушка'),(4731,4689,'Чусовой'),(4732,4689,'Юрла'),(4733,4689,'Юсьва'),(4734,3159,'Приморский край'),(4735,4734,'Анучино'),(4736,4734,'Арсеньев'),(4737,4734,'Артем'),(4738,4734,'Артемовский'),(4739,4734,'Большой Камень'),(4740,4734,'Валентин'),(4741,4734,'Владивосток'),(4742,4734,'Высокогорск'),(4743,4734,'Горные Ключи'),(4744,4734,'Горный'),(4745,4734,'Дальнегорск'),(4746,4734,'Дальнереченск'),(4747,4734,'Зарубино'),(4748,4734,'Кавалерово'),(4749,4734,'Каменка'),(4750,4734,'Камень-Рыболов'),(4751,4734,'Кировский'),(4752,4734,'Лазо'),(4753,4734,'Лесозаводск'),(4754,4734,'Лучегорск'),(4755,4734,'Михайловка'),(4756,4734,'Находка'),(4757,4734,'Новопокровка'),(4758,4734,'Ольга'),(4759,4734,'Партизанск'),(4760,4734,'Пограничный'),(4761,4734,'Покровка'),(4762,4734,'Русский'),(4763,4734,'Самарга'),(4764,4734,'Славянка'),(4765,4734,'Спасск-Дальний'),(4766,4734,'Терней'),(4767,4734,'Уссурийск'),(4768,4734,'Хасан'),(4769,4734,'Хороль'),(4770,4734,'Черниговка'),(4771,4734,'Чугуевка'),(4772,4734,'Яковлевка'),(4773,3159,'Псковская обл.'),(4774,4773,'Бежаницы'),(4775,4773,'Великие Луки'),(4776,4773,'Гдов'),(4777,4773,'Дедовичи'),(4778,4773,'Дно'),(4779,4773,'Заплюсье'),(4780,4773,'Идрица'),(4781,4773,'Красногородское'),(4782,4773,'Кунья'),(4783,4773,'Локня'),(4784,4773,'Невель'),(4785,4773,'Новоржев'),(4786,4773,'Новосокольники'),(4787,4773,'Опочка'),(4788,4773,'Остров'),(4789,4773,'Палкино'),(4790,4773,'Печоры'),(4791,4773,'Плюсса'),(4792,4773,'Порхов'),(4793,4773,'Псков'),(4794,4773,'Пустошка'),(4795,4773,'Пушкинские Горы'),(4796,4773,'Пыталово'),(4797,4773,'Себеж'),(4798,4773,'Струги-Красные'),(4799,4773,'Усвяты'),(4800,3159,'Ростовская обл.'),(4801,4800,'Азов'),(4802,4800,'Аксай'),(4803,4800,'Алмазный'),(4804,4800,'Аютинск'),(4805,4800,'Багаевский'),(4806,4800,'Батайск'),(4807,4800,'Белая Калитва'),(4808,4800,'Боковская'),(4809,4800,'Большая Мартыновка'),(4810,4800,'Вешенская'),(4811,4800,'Волгодонск'),(4812,4800,'Восход'),(4813,4800,'Гигант'),(4814,4800,'Горняцкий'),(4815,4800,'Гуково'),(4816,4800,'Донецк'),(4817,4800,'Донской'),(4818,4800,'Дубовское'),(4819,4800,'Жирнов'),(4820,4800,'Заветное'),(4821,4800,'Заводской'),(4822,4800,'Зверево'),(4823,4800,'Зерноград'),(4824,4800,'Зимовники'),(4825,4800,'Кагальницкая'),(4826,4800,'Казанская'),(4827,4800,'Каменоломни'),(4828,4800,'Каменск-Шахтинский'),(4829,4800,'Кашары'),(4830,4800,'Коксовый'),(4831,4800,'Константиновск'),(4832,4800,'Красный Сулин'),(4833,4800,'Куйбышево'),(4834,4800,'Матвеев Курган'),(4835,4800,'Мигулинская'),(4836,4800,'Миллерово'),(4837,4800,'Милютинская'),(4838,4800,'Морозовск'),(4839,4800,'Новочеркасск'),(4840,4800,'Новошахтинск'),(4841,4800,'Обливская'),(4842,4800,'Орловский'),(4843,4800,'Песчанокопское'),(4844,4800,'Покровское'),(4845,4800,'Пролетарск'),(4846,4800,'Ремонтное'),(4847,4800,'Родионово-Несветайская'),(4848,4800,'Ростов-на-Дону'),(4849,4800,'Сальск'),(4850,4800,'Семикаракорск'),(4851,4800,'Таганрог'),(4852,4800,'Тарасовский'),(4853,4800,'Тацинский'),(4854,4800,'Усть-Донецкий'),(4855,4800,'Целина'),(4856,4800,'Цимлянск'),(4857,4800,'Чалтырь'),(4858,4800,'Чертково'),(4859,4800,'Шахты'),(4860,4800,'Шолоховский'),(4861,3159,'Рязанская обл.'),(4862,4861,'Александро-Невский'),(4863,4861,'Горняк'),(4864,4861,'Гусь Железный'),(4865,4861,'Елатьма'),(4866,4861,'Ермишь'),(4867,4861,'Заречный'),(4868,4861,'Захарово'),(4869,4861,'Кадом'),(4870,4861,'Касимов'),(4871,4861,'Кораблино'),(4872,4861,'Милославское'),(4873,4861,'Михайлов'),(4874,4861,'Пителино'),(4875,4861,'Пронск'),(4876,4861,'Путятино'),(4877,4861,'Рыбное'),(4878,4861,'Ряжск'),(4879,4861,'Рязань'),(4880,4861,'Сапожок'),(4881,4861,'Сараи'),(4882,4861,'Сасово'),(4883,4861,'Скопин'),(4884,4861,'Спас-Клепики'),(4885,4861,'Спасск-Рязанский'),(4886,4861,'Старожилово'),(4887,4861,'Ухолово'),(4888,4861,'Чучково'),(4889,4861,'Шацк'),(4890,4861,'Шилово'),(4891,3159,'Самарская обл.'),(4892,4891,'Алексеевка'),(4893,4891,'Безенчук'),(4894,4891,'Богатое'),(4895,4891,'Богатырь'),(4896,4891,'Большая Глущица'),(4897,4891,'Большая Черниговка'),(4898,4891,'Борское'),(4899,4891,'Волжский'),(4900,4891,'Жигулевск'),(4901,4891,'Зольное'),(4902,4891,'Исаклы'),(4903,4891,'Камышла'),(4904,4891,'Кинель'),(4905,4891,'Кинель-Черкасы'),(4906,4891,'Клявлино'),(4907,4891,'Кошки'),(4908,4891,'Красноармейское'),(4909,4891,'Куйбышев'),(4910,4891,'Нефтегорск'),(4911,4891,'Новокуйбышевск'),(4912,4891,'Октябрьск'),(4913,4891,'Отрадный'),(4914,4891,'Пестравка'),(4915,4891,'Похвистнево'),(4916,4891,'Приволжье'),(4917,4891,'Самара'),(4918,4891,'Сызрань'),(4919,4891,'Тольятти'),(4920,4891,'Хворостянка'),(4921,4891,'Чапаевск'),(4922,4891,'Челно-Вершины'),(4923,4891,'Шентала'),(4924,4891,'Шигоны'),(4925,3159,'Санкт-Петербург и область'),(4926,4925,'Александровская'),(4927,4925,'Бокситогорск'),(4928,4925,'Большая Ижора'),(4929,4925,'Будогощь'),(4930,4925,'Вознесенье'),(4931,4925,'Волосово'),(4932,4925,'Волхов'),(4933,4925,'Всеволожск'),(4934,4925,'Выборг'),(4935,4925,'Вырица'),(4936,4925,'Высоцк'),(4937,4925,'Гатчина'),(4938,4925,'Дружная Горка'),(4939,4925,'Дубровка'),(4940,4925,'Ефимовский'),(4941,4925,'Зеленогорск'),(4942,4925,'Ивангород'),(4943,4925,'Каменногорск'),(4944,4925,'Кикерино'),(4945,4925,'Кингисепп'),(4946,4925,'Кириши'),(4947,4925,'Кировск'),(4948,4925,'Кобринское'),(4949,4925,'Колпино'),(4950,4925,'Кронштадт'),(4952,4925,'Лисий Нос'),(4953,4925,'Лодейное Поле'),(4954,4925,'Ломоносов'),(4955,4925,'Луга'),(4956,4925,'Павловск'),(4957,4925,'Парголово'),(4958,4925,'Петродворец'),(4959,4925,'Подпорожье'),(4960,4925,'Приозерск'),(4961,4925,'Пушкин'),(4962,4925,'Санкт-Петербург'),(4964,4925,'Сестрорецк'),(4965,4925,'Сланцы'),(4966,4925,'Сосновый Бор'),(4967,4925,'Тихвин'),(4968,4925,'Тосно'),(4969,3159,'Саратовская обл.'),(4970,4969,'Александров Гай'),(4971,4969,'Аркадак'),(4972,4969,'Аткарск'),(4973,4969,'Базарный Карабулак'),(4974,4969,'Балаково'),(4975,4969,'Балашов'),(4976,4969,'Балтай'),(4977,4969,'Возрождение'),(4978,4969,'Вольск'),(4979,4969,'Воскресенское'),(4980,4969,'Горный'),(4981,4969,'Дергачи'),(4982,4969,'Духовницкое'),(4983,4969,'Екатериновка'),(4984,4969,'Ершов'),(4985,4969,'Заречный'),(4986,4969,'Ивантеевка'),(4987,4969,'Калининск'),(4988,4969,'Каменский'),(4989,4969,'Красноармейск'),(4990,4969,'Красный Кут'),(4991,4969,'Лысые Горы'),(4992,4969,'Маркс'),(4993,4969,'Мокроус'),(4994,4969,'Новоузенск'),(4995,4969,'Новые Бурасы'),(4996,4969,'Озинки'),(4997,4969,'Перелюб'),(4998,4969,'Петровск'),(4999,4969,'Питерка'),(5000,4969,'Пугачев'),(5001,4969,'Ровное'),(5002,4969,'Романовка'),(5003,4969,'Ртищево'),(5004,4969,'Самойловка'),(5005,4969,'Саратов'),(5006,4969,'Степное'),(5007,4969,'Татищево'),(5008,4969,'Турки'),(5009,4969,'Хвалынск'),(5010,4969,'Энгельс'),(5011,3159,'Саха (Якутия)'),(5012,5011,'Абый'),(5013,5011,'Алдан'),(5014,5011,'Амга'),(5015,5011,'Батагай'),(5016,5011,'Бердигестях'),(5017,5011,'Беркакит'),(5018,5011,'Бестях'),(5019,5011,'Борогонцы'),(5020,5011,'Верхневилюйск'),(5021,5011,'Верхнеколымск'),(5022,5011,'Верхоянск'),(5023,5011,'Вилюйск'),(5024,5011,'Витим'),(5025,5011,'Власово'),(5026,5011,'Жиганск'),(5027,5011,'Зырянка'),(5028,5011,'Кангалассы'),(5029,5011,'Канкунский'),(5030,5011,'Ленск'),(5031,5011,'Майя'),(5032,5011,'Менкеря'),(5033,5011,'Мирный'),(5034,5011,'Нерюнгри'),(5035,5011,'Нычалах'),(5036,5011,'Нюрба'),(5037,5011,'Олекминск'),(5038,5011,'Покровск'),(5039,5011,'Сангар'),(5040,5011,'Саскылах'),(5041,5011,'Среднеколымск'),(5042,5011,'Сунтар'),(5043,5011,'Тикси'),(5044,5011,'Усть-Мая'),(5045,5011,'Усть-Нера'),(5046,5011,'Хандыга'),(5047,5011,'Хонуу'),(5048,5011,'Черский'),(5049,5011,'Чокурдах'),(5050,5011,'Чурапча'),(5051,5011,'Якутск'),(5052,3159,'Сахалин'),(5053,5052,'Александровск-Сахалинский'),(5054,5052,'Анбэцу'),(5055,5052,'Анива'),(5056,5052,'Бошняково'),(5057,5052,'Быков'),(5058,5052,'Вахрушев'),(5059,5052,'Взморье'),(5060,5052,'Гастелло'),(5061,5052,'Горнозаводск'),(5062,5052,'Долинск'),(5063,5052,'Ильинский'),(5064,5052,'Катангли'),(5065,5052,'Корсаков'),(5066,5052,'Курильск'),(5067,5052,'Макаров'),(5068,5052,'Невельск'),(5069,5052,'Ноглики'),(5070,5052,'Оха'),(5071,5052,'Поронайск'),(5072,5052,'Северо-Курильск'),(5073,5052,'Смирных'),(5074,5052,'Томари'),(5075,5052,'Тымовское'),(5076,5052,'Углегорск'),(5077,5052,'Холмск'),(5078,5052,'Шахтерск'),(5079,5052,'Южно-Сахалинск'),(5080,3159,'Свердловская обл.'),(5081,5080,'Алапаевск'),(5082,5080,'Алтынай'),(5083,5080,'Арамиль'),(5084,5080,'Артемовский'),(5085,5080,'Арти'),(5086,5080,'Асбест'),(5087,5080,'Ачит'),(5088,5080,'Байкалово'),(5089,5080,'Басьяновский'),(5090,5080,'Белоярский'),(5091,5080,'Березовский'),(5092,5080,'Богданович'),(5093,5080,'Буланаш'),(5094,5080,'Верхний Тагил'),(5095,5080,'Верхняя Пышма'),(5096,5080,'Верхняя Салда'),(5097,5080,'Верхняя Синячиха'),(5098,5080,'Верхняя Сысерть'),(5099,5080,'Верхняя Тура'),(5100,5080,'Верхотурье'),(5101,5080,'Висим'),(5102,5080,'Волчанск'),(5103,5080,'Воронцовка'),(5104,5080,'Гари'),(5105,5080,'Дегтярск'),(5106,5080,'Екатеринбург'),(5107,5080,'Ертарский'),(5108,5080,'Заводоуспенское'),(5109,5080,'Зыряновский'),(5110,5080,'Зюзельский'),(5111,5080,'Ивдель'),(5112,5080,'Изумруд'),(5113,5080,'Ирбит'),(5114,5080,'Ис'),(5115,5080,'Каменск-Уральский'),(5116,5080,'Камышлов'),(5117,5080,'Карпинск'),(5118,5080,'Карпунинский'),(5119,5080,'Качканар'),(5120,5080,'Кировград'),(5121,5080,'Краснотурьинск'),(5122,5080,'Красноуральск'),(5123,5080,'Красноуфимск'),(5124,5080,'Кушва'),(5125,5080,'Михайловск'),(5126,5080,'Невьянск'),(5127,5080,'Нижние Серги'),(5128,5080,'Нижний Тагил'),(5129,5080,'Нижняя Салда'),(5130,5080,'Нижняя Тура'),(5131,5080,'Новая Ляля'),(5132,5080,'Оус'),(5133,5080,'Первоуральск'),(5134,5080,'Полевской'),(5135,5080,'Пышма'),(5136,5080,'Ревда'),(5137,5080,'Реж'),(5138,5080,'Свердловск'),(5139,5080,'Североуральск'),(5140,5080,'Серов'),(5141,5080,'Сосьва'),(5142,5080,'Среднеуральск'),(5143,5080,'Сухой Лог'),(5144,5080,'Сысерть'),(5145,5080,'Таборы'),(5146,5080,'Тавда'),(5147,5080,'Талица'),(5148,5080,'Тугулым'),(5149,5080,'Туринск'),(5150,5080,'Туринская Слобода'),(5151,3159,'Северная Осетия'),(5152,5151,'Алагир'),(5153,5151,'Ардон'),(5154,5151,'Беслан'),(5155,5151,'Бурон'),(5156,5151,'Владикавказ'),(5157,5151,'Дигора'),(5158,5151,'Моздок'),(5159,5151,'Орджоникидзе'),(5160,5151,'Чикола'),(5161,3159,'Смоленская обл.'),(5162,5161,'Велиж'),(5163,5161,'Верхнеднепровский'),(5164,5161,'Ворга'),(5165,5161,'Вязьма'),(5166,5161,'Гагарин'),(5167,5161,'Глинка'),(5168,5161,'Голынки'),(5169,5161,'Демидов'),(5170,5161,'Дорогобуж'),(5171,5161,'Духовщина'),(5172,5161,'Екимовичи'),(5173,5161,'Ельня'),(5174,5161,'Ершичи'),(5175,5161,'Издешково'),(5176,5161,'Кардымово'),(5177,5161,'Красный'),(5178,5161,'Монастырщина'),(5179,5161,'Новодугино'),(5180,5161,'Починок'),(5181,5161,'Рославль'),(5182,5161,'Рудня'),(5183,5161,'Сафоново'),(5184,5161,'Смоленск'),(5185,5161,'Сычевка'),(5186,5161,'Угра'),(5187,5161,'Хиславичи'),(5188,5161,'Холм-Жирковский'),(5189,5161,'Шумячи'),(5190,5161,'Ярцево'),(5191,3159,'Ставропольский край'),(5192,5191,'Александровское'),(5193,5191,'Арзгир'),(5194,5191,'Благодарный'),(5195,5191,'Буденновск'),(5196,5191,'Георгиевск'),(5197,5191,'Дивное'),(5198,5191,'Домбай'),(5199,5191,'Донское'),(5200,5191,'Ессентуки'),(5201,5191,'Иноземцево'),(5202,5191,'Ипатово'),(5203,5191,'Карачаевск'),(5204,5191,'Кисловодск'),(5205,5191,'Кочубеевское'),(5206,5191,'Красногвардейское'),(5207,5191,'Курсавка'),(5208,5191,'Левокумское'),(5209,5191,'Минеральные Воды'),(5210,5191,'Невинномысск'),(5211,5191,'Нефтекумск'),(5212,5191,'Новоалександровск'),(5213,5191,'Новоалександровская'),(5214,5191,'Новопавловск'),(5215,5191,'Новоселицкое'),(5216,5191,'Преградная'),(5217,5191,'Пятигорск'),(5218,5191,'Светлоград'),(5219,5191,'Ставрополь'),(5220,5191,'Степное'),(5221,5191,'Теберда'),(5222,5191,'Усть-Джегута'),(5223,5191,'Хабез'),(5224,5191,'Черкесск'),(5225,3159,'Тамбовская обл.'),(5226,5225,'Бондари'),(5227,5225,'Гавриловка Вторая'),(5228,5225,'Жердевка'),(5229,5225,'Знаменка'),(5230,5225,'Инжавино'),(5231,5225,'Кирсанов'),(5232,5225,'Котовск'),(5233,5225,'Мичуринск'),(5234,5225,'Мордово'),(5235,5225,'Моршанск'),(5236,5225,'Мучкапский'),(5237,5225,'Петровское'),(5238,5225,'Пичаево'),(5239,5225,'Рассказово'),(5240,5225,'Ржакса'),(5241,5225,'Староюрьево'),(5242,5225,'Тамбов'),(5243,5225,'Токаревка'),(5244,5225,'Уварово'),(5245,5225,'Умет'),(5246,3159,'Татарстан'),(5247,5246,'Агрыз'),(5248,5246,'Азнакаево'),(5249,5246,'Аксубаево'),(5250,5246,'Актюбинский'),(5251,5246,'Алексеевское'),(5252,5246,'Альметьевск'),(5253,5246,'Апастово'),(5254,5246,'Арск'),(5255,5246,'Бавлы'),(5256,5246,'Базарные Матаки'),(5257,5246,'Балтаси'),(5258,5246,'Богатые Сабы'),(5259,5246,'Брежнев'),(5260,5246,'Бугульма'),(5261,5246,'Буинск'),(5262,5246,'Васильево'),(5263,5246,'Верхний Услон'),(5264,5246,'Высокая Гора'),(5265,5246,'Дербешкинский'),(5266,5246,'Елабуга'),(5267,5246,'Заинск'),(5268,5246,'Зеленодольск'),(5269,5246,'Казань'),(5270,5246,'Камское Устье'),(5271,5246,'Карабаш'),(5272,5246,'Куйбышев'),(5273,5246,'Кукмод'),(5274,5246,'Кукмор'),(5275,5246,'Лаишево'),(5276,5246,'Лениногорск'),(5277,5246,'Мамадыш'),(5278,5246,'Менделеевск'),(5279,5246,'Мензелинск'),(5280,5246,'Муслюмово'),(5281,5246,'Набережные Челны'),(5282,5246,'Нижнекамск'),(5283,5246,'Новошешминск'),(5284,5246,'Нурлат'),(5285,5246,'Пестрецы'),(5286,5246,'Рыбная Слобода'),(5287,5246,'Сарманово'),(5288,5246,'Старое Дрожжаное'),(5289,5246,'Тетюши'),(5290,5246,'Чистополь'),(5291,3159,'Томская обл.'),(5292,5291,'Александровское'),(5293,5291,'Асино'),(5294,5291,'Бакчар'),(5295,5291,'Батурино'),(5296,5291,'Белый Яр'),(5297,5291,'Зырянское'),(5298,5291,'Итатка'),(5299,5291,'Каргасок'),(5300,5291,'Катайга'),(5301,5291,'Кожевниково'),(5302,5291,'Колпашево'),(5303,5291,'Кривошеино'),(5304,5291,'Мельниково'),(5305,5291,'Молчаново'),(5306,5291,'Парабель'),(5307,5291,'Первомайское'),(5308,5291,'Подгорное'),(5309,5291,'Стрежевой'),(5310,5291,'Томск'),(5311,5291,'Тымск'),(5312,3159,'Тува (Тувинская Респ.)'),(5313,5312,'Ак-Довурак'),(5314,5312,'Бай Хаак'),(5315,5312,'Кызыл'),(5316,5312,'Самагалтай'),(5317,5312,'Сарыг-Сеп'),(5318,5312,'Суть-Холь'),(5319,5312,'Тоора-Хем'),(5320,5312,'Туран'),(5321,5312,'Тээли'),(5322,5312,'Хову-Аксы'),(5323,5312,'Чадан'),(5324,5312,'Шагонар'),(5325,5312,'Эрзин'),(5326,3159,'Тульская обл.'),(5327,5326,'Агеево'),(5328,5326,'Алексин'),(5329,5326,'Арсеньево'),(5330,5326,'Барсуки'),(5331,5326,'Бегичевский'),(5332,5326,'Богородицк'),(5333,5326,'Болохово'),(5334,5326,'Велегож'),(5335,5326,'Венев'),(5336,5326,'Волово'),(5337,5326,'Горелки'),(5338,5326,'Донской'),(5339,5326,'Дубна'),(5340,5326,'Епифань'),(5341,5326,'Ефремов'),(5342,5326,'Заокский'),(5343,5326,'Казановка'),(5344,5326,'Кимовск'),(5345,5326,'Киреевск'),(5346,5326,'Куркино'),(5347,5326,'Ленинский'),(5348,5326,'Новомосковск'),(5349,5326,'Одоев'),(5350,5326,'Плавск'),(5351,5326,'Суворов'),(5352,5326,'Тула'),(5353,5326,'Узловая'),(5354,5326,'Щекино'),(5355,5326,'Ясногорск'),(5356,3159,'Тюменская обл.'),(5357,5356,'Абатский'),(5358,5356,'Аксарка'),(5359,5356,'Армизонское'),(5360,5356,'Аромашево'),(5361,5356,'Бердюжье'),(5362,5356,'Большое Сорокино'),(5363,5356,'Вагай'),(5364,5356,'Викулово'),(5365,5356,'Винзили'),(5366,5356,'Голышманово'),(5367,5356,'Заводопетровский'),(5368,5356,'Заводоуковск'),(5369,5356,'Исетское'),(5370,5356,'Ишим'),(5371,5356,'Казанское'),(5372,5356,'Казым-Мыс'),(5373,5356,'Кондинское'),(5374,5356,'Красноселькуп'),(5375,5356,'Лабытнанги'),(5376,5356,'Мужи'),(5377,5356,'Надым'),(5378,5356,'Находка'),(5379,5356,'Нефтеюганск'),(5380,5356,'Нижневартовск'),(5381,5356,'Нижняя Тавда'),(5382,5356,'Новый Уренгой'),(5383,5356,'Ноябрьск'),(5384,5356,'Нягань'),(5385,5356,'Октябрьское'),(5386,5356,'Омутинский'),(5387,5356,'Радужный'),(5388,5356,'Салехард'),(5389,5356,'Сладково'),(5390,5356,'Советский'),(5391,5356,'Сургут'),(5392,5356,'Тазовский'),(5393,5356,'Тарко-Сале'),(5394,5356,'Тобольск'),(5395,5356,'Тюмень'),(5396,5356,'Уват'),(5397,5356,'Упорово'),(5398,5356,'Урай'),(5399,5356,'Ханты-Мансийск'),(5400,5356,'Юрибей'),(5401,5356,'Ялуторовск'),(5402,5356,'Яр-Сале'),(5403,5356,'Ярково'),(5404,3159,'Удмуртия'),(5405,5404,'Алнаши'),(5406,5404,'Балезино'),(5407,5404,'Вавож'),(5408,5404,'Воткинск'),(5409,5404,'Глазов'),(5410,5404,'Грахово'),(5411,5404,'Дебесы'),(5412,5404,'Завьялово'),(5413,5404,'Игра'),(5414,5404,'Ижевск'),(5415,5404,'Кама'),(5416,5404,'Камбарка'),(5417,5404,'Каракулино'),(5418,5404,'Кез'),(5419,5404,'Кизнер'),(5420,5404,'Киясово'),(5421,5404,'Красногорское'),(5422,5404,'Можга'),(5423,5404,'Сарапул'),(5424,5404,'Селты'),(5425,5404,'Сюмси'),(5426,5404,'Ува'),(5427,5404,'Устинов'),(5428,5404,'Шаркан'),(5429,5404,'Юкаменское'),(5430,5404,'Якшур-Бодья'),(5431,5404,'Яр'),(5432,3159,'Ульяновская обл.'),(5433,5432,'Базарный Сызган'),(5434,5432,'Барыш'),(5435,5432,'Большое Нагаткино'),(5436,5432,'Вешкайма'),(5437,5432,'Глотовка'),(5438,5432,'Димитровград'),(5439,5432,'Игнатовка'),(5440,5432,'Измайлово'),(5441,5432,'Инза'),(5442,5432,'Ишеевка'),(5443,5432,'Канадей'),(5444,5432,'Карсун'),(5445,5432,'Кузоватово'),(5446,5432,'Майна'),(5447,5432,'Новая Малыкла'),(5448,5432,'Новоспасское'),(5449,5432,'Павловка'),(5450,5432,'Радищево'),(5451,5432,'Сенгилей'),(5452,5432,'Старая Кулатка'),(5453,5432,'Старая Майна'),(5454,5432,'Сурское'),(5455,5432,'Тереньга'),(5456,5432,'Ульяновск'),(5457,5432,'Чердаклы'),(5458,3159,'Уральская обл.'),(5459,5458,'Аксай'),(5460,5458,'Дарьинское'),(5461,5458,'Деркул'),(5462,5458,'Джамбейты'),(5463,5458,'Джаныбек'),(5464,5458,'Казталовка'),(5465,5458,'Калмыково'),(5466,5458,'Каратобе'),(5467,5458,'Переметное'),(5468,5458,'Сайхин'),(5469,5458,'Уральск'),(5470,5458,'Федоровка'),(5471,5458,'Фурманово'),(5472,5458,'Чапаев'),(5473,3159,'Хабаровский край'),(5474,5473,'Амурск'),(5475,5473,'Аян'),(5476,5473,'Березовый'),(5477,5473,'Бикин'),(5478,5473,'Бира'),(5479,5473,'Биракан'),(5480,5473,'Богородское'),(5481,5473,'Болонь'),(5482,5473,'Ванино'),(5483,5473,'Волочаевка Вторая'),(5484,5473,'Высокогорный'),(5485,5473,'Вяземский'),(5486,5473,'Горный'),(5487,5473,'Гурское'),(5488,5473,'Дормидонтовка'),(5489,5473,'Заветы Ильича'),(5490,5473,'Известковый'),(5491,5473,'Иннокентьевка'),(5492,5473,'Комсомольск-на-Амуре'),(5493,5473,'Ленинское'),(5494,5473,'Нелькан'),(5495,5473,'Николаевск-на-Амуре'),(5496,5473,'Облучье'),(5497,5473,'Охотск'),(5498,5473,'Переяславка'),(5499,5473,'Смидович'),(5500,5473,'Советская Гавань'),(5501,5473,'Софийск'),(5502,5473,'Троицкое'),(5503,5473,'Тугур'),(5504,5473,'Хабаровск'),(5505,5473,'Чегдомын'),(5506,5473,'Чумикан'),(5507,3159,'Челябинская обл.'),(5508,5507,'Агаповка'),(5509,5507,'Аргаяш'),(5510,5507,'Аша'),(5511,5507,'Бакал'),(5512,5507,'Бреды'),(5513,5507,'Варна'),(5514,5507,'Верхнеуральск'),(5515,5507,'Верхний Уфалей'),(5516,5507,'Еманжелинск'),(5517,5507,'Златоуст'),(5518,5507,'Карабаш'),(5519,5507,'Карталы'),(5520,5507,'Касли'),(5521,5507,'Катав-Ивановск'),(5522,5507,'Копейск'),(5523,5507,'Коркино'),(5524,5507,'Кунашак'),(5525,5507,'Куса'),(5526,5507,'Кыштым'),(5527,5507,'Магнитогорск'),(5528,5507,'Миасс'),(5529,5507,'Октябрьское'),(5530,5507,'Пласт'),(5531,5507,'Сатка'),(5532,5507,'Сим'),(5533,5507,'Троицк'),(5534,5507,'Увельский'),(5535,5507,'Уйское'),(5536,5507,'Усть-Катав'),(5537,5507,'Фершампенуаз'),(5538,5507,'Чебаркуль'),(5539,5507,'Челябинск'),(5540,5507,'Чесма'),(5541,5507,'Южно-Уральск'),(5542,5507,'Юрюзань'),(5543,3159,'Чечено-Ингушетия'),(5544,5543,'Аргун'),(5545,5543,'Грозный'),(5546,5543,'Гудермез'),(5547,5543,'Малгобек'),(5548,5543,'Назрань'),(5549,5543,'Наурская'),(5550,5543,'Ножай-Юрт'),(5551,5543,'Орджоникидзевская'),(5552,5543,'Советское'),(5553,5543,'Урус-Мартан'),(5554,5543,'Шали'),(5555,3159,'Читинская обл.'),(5556,5555,'Агинское'),(5557,5555,'Аксеново-Зиловское'),(5558,5555,'Акша'),(5559,5555,'Александровский Завод'),(5560,5555,'Амазар'),(5561,5555,'Арбагар'),(5562,5555,'Атамановка'),(5563,5555,'Балей'),(5564,5555,'Борзя'),(5565,5555,'Букачача'),(5566,5555,'Газимурский Завод'),(5567,5555,'Давенда'),(5568,5555,'Дарасун'),(5569,5555,'Дровяная'),(5570,5555,'Дульдурга'),(5571,5555,'Жиндо'),(5572,5555,'Забайкальск'),(5573,5555,'Итака'),(5574,5555,'Калга'),(5575,5555,'Карымское'),(5576,5555,'Кличка'),(5577,5555,'Ключевский'),(5578,5555,'Кокуй'),(5579,5555,'Краснокаменск'),(5580,5555,'Красный Чикой'),(5581,5555,'Кыра'),(5582,5555,'Моготуй'),(5583,5555,'Могоча'),(5584,5555,'Нерчинск'),(5585,5555,'Нерчинский Завод'),(5586,5555,'Нижний Часучей'),(5587,5555,'Оловянная'),(5588,5555,'Первомайский'),(5589,5555,'Петровск-Забайкальский'),(5590,5555,'Приаргунск'),(5591,5555,'Сретенск'),(5592,5555,'Тупик'),(5593,5555,'Улеты'),(5594,5555,'Хилок'),(5595,5555,'Чара'),(5596,5555,'Чернышевск'),(5597,5555,'Чита'),(5598,5555,'Шелопугино'),(5599,5555,'Шилка'),(5600,3159,'Чувашия'),(5601,5600,'Алатырь'),(5602,5600,'Аликово'),(5603,5600,'Батырева'),(5604,5600,'Буинск'),(5605,5600,'Вурнары'),(5606,5600,'Ибреси'),(5607,5600,'Канаш'),(5608,5600,'Киря'),(5609,5600,'Комсомольское'),(5610,5600,'Красноармейское'),(5611,5600,'Красные Четаи'),(5612,5600,'Кугеси'),(5613,5600,'Мариинский Посад'),(5614,5600,'Моргауши'),(5615,5600,'Новочебоксарск'),(5616,5600,'Порецкое'),(5617,5600,'Урмары'),(5618,5600,'Цивильск'),(5619,5600,'Чебоксары'),(5620,5600,'Шемурша'),(5621,5600,'Шумерля'),(5622,5600,'Ядрин'),(5623,5600,'Яльчики'),(5624,5600,'Янтиково'),(5625,3159,'Ярославская обл.'),(5626,5625,'Андропов'),(5627,5625,'Берендеево'),(5628,5625,'Большое Село'),(5629,5625,'Борисоглебский'),(5630,5625,'Брейтово'),(5631,5625,'Бурмакино'),(5632,5625,'Варегово'),(5633,5625,'Волга'),(5634,5625,'Гаврилов Ям'),(5635,5625,'Данилов'),(5636,5625,'Любим'),(5637,5625,'Мышкино'),(5638,5625,'Некрасовское'),(5639,5625,'Новый Некоуз'),(5640,5625,'Переславль-Залесский'),(5641,5625,'Пошехонье-Володарск'),(5642,5625,'Ростов'),(5643,5625,'Рыбинск'),(5644,5625,'Тутаев'),(5645,5625,'Углич'),(5646,5625,'Ярославль'),(279078,2499002,'Аган'),(1923662,5356,'Когалым'),(1924171,3251,'Мирный'),(1924532,4925,'Шлиссельбург'),(1925143,3761,'Кёнигсберг'),(1929637,3296,'Бураево'),(1998532,3159,'Адыгея'),(1998542,1998532,'Майкоп'),(1998584,1998532,'Адыгейск'),(2005016,5507,'Снежинск'),(2019672,5326,'Белев'),(2052982,3529,'нововоронеж'),(2116660,3703,'Саянск'),(2184457,5161,'Десногорск'),(2185271,3563,'Саров'),(2185858,4052,'Курганинск'),(2316497,3159,'Хакасия'),(2316517,2316497,'Саяногорск'),(2411629,5356,'Излучинск'),(2413243,4481,'Заозерск'),(2415585,3159,'Чукотский АО'),(2415620,2415585,'Анадырь'),(2479040,4105,'Шарыпово'),(2499002,3159,'Ханты-Мансийский АО'),(2499035,2499002,'Нижневартовск'),(2499082,5080,'Новоуральск'),(2812698,5356,'Муравленко'),(3118538,4312,'Королев'),(3138835,3703,'Чунский'),(3138841,4312,'Протвино'),(3145145,3407,'Таксимо'),(3408643,5507,'Трехгорный'),(3409478,4105,'Зеленогорск'),(3411630,3872,'Елизово'),(3411741,3703,'Култук'),(3473821,5356,'Ларьяк'),(3474011,5225,'Первомайский'),(3535020,5356,'Губкинский'),(3881459,3371,'Дятьково'),(4041912,2499002,'Лянтор'),(4093520,5246,'Альметьевск'),(4093692,2316497,'Абакан'),(4156345,2499002,'Югорск'),(4276360,5356,'Белоярский'),(4285366,3784,'Удомля'),(4285519,5507,'Озерск'),(4777963,5052,'Южно-Курильск'),(4778470,4481,'Снежногорск'),(4778496,5080,'Лесной'),(4778522,2499002,'Мегион'),(4869166,5191,'Железноводск'),(5019394,3159,'Ямало-Ненецкий АО'),(5019404,5019394,'Салехард'),(5020365,5019394,'Новый Уренгой'),(5020595,4481,'Полярные Зори'),(5020614,4105,'Сосновоборск'),(5020665,4891,'Сургут (Самарская обл.)'),(5020681,2499002,'Сургут'),(5252498,5019394,'Муравленко'),(5498759,5019394,'Губкинский'),(5555962,3407,'Северобайкальск'),(5556050,3952,'Вятские Поляны'),(5641077,5019394,'Пуровск'),(5908265,3675,'Кохма'),(5908547,5019394,'Надым'),(6113699,2499002,'Нефтеюганск'),(6454651,5356,'Мегион'),(6456567,4105,'Кодинск'),(6711408,2415585,'Билибино'),(7592215,4800,'Егорлыкская'),(7592923,4312,'Байконур'),(7593075,4312,'Краснознаменск'),(7593225,2499002,'Нягань'),(7717502,2499002,'Излучинск'),(7717702,5019394,'Ноябрьск'),(7718652,2499002,'Ханты-Мансийск'),(10498697,5191,'Солнечнодольск'),(10499269,5019394,'Тарко'),(10499672,3872,'Озерновский'),(10500023,4925,'Коммунар'),(10500094,5191,'Изобильный'),(10500382,3468,'Кириллов'),(10500476,4891,'Красный Яр'),(10501002,5291,'Северск'),(10502714,4105,' Железногорск'),(10504604,4925,'Пикалёво'),(10505475,5191,'Зеленокумск'),(10688837,2499002,'Покачи'),(10689767,4734,'Фокино'),(11567319,2499002,'Радужный'),(11569100,2499002,'Урай'),(11569394,2499002,'Пыть-Ях'),(11910622,2499002,'Игрим'),(11911051,5356,'Унъюган'),(12364794,2499002,'Лангепас'),(12370243,2499002,'Приобье'),(12370942,3872,'Вилючинск'),(12371093,5019394,'Заполярный'),(12371094,2499002,'Когалым');
+/*!40000 ALTER TABLE `ref_data_regions` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `Regions_after_insert` AFTER INSERT ON `ref_data_Regions`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Regions(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `Regions_after_update` AFTER UPDATE ON `ref_data_Regions`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Regions(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_sau`
+--
+
+DROP TABLE IF EXISTS `ref_data_sau`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_sau` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_sau`
+--
+
+LOCK TABLES `ref_data_sau` WRITE;
+/*!40000 ALTER TABLE `ref_data_sau` DISABLE KEYS */;
+INSERT INTO `ref_data_sau` VALUES (5,0,'Росгосстрах'),(6,0,'Уралсиб'),(7,0,'Группа Ренесанс Страхование'),(8,0,'АльфаСтрахование'),(9,0,'Ресо'),(10,0,'Альянс'),(11,0,'ВСК'),(12,0,'Ингосстрах'),(13,0,'КИТ Финанс Страхование'),(14,0,'СОГАЗ'),(16,0,'СК Транснефть'),(17,0,'СО Сургутнефтегаз'),(18,0,'СК Цюрих'),(19,0,'САК ЭНЕРГОГАРАНТ'),(20,0,'ЭРГО Русь'),(21,0,'СК ВТБ Страхование'),(22,0,'Любая'),(23,0,'СК ГАЙДЕ'),(24,0,'СК \"Регион гарант\"'),(25,0,'СОАО \"Национальная Страховая Группа\"'),(26,0,'Страховая Компания \"ПАРИ\"'),(27,0,'Британский Страховой Дом'),(28,0,'Страховая группа МСК'),(29,0,'Страховая компания АСК-Петербург'),(30,0,'Русская страховая транспортная компания'),(31,0,'Страховая компания \"Двадцать первый век\"'),(32,0,'Страховая компания \"Согласие\"'),(33,0,'ИСК Евро-Полис'),(34,0,'СК \"Артекс\"'),(35,0,'Гута-Страхование'),(36,0,'ИФ \"Страхование\"'),(37,0,'Страховая компания \"Советская\"'),(38,0,'СК \"ОРАНТА\"'),(39,0,'МАКС'),(40,0,'Межотраслевой страховой центр'),(41,0,'Капитал Страхование'),(42,0,'БИН Страхование'),(43,0,'СО ЖАСО'),(44,0,'СГ Компаньон'),(45,0,'Д2 Страхование'),(46,0,'СК Союз'),(47,0,'АИГ'),(48,0,'СК АСКО'),(49,0,'СК ФЬОРД'),(50,0,'ЮЖУРАЛЖАСО'),(51,0,'СК АЛРОСА'),(52,0,'НАСКО'),(53,0,'Объединенная страховая компания'),(54,0,'ИНТАЧ Страхование'),(55,0,'СК Екатеринбург'),(56,0,'ГСК Югория'),(57,0,'СК РСХБ-Страхование'),(58,0,'РСК \"Стерх\"'),(59,0,'СК \"Росгосстрах-жизнь\"');
+/*!40000 ALTER TABLE `ref_data_sau` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `sau_after_insert` AFTER INSERT ON `ref_data_sau`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_sau(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `sau_after_update` AFTER UPDATE ON `ref_data_sau`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_sau(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_semeinoe_pologenie`
+--
+
+DROP TABLE IF EXISTS `ref_data_semeinoe_pologenie`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_semeinoe_pologenie` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_semeinoe_pologenie`
+--
+
+LOCK TABLES `ref_data_semeinoe_pologenie` WRITE;
+/*!40000 ALTER TABLE `ref_data_semeinoe_pologenie` DISABLE KEYS */;
+INSERT INTO `ref_data_semeinoe_pologenie` VALUES (4,0,'холост/не замужем'),(5,0,'разведен/разведена'),(6,0,'женат/замужем'),(7,0,'вдовец/вдова'),(8,0,'гражданский брак');
+/*!40000 ALTER TABLE `ref_data_semeinoe_pologenie` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Semeinoe_pologenie_after_insert` AFTER INSERT ON `ref_data_Semeinoe_pologenie`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Semeinoe_pologenie(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Semeinoe_pologenie_after_update` AFTER UPDATE ON `ref_data_Semeinoe_pologenie`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Semeinoe_pologenie(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_showroom_car`
+--
+
+DROP TABLE IF EXISTS `ref_data_showroom_car`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_showroom_car` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_showroom_car`
+--
+
+LOCK TABLES `ref_data_showroom_car` WRITE;
+/*!40000 ALTER TABLE `ref_data_showroom_car` DISABLE KEYS */;
+INSERT INTO `ref_data_showroom_car` VALUES (4,0,'АК \"ГРУЗОМОБИЛЬ\"');
+/*!40000 ALTER TABLE `ref_data_showroom_car` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `showroom_car_after_insert` AFTER INSERT ON `ref_data_showroom_car`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_showroom_car(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `showroom_car_after_update` AFTER UPDATE ON `ref_data_showroom_car`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_showroom_car(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_sobstvennik_avto`
+--
+
+DROP TABLE IF EXISTS `ref_data_sobstvennik_avto`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_sobstvennik_avto` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_sobstvennik_avto`
+--
+
+LOCK TABLES `ref_data_sobstvennik_avto` WRITE;
+/*!40000 ALTER TABLE `ref_data_sobstvennik_avto` DISABLE KEYS */;
+INSERT INTO `ref_data_sobstvennik_avto` VALUES (4,0,'Заёмщик'),(5,0,'Супруг(а) заёмщика'),(6,0,'Поручитель'),(7,0,'Третье лицо');
+/*!40000 ALTER TABLE `ref_data_sobstvennik_avto` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Sobstvennik_avto_after_insert` AFTER INSERT ON `ref_data_Sobstvennik_avto`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Sobstvennik_avto(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Sobstvennik_avto_after_update` AFTER UPDATE ON `ref_data_Sobstvennik_avto`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Sobstvennik_avto(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_spisok_dok_yul`
+--
+
+DROP TABLE IF EXISTS `ref_data_spisok_dok_yul`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_spisok_dok_yul` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_spisok_dok_yul`
+--
+
+LOCK TABLES `ref_data_spisok_dok_yul` WRITE;
+/*!40000 ALTER TABLE `ref_data_spisok_dok_yul` DISABLE KEYS */;
+INSERT INTO `ref_data_spisok_dok_yul` VALUES (17,0,'ИНТЕЗА ЮЛ'),(18,17,'Устав'),(19,17,'Учредительный договор/решение'),(20,17,'Свидетельство о постановке на учет в налоговой'),(21,17,'Свидетельство ОГРН'),(22,17,'Решения/приказы о назн директора, гл. бухгалтера'),(23,17,'Папорта руководителя, гл. бухгалтера, учредителей'),(24,17,'Изменения к учредительным документам'),(25,17,'Для АО -  выписка из реестра акционеров'),(26,17,'Баланс, ОПУ за посл. год'),(28,17,'Декларация НДС '),(29,17,'ОСВ общая '),(30,17,'ОСВ 60,62,66,67,76'),(31,17,'ОСВ 51, 90'),(32,17,'Справка об открытых счетах'),(33,17,'Справка ГНИ об откр счетах'),(34,17,'Справка из банков '),(36,17,'Догю аренды/ док-ты на право собств. помещений'),(38,17,'Управленческая отчетность'),(39,38,'Вырычка за 12 месяцев помесячно'),(40,38,'Расшифровка накладн. расх. мес, помесячно'),(41,38,'Калькуляция себестоимости'),(42,0,'ИНТЕЗА ИП'),(43,0,'СОЛЛЕРС'),(44,42,'Св-во о гос. регистрации/внесении записи в ЕГРИП'),(45,42,'Св-во о постановке на учет в ФНС'),(46,42,'Паспорт ИП');
+/*!40000 ALTER TABLE `ref_data_spisok_dok_yul` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `spisok_dok_YUL_after_insert` AFTER INSERT ON `ref_data_spisok_dok_YUL`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_spisok_dok_YUL(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `spisok_dok_YUL_after_update` AFTER UPDATE ON `ref_data_spisok_dok_YUL`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_spisok_dok_YUL(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_srok_bisnesa`
+--
+
+DROP TABLE IF EXISTS `ref_data_srok_bisnesa`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_srok_bisnesa` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_srok_bisnesa`
+--
+
+LOCK TABLES `ref_data_srok_bisnesa` WRITE;
+/*!40000 ALTER TABLE `ref_data_srok_bisnesa` DISABLE KEYS */;
+INSERT INTO `ref_data_srok_bisnesa` VALUES (4,0,'менее 6 месяцев'),(5,0,'более 6 месяцев, но менее года'),(6,0,'более 1 года, но менее полутора лет'),(7,0,'более полутра, но менее 3-ех лет'),(8,0,'более 3-ех лет');
+/*!40000 ALTER TABLE `ref_data_srok_bisnesa` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `srok_bisnesa_after_insert` AFTER INSERT ON `ref_data_srok_bisnesa`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_srok_bisnesa(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `srok_bisnesa_after_update` AFTER UPDATE ON `ref_data_srok_bisnesa`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_srok_bisnesa(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_tip_klienta`
+--
+
+DROP TABLE IF EXISTS `ref_data_tip_klienta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_tip_klienta` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_tip_klienta`
+--
+
+LOCK TABLES `ref_data_tip_klienta` WRITE;
+/*!40000 ALTER TABLE `ref_data_tip_klienta` DISABLE KEYS */;
+INSERT INTO `ref_data_tip_klienta` VALUES (4,0,'Физическое лицо'),(5,0,'Юридическое лицо'),(6,0,'Индивидуальный предприниматель'),(7,0,'Учредитель/Директор ЮЛ');
+/*!40000 ALTER TABLE `ref_data_tip_klienta` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Tip_klienta_after_insert` AFTER INSERT ON `ref_data_Tip_klienta`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Tip_klienta(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Tip_klienta_after_update` AFTER UPDATE ON `ref_data_Tip_klienta`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Tip_klienta(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_tip_obespecheniya`
+--
+
+DROP TABLE IF EXISTS `ref_data_tip_obespecheniya`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_tip_obespecheniya` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_tip_obespecheniya`
+--
+
+LOCK TABLES `ref_data_tip_obespecheniya` WRITE;
+/*!40000 ALTER TABLE `ref_data_tip_obespecheniya` DISABLE KEYS */;
+INSERT INTO `ref_data_tip_obespecheniya` VALUES (4,0,'Доп. залог'),(5,0,'Поручительство третьих лиц'),(6,0,'Нет');
+/*!40000 ALTER TABLE `ref_data_tip_obespecheniya` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Tip_obespecheniya_after_insert` AFTER INSERT ON `ref_data_Tip_obespecheniya`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Tip_obespecheniya(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Tip_obespecheniya_after_update` AFTER UPDATE ON `ref_data_Tip_obespecheniya`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Tip_obespecheniya(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_tp`
+--
+
+DROP TABLE IF EXISTS `ref_data_tp`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_tp` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_tp`
+--
+
+LOCK TABLES `ref_data_tp` WRITE;
+/*!40000 ALTER TABLE `ref_data_tp` DISABLE KEYS */;
+INSERT INTO `ref_data_tp` VALUES (4,0,'НЕТ'),(7,0,'Руководителей'),(8,0,'Собственников'),(9,0,'Родственников/знакомых');
+/*!40000 ALTER TABLE `ref_data_tp` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `tp_after_insert` AFTER INSERT ON `ref_data_tp`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_tp(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `tp_after_update` AFTER UPDATE ON `ref_data_tp`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_tp(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_trudovoi_dogovor`
+--
+
+DROP TABLE IF EXISTS `ref_data_trudovoi_dogovor`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_trudovoi_dogovor` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_trudovoi_dogovor`
+--
+
+LOCK TABLES `ref_data_trudovoi_dogovor` WRITE;
+/*!40000 ALTER TABLE `ref_data_trudovoi_dogovor` DISABLE KEYS */;
+INSERT INTO `ref_data_trudovoi_dogovor` VALUES (4,0,'срочный договор'),(5,0,'без срока (полная занятость)'),(6,0,'частная практика'),(7,0,'ИП'),(8,0,'агент на комиссии'),(9,0,'гражданско-правовой договор'),(10,0,'пенсионер'),(11,0,'учащийся'),(12,0,'другое');
+/*!40000 ALTER TABLE `ref_data_trudovoi_dogovor` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Trudovoi_dogovor_after_insert` AFTER INSERT ON `ref_data_Trudovoi_dogovor`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Trudovoi_dogovor(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Trudovoi_dogovor_after_update` AFTER UPDATE ON `ref_data_Trudovoi_dogovor`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Trudovoi_dogovor(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_vid_deyatelnosti`
+--
+
+DROP TABLE IF EXISTS `ref_data_vid_deyatelnosti`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_vid_deyatelnosti` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_vid_deyatelnosti`
+--
+
+LOCK TABLES `ref_data_vid_deyatelnosti` WRITE;
+/*!40000 ALTER TABLE `ref_data_vid_deyatelnosti` DISABLE KEYS */;
+INSERT INTO `ref_data_vid_deyatelnosti` VALUES (4,0,'Финансы, банки, страхование'),(5,0,'Консалтинговые услуги'),(6,0,'Оптовая / розничная торговля'),(7,0,'Органы власти и управления'),(8,0,'Промышленность и машиностроение'),(9,0,'Предприятия ТЭК'),(10,0,'Строительство'),(11,0,'Охранная деятельность'),(12,0,'Информационные технологии / телекоммуникации'),(13,0,'Транспорт'),(14,0,'Туризм'),(15,0,'Услуги'),(16,0,'Образование'),(17,0,'Медицина'),(18,0,'Армия'),(19,0,'Социальная сфера'),(20,0,'Другие ');
+/*!40000 ALTER TABLE `ref_data_vid_deyatelnosti` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Vid_deyatelnosti_after_insert` AFTER INSERT ON `ref_data_Vid_deyatelnosti`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Vid_deyatelnosti(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Vid_deyatelnosti_after_update` AFTER UPDATE ON `ref_data_Vid_deyatelnosti`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Vid_deyatelnosti(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_voinskaya_slugba`
+--
+
+DROP TABLE IF EXISTS `ref_data_voinskaya_slugba`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_voinskaya_slugba` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_voinskaya_slugba`
+--
+
+LOCK TABLES `ref_data_voinskaya_slugba` WRITE;
+/*!40000 ALTER TABLE `ref_data_voinskaya_slugba` DISABLE KEYS */;
+INSERT INTO `ref_data_voinskaya_slugba` VALUES (4,0,'Отслужил / запас'),(5,0,'Освобожден'),(6,0,'Не служил'),(7,0,'Невоеннообязанный'),(8,0,'Военнообязанный');
+/*!40000 ALTER TABLE `ref_data_voinskaya_slugba` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Voinskaya_slugba_after_insert` AFTER INSERT ON `ref_data_Voinskaya_slugba`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Voinskaya_slugba(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Voinskaya_slugba_after_update` AFTER UPDATE ON `ref_data_Voinskaya_slugba`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Voinskaya_slugba(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_data_yes_no`
+--
+
+DROP TABLE IF EXISTS `ref_data_yes_no`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_data_yes_no` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ParentID` int(11) DEFAULT '0',
+  `RefName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_data_yes_no`
+--
+
+LOCK TABLES `ref_data_yes_no` WRITE;
+/*!40000 ALTER TABLE `ref_data_yes_no` DISABLE KEYS */;
+INSERT INTO `ref_data_yes_no` VALUES (4,0,'Да'),(5,0,'Нет');
+/*!40000 ALTER TABLE `ref_data_yes_no` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Yes_No_after_insert` AFTER INSERT ON `ref_data_Yes_No`
+FOR EACH ROW
+BEGIN
+   CALL sp_moveelem_Yes_No(NEW.ID,NEW.ParentID);
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`%`*/ /*!50003 TRIGGER `Yes_No_after_update` AFTER UPDATE ON `ref_data_Yes_No`
+FOR EACH ROW
+BEGIN
+IF NEW.ParentID <> OLD.ParentID THEN
+   CALL sp_movetree_Yes_No(NEW.ID,NEW.ParentID);
+END IF;
+
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `ref_hierarchy_addaprove`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_addaprove`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_addaprove` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_addaprove`
+--
+
+LOCK TABLES `ref_hierarchy_addaprove` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_addaprove` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_addaprove` VALUES (4,0,1),(5,0,1),(6,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_addaprove` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_affiliates`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_affiliates`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_affiliates` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_affiliates`
+--
+
+LOCK TABLES `ref_hierarchy_affiliates` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_affiliates` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ref_hierarchy_affiliates` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_avans`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_avans`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_avans` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_avans`
+--
+
+LOCK TABLES `ref_hierarchy_avans` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_avans` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_avans` VALUES (7,0,1),(8,0,1),(9,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_avans` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_balans`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_balans`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_balans` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_balans`
+--
+
+LOCK TABLES `ref_hierarchy_balans` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_balans` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_balans` VALUES (4,0,1),(5,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_balans` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_bank`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_bank`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_bank` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_bank`
+--
+
+LOCK TABLES `ref_hierarchy_bank` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_bank` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_bank` VALUES (4,0,1),(5,0,1),(6,0,1),(8,0,1),(9,0,1),(10,0,1),(11,0,1),(12,0,1),(13,0,1),(14,0,1),(15,0,1),(16,0,1),(17,0,1),(18,0,1),(19,0,1),(20,0,1),(21,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_bank` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_branch`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_branch`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_branch` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_branch`
+--
+
+LOCK TABLES `ref_hierarchy_branch` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_branch` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_branch` VALUES (1,0,1),(2,0,1),(3,0,1),(4,0,1),(5,0,1),(6,0,1),(7,0,1),(8,0,1),(9,0,1),(10,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_branch` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_cars`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_cars`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_cars` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_cars`
+--
+
+LOCK TABLES `ref_hierarchy_cars` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_cars` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_cars` VALUES (4,0,1),(5,0,1),(6,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_cars` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_cel_pokupki`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_cel_pokupki`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_cel_pokupki` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_cel_pokupki`
+--
+
+LOCK TABLES `ref_hierarchy_cel_pokupki` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_cel_pokupki` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_cel_pokupki` VALUES (4,0,1),(5,0,1),(6,0,1),(7,0,1),(8,0,1),(9,0,2),(9,4,1),(10,0,1),(11,0,2),(11,5,1),(12,0,2),(12,4,1),(13,0,2),(13,4,1),(14,0,2),(14,4,1),(15,0,2),(15,4,1);
+/*!40000 ALTER TABLE `ref_hierarchy_cel_pokupki` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_citizenship`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_citizenship`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_citizenship` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_citizenship`
+--
+
+LOCK TABLES `ref_hierarchy_citizenship` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_citizenship` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_citizenship` VALUES (4,0,1),(5,0,1),(6,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_citizenship` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_cuntry`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_cuntry`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_cuntry` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_cuntry`
+--
+
+LOCK TABLES `ref_hierarchy_cuntry` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_cuntry` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_cuntry` VALUES (11,4,1),(12,4,1),(13,0,1),(14,0,1),(15,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_cuntry` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_document_list`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_document_list`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_document_list` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_document_list`
+--
+
+LOCK TABLES `ref_hierarchy_document_list` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_document_list` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_document_list` VALUES (4,0,1),(5,0,1),(6,0,1),(7,0,1),(8,0,1),(9,0,1),(10,0,1),(11,0,1),(12,0,1),(13,0,1),(14,0,1),(15,0,1),(16,0,2),(16,15,1),(17,0,2),(17,15,1),(18,0,2),(18,15,1),(19,0,1),(20,0,1),(21,0,1),(22,0,1),(23,0,2),(23,22,1),(24,0,2),(24,22,1),(25,0,2),(25,22,1),(26,0,2),(26,22,1),(27,0,2),(27,22,1),(28,0,1),(29,0,2),(29,28,1),(30,0,2),(30,28,1),(31,0,2),(31,28,1),(32,0,2),(32,28,1),(33,0,1),(34,0,2),(34,33,1),(35,0,2),(35,33,1),(36,0,2),(36,33,1);
+/*!40000 ALTER TABLE `ref_hierarchy_document_list` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_dokumenty_ts`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_dokumenty_ts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_dokumenty_ts` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_dokumenty_ts`
+--
+
+LOCK TABLES `ref_hierarchy_dokumenty_ts` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_dokumenty_ts` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_dokumenty_ts` VALUES (4,0,1),(5,0,1),(6,0,1),(7,0,1),(8,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_dokumenty_ts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_gender`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_gender`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_gender` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_gender`
+--
+
+LOCK TABLES `ref_hierarchy_gender` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_gender` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_gender` VALUES (4,0,1),(5,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_gender` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_kat`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_kat`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_kat` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_kat`
+--
+
+LOCK TABLES `ref_hierarchy_kat` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_kat` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_kat` VALUES (4,0,1),(5,0,1),(7,0,1),(8,0,1),(9,0,1),(10,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_kat` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_kategorii_dolgnostey`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_kategorii_dolgnostey`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_kategorii_dolgnostey` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_kategorii_dolgnostey`
+--
+
+LOCK TABLES `ref_hierarchy_kategorii_dolgnostey` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_kategorii_dolgnostey` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_kategorii_dolgnostey` VALUES (4,0,1),(5,0,1),(6,0,1),(7,0,1),(8,0,1),(9,0,1),(10,0,1),(11,0,1),(12,0,1),(13,0,1),(14,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_kategorii_dolgnostey` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_kategoriyats`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_kategoriyats`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_kategoriyats` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_kategoriyats`
+--
+
+LOCK TABLES `ref_hierarchy_kategoriyats` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_kategoriyats` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_kategoriyats` VALUES (4,0,1),(5,0,1),(6,0,1),(7,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_kategoriyats` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_kolichestvo_sotrudnikov`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_kolichestvo_sotrudnikov`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_kolichestvo_sotrudnikov` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_kolichestvo_sotrudnikov`
+--
+
+LOCK TABLES `ref_hierarchy_kolichestvo_sotrudnikov` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_kolichestvo_sotrudnikov` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_kolichestvo_sotrudnikov` VALUES (4,0,1),(5,0,1),(6,0,1),(7,0,1),(8,0,1),(9,0,1),(10,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_kolichestvo_sotrudnikov` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_msss`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_msss`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_msss` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_msss`
+--
+
+LOCK TABLES `ref_hierarchy_msss` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_msss` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_msss` VALUES (4,0,1),(5,0,1),(6,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_msss` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_nalogsystem`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_nalogsystem`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_nalogsystem` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_nalogsystem`
+--
+
+LOCK TABLES `ref_hierarchy_nalogsystem` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_nalogsystem` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_nalogsystem` VALUES (4,0,1),(5,34,1),(8,0,1),(9,0,2),(9,8,1),(10,0,2),(10,8,1),(11,0,2),(11,8,1),(12,0,2),(12,8,1);
+/*!40000 ALTER TABLE `ref_hierarchy_nalogsystem` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_new_am`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_new_am`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_new_am` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_new_am`
+--
+
+LOCK TABLES `ref_hierarchy_new_am` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_new_am` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_new_am` VALUES (4,0,1),(5,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_new_am` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_obekt_progivania`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_obekt_progivania`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_obekt_progivania` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_obekt_progivania`
+--
+
+LOCK TABLES `ref_hierarchy_obekt_progivania` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_obekt_progivania` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_obekt_progivania` VALUES (4,0,1),(8,0,1),(9,0,1),(10,0,1),(11,0,1),(12,0,1),(13,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_obekt_progivania` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_obrazovanie`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_obrazovanie`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_obrazovanie` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_obrazovanie`
+--
+
+LOCK TABLES `ref_hierarchy_obrazovanie` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_obrazovanie` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_obrazovanie` VALUES (4,0,1),(5,0,1),(6,0,1),(7,0,1),(8,0,1),(9,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_obrazovanie` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_opf`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_opf`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_opf` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_opf`
+--
+
+LOCK TABLES `ref_hierarchy_opf` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_opf` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_opf` VALUES (16,5,1),(17,0,1),(18,0,1),(19,0,1),(20,0,1),(21,0,1),(22,0,1),(23,0,1),(24,0,1),(27,0,1),(29,0,1),(30,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_opf` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_pp`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_pp`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_pp` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_pp`
+--
+
+LOCK TABLES `ref_hierarchy_pp` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_pp` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_pp` VALUES (4,0,1),(5,0,1),(6,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_pp` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_predmet_zaloga`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_predmet_zaloga`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_predmet_zaloga` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_predmet_zaloga`
+--
+
+LOCK TABLES `ref_hierarchy_predmet_zaloga` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_predmet_zaloga` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_predmet_zaloga` VALUES (4,0,1),(5,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_predmet_zaloga` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_procedure_for_repayment`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_procedure_for_repayment`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_procedure_for_repayment` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_procedure_for_repayment`
+--
+
+LOCK TABLES `ref_hierarchy_procedure_for_repayment` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_procedure_for_repayment` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ref_hierarchy_procedure_for_repayment` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_regions`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_regions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_regions` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_regions`
+--
+
+LOCK TABLES `ref_hierarchy_regions` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_regions` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_regions` VALUES (3159,0,1),(3160,0,2),(3160,3159,1),(3161,0,3),(3161,3159,2),(3161,3160,1),(3162,0,3),(3162,3159,2),(3162,3160,1),(3163,0,3),(3163,3159,2),(3163,3160,1),(3164,0,3),(3164,3159,2),(3164,3160,1),(3165,0,3),(3165,3159,2),(3165,3160,1),(3166,0,3),(3166,3159,2),(3166,3160,1),(3167,0,3),(3167,3159,2),(3167,3160,1),(3168,0,3),(3168,3159,2),(3168,3160,1),(3169,0,3),(3169,3159,2),(3169,3160,1),(3170,0,3),(3170,3159,2),(3170,3160,1),(3171,0,3),(3171,3159,2),(3171,3160,1),(3172,0,3),(3172,3159,2),(3172,3160,1),(3173,0,3),(3173,3159,2),(3173,3160,1),(3174,0,3),(3174,3159,2),(3174,3160,1),(3175,0,3),(3175,3159,2),(3175,3160,1),(3176,0,3),(3176,3159,2),(3176,3160,1),(3177,0,3),(3177,3159,2),(3177,3160,1),(3178,0,3),(3178,3159,2),(3178,3160,1),(3179,0,3),(3179,3159,2),(3179,3160,1),(3180,0,3),(3180,3159,2),(3180,3160,1),(3181,0,3),(3181,3159,2),(3181,3160,1),(3182,0,3),(3182,3159,2),(3182,3160,1),(3183,0,3),(3183,3159,2),(3183,3160,1),(3184,0,3),(3184,3159,2),(3184,3160,1),(3185,0,3),(3185,3159,2),(3185,3160,1),(3186,0,3),(3186,3159,2),(3186,3160,1),(3187,0,3),(3187,3159,2),(3187,3160,1),(3188,0,3),(3188,3159,2),(3188,3160,1),(3189,0,3),(3189,3159,2),(3189,3160,1),(3190,0,3),(3190,3159,2),(3190,3160,1),(3191,0,3),(3191,3159,2),(3191,3160,1),(3192,0,3),(3192,3159,2),(3192,3160,1),(3193,0,3),(3193,3159,2),(3193,3160,1),(3194,0,3),(3194,3159,2),(3194,3160,1),(3195,0,3),(3195,3159,2),(3195,3160,1),(3196,0,3),(3196,3159,2),(3196,3160,1),(3197,0,3),(3197,3159,2),(3197,3160,1),(3198,0,3),(3198,3159,2),(3198,3160,1),(3199,0,3),(3199,3159,2),(3199,3160,1),(3200,0,3),(3200,3159,2),(3200,3160,1),(3201,0,3),(3201,3159,2),(3201,3160,1),(3202,0,3),(3202,3159,2),(3202,3160,1),(3203,0,3),(3203,3159,2),(3203,3160,1),(3204,0,3),(3204,3159,2),(3204,3160,1),(3205,0,3),(3205,3159,2),(3205,3160,1),(3206,0,3),(3206,3159,2),(3206,3160,1),(3207,0,3),(3207,3159,2),(3207,3160,1),(3208,0,3),(3208,3159,2),(3208,3160,1),(3209,0,3),(3209,3159,2),(3209,3160,1),(3210,0,3),(3210,3159,2),(3210,3160,1),(3211,0,3),(3211,3159,2),(3211,3160,1),(3212,0,3),(3212,3159,2),(3212,3160,1),(3213,0,3),(3213,3159,2),(3213,3160,1),(3214,0,3),(3214,3159,2),(3214,3160,1),(3215,0,3),(3215,3159,2),(3215,3160,1),(3216,0,3),(3216,3159,2),(3216,3160,1),(3217,0,3),(3217,3159,2),(3217,3160,1),(3218,0,3),(3218,3159,2),(3218,3160,1),(3219,0,3),(3219,3159,2),(3219,3160,1),(3220,0,3),(3220,3159,2),(3220,3160,1),(3221,0,3),(3221,3159,2),(3221,3160,1),(3222,0,3),(3222,3159,2),(3222,3160,1),(3223,0,2),(3223,3159,1),(3224,0,3),(3224,3159,2),(3224,3223,1),(3225,0,3),(3225,3159,2),(3225,3223,1),(3226,0,3),(3226,3159,2),(3226,3223,1),(3227,0,3),(3227,3159,2),(3227,3223,1),(3228,0,3),(3228,3159,2),(3228,3223,1),(3229,0,3),(3229,3159,2),(3229,3223,1),(3230,0,3),(3230,3159,2),(3230,3223,1),(3231,0,3),(3231,3159,2),(3231,3223,1),(3232,0,3),(3232,3159,2),(3232,3223,1),(3233,0,3),(3233,3159,2),(3233,3223,1),(3234,0,3),(3234,3159,2),(3234,3223,1),(3235,0,3),(3235,3159,2),(3235,3223,1),(3236,0,3),(3236,3159,2),(3236,3223,1),(3237,0,3),(3237,3159,2),(3237,3223,1),(3238,0,3),(3238,3159,2),(3238,3223,1),(3239,0,3),(3239,3159,2),(3239,3223,1),(3240,0,3),(3240,3159,2),(3240,3223,1),(3241,0,3),(3241,3159,2),(3241,3223,1),(3242,0,3),(3242,3159,2),(3242,3223,1),(3243,0,3),(3243,3159,2),(3243,3223,1),(3244,0,3),(3244,3159,2),(3244,3223,1),(3245,0,3),(3245,3159,2),(3245,3223,1),(3246,0,3),(3246,3159,2),(3246,3223,1),(3247,0,3),(3247,3159,2),(3247,3223,1),(3248,0,3),(3248,3159,2),(3248,3223,1),(3249,0,3),(3249,3159,2),(3249,3223,1),(3250,0,3),(3250,3159,2),(3250,3223,1),(3251,0,2),(3251,3159,1),(3252,0,3),(3252,3159,2),(3252,3251,1),(3253,0,3),(3253,3159,2),(3253,3251,1),(3254,0,3),(3254,3159,2),(3254,3251,1),(3255,0,3),(3255,3159,2),(3255,3251,1),(3256,0,3),(3256,3159,2),(3256,3251,1),(3257,0,3),(3257,3159,2),(3257,3251,1),(3258,0,3),(3258,3159,2),(3258,3251,1),(3259,0,3),(3259,3159,2),(3259,3251,1),(3260,0,3),(3260,3159,2),(3260,3251,1),(3261,0,3),(3261,3159,2),(3261,3251,1),(3262,0,3),(3262,3159,2),(3262,3251,1),(3263,0,3),(3263,3159,2),(3263,3251,1),(3264,0,3),(3264,3159,2),(3264,3251,1),(3265,0,3),(3265,3159,2),(3265,3251,1),(3266,0,3),(3266,3159,2),(3266,3251,1),(3267,0,3),(3267,3159,2),(3267,3251,1),(3268,0,3),(3268,3159,2),(3268,3251,1),(3269,0,3),(3269,3159,2),(3269,3251,1),(3270,0,3),(3270,3159,2),(3270,3251,1),(3271,0,3),(3271,3159,2),(3271,3251,1),(3272,0,3),(3272,3159,2),(3272,3251,1),(3273,0,3),(3273,3159,2),(3273,3251,1),(3274,0,3),(3274,3159,2),(3274,3251,1),(3275,0,3),(3275,3159,2),(3275,3251,1),(3276,0,3),(3276,3159,2),(3276,3251,1),(3277,0,3),(3277,3159,2),(3277,3251,1),(3278,0,3),(3278,3159,2),(3278,3251,1),(3279,0,3),(3279,3159,2),(3279,3251,1),(3280,0,3),(3280,3159,2),(3280,3251,1),(3281,0,3),(3281,3159,2),(3281,3251,1),(3282,0,2),(3282,3159,1),(3283,0,3),(3283,3159,2),(3283,3282,1),(3284,0,3),(3284,3159,2),(3284,3282,1),(3285,0,3),(3285,3159,2),(3285,3282,1),(3286,0,3),(3286,3159,2),(3286,3282,1),(3287,0,3),(3287,3159,2),(3287,3282,1),(3288,0,3),(3288,3159,2),(3288,3282,1),(3289,0,3),(3289,3159,2),(3289,3282,1),(3290,0,3),(3290,3159,2),(3290,3282,1),(3291,0,3),(3291,3159,2),(3291,3282,1),(3292,0,3),(3292,3159,2),(3292,3282,1),(3293,0,3),(3293,3159,2),(3293,3282,1),(3294,0,3),(3294,3159,2),(3294,3282,1),(3295,0,3),(3295,3159,2),(3295,3282,1),(3296,0,2),(3296,3159,1),(3297,0,3),(3297,3159,2),(3297,3296,1),(3298,0,3),(3298,3159,2),(3298,3296,1),(3299,0,3),(3299,3159,2),(3299,3296,1),(3300,0,3),(3300,3159,2),(3300,3296,1),(3301,0,3),(3301,3159,2),(3301,3296,1),(3302,0,3),(3302,3159,2),(3302,3296,1),(3303,0,3),(3303,3159,2),(3303,3296,1),(3304,0,3),(3304,3159,2),(3304,3296,1),(3305,0,3),(3305,3159,2),(3305,3296,1),(3306,0,3),(3306,3159,2),(3306,3296,1),(3307,0,3),(3307,3159,2),(3307,3296,1),(3308,0,3),(3308,3159,2),(3308,3296,1),(3309,0,3),(3309,3159,2),(3309,3296,1),(3310,0,3),(3310,3159,2),(3310,3296,1),(3311,0,3),(3311,3159,2),(3311,3296,1),(3312,0,3),(3312,3159,2),(3312,3296,1),(3313,0,3),(3313,3159,2),(3313,3296,1),(3314,0,3),(3314,3159,2),(3314,3296,1),(3315,0,3),(3315,3159,2),(3315,3296,1),(3316,0,3),(3316,3159,2),(3316,3296,1),(3317,0,3),(3317,3159,2),(3317,3296,1),(3318,0,3),(3318,3159,2),(3318,3296,1),(3319,0,3),(3319,3159,2),(3319,3296,1),(3320,0,3),(3320,3159,2),(3320,3296,1),(3321,0,3),(3321,3159,2),(3321,3296,1),(3322,0,3),(3322,3159,2),(3322,3296,1),(3323,0,3),(3323,3159,2),(3323,3296,1),(3324,0,3),(3324,3159,2),(3324,3296,1),(3325,0,3),(3325,3159,2),(3325,3296,1),(3326,0,3),(3326,3159,2),(3326,3296,1),(3327,0,3),(3327,3159,2),(3327,3296,1),(3328,0,3),(3328,3159,2),(3328,3296,1),(3329,0,3),(3329,3159,2),(3329,3296,1),(3330,0,3),(3330,3159,2),(3330,3296,1),(3331,0,3),(3331,3159,2),(3331,3296,1),(3332,0,3),(3332,3159,2),(3332,3296,1),(3333,0,3),(3333,3159,2),(3333,3296,1),(3334,0,3),(3334,3159,2),(3334,3296,1),(3335,0,3),(3335,3159,2),(3335,3296,1),(3336,0,3),(3336,3159,2),(3336,3296,1),(3337,0,3),(3337,3159,2),(3337,3296,1),(3338,0,3),(3338,3159,2),(3338,3296,1),(3339,0,3),(3339,3159,2),(3339,3296,1),(3340,0,3),(3340,3159,2),(3340,3296,1),(3341,0,3),(3341,3159,2),(3341,3296,1),(3342,0,3),(3342,3159,2),(3342,3296,1),(3343,0,3),(3343,3159,2),(3343,3296,1),(3344,0,3),(3344,3159,2),(3344,3296,1),(3345,0,3),(3345,3159,2),(3345,3296,1),(3346,0,3),(3346,3159,2),(3346,3296,1),(3347,0,3),(3347,3159,2),(3347,3296,1),(3348,0,3),(3348,3159,2),(3348,3296,1),(3349,0,3),(3349,3159,2),(3349,3296,1),(3350,0,3),(3350,3159,2),(3350,3296,1),(3351,0,3),(3351,3159,2),(3351,3296,1),(3352,0,2),(3352,3159,1),(3353,0,3),(3353,3159,2),(3353,3352,1),(3354,0,3),(3354,3159,2),(3354,3352,1),(3355,0,3),(3355,3159,2),(3355,3352,1),(3356,0,3),(3356,3159,2),(3356,3352,1),(3357,0,3),(3357,3159,2),(3357,3352,1),(3358,0,3),(3358,3159,2),(3358,3352,1),(3359,0,3),(3359,3159,2),(3359,3352,1),(3360,0,3),(3360,3159,2),(3360,3352,1),(3361,0,3),(3361,3159,2),(3361,3352,1),(3362,0,3),(3362,3159,2),(3362,3352,1),(3363,0,3),(3363,3159,2),(3363,3352,1),(3364,0,3),(3364,3159,2),(3364,3352,1),(3365,0,3),(3365,3159,2),(3365,3352,1),(3366,0,3),(3366,3159,2),(3366,3352,1),(3367,0,3),(3367,3159,2),(3367,3352,1),(3368,0,3),(3368,3159,2),(3368,3352,1),(3369,0,3),(3369,3159,2),(3369,3352,1),(3370,0,3),(3370,3159,2),(3370,3352,1),(3371,0,2),(3371,3159,1),(3372,0,3),(3372,3159,2),(3372,3371,1),(3373,0,3),(3373,3159,2),(3373,3371,1),(3374,0,3),(3374,3159,2),(3374,3371,1),(3375,0,3),(3375,3159,2),(3375,3371,1),(3376,0,3),(3376,3159,2),(3376,3371,1),(3377,0,3),(3377,3159,2),(3377,3371,1),(3378,0,3),(3378,3159,2),(3378,3371,1),(3379,0,3),(3379,3159,2),(3379,3371,1),(3380,0,3),(3380,3159,2),(3380,3371,1),(3381,0,3),(3381,3159,2),(3381,3371,1),(3382,0,3),(3382,3159,2),(3382,3371,1),(3383,0,3),(3383,3159,2),(3383,3371,1),(3384,0,3),(3384,3159,2),(3384,3371,1),(3385,0,3),(3385,3159,2),(3385,3371,1),(3386,0,3),(3386,3159,2),(3386,3371,1),(3387,0,3),(3387,3159,2),(3387,3371,1),(3388,0,3),(3388,3159,2),(3388,3371,1),(3389,0,3),(3389,3159,2),(3389,3371,1),(3390,0,3),(3390,3159,2),(3390,3371,1),(3391,0,3),(3391,3159,2),(3391,3371,1),(3392,0,3),(3392,3159,2),(3392,3371,1),(3393,0,3),(3393,3159,2),(3393,3371,1),(3394,0,3),(3394,3159,2),(3394,3371,1),(3395,0,3),(3395,3159,2),(3395,3371,1),(3396,0,3),(3396,3159,2),(3396,3371,1),(3397,0,3),(3397,3159,2),(3397,3371,1),(3398,0,3),(3398,3159,2),(3398,3371,1),(3399,0,3),(3399,3159,2),(3399,3371,1),(3400,0,3),(3400,3159,2),(3400,3371,1),(3401,0,3),(3401,3159,2),(3401,3371,1),(3402,0,3),(3402,3159,2),(3402,3371,1),(3403,0,3),(3403,3159,2),(3403,3371,1),(3404,0,3),(3404,3159,2),(3404,3371,1),(3405,0,3),(3405,3159,2),(3405,3371,1),(3406,0,3),(3406,3159,2),(3406,3371,1),(3407,0,2),(3407,3159,1),(3408,0,3),(3408,3159,2),(3408,3407,1),(3409,0,3),(3409,3159,2),(3409,3407,1),(3410,0,3),(3410,3159,2),(3410,3407,1),(3411,0,3),(3411,3159,2),(3411,3407,1),(3412,0,3),(3412,3159,2),(3412,3407,1),(3413,0,3),(3413,3159,2),(3413,3407,1),(3414,0,3),(3414,3159,2),(3414,3407,1),(3415,0,3),(3415,3159,2),(3415,3407,1),(3416,0,3),(3416,3159,2),(3416,3407,1),(3417,0,3),(3417,3159,2),(3417,3407,1),(3418,0,3),(3418,3159,2),(3418,3407,1),(3419,0,3),(3419,3159,2),(3419,3407,1),(3420,0,3),(3420,3159,2),(3420,3407,1),(3421,0,3),(3421,3159,2),(3421,3407,1),(3422,0,3),(3422,3159,2),(3422,3407,1),(3423,0,3),(3423,3159,2),(3423,3407,1),(3424,0,3),(3424,3159,2),(3424,3407,1),(3425,0,3),(3425,3159,2),(3425,3407,1),(3426,0,3),(3426,3159,2),(3426,3407,1),(3427,0,3),(3427,3159,2),(3427,3407,1),(3428,0,3),(3428,3159,2),(3428,3407,1),(3429,0,3),(3429,3159,2),(3429,3407,1),(3430,0,3),(3430,3159,2),(3430,3407,1),(3431,0,3),(3431,3159,2),(3431,3407,1),(3432,0,3),(3432,3159,2),(3432,3407,1),(3433,0,3),(3433,3159,2),(3433,3407,1),(3434,0,3),(3434,3159,2),(3434,3407,1),(3435,0,3),(3435,3159,2),(3435,3407,1),(3436,0,3),(3436,3159,2),(3436,3407,1),(3437,0,2),(3437,3159,1),(3438,0,3),(3438,3159,2),(3438,3437,1),(3439,0,3),(3439,3159,2),(3439,3437,1),(3440,0,3),(3440,3159,2),(3440,3437,1),(3441,0,3),(3441,3159,2),(3441,3437,1),(3442,0,3),(3442,3159,2),(3442,3437,1),(3443,0,3),(3443,3159,2),(3443,3437,1),(3444,0,3),(3444,3159,2),(3444,3437,1),(3445,0,3),(3445,3159,2),(3445,3437,1),(3446,0,3),(3446,3159,2),(3446,3437,1),(3447,0,3),(3447,3159,2),(3447,3437,1),(3448,0,3),(3448,3159,2),(3448,3437,1),(3449,0,3),(3449,3159,2),(3449,3437,1),(3450,0,3),(3450,3159,2),(3450,3437,1),(3451,0,3),(3451,3159,2),(3451,3437,1),(3452,0,3),(3452,3159,2),(3452,3437,1),(3453,0,3),(3453,3159,2),(3453,3437,1),(3454,0,3),(3454,3159,2),(3454,3437,1),(3455,0,3),(3455,3159,2),(3455,3437,1),(3456,0,3),(3456,3159,2),(3456,3437,1),(3457,0,3),(3457,3159,2),(3457,3437,1),(3458,0,3),(3458,3159,2),(3458,3437,1),(3459,0,3),(3459,3159,2),(3459,3437,1),(3460,0,3),(3460,3159,2),(3460,3437,1),(3461,0,3),(3461,3159,2),(3461,3437,1),(3462,0,3),(3462,3159,2),(3462,3437,1),(3463,0,3),(3463,3159,2),(3463,3437,1),(3464,0,3),(3464,3159,2),(3464,3437,1),(3465,0,3),(3465,3159,2),(3465,3437,1),(3466,0,3),(3466,3159,2),(3466,3437,1),(3467,0,3),(3467,3159,2),(3467,3437,1),(3468,0,2),(3468,3159,1),(3469,0,3),(3469,3159,2),(3469,3468,1),(3470,0,3),(3470,3159,2),(3470,3468,1),(3471,0,3),(3471,3159,2),(3471,3468,1),(3472,0,3),(3472,3159,2),(3472,3468,1),(3473,0,3),(3473,3159,2),(3473,3468,1),(3474,0,3),(3474,3159,2),(3474,3468,1),(3475,0,3),(3475,3159,2),(3475,3468,1),(3476,0,3),(3476,3159,2),(3476,3468,1),(3477,0,3),(3477,3159,2),(3477,3468,1),(3478,0,3),(3478,3159,2),(3478,3468,1),(3479,0,3),(3479,3159,2),(3479,3468,1),(3480,0,3),(3480,3159,2),(3480,3468,1),(3481,0,3),(3481,3159,2),(3481,3468,1),(3482,0,3),(3482,3159,2),(3482,3468,1),(3483,0,3),(3483,3159,2),(3483,3468,1),(3484,0,3),(3484,3159,2),(3484,3468,1),(3485,0,3),(3485,3159,2),(3485,3468,1),(3486,0,3),(3486,3159,2),(3486,3468,1),(3487,0,3),(3487,3159,2),(3487,3468,1),(3488,0,3),(3488,3159,2),(3488,3468,1),(3489,0,3),(3489,3159,2),(3489,3468,1),(3490,0,3),(3490,3159,2),(3490,3468,1),(3491,0,3),(3491,3159,2),(3491,3468,1),(3492,0,3),(3492,3159,2),(3492,3468,1),(3493,0,3),(3493,3159,2),(3493,3468,1),(3494,0,3),(3494,3159,2),(3494,3468,1),(3495,0,3),(3495,3159,2),(3495,3468,1),(3496,0,3),(3496,3159,2),(3496,3468,1),(3497,0,3),(3497,3159,2),(3497,3468,1),(3498,0,3),(3498,3159,2),(3498,3468,1),(3499,0,3),(3499,3159,2),(3499,3468,1),(3500,0,3),(3500,3159,2),(3500,3468,1),(3501,0,3),(3501,3159,2),(3501,3468,1),(3502,0,3),(3502,3159,2),(3502,3468,1),(3503,0,2),(3503,3159,1),(3504,0,3),(3504,3159,2),(3504,3503,1),(3505,0,3),(3505,3159,2),(3505,3503,1),(3506,0,3),(3506,3159,2),(3506,3503,1),(3507,0,3),(3507,3159,2),(3507,3503,1),(3508,0,3),(3508,3159,2),(3508,3503,1),(3509,0,3),(3509,3159,2),(3509,3503,1),(3510,0,3),(3510,3159,2),(3510,3503,1),(3511,0,3),(3511,3159,2),(3511,3503,1),(3512,0,3),(3512,3159,2),(3512,3503,1),(3513,0,3),(3513,3159,2),(3513,3503,1),(3514,0,3),(3514,3159,2),(3514,3503,1),(3515,0,3),(3515,3159,2),(3515,3503,1),(3516,0,3),(3516,3159,2),(3516,3503,1),(3517,0,3),(3517,3159,2),(3517,3503,1),(3518,0,3),(3518,3159,2),(3518,3503,1),(3519,0,3),(3519,3159,2),(3519,3503,1),(3520,0,3),(3520,3159,2),(3520,3503,1),(3521,0,3),(3521,3159,2),(3521,3503,1),(3522,0,3),(3522,3159,2),(3522,3503,1),(3523,0,3),(3523,3159,2),(3523,3503,1),(3524,0,3),(3524,3159,2),(3524,3503,1),(3525,0,3),(3525,3159,2),(3525,3503,1),(3526,0,3),(3526,3159,2),(3526,3503,1),(3527,0,3),(3527,3159,2),(3527,3503,1),(3528,0,3),(3528,3159,2),(3528,3503,1),(3529,0,2),(3529,3159,1),(3530,0,3),(3530,3159,2),(3530,3529,1),(3531,0,3),(3531,3159,2),(3531,3529,1),(3532,0,3),(3532,3159,2),(3532,3529,1),(3533,0,3),(3533,3159,2),(3533,3529,1),(3534,0,3),(3534,3159,2),(3534,3529,1),(3535,0,3),(3535,3159,2),(3535,3529,1),(3536,0,3),(3536,3159,2),(3536,3529,1),(3537,0,3),(3537,3159,2),(3537,3529,1),(3538,0,3),(3538,3159,2),(3538,3529,1),(3539,0,3),(3539,3159,2),(3539,3529,1),(3540,0,3),(3540,3159,2),(3540,3529,1),(3541,0,3),(3541,3159,2),(3541,3529,1),(3542,0,3),(3542,3159,2),(3542,3529,1),(3543,0,3),(3543,3159,2),(3543,3529,1),(3544,0,3),(3544,3159,2),(3544,3529,1),(3545,0,3),(3545,3159,2),(3545,3529,1),(3546,0,3),(3546,3159,2),(3546,3529,1),(3547,0,3),(3547,3159,2),(3547,3529,1),(3548,0,3),(3548,3159,2),(3548,3529,1),(3549,0,3),(3549,3159,2),(3549,3529,1),(3550,0,3),(3550,3159,2),(3550,3529,1),(3551,0,3),(3551,3159,2),(3551,3529,1),(3552,0,3),(3552,3159,2),(3552,3529,1),(3553,0,3),(3553,3159,2),(3553,3529,1),(3554,0,3),(3554,3159,2),(3554,3529,1),(3555,0,3),(3555,3159,2),(3555,3529,1),(3556,0,3),(3556,3159,2),(3556,3529,1),(3557,0,3),(3557,3159,2),(3557,3529,1),(3558,0,3),(3558,3159,2),(3558,3529,1),(3559,0,3),(3559,3159,2),(3559,3529,1),(3560,0,3),(3560,3159,2),(3560,3529,1),(3561,0,3),(3561,3159,2),(3561,3529,1),(3562,0,3),(3562,3159,2),(3562,3529,1),(3563,0,2),(3563,3159,1),(3564,0,3),(3564,3159,2),(3564,3563,1),(3565,0,3),(3565,3159,2),(3565,3563,1),(3566,0,3),(3566,3159,2),(3566,3563,1),(3567,0,3),(3567,3159,2),(3567,3563,1),(3568,0,3),(3568,3159,2),(3568,3563,1),(3569,0,3),(3569,3159,2),(3569,3563,1),(3570,0,3),(3570,3159,2),(3570,3563,1),(3571,0,3),(3571,3159,2),(3571,3563,1),(3572,0,3),(3572,3159,2),(3572,3563,1),(3573,0,3),(3573,3159,2),(3573,3563,1),(3574,0,3),(3574,3159,2),(3574,3563,1),(3575,0,3),(3575,3159,2),(3575,3563,1),(3576,0,3),(3576,3159,2),(3576,3563,1),(3577,0,3),(3577,3159,2),(3577,3563,1),(3578,0,3),(3578,3159,2),(3578,3563,1),(3579,0,3),(3579,3159,2),(3579,3563,1),(3580,0,3),(3580,3159,2),(3580,3563,1),(3581,0,3),(3581,3159,2),(3581,3563,1),(3582,0,3),(3582,3159,2),(3582,3563,1),(3583,0,3),(3583,3159,2),(3583,3563,1),(3584,0,3),(3584,3159,2),(3584,3563,1),(3585,0,3),(3585,3159,2),(3585,3563,1),(3586,0,3),(3586,3159,2),(3586,3563,1),(3587,0,3),(3587,3159,2),(3587,3563,1),(3588,0,3),(3588,3159,2),(3588,3563,1),(3589,0,3),(3589,3159,2),(3589,3563,1),(3590,0,3),(3590,3159,2),(3590,3563,1),(3591,0,3),(3591,3159,2),(3591,3563,1),(3592,0,3),(3592,3159,2),(3592,3563,1),(3593,0,3),(3593,3159,2),(3593,3563,1),(3594,0,3),(3594,3159,2),(3594,3563,1),(3595,0,3),(3595,3159,2),(3595,3563,1),(3596,0,3),(3596,3159,2),(3596,3563,1),(3597,0,3),(3597,3159,2),(3597,3563,1),(3598,0,3),(3598,3159,2),(3598,3563,1),(3599,0,3),(3599,3159,2),(3599,3563,1),(3600,0,3),(3600,3159,2),(3600,3563,1),(3601,0,3),(3601,3159,2),(3601,3563,1),(3602,0,3),(3602,3159,2),(3602,3563,1),(3603,0,3),(3603,3159,2),(3603,3563,1),(3604,0,3),(3604,3159,2),(3604,3563,1),(3605,0,3),(3605,3159,2),(3605,3563,1),(3606,0,3),(3606,3159,2),(3606,3563,1),(3607,0,3),(3607,3159,2),(3607,3563,1),(3608,0,3),(3608,3159,2),(3608,3563,1),(3609,0,3),(3609,3159,2),(3609,3563,1),(3610,0,3),(3610,3159,2),(3610,3563,1),(3611,0,3),(3611,3159,2),(3611,3563,1),(3612,0,3),(3612,3159,2),(3612,3563,1),(3613,0,3),(3613,3159,2),(3613,3563,1),(3614,0,3),(3614,3159,2),(3614,3563,1),(3615,0,3),(3615,3159,2),(3615,3563,1),(3616,0,3),(3616,3159,2),(3616,3563,1),(3617,0,3),(3617,3159,2),(3617,3563,1),(3618,0,3),(3618,3159,2),(3618,3563,1),(3619,0,3),(3619,3159,2),(3619,3563,1),(3620,0,3),(3620,3159,2),(3620,3563,1),(3621,0,3),(3621,3159,2),(3621,3563,1),(3622,0,3),(3622,3159,2),(3622,3563,1),(3623,0,3),(3623,3159,2),(3623,3563,1),(3624,0,3),(3624,3159,2),(3624,3563,1),(3625,0,3),(3625,3159,2),(3625,3563,1),(3626,0,3),(3626,3159,2),(3626,3563,1),(3627,0,3),(3627,3159,2),(3627,3563,1),(3628,0,3),(3628,3159,2),(3628,3563,1),(3629,0,3),(3629,3159,2),(3629,3563,1),(3630,0,2),(3630,3159,1),(3631,0,3),(3631,3159,2),(3631,3630,1),(3632,0,3),(3632,3159,2),(3632,3630,1),(3633,0,3),(3633,3159,2),(3633,3630,1),(3634,0,3),(3634,3159,2),(3634,3630,1),(3635,0,3),(3635,3159,2),(3635,3630,1),(3636,0,3),(3636,3159,2),(3636,3630,1),(3637,0,3),(3637,3159,2),(3637,3630,1),(3638,0,3),(3638,3159,2),(3638,3630,1),(3639,0,3),(3639,3159,2),(3639,3630,1),(3640,0,3),(3640,3159,2),(3640,3630,1),(3641,0,3),(3641,3159,2),(3641,3630,1),(3642,0,3),(3642,3159,2),(3642,3630,1),(3643,0,3),(3643,3159,2),(3643,3630,1),(3644,0,3),(3644,3159,2),(3644,3630,1),(3645,0,3),(3645,3159,2),(3645,3630,1),(3646,0,3),(3646,3159,2),(3646,3630,1),(3647,0,3),(3647,3159,2),(3647,3630,1),(3648,0,3),(3648,3159,2),(3648,3630,1),(3649,0,3),(3649,3159,2),(3649,3630,1),(3650,0,3),(3650,3159,2),(3650,3630,1),(3651,0,3),(3651,3159,2),(3651,3630,1),(3652,0,3),(3652,3159,2),(3652,3630,1),(3653,0,3),(3653,3159,2),(3653,3630,1),(3654,0,3),(3654,3159,2),(3654,3630,1),(3655,0,3),(3655,3159,2),(3655,3630,1),(3656,0,3),(3656,3159,2),(3656,3630,1),(3657,0,3),(3657,3159,2),(3657,3630,1),(3658,0,3),(3658,3159,2),(3658,3630,1),(3659,0,3),(3659,3159,2),(3659,3630,1),(3660,0,3),(3660,3159,2),(3660,3630,1),(3661,0,3),(3661,3159,2),(3661,3630,1),(3662,0,3),(3662,3159,2),(3662,3630,1),(3663,0,3),(3663,3159,2),(3663,3630,1),(3664,0,3),(3664,3159,2),(3664,3630,1),(3665,0,3),(3665,3159,2),(3665,3630,1),(3666,0,3),(3666,3159,2),(3666,3630,1),(3667,0,3),(3667,3159,2),(3667,3630,1),(3668,0,3),(3668,3159,2),(3668,3630,1),(3669,0,3),(3669,3159,2),(3669,3630,1),(3670,0,3),(3670,3159,2),(3670,3630,1),(3671,0,3),(3671,3159,2),(3671,3630,1),(3672,0,3),(3672,3159,2),(3672,3630,1),(3673,0,2),(3673,3159,1),(3674,0,3),(3674,3159,2),(3674,3673,1),(3675,0,2),(3675,3159,1),(3676,0,3),(3676,3159,2),(3676,3675,1),(3677,0,3),(3677,3159,2),(3677,3675,1),(3678,0,3),(3678,3159,2),(3678,3675,1),(3679,0,3),(3679,3159,2),(3679,3675,1),(3680,0,3),(3680,3159,2),(3680,3675,1),(3681,0,3),(3681,3159,2),(3681,3675,1),(3682,0,3),(3682,3159,2),(3682,3675,1),(3683,0,3),(3683,3159,2),(3683,3675,1),(3684,0,3),(3684,3159,2),(3684,3675,1),(3685,0,3),(3685,3159,2),(3685,3675,1),(3686,0,3),(3686,3159,2),(3686,3675,1),(3687,0,3),(3687,3159,2),(3687,3675,1),(3688,0,3),(3688,3159,2),(3688,3675,1),(3689,0,3),(3689,3159,2),(3689,3675,1),(3690,0,3),(3690,3159,2),(3690,3675,1),(3691,0,3),(3691,3159,2),(3691,3675,1),(3692,0,3),(3692,3159,2),(3692,3675,1),(3693,0,3),(3693,3159,2),(3693,3675,1),(3694,0,3),(3694,3159,2),(3694,3675,1),(3695,0,3),(3695,3159,2),(3695,3675,1),(3696,0,3),(3696,3159,2),(3696,3675,1),(3697,0,3),(3697,3159,2),(3697,3675,1),(3698,0,3),(3698,3159,2),(3698,3675,1),(3699,0,3),(3699,3159,2),(3699,3675,1),(3700,0,3),(3700,3159,2),(3700,3675,1),(3701,0,3),(3701,3159,2),(3701,3675,1),(3702,0,3),(3702,3159,2),(3702,3675,1),(3703,0,2),(3703,3159,1),(3704,0,3),(3704,3159,2),(3704,3703,1),(3705,0,3),(3705,3159,2),(3705,3703,1),(3706,0,3),(3706,3159,2),(3706,3703,1),(3707,0,3),(3707,3159,2),(3707,3703,1),(3708,0,3),(3708,3159,2),(3708,3703,1),(3709,0,3),(3709,3159,2),(3709,3703,1),(3710,0,3),(3710,3159,2),(3710,3703,1),(3711,0,3),(3711,3159,2),(3711,3703,1),(3712,0,3),(3712,3159,2),(3712,3703,1),(3713,0,3),(3713,3159,2),(3713,3703,1),(3714,0,3),(3714,3159,2),(3714,3703,1),(3715,0,3),(3715,3159,2),(3715,3703,1),(3716,0,3),(3716,3159,2),(3716,3703,1),(3717,0,3),(3717,3159,2),(3717,3703,1),(3718,0,3),(3718,3159,2),(3718,3703,1),(3719,0,3),(3719,3159,2),(3719,3703,1),(3720,0,3),(3720,3159,2),(3720,3703,1),(3721,0,3),(3721,3159,2),(3721,3703,1),(3722,0,3),(3722,3159,2),(3722,3703,1),(3723,0,3),(3723,3159,2),(3723,3703,1),(3724,0,3),(3724,3159,2),(3724,3703,1),(3725,0,3),(3725,3159,2),(3725,3703,1),(3726,0,3),(3726,3159,2),(3726,3703,1),(3727,0,3),(3727,3159,2),(3727,3703,1),(3728,0,3),(3728,3159,2),(3728,3703,1),(3729,0,3),(3729,3159,2),(3729,3703,1),(3730,0,3),(3730,3159,2),(3730,3703,1),(3731,0,3),(3731,3159,2),(3731,3703,1),(3732,0,3),(3732,3159,2),(3732,3703,1),(3733,0,3),(3733,3159,2),(3733,3703,1),(3734,0,3),(3734,3159,2),(3734,3703,1),(3735,0,3),(3735,3159,2),(3735,3703,1),(3736,0,3),(3736,3159,2),(3736,3703,1),(3737,0,3),(3737,3159,2),(3737,3703,1),(3738,0,3),(3738,3159,2),(3738,3703,1),(3739,0,3),(3739,3159,2),(3739,3703,1),(3740,0,3),(3740,3159,2),(3740,3703,1),(3741,0,3),(3741,3159,2),(3741,3703,1),(3742,0,3),(3742,3159,2),(3742,3703,1),(3743,0,3),(3743,3159,2),(3743,3703,1),(3744,0,3),(3744,3159,2),(3744,3703,1),(3745,0,3),(3745,3159,2),(3745,3703,1),(3746,0,3),(3746,3159,2),(3746,3703,1),(3747,0,3),(3747,3159,2),(3747,3703,1),(3748,0,3),(3748,3159,2),(3748,3703,1),(3749,0,3),(3749,3159,2),(3749,3703,1),(3750,0,3),(3750,3159,2),(3750,3703,1),(3751,0,2),(3751,3159,1),(3752,0,3),(3752,3159,2),(3752,3751,1),(3753,0,3),(3753,3159,2),(3753,3751,1),(3754,0,3),(3754,3159,2),(3754,3751,1),(3755,0,3),(3755,3159,2),(3755,3751,1),(3756,0,3),(3756,3159,2),(3756,3751,1),(3757,0,3),(3757,3159,2),(3757,3751,1),(3758,0,3),(3758,3159,2),(3758,3751,1),(3759,0,3),(3759,3159,2),(3759,3751,1),(3760,0,3),(3760,3159,2),(3760,3751,1),(3761,0,2),(3761,3159,1),(3762,0,3),(3762,3159,2),(3762,3761,1),(3763,0,3),(3763,3159,2),(3763,3761,1),(3764,0,3),(3764,3159,2),(3764,3761,1),(3765,0,3),(3765,3159,2),(3765,3761,1),(3766,0,3),(3766,3159,2),(3766,3761,1),(3767,0,3),(3767,3159,2),(3767,3761,1),(3768,0,3),(3768,3159,2),(3768,3761,1),(3769,0,3),(3769,3159,2),(3769,3761,1),(3770,0,3),(3770,3159,2),(3770,3761,1),(3771,0,3),(3771,3159,2),(3771,3761,1),(3772,0,3),(3772,3159,2),(3772,3761,1),(3773,0,3),(3773,3159,2),(3773,3761,1),(3774,0,3),(3774,3159,2),(3774,3761,1),(3775,0,3),(3775,3159,2),(3775,3761,1),(3776,0,3),(3776,3159,2),(3776,3761,1),(3777,0,3),(3777,3159,2),(3777,3761,1),(3778,0,3),(3778,3159,2),(3778,3761,1),(3779,0,3),(3779,3159,2),(3779,3761,1),(3780,0,3),(3780,3159,2),(3780,3761,1),(3781,0,3),(3781,3159,2),(3781,3761,1),(3782,0,3),(3782,3159,2),(3782,3761,1),(3783,0,3),(3783,3159,2),(3783,3761,1),(3784,0,2),(3784,3159,1),(3785,0,3),(3785,3159,2),(3785,3784,1),(3786,0,3),(3786,3159,2),(3786,3784,1),(3787,0,3),(3787,3159,2),(3787,3784,1),(3788,0,3),(3788,3159,2),(3788,3784,1),(3789,0,3),(3789,3159,2),(3789,3784,1),(3790,0,3),(3790,3159,2),(3790,3784,1),(3791,0,3),(3791,3159,2),(3791,3784,1),(3792,0,3),(3792,3159,2),(3792,3784,1),(3793,0,3),(3793,3159,2),(3793,3784,1),(3794,0,3),(3794,3159,2),(3794,3784,1),(3795,0,3),(3795,3159,2),(3795,3784,1),(3796,0,3),(3796,3159,2),(3796,3784,1),(3797,0,3),(3797,3159,2),(3797,3784,1),(3798,0,3),(3798,3159,2),(3798,3784,1),(3799,0,3),(3799,3159,2),(3799,3784,1),(3800,0,3),(3800,3159,2),(3800,3784,1),(3801,0,3),(3801,3159,2),(3801,3784,1),(3802,0,3),(3802,3159,2),(3802,3784,1),(3803,0,3),(3803,3159,2),(3803,3784,1),(3804,0,3),(3804,3159,2),(3804,3784,1),(3805,0,3),(3805,3159,2),(3805,3784,1),(3806,0,3),(3806,3159,2),(3806,3784,1),(3807,0,3),(3807,3159,2),(3807,3784,1),(3808,0,3),(3808,3159,2),(3808,3784,1),(3809,0,3),(3809,3159,2),(3809,3784,1),(3810,0,3),(3810,3159,2),(3810,3784,1),(3811,0,3),(3811,3159,2),(3811,3784,1),(3812,0,3),(3812,3159,2),(3812,3784,1),(3813,0,3),(3813,3159,2),(3813,3784,1),(3814,0,3),(3814,3159,2),(3814,3784,1),(3815,0,3),(3815,3159,2),(3815,3784,1),(3816,0,3),(3816,3159,2),(3816,3784,1),(3817,0,3),(3817,3159,2),(3817,3784,1),(3818,0,3),(3818,3159,2),(3818,3784,1),(3819,0,3),(3819,3159,2),(3819,3784,1),(3820,0,3),(3820,3159,2),(3820,3784,1),(3821,0,3),(3821,3159,2),(3821,3784,1),(3822,0,3),(3822,3159,2),(3822,3784,1),(3823,0,3),(3823,3159,2),(3823,3784,1),(3824,0,3),(3824,3159,2),(3824,3784,1),(3825,0,3),(3825,3159,2),(3825,3784,1),(3826,0,3),(3826,3159,2),(3826,3784,1),(3827,0,2),(3827,3159,1),(3828,0,3),(3828,3159,2),(3828,3827,1),(3829,0,3),(3829,3159,2),(3829,3827,1),(3830,0,3),(3830,3159,2),(3830,3827,1),(3831,0,3),(3831,3159,2),(3831,3827,1),(3832,0,3),(3832,3159,2),(3832,3827,1),(3833,0,3),(3833,3159,2),(3833,3827,1),(3834,0,3),(3834,3159,2),(3834,3827,1),(3835,0,3),(3835,3159,2),(3835,3827,1),(3836,0,3),(3836,3159,2),(3836,3827,1),(3837,0,3),(3837,3159,2),(3837,3827,1),(3838,0,3),(3838,3159,2),(3838,3827,1),(3839,0,3),(3839,3159,2),(3839,3827,1),(3840,0,3),(3840,3159,2),(3840,3827,1),(3841,0,2),(3841,3159,1),(3842,0,3),(3842,3159,2),(3842,3841,1),(3843,0,3),(3843,3159,2),(3843,3841,1),(3844,0,3),(3844,3159,2),(3844,3841,1),(3845,0,3),(3845,3159,2),(3845,3841,1),(3846,0,3),(3846,3159,2),(3846,3841,1),(3847,0,3),(3847,3159,2),(3847,3841,1),(3848,0,3),(3848,3159,2),(3848,3841,1),(3849,0,3),(3849,3159,2),(3849,3841,1),(3850,0,3),(3850,3159,2),(3850,3841,1),(3851,0,3),(3851,3159,2),(3851,3841,1),(3852,0,3),(3852,3159,2),(3852,3841,1),(3853,0,3),(3853,3159,2),(3853,3841,1),(3854,0,3),(3854,3159,2),(3854,3841,1),(3855,0,3),(3855,3159,2),(3855,3841,1),(3856,0,3),(3856,3159,2),(3856,3841,1),(3857,0,3),(3857,3159,2),(3857,3841,1),(3858,0,3),(3858,3159,2),(3858,3841,1),(3859,0,3),(3859,3159,2),(3859,3841,1),(3860,0,3),(3860,3159,2),(3860,3841,1),(3861,0,3),(3861,3159,2),(3861,3841,1),(3862,0,3),(3862,3159,2),(3862,3841,1),(3863,0,3),(3863,3159,2),(3863,3841,1),(3864,0,3),(3864,3159,2),(3864,3841,1),(3865,0,3),(3865,3159,2),(3865,3841,1),(3866,0,3),(3866,3159,2),(3866,3841,1),(3867,0,3),(3867,3159,2),(3867,3841,1),(3868,0,3),(3868,3159,2),(3868,3841,1),(3869,0,3),(3869,3159,2),(3869,3841,1),(3870,0,3),(3870,3159,2),(3870,3841,1),(3871,0,3),(3871,3159,2),(3871,3841,1),(3872,0,2),(3872,3159,1),(3873,0,3),(3873,3159,2),(3873,3872,1),(3874,0,3),(3874,3159,2),(3874,3872,1),(3875,0,3),(3875,3159,2),(3875,3872,1),(3876,0,3),(3876,3159,2),(3876,3872,1),(3877,0,3),(3877,3159,2),(3877,3872,1),(3878,0,3),(3878,3159,2),(3878,3872,1),(3879,0,3),(3879,3159,2),(3879,3872,1),(3880,0,3),(3880,3159,2),(3880,3872,1),(3881,0,3),(3881,3159,2),(3881,3872,1),(3882,0,3),(3882,3159,2),(3882,3872,1),(3883,0,3),(3883,3159,2),(3883,3872,1),(3884,0,3),(3884,3159,2),(3884,3872,1),(3885,0,3),(3885,3159,2),(3885,3872,1),(3886,0,3),(3886,3159,2),(3886,3872,1),(3887,0,3),(3887,3159,2),(3887,3872,1),(3888,0,3),(3888,3159,2),(3888,3872,1),(3889,0,3),(3889,3159,2),(3889,3872,1),(3890,0,3),(3890,3159,2),(3890,3872,1),(3891,0,3),(3891,3159,2),(3891,3872,1),(3892,0,2),(3892,3159,1),(3893,0,3),(3893,3159,2),(3893,3892,1),(3894,0,3),(3894,3159,2),(3894,3892,1),(3895,0,3),(3895,3159,2),(3895,3892,1),(3896,0,3),(3896,3159,2),(3896,3892,1),(3897,0,3),(3897,3159,2),(3897,3892,1),(3898,0,3),(3898,3159,2),(3898,3892,1),(3899,0,3),(3899,3159,2),(3899,3892,1),(3900,0,3),(3900,3159,2),(3900,3892,1),(3901,0,3),(3901,3159,2),(3901,3892,1),(3902,0,3),(3902,3159,2),(3902,3892,1),(3903,0,3),(3903,3159,2),(3903,3892,1),(3904,0,3),(3904,3159,2),(3904,3892,1),(3905,0,3),(3905,3159,2),(3905,3892,1),(3906,0,3),(3906,3159,2),(3906,3892,1),(3907,0,3),(3907,3159,2),(3907,3892,1),(3908,0,3),(3908,3159,2),(3908,3892,1),(3909,0,3),(3909,3159,2),(3909,3892,1),(3910,0,3),(3910,3159,2),(3910,3892,1),(3911,0,3),(3911,3159,2),(3911,3892,1),(3912,0,3),(3912,3159,2),(3912,3892,1),(3913,0,3),(3913,3159,2),(3913,3892,1),(3914,0,3),(3914,3159,2),(3914,3892,1),(3915,0,3),(3915,3159,2),(3915,3892,1),(3916,0,3),(3916,3159,2),(3916,3892,1),(3917,0,3),(3917,3159,2),(3917,3892,1),(3918,0,3),(3918,3159,2),(3918,3892,1),(3919,0,3),(3919,3159,2),(3919,3892,1),(3920,0,3),(3920,3159,2),(3920,3892,1),(3921,0,2),(3921,3159,1),(3922,0,3),(3922,3159,2),(3922,3921,1),(3923,0,3),(3923,3159,2),(3923,3921,1),(3924,0,3),(3924,3159,2),(3924,3921,1),(3925,0,3),(3925,3159,2),(3925,3921,1),(3926,0,3),(3926,3159,2),(3926,3921,1),(3927,0,3),(3927,3159,2),(3927,3921,1),(3928,0,3),(3928,3159,2),(3928,3921,1),(3929,0,3),(3929,3159,2),(3929,3921,1),(3930,0,3),(3930,3159,2),(3930,3921,1),(3931,0,3),(3931,3159,2),(3931,3921,1),(3932,0,3),(3932,3159,2),(3932,3921,1),(3933,0,3),(3933,3159,2),(3933,3921,1),(3934,0,3),(3934,3159,2),(3934,3921,1),(3935,0,3),(3935,3159,2),(3935,3921,1),(3936,0,3),(3936,3159,2),(3936,3921,1),(3937,0,3),(3937,3159,2),(3937,3921,1),(3938,0,3),(3938,3159,2),(3938,3921,1),(3939,0,3),(3939,3159,2),(3939,3921,1),(3940,0,3),(3940,3159,2),(3940,3921,1),(3941,0,3),(3941,3159,2),(3941,3921,1),(3942,0,3),(3942,3159,2),(3942,3921,1),(3943,0,3),(3943,3159,2),(3943,3921,1),(3944,0,3),(3944,3159,2),(3944,3921,1),(3945,0,3),(3945,3159,2),(3945,3921,1),(3946,0,3),(3946,3159,2),(3946,3921,1),(3947,0,3),(3947,3159,2),(3947,3921,1),(3948,0,3),(3948,3159,2),(3948,3921,1),(3949,0,3),(3949,3159,2),(3949,3921,1),(3950,0,3),(3950,3159,2),(3950,3921,1),(3951,0,3),(3951,3159,2),(3951,3921,1),(3952,0,2),(3952,3159,1),(3953,0,3),(3953,3159,2),(3953,3952,1),(3954,0,3),(3954,3159,2),(3954,3952,1),(3955,0,3),(3955,3159,2),(3955,3952,1),(3956,0,3),(3956,3159,2),(3956,3952,1),(3957,0,3),(3957,3159,2),(3957,3952,1),(3958,0,3),(3958,3159,2),(3958,3952,1),(3959,0,3),(3959,3159,2),(3959,3952,1),(3960,0,3),(3960,3159,2),(3960,3952,1),(3961,0,3),(3961,3159,2),(3961,3952,1),(3962,0,3),(3962,3159,2),(3962,3952,1),(3963,0,3),(3963,3159,2),(3963,3952,1),(3964,0,3),(3964,3159,2),(3964,3952,1),(3965,0,3),(3965,3159,2),(3965,3952,1),(3966,0,3),(3966,3159,2),(3966,3952,1),(3967,0,3),(3967,3159,2),(3967,3952,1),(3968,0,3),(3968,3159,2),(3968,3952,1),(3969,0,3),(3969,3159,2),(3969,3952,1),(3970,0,3),(3970,3159,2),(3970,3952,1),(3971,0,3),(3971,3159,2),(3971,3952,1),(3972,0,3),(3972,3159,2),(3972,3952,1),(3973,0,3),(3973,3159,2),(3973,3952,1),(3974,0,3),(3974,3159,2),(3974,3952,1),(3975,0,3),(3975,3159,2),(3975,3952,1),(3976,0,3),(3976,3159,2),(3976,3952,1),(3977,0,3),(3977,3159,2),(3977,3952,1),(3978,0,3),(3978,3159,2),(3978,3952,1),(3979,0,3),(3979,3159,2),(3979,3952,1),(3980,0,3),(3980,3159,2),(3980,3952,1),(3981,0,3),(3981,3159,2),(3981,3952,1),(3982,0,3),(3982,3159,2),(3982,3952,1),(3983,0,3),(3983,3159,2),(3983,3952,1),(3984,0,3),(3984,3159,2),(3984,3952,1),(3985,0,3),(3985,3159,2),(3985,3952,1),(3986,0,3),(3986,3159,2),(3986,3952,1),(3987,0,3),(3987,3159,2),(3987,3952,1),(3988,0,3),(3988,3159,2),(3988,3952,1),(3989,0,3),(3989,3159,2),(3989,3952,1),(3990,0,3),(3990,3159,2),(3990,3952,1),(3991,0,3),(3991,3159,2),(3991,3952,1),(3992,0,3),(3992,3159,2),(3992,3952,1),(3993,0,3),(3993,3159,2),(3993,3952,1),(3994,0,2),(3994,3159,1),(3995,0,3),(3995,3159,2),(3995,3994,1),(3996,0,3),(3996,3159,2),(3996,3994,1),(3997,0,3),(3997,3159,2),(3997,3994,1),(3998,0,3),(3998,3159,2),(3998,3994,1),(3999,0,3),(3999,3159,2),(3999,3994,1),(4000,0,3),(4000,3159,2),(4000,3994,1),(4001,0,3),(4001,3159,2),(4001,3994,1),(4002,0,3),(4002,3159,2),(4002,3994,1),(4003,0,3),(4003,3159,2),(4003,3994,1),(4004,0,3),(4004,3159,2),(4004,3994,1),(4005,0,3),(4005,3159,2),(4005,3994,1),(4006,0,3),(4006,3159,2),(4006,3994,1),(4007,0,3),(4007,3159,2),(4007,3994,1),(4008,0,3),(4008,3159,2),(4008,3994,1),(4009,0,3),(4009,3159,2),(4009,3994,1),(4010,0,3),(4010,3159,2),(4010,3994,1),(4011,0,3),(4011,3159,2),(4011,3994,1),(4012,0,3),(4012,3159,2),(4012,3994,1),(4013,0,3),(4013,3159,2),(4013,3994,1),(4014,0,3),(4014,3159,2),(4014,3994,1),(4015,0,3),(4015,3159,2),(4015,3994,1),(4016,0,3),(4016,3159,2),(4016,3994,1),(4017,0,3),(4017,3159,2),(4017,3994,1),(4018,0,3),(4018,3159,2),(4018,3994,1),(4019,0,3),(4019,3159,2),(4019,3994,1),(4020,0,3),(4020,3159,2),(4020,3994,1),(4021,0,3),(4021,3159,2),(4021,3994,1),(4022,0,3),(4022,3159,2),(4022,3994,1),(4023,0,3),(4023,3159,2),(4023,3994,1),(4024,0,3),(4024,3159,2),(4024,3994,1),(4025,0,3),(4025,3159,2),(4025,3994,1),(4026,0,2),(4026,3159,1),(4027,0,3),(4027,3159,2),(4027,4026,1),(4028,0,3),(4028,3159,2),(4028,4026,1),(4029,0,3),(4029,3159,2),(4029,4026,1),(4030,0,3),(4030,3159,2),(4030,4026,1),(4031,0,3),(4031,3159,2),(4031,4026,1),(4032,0,3),(4032,3159,2),(4032,4026,1),(4033,0,3),(4033,3159,2),(4033,4026,1),(4034,0,3),(4034,3159,2),(4034,4026,1),(4035,0,3),(4035,3159,2),(4035,4026,1),(4036,0,3),(4036,3159,2),(4036,4026,1),(4037,0,3),(4037,3159,2),(4037,4026,1),(4038,0,3),(4038,3159,2),(4038,4026,1),(4039,0,3),(4039,3159,2),(4039,4026,1),(4040,0,3),(4040,3159,2),(4040,4026,1),(4041,0,3),(4041,3159,2),(4041,4026,1),(4042,0,3),(4042,3159,2),(4042,4026,1),(4043,0,3),(4043,3159,2),(4043,4026,1),(4044,0,3),(4044,3159,2),(4044,4026,1),(4045,0,3),(4045,3159,2),(4045,4026,1),(4046,0,3),(4046,3159,2),(4046,4026,1),(4047,0,3),(4047,3159,2),(4047,4026,1),(4048,0,3),(4048,3159,2),(4048,4026,1),(4049,0,3),(4049,3159,2),(4049,4026,1),(4050,0,3),(4050,3159,2),(4050,4026,1),(4051,0,3),(4051,3159,2),(4051,4026,1),(4052,0,2),(4052,3159,1),(4053,0,3),(4053,3159,2),(4053,4052,1),(4054,0,3),(4054,3159,2),(4054,4052,1),(4055,0,3),(4055,3159,2),(4055,4052,1),(4056,0,3),(4056,3159,2),(4056,4052,1),(4057,0,3),(4057,3159,2),(4057,4052,1),(4058,0,3),(4058,3159,2),(4058,4052,1),(4059,0,3),(4059,3159,2),(4059,4052,1),(4060,0,3),(4060,3159,2),(4060,4052,1),(4061,0,3),(4061,3159,2),(4061,4052,1),(4062,0,3),(4062,3159,2),(4062,4052,1),(4063,0,3),(4063,3159,2),(4063,4052,1),(4064,0,3),(4064,3159,2),(4064,4052,1),(4065,0,3),(4065,3159,2),(4065,4052,1),(4066,0,3),(4066,3159,2),(4066,4052,1),(4067,0,3),(4067,3159,2),(4067,4052,1),(4068,0,3),(4068,3159,2),(4068,4052,1),(4069,0,3),(4069,3159,2),(4069,4052,1),(4070,0,3),(4070,3159,2),(4070,4052,1),(4071,0,3),(4071,3159,2),(4071,4052,1),(4072,0,3),(4072,3159,2),(4072,4052,1),(4073,0,3),(4073,3159,2),(4073,4052,1),(4074,0,3),(4074,3159,2),(4074,4052,1),(4075,0,3),(4075,3159,2),(4075,4052,1),(4076,0,3),(4076,3159,2),(4076,4052,1),(4077,0,3),(4077,3159,2),(4077,4052,1),(4078,0,3),(4078,3159,2),(4078,4052,1),(4079,0,3),(4079,3159,2),(4079,4052,1),(4080,0,3),(4080,3159,2),(4080,4052,1),(4081,0,3),(4081,3159,2),(4081,4052,1),(4082,0,3),(4082,3159,2),(4082,4052,1),(4083,0,3),(4083,3159,2),(4083,4052,1),(4084,0,3),(4084,3159,2),(4084,4052,1),(4085,0,3),(4085,3159,2),(4085,4052,1),(4086,0,3),(4086,3159,2),(4086,4052,1),(4087,0,3),(4087,3159,2),(4087,4052,1),(4088,0,3),(4088,3159,2),(4088,4052,1),(4089,0,3),(4089,3159,2),(4089,4052,1),(4090,0,3),(4090,3159,2),(4090,4052,1),(4091,0,3),(4091,3159,2),(4091,4052,1),(4092,0,3),(4092,3159,2),(4092,4052,1),(4093,0,3),(4093,3159,2),(4093,4052,1),(4094,0,3),(4094,3159,2),(4094,4052,1),(4095,0,3),(4095,3159,2),(4095,4052,1),(4096,0,3),(4096,3159,2),(4096,4052,1),(4097,0,3),(4097,3159,2),(4097,4052,1),(4098,0,3),(4098,3159,2),(4098,4052,1),(4099,0,3),(4099,3159,2),(4099,4052,1),(4100,0,3),(4100,3159,2),(4100,4052,1),(4101,0,3),(4101,3159,2),(4101,4052,1),(4102,0,3),(4102,3159,2),(4102,4052,1),(4103,0,3),(4103,3159,2),(4103,4052,1),(4104,0,3),(4104,3159,2),(4104,4052,1),(4105,0,2),(4105,3159,1),(4106,0,3),(4106,3159,2),(4106,4105,1),(4107,0,3),(4107,3159,2),(4107,4105,1),(4108,0,3),(4108,3159,2),(4108,4105,1),(4109,0,3),(4109,3159,2),(4109,4105,1),(4110,0,3),(4110,3159,2),(4110,4105,1),(4111,0,3),(4111,3159,2),(4111,4105,1),(4112,0,3),(4112,3159,2),(4112,4105,1),(4113,0,3),(4113,3159,2),(4113,4105,1),(4114,0,3),(4114,3159,2),(4114,4105,1),(4115,0,3),(4115,3159,2),(4115,4105,1),(4116,0,3),(4116,3159,2),(4116,4105,1),(4117,0,3),(4117,3159,2),(4117,4105,1),(4118,0,3),(4118,3159,2),(4118,4105,1),(4119,0,3),(4119,3159,2),(4119,4105,1),(4120,0,3),(4120,3159,2),(4120,4105,1),(4121,0,3),(4121,3159,2),(4121,4105,1),(4122,0,3),(4122,3159,2),(4122,4105,1),(4123,0,3),(4123,3159,2),(4123,4105,1),(4124,0,3),(4124,3159,2),(4124,4105,1),(4125,0,3),(4125,3159,2),(4125,4105,1),(4126,0,3),(4126,3159,2),(4126,4105,1),(4127,0,3),(4127,3159,2),(4127,4105,1),(4128,0,3),(4128,3159,2),(4128,4105,1),(4129,0,3),(4129,3159,2),(4129,4105,1),(4130,0,3),(4130,3159,2),(4130,4105,1),(4131,0,3),(4131,3159,2),(4131,4105,1),(4132,0,3),(4132,3159,2),(4132,4105,1),(4133,0,3),(4133,3159,2),(4133,4105,1),(4134,0,3),(4134,3159,2),(4134,4105,1),(4135,0,3),(4135,3159,2),(4135,4105,1),(4136,0,3),(4136,3159,2),(4136,4105,1),(4137,0,3),(4137,3159,2),(4137,4105,1),(4138,0,3),(4138,3159,2),(4138,4105,1),(4139,0,3),(4139,3159,2),(4139,4105,1),(4140,0,3),(4140,3159,2),(4140,4105,1),(4141,0,3),(4141,3159,2),(4141,4105,1),(4142,0,3),(4142,3159,2),(4142,4105,1),(4143,0,3),(4143,3159,2),(4143,4105,1),(4144,0,3),(4144,3159,2),(4144,4105,1),(4145,0,3),(4145,3159,2),(4145,4105,1),(4146,0,3),(4146,3159,2),(4146,4105,1),(4147,0,3),(4147,3159,2),(4147,4105,1),(4148,0,3),(4148,3159,2),(4148,4105,1),(4149,0,3),(4149,3159,2),(4149,4105,1),(4150,0,3),(4150,3159,2),(4150,4105,1),(4151,0,3),(4151,3159,2),(4151,4105,1),(4152,0,3),(4152,3159,2),(4152,4105,1),(4153,0,3),(4153,3159,2),(4153,4105,1),(4154,0,3),(4154,3159,2),(4154,4105,1),(4155,0,3),(4155,3159,2),(4155,4105,1),(4156,0,3),(4156,3159,2),(4156,4105,1),(4157,0,3),(4157,3159,2),(4157,4105,1),(4158,0,3),(4158,3159,2),(4158,4105,1),(4159,0,3),(4159,3159,2),(4159,4105,1),(4160,0,3),(4160,3159,2),(4160,4105,1),(4161,0,3),(4161,3159,2),(4161,4105,1),(4162,0,3),(4162,3159,2),(4162,4105,1),(4163,0,3),(4163,3159,2),(4163,4105,1),(4164,0,3),(4164,3159,2),(4164,4105,1),(4165,0,3),(4165,3159,2),(4165,4105,1),(4166,0,3),(4166,3159,2),(4166,4105,1),(4167,0,3),(4167,3159,2),(4167,4105,1),(4168,0,3),(4168,3159,2),(4168,4105,1),(4169,0,3),(4169,3159,2),(4169,4105,1),(4170,0,3),(4170,3159,2),(4170,4105,1),(4171,0,3),(4171,3159,2),(4171,4105,1),(4172,0,3),(4172,3159,2),(4172,4105,1),(4173,0,3),(4173,3159,2),(4173,4105,1),(4174,0,3),(4174,3159,2),(4174,4105,1),(4175,0,3),(4175,3159,2),(4175,4105,1),(4176,0,2),(4176,3159,1),(4177,0,3),(4177,3159,2),(4177,4176,1),(4178,0,3),(4178,3159,2),(4178,4176,1),(4179,0,3),(4179,3159,2),(4179,4176,1),(4180,0,3),(4180,3159,2),(4180,4176,1),(4181,0,3),(4181,3159,2),(4181,4176,1),(4182,0,3),(4182,3159,2),(4182,4176,1),(4183,0,3),(4183,3159,2),(4183,4176,1),(4184,0,3),(4184,3159,2),(4184,4176,1),(4185,0,3),(4185,3159,2),(4185,4176,1),(4186,0,3),(4186,3159,2),(4186,4176,1),(4187,0,3),(4187,3159,2),(4187,4176,1),(4188,0,3),(4188,3159,2),(4188,4176,1),(4189,0,3),(4189,3159,2),(4189,4176,1),(4190,0,3),(4190,3159,2),(4190,4176,1),(4191,0,3),(4191,3159,2),(4191,4176,1),(4192,0,3),(4192,3159,2),(4192,4176,1),(4193,0,3),(4193,3159,2),(4193,4176,1),(4194,0,3),(4194,3159,2),(4194,4176,1),(4195,0,3),(4195,3159,2),(4195,4176,1),(4196,0,3),(4196,3159,2),(4196,4176,1),(4197,0,3),(4197,3159,2),(4197,4176,1),(4198,0,2),(4198,3159,1),(4199,0,3),(4199,3159,2),(4199,4198,1),(4200,0,3),(4200,3159,2),(4200,4198,1),(4201,0,3),(4201,3159,2),(4201,4198,1),(4202,0,3),(4202,3159,2),(4202,4198,1),(4203,0,3),(4203,3159,2),(4203,4198,1),(4204,0,3),(4204,3159,2),(4204,4198,1),(4205,0,3),(4205,3159,2),(4205,4198,1),(4206,0,3),(4206,3159,2),(4206,4198,1),(4207,0,3),(4207,3159,2),(4207,4198,1),(4208,0,3),(4208,3159,2),(4208,4198,1),(4209,0,3),(4209,3159,2),(4209,4198,1),(4210,0,3),(4210,3159,2),(4210,4198,1),(4211,0,3),(4211,3159,2),(4211,4198,1),(4212,0,3),(4212,3159,2),(4212,4198,1),(4213,0,3),(4213,3159,2),(4213,4198,1),(4214,0,3),(4214,3159,2),(4214,4198,1),(4215,0,3),(4215,3159,2),(4215,4198,1),(4216,0,3),(4216,3159,2),(4216,4198,1),(4217,0,3),(4217,3159,2),(4217,4198,1),(4218,0,3),(4218,3159,2),(4218,4198,1),(4219,0,3),(4219,3159,2),(4219,4198,1),(4220,0,3),(4220,3159,2),(4220,4198,1),(4221,0,3),(4221,3159,2),(4221,4198,1),(4222,0,3),(4222,3159,2),(4222,4198,1),(4223,0,3),(4223,3159,2),(4223,4198,1),(4224,0,3),(4224,3159,2),(4224,4198,1),(4225,0,3),(4225,3159,2),(4225,4198,1),(4226,0,3),(4226,3159,2),(4226,4198,1),(4227,0,2),(4227,3159,1),(4228,0,3),(4228,3159,2),(4228,4227,1),(4229,0,3),(4229,3159,2),(4229,4227,1),(4230,0,3),(4230,3159,2),(4230,4227,1),(4231,0,3),(4231,3159,2),(4231,4227,1),(4232,0,3),(4232,3159,2),(4232,4227,1),(4233,0,3),(4233,3159,2),(4233,4227,1),(4234,0,3),(4234,3159,2),(4234,4227,1),(4235,0,3),(4235,3159,2),(4235,4227,1),(4236,0,3),(4236,3159,2),(4236,4227,1),(4237,0,3),(4237,3159,2),(4237,4227,1),(4238,0,3),(4238,3159,2),(4238,4227,1),(4239,0,3),(4239,3159,2),(4239,4227,1),(4240,0,3),(4240,3159,2),(4240,4227,1),(4241,0,3),(4241,3159,2),(4241,4227,1),(4242,0,3),(4242,3159,2),(4242,4227,1),(4243,0,2),(4243,3159,1),(4244,0,3),(4244,3159,2),(4244,4243,1),(4245,0,3),(4245,3159,2),(4245,4243,1),(4246,0,3),(4246,3159,2),(4246,4243,1),(4247,0,3),(4247,3159,2),(4247,4243,1),(4248,0,3),(4248,3159,2),(4248,4243,1),(4249,0,3),(4249,3159,2),(4249,4243,1),(4250,0,3),(4250,3159,2),(4250,4243,1),(4251,0,3),(4251,3159,2),(4251,4243,1),(4252,0,3),(4252,3159,2),(4252,4243,1),(4253,0,3),(4253,3159,2),(4253,4243,1),(4254,0,3),(4254,3159,2),(4254,4243,1),(4255,0,3),(4255,3159,2),(4255,4243,1),(4256,0,3),(4256,3159,2),(4256,4243,1),(4257,0,3),(4257,3159,2),(4257,4243,1),(4258,0,3),(4258,3159,2),(4258,4243,1),(4259,0,3),(4259,3159,2),(4259,4243,1),(4260,0,3),(4260,3159,2),(4260,4243,1),(4261,0,3),(4261,3159,2),(4261,4243,1),(4262,0,3),(4262,3159,2),(4262,4243,1),(4263,0,3),(4263,3159,2),(4263,4243,1),(4264,0,3),(4264,3159,2),(4264,4243,1),(4265,0,3),(4265,3159,2),(4265,4243,1),(4266,0,3),(4266,3159,2),(4266,4243,1),(4267,0,3),(4267,3159,2),(4267,4243,1),(4268,0,3),(4268,3159,2),(4268,4243,1),(4269,0,3),(4269,3159,2),(4269,4243,1),(4270,0,2),(4270,3159,1),(4271,0,3),(4271,3159,2),(4271,4270,1),(4272,0,3),(4272,3159,2),(4272,4270,1),(4273,0,3),(4273,3159,2),(4273,4270,1),(4274,0,3),(4274,3159,2),(4274,4270,1),(4275,0,3),(4275,3159,2),(4275,4270,1),(4276,0,3),(4276,3159,2),(4276,4270,1),(4277,0,3),(4277,3159,2),(4277,4270,1),(4278,0,3),(4278,3159,2),(4278,4270,1),(4279,0,3),(4279,3159,2),(4279,4270,1),(4280,0,3),(4280,3159,2),(4280,4270,1),(4281,0,3),(4281,3159,2),(4281,4270,1),(4282,0,3),(4282,3159,2),(4282,4270,1),(4283,0,3),(4283,3159,2),(4283,4270,1),(4284,0,3),(4284,3159,2),(4284,4270,1),(4285,0,3),(4285,3159,2),(4285,4270,1),(4286,0,3),(4286,3159,2),(4286,4270,1),(4287,0,2),(4287,3159,1),(4288,0,3),(4288,3159,2),(4288,4287,1),(4289,0,3),(4289,3159,2),(4289,4287,1),(4290,0,3),(4290,3159,2),(4290,4287,1),(4291,0,3),(4291,3159,2),(4291,4287,1),(4292,0,3),(4292,3159,2),(4292,4287,1),(4293,0,3),(4293,3159,2),(4293,4287,1),(4294,0,3),(4294,3159,2),(4294,4287,1),(4295,0,3),(4295,3159,2),(4295,4287,1),(4296,0,3),(4296,3159,2),(4296,4287,1),(4297,0,3),(4297,3159,2),(4297,4287,1),(4298,0,3),(4298,3159,2),(4298,4287,1),(4299,0,3),(4299,3159,2),(4299,4287,1),(4300,0,3),(4300,3159,2),(4300,4287,1),(4301,0,3),(4301,3159,2),(4301,4287,1),(4302,0,3),(4302,3159,2),(4302,4287,1),(4303,0,3),(4303,3159,2),(4303,4287,1),(4304,0,3),(4304,3159,2),(4304,4287,1),(4305,0,3),(4305,3159,2),(4305,4287,1),(4306,0,3),(4306,3159,2),(4306,4287,1),(4307,0,3),(4307,3159,2),(4307,4287,1),(4308,0,3),(4308,3159,2),(4308,4287,1),(4309,0,3),(4309,3159,2),(4309,4287,1),(4310,0,3),(4310,3159,2),(4310,4287,1),(4311,0,3),(4311,3159,2),(4311,4287,1),(4312,0,2),(4312,3159,1),(4313,0,3),(4313,3159,2),(4313,4312,1),(4314,0,3),(4314,3159,2),(4314,4312,1),(4315,0,3),(4315,3159,2),(4315,4312,1),(4316,0,3),(4316,3159,2),(4316,4312,1),(4317,0,3),(4317,3159,2),(4317,4312,1),(4318,0,3),(4318,3159,2),(4318,4312,1),(4319,0,3),(4319,3159,2),(4319,4312,1),(4320,0,3),(4320,3159,2),(4320,4312,1),(4321,0,3),(4321,3159,2),(4321,4312,1),(4322,0,3),(4322,3159,2),(4322,4312,1),(4323,0,3),(4323,3159,2),(4323,4312,1),(4324,0,3),(4324,3159,2),(4324,4312,1),(4325,0,3),(4325,3159,2),(4325,4312,1),(4326,0,3),(4326,3159,2),(4326,4312,1),(4327,0,3),(4327,3159,2),(4327,4312,1),(4328,0,3),(4328,3159,2),(4328,4312,1),(4329,0,3),(4329,3159,2),(4329,4312,1),(4330,0,3),(4330,3159,2),(4330,4312,1),(4331,0,3),(4331,3159,2),(4331,4312,1),(4332,0,3),(4332,3159,2),(4332,4312,1),(4333,0,3),(4333,3159,2),(4333,4312,1),(4334,0,3),(4334,3159,2),(4334,4312,1),(4335,0,3),(4335,3159,2),(4335,4312,1),(4336,0,3),(4336,3159,2),(4336,4312,1),(4337,0,3),(4337,3159,2),(4337,4312,1),(4338,0,3),(4338,3159,2),(4338,4312,1),(4339,0,3),(4339,3159,2),(4339,4312,1),(4340,0,3),(4340,3159,2),(4340,4312,1),(4341,0,3),(4341,3159,2),(4341,4312,1),(4342,0,3),(4342,3159,2),(4342,4312,1),(4343,0,3),(4343,3159,2),(4343,4312,1),(4344,0,3),(4344,3159,2),(4344,4312,1),(4345,0,3),(4345,3159,2),(4345,4312,1),(4346,0,3),(4346,3159,2),(4346,4312,1),(4347,0,3),(4347,3159,2),(4347,4312,1),(4348,0,3),(4348,3159,2),(4348,4312,1),(4349,0,3),(4349,3159,2),(4349,4312,1),(4350,0,3),(4350,3159,2),(4350,4312,1),(4351,0,3),(4351,3159,2),(4351,4312,1),(4352,0,3),(4352,3159,2),(4352,4312,1),(4353,0,3),(4353,3159,2),(4353,4312,1),(4354,0,3),(4354,3159,2),(4354,4312,1),(4355,0,3),(4355,3159,2),(4355,4312,1),(4356,0,3),(4356,3159,2),(4356,4312,1),(4357,0,3),(4357,3159,2),(4357,4312,1),(4358,0,3),(4358,3159,2),(4358,4312,1),(4359,0,3),(4359,3159,2),(4359,4312,1),(4360,0,3),(4360,3159,2),(4360,4312,1),(4361,0,3),(4361,3159,2),(4361,4312,1),(4362,0,3),(4362,3159,2),(4362,4312,1),(4363,0,3),(4363,3159,2),(4363,4312,1),(4364,0,3),(4364,3159,2),(4364,4312,1),(4365,0,3),(4365,3159,2),(4365,4312,1),(4366,0,3),(4366,3159,2),(4366,4312,1),(4367,0,3),(4367,3159,2),(4367,4312,1),(4368,0,3),(4368,3159,2),(4368,4312,1),(4369,0,3),(4369,3159,2),(4369,4312,1),(4370,0,3),(4370,3159,2),(4370,4312,1),(4371,0,3),(4371,3159,2),(4371,4312,1),(4372,0,3),(4372,3159,2),(4372,4312,1),(4373,0,3),(4373,3159,2),(4373,4312,1),(4374,0,3),(4374,3159,2),(4374,4312,1),(4375,0,3),(4375,3159,2),(4375,4312,1),(4376,0,3),(4376,3159,2),(4376,4312,1),(4377,0,3),(4377,3159,2),(4377,4312,1),(4378,0,3),(4378,3159,2),(4378,4312,1),(4379,0,3),(4379,3159,2),(4379,4312,1),(4380,0,3),(4380,3159,2),(4380,4312,1),(4381,0,3),(4381,3159,2),(4381,4312,1),(4382,0,3),(4382,3159,2),(4382,4312,1),(4383,0,3),(4383,3159,2),(4383,4312,1),(4384,0,3),(4384,3159,2),(4384,4312,1),(4385,0,3),(4385,3159,2),(4385,4312,1),(4386,0,3),(4386,3159,2),(4386,4312,1),(4387,0,3),(4387,3159,2),(4387,4312,1),(4388,0,3),(4388,3159,2),(4388,4312,1),(4389,0,3),(4389,3159,2),(4389,4312,1),(4390,0,3),(4390,3159,2),(4390,4312,1),(4391,0,3),(4391,3159,2),(4391,4312,1),(4392,0,3),(4392,3159,2),(4392,4312,1),(4393,0,3),(4393,3159,2),(4393,4312,1),(4394,0,3),(4394,3159,2),(4394,4312,1),(4395,0,3),(4395,3159,2),(4395,4312,1),(4396,0,3),(4396,3159,2),(4396,4312,1),(4397,0,3),(4397,3159,2),(4397,4312,1),(4398,0,3),(4398,3159,2),(4398,4312,1),(4399,0,3),(4399,3159,2),(4399,4312,1),(4400,0,3),(4400,3159,2),(4400,4312,1),(4401,0,3),(4401,3159,2),(4401,4312,1),(4402,0,3),(4402,3159,2),(4402,4312,1),(4403,0,3),(4403,3159,2),(4403,4312,1),(4404,0,3),(4404,3159,2),(4404,4312,1),(4405,0,3),(4405,3159,2),(4405,4312,1),(4406,0,3),(4406,3159,2),(4406,4312,1),(4407,0,3),(4407,3159,2),(4407,4312,1),(4408,0,3),(4408,3159,2),(4408,4312,1),(4409,0,3),(4409,3159,2),(4409,4312,1),(4410,0,3),(4410,3159,2),(4410,4312,1),(4411,0,3),(4411,3159,2),(4411,4312,1),(4412,0,3),(4412,3159,2),(4412,4312,1),(4413,0,3),(4413,3159,2),(4413,4312,1),(4414,0,3),(4414,3159,2),(4414,4312,1),(4415,0,3),(4415,3159,2),(4415,4312,1),(4416,0,3),(4416,3159,2),(4416,4312,1),(4417,0,3),(4417,3159,2),(4417,4312,1),(4418,0,3),(4418,3159,2),(4418,4312,1),(4419,0,3),(4419,3159,2),(4419,4312,1),(4420,0,3),(4420,3159,2),(4420,4312,1),(4421,0,3),(4421,3159,2),(4421,4312,1),(4422,0,3),(4422,3159,2),(4422,4312,1),(4423,0,3),(4423,3159,2),(4423,4312,1),(4424,0,3),(4424,3159,2),(4424,4312,1),(4425,0,3),(4425,3159,2),(4425,4312,1),(4426,0,3),(4426,3159,2),(4426,4312,1),(4427,0,3),(4427,3159,2),(4427,4312,1),(4428,0,3),(4428,3159,2),(4428,4312,1),(4429,0,3),(4429,3159,2),(4429,4312,1),(4430,0,3),(4430,3159,2),(4430,4312,1),(4431,0,3),(4431,3159,2),(4431,4312,1),(4432,0,3),(4432,3159,2),(4432,4312,1),(4433,0,3),(4433,3159,2),(4433,4312,1),(4434,0,3),(4434,3159,2),(4434,4312,1),(4435,0,3),(4435,3159,2),(4435,4312,1),(4436,0,3),(4436,3159,2),(4436,4312,1),(4437,0,3),(4437,3159,2),(4437,4312,1),(4438,0,3),(4438,3159,2),(4438,4312,1),(4439,0,3),(4439,3159,2),(4439,4312,1),(4440,0,3),(4440,3159,2),(4440,4312,1),(4441,0,3),(4441,3159,2),(4441,4312,1),(4442,0,3),(4442,3159,2),(4442,4312,1),(4443,0,3),(4443,3159,2),(4443,4312,1),(4444,0,3),(4444,3159,2),(4444,4312,1),(4445,0,3),(4445,3159,2),(4445,4312,1),(4446,0,3),(4446,3159,2),(4446,4312,1),(4447,0,3),(4447,3159,2),(4447,4312,1),(4448,0,3),(4448,3159,2),(4448,4312,1),(4449,0,3),(4449,3159,2),(4449,4312,1),(4450,0,3),(4450,3159,2),(4450,4312,1),(4451,0,3),(4451,3159,2),(4451,4312,1),(4452,0,3),(4452,3159,2),(4452,4312,1),(4453,0,3),(4453,3159,2),(4453,4312,1),(4454,0,3),(4454,3159,2),(4454,4312,1),(4455,0,3),(4455,3159,2),(4455,4312,1),(4456,0,3),(4456,3159,2),(4456,4312,1),(4457,0,3),(4457,3159,2),(4457,4312,1),(4458,0,3),(4458,3159,2),(4458,4312,1),(4459,0,3),(4459,3159,2),(4459,4312,1),(4460,0,3),(4460,3159,2),(4460,4312,1),(4461,0,3),(4461,3159,2),(4461,4312,1),(4462,0,3),(4462,3159,2),(4462,4312,1),(4463,0,3),(4463,3159,2),(4463,4312,1),(4464,0,3),(4464,3159,2),(4464,4312,1),(4465,0,3),(4465,3159,2),(4465,4312,1),(4466,0,3),(4466,3159,2),(4466,4312,1),(4467,0,3),(4467,3159,2),(4467,4312,1),(4468,0,3),(4468,3159,2),(4468,4312,1),(4469,0,3),(4469,3159,2),(4469,4312,1),(4470,0,3),(4470,3159,2),(4470,4312,1),(4471,0,3),(4471,3159,2),(4471,4312,1),(4472,0,3),(4472,3159,2),(4472,4312,1),(4473,0,3),(4473,3159,2),(4473,4312,1),(4474,0,3),(4474,3159,2),(4474,4312,1),(4475,0,3),(4475,3159,2),(4475,4312,1),(4476,0,3),(4476,3159,2),(4476,4312,1),(4477,0,3),(4477,3159,2),(4477,4312,1),(4478,0,3),(4478,3159,2),(4478,4312,1),(4479,0,3),(4479,3159,2),(4479,4312,1),(4480,0,3),(4480,3159,2),(4480,4312,1),(4481,0,2),(4481,3159,1),(4482,0,3),(4482,3159,2),(4482,4481,1),(4483,0,3),(4483,3159,2),(4483,4481,1),(4484,0,3),(4484,3159,2),(4484,4481,1),(4485,0,3),(4485,3159,2),(4485,4481,1),(4486,0,3),(4486,3159,2),(4486,4481,1),(4487,0,3),(4487,3159,2),(4487,4481,1),(4488,0,3),(4488,3159,2),(4488,4481,1),(4489,0,3),(4489,3159,2),(4489,4481,1),(4490,0,3),(4490,3159,2),(4490,4481,1),(4491,0,3),(4491,3159,2),(4491,4481,1),(4492,0,3),(4492,3159,2),(4492,4481,1),(4493,0,3),(4493,3159,2),(4493,4481,1),(4494,0,3),(4494,3159,2),(4494,4481,1),(4495,0,3),(4495,3159,2),(4495,4481,1),(4496,0,3),(4496,3159,2),(4496,4481,1),(4497,0,3),(4497,3159,2),(4497,4481,1),(4498,0,3),(4498,3159,2),(4498,4481,1),(4499,0,3),(4499,3159,2),(4499,4481,1),(4500,0,3),(4500,3159,2),(4500,4481,1),(4501,0,3),(4501,3159,2),(4501,4481,1),(4502,0,3),(4502,3159,2),(4502,4481,1),(4503,0,2),(4503,3159,1),(4504,0,3),(4504,3159,2),(4504,4503,1),(4505,0,3),(4505,3159,2),(4505,4503,1),(4506,0,3),(4506,3159,2),(4506,4503,1),(4507,0,3),(4507,3159,2),(4507,4503,1),(4508,0,3),(4508,3159,2),(4508,4503,1),(4509,0,3),(4509,3159,2),(4509,4503,1),(4510,0,3),(4510,3159,2),(4510,4503,1),(4511,0,3),(4511,3159,2),(4511,4503,1),(4512,0,3),(4512,3159,2),(4512,4503,1),(4513,0,3),(4513,3159,2),(4513,4503,1),(4514,0,3),(4514,3159,2),(4514,4503,1),(4515,0,3),(4515,3159,2),(4515,4503,1),(4516,0,3),(4516,3159,2),(4516,4503,1),(4517,0,3),(4517,3159,2),(4517,4503,1),(4518,0,3),(4518,3159,2),(4518,4503,1),(4519,0,3),(4519,3159,2),(4519,4503,1),(4520,0,3),(4520,3159,2),(4520,4503,1),(4521,0,3),(4521,3159,2),(4521,4503,1),(4522,0,3),(4522,3159,2),(4522,4503,1),(4523,0,3),(4523,3159,2),(4523,4503,1),(4524,0,3),(4524,3159,2),(4524,4503,1),(4525,0,3),(4525,3159,2),(4525,4503,1),(4526,0,3),(4526,3159,2),(4526,4503,1),(4527,0,3),(4527,3159,2),(4527,4503,1),(4528,0,2),(4528,3159,1),(4529,0,3),(4529,3159,2),(4529,4528,1),(4530,0,3),(4530,3159,2),(4530,4528,1),(4531,0,3),(4531,3159,2),(4531,4528,1),(4532,0,3),(4532,3159,2),(4532,4528,1),(4533,0,3),(4533,3159,2),(4533,4528,1),(4534,0,3),(4534,3159,2),(4534,4528,1),(4535,0,3),(4535,3159,2),(4535,4528,1),(4536,0,3),(4536,3159,2),(4536,4528,1),(4537,0,3),(4537,3159,2),(4537,4528,1),(4538,0,3),(4538,3159,2),(4538,4528,1),(4539,0,3),(4539,3159,2),(4539,4528,1),(4540,0,3),(4540,3159,2),(4540,4528,1),(4541,0,3),(4541,3159,2),(4541,4528,1),(4542,0,3),(4542,3159,2),(4542,4528,1),(4543,0,3),(4543,3159,2),(4543,4528,1),(4544,0,3),(4544,3159,2),(4544,4528,1),(4545,0,3),(4545,3159,2),(4545,4528,1),(4546,0,3),(4546,3159,2),(4546,4528,1),(4547,0,3),(4547,3159,2),(4547,4528,1),(4548,0,3),(4548,3159,2),(4548,4528,1),(4549,0,3),(4549,3159,2),(4549,4528,1),(4550,0,3),(4550,3159,2),(4550,4528,1),(4551,0,3),(4551,3159,2),(4551,4528,1),(4552,0,3),(4552,3159,2),(4552,4528,1),(4553,0,3),(4553,3159,2),(4553,4528,1),(4554,0,3),(4554,3159,2),(4554,4528,1),(4555,0,3),(4555,3159,2),(4555,4528,1),(4556,0,3),(4556,3159,2),(4556,4528,1),(4557,0,3),(4557,3159,2),(4557,4528,1),(4558,0,3),(4558,3159,2),(4558,4528,1),(4559,0,3),(4559,3159,2),(4559,4528,1),(4560,0,3),(4560,3159,2),(4560,4528,1),(4561,0,2),(4561,3159,1),(4562,0,3),(4562,3159,2),(4562,4561,1),(4563,0,3),(4563,3159,2),(4563,4561,1),(4564,0,3),(4564,3159,2),(4564,4561,1),(4565,0,3),(4565,3159,2),(4565,4561,1),(4566,0,3),(4566,3159,2),(4566,4561,1),(4567,0,3),(4567,3159,2),(4567,4561,1),(4568,0,3),(4568,3159,2),(4568,4561,1),(4569,0,3),(4569,3159,2),(4569,4561,1),(4570,0,3),(4570,3159,2),(4570,4561,1),(4571,0,3),(4571,3159,2),(4571,4561,1),(4572,0,3),(4572,3159,2),(4572,4561,1),(4573,0,3),(4573,3159,2),(4573,4561,1),(4574,0,3),(4574,3159,2),(4574,4561,1),(4575,0,3),(4575,3159,2),(4575,4561,1),(4576,0,3),(4576,3159,2),(4576,4561,1),(4577,0,3),(4577,3159,2),(4577,4561,1),(4578,0,3),(4578,3159,2),(4578,4561,1),(4579,0,3),(4579,3159,2),(4579,4561,1),(4580,0,3),(4580,3159,2),(4580,4561,1),(4581,0,3),(4581,3159,2),(4581,4561,1),(4582,0,3),(4582,3159,2),(4582,4561,1),(4583,0,3),(4583,3159,2),(4583,4561,1),(4584,0,3),(4584,3159,2),(4584,4561,1),(4585,0,3),(4585,3159,2),(4585,4561,1),(4586,0,3),(4586,3159,2),(4586,4561,1),(4587,0,3),(4587,3159,2),(4587,4561,1),(4588,0,3),(4588,3159,2),(4588,4561,1),(4589,0,3),(4589,3159,2),(4589,4561,1),(4590,0,3),(4590,3159,2),(4590,4561,1),(4591,0,3),(4591,3159,2),(4591,4561,1),(4592,0,3),(4592,3159,2),(4592,4561,1),(4593,0,2),(4593,3159,1),(4594,0,3),(4594,3159,2),(4594,4593,1),(4595,0,3),(4595,3159,2),(4595,4593,1),(4596,0,3),(4596,3159,2),(4596,4593,1),(4597,0,3),(4597,3159,2),(4597,4593,1),(4598,0,3),(4598,3159,2),(4598,4593,1),(4599,0,3),(4599,3159,2),(4599,4593,1),(4600,0,3),(4600,3159,2),(4600,4593,1),(4601,0,3),(4601,3159,2),(4601,4593,1),(4602,0,3),(4602,3159,2),(4602,4593,1),(4603,0,3),(4603,3159,2),(4603,4593,1),(4604,0,3),(4604,3159,2),(4604,4593,1),(4605,0,3),(4605,3159,2),(4605,4593,1),(4606,0,3),(4606,3159,2),(4606,4593,1),(4607,0,3),(4607,3159,2),(4607,4593,1),(4608,0,3),(4608,3159,2),(4608,4593,1),(4609,0,3),(4609,3159,2),(4609,4593,1),(4610,0,3),(4610,3159,2),(4610,4593,1),(4611,0,3),(4611,3159,2),(4611,4593,1),(4612,0,3),(4612,3159,2),(4612,4593,1),(4613,0,3),(4613,3159,2),(4613,4593,1),(4614,0,3),(4614,3159,2),(4614,4593,1),(4615,0,3),(4615,3159,2),(4615,4593,1),(4616,0,3),(4616,3159,2),(4616,4593,1),(4617,0,3),(4617,3159,2),(4617,4593,1),(4618,0,3),(4618,3159,2),(4618,4593,1),(4619,0,3),(4619,3159,2),(4619,4593,1),(4620,0,3),(4620,3159,2),(4620,4593,1),(4621,0,3),(4621,3159,2),(4621,4593,1),(4622,0,3),(4622,3159,2),(4622,4593,1),(4623,0,3),(4623,3159,2),(4623,4593,1),(4624,0,3),(4624,3159,2),(4624,4593,1),(4625,0,3),(4625,3159,2),(4625,4593,1),(4626,0,3),(4626,3159,2),(4626,4593,1),(4627,0,3),(4627,3159,2),(4627,4593,1),(4628,0,3),(4628,3159,2),(4628,4593,1),(4629,0,3),(4629,3159,2),(4629,4593,1),(4630,0,3),(4630,3159,2),(4630,4593,1),(4631,0,3),(4631,3159,2),(4631,4593,1),(4632,0,3),(4632,3159,2),(4632,4593,1),(4633,0,2),(4633,3159,1),(4634,0,3),(4634,3159,2),(4634,4633,1),(4635,0,3),(4635,3159,2),(4635,4633,1),(4636,0,3),(4636,3159,2),(4636,4633,1),(4637,0,3),(4637,3159,2),(4637,4633,1),(4638,0,3),(4638,3159,2),(4638,4633,1),(4639,0,3),(4639,3159,2),(4639,4633,1),(4640,0,3),(4640,3159,2),(4640,4633,1),(4641,0,3),(4641,3159,2),(4641,4633,1),(4642,0,3),(4642,3159,2),(4642,4633,1),(4643,0,3),(4643,3159,2),(4643,4633,1),(4644,0,3),(4644,3159,2),(4644,4633,1),(4645,0,3),(4645,3159,2),(4645,4633,1),(4646,0,3),(4646,3159,2),(4646,4633,1),(4647,0,3),(4647,3159,2),(4647,4633,1),(4648,0,3),(4648,3159,2),(4648,4633,1),(4649,0,3),(4649,3159,2),(4649,4633,1),(4650,0,3),(4650,3159,2),(4650,4633,1),(4651,0,3),(4651,3159,2),(4651,4633,1),(4652,0,3),(4652,3159,2),(4652,4633,1),(4653,0,3),(4653,3159,2),(4653,4633,1),(4654,0,3),(4654,3159,2),(4654,4633,1),(4655,0,3),(4655,3159,2),(4655,4633,1),(4656,0,3),(4656,3159,2),(4656,4633,1),(4657,0,2),(4657,3159,1),(4658,0,3),(4658,3159,2),(4658,4657,1),(4659,0,3),(4659,3159,2),(4659,4657,1),(4660,0,3),(4660,3159,2),(4660,4657,1),(4661,0,3),(4661,3159,2),(4661,4657,1),(4662,0,3),(4662,3159,2),(4662,4657,1),(4663,0,3),(4663,3159,2),(4663,4657,1),(4664,0,3),(4664,3159,2),(4664,4657,1),(4665,0,3),(4665,3159,2),(4665,4657,1),(4666,0,3),(4666,3159,2),(4666,4657,1),(4667,0,3),(4667,3159,2),(4667,4657,1),(4668,0,3),(4668,3159,2),(4668,4657,1),(4669,0,3),(4669,3159,2),(4669,4657,1),(4670,0,3),(4670,3159,2),(4670,4657,1),(4671,0,3),(4671,3159,2),(4671,4657,1),(4672,0,3),(4672,3159,2),(4672,4657,1),(4673,0,3),(4673,3159,2),(4673,4657,1),(4674,0,3),(4674,3159,2),(4674,4657,1),(4675,0,3),(4675,3159,2),(4675,4657,1),(4676,0,3),(4676,3159,2),(4676,4657,1),(4677,0,3),(4677,3159,2),(4677,4657,1),(4678,0,3),(4678,3159,2),(4678,4657,1),(4679,0,3),(4679,3159,2),(4679,4657,1),(4680,0,3),(4680,3159,2),(4680,4657,1),(4681,0,3),(4681,3159,2),(4681,4657,1),(4682,0,3),(4682,3159,2),(4682,4657,1),(4683,0,3),(4683,3159,2),(4683,4657,1),(4684,0,3),(4684,3159,2),(4684,4657,1),(4685,0,3),(4685,3159,2),(4685,4657,1),(4686,0,3),(4686,3159,2),(4686,4657,1),(4687,0,3),(4687,3159,2),(4687,4657,1),(4688,0,3),(4688,3159,2),(4688,4657,1),(4689,0,2),(4689,3159,1),(4690,0,3),(4690,3159,2),(4690,4689,1),(4691,0,3),(4691,3159,2),(4691,4689,1),(4692,0,3),(4692,3159,2),(4692,4689,1),(4693,0,3),(4693,3159,2),(4693,4689,1),(4694,0,3),(4694,3159,2),(4694,4689,1),(4695,0,3),(4695,3159,2),(4695,4689,1),(4696,0,3),(4696,3159,2),(4696,4689,1),(4697,0,3),(4697,3159,2),(4697,4689,1),(4698,0,3),(4698,3159,2),(4698,4689,1),(4699,0,3),(4699,3159,2),(4699,4689,1),(4700,0,3),(4700,3159,2),(4700,4689,1),(4701,0,3),(4701,3159,2),(4701,4689,1),(4702,0,3),(4702,3159,2),(4702,4689,1),(4703,0,3),(4703,3159,2),(4703,4689,1),(4704,0,3),(4704,3159,2),(4704,4689,1),(4705,0,3),(4705,3159,2),(4705,4689,1),(4706,0,3),(4706,3159,2),(4706,4689,1),(4707,0,3),(4707,3159,2),(4707,4689,1),(4708,0,3),(4708,3159,2),(4708,4689,1),(4709,0,3),(4709,3159,2),(4709,4689,1),(4710,0,3),(4710,3159,2),(4710,4689,1),(4711,0,3),(4711,3159,2),(4711,4689,1),(4712,0,3),(4712,3159,2),(4712,4689,1),(4713,0,3),(4713,3159,2),(4713,4689,1),(4714,0,3),(4714,3159,2),(4714,4689,1),(4715,0,3),(4715,3159,2),(4715,4689,1),(4716,0,3),(4716,3159,2),(4716,4689,1),(4717,0,3),(4717,3159,2),(4717,4689,1),(4718,0,3),(4718,3159,2),(4718,4689,1),(4719,0,3),(4719,3159,2),(4719,4689,1),(4720,0,3),(4720,3159,2),(4720,4689,1),(4721,0,3),(4721,3159,2),(4721,4689,1),(4722,0,3),(4722,3159,2),(4722,4689,1),(4723,0,3),(4723,3159,2),(4723,4689,1),(4724,0,3),(4724,3159,2),(4724,4689,1),(4725,0,3),(4725,3159,2),(4725,4689,1),(4726,0,3),(4726,3159,2),(4726,4689,1),(4727,0,3),(4727,3159,2),(4727,4689,1),(4728,0,3),(4728,3159,2),(4728,4689,1),(4729,0,3),(4729,3159,2),(4729,4689,1),(4730,0,3),(4730,3159,2),(4730,4689,1),(4731,0,3),(4731,3159,2),(4731,4689,1),(4732,0,3),(4732,3159,2),(4732,4689,1),(4733,0,3),(4733,3159,2),(4733,4689,1),(4734,0,2),(4734,3159,1),(4735,0,3),(4735,3159,2),(4735,4734,1),(4736,0,3),(4736,3159,2),(4736,4734,1),(4737,0,3),(4737,3159,2),(4737,4734,1),(4738,0,3),(4738,3159,2),(4738,4734,1),(4739,0,3),(4739,3159,2),(4739,4734,1),(4740,0,3),(4740,3159,2),(4740,4734,1),(4741,0,3),(4741,3159,2),(4741,4734,1),(4742,0,3),(4742,3159,2),(4742,4734,1),(4743,0,3),(4743,3159,2),(4743,4734,1),(4744,0,3),(4744,3159,2),(4744,4734,1),(4745,0,3),(4745,3159,2),(4745,4734,1),(4746,0,3),(4746,3159,2),(4746,4734,1),(4747,0,3),(4747,3159,2),(4747,4734,1),(4748,0,3),(4748,3159,2),(4748,4734,1),(4749,0,3),(4749,3159,2),(4749,4734,1),(4750,0,3),(4750,3159,2),(4750,4734,1),(4751,0,3),(4751,3159,2),(4751,4734,1),(4752,0,3),(4752,3159,2),(4752,4734,1),(4753,0,3),(4753,3159,2),(4753,4734,1),(4754,0,3),(4754,3159,2),(4754,4734,1),(4755,0,3),(4755,3159,2),(4755,4734,1),(4756,0,3),(4756,3159,2),(4756,4734,1),(4757,0,3),(4757,3159,2),(4757,4734,1),(4758,0,3),(4758,3159,2),(4758,4734,1),(4759,0,3),(4759,3159,2),(4759,4734,1),(4760,0,3),(4760,3159,2),(4760,4734,1),(4761,0,3),(4761,3159,2),(4761,4734,1),(4762,0,3),(4762,3159,2),(4762,4734,1),(4763,0,3),(4763,3159,2),(4763,4734,1),(4764,0,3),(4764,3159,2),(4764,4734,1),(4765,0,3),(4765,3159,2),(4765,4734,1),(4766,0,3),(4766,3159,2),(4766,4734,1),(4767,0,3),(4767,3159,2),(4767,4734,1),(4768,0,3),(4768,3159,2),(4768,4734,1),(4769,0,3),(4769,3159,2),(4769,4734,1),(4770,0,3),(4770,3159,2),(4770,4734,1),(4771,0,3),(4771,3159,2),(4771,4734,1),(4772,0,3),(4772,3159,2),(4772,4734,1),(4773,0,2),(4773,3159,1),(4774,0,3),(4774,3159,2),(4774,4773,1),(4775,0,3),(4775,3159,2),(4775,4773,1),(4776,0,3),(4776,3159,2),(4776,4773,1),(4777,0,3),(4777,3159,2),(4777,4773,1),(4778,0,3),(4778,3159,2),(4778,4773,1),(4779,0,3),(4779,3159,2),(4779,4773,1),(4780,0,3),(4780,3159,2),(4780,4773,1),(4781,0,3),(4781,3159,2),(4781,4773,1),(4782,0,3),(4782,3159,2),(4782,4773,1),(4783,0,3),(4783,3159,2),(4783,4773,1),(4784,0,3),(4784,3159,2),(4784,4773,1),(4785,0,3),(4785,3159,2),(4785,4773,1),(4786,0,3),(4786,3159,2),(4786,4773,1),(4787,0,3),(4787,3159,2),(4787,4773,1),(4788,0,3),(4788,3159,2),(4788,4773,1),(4789,0,3),(4789,3159,2),(4789,4773,1),(4790,0,3),(4790,3159,2),(4790,4773,1),(4791,0,3),(4791,3159,2),(4791,4773,1),(4792,0,3),(4792,3159,2),(4792,4773,1),(4793,0,3),(4793,3159,2),(4793,4773,1),(4794,0,3),(4794,3159,2),(4794,4773,1),(4795,0,3),(4795,3159,2),(4795,4773,1),(4796,0,3),(4796,3159,2),(4796,4773,1),(4797,0,3),(4797,3159,2),(4797,4773,1),(4798,0,3),(4798,3159,2),(4798,4773,1),(4799,0,3),(4799,3159,2),(4799,4773,1),(4800,0,2),(4800,3159,1),(4801,0,3),(4801,3159,2),(4801,4800,1),(4802,0,3),(4802,3159,2),(4802,4800,1),(4803,0,3),(4803,3159,2),(4803,4800,1),(4804,0,3),(4804,3159,2),(4804,4800,1),(4805,0,3),(4805,3159,2),(4805,4800,1),(4806,0,3),(4806,3159,2),(4806,4800,1),(4807,0,3),(4807,3159,2),(4807,4800,1),(4808,0,3),(4808,3159,2),(4808,4800,1),(4809,0,3),(4809,3159,2),(4809,4800,1),(4810,0,3),(4810,3159,2),(4810,4800,1),(4811,0,3),(4811,3159,2),(4811,4800,1),(4812,0,3),(4812,3159,2),(4812,4800,1),(4813,0,3),(4813,3159,2),(4813,4800,1),(4814,0,3),(4814,3159,2),(4814,4800,1),(4815,0,3),(4815,3159,2),(4815,4800,1),(4816,0,3),(4816,3159,2),(4816,4800,1),(4817,0,3),(4817,3159,2),(4817,4800,1),(4818,0,3),(4818,3159,2),(4818,4800,1),(4819,0,3),(4819,3159,2),(4819,4800,1),(4820,0,3),(4820,3159,2),(4820,4800,1),(4821,0,3),(4821,3159,2),(4821,4800,1),(4822,0,3),(4822,3159,2),(4822,4800,1),(4823,0,3),(4823,3159,2),(4823,4800,1),(4824,0,3),(4824,3159,2),(4824,4800,1),(4825,0,3),(4825,3159,2),(4825,4800,1),(4826,0,3),(4826,3159,2),(4826,4800,1),(4827,0,3),(4827,3159,2),(4827,4800,1),(4828,0,3),(4828,3159,2),(4828,4800,1),(4829,0,3),(4829,3159,2),(4829,4800,1),(4830,0,3),(4830,3159,2),(4830,4800,1),(4831,0,3),(4831,3159,2),(4831,4800,1),(4832,0,3),(4832,3159,2),(4832,4800,1),(4833,0,3),(4833,3159,2),(4833,4800,1),(4834,0,3),(4834,3159,2),(4834,4800,1),(4835,0,3),(4835,3159,2),(4835,4800,1),(4836,0,3),(4836,3159,2),(4836,4800,1),(4837,0,3),(4837,3159,2),(4837,4800,1),(4838,0,3),(4838,3159,2),(4838,4800,1),(4839,0,3),(4839,3159,2),(4839,4800,1),(4840,0,3),(4840,3159,2),(4840,4800,1),(4841,0,3),(4841,3159,2),(4841,4800,1),(4842,0,3),(4842,3159,2),(4842,4800,1),(4843,0,3),(4843,3159,2),(4843,4800,1),(4844,0,3),(4844,3159,2),(4844,4800,1),(4845,0,3),(4845,3159,2),(4845,4800,1),(4846,0,3),(4846,3159,2),(4846,4800,1),(4847,0,3),(4847,3159,2),(4847,4800,1),(4848,0,3),(4848,3159,2),(4848,4800,1),(4849,0,3),(4849,3159,2),(4849,4800,1),(4850,0,3),(4850,3159,2),(4850,4800,1),(4851,0,3),(4851,3159,2),(4851,4800,1),(4852,0,3),(4852,3159,2),(4852,4800,1),(4853,0,3),(4853,3159,2),(4853,4800,1),(4854,0,3),(4854,3159,2),(4854,4800,1),(4855,0,3),(4855,3159,2),(4855,4800,1),(4856,0,3),(4856,3159,2),(4856,4800,1),(4857,0,3),(4857,3159,2),(4857,4800,1),(4858,0,3),(4858,3159,2),(4858,4800,1),(4859,0,3),(4859,3159,2),(4859,4800,1),(4860,0,3),(4860,3159,2),(4860,4800,1),(4861,0,2),(4861,3159,1),(4862,0,3),(4862,3159,2),(4862,4861,1),(4863,0,3),(4863,3159,2),(4863,4861,1),(4864,0,3),(4864,3159,2),(4864,4861,1),(4865,0,3),(4865,3159,2),(4865,4861,1),(4866,0,3),(4866,3159,2),(4866,4861,1),(4867,0,3),(4867,3159,2),(4867,4861,1),(4868,0,3),(4868,3159,2),(4868,4861,1),(4869,0,3),(4869,3159,2),(4869,4861,1),(4870,0,3),(4870,3159,2),(4870,4861,1),(4871,0,3),(4871,3159,2),(4871,4861,1),(4872,0,3),(4872,3159,2),(4872,4861,1),(4873,0,3),(4873,3159,2),(4873,4861,1),(4874,0,3),(4874,3159,2),(4874,4861,1),(4875,0,3),(4875,3159,2),(4875,4861,1),(4876,0,3),(4876,3159,2),(4876,4861,1),(4877,0,3),(4877,3159,2),(4877,4861,1),(4878,0,3),(4878,3159,2),(4878,4861,1),(4879,0,3),(4879,3159,2),(4879,4861,1),(4880,0,3),(4880,3159,2),(4880,4861,1),(4881,0,3),(4881,3159,2),(4881,4861,1),(4882,0,3),(4882,3159,2),(4882,4861,1),(4883,0,3),(4883,3159,2),(4883,4861,1),(4884,0,3),(4884,3159,2),(4884,4861,1),(4885,0,3),(4885,3159,2),(4885,4861,1),(4886,0,3),(4886,3159,2),(4886,4861,1),(4887,0,3),(4887,3159,2),(4887,4861,1),(4888,0,3),(4888,3159,2),(4888,4861,1),(4889,0,3),(4889,3159,2),(4889,4861,1),(4890,0,3),(4890,3159,2),(4890,4861,1),(4891,0,2),(4891,3159,1),(4892,0,3),(4892,3159,2),(4892,4891,1),(4893,0,3),(4893,3159,2),(4893,4891,1),(4894,0,3),(4894,3159,2),(4894,4891,1),(4895,0,3),(4895,3159,2),(4895,4891,1),(4896,0,3),(4896,3159,2),(4896,4891,1),(4897,0,3),(4897,3159,2),(4897,4891,1),(4898,0,3),(4898,3159,2),(4898,4891,1),(4899,0,3),(4899,3159,2),(4899,4891,1),(4900,0,3),(4900,3159,2),(4900,4891,1),(4901,0,3),(4901,3159,2),(4901,4891,1),(4902,0,3),(4902,3159,2),(4902,4891,1),(4903,0,3),(4903,3159,2),(4903,4891,1),(4904,0,3),(4904,3159,2),(4904,4891,1),(4905,0,3),(4905,3159,2),(4905,4891,1),(4906,0,3),(4906,3159,2),(4906,4891,1),(4907,0,3),(4907,3159,2),(4907,4891,1),(4908,0,3),(4908,3159,2),(4908,4891,1),(4909,0,3),(4909,3159,2),(4909,4891,1),(4910,0,3),(4910,3159,2),(4910,4891,1),(4911,0,3),(4911,3159,2),(4911,4891,1),(4912,0,3),(4912,3159,2),(4912,4891,1),(4913,0,3),(4913,3159,2),(4913,4891,1),(4914,0,3),(4914,3159,2),(4914,4891,1),(4915,0,3),(4915,3159,2),(4915,4891,1),(4916,0,3),(4916,3159,2),(4916,4891,1),(4917,0,3),(4917,3159,2),(4917,4891,1),(4918,0,3),(4918,3159,2),(4918,4891,1),(4919,0,3),(4919,3159,2),(4919,4891,1),(4920,0,3),(4920,3159,2),(4920,4891,1),(4921,0,3),(4921,3159,2),(4921,4891,1),(4922,0,3),(4922,3159,2),(4922,4891,1),(4923,0,3),(4923,3159,2),(4923,4891,1),(4924,0,3),(4924,3159,2),(4924,4891,1),(4925,0,2),(4925,3159,1),(4926,0,3),(4926,3159,2),(4926,4925,1),(4927,0,3),(4927,3159,2),(4927,4925,1),(4928,0,3),(4928,3159,2),(4928,4925,1),(4929,0,3),(4929,3159,2),(4929,4925,1),(4930,0,3),(4930,3159,2),(4930,4925,1),(4931,0,3),(4931,3159,2),(4931,4925,1),(4932,0,3),(4932,3159,2),(4932,4925,1),(4933,0,3),(4933,3159,2),(4933,4925,1),(4934,0,3),(4934,3159,2),(4934,4925,1),(4935,0,3),(4935,3159,2),(4935,4925,1),(4936,0,3),(4936,3159,2),(4936,4925,1),(4937,0,3),(4937,3159,2),(4937,4925,1),(4938,0,3),(4938,3159,2),(4938,4925,1),(4939,0,3),(4939,3159,2),(4939,4925,1),(4940,0,3),(4940,3159,2),(4940,4925,1),(4941,0,3),(4941,3159,2),(4941,4925,1),(4942,0,3),(4942,3159,2),(4942,4925,1),(4943,0,3),(4943,3159,2),(4943,4925,1),(4944,0,3),(4944,3159,2),(4944,4925,1),(4945,0,3),(4945,3159,2),(4945,4925,1),(4946,0,3),(4946,3159,2),(4946,4925,1),(4947,0,3),(4947,3159,2),(4947,4925,1),(4948,0,3),(4948,3159,2),(4948,4925,1),(4949,0,3),(4949,3159,2),(4949,4925,1),(4950,0,3),(4950,3159,2),(4950,4925,1),(4952,0,3),(4952,3159,2),(4952,4925,1),(4953,0,3),(4953,3159,2),(4953,4925,1),(4954,0,3),(4954,3159,2),(4954,4925,1),(4955,0,3),(4955,3159,2),(4955,4925,1),(4956,0,3),(4956,3159,2),(4956,4925,1),(4957,0,3),(4957,3159,2),(4957,4925,1),(4958,0,3),(4958,3159,2),(4958,4925,1),(4959,0,3),(4959,3159,2),(4959,4925,1),(4960,0,3),(4960,3159,2),(4960,4925,1),(4961,0,3),(4961,3159,2),(4961,4925,1),(4962,0,3),(4962,3159,2),(4962,4925,1),(4964,0,3),(4964,3159,2),(4964,4925,1),(4965,0,3),(4965,3159,2),(4965,4925,1),(4966,0,3),(4966,3159,2),(4966,4925,1),(4967,0,3),(4967,3159,2),(4967,4925,1),(4968,0,3),(4968,3159,2),(4968,4925,1),(4969,0,2),(4969,3159,1),(4970,0,3),(4970,3159,2),(4970,4969,1),(4971,0,3),(4971,3159,2),(4971,4969,1),(4972,0,3),(4972,3159,2),(4972,4969,1),(4973,0,3),(4973,3159,2),(4973,4969,1),(4974,0,3),(4974,3159,2),(4974,4969,1),(4975,0,3),(4975,3159,2),(4975,4969,1),(4976,0,3),(4976,3159,2),(4976,4969,1),(4977,0,3),(4977,3159,2),(4977,4969,1),(4978,0,3),(4978,3159,2),(4978,4969,1),(4979,0,3),(4979,3159,2),(4979,4969,1),(4980,0,3),(4980,3159,2),(4980,4969,1),(4981,0,3),(4981,3159,2),(4981,4969,1),(4982,0,3),(4982,3159,2),(4982,4969,1),(4983,0,3),(4983,3159,2),(4983,4969,1),(4984,0,3),(4984,3159,2),(4984,4969,1),(4985,0,3),(4985,3159,2),(4985,4969,1),(4986,0,3),(4986,3159,2),(4986,4969,1),(4987,0,3),(4987,3159,2),(4987,4969,1),(4988,0,3),(4988,3159,2),(4988,4969,1),(4989,0,3),(4989,3159,2),(4989,4969,1),(4990,0,3),(4990,3159,2),(4990,4969,1),(4991,0,3),(4991,3159,2),(4991,4969,1),(4992,0,3),(4992,3159,2),(4992,4969,1),(4993,0,3),(4993,3159,2),(4993,4969,1),(4994,0,3),(4994,3159,2),(4994,4969,1),(4995,0,3),(4995,3159,2),(4995,4969,1),(4996,0,3),(4996,3159,2),(4996,4969,1),(4997,0,3),(4997,3159,2),(4997,4969,1),(4998,0,3),(4998,3159,2),(4998,4969,1),(4999,0,3),(4999,3159,2),(4999,4969,1),(5000,0,3),(5000,3159,2),(5000,4969,1),(5001,0,3),(5001,3159,2),(5001,4969,1),(5002,0,3),(5002,3159,2),(5002,4969,1),(5003,0,3),(5003,3159,2),(5003,4969,1),(5004,0,3),(5004,3159,2),(5004,4969,1),(5005,0,3),(5005,3159,2),(5005,4969,1),(5006,0,3),(5006,3159,2),(5006,4969,1),(5007,0,3),(5007,3159,2),(5007,4969,1),(5008,0,3),(5008,3159,2),(5008,4969,1),(5009,0,3),(5009,3159,2),(5009,4969,1),(5010,0,3),(5010,3159,2),(5010,4969,1),(5011,0,2),(5011,3159,1),(5012,0,3),(5012,3159,2),(5012,5011,1),(5013,0,3),(5013,3159,2),(5013,5011,1),(5014,0,3),(5014,3159,2),(5014,5011,1),(5015,0,3),(5015,3159,2),(5015,5011,1),(5016,0,3),(5016,3159,2),(5016,5011,1),(5017,0,3),(5017,3159,2),(5017,5011,1),(5018,0,3),(5018,3159,2),(5018,5011,1),(5019,0,3),(5019,3159,2),(5019,5011,1),(5020,0,3),(5020,3159,2),(5020,5011,1),(5021,0,3),(5021,3159,2),(5021,5011,1),(5022,0,3),(5022,3159,2),(5022,5011,1),(5023,0,3),(5023,3159,2),(5023,5011,1),(5024,0,3),(5024,3159,2),(5024,5011,1),(5025,0,3),(5025,3159,2),(5025,5011,1),(5026,0,3),(5026,3159,2),(5026,5011,1),(5027,0,3),(5027,3159,2),(5027,5011,1),(5028,0,3),(5028,3159,2),(5028,5011,1),(5029,0,3),(5029,3159,2),(5029,5011,1),(5030,0,3),(5030,3159,2),(5030,5011,1),(5031,0,3),(5031,3159,2),(5031,5011,1),(5032,0,3),(5032,3159,2),(5032,5011,1),(5033,0,3),(5033,3159,2),(5033,5011,1),(5034,0,3),(5034,3159,2),(5034,5011,1),(5035,0,3),(5035,3159,2),(5035,5011,1),(5036,0,3),(5036,3159,2),(5036,5011,1),(5037,0,3),(5037,3159,2),(5037,5011,1),(5038,0,3),(5038,3159,2),(5038,5011,1),(5039,0,3),(5039,3159,2),(5039,5011,1),(5040,0,3),(5040,3159,2),(5040,5011,1),(5041,0,3),(5041,3159,2),(5041,5011,1),(5042,0,3),(5042,3159,2),(5042,5011,1),(5043,0,3),(5043,3159,2),(5043,5011,1),(5044,0,3),(5044,3159,2),(5044,5011,1),(5045,0,3),(5045,3159,2),(5045,5011,1),(5046,0,3),(5046,3159,2),(5046,5011,1),(5047,0,3),(5047,3159,2),(5047,5011,1),(5048,0,3),(5048,3159,2),(5048,5011,1),(5049,0,3),(5049,3159,2),(5049,5011,1),(5050,0,3),(5050,3159,2),(5050,5011,1),(5051,0,3),(5051,3159,2),(5051,5011,1),(5052,0,2),(5052,3159,1),(5053,0,3),(5053,3159,2),(5053,5052,1),(5054,0,3),(5054,3159,2),(5054,5052,1),(5055,0,3),(5055,3159,2),(5055,5052,1),(5056,0,3),(5056,3159,2),(5056,5052,1),(5057,0,3),(5057,3159,2),(5057,5052,1),(5058,0,3),(5058,3159,2),(5058,5052,1),(5059,0,3),(5059,3159,2),(5059,5052,1),(5060,0,3),(5060,3159,2),(5060,5052,1),(5061,0,3),(5061,3159,2),(5061,5052,1),(5062,0,3),(5062,3159,2),(5062,5052,1),(5063,0,3),(5063,3159,2),(5063,5052,1),(5064,0,3),(5064,3159,2),(5064,5052,1),(5065,0,3),(5065,3159,2),(5065,5052,1),(5066,0,3),(5066,3159,2),(5066,5052,1),(5067,0,3),(5067,3159,2),(5067,5052,1),(5068,0,3),(5068,3159,2),(5068,5052,1),(5069,0,3),(5069,3159,2),(5069,5052,1),(5070,0,3),(5070,3159,2),(5070,5052,1),(5071,0,3),(5071,3159,2),(5071,5052,1),(5072,0,3),(5072,3159,2),(5072,5052,1),(5073,0,3),(5073,3159,2),(5073,5052,1),(5074,0,3),(5074,3159,2),(5074,5052,1),(5075,0,3),(5075,3159,2),(5075,5052,1),(5076,0,3),(5076,3159,2),(5076,5052,1),(5077,0,3),(5077,3159,2),(5077,5052,1),(5078,0,3),(5078,3159,2),(5078,5052,1),(5079,0,3),(5079,3159,2),(5079,5052,1),(5080,0,2),(5080,3159,1),(5081,0,3),(5081,3159,2),(5081,5080,1),(5082,0,3),(5082,3159,2),(5082,5080,1),(5083,0,3),(5083,3159,2),(5083,5080,1),(5084,0,3),(5084,3159,2),(5084,5080,1),(5085,0,3),(5085,3159,2),(5085,5080,1),(5086,0,3),(5086,3159,2),(5086,5080,1),(5087,0,3),(5087,3159,2),(5087,5080,1),(5088,0,3),(5088,3159,2),(5088,5080,1),(5089,0,3),(5089,3159,2),(5089,5080,1),(5090,0,3),(5090,3159,2),(5090,5080,1),(5091,0,3),(5091,3159,2),(5091,5080,1),(5092,0,3),(5092,3159,2),(5092,5080,1),(5093,0,3),(5093,3159,2),(5093,5080,1),(5094,0,3),(5094,3159,2),(5094,5080,1),(5095,0,3),(5095,3159,2),(5095,5080,1),(5096,0,3),(5096,3159,2),(5096,5080,1),(5097,0,3),(5097,3159,2),(5097,5080,1),(5098,0,3),(5098,3159,2),(5098,5080,1),(5099,0,3),(5099,3159,2),(5099,5080,1),(5100,0,3),(5100,3159,2),(5100,5080,1),(5101,0,3),(5101,3159,2),(5101,5080,1),(5102,0,3),(5102,3159,2),(5102,5080,1),(5103,0,3),(5103,3159,2),(5103,5080,1),(5104,0,3),(5104,3159,2),(5104,5080,1),(5105,0,3),(5105,3159,2),(5105,5080,1),(5106,0,3),(5106,3159,2),(5106,5080,1),(5107,0,3),(5107,3159,2),(5107,5080,1),(5108,0,3),(5108,3159,2),(5108,5080,1),(5109,0,3),(5109,3159,2),(5109,5080,1),(5110,0,3),(5110,3159,2),(5110,5080,1),(5111,0,3),(5111,3159,2),(5111,5080,1),(5112,0,3),(5112,3159,2),(5112,5080,1),(5113,0,3),(5113,3159,2),(5113,5080,1),(5114,0,3),(5114,3159,2),(5114,5080,1),(5115,0,3),(5115,3159,2),(5115,5080,1),(5116,0,3),(5116,3159,2),(5116,5080,1),(5117,0,3),(5117,3159,2),(5117,5080,1),(5118,0,3),(5118,3159,2),(5118,5080,1),(5119,0,3),(5119,3159,2),(5119,5080,1),(5120,0,3),(5120,3159,2),(5120,5080,1),(5121,0,3),(5121,3159,2),(5121,5080,1),(5122,0,3),(5122,3159,2),(5122,5080,1),(5123,0,3),(5123,3159,2),(5123,5080,1),(5124,0,3),(5124,3159,2),(5124,5080,1),(5125,0,3),(5125,3159,2),(5125,5080,1),(5126,0,3),(5126,3159,2),(5126,5080,1),(5127,0,3),(5127,3159,2),(5127,5080,1),(5128,0,3),(5128,3159,2),(5128,5080,1),(5129,0,3),(5129,3159,2),(5129,5080,1),(5130,0,3),(5130,3159,2),(5130,5080,1),(5131,0,3),(5131,3159,2),(5131,5080,1),(5132,0,3),(5132,3159,2),(5132,5080,1),(5133,0,3),(5133,3159,2),(5133,5080,1),(5134,0,3),(5134,3159,2),(5134,5080,1),(5135,0,3),(5135,3159,2),(5135,5080,1),(5136,0,3),(5136,3159,2),(5136,5080,1),(5137,0,3),(5137,3159,2),(5137,5080,1),(5138,0,3),(5138,3159,2),(5138,5080,1),(5139,0,3),(5139,3159,2),(5139,5080,1),(5140,0,3),(5140,3159,2),(5140,5080,1),(5141,0,3),(5141,3159,2),(5141,5080,1),(5142,0,3),(5142,3159,2),(5142,5080,1),(5143,0,3),(5143,3159,2),(5143,5080,1),(5144,0,3),(5144,3159,2),(5144,5080,1),(5145,0,3),(5145,3159,2),(5145,5080,1),(5146,0,3),(5146,3159,2),(5146,5080,1),(5147,0,3),(5147,3159,2),(5147,5080,1),(5148,0,3),(5148,3159,2),(5148,5080,1),(5149,0,3),(5149,3159,2),(5149,5080,1),(5150,0,3),(5150,3159,2),(5150,5080,1),(5151,0,2),(5151,3159,1),(5152,0,3),(5152,3159,2),(5152,5151,1),(5153,0,3),(5153,3159,2),(5153,5151,1),(5154,0,3),(5154,3159,2),(5154,5151,1),(5155,0,3),(5155,3159,2),(5155,5151,1),(5156,0,3),(5156,3159,2),(5156,5151,1),(5157,0,3),(5157,3159,2),(5157,5151,1),(5158,0,3),(5158,3159,2),(5158,5151,1),(5159,0,3),(5159,3159,2),(5159,5151,1),(5160,0,3),(5160,3159,2),(5160,5151,1),(5161,0,2),(5161,3159,1),(5162,0,3),(5162,3159,2),(5162,5161,1),(5163,0,3),(5163,3159,2),(5163,5161,1),(5164,0,3),(5164,3159,2),(5164,5161,1),(5165,0,3),(5165,3159,2),(5165,5161,1),(5166,0,3),(5166,3159,2),(5166,5161,1),(5167,0,3),(5167,3159,2),(5167,5161,1),(5168,0,3),(5168,3159,2),(5168,5161,1),(5169,0,3),(5169,3159,2),(5169,5161,1),(5170,0,3),(5170,3159,2),(5170,5161,1),(5171,0,3),(5171,3159,2),(5171,5161,1),(5172,0,3),(5172,3159,2),(5172,5161,1),(5173,0,3),(5173,3159,2),(5173,5161,1),(5174,0,3),(5174,3159,2),(5174,5161,1),(5175,0,3),(5175,3159,2),(5175,5161,1),(5176,0,3),(5176,3159,2),(5176,5161,1),(5177,0,3),(5177,3159,2),(5177,5161,1),(5178,0,3),(5178,3159,2),(5178,5161,1),(5179,0,3),(5179,3159,2),(5179,5161,1),(5180,0,3),(5180,3159,2),(5180,5161,1),(5181,0,3),(5181,3159,2),(5181,5161,1),(5182,0,3),(5182,3159,2),(5182,5161,1),(5183,0,3),(5183,3159,2),(5183,5161,1),(5184,0,3),(5184,3159,2),(5184,5161,1),(5185,0,3),(5185,3159,2),(5185,5161,1),(5186,0,3),(5186,3159,2),(5186,5161,1),(5187,0,3),(5187,3159,2),(5187,5161,1),(5188,0,3),(5188,3159,2),(5188,5161,1),(5189,0,3),(5189,3159,2),(5189,5161,1),(5190,0,3),(5190,3159,2),(5190,5161,1),(5191,0,2),(5191,3159,1),(5192,0,3),(5192,3159,2),(5192,5191,1),(5193,0,3),(5193,3159,2),(5193,5191,1),(5194,0,3),(5194,3159,2),(5194,5191,1),(5195,0,3),(5195,3159,2),(5195,5191,1),(5196,0,3),(5196,3159,2),(5196,5191,1),(5197,0,3),(5197,3159,2),(5197,5191,1),(5198,0,3),(5198,3159,2),(5198,5191,1),(5199,0,3),(5199,3159,2),(5199,5191,1),(5200,0,3),(5200,3159,2),(5200,5191,1),(5201,0,3),(5201,3159,2),(5201,5191,1),(5202,0,3),(5202,3159,2),(5202,5191,1),(5203,0,3),(5203,3159,2),(5203,5191,1),(5204,0,3),(5204,3159,2),(5204,5191,1),(5205,0,3),(5205,3159,2),(5205,5191,1),(5206,0,3),(5206,3159,2),(5206,5191,1),(5207,0,3),(5207,3159,2),(5207,5191,1),(5208,0,3),(5208,3159,2),(5208,5191,1),(5209,0,3),(5209,3159,2),(5209,5191,1),(5210,0,3),(5210,3159,2),(5210,5191,1),(5211,0,3),(5211,3159,2),(5211,5191,1),(5212,0,3),(5212,3159,2),(5212,5191,1),(5213,0,3),(5213,3159,2),(5213,5191,1),(5214,0,3),(5214,3159,2),(5214,5191,1),(5215,0,3),(5215,3159,2),(5215,5191,1),(5216,0,3),(5216,3159,2),(5216,5191,1),(5217,0,3),(5217,3159,2),(5217,5191,1),(5218,0,3),(5218,3159,2),(5218,5191,1),(5219,0,3),(5219,3159,2),(5219,5191,1),(5220,0,3),(5220,3159,2),(5220,5191,1),(5221,0,3),(5221,3159,2),(5221,5191,1),(5222,0,3),(5222,3159,2),(5222,5191,1),(5223,0,3),(5223,3159,2),(5223,5191,1),(5224,0,3),(5224,3159,2),(5224,5191,1),(5225,0,2),(5225,3159,1),(5226,0,3),(5226,3159,2),(5226,5225,1),(5227,0,3),(5227,3159,2),(5227,5225,1),(5228,0,3),(5228,3159,2),(5228,5225,1),(5229,0,3),(5229,3159,2),(5229,5225,1),(5230,0,3),(5230,3159,2),(5230,5225,1),(5231,0,3),(5231,3159,2),(5231,5225,1),(5232,0,3),(5232,3159,2),(5232,5225,1),(5233,0,3),(5233,3159,2),(5233,5225,1),(5234,0,3),(5234,3159,2),(5234,5225,1),(5235,0,3),(5235,3159,2),(5235,5225,1),(5236,0,3),(5236,3159,2),(5236,5225,1),(5237,0,3),(5237,3159,2),(5237,5225,1),(5238,0,3),(5238,3159,2),(5238,5225,1),(5239,0,3),(5239,3159,2),(5239,5225,1),(5240,0,3),(5240,3159,2),(5240,5225,1),(5241,0,3),(5241,3159,2),(5241,5225,1),(5242,0,3),(5242,3159,2),(5242,5225,1),(5243,0,3),(5243,3159,2),(5243,5225,1),(5244,0,3),(5244,3159,2),(5244,5225,1),(5245,0,3),(5245,3159,2),(5245,5225,1),(5246,0,2),(5246,3159,1),(5247,0,3),(5247,3159,2),(5247,5246,1),(5248,0,3),(5248,3159,2),(5248,5246,1),(5249,0,3),(5249,3159,2),(5249,5246,1),(5250,0,3),(5250,3159,2),(5250,5246,1),(5251,0,3),(5251,3159,2),(5251,5246,1),(5252,0,3),(5252,3159,2),(5252,5246,1),(5253,0,3),(5253,3159,2),(5253,5246,1),(5254,0,3),(5254,3159,2),(5254,5246,1),(5255,0,3),(5255,3159,2),(5255,5246,1),(5256,0,3),(5256,3159,2),(5256,5246,1),(5257,0,3),(5257,3159,2),(5257,5246,1),(5258,0,3),(5258,3159,2),(5258,5246,1),(5259,0,3),(5259,3159,2),(5259,5246,1),(5260,0,3),(5260,3159,2),(5260,5246,1),(5261,0,3),(5261,3159,2),(5261,5246,1),(5262,0,3),(5262,3159,2),(5262,5246,1),(5263,0,3),(5263,3159,2),(5263,5246,1),(5264,0,3),(5264,3159,2),(5264,5246,1),(5265,0,3),(5265,3159,2),(5265,5246,1),(5266,0,3),(5266,3159,2),(5266,5246,1),(5267,0,3),(5267,3159,2),(5267,5246,1),(5268,0,3),(5268,3159,2),(5268,5246,1),(5269,0,3),(5269,3159,2),(5269,5246,1),(5270,0,3),(5270,3159,2),(5270,5246,1),(5271,0,3),(5271,3159,2),(5271,5246,1),(5272,0,3),(5272,3159,2),(5272,5246,1),(5273,0,3),(5273,3159,2),(5273,5246,1),(5274,0,3),(5274,3159,2),(5274,5246,1),(5275,0,3),(5275,3159,2),(5275,5246,1),(5276,0,3),(5276,3159,2),(5276,5246,1),(5277,0,3),(5277,3159,2),(5277,5246,1),(5278,0,3),(5278,3159,2),(5278,5246,1),(5279,0,3),(5279,3159,2),(5279,5246,1),(5280,0,3),(5280,3159,2),(5280,5246,1),(5281,0,3),(5281,3159,2),(5281,5246,1),(5282,0,3),(5282,3159,2),(5282,5246,1),(5283,0,3),(5283,3159,2),(5283,5246,1),(5284,0,3),(5284,3159,2),(5284,5246,1),(5285,0,3),(5285,3159,2),(5285,5246,1),(5286,0,3),(5286,3159,2),(5286,5246,1),(5287,0,3),(5287,3159,2),(5287,5246,1),(5288,0,3),(5288,3159,2),(5288,5246,1),(5289,0,3),(5289,3159,2),(5289,5246,1),(5290,0,3),(5290,3159,2),(5290,5246,1),(5291,0,2),(5291,3159,1),(5292,0,3),(5292,3159,2),(5292,5291,1),(5293,0,3),(5293,3159,2),(5293,5291,1),(5294,0,3),(5294,3159,2),(5294,5291,1),(5295,0,3),(5295,3159,2),(5295,5291,1),(5296,0,3),(5296,3159,2),(5296,5291,1),(5297,0,3),(5297,3159,2),(5297,5291,1),(5298,0,3),(5298,3159,2),(5298,5291,1),(5299,0,3),(5299,3159,2),(5299,5291,1),(5300,0,3),(5300,3159,2),(5300,5291,1),(5301,0,3),(5301,3159,2),(5301,5291,1),(5302,0,3),(5302,3159,2),(5302,5291,1),(5303,0,3),(5303,3159,2),(5303,5291,1),(5304,0,3),(5304,3159,2),(5304,5291,1),(5305,0,3),(5305,3159,2),(5305,5291,1),(5306,0,3),(5306,3159,2),(5306,5291,1),(5307,0,3),(5307,3159,2),(5307,5291,1),(5308,0,3),(5308,3159,2),(5308,5291,1),(5309,0,3),(5309,3159,2),(5309,5291,1),(5310,0,3),(5310,3159,2),(5310,5291,1),(5311,0,3),(5311,3159,2),(5311,5291,1),(5312,0,2),(5312,3159,1),(5313,0,3),(5313,3159,2),(5313,5312,1),(5314,0,3),(5314,3159,2),(5314,5312,1),(5315,0,3),(5315,3159,2),(5315,5312,1),(5316,0,3),(5316,3159,2),(5316,5312,1),(5317,0,3),(5317,3159,2),(5317,5312,1),(5318,0,3),(5318,3159,2),(5318,5312,1),(5319,0,3),(5319,3159,2),(5319,5312,1),(5320,0,3),(5320,3159,2),(5320,5312,1),(5321,0,3),(5321,3159,2),(5321,5312,1),(5322,0,3),(5322,3159,2),(5322,5312,1),(5323,0,3),(5323,3159,2),(5323,5312,1),(5324,0,3),(5324,3159,2),(5324,5312,1),(5325,0,3),(5325,3159,2),(5325,5312,1),(5326,0,2),(5326,3159,1),(5327,0,3),(5327,3159,2),(5327,5326,1),(5328,0,3),(5328,3159,2),(5328,5326,1),(5329,0,3),(5329,3159,2),(5329,5326,1),(5330,0,3),(5330,3159,2),(5330,5326,1),(5331,0,3),(5331,3159,2),(5331,5326,1),(5332,0,3),(5332,3159,2),(5332,5326,1),(5333,0,3),(5333,3159,2),(5333,5326,1),(5334,0,3),(5334,3159,2),(5334,5326,1),(5335,0,3),(5335,3159,2),(5335,5326,1),(5336,0,3),(5336,3159,2),(5336,5326,1),(5337,0,3),(5337,3159,2),(5337,5326,1),(5338,0,3),(5338,3159,2),(5338,5326,1),(5339,0,3),(5339,3159,2),(5339,5326,1),(5340,0,3),(5340,3159,2),(5340,5326,1),(5341,0,3),(5341,3159,2),(5341,5326,1),(5342,0,3),(5342,3159,2),(5342,5326,1),(5343,0,3),(5343,3159,2),(5343,5326,1),(5344,0,3),(5344,3159,2),(5344,5326,1),(5345,0,3),(5345,3159,2),(5345,5326,1),(5346,0,3),(5346,3159,2),(5346,5326,1),(5347,0,3),(5347,3159,2),(5347,5326,1),(5348,0,3),(5348,3159,2),(5348,5326,1),(5349,0,3),(5349,3159,2),(5349,5326,1),(5350,0,3),(5350,3159,2),(5350,5326,1),(5351,0,3),(5351,3159,2),(5351,5326,1),(5352,0,3),(5352,3159,2),(5352,5326,1),(5353,0,3),(5353,3159,2),(5353,5326,1),(5354,0,3),(5354,3159,2),(5354,5326,1),(5355,0,3),(5355,3159,2),(5355,5326,1),(5356,0,2),(5356,3159,1),(5357,0,3),(5357,3159,2),(5357,5356,1),(5358,0,3),(5358,3159,2),(5358,5356,1),(5359,0,3),(5359,3159,2),(5359,5356,1),(5360,0,3),(5360,3159,2),(5360,5356,1),(5361,0,3),(5361,3159,2),(5361,5356,1),(5362,0,3),(5362,3159,2),(5362,5356,1),(5363,0,3),(5363,3159,2),(5363,5356,1),(5364,0,3),(5364,3159,2),(5364,5356,1),(5365,0,3),(5365,3159,2),(5365,5356,1),(5366,0,3),(5366,3159,2),(5366,5356,1),(5367,0,3),(5367,3159,2),(5367,5356,1),(5368,0,3),(5368,3159,2),(5368,5356,1),(5369,0,3),(5369,3159,2),(5369,5356,1),(5370,0,3),(5370,3159,2),(5370,5356,1),(5371,0,3),(5371,3159,2),(5371,5356,1),(5372,0,3),(5372,3159,2),(5372,5356,1),(5373,0,3),(5373,3159,2),(5373,5356,1),(5374,0,3),(5374,3159,2),(5374,5356,1),(5375,0,3),(5375,3159,2),(5375,5356,1),(5376,0,3),(5376,3159,2),(5376,5356,1),(5377,0,3),(5377,3159,2),(5377,5356,1),(5378,0,3),(5378,3159,2),(5378,5356,1),(5379,0,3),(5379,3159,2),(5379,5356,1),(5380,0,3),(5380,3159,2),(5380,5356,1),(5381,0,3),(5381,3159,2),(5381,5356,1),(5382,0,3),(5382,3159,2),(5382,5356,1),(5383,0,3),(5383,3159,2),(5383,5356,1),(5384,0,3),(5384,3159,2),(5384,5356,1),(5385,0,3),(5385,3159,2),(5385,5356,1),(5386,0,3),(5386,3159,2),(5386,5356,1),(5387,0,3),(5387,3159,2),(5387,5356,1),(5388,0,3),(5388,3159,2),(5388,5356,1),(5389,0,3),(5389,3159,2),(5389,5356,1),(5390,0,3),(5390,3159,2),(5390,5356,1),(5391,0,3),(5391,3159,2),(5391,5356,1),(5392,0,3),(5392,3159,2),(5392,5356,1),(5393,0,3),(5393,3159,2),(5393,5356,1),(5394,0,3),(5394,3159,2),(5394,5356,1),(5395,0,3),(5395,3159,2),(5395,5356,1),(5396,0,3),(5396,3159,2),(5396,5356,1),(5397,0,3),(5397,3159,2),(5397,5356,1),(5398,0,3),(5398,3159,2),(5398,5356,1),(5399,0,3),(5399,3159,2),(5399,5356,1),(5400,0,3),(5400,3159,2),(5400,5356,1),(5401,0,3),(5401,3159,2),(5401,5356,1),(5402,0,3),(5402,3159,2),(5402,5356,1),(5403,0,3),(5403,3159,2),(5403,5356,1),(5404,0,2),(5404,3159,1),(5405,0,3),(5405,3159,2),(5405,5404,1),(5406,0,3),(5406,3159,2),(5406,5404,1),(5407,0,3),(5407,3159,2),(5407,5404,1),(5408,0,3),(5408,3159,2),(5408,5404,1),(5409,0,3),(5409,3159,2),(5409,5404,1),(5410,0,3),(5410,3159,2),(5410,5404,1),(5411,0,3),(5411,3159,2),(5411,5404,1),(5412,0,3),(5412,3159,2),(5412,5404,1),(5413,0,3),(5413,3159,2),(5413,5404,1),(5414,0,3),(5414,3159,2),(5414,5404,1),(5415,0,3),(5415,3159,2),(5415,5404,1),(5416,0,3),(5416,3159,2),(5416,5404,1),(5417,0,3),(5417,3159,2),(5417,5404,1),(5418,0,3),(5418,3159,2),(5418,5404,1),(5419,0,3),(5419,3159,2),(5419,5404,1),(5420,0,3),(5420,3159,2),(5420,5404,1),(5421,0,3),(5421,3159,2),(5421,5404,1),(5422,0,3),(5422,3159,2),(5422,5404,1),(5423,0,3),(5423,3159,2),(5423,5404,1),(5424,0,3),(5424,3159,2),(5424,5404,1),(5425,0,3),(5425,3159,2),(5425,5404,1),(5426,0,3),(5426,3159,2),(5426,5404,1),(5427,0,3),(5427,3159,2),(5427,5404,1),(5428,0,3),(5428,3159,2),(5428,5404,1),(5429,0,3),(5429,3159,2),(5429,5404,1),(5430,0,3),(5430,3159,2),(5430,5404,1),(5431,0,3),(5431,3159,2),(5431,5404,1),(5432,0,2),(5432,3159,1),(5433,0,3),(5433,3159,2),(5433,5432,1),(5434,0,3),(5434,3159,2),(5434,5432,1),(5435,0,3),(5435,3159,2),(5435,5432,1),(5436,0,3),(5436,3159,2),(5436,5432,1),(5437,0,3),(5437,3159,2),(5437,5432,1),(5438,0,3),(5438,3159,2),(5438,5432,1),(5439,0,3),(5439,3159,2),(5439,5432,1),(5440,0,3),(5440,3159,2),(5440,5432,1),(5441,0,3),(5441,3159,2),(5441,5432,1),(5442,0,3),(5442,3159,2),(5442,5432,1),(5443,0,3),(5443,3159,2),(5443,5432,1),(5444,0,3),(5444,3159,2),(5444,5432,1),(5445,0,3),(5445,3159,2),(5445,5432,1),(5446,0,3),(5446,3159,2),(5446,5432,1),(5447,0,3),(5447,3159,2),(5447,5432,1),(5448,0,3),(5448,3159,2),(5448,5432,1),(5449,0,3),(5449,3159,2),(5449,5432,1),(5450,0,3),(5450,3159,2),(5450,5432,1),(5451,0,3),(5451,3159,2),(5451,5432,1),(5452,0,3),(5452,3159,2),(5452,5432,1),(5453,0,3),(5453,3159,2),(5453,5432,1),(5454,0,3),(5454,3159,2),(5454,5432,1),(5455,0,3),(5455,3159,2),(5455,5432,1),(5456,0,3),(5456,3159,2),(5456,5432,1),(5457,0,3),(5457,3159,2),(5457,5432,1),(5458,0,2),(5458,3159,1),(5459,0,3),(5459,3159,2),(5459,5458,1),(5460,0,3),(5460,3159,2),(5460,5458,1),(5461,0,3),(5461,3159,2),(5461,5458,1),(5462,0,3),(5462,3159,2),(5462,5458,1),(5463,0,3),(5463,3159,2),(5463,5458,1),(5464,0,3),(5464,3159,2),(5464,5458,1),(5465,0,3),(5465,3159,2),(5465,5458,1),(5466,0,3),(5466,3159,2),(5466,5458,1),(5467,0,3),(5467,3159,2),(5467,5458,1),(5468,0,3),(5468,3159,2),(5468,5458,1),(5469,0,3),(5469,3159,2),(5469,5458,1),(5470,0,3),(5470,3159,2),(5470,5458,1),(5471,0,3),(5471,3159,2),(5471,5458,1),(5472,0,3),(5472,3159,2),(5472,5458,1),(5473,0,2),(5473,3159,1),(5474,0,3),(5474,3159,2),(5474,5473,1),(5475,0,3),(5475,3159,2),(5475,5473,1),(5476,0,3),(5476,3159,2),(5476,5473,1),(5477,0,3),(5477,3159,2),(5477,5473,1),(5478,0,3),(5478,3159,2),(5478,5473,1),(5479,0,3),(5479,3159,2),(5479,5473,1),(5480,0,3),(5480,3159,2),(5480,5473,1),(5481,0,3),(5481,3159,2),(5481,5473,1),(5482,0,3),(5482,3159,2),(5482,5473,1),(5483,0,3),(5483,3159,2),(5483,5473,1),(5484,0,3),(5484,3159,2),(5484,5473,1),(5485,0,3),(5485,3159,2),(5485,5473,1),(5486,0,3),(5486,3159,2),(5486,5473,1),(5487,0,3),(5487,3159,2),(5487,5473,1),(5488,0,3),(5488,3159,2),(5488,5473,1),(5489,0,3),(5489,3159,2),(5489,5473,1),(5490,0,3),(5490,3159,2),(5490,5473,1),(5491,0,3),(5491,3159,2),(5491,5473,1),(5492,0,3),(5492,3159,2),(5492,5473,1),(5493,0,3),(5493,3159,2),(5493,5473,1),(5494,0,3),(5494,3159,2),(5494,5473,1),(5495,0,3),(5495,3159,2),(5495,5473,1),(5496,0,3),(5496,3159,2),(5496,5473,1),(5497,0,3),(5497,3159,2),(5497,5473,1),(5498,0,3),(5498,3159,2),(5498,5473,1),(5499,0,3),(5499,3159,2),(5499,5473,1),(5500,0,3),(5500,3159,2),(5500,5473,1),(5501,0,3),(5501,3159,2),(5501,5473,1),(5502,0,3),(5502,3159,2),(5502,5473,1),(5503,0,3),(5503,3159,2),(5503,5473,1),(5504,0,3),(5504,3159,2),(5504,5473,1),(5505,0,3),(5505,3159,2),(5505,5473,1),(5506,0,3),(5506,3159,2),(5506,5473,1),(5507,0,2),(5507,3159,1),(5508,0,3),(5508,3159,2),(5508,5507,1),(5509,0,3),(5509,3159,2),(5509,5507,1),(5510,0,3),(5510,3159,2),(5510,5507,1),(5511,0,3),(5511,3159,2),(5511,5507,1),(5512,0,3),(5512,3159,2),(5512,5507,1),(5513,0,3),(5513,3159,2),(5513,5507,1),(5514,0,3),(5514,3159,2),(5514,5507,1),(5515,0,3),(5515,3159,2),(5515,5507,1),(5516,0,3),(5516,3159,2),(5516,5507,1),(5517,0,3),(5517,3159,2),(5517,5507,1),(5518,0,3),(5518,3159,2),(5518,5507,1),(5519,0,3),(5519,3159,2),(5519,5507,1),(5520,0,3),(5520,3159,2),(5520,5507,1),(5521,0,3),(5521,3159,2),(5521,5507,1),(5522,0,3),(5522,3159,2),(5522,5507,1),(5523,0,3),(5523,3159,2),(5523,5507,1),(5524,0,3),(5524,3159,2),(5524,5507,1),(5525,0,3),(5525,3159,2),(5525,5507,1),(5526,0,3),(5526,3159,2),(5526,5507,1),(5527,0,3),(5527,3159,2),(5527,5507,1),(5528,0,3),(5528,3159,2),(5528,5507,1),(5529,0,3),(5529,3159,2),(5529,5507,1),(5530,0,3),(5530,3159,2),(5530,5507,1),(5531,0,3),(5531,3159,2),(5531,5507,1),(5532,0,3),(5532,3159,2),(5532,5507,1),(5533,0,3),(5533,3159,2),(5533,5507,1),(5534,0,3),(5534,3159,2),(5534,5507,1),(5535,0,3),(5535,3159,2),(5535,5507,1),(5536,0,3),(5536,3159,2),(5536,5507,1),(5537,0,3),(5537,3159,2),(5537,5507,1),(5538,0,3),(5538,3159,2),(5538,5507,1),(5539,0,3),(5539,3159,2),(5539,5507,1),(5540,0,3),(5540,3159,2),(5540,5507,1),(5541,0,3),(5541,3159,2),(5541,5507,1),(5542,0,3),(5542,3159,2),(5542,5507,1),(5543,0,2),(5543,3159,1),(5544,0,3),(5544,3159,2),(5544,5543,1),(5545,0,3),(5545,3159,2),(5545,5543,1),(5546,0,3),(5546,3159,2),(5546,5543,1),(5547,0,3),(5547,3159,2),(5547,5543,1),(5548,0,3),(5548,3159,2),(5548,5543,1),(5549,0,3),(5549,3159,2),(5549,5543,1),(5550,0,3),(5550,3159,2),(5550,5543,1),(5551,0,3),(5551,3159,2),(5551,5543,1),(5552,0,3),(5552,3159,2),(5552,5543,1),(5553,0,3),(5553,3159,2),(5553,5543,1),(5554,0,3),(5554,3159,2),(5554,5543,1),(5555,0,2),(5555,3159,1),(5556,0,3),(5556,3159,2),(5556,5555,1),(5557,0,3),(5557,3159,2),(5557,5555,1),(5558,0,3),(5558,3159,2),(5558,5555,1),(5559,0,3),(5559,3159,2),(5559,5555,1),(5560,0,3),(5560,3159,2),(5560,5555,1),(5561,0,3),(5561,3159,2),(5561,5555,1),(5562,0,3),(5562,3159,2),(5562,5555,1),(5563,0,3),(5563,3159,2),(5563,5555,1),(5564,0,3),(5564,3159,2),(5564,5555,1),(5565,0,3),(5565,3159,2),(5565,5555,1),(5566,0,3),(5566,3159,2),(5566,5555,1),(5567,0,3),(5567,3159,2),(5567,5555,1),(5568,0,3),(5568,3159,2),(5568,5555,1),(5569,0,3),(5569,3159,2),(5569,5555,1),(5570,0,3),(5570,3159,2),(5570,5555,1),(5571,0,3),(5571,3159,2),(5571,5555,1),(5572,0,3),(5572,3159,2),(5572,5555,1),(5573,0,3),(5573,3159,2),(5573,5555,1),(5574,0,3),(5574,3159,2),(5574,5555,1),(5575,0,3),(5575,3159,2),(5575,5555,1),(5576,0,3),(5576,3159,2),(5576,5555,1),(5577,0,3),(5577,3159,2),(5577,5555,1),(5578,0,3),(5578,3159,2),(5578,5555,1),(5579,0,3),(5579,3159,2),(5579,5555,1),(5580,0,3),(5580,3159,2),(5580,5555,1),(5581,0,3),(5581,3159,2),(5581,5555,1),(5582,0,3),(5582,3159,2),(5582,5555,1),(5583,0,3),(5583,3159,2),(5583,5555,1),(5584,0,3),(5584,3159,2),(5584,5555,1),(5585,0,3),(5585,3159,2),(5585,5555,1),(5586,0,3),(5586,3159,2),(5586,5555,1),(5587,0,3),(5587,3159,2),(5587,5555,1),(5588,0,3),(5588,3159,2),(5588,5555,1),(5589,0,3),(5589,3159,2),(5589,5555,1),(5590,0,3),(5590,3159,2),(5590,5555,1),(5591,0,3),(5591,3159,2),(5591,5555,1),(5592,0,3),(5592,3159,2),(5592,5555,1),(5593,0,3),(5593,3159,2),(5593,5555,1),(5594,0,3),(5594,3159,2),(5594,5555,1),(5595,0,3),(5595,3159,2),(5595,5555,1),(5596,0,3),(5596,3159,2),(5596,5555,1),(5597,0,3),(5597,3159,2),(5597,5555,1),(5598,0,3),(5598,3159,2),(5598,5555,1),(5599,0,3),(5599,3159,2),(5599,5555,1),(5600,0,2),(5600,3159,1),(5601,0,3),(5601,3159,2),(5601,5600,1),(5602,0,3),(5602,3159,2),(5602,5600,1),(5603,0,3),(5603,3159,2),(5603,5600,1),(5604,0,3),(5604,3159,2),(5604,5600,1),(5605,0,3),(5605,3159,2),(5605,5600,1),(5606,0,3),(5606,3159,2),(5606,5600,1),(5607,0,3),(5607,3159,2),(5607,5600,1),(5608,0,3),(5608,3159,2),(5608,5600,1),(5609,0,3),(5609,3159,2),(5609,5600,1),(5610,0,3),(5610,3159,2),(5610,5600,1),(5611,0,3),(5611,3159,2),(5611,5600,1),(5612,0,3),(5612,3159,2),(5612,5600,1),(5613,0,3),(5613,3159,2),(5613,5600,1),(5614,0,3),(5614,3159,2),(5614,5600,1),(5615,0,3),(5615,3159,2),(5615,5600,1),(5616,0,3),(5616,3159,2),(5616,5600,1),(5617,0,3),(5617,3159,2),(5617,5600,1),(5618,0,3),(5618,3159,2),(5618,5600,1),(5619,0,3),(5619,3159,2),(5619,5600,1),(5620,0,3),(5620,3159,2),(5620,5600,1),(5621,0,3),(5621,3159,2),(5621,5600,1),(5622,0,3),(5622,3159,2),(5622,5600,1),(5623,0,3),(5623,3159,2),(5623,5600,1),(5624,0,3),(5624,3159,2),(5624,5600,1),(5625,0,2),(5625,3159,1),(5626,0,3),(5626,3159,2),(5626,5625,1),(5627,0,3),(5627,3159,2),(5627,5625,1),(5628,0,3),(5628,3159,2),(5628,5625,1),(5629,0,3),(5629,3159,2),(5629,5625,1),(5630,0,3),(5630,3159,2),(5630,5625,1),(5631,0,3),(5631,3159,2),(5631,5625,1),(5632,0,3),(5632,3159,2),(5632,5625,1),(5633,0,3),(5633,3159,2),(5633,5625,1),(5634,0,3),(5634,3159,2),(5634,5625,1),(5635,0,3),(5635,3159,2),(5635,5625,1),(5636,0,3),(5636,3159,2),(5636,5625,1),(5637,0,3),(5637,3159,2),(5637,5625,1),(5638,0,3),(5638,3159,2),(5638,5625,1),(5639,0,3),(5639,3159,2),(5639,5625,1),(5640,0,3),(5640,3159,2),(5640,5625,1),(5641,0,3),(5641,3159,2),(5641,5625,1),(5642,0,3),(5642,3159,2),(5642,5625,1),(5643,0,3),(5643,3159,2),(5643,5625,1),(5644,0,3),(5644,3159,2),(5644,5625,1),(5645,0,3),(5645,3159,2),(5645,5625,1),(5646,0,3),(5646,3159,2),(5646,5625,1),(279078,0,3),(279078,3159,2),(279078,2499002,1),(1923662,0,3),(1923662,3159,2),(1923662,5356,1),(1924171,0,3),(1924171,3159,2),(1924171,3251,1),(1924532,0,3),(1924532,3159,2),(1924532,4925,1),(1925143,0,3),(1925143,3159,2),(1925143,3761,1),(1929637,0,3),(1929637,3159,2),(1929637,3296,1),(1998532,0,2),(1998532,3159,1),(1998542,0,3),(1998542,3159,2),(1998542,1998532,1),(1998584,0,3),(1998584,3159,2),(1998584,1998532,1),(2005016,0,3),(2005016,3159,2),(2005016,5507,1),(2019672,0,3),(2019672,3159,2),(2019672,5326,1),(2052982,0,3),(2052982,3159,2),(2052982,3529,1),(2116660,0,3),(2116660,3159,2),(2116660,3703,1),(2184457,0,3),(2184457,3159,2),(2184457,5161,1),(2185271,0,3),(2185271,3159,2),(2185271,3563,1),(2185858,0,3),(2185858,3159,2),(2185858,4052,1),(2316497,0,2),(2316497,3159,1),(2316517,0,3),(2316517,3159,2),(2316517,2316497,1),(2411629,0,3),(2411629,3159,2),(2411629,5356,1),(2413243,0,3),(2413243,3159,2),(2413243,4481,1),(2415585,0,2),(2415585,3159,1),(2415620,0,3),(2415620,3159,2),(2415620,2415585,1),(2479040,0,3),(2479040,3159,2),(2479040,4105,1),(2499002,0,2),(2499002,3159,1),(2499035,0,3),(2499035,3159,2),(2499035,2499002,1),(2499082,0,3),(2499082,3159,2),(2499082,5080,1),(2812698,0,3),(2812698,3159,2),(2812698,5356,1),(3118538,0,3),(3118538,3159,2),(3118538,4312,1),(3138835,0,3),(3138835,3159,2),(3138835,3703,1),(3138841,0,3),(3138841,3159,2),(3138841,4312,1),(3145145,0,3),(3145145,3159,2),(3145145,3407,1),(3408643,0,3),(3408643,3159,2),(3408643,5507,1),(3409478,0,3),(3409478,3159,2),(3409478,4105,1),(3411630,0,3),(3411630,3159,2),(3411630,3872,1),(3411741,0,3),(3411741,3159,2),(3411741,3703,1),(3473821,0,3),(3473821,3159,2),(3473821,5356,1),(3474011,0,3),(3474011,3159,2),(3474011,5225,1),(3535020,0,3),(3535020,3159,2),(3535020,5356,1),(3881459,0,3),(3881459,3159,2),(3881459,3371,1),(4041912,0,3),(4041912,3159,2),(4041912,2499002,1),(4093520,0,3),(4093520,3159,2),(4093520,5246,1),(4093692,0,3),(4093692,3159,2),(4093692,2316497,1),(4156345,0,3),(4156345,3159,2),(4156345,2499002,1),(4276360,0,3),(4276360,3159,2),(4276360,5356,1),(4285366,0,3),(4285366,3159,2),(4285366,3784,1),(4285519,0,3),(4285519,3159,2),(4285519,5507,1),(4777963,0,3),(4777963,3159,2),(4777963,5052,1),(4778470,0,3),(4778470,3159,2),(4778470,4481,1),(4778496,0,3),(4778496,3159,2),(4778496,5080,1),(4778522,0,3),(4778522,3159,2),(4778522,2499002,1),(4869166,0,3),(4869166,3159,2),(4869166,5191,1),(5019394,0,2),(5019394,3159,1),(5019404,0,3),(5019404,3159,2),(5019404,5019394,1),(5020365,0,3),(5020365,3159,2),(5020365,5019394,1),(5020595,0,3),(5020595,3159,2),(5020595,4481,1),(5020614,0,3),(5020614,3159,2),(5020614,4105,1),(5020665,0,3),(5020665,3159,2),(5020665,4891,1),(5020681,0,3),(5020681,3159,2),(5020681,2499002,1),(5252498,0,3),(5252498,3159,2),(5252498,5019394,1),(5498759,0,3),(5498759,3159,2),(5498759,5019394,1),(5555962,0,3),(5555962,3159,2),(5555962,3407,1),(5556050,0,3),(5556050,3159,2),(5556050,3952,1),(5641077,0,3),(5641077,3159,2),(5641077,5019394,1),(5908265,0,3),(5908265,3159,2),(5908265,3675,1),(5908547,0,3),(5908547,3159,2),(5908547,5019394,1),(6113699,0,3),(6113699,3159,2),(6113699,2499002,1),(6454651,0,3),(6454651,3159,2),(6454651,5356,1),(6456567,0,3),(6456567,3159,2),(6456567,4105,1),(6711408,0,3),(6711408,3159,2),(6711408,2415585,1),(7592215,0,3),(7592215,3159,2),(7592215,4800,1),(7592923,0,3),(7592923,3159,2),(7592923,4312,1),(7593075,0,3),(7593075,3159,2),(7593075,4312,1),(7593225,0,3),(7593225,3159,2),(7593225,2499002,1),(7717502,0,3),(7717502,3159,2),(7717502,2499002,1),(7717702,0,3),(7717702,3159,2),(7717702,5019394,1),(7718652,0,3),(7718652,3159,2),(7718652,2499002,1),(10498697,0,3),(10498697,3159,2),(10498697,5191,1),(10499269,0,3),(10499269,3159,2),(10499269,5019394,1),(10499672,0,3),(10499672,3159,2),(10499672,3872,1),(10500023,0,3),(10500023,3159,2),(10500023,4925,1),(10500094,0,3),(10500094,3159,2),(10500094,5191,1),(10500382,0,3),(10500382,3159,2),(10500382,3468,1),(10500476,0,3),(10500476,3159,2),(10500476,4891,1),(10501002,0,3),(10501002,3159,2),(10501002,5291,1),(10502714,0,3),(10502714,3159,2),(10502714,4105,1),(10504604,0,3),(10504604,3159,2),(10504604,4925,1),(10505475,0,3),(10505475,3159,2),(10505475,5191,1),(10688837,0,3),(10688837,3159,2),(10688837,2499002,1),(10689767,0,3),(10689767,3159,2),(10689767,4734,1),(11567319,0,3),(11567319,3159,2),(11567319,2499002,1),(11569100,0,3),(11569100,3159,2),(11569100,2499002,1),(11569394,0,3),(11569394,3159,2),(11569394,2499002,1),(11910622,0,3),(11910622,3159,2),(11910622,2499002,1),(11911051,0,3),(11911051,3159,2),(11911051,5356,1),(12364794,0,3),(12364794,3159,2),(12364794,2499002,1),(12370243,0,3),(12370243,3159,2),(12370243,2499002,1),(12370942,0,3),(12370942,3159,2),(12370942,3872,1),(12371093,0,3),(12371093,3159,2),(12371093,5019394,1),(12371094,0,3),(12371094,3159,2),(12371094,2499002,1);
+/*!40000 ALTER TABLE `ref_hierarchy_regions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_sau`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_sau`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_sau` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_sau`
+--
+
+LOCK TABLES `ref_hierarchy_sau` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_sau` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_sau` VALUES (5,0,1),(6,0,1),(7,0,1),(8,0,1),(9,0,1),(10,0,1),(11,0,1),(12,0,1),(13,0,1),(14,0,1),(16,0,1),(17,0,1),(18,0,1),(19,0,1),(20,0,1),(21,0,1),(22,0,1),(23,0,1),(24,0,1),(25,0,1),(26,0,1),(27,0,1),(28,0,1),(29,0,1),(30,0,1),(31,0,1),(32,0,1),(33,0,1),(34,0,1),(35,0,1),(36,0,1),(37,0,1),(38,0,1),(39,0,1),(40,0,1),(41,0,1),(42,0,1),(43,0,1),(44,0,1),(45,0,1),(46,0,1),(47,0,1),(48,0,1),(49,0,1),(50,0,1),(51,0,1),(52,0,1),(53,0,1),(54,0,1),(55,0,1),(56,0,1),(57,0,1),(58,0,1),(59,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_sau` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_semeinoe_pologenie`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_semeinoe_pologenie`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_semeinoe_pologenie` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_semeinoe_pologenie`
+--
+
+LOCK TABLES `ref_hierarchy_semeinoe_pologenie` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_semeinoe_pologenie` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_semeinoe_pologenie` VALUES (4,0,1),(5,0,1),(6,0,1),(7,0,1),(8,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_semeinoe_pologenie` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_showroom_car`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_showroom_car`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_showroom_car` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_showroom_car`
+--
+
+LOCK TABLES `ref_hierarchy_showroom_car` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_showroom_car` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_showroom_car` VALUES (4,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_showroom_car` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_sobstvennik_avto`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_sobstvennik_avto`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_sobstvennik_avto` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_sobstvennik_avto`
+--
+
+LOCK TABLES `ref_hierarchy_sobstvennik_avto` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_sobstvennik_avto` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_sobstvennik_avto` VALUES (4,0,1),(5,0,1),(6,0,1),(7,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_sobstvennik_avto` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_spisok_dok_yul`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_spisok_dok_yul`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_spisok_dok_yul` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_spisok_dok_yul`
+--
+
+LOCK TABLES `ref_hierarchy_spisok_dok_yul` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_spisok_dok_yul` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_spisok_dok_yul` VALUES (17,0,1),(18,0,2),(18,17,1),(19,0,2),(19,17,1),(20,0,2),(20,17,1),(21,0,2),(21,17,1),(22,0,2),(22,17,1),(23,0,2),(23,17,1),(24,0,2),(24,17,1),(25,0,2),(25,17,1),(26,0,2),(26,17,1),(28,0,2),(28,17,1),(29,0,2),(29,17,1),(30,0,2),(30,17,1),(31,0,2),(31,17,1),(32,0,2),(32,17,1),(33,0,2),(33,17,1),(34,0,2),(34,17,1),(36,0,2),(36,17,1),(38,0,2),(38,17,1),(39,0,3),(39,17,2),(39,38,1),(40,0,3),(40,17,2),(40,38,1),(41,0,3),(41,17,2),(41,38,1),(42,0,1),(43,0,1),(44,0,2),(44,42,1),(45,0,2),(45,42,1),(46,0,2),(46,42,1);
+/*!40000 ALTER TABLE `ref_hierarchy_spisok_dok_yul` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_srok_bisnesa`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_srok_bisnesa`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_srok_bisnesa` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_srok_bisnesa`
+--
+
+LOCK TABLES `ref_hierarchy_srok_bisnesa` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_srok_bisnesa` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_srok_bisnesa` VALUES (4,0,1),(5,0,1),(6,0,1),(7,0,1),(8,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_srok_bisnesa` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_tip_klienta`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_tip_klienta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_tip_klienta` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_tip_klienta`
+--
+
+LOCK TABLES `ref_hierarchy_tip_klienta` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_tip_klienta` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_tip_klienta` VALUES (4,0,1),(5,0,1),(6,0,1),(7,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_tip_klienta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_tip_obespecheniya`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_tip_obespecheniya`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_tip_obespecheniya` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_tip_obespecheniya`
+--
+
+LOCK TABLES `ref_hierarchy_tip_obespecheniya` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_tip_obespecheniya` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_tip_obespecheniya` VALUES (4,0,1),(5,0,1),(6,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_tip_obespecheniya` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_tp`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_tp`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_tp` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_tp`
+--
+
+LOCK TABLES `ref_hierarchy_tp` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_tp` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_tp` VALUES (4,0,1),(7,0,1),(8,0,1),(9,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_tp` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_trudovoi_dogovor`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_trudovoi_dogovor`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_trudovoi_dogovor` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_trudovoi_dogovor`
+--
+
+LOCK TABLES `ref_hierarchy_trudovoi_dogovor` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_trudovoi_dogovor` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_trudovoi_dogovor` VALUES (4,0,1),(5,0,1),(6,0,1),(7,0,1),(8,0,1),(9,0,1),(10,0,1),(11,0,1),(12,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_trudovoi_dogovor` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_vid_deyatelnosti`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_vid_deyatelnosti`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_vid_deyatelnosti` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_vid_deyatelnosti`
+--
+
+LOCK TABLES `ref_hierarchy_vid_deyatelnosti` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_vid_deyatelnosti` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_vid_deyatelnosti` VALUES (4,0,1),(5,0,1),(6,0,1),(7,0,1),(8,0,1),(9,0,1),(10,0,1),(11,0,1),(12,0,1),(13,0,1),(14,0,1),(15,0,1),(16,0,1),(17,0,1),(18,0,1),(19,0,1),(20,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_vid_deyatelnosti` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_voinskaya_slugba`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_voinskaya_slugba`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_voinskaya_slugba` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_voinskaya_slugba`
+--
+
+LOCK TABLES `ref_hierarchy_voinskaya_slugba` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_voinskaya_slugba` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_voinskaya_slugba` VALUES (4,0,1),(5,0,1),(6,0,1),(7,0,1),(8,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_voinskaya_slugba` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ref_hierarchy_yes_no`
+--
+
+DROP TABLE IF EXISTS `ref_hierarchy_yes_no`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ref_hierarchy_yes_no` (
+  `ElemID` int(11) NOT NULL,
+  `ParentID` int(11) NOT NULL,
+  `Level` int(11) NOT NULL,
+  PRIMARY KEY (`ElemID`,`ParentID`,`Level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ref_hierarchy_yes_no`
+--
+
+LOCK TABLES `ref_hierarchy_yes_no` WRITE;
+/*!40000 ALTER TABLE `ref_hierarchy_yes_no` DISABLE KEYS */;
+INSERT INTO `ref_hierarchy_yes_no` VALUES (4,0,1),(5,0,1);
+/*!40000 ALTER TABLE `ref_hierarchy_yes_no` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `referencesconfig`
+--
+
+DROP TABLE IF EXISTS `referencesconfig`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `referencesconfig` (
+  `ReferenceConfigID` int(11) NOT NULL AUTO_INCREMENT,
+  `ReferenceName` varchar(45) DEFAULT NULL,
+  `ReferenceDBName` varchar(45) DEFAULT NULL,
+  `Hierarchycal` tinyint(1) DEFAULT NULL,
+  `ColumnName` varchar(100) DEFAULT NULL,
+  `ColumnDBName` varchar(45) DEFAULT NULL,
+  `ColumnType` varchar(45) DEFAULT NULL,
+  `ColumnDBName_Old` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`ReferenceConfigID`)
+) ENGINE=InnoDB AUTO_INCREMENT=74 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `referencesconfig`
+--
+
+LOCK TABLES `referencesconfig` WRITE;
+/*!40000 ALTER TABLE `referencesconfig` DISABLE KEYS */;
+INSERT INTO `referencesconfig` VALUES (9,'Организационно-правовая форма','OPF',1,'Наименование','RefName','Строка50','RefName'),(10,'Гражданство','citizenship',1,'Наименование','RefName','Строка50','RefName'),(12,'Пол','Gender',1,'Наименование','RefName','Строка50','RefName'),(13,'Регионы','Regions',1,'Наименование','RefName','Строка50','RefName'),(19,'Отрасль','branch',1,'Наименование','RefName','Строка50','RefName'),(20,'Банки','bank',1,'Наименование','RefName','Строка50','RefName'),(21,'Список документов','Document_list',1,'Наименование','RefName','Строка50','RefName'),(22,'Автосалон','showroom_car',1,'Наименование','RefName','Строка50','RefName'),(32,'Адреса филиалов и доп. офисов','Affiliates',1,'Наименование','RefName','Строка50','RefName'),(34,'Система налогооблажения','Nalogsystem',1,'Наименование','RefName','Строка50','RefName'),(36,'Требуется поручительство','tp',1,'Наименование','RefName','Строка50','RefName'),(37,'Страна производства','cuntry',1,'Наименование','RefName','Строка50','RefName'),(38,'Автомобили','Cars',1,'Наименование','RefName','Строка50','RefName'),(41,'Порядок_Погашения','PP',1,'Наименование','RefName','Строка50','RefName'),(42,'Баланс','balans',1,'Наименование','RefName','Строка50','RefName'),(43,'Список_аккред_СК','sau',1,'Наименование','RefName','Строка50','RefName'),(44,'Мониторинговая_система_система_безопасности','msss',1,'Наименование','RefName','Строка50','RefName'),(45,'Категория_клиентов','Kat',1,'Наименование','RefName','Строка50','RefName'),(46,'ДА_НЕТ','Yes_No',1,'Наименование','RefName','Строка50','RefName'),(47,'Предмет залога','predmet_zaloga',1,'Наименование','RefName','Строка50','RefName'),(48,'Новые/бу_ам','New_am',1,'Наименование','RefName','Строка50','RefName'),(49,'список документов ЮЛ','spisok_dok_YUL',1,'Наименование','RefName','Строка50','RefName'),(50,'Категория ТС','KategoriyaTS',1,'Наименование','RefName','Строка50','RefName'),(51,'Цель приобретения имущества','Cel_pokupki',1,'Наименование','RefName','Строка50','RefName'),(52,'Объект проживания','Obekt_progivania',1,'Наименование','RefName','Строка50','RefName'),(53,'Образование','Obrazovanie',1,'Наименование','RefName','Строка50','RefName'),(54,'Воинская служба','Voinskaya_slugba',1,'Наименование','RefName','Строка50','RefName'),(56,'Категории должностей','Kategorii_dolgnostey',1,'Наименование','RefName','Строка50','RefName'),(57,'Виды деятельности','Vid_deyatelnosti',1,'Наименование','RefName','Строка50','RefName'),(58,'Количество сотрудников организации','Kolichestvo_sotrudnikov',1,'Наименование','RefName','Строка50','RefName'),(59,'Семейное положение','Semeinoe_pologenie',1,'Наименование','RefName','Строка50','RefName'),(61,'Трудовой договор','Trudovoi_dogovor',1,'Наименование','RefName','Строка50','RefName'),(65,'ДопСогласование','AddAprove',1,'Наименование','RefName','Строка50','RefName'),(67,'Собственник автомобиля','Sobstvennik_avto',1,'Наименование','RefName','Строка50','RefName'),(68,'Обяз_документы_ТС','Dokumenty_TS',1,'Наименование','RefName','Строка50','RefName'),(69,'Аванс','Avans',1,'Наименование','RefName','Строка50','RefName'),(71,'Срок ведения бизнеса','srok_bisnesa',1,'Наименование','RefName','Строка50','RefName'),(72,'Тип клиента','Tip_klienta',1,'Наименование','RefName','Строка50','RefName'),(73,'Тип обеспечения','Tip_obespecheniya',1,'Наименование','RefName','Строка50','RefName');
+/*!40000 ALTER TABLE `referencesconfig` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `ref_config_before_insert` BEFORE INSERT ON `referencesconfig`
+FOR EACH ROW
+BEGIN
+   SET NEW.ColumnDBName_Old = NEW.ColumnDBName;
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `scripts`
+--
+
+DROP TABLE IF EXISTS `scripts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `scripts` (
+  `script_name` varchar(45) NOT NULL,
+  `script` text,
+  PRIMARY KEY (`script_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `scripts`
+--
+
+LOCK TABLES `scripts` WRITE;
+/*!40000 ALTER TABLE `scripts` DISABLE KEYS */;
+INSERT INTO `scripts` VALUES ('OfferSelect','SELECT DISTINCT Programma AS \'Программа(ф)(ю)\',Bank_LK AS \'Банк,ЛК(ф)(ю)\',ref_data_marki_modeli.RefName AS \'Марки, модели(ф)(ю)\',ref_data_Kateg_TS.RefName AS \'Категория ТС(ф)(ю)\',Min_srok AS \'Мин. срок кредита(ф)(ю)\',Max_srok AS \'Макс. срок кредита(ф)(ю)\',ref_data_treb_poruchitel.RefName AS \'Требуется поручитель(ф)(ю)\',min_vozrast_zayomschika AS \'Мин. возраст заёмщика(ф)\',max_vozrast_zayomschika_M AS \'Макс. возраст заёмщика М(ф)\',max_vozrast_zayomschika_F AS \'Макс возр заемщика Ж(ф)\',ref_data_region_reistracii_zayomschika.RefName AS \'Регион регистрации заемщика(ф)(ю)\',Min_trudovoi_stazh_posl_meste AS \'Мин. трудовой стаж на посл. месте Наемный (ф)\',Max_vozrast_avto_RUS AS \'Макс возраст а/м на момент погаш.Рус(ф)(ю)\',Max_kolvo_ed AS \'Макс. кол-во ед.(ф)(ю)\',ref_data_KACKO_in_Credit.RefName AS \'Включение КАСКО в кредит(ф)\',ref_data_Strahov_zhizni.RefName AS \'Страхов_жизни(ф)\',ref_data_Kategoriya_TS.RefName AS \'Приобретаемое имущество~Категория ТС(ф)(ю)\',ref_data_Marka_model_TC.RefName AS \'Приобретаемое имущество~Марка, модель техники(ф)(ю)\',ref_data_Avans.RefName AS \'Кредитный продукт~Первоначальный взнос, аванс(ф)(ю)\',ref_data_Region_registr_zaem.RefName AS \'Общая информация~Регион регистрации заёмщика(ф)(ю)\',ref_data_KACKO_v_kredit.RefName AS \'Кредитный продукт~Включить КАСКО в сумму кредита(ф)\',ref_data_Strah_gizni_v_kredit.RefName AS \'Кредитный ипродукт~Включить страхование жизни в сумму кредита(ф)\',FIO_zaem AS \'Общая информация~ФИО заёмщика(ф)\',ref_data_Pol_zaem.RefName AS \'Общая информация~Пол заёмщика(ф)\',Data_rogdeniaya_zaem AS \'Общая информация~Дата рождения заёмщика(ф)\',Stag_na_posled_meste_zaem AS \'Общая информация~Трудовой стаж на последнем месте работы заёмщика(ф)\',Vozrast_zaem AS \'Общая информация~Возраст заёмщика(ф)\',Skolko_ed_tehniki AS \'Приобретаемое имущество~Количество единиц техники(ф)(ю)\',ref_data_Novoe_ili_bu.RefName AS \'Приобретаемое имущество~Новое ТС или Б/У(ф)(ю)\',Vozrast_TC_na_datu_pogashenia AS \'Приобретаемое имущество~Срок эксплуатации ТС на дату погашения(ф)(ю)\',Srok_kredita AS \'Кредитный продукт~Срок кредита/договора лизинга(ф)(ю)\',ref_data_Dop_zalog.RefName AS \'Общая информация~Возможность предоставления дополнительного залога(ф)(ю)\' FROM (SELECT table_CredProgr.Programma AS \'Programma\',table_CredProgr.Bank_LK AS \'Bank_LK\',multiref_CredProgr_marki_modeli.RefID AS \'marki_modeli\',multiref_CredProgr_Kateg_TS.RefID AS \'Kateg_TS\',table_CredProgr.Min_srok AS \'Min_srok\',table_CredProgr.Max_srok AS \'Max_srok\',table_CredProgr.treb_poruchitel AS \'treb_poruchitel\',table_CredProgr.min_vozrast_zayomschika AS \'min_vozrast_zayomschika\',table_CredProgr.max_vozrast_zayomschika_M AS \'max_vozrast_zayomschika_M\',table_CredProgr.max_vozrast_zayomschika_F AS \'max_vozrast_zayomschika_F\',multiref_CredProgr_region_reistracii_zayomschika.RefID AS \'region_reistracii_zayomschika\',table_CredProgr.Min_trudovoi_stazh_posl_meste AS \'Min_trudovoi_stazh_posl_meste\',table_CredProgr.Max_vozrast_avto_RUS AS \'Max_vozrast_avto_RUS\',table_CredProgr.Max_kolvo_ed AS \'Max_kolvo_ed\',table_CredProgr.KACKO_in_Credit AS \'KACKO_in_Credit\',table_CredProgr.Strahov_zhizni AS \'Strahov_zhizni\',table_Clients.Kategoriya_TS AS \'Kategoriya_TS\',table_Clients.Marka_model_TC AS \'Marka_model_TC\',table_Clients.Avans AS \'Avans\',table_Clients.Region_registr_zaem AS \'Region_registr_zaem\',table_Clients.KACKO_v_kredit AS \'KACKO_v_kredit\',table_Clients.Strah_gizni_v_kredit AS \'Strah_gizni_v_kredit\',table_Clients.FIO_zaem AS \'FIO_zaem\',table_Clients.Pol_zaem AS \'Pol_zaem\',table_Clients.Data_rogdeniaya_zaem AS \'Data_rogdeniaya_zaem\',table_Clients.Stag_na_posled_meste_zaem AS \'Stag_na_posled_meste_zaem\',table_Clients.Vozrast_zaem AS \'Vozrast_zaem\',table_Clients.Skolko_ed_tehniki AS \'Skolko_ed_tehniki\',table_Clients.Novoe_ili_bu AS \'Novoe_ili_bu\',table_Clients.Vozrast_TC_na_datu_pogashenia AS \'Vozrast_TC_na_datu_pogashenia\',table_Clients.Srok_kredita AS \'Srok_kredita\',table_Clients.Dop_zalog AS \'Dop_zalog\' FROM table_credprogr LEFT JOIN table_clients ON table_clients.id=[ClientID] LEFT JOIN multiref_CredProgr_marki_modeli ON table_CredProgr.ID = multiref_CredProgr_marki_modeli.TableID LEFT JOIN multiref_CredProgr_Kateg_TS ON table_CredProgr.ID = multiref_CredProgr_Kateg_TS.TableID LEFT JOIN multiref_CredProgr_region_reistracii_zayomschika ON table_CredProgr.ID = multiref_CredProgr_region_reistracii_zayomschika.TableID ) AS inner_select  LEFT JOIN ref_data_Cars AS ref_data_marki_modeli ON inner_select.marki_modeli = ref_data_marki_modeli.ID LEFT JOIN ref_data_KategoriyaTS AS ref_data_Kateg_TS ON inner_select.Kateg_TS = ref_data_Kateg_TS.ID LEFT JOIN ref_data_Yes_No AS ref_data_treb_poruchitel ON inner_select.treb_poruchitel = ref_data_treb_poruchitel.ID LEFT JOIN ref_data_Regions AS ref_data_region_reistracii_zayomschika ON inner_select.region_reistracii_zayomschika = ref_data_region_reistracii_zayomschika.ID LEFT JOIN ref_data_Yes_No AS ref_data_KACKO_in_Credit ON inner_select.KACKO_in_Credit = ref_data_KACKO_in_Credit.ID LEFT JOIN ref_data_Yes_No AS ref_data_Strahov_zhizni ON inner_select.Strahov_zhizni = ref_data_Strahov_zhizni.ID LEFT JOIN ref_data_KategoriyaTS AS ref_data_Kategoriya_TS ON inner_select.Kategoriya_TS = ref_data_Kategoriya_TS.ID LEFT JOIN ref_data_Cars AS ref_data_Marka_model_TC ON inner_select.Marka_model_TC = ref_data_Marka_model_TC.ID LEFT JOIN ref_data_Avans AS ref_data_Avans ON inner_select.Avans = ref_data_Avans.ID LEFT JOIN ref_data_Regions AS ref_data_Region_registr_zaem ON inner_select.Region_registr_zaem = ref_data_Region_registr_zaem.ID LEFT JOIN ref_data_Yes_No AS ref_data_KACKO_v_kredit ON inner_select.KACKO_v_kredit = ref_data_KACKO_v_kredit.ID LEFT JOIN ref_data_Yes_No AS ref_data_Strah_gizni_v_kredit ON inner_select.Strah_gizni_v_kredit = ref_data_Strah_gizni_v_kredit.ID LEFT JOIN ref_data_Gender AS ref_data_Pol_zaem ON inner_select.Pol_zaem = ref_data_Pol_zaem.ID LEFT JOIN ref_data_New_am AS ref_data_Novoe_ili_bu ON inner_select.Novoe_ili_bu = ref_data_Novoe_ili_bu.ID LEFT JOIN ref_data_Yes_No AS ref_data_Dop_zalog ON inner_select.Dop_zalog = ref_data_Dop_zalog.ID WHERE Kategoriya_TS = Kateg_TS AND\r\nMarka_model_TC = marki_modeli AND\r\n(Skolko_ed_tehniki <= Max_kolvo_ed OR Skolko_ed_tehniki IS NULL) AND\r\nCASE WHEN Novoe_ili_bu = 4 THEN True ELSE Vozrast_TC_na_datu_pogashenia <= Max_vozrast_avto_RUS END AND\r\nMin_Srok <= Srok_kredita AND Max_Srok >= Srok_kredita AND\r\nCASE WHEN treb_poruchitel = 4 OR Avans = 7 THEN Dop_zalog = 5 OR Dop_zalog = 6 ELSE True END AND\r\nRegion_registr_zaem = region_reistracii_zayomschika AND\r\n(Strah_gizni_v_kredit = Strahov_zhizni OR Strah_gizni_v_kredit = 5) AND\r\n(KACKO_v_kredit = KACKO_in_Credit OR KACKO_v_kredit = 5) AND\r\nmin_vozrast_zayomschika <= Vozrast_zaem AND\r\nCASE WHEN Pol_zaem = 4 THEN\r\nVozrast_zaem <= max_vozrast_zayomschika_M\r\nELSE\r\nVozrast_zaem <= max_vozrast_zayomschika_F\r\nEND AND\r\nStag_na_posled_meste_zaem >= Min_trudovoi_stazh_posl_meste\r\n\r\n'),('Reference_Create','DELIMITER //\n\nDROP PROCEDURE IF EXISTS sp_moveelem_[RefDBName]//\n\nCREATE PROCEDURE sp_moveelem_[RefDBName](eid int(11),pid int(11))\nBEGIN\n  \n  DECLARE e,p,l INT;\n  DECLARE done INT DEFAULT 0;\n  \n  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_[RefDBName] WHERE ElemID = pid;\n  \n  \n  DECLARE CONTINUE HANDLER FOR SQLSTATE \'02000\' SET done = 1;\n\n  DELETE FROM ref_hierarchy_[RefDBName] WHERE ElemID = eid;\n\n  OPEN cur1;\n  \nREPEAT\n  FETCH cur1 INTO e, p,l;\n  IF NOT done THEN\n    INSERT INTO ref_hierarchy_[RefDBName] VALUES (eid,p,l+1);\n  END IF;\nUNTIL done END REPEAT;\n\n  INSERT INTO ref_hierarchy_[RefDBName] VALUES (eid,pid,1);\n  \n  CLOSE cur1;\n  \n  SET done = 0;      \n  \nEND//\n\nDROP PROCEDURE IF EXISTS sp_movetree_[RefDBName]//\n\nCREATE PROCEDURE sp_movetree_[RefDBName](eid int(11),pid int(11))\nBEGIN\n  DECLARE done INT DEFAULT 0;\n  DECLARE e,p INT;\n  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_[RefDBName].ElemID,parentl1.ParentID FROM ref_hierarchy_[RefDBName] INNER JOIN ref_hierarchy_[RefDBName] as parentl1 \n  ON ref_hierarchy_[RefDBName].ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_[RefDBName].ParentID = 4 ORDER BY ref_hierarchy_[RefDBName].Level;\n  \n  DECLARE CONTINUE HANDLER FOR SQLSTATE \'02000\' SET done = 1;\n  \n  CALL sp_moveelem_[RefDBName](eid,pid);\n  \n  OPEN cur1;\n  \n  REPEAT\n    FETCH cur1 INTO e, p;\n    IF NOT done THEN\n        CALL sp_moveelem_[RefDBName](e,p);\n    END IF;\n  UNTIL done END REPEAT;\n\nCLOSE cur1;\n\nEND//\n\nDROP PROCEDURE IF EXISTS sp_deletetree_[RefDBName]//\n\nCREATE PROCEDURE sp_deletetree_[RefDBName](eid int(11))\nBEGIN\n    DECLARE done INT DEFAULT 0;\n    DECLARE e INT(11);\n    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_[RefDBName] WHERE ParentID = eid OR ElemID = eid;\n    DECLARE CONTINUE HANDLER FOR SQLSTATE \'02000\' SET done = 1;\n\n    DELETE FROM ref_data_[RefDBName] WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_[RefDBName] WHERE ParentID = eid OR ElemID = eid);\n\n    OPEN cur1;\n  \n  REPEAT\n     FETCH cur1 INTO e;\n    IF NOT done THEN\n        DELETE FROM ref_hierarchy_[RefDBName] WHERE ElemID = e;\n    END IF;\n  UNTIL done END REPEAT;\n\nCLOSE cur1;\n    \n   \n\nEND//\n\nDROP TRIGGER IF EXISTS `[RefDBName]_after_insert`;//\n\nCREATE TRIGGER `[RefDBName]_after_insert` AFTER INSERT ON `ref_data_[RefDBName]`\nFOR EACH ROW\nBEGIN\n   CALL sp_moveelem_[RefDBName](NEW.ID,NEW.ParentID);\nEND//\n\nDROP TRIGGER IF EXISTS `[RefDBName]_after_update`;//\n\nCREATE TRIGGER `[RefDBName]_after_update` AFTER UPDATE ON `ref_data_[RefDBName]`\nFOR EACH ROW\nBEGIN\nIF NEW.ParentID <> OLD.ParentID THEN\n   CALL sp_movetree_[RefDBName](NEW.ID,NEW.ParentID);\nEND IF;\n\nEND//');
+/*!40000 ALTER TABLE `scripts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `table_clients`
+--
+
+DROP TABLE IF EXISTS `table_clients`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `table_clients` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Kategoriya_TS` int(11) DEFAULT NULL,
+  `Marka_model_TC` int(11) DEFAULT NULL,
+  `Cel_pokupki` int(11) DEFAULT NULL,
+  `Skolko_ed_tehniki` int(11) DEFAULT NULL,
+  `Novoe_ili_bu` int(11) DEFAULT NULL,
+  `Strana_proizvoditel` int(11) DEFAULT NULL,
+  `Name_prodavca` int(11) DEFAULT NULL,
+  `Vozrast_TC_na_datu_zakluchenia` int(11) DEFAULT NULL,
+  `Summa_kredita` int(11) DEFAULT NULL,
+  `Avans` int(11) DEFAULT NULL,
+  `Raschetni_schet_v_banke_zaem` int(11) DEFAULT NULL,
+  `Zarplatnaya_karta_zaem` int(11) DEFAULT NULL,
+  `Gragdanstvo_zaem` int(11) DEFAULT NULL,
+  `Rezidenstvo_zaem` int(11) DEFAULT NULL,
+  `Data_rogdeniaya_zaem` varchar(50) DEFAULT NULL,
+  `Pasport_zaem` text,
+  `Mesto_rogdenia_zaem` int(11) DEFAULT NULL,
+  `Data_okonchania_vrem_reg_zaem` varchar(50) DEFAULT NULL,
+  `Rastoyanie_ot_centra` int(11) DEFAULT NULL,
+  `Obekt_progivania_zaem` int(11) DEFAULT NULL,
+  `Srok_progivaniz_zaem_po_fact_adresu` int(11) DEFAULT NULL,
+  `Mobil_tel_zaem` varchar(50) DEFAULT NULL,
+  `Dom_tel_zaem` varchar(50) DEFAULT NULL,
+  `Rab_tel_zaem` varchar(50) DEFAULT NULL,
+  `Mail_zaem` varchar(50) DEFAULT NULL,
+  `Obrazovanie_zaem` int(11) DEFAULT NULL,
+  `Voinskaya_slugba_zaem` int(11) DEFAULT NULL,
+  `Oficialno_rab_zaem` int(11) DEFAULT NULL,
+  `Dolgnost_zaem` varchar(50) DEFAULT NULL,
+  `Kategoria_dolgnosti_zaem` int(11) DEFAULT NULL,
+  `Naimenovanie_org_zaem` varchar(50) DEFAULT NULL,
+  `Kol_vo_sotrudnikov_zaem` int(11) DEFAULT NULL,
+  `Trudovoi_dogovor_zaem` int(11) DEFAULT NULL,
+  `Data_okonch_srochnogo_dog_zaem` varchar(50) DEFAULT NULL,
+  `Obchii_trud_stag_zaem` int(11) DEFAULT NULL,
+  `Stag_na_posled_meste_zaem` int(11) DEFAULT NULL,
+  `Kol_vo_mest_rab_zaem` int(11) DEFAULT NULL,
+  `Semya_zaem` int(11) DEFAULT NULL,
+  `Kol_vo_igdivencev_zaem` int(11) DEFAULT NULL,
+  `Info_igdivenci_zaem` text,
+  `Dohod_zaem` int(11) DEFAULT NULL,
+  `Rashod_na_progiv_zaem` int(11) DEFAULT NULL,
+  `Plategi_po_deystv_kreditam_zaem` int(11) DEFAULT NULL,
+  `Plateg_po_kreditu` float DEFAULT NULL,
+  `Dop_zalog` int(11) DEFAULT NULL,
+  `Nalichie_nedvig_zaem` int(11) DEFAULT NULL,
+  `Kvartira_zaem` text,
+  `Garag_zaem` text,
+  `Dom_zaem` text,
+  `Zemlya_zaem` text,
+  `Nalichie_TC_zaem` int(11) DEFAULT NULL,
+  `Legkovoe_TC_zaem` text,
+  `Gruzovoe_TC_zaem` text,
+  `Pricep_zaem` text,
+  `Polupricep_zaem` text,
+  `Motocikl_zaem` text,
+  `Motoroller_zaem` text,
+  `Vodnoe_TC_zaem` text,
+  `Drugoe_imuchestvo_zaem` text,
+  `Nalichie_dolg_obyaz_zaem` int(11) DEFAULT NULL,
+  `Kredit_zaem_na_TC` text,
+  `Ipoteka_zaem` text,
+  `Pregnie_FIO_zaem` varchar(50) DEFAULT NULL,
+  `Smena_FIO_zaem` int(11) DEFAULT NULL,
+  `Potreb_kredit_zaem` text,
+  `Kred_deb_kart_zaem` text,
+  `Poruchit_zaem` text,
+  `Vozmog_poruch` int(11) DEFAULT NULL,
+  `Gragdanstvo_poruch` int(11) DEFAULT NULL,
+  `Rezidenstvo_poruch` int(11) DEFAULT NULL,
+  `Data_rogdeniaya_poruch` varchar(50) DEFAULT NULL,
+  `Pasport_poruch` text,
+  `Mesto_rogdenia_poruch` int(11) DEFAULT NULL,
+  `Smena_FIO_poruch` int(11) DEFAULT NULL,
+  `Pregnie_FIO_poruch` varchar(50) DEFAULT NULL,
+  `Adres_post_reg_poruch` text,
+  `Adres_vrem_reg_poruch` text,
+  `Data_okonchania_vrem_reg_poruch` varchar(50) DEFAULT NULL,
+  `Obekt_progivania_poruch` int(11) DEFAULT NULL,
+  `Srok_progivaniz_poruch_po_fact_adresu` int(11) DEFAULT NULL,
+  `Region_rabot_poruch` int(11) DEFAULT NULL,
+  `Mobil_tel_poruch` varchar(50) DEFAULT NULL,
+  `Dom_tel_poruch` varchar(50) DEFAULT NULL,
+  `Rab_tel_poruch` varchar(50) DEFAULT NULL,
+  `Mail_poruch` varchar(50) DEFAULT NULL,
+  `Obrazovanie_poruch` int(11) DEFAULT NULL,
+  `Voinskaya_slugba_poruch` int(11) DEFAULT NULL,
+  `Oficialno_rab_poruch` int(11) DEFAULT NULL,
+  `Dolgnost_poruch` text,
+  `Kategoria_dolgnosti_poruch` int(11) DEFAULT NULL,
+  `Naimenovanie_org_poruch` varchar(50) DEFAULT NULL,
+  `Kol_vo_sotrudnikov_poruch` int(11) DEFAULT NULL,
+  `Trudovoi_dogovor_poruch` int(11) DEFAULT NULL,
+  `Data_okonch_srochnogo_dog_poruch` varchar(50) DEFAULT NULL,
+  `Obchii_trud_stag_poruch` int(11) DEFAULT NULL,
+  `Stag_na_posled_meste_poruch` int(11) DEFAULT NULL,
+  `Kol_vo_mest_rab_poruch` int(11) DEFAULT NULL,
+  `Semya_poruch` int(11) DEFAULT NULL,
+  `Kol_vo_igdivencev_poruch` int(11) DEFAULT NULL,
+  `Info_igdivenci_poruch` text,
+  `Dohod_poruch` int(11) DEFAULT NULL,
+  `Rashod_na_progiv_poruch` int(11) DEFAULT NULL,
+  `Plategi_po_deystv_kreditam_poruch` int(11) DEFAULT NULL,
+  `Nalichie_nedvig_poruch` int(11) DEFAULT NULL,
+  `Kvartira_poruch` text,
+  `Garag_poruch` text,
+  `Dom_poruch` text,
+  `Zemlya_poruch` text,
+  `Nalichie_TC_poruch` int(11) DEFAULT NULL,
+  `Legkovoe_TC_poruch` text,
+  `Gruzovoe_TC_poruch` text,
+  `Pricep_poruch` text,
+  `Polupricep_poruch` text,
+  `Motocikl_poruch` text,
+  `Motoroller_poruch` text,
+  `Vodnoe_TC_poruch` text,
+  `Drugoe_imuchestvo_poruch` text,
+  `Nalichie_dolg_obyaz_poruch` int(11) DEFAULT NULL,
+  `Kredit_poruch_na_TC` text,
+  `Ipoteka_poruch` text,
+  `Potreb_kredit_poruch` text,
+  `Kred_deb_kart_poruch` text,
+  `Poruchit_poruch` text,
+  `Pol_zaem` int(11) DEFAULT NULL,
+  `Pol_poruch` int(11) DEFAULT NULL,
+  `FIO_zaem` varchar(50) DEFAULT NULL,
+  `FIO_poruch` varchar(50) DEFAULT NULL,
+  `Brak_kontrakt_zaem` int(11) DEFAULT NULL,
+  `Brak_kontrakt_poruch` int(11) DEFAULT NULL,
+  `Na_kogo_avto` int(11) DEFAULT NULL,
+  `God_vipuska_TC` int(11) DEFAULT NULL,
+  `KACKO_v_kredit` int(11) DEFAULT NULL,
+  `Strah_gizni_v_kredit` int(11) DEFAULT NULL,
+  `INN_org_poruch` varchar(50) DEFAULT NULL,
+  `Dokument` int(11) DEFAULT NULL,
+  `VUZ_zaem` text,
+  `Specialnost_zaem` varchar(50) DEFAULT NULL,
+  `VUZ_poruch` text,
+  `Specialnost_poruch` varchar(50) DEFAULT NULL,
+  `UR_adrez_org_zaem` text,
+  `Fakt_adres_org_zaem` text,
+  `Ur_adres_org_poruch` text,
+  `Fakt_adres_org_poruch` text,
+  `Telefon_otd_kadrov_zaem` varchar(50) DEFAULT NULL,
+  `Telefon_otd_kadrov_poruch` varchar(50) DEFAULT NULL,
+  `INN_org_zaem` varchar(50) DEFAULT NULL,
+  `FIO_supr` varchar(50) DEFAULT NULL,
+  `Data_rogdeniya_supr` varchar(50) DEFAULT NULL,
+  `Gragdanstvo_supr` int(11) DEFAULT NULL,
+  `Pasport_supr` varchar(50) DEFAULT NULL,
+  `Mesto_rogdenia_supr` varchar(50) DEFAULT NULL,
+  `Smena_FIO_supr` int(11) DEFAULT NULL,
+  `Pregnie_FIO_supr` varchar(50) DEFAULT NULL,
+  `Data_okonchania_vrem_reg_supr` varchar(50) DEFAULT NULL,
+  `Adres_post_reg_zaem` text,
+  `Adres_vrem_zaem` text,
+  `Adres_fakt_zaem` text,
+  `Adres_post_reg_supr` text,
+  `Adres_vrem_reg_supr` text,
+  `Adres_fact_progiv_supr` text,
+  `Adres_fakt_progiv_poruch` text,
+  `Obekt_progivania_supr` int(11) DEFAULT NULL,
+  `Srok_progiv_supr_po_fact_adresu` int(11) DEFAULT NULL,
+  `Region_rabot_supr` int(11) DEFAULT NULL,
+  `Mobil_tel_supr` varchar(50) DEFAULT NULL,
+  `Dom_tel_supr` varchar(50) DEFAULT NULL,
+  `Rab_tel_supr` varchar(50) DEFAULT NULL,
+  `Mail_supr` varchar(50) DEFAULT NULL,
+  `Obrazovanie_supr` int(11) DEFAULT NULL,
+  `VUZ_supr` text,
+  `Specialnost_supr` varchar(50) DEFAULT NULL,
+  `Voinskaya_slugba_supr` int(11) DEFAULT NULL,
+  `Oficialno_rab_supr` int(11) DEFAULT NULL,
+  `Dolgnost_supr` varchar(50) DEFAULT NULL,
+  `Kategoria_dolgnosti_supr` int(11) DEFAULT NULL,
+  `INN_org_supr` varchar(50) DEFAULT NULL,
+  `Ur_adres_org_supr` text,
+  `Fakt_adres_org_supr` text,
+  `Telefon_otd_kadrov_supr` varchar(50) DEFAULT NULL,
+  `Kol_vo_sotrudnikov_supr` int(11) DEFAULT NULL,
+  `Trudovoi_dogovor_supr` int(11) DEFAULT NULL,
+  `Data_okonch_srochnogo_dog_supr` varchar(50) DEFAULT NULL,
+  `Obchii_trud_stag_supr` int(11) DEFAULT NULL,
+  `Stag_na_posled_meste_supr` int(11) DEFAULT NULL,
+  `Kol_vo_mest_rab_supr` int(11) DEFAULT NULL,
+  `Kol_vo_igdivencev_supr` int(11) DEFAULT NULL,
+  `Info_igdivenci_supr` text,
+  `Dohod_supr` int(11) DEFAULT NULL,
+  `Rashod_na_progiv_supr` int(11) DEFAULT NULL,
+  `Plategi_po_deystv_kreditam_supr` int(11) DEFAULT NULL,
+  `Dolya_platega_v_chistom_doh_supr` float DEFAULT NULL,
+  `Nalichie_nedvig_supr` int(11) DEFAULT NULL,
+  `Kvartira_supr` text,
+  `Garag_supr` text,
+  `Dom_supr` text,
+  `Zemlya_supr` text,
+  `Nalichie_TC_supr` int(11) DEFAULT NULL,
+  `Data_smena_FIO_zaem` varchar(50) DEFAULT NULL,
+  `Data_smena_FIO_poruch` varchar(50) DEFAULT NULL,
+  `Data_smena_FIO_supr` varchar(50) DEFAULT NULL,
+  `Legkovoe_TC_supr` text,
+  `Gruzovoe_TC_supr` text,
+  `Sudeb_resheniya` int(11) DEFAULT NULL,
+  `Sudimosti` int(11) DEFAULT NULL,
+  `Kredit_za_3_goda` int(11) DEFAULT NULL,
+  `Prosrochki_pogashenia` int(11) DEFAULT NULL,
+  `Skolko_prosrochek` int(11) DEFAULT NULL,
+  `Skolko_dnei_prosrochki` int(11) DEFAULT NULL,
+  `Avans_bolee_10` int(11) DEFAULT NULL,
+  `Vozrast_zaem` int(11) DEFAULT NULL,
+  `Tip_tehniki` int(11) DEFAULT NULL,
+  `Data_reg_yurlitsca` varchar(50) DEFAULT NULL,
+  `Sistema_NO` int(11) DEFAULT NULL,
+  `Dohod_za_posl_6_mes` int(11) DEFAULT NULL,
+  `Dohod_ne_ofic` int(11) DEFAULT NULL,
+  `Opyt_ispolz_analog_imusch` int(11) DEFAULT NULL,
+  `Obyaz_po_kreditam` int(11) DEFAULT NULL,
+  `Plat_po_kred_v_mes` int(11) DEFAULT NULL,
+  `Obyaz_po_zaimam` int(11) DEFAULT NULL,
+  `Plat_po_zaim_v_mes` int(11) DEFAULT NULL,
+  `Ost_lizing_platezhey` int(11) DEFAULT NULL,
+  `Ezhemes_liz_plat_sum` int(11) DEFAULT NULL,
+  `Poruch_tretyih_lic_summ` int(11) DEFAULT NULL,
+  `Stoimost_TC` int(11) DEFAULT NULL,
+  `Tip_klienta` int(11) DEFAULT NULL,
+  `Direktor_ili_uchred_ur_lica` int(11) DEFAULT NULL,
+  `Podtv_dohod_zaem` int(11) DEFAULT NULL,
+  `Region_registr_zaem` int(11) DEFAULT NULL,
+  `Stoimost_nedvizh_im` int(11) DEFAULT NULL,
+  `Stoimost_TS` int(11) DEFAULT NULL,
+  `Stoimost_oborud` int(11) DEFAULT NULL,
+  `Stoimost_zapasov` int(11) DEFAULT NULL,
+  `Dohod_god_ofic` int(11) DEFAULT NULL,
+  `Stazh_rukovoditrlya` int(11) DEFAULT NULL,
+  `Stazh_rukovod_v_organiz` int(11) DEFAULT NULL,
+  `Srok_vedeniya_bisnesa` int(11) DEFAULT NULL,
+  `Vid_deyateln_imushestva` int(11) DEFAULT NULL,
+  `Naimenovanie_org_supr` varchar(50) DEFAULT NULL,
+  `Vozrast_TC_na_datu_pogashenia` int(11) DEFAULT NULL,
+  `Srok_kredita` int(11) DEFAULT NULL,
+  `Vid_deyateln_predpr` int(11) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `table_clients`
+--
+
+LOCK TABLES `table_clients` WRITE;
+/*!40000 ALTER TABLE `table_clients` DISABLE KEYS */;
+INSERT INTO `table_clients` VALUES (6,5,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'02.12.1963',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Братчиков Вячеслав Павлович',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(7,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'04.05.1984',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Самойлов Алексей Сергеевич',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Софийская 40',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(8,4,4,NULL,1,5,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2010,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(9,4,5,NULL,1,4,4,NULL,NULL,2500000,9,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2012,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(10,4,5,NULL,1,4,4,NULL,NULL,2500000,7,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,3,NULL,NULL,2,NULL,25000,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,'5',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,2013,4,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,5,5,NULL,NULL,NULL,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(11,4,5,NULL,1,4,4,NULL,NULL,2500000,7,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,3,NULL,NULL,2,NULL,50000,NULL,20000,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,'5',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,2013,5,5,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,5,NULL,4,2,3,4,25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(12,4,5,NULL,1,4,6,NULL,NULL,NULL,7,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,3,NULL,NULL,0,NULL,60000,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,'5',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,2013,4,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,5,5,NULL,NULL,NULL,NULL,27,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2500000,4,NULL,7,4925,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(13,4,5,NULL,1,4,6,NULL,NULL,NULL,7,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,36,NULL,NULL,0,NULL,60000,NULL,15000,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,'4',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,2013,5,5,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,5,NULL,4,1,2,NULL,27,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,3500000,4,NULL,7,4925,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(14,4,5,NULL,1,4,6,NULL,NULL,NULL,9,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,2,NULL,150000,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,'5',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,2013,5,5,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,5,5,NULL,NULL,NULL,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,3500000,4,NULL,7,4925,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(15,4,5,NULL,1,4,6,NULL,NULL,NULL,7,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,24,NULL,NULL,1,NULL,100000,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,'5',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,2013,5,5,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,5,5,NULL,NULL,NULL,NULL,24,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,3500000,4,NULL,7,4925,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(16,4,4,NULL,1,4,4,NULL,NULL,NULL,7,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,1,NULL,30000,NULL,NULL,NULL,6,NULL,NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,'5',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,2012,5,5,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,5,5,NULL,NULL,NULL,NULL,25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2500000,4,NULL,7,4925,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,36,NULL),(17,5,6,NULL,1,4,4,NULL,NULL,NULL,8,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,13,NULL,NULL,0,NULL,40000,NULL,NULL,NULL,6,NULL,NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,'5',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,NULL,'Иванов И.И.',NULL,NULL,NULL,NULL,1999,5,5,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,5,5,5,NULL,NULL,NULL,23,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,500000,4,NULL,5,4925,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,24,NULL),(18,5,5,NULL,1,4,4,NULL,NULL,NULL,8,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,30,NULL,NULL,0,NULL,100000,NULL,NULL,NULL,6,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,'5',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,NULL,'Петров П.П.',NULL,NULL,NULL,NULL,2013,5,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,5,4,5,NULL,NULL,NULL,35,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2800000,4,NULL,7,4925,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,25,NULL),(19,4,4,NULL,1,4,4,NULL,NULL,NULL,7,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,11,NULL,NULL,0,NULL,40000,NULL,NULL,NULL,6,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,'5',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,2013,4,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,5,5,NULL,NULL,NULL,NULL,28,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,500,4,NULL,4,4503,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,NULL);
+/*!40000 ALTER TABLE `table_clients` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `table_credprogr`
+--
+
+DROP TABLE IF EXISTS `table_credprogr`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `table_credprogr` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Bank_LK` varchar(50) DEFAULT NULL,
+  `Programma` varchar(50) DEFAULT NULL,
+  `Min_summa` int(11) DEFAULT NULL,
+  `Max_summa` int(11) DEFAULT NULL,
+  `Min_srok` int(11) DEFAULT NULL,
+  `Max_srok` int(11) DEFAULT NULL,
+  `Min_avans` int(11) DEFAULT NULL,
+  `Max_avans` int(11) DEFAULT NULL,
+  `rasch_schet` int(11) DEFAULT NULL,
+  `stavka` text,
+  `treb_poruchitel` int(11) DEFAULT NULL,
+  `min_vozrast_zayomschika` int(11) DEFAULT NULL,
+  `max_vozrast_zayomschika_M` int(11) DEFAULT NULL,
+  `min_vozrast_poruchitelya` int(11) DEFAULT NULL,
+  `max_vozrast_poruchitelya_M` int(11) DEFAULT NULL,
+  `rezidentstvo_zayomschika` int(11) DEFAULT NULL,
+  `rezidentstvo_poruchitelya` int(11) DEFAULT NULL,
+  `rasstoyanie_do_adm_centra` int(11) DEFAULT NULL,
+  `Min_obschii_trudovoi_stazh` int(11) DEFAULT NULL,
+  `Min_trudovoi_stazh_posl_meste` int(11) DEFAULT NULL,
+  `zamena_avansa_imushestvom` int(11) DEFAULT NULL,
+  `srok_predostavl_PTS_PSM` int(11) DEFAULT NULL,
+  `Max_vozrast_avto_RUS` int(11) DEFAULT NULL,
+  `Max_vozrast_avto_China` int(11) DEFAULT NULL,
+  `Max_vozrast_novogo_avto` int(11) DEFAULT NULL,
+  `Max_kolvo_ed` int(11) DEFAULT NULL,
+  `Max_summa_plat` text,
+  `Obyz_KACKO` int(11) DEFAULT NULL,
+  `KACKO_in_Credit` int(11) DEFAULT NULL,
+  `Komissia_za_vydacu` float DEFAULT NULL,
+  `Komissia_za_dosrochnoe_pogash` float DEFAULT NULL,
+  `Min_sum_dosr_pogash` int(11) DEFAULT NULL,
+  `Srok_kom_dosr_pog` int(11) DEFAULT NULL,
+  `Shtraf_za_nevip_usl_cred` text,
+  `Otsrochka_platezha` int(11) DEFAULT NULL,
+  `Srok_rassm_zayavki` int(11) DEFAULT NULL,
+  `Srok_deistv_reshenia` int(11) DEFAULT NULL,
+  `Proch_uslovia` float DEFAULT NULL,
+  `XXXXXXXXXXX` text,
+  `XXXXXXXXXXXX` text,
+  `Izm_proc_stav` text,
+  `Min_vozrast_gen_direktora` int(11) DEFAULT NULL,
+  `Min_vozrast_uchereditelei` int(11) DEFAULT NULL,
+  `Rasst_ot_adm_centra_do_techniki` int(11) DEFAULT NULL,
+  `Min_srok_registracii` int(11) DEFAULT NULL,
+  `Min_srok_ved_deytelnosti` int(11) DEFAULT NULL,
+  `Dolya_nerez_v_ust_kapitale` float DEFAULT NULL,
+  `Dolya_uch_gosudarstv_struktur` float DEFAULT NULL,
+  `Dolya_uch_ne_sub_MSB` float DEFAULT NULL,
+  `Doly_oborotov_k_perevodu_v_bank` float DEFAULT NULL,
+  `Treb_poruch_rukovod_sobstvennikov` int(11) DEFAULT NULL,
+  `Max_vozrast_avto_ne_RUS_ne_China` int(11) DEFAULT NULL,
+  `Max_stoim_1_ed` int(11) DEFAULT NULL,
+  `Strahovanie_cherez_LD` int(11) DEFAULT NULL,
+  `Udorog_pri_dif_plat` text,
+  `Udorog_pri_annuit_plat` text,
+  `Vozm_izm_graf_plat` int(11) DEFAULT NULL,
+  `Vozm_pered_v_arendu_subl` int(11) DEFAULT NULL,
+  `Max_udalyon_ot_of_banka` int(11) DEFAULT NULL,
+  `max_vozrast_zayomschika_F` int(11) DEFAULT NULL,
+  `max_vozrast_poruchitelya_F` int(11) DEFAULT NULL,
+  `min_srok_deyatelnostil_IP` int(11) DEFAULT NULL,
+  `Fl_IP` int(11) DEFAULT NULL,
+  `Strahov_zhizni` int(11) DEFAULT NULL,
+  `FL_ruk_uchred` int(11) DEFAULT NULL,
+  `Zplatnaya_karta` int(11) DEFAULT NULL,
+  `Nal_pol_kred_istorii` int(11) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=287 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `table_credprogr`
+--
+
+LOCK TABLES `table_credprogr` WRITE;
+/*!40000 ALTER TABLE `table_credprogr` DISABLE KEYS */;
+INSERT INTO `table_credprogr` VALUES (4,'Банк РОС. КАП.',NULL,100000,500000,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(11,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,6,6,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(12,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(13,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(19,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,NULL,6,6,NULL,NULL,NULL,NULL,4,NULL,5480000,5,'4,65','5,00',4,6,100,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(21,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,NULL,12,12,NULL,NULL,NULL,NULL,4,NULL,12070000,5,'4,65','5,00',4,6,100,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(22,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,NULL,6,6,NULL,NULL,NULL,NULL,4,NULL,1,5,'4.65','5,00',4,6,100,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(23,'ОАО \"АФ БАНК\"','А_кредит на ком_транспорт и с_технику кат_В 12',100000,2000000,6,12,10,100,5,'13',5,23,60,23,60,4,4,NULL,6,6,4,14,NULL,NULL,NULL,NULL,'0.8',4,4,0,0,0,0,NULL,NULL,1,90,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(24,'ОАО \"АФ БАНК\"','А_кредит на ком_транспорт и с_технику кат_ В 60',100000,2000000,13,60,10,100,5,'18',5,23,60,23,60,4,4,NULL,6,6,4,14,NULL,NULL,NULL,NULL,'0.8',4,4,0,0,0,0,NULL,NULL,1,90,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(25,'ОАО \"АФ БАНК\"','А_кредит на  кат_ СDE_кроме_КНР',100000,3000000,3,60,20,100,5,'18,5',5,23,55,23,55,4,4,NULL,6,6,4,14,NULL,NULL,NULL,1,'0.8',4,4,0,0,0,0,NULL,NULL,1,90,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,NULL,NULL,NULL),(26,'ОАО \"АФ БАНК\"','А_кредит на  кат_ СDE_КНР',100000,3000000,3,60,30,100,5,'19,5',5,23,55,23,55,4,4,NULL,6,6,4,14,NULL,NULL,NULL,NULL,'0.8',4,4,0,0,0,0,NULL,NULL,1,90,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(27,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,NULL,12,12,NULL,NULL,NULL,NULL,4,NULL,1,5,'4.65','5,00',4,6,100,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(28,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,NULL,12,12,NULL,NULL,NULL,NULL,4,NULL,1,5,'4.65','5,00',4,6,100,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(29,'ОАО \"Банк \"Санкт-Петербург\"','Легкая покупка /перв.взнос - 12%',60000,3000000,12,60,12,100,5,'13,5',5,21,65,21,65,4,4,NULL,12,3,4,NULL,7,8,NULL,1,'45 % от дохода',4,5,0,0,NULL,NULL,'5000 руб за ПТС_3000 руб за всякое',5,2,90,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,9,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,NULL,NULL,NULL,NULL,NULL),(30,'ОАО \"Банк \"Санкт-Петербург\"','Легкая покупка /перв.взнос - 20%',60000,3000000,12,60,12,100,5,'13,5',5,21,65,21,65,4,4,NULL,12,3,4,NULL,8,NULL,NULL,5,'45 % от дохода',4,4,0,0,NULL,NULL,'5000 руб за ПТС_3000 руб за всякое',5,2,90,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,NULL,NULL,NULL,NULL,NULL),(31,'ОАО \"Банк \"Санкт-Петербург\"','Коммерческий транпорт',500000,5000000,12,60,12,100,5,'16.9',5,21,65,21,65,4,4,NULL,12,6,4,21,NULL,NULL,NULL,1,'45 % от дохода',4,5,0,0,NULL,NULL,'5000 руб за ПТС_3000 руб за всякое',5,2,90,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,NULL,NULL,NULL,NULL,NULL),(32,'ОАО Банк «Народный кредит»','Автокредитование новый 16.5% ',100000,3000000,0,12,50,100,5,'16,5',5,21,60,21,60,4,4,6,12,6,5,21,NULL,NULL,NULL,1,'разница между доходом и всеми выплатами должна быть не менее 8 тыс.руб в мес.',4,5,0,0,0,0,'0.5 % - ПРОСРОЧКА %%, 0,2 % ПРОСРОЧКА ПО ТЕЛУ КРЕДИТА',NULL,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,55,55,12,NULL,5,NULL,NULL,NULL),(33,'ОАО Банк «Народный кредит»','Автокредитование б/у 17% ',100000,3000000,0,12,50,100,5,'17',5,21,60,21,60,4,4,6,12,6,5,21,48,48,NULL,1,'разница между доходом и всеми выплатами должна быть не менее 8 тыс.руб в мес.',4,5,0,0,0,0,'0.5 % - ПРОСРОЧКА %%, 0,2 % ПРОСРОЧКА ПО ТЕЛУ КРЕДИТА',NULL,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,72,NULL,NULL,NULL,NULL,NULL,NULL,NULL,55,55,12,NULL,5,NULL,NULL,NULL),(34,'ОАО Банк «Народный кредит»','Автокредитование б/у 17,5% ',100000,3000000,0,12,15,49,5,'17,5',5,21,60,21,60,4,4,6,12,6,5,21,48,48,NULL,1,'разница между доходом и всеми выплатами должна быть не менее 8 тыс.руб в мес.',4,5,0,0,0,0,'0.5 % - ПРОСРОЧКА %%, 0,2 % ПРОСРОЧКА ПО ТЕЛУ КРЕДИТА',NULL,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,72,NULL,NULL,NULL,NULL,NULL,NULL,NULL,55,55,12,NULL,5,NULL,NULL,NULL),(35,'ОАО Банк «Народный кредит»','Автокредитование новый 17% ',100000,3000000,0,12,15,49,5,'17',5,21,60,21,60,4,4,6,12,6,5,21,NULL,NULL,NULL,1,'разница между доходом и всеми выплатами должна быть не менее 8 тыс.руб в мес.',4,5,0,0,0,0,'0.5 % - ПРОСРОЧКА %%, 0,2 % ПРОСРОЧКА ПО ТЕЛУ КРЕДИТА',NULL,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,55,55,12,NULL,5,NULL,NULL,NULL),(36,'ОАО Банк «Народный кредит»','Автокредитование новый 17.5% ',100000,3000000,12,36,50,100,5,'17,5',5,21,60,21,60,4,4,6,12,6,5,21,NULL,NULL,NULL,1,'разница между доходом и всеми выплатами должна быть не менее 8 тыс.руб в мес.',4,5,0,0,0,0,'0.5 % - ПРОСРОЧКА %%, 0,2 % ПРОСРОЧКА ПО ТЕЛУ КРЕДИТА',5,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,55,55,12,NULL,5,NULL,NULL,NULL),(37,'ОАО Банк «Народный кредит»','Автокредитование б/у 18% ',100000,3000000,12,36,50,100,5,'18',5,21,60,21,60,4,4,6,12,6,5,21,72,72,NULL,1,'разница между доходом и всеми выплатами должна быть не менее 8 тыс.руб в мес.',4,5,0,0,0,0,'0.5 % - ПРОСРОЧКА %%, 0,2 % ПРОСРОЧКА ПО ТЕЛУ КРЕДИТА',5,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,55,55,12,NULL,5,NULL,NULL,NULL),(38,'ОАО Банк «Народный кредит»','Автокредитование новый 18% ',100000,3000000,12,36,15,49,5,'18',5,21,60,21,60,4,4,6,12,6,5,21,NULL,NULL,NULL,1,'разница между доходом и всеми выплатами должна быть не менее 8 тыс.руб в мес.',4,5,0,0,0,0,'0.5 % - ПРОСРОЧКА %%, 0,2 % ПРОСРОЧКА ПО ТЕЛУ КРЕДИТА',5,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,55,55,12,NULL,5,NULL,NULL,NULL),(39,'ОАО Банк «Народный кредит»','Автокредитование б/у 18,5% ',100000,3000000,12,36,15,49,5,'18,5',5,21,60,21,60,4,4,6,12,6,5,21,72,72,NULL,1,'разница между доходом и всеми выплатами должна быть не менее 8 тыс.руб в мес.',4,5,0,0,0,0,'0.5 % - ПРОСРОЧКА %%, 0,2 % ПРОСРОЧКА ПО ТЕЛУ КРЕДИТА',5,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,55,55,12,NULL,5,NULL,NULL,NULL),(40,'ОАО Банк «Народный кредит»','Автокредитование новый 18.5% ',100000,3000000,36,60,50,100,5,'18,5',5,21,60,21,60,4,4,6,12,6,5,21,NULL,NULL,NULL,1,'разница между доходом и всеми выплатами должна быть не менее 8 тыс.руб в мес.',4,5,0,0,0,0,'0.5 % - ПРОСРОЧКА %%, 0,2 % ПРОСРОЧКА ПО ТЕЛУ КРЕДИТА',5,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,55,55,12,NULL,5,NULL,NULL,NULL),(41,'ОАО Банк «Народный кредит»','Автокредитование б/у 19% ',100000,3000000,36,60,50,100,5,'19',5,21,60,21,60,4,4,6,12,6,5,21,96,96,NULL,1,'разница между доходом и всеми выплатами должна быть не менее 8 тыс.руб в мес.',4,5,0,0,0,0,'0.5 % - ПРОСРОЧКА %%, 0,2 % ПРОСРОЧКА ПО ТЕЛУ КРЕДИТА',5,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,55,55,12,NULL,5,NULL,NULL,NULL),(42,'ОАО Банк «Народный кредит»','Автокредитование новый 19% ',100000,3000000,36,60,15,49,5,'19',5,21,60,21,60,4,4,6,12,6,5,21,NULL,NULL,NULL,1,'разница между доходом и всеми выплатами должна быть не менее 8 тыс.руб в мес.',4,5,0,0,0,0,'0.5 % - ПРОСРОЧКА %%, 0,2 % ПРОСРОЧКА ПО ТЕЛУ КРЕДИТА',5,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,55,55,12,NULL,5,NULL,NULL,NULL),(43,'ОАО Банк «Народный кредит»','Автокредитование б/у 19.5% ',100000,3000000,36,60,15,49,5,'19.5',5,21,60,21,60,4,4,6,12,6,5,21,96,96,NULL,1,'разница между доходом и всеми выплатами должна быть не менее 8 тыс.руб в мес.',4,5,0,0,0,0,'0.5 % - ПРОСРОЧКА %%, 0,2 % ПРОСРОЧКА ПО ТЕЛУ КРЕДИТА',5,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,55,55,12,NULL,5,NULL,NULL,NULL),(44,'Банк ВТБ 24 (ЗАО)','Бизнес-экпресс. Целевой_ авто_до 12 мес_до 2 млн',1500000,2000000,0,12,20,100,5,'15',5,18,70,18,70,4,4,NULL,6,6,5,NULL,96,96,NULL,NULL,'50%',4,4,1.5,0,0,NULL,'0.1% в день от суммы просрочки',4,7,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,70,70,6,4,NULL,NULL,NULL,NULL),(45,'Банк ВТБ 24 (ЗАО)','Бизнес-экпресс. Целевой_ авто_12-24 мес_до 2 млн',1500000,2000000,12,24,20,100,5,'16',5,18,70,18,70,4,4,NULL,6,6,5,NULL,96,96,NULL,NULL,'50%',4,4,1.5,0,0,NULL,'0.1% в день от суммы просрочки',4,7,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,70,70,6,4,NULL,NULL,NULL,NULL),(46,'Банк ВТБ 24 (ЗАО)','Бизнес-экпресс. Целевой_ авто_24-36 мес_до 2 млн',1500000,2000000,24,36,20,100,5,'17',5,18,70,18,70,4,4,NULL,6,6,5,NULL,96,96,NULL,NULL,'50%',4,4,1.5,0,0,NULL,'0.1% в день от суммы просрочки',4,7,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,70,70,6,4,NULL,NULL,NULL,NULL),(47,'Банк ВТБ 24 (ЗАО)','Бизнес-экпресс. Целевой_ авто_36-60 мес_до 2 млн',1500000,2000000,36,60,20,100,5,'18',5,18,70,18,70,4,4,NULL,6,6,5,NULL,96,96,NULL,NULL,'50%',4,4,1.5,0,0,NULL,'0.1% в день от суммы просрочки',4,7,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,70,70,6,4,NULL,NULL,NULL,NULL),(48,'Банк ВТБ 24 (ЗАО)','Бизнес-экпресс. Целевой_ авто_до 12 мес_2-4 млн',2000000,4000000,0,12,20,100,5,'14,5',5,18,70,18,70,4,4,NULL,6,6,5,NULL,96,96,NULL,NULL,'50%',4,4,1,0,0,NULL,'0.1% в день от суммы просрочки',4,7,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,70,70,6,4,NULL,NULL,NULL,NULL),(49,'Банк ВТБ 24 (ЗАО)','Бизнес-экпресс. Целевой_ авто_12-24 мес_2-4 млн',2000000,4000000,12,24,20,100,5,'15',5,18,70,18,70,4,4,NULL,6,6,5,NULL,96,96,NULL,NULL,'50%',4,4,1,0,0,NULL,'0.1% в день от суммы просрочки',4,7,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,70,70,6,4,NULL,NULL,NULL,NULL),(50,'Банк ВТБ 24 (ЗАО)','Бизнес-экпресс. Целевой_ авто_24-36 мес_2-4 млн',2000000,4000000,24,36,20,100,5,'16',5,18,70,18,70,4,4,NULL,6,6,5,NULL,96,96,NULL,NULL,'50%',4,4,1,0,0,NULL,'0.1% в день от суммы просрочки',4,7,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,70,70,6,4,NULL,NULL,NULL,NULL),(51,'Банк ВТБ 24 (ЗАО)','Бизнес-экпресс. Целевой_ авто_36-60 мес_2-4 млн',2000000,4000000,36,60,20,100,5,'16,5',5,18,70,18,70,4,4,NULL,6,6,5,NULL,96,96,NULL,NULL,'50%',4,4,1,0,0,NULL,'0.1% в день от суммы просрочки',4,7,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,70,70,6,4,NULL,NULL,NULL,NULL),(52,'Банк ВТБ 24 (ЗАО)','Бизнес-экпресс. Целевой_ ст_до 12 мес_до 2 млн',1500000,2000000,0,12,30,100,5,'15',5,18,70,18,70,4,4,NULL,6,6,5,NULL,96,96,NULL,NULL,'50%',4,4,1.5,0,0,NULL,'0.1% в день от суммы просрочки',4,7,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,70,70,6,4,NULL,NULL,NULL,NULL),(53,'Банк ВТБ 24 (ЗАО)','Бизнес-экпресс. Целевой_ ст_12-24 мес_до 2 млн',1500000,2000000,12,24,30,100,5,'16',5,18,70,18,70,4,4,NULL,6,6,5,NULL,96,96,NULL,NULL,'50%',4,4,1.5,0,0,NULL,'0.1% в день от суммы просрочки',4,7,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,70,70,6,4,NULL,NULL,NULL,NULL),(54,'Банк ВТБ 24 (ЗАО)','Бизнес-экпресс. Целевой_ ст_24-36 мес_до 2 млн',1500000,2000000,24,36,30,100,5,'17',5,18,70,18,70,4,4,NULL,6,6,5,NULL,96,96,NULL,NULL,'50%',4,4,1.5,0,0,NULL,'0.1% в день от суммы просрочки',4,7,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,70,70,6,4,NULL,NULL,NULL,NULL),(55,'Банк ВТБ 24 (ЗАО)','Бизнес-экпресс. Целевой_ ст_36-60 мес_до 2 млн',1500000,2000000,36,60,30,100,5,'18',5,18,70,18,70,4,4,NULL,6,6,5,NULL,96,96,NULL,NULL,'50%',4,4,1.5,0,0,NULL,'0.1% в день от суммы просрочки',4,7,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,70,70,6,4,NULL,NULL,NULL,NULL),(56,'Банк ВТБ 24 (ЗАО)','Бизнес-экпресс. Целевой_ ст_до 12 мес_2-4 млн',2000000,4000000,0,12,30,100,5,'14,5',5,18,70,18,70,4,4,NULL,6,6,5,NULL,96,96,NULL,NULL,'50%',4,4,1,0,0,NULL,'0.1% в день от суммы просрочки',4,7,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,70,70,6,4,NULL,NULL,NULL,NULL),(58,'Банк ВТБ 24 (ЗАО)','Бизнес-экпресс. Целевой_ ст_12-24 мес_2-4 млн',2000000,4000000,12,24,30,100,5,'15',5,18,70,18,70,4,4,NULL,6,6,5,NULL,96,96,NULL,NULL,'50%',4,4,1,0,0,NULL,'0.1% в день от суммы просрочки',4,7,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,70,70,6,4,NULL,NULL,NULL,NULL),(59,'Банк ВТБ 24 (ЗАО)','Бизнес-экпресс. Целевой_ ст_24-36 мес_2-4 млн',2000000,4000000,24,36,30,100,5,'16',5,18,70,18,70,4,4,NULL,6,6,5,NULL,96,96,NULL,NULL,'50%',4,4,1,0,0,NULL,'0.1% в день от суммы просрочки',4,7,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,70,70,6,4,NULL,NULL,NULL,NULL),(60,'Банк ВТБ 24 (ЗАО)','Бизнес-экпресс. Целевой_ ст_36-60 мес_2-4 млн',2000000,4000000,36,60,30,100,5,'16,5',5,18,70,18,70,4,4,NULL,6,6,5,NULL,96,96,NULL,NULL,'50%',4,4,1,0,0,NULL,'0.1% в день от суммы просрочки',4,7,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,96,NULL,NULL,NULL,NULL,NULL,NULL,NULL,70,70,6,4,NULL,NULL,NULL,NULL),(61,'ОАО \"Россельхозбанк\"','Автокредит_ав_10-30_12 мес_нов',0,3000000,0,12,10,30,5,'15.75',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,4,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(62,'ОАО \"Россельхозбанк\"','Автокредит_ав_10-30_12 мес_нов_Ж',0,3000000,0,12,10,30,5,'14',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,4,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(63,'ОАО \"Россельхозбанк\"','Автокредит_ав_31-50_12 мес_нов',0,3000000,0,12,31,50,5,'15.25',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,4,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(64,'ОАО \"Россельхозбанк\"','Автокредит_ав_31-50_12 мес_нов_Ж',0,3000000,0,12,31,50,5,'13.5',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,4,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(65,'ОАО \"Россельхозбанк\"','Автокредит_ав_от 50_12 мес_нов',0,3000000,0,12,51,100,5,'14.75',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,4,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(66,'ОАО \"Россельхозбанк\"','Автокредит_ав_от 50_12 мес_нов_Ж',0,3000000,0,12,51,100,5,'13',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,4,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(67,'ОАО \"Россельхозбанк\"','Автокредит_ав_10-30_13-36 мес_нов',0,3000000,13,36,10,30,5,'16.25',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(68,'ОАО \"Россельхозбанк\"','Автокредит_ав_10-30_13-36 мес_нов_Ж',0,3000000,13,36,10,30,5,'14.5',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(69,'ОАО \"Россельхозбанк\"','Автокредит_ав_31-50_13-36 мес_нов',0,3000000,13,36,31,50,5,'15,75',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(70,'ОАО \"Россельхозбанк\"','Автокредит_ав_31-50_13-36 мес_нов_Ж',0,3000000,13,36,31,50,5,'14',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(71,'ОАО \"Россельхозбанк\"','Автокредит_ав_от 51_13-36 мес_нов',0,3000000,13,36,51,100,5,'15,25',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(72,'ОАО \"Россельхозбанк\"','Автокредит_ав_от 51_13-36 мес_нов_Ж',0,3000000,13,36,51,100,5,'13,5',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(73,'ОАО \"Россельхозбанк\"','Автокредит_ав_10-30_37-60 мес_нов',0,3000000,37,60,10,30,5,'17,25',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(74,'ОАО \"Россельхозбанк\"','Автокредит_ав_10-30_37-60 мес_нов_Ж',0,3000000,37,60,10,30,5,'15,5',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(75,'ОАО \"Россельхозбанк\"','Автокредит_ав_31-50_37-60 мес_нов',0,3000000,37,60,31,50,5,'16,75',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(76,'ОАО \"Россельхозбанк\"','Автокредит_ав_31-50_37-60 мес_нов_Ж',0,3000000,37,6,31,50,5,'15',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(77,'ОАО \"Россельхозбанк\"','Автокредит_ав_от 51_37-60 мес_нов',0,3000000,37,60,51,100,5,'15,75',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(78,'ОАО \"Россельхозбанк\"','Автокредит_ав_от 51_37-60 мес_нов_Ж',0,3000000,37,60,51,100,5,'14',5,18,65,18,65,4,4,NULL,6,6,5,14,NULL,NULL,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(79,'ОАО \"Россельхозбанк\"','Автокредит_ав_20-30_12 мес_БУ',0,3000000,0,12,20,30,5,'16,25',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,4,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(80,'ОАО \"Россельхозбанк\"','Автокредит_ав_20-30_12 мес_БУ_Ж',0,3000000,0,12,20,30,5,'14,5',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,4,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(81,'ОАО \"Россельхозбанк\"','Автокредит_ав_31-50_12 мес_БУ',0,3000000,0,12,31,50,5,'15,75',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,4,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(82,'ОАО \"Россельхозбанк\"','Автокредит_ав_31-50_12 мес_БУ_Ж',0,3000000,0,12,31,50,5,'14',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,4,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(83,'ОАО \"Россельхозбанк\"','Автокредит_ав_от 50_12 мес_БУ',0,3000000,0,12,51,100,5,'15,25',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,4,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(84,'ОАО \"Россельхозбанк\"','Автокредит_ав_от 50_12 мес_БУ_Ж',0,3000000,0,12,51,100,5,'13,5',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,4,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(85,'ОАО \"Россельхозбанк\"','Автокредит_ав_21-30_13-36 мес_БУ',0,3000000,13,36,21,30,5,'16,75',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(86,'ОАО \"Россельхозбанк\"','Автокредит_ав_21-30_13-36 мес_БУ_Ж',0,3000000,13,36,21,30,5,'15',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(87,'ОАО \"Россельхозбанк\"','Автокредит_ав_31-50_13-36 мес_БУ',0,3000000,13,36,31,50,5,'16,25',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(88,'ОАО \"Россельхозбанк\"','Автокредит_ав_31-50_13-36 мес_БУ_Ж',0,3000000,13,36,31,50,5,'14,5',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(89,'ОАО \"Россельхозбанк\"','Автокредит_ав_от 51_13-36 мес_БУ',0,3000000,13,36,51,100,5,'15,75',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(90,'ОАО \"Россельхозбанк\"','Автокредит_ав_от 51_13-36 мес_БУ_Ж',0,3000000,13,36,51,100,5,'14',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(91,'ОАО \"Россельхозбанк\"','Автокредит_ав_21-30_37-60 мес_БУ',0,3000000,37,60,21,30,5,'18,25',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(92,'ОАО \"Россельхозбанк\"','Автокредит_ав_21-30_37-60 мес_БУ_Ж',0,3000000,37,60,21,30,5,'16,5',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(93,'ОАО \"Россельхозбанк\"','Автокредит_ав_31-50_37-60 мес_БУ',0,3000000,37,60,31,50,5,'17,75',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(94,'ОАО \"Россельхозбанк\"','Автокредит_ав_31-50_37-60 мес_БУ_Ж',0,3000000,37,60,31,50,5,'16',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(95,'ОАО \"Россельхозбанк\"','Автокредит_ав_от 51_37-60 мес_БУ',0,3000000,37,60,51,100,5,'16.75',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,NULL,NULL),(96,'ОАО \"Россельхозбанк\"','Автокредит_ав_от 51_37-60 мес_БУ_Ж',0,3000000,37,60,51,100,5,'15',5,18,65,18,65,4,4,NULL,6,6,5,14,96,96,NULL,NULL,NULL,4,5,0,0,0,NULL,'за просрочку',NULL,4,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,NULL,NULL),(98,'ОАО ФКБ «Петрокоммерц» ','Потребительский руководителю',50000,3000000,0,12,0,0,5,'15',5,22,6,22,NULL,4,4,NULL,6,3,5,NULL,NULL,NULL,NULL,NULL,'40%',NULL,NULL,0,0,0,0,'пени на просрочку, штрафы',NULL,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,4,NULL,NULL),(99,'ОАО ФКБ «Петрокоммерц» ','Потребительский руководителю',50000,3000000,13,36,0,0,5,'16',5,22,NULL,22,NULL,4,4,NULL,6,3,NULL,NULL,NULL,NULL,NULL,NULL,'40%',NULL,NULL,0,0,0,0,'пени на просрочку, штрафы',NULL,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,4,NULL,NULL),(100,'ОАО ФКБ «Петрокоммерц» ','Потребительский руководителю',50000,3000000,37,60,0,0,5,'17',5,22,NULL,22,NULL,4,4,NULL,6,3,NULL,NULL,NULL,NULL,NULL,NULL,'40%',NULL,NULL,0,0,0,0,'пени на просрочку, штрафы',NULL,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,4,NULL,NULL),(101,'ОАО ФКБ «Петрокоммерц» ','Потребительский сотруднику',50000,1000000,0,12,0,0,5,'18',5,22,NULL,22,NULL,4,4,NULL,6,3,NULL,NULL,NULL,NULL,NULL,NULL,'40%',NULL,NULL,0,0,0,0,'пени на просрочку, штрафы',NULL,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,5,NULL,NULL),(102,'ОАО ФКБ «Петрокоммерц» ','Потребительский сотруднику',50000,1000000,13,60,0,0,5,'20',5,22,NULL,22,NULL,4,4,NULL,6,3,NULL,NULL,NULL,NULL,NULL,NULL,'40%',NULL,NULL,0,0,0,0,'пени на просрочку, штрафы',NULL,3,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,5,NULL,NULL),(103,'\"ТКБ\" (ЗАО) ','Кат B до 12 мес взнос 10% - 29% нов',75000,5000000,0,12,10,29,5,'10',5,21,65,21,65,4,4,NULL,12,3,5,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(104,'\"ТКБ\" (ЗАО) ','Кат B до 12 мес взнос 10% - 29% нов без ком',75000,5000000,0,12,10,29,5,'10,5',5,21,65,21,65,4,4,NULL,12,3,5,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(111,'\"ТКБ\" (ЗАО) ','Кат B до 12 мес взнос 10% - 29% бу',75000,5000000,0,12,10,29,5,'11',5,21,65,21,65,4,4,NULL,12,3,5,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(112,'\"ТКБ\" (ЗАО) ','Кат B до 12 мес взнос 10% - 29%  бу без ком',75000,5000000,0,12,10,29,5,'11,5',5,21,65,21,65,4,4,NULL,12,3,5,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(113,'\"ТКБ\" (ЗАО) ','Кат B до 12 мес взнос 10% - 29% нов без страх',75000,5000000,0,12,10,29,5,'13',5,21,65,21,65,4,4,NULL,12,3,5,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(114,'\"ТКБ\" (ЗАО) ','Кат B до 12 мес взнос 10% - 29% нов б/страх б/ком',75000,5000000,0,12,10,29,5,'13,5',5,21,65,21,65,4,4,NULL,12,3,5,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(117,'\"ТКБ\" (ЗАО) ','Кат B до 12 мес взнос 10% - 29% бу б/страх',75000,5000000,0,12,10,29,5,'14',5,21,65,21,65,4,4,NULL,12,3,5,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(118,'\"ТКБ\" (ЗАО) ','Кат B до 12 мес взнос 10% - 29% бу б/страх б/ком',75000,5000000,0,12,10,29,5,'14,5',5,21,65,21,65,4,4,NULL,12,3,5,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(119,'\"ТКБ\" (ЗАО) ','Кат B до 12 мес взнос от 30% нов',75000,5000000,0,12,30,100,5,'9.5',5,21,65,21,65,4,4,NULL,12,3,5,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(120,'\"ТКБ\" (ЗАО) ','Кат B до 12 мес взнос от 30% нов б/ком',75000,5000000,0,12,30,100,5,'10',5,21,65,21,65,4,4,NULL,12,3,5,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(121,'\"ТКБ\" (ЗАО) ','Кат B до 12 мес взнос от 30% бу',75000,5000000,0,12,30,100,5,'10.5',5,21,65,21,65,4,4,NULL,12,3,5,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(122,'\"ТКБ\" (ЗАО) ','Кат B до 12 мес взнос от 30% бу б/ком',75000,5000000,0,12,30,100,5,'11',5,21,65,21,65,4,4,NULL,12,3,5,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(123,'\"ТКБ\" (ЗАО) ','Кат B до 12 мес взнос от 30% нов б/страх',75000,5000000,0,12,30,100,5,'12.5',5,21,65,21,65,4,4,NULL,12,3,5,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(124,'\"ТКБ\" (ЗАО) ','Кат B до 12 мес взнос от 30% нов б/страх б/ком',75000,5000000,0,12,30,100,5,'13',5,21,65,21,65,4,4,NULL,12,3,5,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(125,'\"ТКБ\" (ЗАО) ','Кат B до 12 мес взнос от 30% бу б/страх',75000,5000000,0,12,30,100,5,'13.5',5,21,65,21,65,4,4,NULL,12,3,5,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(126,'\"ТКБ\" (ЗАО) ','Кат B до 12 мес взнос от 30% бу б/страх б/ком',75000,5000000,0,12,30,100,5,'14',5,21,65,21,65,4,4,NULL,12,3,5,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(127,'\"ТКБ\" (ЗАО) ','Кат B 13-36 мес взнос 10% - 29% нов',75000,5000000,13,36,10,29,5,'11.5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(128,'\"ТКБ\" (ЗАО) ','Кат B 13-36 мес взнос 10% - 29% бу',75000,5000000,13,36,10,29,5,'12.5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(129,'\"ТКБ\" (ЗАО) ','Кат B 13-36 мес взнос 10% - 29% нов б/ком',75000,5000000,13,36,10,29,5,'12',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(130,'\"ТКБ\" (ЗАО) ','Кат B 13-36 мес взнос 10% - 29% бу б/ком',75000,5000000,13,36,10,29,5,'13',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(131,'\"ТКБ\" (ЗАО) ','Кат B 13-36 мес взнос 10% - 29% нов б/страх',75000,5000000,13,36,10,29,5,'14.5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(132,'\"ТКБ\" (ЗАО) ','Кат B 13-36 мес взнос 10% - 29% нов б/страх б/ком',75000,5000000,13,36,10,29,5,'15',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(133,'\"ТКБ\" (ЗАО) ','Кат B 13-36 мес взнос 10% - 29% бу б/страх',75000,5000000,13,36,10,29,5,'15.5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(134,'\"ТКБ\" (ЗАО) ','Кат B 13-36 мес взнос 10% - 29% бу б/страх б/ком',75000,5000000,13,36,10,29,5,'16',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(135,'\"ТКБ\" (ЗАО) ','Кат B 13-36 мес взнос от 30% нов',75000,5000000,13,36,30,100,5,'10.5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(136,'\"ТКБ\" (ЗАО) ','Кат B 13-36 мес взнос от 30% нов б/ком',75000,5000000,13,36,30,100,5,'11',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(137,'\"ТКБ\" (ЗАО) ','Кат B 13-36 мес взнос от 30% бу',75000,5000000,13,36,30,100,5,'11.5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(138,'\"ТКБ\" (ЗАО) ','Кат B 13-36 мес взнос от 30% бу б/ком',75000,5000000,13,36,30,100,5,'12',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(139,'\"ТКБ\" (ЗАО) ','Кат B 13-36 мес взнос от 30% нов б/страх',75000,5000000,13,36,30,100,5,'13.5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(140,'\"ТКБ\" (ЗАО) ','Кат B 13-36 мес взнос от 30% нов б/страх б/ком',75000,5000000,13,36,30,100,5,'14',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(141,'\"ТКБ\" (ЗАО) ','Кат B 13-36 мес взнос от 30% бу б/страх',75000,5000000,13,36,30,100,5,'14.5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(142,'\"ТКБ\" (ЗАО) ','Кат B 13-36 мес взнос от 30% бу б/страх б/ком',75000,5000000,13,36,30,100,5,'15',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(143,'\"ТКБ\" (ЗАО) ','Кат B 37-60 мес взнос 10% - 29% нов',75000,5000000,37,60,10,29,5,'12',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(144,'\"ТКБ\" (ЗАО) ','Кат B 37-60 мес взнос 10% - 29% нов б/ком',75000,5000000,37,60,10,29,5,'12.5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(145,'\"ТКБ\" (ЗАО) ','Кат B 37-60 мес взнос 10% - 29% бу',75000,5000000,37,60,10,29,5,'13',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(146,'\"ТКБ\" (ЗАО) ','Кат B 37-60 мес взнос 10% - 29% бу б/ком',75000,5000000,37,60,10,29,5,'13,5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(147,'\"ТКБ\" (ЗАО) ','Кат B 37-60 мес взнос 10% - 29% нов б/страх',75000,5000000,37,60,10,29,5,'15',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(148,'\"ТКБ\" (ЗАО) ','Кат B 37-60 мес взнос 10% - 29% нов б/страх б/ком',75000,5000000,37,60,10,29,5,'15,5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(149,'\"ТКБ\" (ЗАО) ','Кат B 37-60 мес взнос 10% - 29% бу б/страх',75000,5000000,37,60,10,29,5,'16',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(150,'\"ТКБ\" (ЗАО) ','Кат B 37-60 мес взнос 10% - 29% бу б/страх б/ком',75000,5000000,37,60,10,29,5,'16,5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(151,'\"ТКБ\" (ЗАО) ','Кат B 37-60 мес взнос от30% нов',75000,5000000,37,60,30,100,5,'11',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(152,'\"ТКБ\" (ЗАО) ','Кат B 37-60 мес взнос от30% нов б/ком',75000,5000000,37,60,30,100,5,'11,5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(153,'\"ТКБ\" (ЗАО) ','Кат B 37-60 мес взнос от30% бу',75000,5000000,37,60,30,100,5,'12',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(154,'\"ТКБ\" (ЗАО) ','Кат B 37-60 мес взнос от30% бу б/ком',75000,5000000,37,60,30,100,5,'12,5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(155,'\"ТКБ\" (ЗАО) ','Кат B 37-60 мес взнос от30% нов б/страх',75000,5000000,37,60,30,100,5,'14',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(156,'\"ТКБ\" (ЗАО) ','Кат B 37-60 мес взнос от30% нов б/страх б/ком',75000,5000000,37,60,30,100,5,'14,5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(157,'\"ТКБ\" (ЗАО) ','Кат B 37-60 мес взнос от30% бу б/страх',75000,5000000,37,60,30,100,5,'15',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(158,'\"ТКБ\" (ЗАО) ','Кат B 37-60 мес взнос от30% бу б/страх б/ком',75000,5000000,37,60,30,100,5,'15,5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(159,'\"ТКБ\" (ЗАО) ','Кат CDE взнос 20% - 29% нов',75000,5000000,0,60,20,29,5,'14',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(160,'\"ТКБ\" (ЗАО) ','Кат CDE взнос 20% - 29% нов б/ком',75000,5000000,0,60,20,29,5,'14.5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(161,'\"ТКБ\" (ЗАО) ','Кат CDE взнос 20% - 29% бу',75000,5000000,0,60,20,29,5,'15',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(162,'\"ТКБ\" (ЗАО) ','Кат CDE взнос 20% - 29% бу б/ком',75000,5000000,0,60,20,29,5,'15.5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(163,'\"ТКБ\" (ЗАО) ','Кат CDE взнос 20% - 29% нов б/страх',75000,5000000,0,60,20,29,5,'17',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(164,'\"ТКБ\" (ЗАО) ','Кат CDE взнос 20% - 29% нов б/страх б/ком',75000,5000000,0,60,20,29,5,'17,5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(165,'\"ТКБ\" (ЗАО) ','Кат CDE взнос 20% - 29% бу б/страх',75000,5000000,0,60,20,29,5,'18',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(166,'\"ТКБ\" (ЗАО) ','Кат CDE взнос 20% - 29% бу б/страх б/ком',75000,5000000,0,60,20,29,5,'18,5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(167,'\"ТКБ\" (ЗАО) ','Кат CDE взнос 30% - 39% нов',75000,5000000,0,60,30,39,5,'13.5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(168,'\"ТКБ\" (ЗАО) ','Кат CDE взнос 30% - 39% нов б/ком',75000,5000000,0,60,30,39,5,'14',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(169,'\"ТКБ\" (ЗАО) ','Кат CDE взнос 30% - 39% бу',75000,5000000,0,60,30,39,5,'14.5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(170,'\"ТКБ\" (ЗАО) ','Кат CDE взнос 30% - 39% бу б/ком',75000,5000000,0,60,30,39,5,'15',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(171,'\"ТКБ\" (ЗАО) ','Кат CDE взнос 30% - 39% нов б/страх',75000,5000000,0,60,30,39,5,'16.5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(172,'\"ТКБ\" (ЗАО) ','Кат CDE взнос 30% - 39% нов б/страх б/ком',75000,5000000,0,60,30,39,5,'17',5,21,65,21,65,4,4,NULL,12,3,NULL,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(173,'\"ТКБ\" (ЗАО) ','Кат CDE взнос 30% - 39% бу б/страх',75000,5000000,0,60,30,39,5,'17.5',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(174,'\"ТКБ\" (ЗАО) ','Кат CDE взнос 30% - 39% бу б/страх б/ком',75000,5000000,0,60,30,39,5,'18',5,21,65,21,65,4,4,NULL,12,3,NULL,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(175,'\"ТКБ\" (ЗАО) ','Кат CDE взнос от 40% нов',75000,5000000,0,60,40,100,5,'12.5',5,21,65,21,65,4,4,NULL,12,3,5,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(177,'\"ТКБ\" (ЗАО) ','Кат CDE взнос от 40% нов б/ком',75000,5000000,0,60,40,100,5,'13',5,21,65,21,65,4,4,NULL,12,3,5,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(178,'\"ТКБ\" (ЗАО) ','Кат CDE взнос от 40% бу',75000,5000000,0,60,40,100,5,'13,5',5,21,65,21,65,4,4,NULL,12,3,5,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(179,'\"ТКБ\" (ЗАО) ','Кат CDE взнос от 40% бу б/ком',75000,5000000,0,60,40,100,5,'14',5,21,65,21,65,4,4,NULL,12,3,5,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,4,5,NULL,NULL),(180,'\"ТКБ\" (ЗАО) ','Кат CDE взнос от 40% нов б/страх',75000,5000000,0,60,40,100,5,'15.5',5,21,65,21,65,4,4,NULL,12,3,5,3,NULL,NULL,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(181,'\"ТКБ\" (ЗАО) ','Кат CDE взнос от 40% нов б/страх б/ком',75000,5000000,0,60,40,100,5,'16',5,21,65,21,65,4,4,NULL,12,3,5,3,NULL,NULL,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(182,'\"ТКБ\" (ЗАО) ','Кат CDE взнос от 40% бу б/страх',75000,5000000,0,60,40,100,5,'16,5',5,21,65,21,65,4,4,NULL,12,3,5,3,120,120,NULL,NULL,'60%',4,5,6000,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(183,'\"ТКБ\" (ЗАО) ','Кат CDE взнос от 40% бу б/страх б/ком',75000,5000000,0,60,40,100,5,'17',5,21,65,21,65,4,4,NULL,12,3,5,3,120,120,NULL,NULL,'60%',4,5,6,NULL,3000,NULL,'0,1% от суммы просрочки за день',NULL,5,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,60,12,5,5,5,NULL,NULL),(184,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% нов',0,100000000,0,119,70,100,5,'13',5,23,23,23,65,4,4,NULL,4,4,5,30,NULL,NULL,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,4),(185,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% нов',0,100000000,0,119,70,100,5,'12',5,23,23,23,65,4,4,NULL,4,4,5,30,NULL,NULL,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,4),(186,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% нов',0,100000000,0,120,70,100,5,'13',5,23,23,23,65,4,4,NULL,4,4,5,30,NULL,NULL,NULL,NULL,NULL,5,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,5),(187,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% нов',0,100000000,0,120,70,100,5,'13',5,23,23,23,65,4,4,NULL,4,4,5,30,NULL,NULL,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,5),(188,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% нов бсж нов пки зк',0,100000000,0,120,70,100,5,'14',5,23,23,23,65,4,4,NULL,4,4,5,30,NULL,NULL,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,4),(189,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% нов бси нов оки зк',0,100000000,0,120,70,100,5,'14',5,23,23,23,65,4,4,NULL,4,4,5,30,NULL,NULL,NULL,NULL,NULL,5,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,5),(190,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% нов  оки нзк',0,100000000,0,120,70,100,5,'14',5,23,23,23,65,4,4,NULL,4,4,5,30,NULL,NULL,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,5),(191,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% нов бси пки нзк',0,100000000,0,120,70,100,5,'14',5,23,23,23,65,4,4,NULL,4,4,5,30,NULL,NULL,NULL,NULL,NULL,5,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,4),(192,'ОАО \"Первобанк\"','Ком. транспорт взнос от 30-69% нов пки зк',0,100000000,0,120,30,69,5,'14',5,23,23,23,65,4,4,NULL,4,4,5,30,NULL,NULL,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,4),(193,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% бу пки зк',0,100000000,0,120,70,100,5,'15',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,4),(194,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% нов бсж оки зк',0,100000000,0,120,70,100,5,'15',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,5),(195,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% нов бси бсж пки зк',0,100000000,0,120,70,100,5,'15',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,4),(196,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% нов бсж пки нзк',0,100000000,0,120,70,100,5,'15',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,4),(197,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% нов бси оки нзк',0,100000000,0,120,70,100,5,'15',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,5),(198,'ОАО \"Первобанк\"','Ком. транспорт взнос от 30до 69% нов оки зк',0,100000000,0,120,30,69,5,'15',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,5),(199,'ОАО \"Первобанк\"','Ком. транспорт взнос от 30до 69% нов бси пки зк',0,100000000,0,120,30,69,5,'15',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,4),(200,'ОАО \"Первобанк\"','Ком. транспорт взнос от 30до 69% нов пки нзк',0,100000000,0,120,30,69,5,'15',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,4),(201,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% бу оки зк',0,100000000,0,120,70,100,5,'16',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,5),(202,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% бу бси пки зк',0,100000000,0,120,70,100,5,'16',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,4),(203,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% нов бси бсж оки зк',0,100000000,0,120,70,100,5,'16',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,5),(204,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% бу пки нзк',0,100000000,0,120,70,100,5,'16',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,4),(205,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% нов бсж оки нзк',0,100000000,0,120,70,100,5,'16',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,5),(206,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% нов бси бсж пки нзк',0,100000000,0,120,70,100,5,'16',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,4),(207,'ОАО \"Первобанк\"','Ком. транспорт взнос от 30до 69% нов бсж пки зк',0,100000000,0,120,30,69,5,'16',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,4),(208,'ОАО \"Первобанк\"','Ком. транспорт взнос от 30до 69% нов бси оки зк',0,100000000,0,120,30,69,5,'16',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,5),(209,'ОАО \"Первобанк\"','Ком. транспорт взнос от 30до 69% нов оки нзк',0,100000000,0,120,30,69,5,'16',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,5),(210,'ОАО \"Первобанк\"','Ком. транспорт взнос от 30до 69% нов бси пки нзк',0,100000000,0,120,30,69,5,'16',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,4),(211,'ОАО \"Первобанк\"','Ком. транспорт взнос от 15 до 29% нов пки зк',0,100000000,0,120,15,29,5,'16',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,4),(212,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% бу бсж пки зк',0,100000000,0,120,70,100,5,'17',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,4),(213,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% бу бси оки зк',0,100000000,0,120,70,100,5,'17',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,5),(214,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% бу оки нзк',0,100000000,0,120,70,100,5,'17',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,5),(215,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% бу бси пки нзк',0,100000000,0,120,70,100,5,'17',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,4),(216,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% нов бси бсж оки нзк',0,100000000,0,120,70,100,5,'17',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,5),(217,'ОАО \"Первобанк\"','Ком. транспорт взнос от 30 до 69 % бу пки зк',0,100000000,0,120,30,69,5,'17',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,4),(218,'ОАО \"Первобанк\"','Ком. транспорт взнос от 30до 69% нов бсж оки зк',0,100000000,0,120,30,69,5,'17',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,5),(219,'ОАО \"Первобанк\"','Ком. транспорт взн от 30-69% нов бси бсж пки зк',0,100000000,0,120,30,69,5,'17',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,4),(220,'ОАО \"Первобанк\"','Ком. транспорт взн от 30-69% нов  бсж пки нзк',0,100000000,0,120,30,69,5,'17',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,4),(221,'ОАО \"Первобанк\"','Ком. транспорт взн от 30-69% нов  бси оки нзк',0,100000000,0,120,30,69,5,'17',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,5),(222,'ОАО \"Первобанк\"','Ком. транспорт взнос  15-29% нов оки зк',0,100000000,0,120,15,29,5,'17',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,5),(223,'ОАО \"Первобанк\"','Ком. транспорт взнос  15-29% нов бси пки зк',0,100000000,0,120,15,29,5,'17',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,4),(224,'ОАО \"Первобанк\"','Ком. транспорт взнос  15-29% нов пки нзк',0,100000000,0,120,15,29,5,'17',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,4),(225,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% бу бсж оки зк',0,100000000,0,120,70,100,5,'18',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,5),(226,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% бу бси бсж пки зк',0,100000000,0,120,70,100,5,'18',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,4),(227,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% бу бсж пки нзк',0,100000000,0,120,70,100,5,'18',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,4),(228,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% бу бси оки нзк',0,100000000,0,120,70,100,5,'18',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,5),(229,'ОАО \"Первобанк\"','Ком. транспорт взнос 30-69 % бу оки зк',0,100000000,0,30,69,100,5,'18',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,5),(230,'ОАО \"Первобанк\"','Ком. транспорт взнос 30-69 % бу бси пки зк',0,100000000,0,30,69,100,5,'18',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,4),(231,'ОАО \"Первобанк\"','Ком. транспорт взнос 30-69 % бу пки нзк',0,100000000,0,30,69,100,5,'18',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,4),(232,'ОАО \"Первобанк\"','Ком. транспорт взн от 30-69% нов  бси бсж оки зк',0,100000000,0,120,30,69,5,'18',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,5),(233,'ОАО \"Первобанк\"','Ком. транспорт взн от 30-69% нов бсж оки нзк',0,100000000,0,120,30,69,5,'18',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,5),(234,'ОАО \"Первобанк\"','Ком. транспорт взн от 30-69% нов бси бсж пки нзк',0,100000000,0,120,30,69,5,'18',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,4),(235,'ОАО \"Первобанк\"','Ком. транспорт взнос  15-29% нов бсж пки зк',0,100000000,0,120,15,29,5,'18',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,4),(236,'ОАО \"Первобанк\"','Ком. транспорт взнос  15-29% нов бси оки зк',0,100000000,0,120,15,29,5,'18',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,5),(237,'ОАО \"Первобанк\"','Ком. транспорт взнос  15-29% нов оки нзк',0,100000000,0,120,15,29,5,'18',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,5),(238,'ОАО \"Первобанк\"','Ком. транспорт взнос  15-29% нов бси пки нзк',0,100000000,0,120,15,29,5,'18',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,4),(239,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% бу бси бсж оки зк',0,100000000,0,120,70,100,5,'19',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,5),(240,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% бу бсж оки нзк',0,100000000,0,120,70,100,5,'19',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,5),(241,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% бу бси бсж пки нзк',0,100000000,0,120,70,100,5,'19',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,4),(242,'ОАО \"Первобанк\"','Ком. транспорт взнос 30-69 % бу бсж пки зк',0,100000000,0,120,69,100,5,'19',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,4),(243,'ОАО \"Первобанк\"','Ком. транспорт взнос 30-69 % бу бси оки зк',0,100000000,0,120,69,100,5,'19',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,5),(244,'ОАО \"Первобанк\"','Ком. транспорт взнос 30-69 % бу оки нзк',0,100000000,0,120,69,100,5,'19',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,5),(245,'ОАО \"Первобанк\"','Ком. транспорт взнос 30-69 % бу бси пки нзк',0,100000000,0,120,69,100,5,'19',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,4),(246,'ОАО \"Первобанк\"','Ком. транспорт взнос 15-29 % бу пки зк',0,100000000,0,120,15,29,5,'19',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,4),(247,'ОАО \"Первобанк\"','Ком. транспорт взнос  30-69% нов бси бсж оки нзк',0,100000000,0,120,30,69,5,'19',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,5),(248,'ОАО \"Первобанк\"','Ком. транспорт взнос  15-29% нов бсж оки зк',0,100000000,0,120,15,29,5,'19',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,5),(249,'ОАО \"Первобанк\"','Ком. транспорт взнос  15-29% нов бси бсж пки зк',0,100000000,0,120,15,29,5,'19',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,4),(250,'ОАО \"Первобанк\"','Ком. транспорт взнос  15-29% нов бсж пки нзк',0,100000000,0,120,15,29,5,'19',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,4),(251,'ОАО \"Первобанк\"','Ком. транспорт взнос  15-29% нов бси оки нзк',0,100000000,0,120,15,29,5,'19',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,5),(252,'ОАО \"Первобанк\"','Ком. транспорт взнос от 70% бу бси бсж оки нзк',0,100000000,0,120,70,100,5,'20',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,5),(253,'ОАО \"Первобанк\"','Ком. транспорт взнос 30-69 % бу бсж оки зк',0,100000000,0,120,30,69,5,'20',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,5),(254,'ОАО \"Первобанк\"','Ком. транспорт взнос 30-69 % бу бси бсж пки зк',0,100000000,0,120,30,69,5,'20',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,4),(255,'ОАО \"Первобанк\"','Ком. транспорт взнос 30-69 % бу бсж пки нзк',0,100000000,0,120,30,69,5,'20',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,4),(256,'ОАО \"Первобанк\"','Ком. транспорт взнос 30-69 % бу бси оки нзк',0,100000000,0,120,30,69,5,'20',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,5),(257,'ОАО \"Первобанк\"','Ком. транспорт взнос 15-29 % бу оки зк',0,100000000,0,120,15,29,5,'20',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,5),(258,'ОАО \"Первобанк\"','Ком. транспорт взнос 15-29 % бу бси пки зк',0,100000000,0,120,15,29,5,'20',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,4),(259,'ОАО \"Первобанк\"','Ком. транспорт взнос 15-29 % бу пки нзк',0,100000000,0,120,15,29,5,'20',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,4),(260,'ОАО \"Первобанк\"','Ком. транспорт взнос  15-29% нов бси бсж оки зк',0,100000000,0,120,15,29,5,'20',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,5),(261,'ОАО \"Первобанк\"','Ком. транспорт взнос  15-29% нов  бсж оки нзк',0,100000000,0,120,15,29,5,'20',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,5),(262,'ОАО \"Первобанк\"','Ком. транспорт взнос  15-29% нов  бси бсж пки нзк',0,100000000,0,120,15,29,5,'20',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,4),(263,'ОАО \"Первобанк\"','Ком. транспорт взнос 30-69 % бу бси бсж оки зк',0,100000000,0,120,30,69,5,'21',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,5),(264,'ОАО \"Первобанк\"','Ком. транспорт взнос 30-69 % бу бсж оки нзк',0,100000000,0,120,30,69,5,'21',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,5),(265,'ОАО \"Первобанк\"','Ком. транспорт взнос 30-69 % бу бси бсж пки нзк',0,100000000,0,120,30,69,5,'21',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,4),(266,'ОАО \"Первобанк\"','Ком. транспорт взнос 15-29 % бу бси оки зк',0,100000000,0,120,15,29,5,'21',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,4,5),(267,'ОАО \"Первобанк\"','Ком. транспорт взнос 15-29 % бу бсж пки зк',0,100000000,0,120,15,29,5,'21',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,4),(268,'ОАО \"Первобанк\"','Ком. транспорт взнос 15-29 % бу оки нзк',0,100000000,0,120,15,29,5,'21',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,5),(269,'ОАО \"Первобанк\"','Ком. транспорт взнос 15-29 % бу бси пки нзк',0,100000000,0,120,15,29,5,'21',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,4),(270,'ОАО \"Первобанк\"','Ком. транспорт взнос  15-29% нов бси бсж оки нзк',0,100000000,0,120,15,29,5,'21',5,23,23,23,65,4,4,NULL,4,4,5,30,1,1,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,5),(271,'ОАО \"Первобанк\"','Ком. транспорт взнос 30-69 % бу бси бсж оки нзк',0,100000000,0,120,30,69,5,'22',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,5),(272,'ОАО \"Первобанк\"','Ком. транспорт взнос 15-29 % бу бсж оки зк',0,100000000,0,120,15,29,5,'22',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,5),(273,'ОАО \"Первобанк\"','Ком. транспорт взнос 15-29 % бу бси бсж пки зк',0,100000000,0,120,15,29,5,'22',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,4),(274,'ОАО \"Первобанк\"','Ком. транспорт взнос 15-29 % бу бсж пки нзк',0,100000000,0,120,15,29,5,'22',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,4),(275,'ОАО \"Первобанк\"','Ком. транспорт взнос 15-29 % бу бси оки нзк',0,100000000,0,120,15,29,5,'22',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,4,NULL,5,5),(276,'ОАО \"Первобанк\"','Ком. транспорт взнос 15-29 % бу бси бсж оки зк',0,100000000,0,120,15,29,5,'23',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,4,5),(277,'ОАО \"Первобанк\"','Ком. транспорт взнос 15-29 % бу бсж оки нзк',0,100000000,0,120,15,29,5,'23',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,4,4,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,5),(278,'ОАО \"Первобанк\"','Ком. транспорт взнос 15-29 % бу бси бсж пки нзк',0,100000000,0,120,15,29,5,'23',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,4),(279,'ОАО \"Первобанк\"','Ком. транспорт взнос 15-29 % бу бси бсж оки нзк',0,100000000,0,120,15,29,5,'24',5,23,23,23,65,4,4,NULL,4,4,5,30,120,120,NULL,NULL,NULL,5,5,0,0,NULL,NULL,'0,5 % от суммы просрочки за каждый день просрочки',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,120,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,6,NULL,5,NULL,5,5),(280,'Банк ВТБ 24 (ЗАО)','Промакция Кредит на коммерческий транспорт 20% нов',280000,2800000,0,60,20,100,5,'17',5,21,65,21,65,4,4,NULL,12,3,5,30,9,9,NULL,NULL,'50%',4,5,0,0,0,NULL,'0.1% в день от суммы просрочки',4,2,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,9,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,12,5,5,NULL,NULL,NULL),(281,'Банк ВТБ 24 (ЗАО)','Промакция Кредит на коммерческий транспорт 30% нов',280000,2800000,0,60,30,100,5,'17',5,21,65,21,65,4,4,NULL,12,3,5,30,9,9,NULL,NULL,'50%',4,4,0,0,0,NULL,'0.1% в день от суммы просрочки',4,2,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,9,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,12,5,5,NULL,NULL,NULL),(282,'Банк ВТБ 24 (ЗАО)','Промакция Кредит на коммерческий транспорт 20% бу',280000,2800000,0,60,20,100,5,'17,99',5,21,65,21,65,4,4,NULL,12,3,5,30,108,108,NULL,NULL,'50%',4,5,0,0,0,NULL,'0.1% в день от суммы просрочки',4,2,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,108,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,12,5,5,NULL,NULL,NULL),(283,'Банк ВТБ 24 (ЗАО)','Промакция Кредит на коммерческий транспорт 30% бу',280000,2800000,0,60,30,100,5,'17,99',5,21,65,21,65,4,4,NULL,12,3,5,30,108,108,NULL,NULL,'50%',4,4,0,0,0,NULL,'0.1% в день от суммы просрочки',4,2,70,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,108,NULL,NULL,NULL,NULL,NULL,NULL,NULL,65,65,12,5,5,NULL,NULL,NULL),(285,' ФАКБ «Абсолют Банк» (ОАО)','Инвестиционный до 12 мес ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(286,'абсолют','инвестиционный',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `table_credprogr` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tableconfig`
+--
+
+DROP TABLE IF EXISTS `tableconfig`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tableconfig` (
+  `TableConfigID` int(11) NOT NULL AUTO_INCREMENT,
+  `TableDBName` varchar(30) DEFAULT NULL,
+  `TableName` varchar(30) DEFAULT NULL,
+  `ColumnName` varchar(150) DEFAULT NULL,
+  `ColumnDBName` varchar(45) DEFAULT NULL,
+  `ColumnDBName_Old` varchar(45) DEFAULT NULL,
+  `ColumnType` varchar(50) DEFAULT NULL,
+  `ColumnReference` varchar(50) DEFAULT NULL,
+  `ReferenceMultiSelect` tinyint(1) DEFAULT '0',
+  `ShowInOffer` tinyint(1) DEFAULT '0',
+  `ShowInEditor` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`TableConfigID`)
+) ENGINE=InnoDB AUTO_INCREMENT=521 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tableconfig`
+--
+
+LOCK TABLES `tableconfig` WRITE;
+/*!40000 ALTER TABLE `tableconfig` DISABLE KEYS */;
+INSERT INTO `tableconfig` VALUES (8,'CredProgr','Кредитные программы','Программа(ф)(ю)','Programma','Programma','Строка50',NULL,0,1,1),(23,'CredProgr','Кредитные программы','Банк,ЛК(ф)(ю)','Bank_LK','Bank_LK','Строка50',NULL,0,1,1),(33,'CredProgr','Кредитные программы','Является ли физлицо ИП(ф)','Fl_IP','Fl_IP','Справочник','Yes_No',0,0,0),(34,'CredProgr','Кредитные программы','Является ли физлицо руковод-лем, учред-лем(ф)','FL_ruk_uchred','FL_ruk_uchred','Справочник','Yes_No',0,0,0),(35,'CredProgr','Кредитные программы','Салоны, в которых можно купить а/м(ф)(ю)','avtosalony','avtosalony','Справочник','showroom_car',1,0,0),(36,'CredProgr','Кредитные программы','Марки, модели(ф)(ю)','marki_modeli','marki_modeli','Справочник','Cars',1,1,0),(37,'CredProgr','Кредитные программы','Мин. сумма(ф)(ю)','Min_summa','Min_summa','Целое число',NULL,0,0,0),(38,'CredProgr','Кредитные программы','Категория ТС(ф)(ю)','Kateg_TS','Kateg_TS','Справочник','KategoriyaTS',1,1,0),(39,'CredProgr','Кредитные программы','Мин. срок кредита(ф)(ю)','Min_srok','Min_srok','Целое число',NULL,0,1,0),(40,'CredProgr','Кредитные программы','Макс. сумма(ф)(ю)','Max_summa','Max_summa','Целое число',NULL,0,0,0),(41,'CredProgr','Кредитные программы','Макс. срок кредита(ф)(ю)','Max_srok','Max_srok','Целое число',NULL,0,1,0),(42,'CredProgr','Кредитные программы','Мин. размер аванса(ф)(ю)','Min_avans','Min_avans','Целое число',NULL,0,0,0),(43,'CredProgr','Кредитные программы','Maкс. размер аванса(ф)(ю)','Max_avans','Max_avans','Целое число',NULL,0,0,0),(44,'CredProgr','Кредитные программы','Расчетный счет в банке(ф)(ю)','rasch_schet','rasch_schet','Справочник','Yes_No',0,0,0),(45,'CredProgr','Кредитные программы','Процентная ставка(ф)(ю)','stavka','stavka','Формула',NULL,0,0,0),(46,'CredProgr','Кредитные программы','Требуется поручитель(ф)(ю)','treb_poruchitel','treb_poruchitel','Справочник','Yes_No',0,1,0),(47,'CredProgr','Кредитные программы','Гражданство заёмщика(ф)','grazhdanstvo_zayomschika','grazhdanstvo_zayomschika','Справочник','citizenship',1,0,0),(48,'CredProgr','Кредитные программы','Гражданство поручителя(ф)','grazhdanstvo_poruchitelya','grazhdanstvo_poruchitelya','Справочник','citizenship',1,0,0),(49,'CredProgr','Кредитные программы','Мин. возраст заёмщика(ф)','min_vozrast_zayomschika','min_vozrast_zayomschika','Целое число',NULL,0,1,0),(50,'CredProgr','Кредитные программы','Макс. возраст заёмщика М(ф)','max_vozrast_zayomschika_M','max_vozrast_zayomschika_M','Целое число',NULL,0,1,0),(51,'CredProgr','Кредитные программы','Макс. возраст поручителя М(ф)','max_vozrast_poruchitelya_M','max_vozrast_poruchitelya_M','Целое число',NULL,0,0,0),(53,'CredProgr','Кредитные программы','Макс возр заемщика Ж(ф)','max_vozrast_zayomschika_F','max_vozrast_zayomschika_F','Целое число',NULL,0,1,0),(54,'CredProgr','Кредитные программы','Мин возраст поручителя(ф)','min_vozrast_poruchitelya','min_vozrast_poruchitelya','Целое число',NULL,0,0,0),(55,'CredProgr','Кредитные программы','Макс возр поручителя Ж(ф)','max_vozrast_poruchitelya_F','max_vozrast_poruchitelya_F','Целое число',NULL,0,0,0),(56,'CredProgr','Кредитные программы','Требуется резидентство заёмщика(ф)','rezidentstvo_zayomschika','rezidentstvo_zayomschika','Справочник','Yes_No',0,0,0),(57,'CredProgr','Кредитные программы','Требуется резиденство поручителя(ф)','rezidentstvo_poruchitelya','rezidentstvo_poruchitelya','Справочник','Yes_No',0,0,0),(58,'CredProgr','Кредитные программы','Регион регистрации заемщика(ф)(ю)','region_reistracii_zayomschika','region_reistracii_zayomschika','Справочник','Regions',1,1,0),(59,'CredProgr','Кредитные программы','Регион регистрации поручителя(ф)(ю)','region_registracii_poruchitelya','region_registracii_poruchitelya','Справочник','Regions',1,0,0),(60,'CredProgr','Кредитные программы','Расстояние от административного центра(ф)(ю)','rasstoyanie_do_adm_centra','rasstoyanie_do_adm_centra','Целое число',NULL,0,0,0),(61,'CredProgr','Кредитные программы','Минимальный общий трудовой стаж(ф)','Min_obschii_trudovoi_stazh','Min_obschii_trudovoi_stazh','Целое число',NULL,0,0,0),(62,'CredProgr','Кредитные программы','Мин. трудовой стаж на посл. месте Наемный (ф)','Min_trudovoi_stazh_posl_meste','Min_trudovoi_stazh_posl_meste','Целое число',NULL,0,1,0),(64,'CredProgr','Кредитные программы','Мин. срок деятельности ИП(ф)','min_srok_deyatelnostil_IP','min_srok_deyatelnostil_IP','Целое число',NULL,0,0,0),(65,'CredProgr','Кредитные программы','Список документов(ф)(ю)','Spisok_documentovl','Spisok_documentovl','Справочник','Document_list',1,0,0),(66,'CredProgr','Кредитные программы','Предмет залога(ф)(ю)','Predmet_zaloga','Predmet_zaloga','Справочник','predmet_zaloga',1,0,0),(67,'CredProgr','Кредитные программы','Возмож.ли.в.зам.аванс.плат.отдать др.иммущ.(ф)(ю)','zamena_avansa_imushestvom','zamena_avansa_imushestvom','Справочник','Yes_No',0,0,0),(68,'CredProgr','Кредитные программы','Срок предост. ПТС ПСМ и тд.(ф)(ю)','srok_predostavl_PTS_PSM','srok_predostavl_PTS_PSM','Целое число',NULL,0,0,0),(69,'CredProgr','Кредитные программы','Какие док.должн.быть у приобрет. тех.(ф)(ю)','trbuemye_documenty_na_priobret_avto','trbuemye_documenty_na_priobret_avto','Справочник','Dokumenty_TS',1,0,0),(70,'CredProgr','Кредитные программы','Происхож а/м(ф)(ю)','proishozhdenie_avto','proishozhdenie_avto','Справочник','cuntry',1,0,0),(71,'CredProgr','Кредитные программы','Макс возраст а/м на момент погаш.Рус(ф)(ю)','Max_vozrast_avto_RUS','Max_vozrast_avto_RUS','Целое число',NULL,0,1,0),(72,'CredProgr','Кредитные программы','Макс возраст а/м китайского пр-а(ф)(ю)','Max_vozrast_avto_China','Max_vozrast_avto_China','Целое число',NULL,0,0,0),(73,'CredProgr','Кредитные программы','Макс возраст а/м иностранного пр-а(ф)(ю)','Max_vozrast_avto_ne_RUS_ne_China','Max_vozrast_avto_ne_RUS_ne_China','Целое число',NULL,0,0,0),(74,'CredProgr','Кредитные программы','Макс возраст нового а/м(ф)(ю)','Max_vozrast_novogo_avto','Max_vozrast_novogo_avto','Целое число',NULL,0,0,0),(75,'CredProgr','Кредитные программы','Новые б/у(ф)(ю)','New_old','New_old','Справочник','New_am',1,0,0),(76,'CredProgr','Кредитные программы','Порядок погашения(ф)(ю)','Poryadok_pogasheniya','Poryadok_pogasheniya','Справочник','PP',1,0,0),(77,'CredProgr','Кредитные программы','Макс. кол-во ед.(ф)(ю)','Max_kolvo_ed','Max_kolvo_ed','Целое число',NULL,0,1,1),(78,'CredProgr','Кредитные программы','Макс. допустимая сумма ежемесячного платежа(ф)','Max_summa_plat','Max_summa_plat','Формула',NULL,0,0,0),(79,'CredProgr','Кредитные программы','Страхование предмета залога по КАСКО(ф)(ю)','Obyz_KACKO','Obyz_KACKO','Справочник','Yes_No',0,0,0),(80,'CredProgr','Кредитные программы','Включение КАСКО в кредит(ф)','KACKO_in_Credit','KACKO_in_Credit','Справочник','Yes_No',0,1,0),(81,'CredProgr','Кредитные программы','Страхов_жизни(ф)','Strahov_zhizni','Strahov_zhizni','Справочник','Yes_No',0,1,0),(82,'CredProgr','Кредитные программы','Список аккред. СК(ф)(ю)','CK_akkred','CK_akkred','Справочник','sau',1,0,0),(83,'CredProgr','Кредитные программы','Монитор.система, система безопасности(ф)(ю)','Monitoring_sistema','Monitoring_sistema','Справочник','Yes_No',1,0,0),(84,'CredProgr','Кредитные программы','Комиссия за выдачу(ф)(ю)','Komissia_za_vydacu','Komissia_za_vydacu','Число с плавающей точкой',NULL,0,0,0),(85,'CredProgr','Кредитные программы','Коммисия за досрочное погашение(ф)(ю)','Komissia_za_dosrochnoe_pogash','Komissia_za_dosrochnoe_pogash','Число с плавающей точкой',NULL,0,0,0),(86,'CredProgr','Кредитные программы','Мин.сумма доср.погаш(ф)(ю)','Min_sum_dosr_pogash','Min_sum_dosr_pogash','Целое число',NULL,0,0,0),(87,'CredProgr','Кредитные программы','Срок по ист кот.комис за доср погаш не взым(ф)(ю)','Srok_kom_dosr_pog','Srok_kom_dosr_pog','Целое число',NULL,0,0,0),(88,'CredProgr','Кредитные программы','Штрафы_за_не_вып_усл_кред(ф)(ю)','Shtraf_za_nevip_usl_cred','Shtraf_za_nevip_usl_cred','Строка300',NULL,0,0,0),(89,'CredProgr','Кредитные программы','Отсрочка платежа(ф)(ю)','Otsrochka_platezha','Otsrochka_platezha','Справочник','Yes_No',0,0,0),(90,'CredProgr','Кредитные программы','Срок рассмотр заяв(ф)(ю)','Srok_rassm_zayavki','Srok_rassm_zayavki','Целое число',NULL,0,0,0),(91,'CredProgr','Кредитные программы','Срок действия решения(ф)(ю)','Srok_deistv_reshenia','Srok_deistv_reshenia','Целое число',NULL,0,0,0),(92,'CredProgr','Кредитные программы','Адреса филиалов и доп офис(ф)(ю)','Adr_fll_dop_ofiss','Adr_fll_dop_ofiss','Справочник','Affiliates',1,0,0),(93,'CredProgr','Кредитные программы','РКО текущ.счета произв(ф)','RKO_tekus_sceta','RKO_tekus_sceta','Справочник','Affiliates',1,0,0),(94,'CredProgr','Кредитные программы','Прочие условия(ф)(ю)','Proch_uslovia','Proch_uslovia','Число с плавающей точкой',NULL,0,0,0),(95,'CredProgr','Кредитные программы','XXXXXXXXXXXXX','XXXXXXXXXXXX','XXXXXXXXXXXX','Строка300',NULL,0,0,0),(96,'CredProgr','Кредитные программы','XXXXXXXXXXXX','XXXXXXXXXXX','XXXXXXXXXXX','Строка300',NULL,0,0,0),(99,'CredProgr','Кредитные программы','Категория клиента(ю)','Kategoria_clienta','Kategoria_clienta','Справочник','Kat',1,0,0),(109,'CredProgr','Кредитные программы','на ск.изм проц.ст.если оказ.проч.усл.банк(ю)','Izm_proc_stav','Izm_proc_stav','Формула',NULL,0,0,0),(111,'CredProgr','Кредитные программы','ОПФ(ю)','OPF','OPF','Справочник','OPF',1,0,0),(112,'CredProgr','Кредитные программы','Система налогооблажения(ю)','Sistema_nalogobl','Sistema_nalogobl','Справочник','Nalogsystem',1,0,0),(113,'CredProgr','Кредитные программы','Гражданство_ген_дир(ю)','Grazhdanstvo_gen_direktora','Grazhdanstvo_gen_direktora','Справочник','citizenship',1,0,0),(114,'CredProgr','Кредитные программы','Гражданство учредителей(ю)','Grazhdanstvo_uchereditelei','Grazhdanstvo_uchereditelei','Справочник','citizenship',1,0,0),(115,'CredProgr','Кредитные программы','Мин возраст ген. дир.(ю)','Min_vozrast_gen_direktora','Min_vozrast_gen_direktora','Целое число',NULL,0,0,0),(116,'CredProgr','Кредитные программы','Мин возраст учредителей(ю)','Min_vozrast_uchereditelei','Min_vozrast_uchereditelei','Целое число',NULL,0,0,0),(118,'CredProgr','Кредитные программы','Регион ведения бизнеса(ю)','Region_vedenia_businesa','Region_vedenia_businesa','Справочник','Regions',1,0,0),(120,'CredProgr','Кредитные программы','Раст от админ центра до места работы тех-и(ю)','Rasst_ot_adm_centra_do_techniki','Rasst_ot_adm_centra_do_techniki','Целое число',NULL,0,0,0),(122,'CredProgr','Кредитные программы','Макс. удаленн. офиса клиента от офиса Банка(ю)','Max_udalyon_ot_of_banka','Max_udalyon_ot_of_banka','Целое число',NULL,0,0,0),(123,'CredProgr','Кредитные программы','Мин. срок регистрации ЮЛ(ю)','Min_srok_registracii','Min_srok_registracii','Целое число',NULL,0,0,0),(124,'CredProgr','Кредитные программы','Мин. срок вед.факт.деятельн.(ю)','Min_srok_ved_deytelnosti','Min_srok_ved_deytelnosti','Целое число',NULL,0,0,0),(125,'CredProgr','Кредитные программы','Доля участников нерез.РФ в УК(ю)','Dolya_nerez_v_ust_kapitale','Dolya_nerez_v_ust_kapitale','Число с плавающей точкой',NULL,0,0,0),(126,'CredProgr','Кредитные программы','Доля участ.гос-а в УК(ю)','Dolya_uch_gosudarstv_struktur','Dolya_uch_gosudarstv_struktur','Число с плавающей точкой',NULL,0,0,0),(127,'CredProgr','Кредитные программы','Доля участия ЮЛ,не суб. МСБ(ю)','Dolya_uch_ne_sub_MSB','Dolya_uch_ne_sub_MSB','Число с плавающей точкой',NULL,0,0,0),(128,'CredProgr','Кредитные программы','Вид деятельности(ю)','Vid_deytelnosti','Vid_deytelnosti','Справочник','Vid_deyatelnosti',1,0,0),(129,'CredProgr','Кредитные программы','Отрасль(ю)','Otrasl','Otrasl','Справочник','branch',1,0,0),(130,'CredProgr','Кредитные программы','Доля оборотов, котор.необх.перевести в банк(ю)','Doly_oborotov_k_perevodu_v_bank','Doly_oborotov_k_perevodu_v_bank','Число с плавающей точкой',NULL,0,0,0),(134,'CredProgr','Кредитные программы','Требуется поручит.руков.собст(ю)','Treb_poruch_rukovod_sobstvennikov','Treb_poruch_rukovod_sobstvennikov','Справочник','Yes_No',0,0,0),(145,'CredProgr','Кредитные программы','Макс.стоим.1ел.тех.(ю)','Max_stoim_1_ed','Max_stoim_1_ed','Целое число',NULL,0,0,0),(146,'CredProgr','Кредитные программы','Баланс(ю)','Balans','Balans','Справочник','balans',1,0,0),(149,'CredProgr','Кредитные программы','Страхование через ЛД(ю)','Strahovanie_cherez_LD','Strahovanie_cherez_LD','Справочник','Yes_No',0,0,0),(151,'CredProgr','Кредитные программы','Удорож при диф.плат(ю)','Udorog_pri_dif_plat','Udorog_pri_dif_plat','Формула',NULL,0,0,0),(152,'CredProgr','Кредитные программы','Удорожание при аннуит.платежах(ю)','Udorog_pri_annuit_plat','Udorog_pri_annuit_plat','Формула',NULL,0,0,0),(161,'Clients','Клиенты','Приобретаемое имущество~Категория ТС(ф)(ю)','Kategoriya_TS','Kategoriya_TS','Справочник','KategoriyaTS',0,1,0),(164,'Clients','Клиенты','Приобретаемое имущество~Марка, модель техники(ф)(ю)','Marka_model_TC','Marka_model_TC','Справочник','Cars',0,1,0),(166,'Clients','Клиенты','Приобреотаемое имущество~Цель приобретения(ф)(ю)','Cel_pokupki','Cel_pokupki','Справочник','Cel_pokupki',0,0,0),(176,'Clients','Клиенты','Приобретаемое имущество~Стоимость приобретаемого ТС(ф)(ю)','Stoimost_TC','Stoimost_TC','Целое число',NULL,0,0,0),(177,'Clients','Клиенты','Кредитный продукт~Первоначальный взнос, аванс(ф)(ю)','Avans','Avans','Справочник','Avans',0,1,0),(178,'Clients','Клиенты','Общая информация~Тип клиента(ю)','Tip_klienta','Tip_klienta','Справочник','Tip_klienta',0,0,0),(179,'Clients','Клиенты','Кредитный продукт~На кого оформляется автомобиль(ф)','Na_kogo_avto','Na_kogo_avto','Справочник','Sobstvennik_avto',0,0,0),(180,'Clients','Клиенты','Общая информация~Регион регистрации заёмщика(ф)(ю)','Region_registr_zaem','Region_registr_zaem','Справочник','Regions',0,1,0),(181,'Clients','Клиенты','Кредитный продукт~Включить КАСКО в сумму кредита(ф)','KACKO_v_kredit','KACKO_v_kredit','Справочник','Yes_No',0,1,0),(182,'Clients','Клиенты','Кредитный ипродукт~Включить страхование жизни в сумму кредита(ф)','Strah_gizni_v_kredit','Strah_gizni_v_kredit','Справочник','Yes_No',0,1,0),(185,'Clients','Клиенты','Общая информация~ФИО заёмщика(ф)','FIO_zaem','FIO_zaem','Строка50',NULL,0,1,1),(186,'Clients','Клиенты','Общая информация~Пол заёмщика(ф)','Pol_zaem','Pol_zaem','Справочник','Gender',0,1,1),(187,'Clients','Клиенты','Общая информация~Дата рождения заёмщика(ф)','Data_rogdeniaya_zaem','Data_rogdeniaya_zaem','Строка50',NULL,0,1,1),(188,'Clients','Клиенты','Общая инфоромация~Расчетный счет заёмщика в банке(ф)','Raschetni_schet_v_banke_zaem','Raschetni_schet_v_banke_zaem','Справочник','bank',0,0,0),(189,'Clients','Клиенты','Общая информация~Зарплатная карта заёмщика в банке(ф)','Zarplatnaya_karta_zaem','Zarplatnaya_karta_zaem','Справочник','bank',0,0,0),(190,'Clients','Клиенты','Общая информация~Гражданство заёмщика(ф)','Gragdanstvo_zaem','Gragdanstvo_zaem','Справочник','citizenship',0,0,0),(191,'Clients','Клиенты','Общая информация~Необходимость резиденства заёмщика(ф)','Rezidenstvo_zaem','Rezidenstvo_zaem','Справочник','Yes_No',0,0,0),(192,'Clients','Клиенты','Общая информация~Предоставленные документы(ф)','Dokument','Dokument','Справочник','Document_list',0,0,0),(193,'Clients','Клиенты','Общая информация~Паспорт заёмщика(ф)','Pasport_zaem','Pasport_zaem','Строка300',NULL,0,0,0),(196,'Clients','Клиенты','Общая информация~Место рождения заёмщика(ф)','Mesto_rogdenia_zaem','Mesto_rogdenia_zaem','Справочник','Regions',0,0,0),(197,'Clients','Клиенты','Общая информация~Менялись ли ФИО заёмщика(ф)','Smena_FIO_zaem','Smena_FIO_zaem','Справочник','Yes_No',0,0,0),(199,'Clients','Клиенты','Общая информация~Прежние ФИО заемщика(ф)','Pregnie_FIO_zaem','Pregnie_FIO_zaem','Строка50',NULL,0,0,0),(201,'Clients','Клиенты','Общая информация~Дата изменения ФИО заёмщика(ф)','Data_smena_FIO_zaem','Data_smena_FIO_zaem','Строка50',NULL,0,0,0),(202,'Clients','Клиенты','Общая информация~Адрес постоянной регистрации, юридический заёмщика(ф)(ю)','Adres_post_reg_zaem','Adres_post_reg_zaem','Строка300',NULL,0,0,0),(203,'Clients','Клиенты','Общая информация~Адрес временной регистрации заёмщика(ф)','Adres_vrem_zaem','Adres_vrem_zaem','Строка300',NULL,0,0,0),(204,'Clients','Клиенты','Общая информация~Дата окончания временной регистрации заёмщика(ф)','Data_okonchania_vrem_reg_zaem','Data_okonchania_vrem_reg_zaem','Строка50',NULL,0,0,0),(205,'Clients','Клиенты','Общая информация~Расстояние от административного центра(ф)(ю)','Rastoyanie_ot_centra','Rastoyanie_ot_centra','Целое число',NULL,0,0,0),(206,'Clients','Клиенты','Общая информация~Адрес фактического проживания, местонахождения заёмщика(ф)(ю)','Adres_fakt_zaem','Adres_fakt_zaem','Строка300',NULL,0,0,0),(207,'Clients','Клиенты','Общая информация~Объект, в котором проживает заёмщик(ф)','Obekt_progivania_zaem','Obekt_progivania_zaem','Справочник','Obekt_progivania',0,0,0),(208,'Clients','Клиенты','Общая информация~Срок проживания заёмщика по фактическому адресу(ф)','Srok_progivaniz_zaem_po_fact_adresu','Srok_progivaniz_zaem_po_fact_adresu','Целое число',NULL,0,0,0),(209,'Clients','Клиенты','Общая информация~Сколько месяцев предприятие получает выручку(ю)','Srok_vedeniya_bisnesa','Srok_vedeniya_bisnesa','Целое число','OPF',0,0,0),(210,'Clients','Клиенты','Общая информация~Мобильный телефон заёмщика(ф)(ю)','Mobil_tel_zaem','Mobil_tel_zaem','Строка50',NULL,0,0,0),(211,'Clients','Клиенты','Общая информация~Домашний телефон заёмщика(ф)','Dom_tel_zaem','Dom_tel_zaem','Строка50',NULL,0,0,0),(213,'Clients','Клиенты','Общая информация~Рабочий телефон, телефон офиса заёмщика(ф)(ю)','Rab_tel_zaem','Rab_tel_zaem','Строка50',NULL,0,0,0),(214,'Clients','Клиенты','Общая информация~E-mail заёмщика(ф)(ю)','Mail_zaem','Mail_zaem','Строка50',NULL,0,0,0),(215,'Clients','Клиенты','Общая информация~Образование заёмщика(ф)','Obrazovanie_zaem','Obrazovanie_zaem','Справочник','Obrazovanie',0,0,0),(216,'Clients','Клиенты','Общая информация~Название ВУЗа заёмщика(ф)','VUZ_zaem','VUZ_zaem','Строка300',NULL,0,0,0),(218,'Clients','Клиенты','Общая информация~Специальность заёмщика(ф)','Specialnost_zaem','Specialnost_zaem','Строка50',NULL,0,0,0),(219,'Clients','Клиенты','Общая информация~Отношение к воинской службе(ф)','Voinskaya_slugba_zaem','Voinskaya_slugba_zaem','Справочник','Voinskaya_slugba',0,0,0),(220,'Clients','Клиенты','Общая информация~Заёмщик работает официально(ф)','Oficialno_rab_zaem','Oficialno_rab_zaem','Справочник','Yes_No',0,0,0),(221,'Clients','Клиенты','Общая информация~Являетесь ли Вы учредителем или директором юридического лица?(ф)','Direktor_ili_uchred_ur_lica','Direktor_ili_uchred_ur_lica','Справочник','Yes_No',0,0,0),(222,'Clients','Клиенты','Общая информация~Занимаемая должность заёмщика(ф)','Dolgnost_zaem','Dolgnost_zaem','Строка50',NULL,0,0,0),(224,'Clients','Клиенты','Общая информация~Категория занимаемой должности заёмщика(ф)','Kategoria_dolgnosti_zaem','Kategoria_dolgnosti_zaem','Справочник','Kategorii_dolgnostey',0,0,0),(225,'Clients','Клиенты','Общая информация~Название предприятия - работодателя заёмщика(ф)','Naimenovanie_org_zaem','Naimenovanie_org_zaem','Строка50',NULL,0,0,0),(227,'Clients','Клиенты','Общая информация~ИНН организации-работодателя заёмщика(ф)','INN_org_zaem','INN_org_zaem','Строка50',NULL,0,0,0),(229,'Clients','Клиенты','Общая информация~Фактический адрес организации-работодателя заёмщика(ф)','Fakt_adres_org_zaem','Fakt_adres_org_zaem','Строка300',NULL,0,0,0),(230,'Clients','Клиенты','Общая информация~Юридический адрес организации-работодателя заёмщика(ф)','UR_adrez_org_zaem','UR_adrez_org_zaem','Строка300',NULL,0,0,0),(231,'Clients','Клиенты','Общая информация~Телефон отдела кадров заёмщика(ф)','Telefon_otd_kadrov_zaem','Telefon_otd_kadrov_zaem','Строка50',NULL,0,0,0),(232,'Clients','Клиенты','Общая информация~Вид деятельности предприятия - работодателя заёмщика(ф)','Vid_deyatelnosti_org_zaem','Vid_deyatelnosti_org_zaem','Справочник','Vid_deyatelnosti',1,0,0),(233,'Clients','Клиенты','Общая информация~Количество работников в организации - работодателе заёмщика(ф)(ю)','Kol_vo_sotrudnikov_zaem','Kol_vo_sotrudnikov_zaem','Целое число',NULL,0,0,0),(234,'Clients','Клиенты','Общая информация~Работа по трудовому договору заёмщика(ф)','Trudovoi_dogovor_zaem','Trudovoi_dogovor_zaem','Справочник','Trudovoi_dogovor',0,0,0),(235,'Clients','Клиенты','Общая информация~Дата окончания срочного договора заёмщика(ф)','Data_okonch_srochnogo_dog_zaem','Data_okonch_srochnogo_dog_zaem','Строка50',NULL,0,0,0),(236,'Clients','Клиенты','Общая информация~Общий трудовой стаж заёмщика(ф)','Obchii_trud_stag_zaem','Obchii_trud_stag_zaem','Целое число',NULL,0,0,0),(237,'Clients','Клиенты','Общая информация~Трудовой стаж на последнем месте работы заёмщика(ф)','Stag_na_posled_meste_zaem','Stag_na_posled_meste_zaem','Целое число',NULL,0,1,0),(238,'Clients','Клиенты','Общая информация~Количество мест работы за посл. 3 года заёмщика(ф)','Kol_vo_mest_rab_zaem','Kol_vo_mest_rab_zaem','Целое число',NULL,0,0,0),(261,'Clients','Клиенты','Общая информация~Подтверждение доходов заёмщика(ф)','Podtv_dohod_zaem','Podtv_dohod_zaem','Справочник','Document_list',0,0,0),(262,'Clients','Клиенты','Общая информация~Семейное положение заёмщика(ф)','Semya_zaem','Semya_zaem','Справочник','Semeinoe_pologenie',0,0,0),(263,'Clients','Клиенты','Обязательства, кредитная и лизинговая история~Есть ли брачный контракт у заёмщика(ф)','Brak_kontrakt_zaem','Brak_kontrakt_zaem','Справочник','Yes_No',0,0,0),(264,'Clients','Клиенты','Доходы, расходы~Количество иждивенцев заёмщика(ф)','Kol_vo_igdivencev_zaem','Kol_vo_igdivencev_zaem','Целое число',NULL,0,0,0),(265,'Clients','Клиенты','Доходы, расходы~Информация об иждивенцах заёмщика(ф)','Info_igdivenci_zaem','Info_igdivenci_zaem','Строка300',NULL,0,0,0),(266,'Clients','Клиенты','Доходы, расходы~Среднемесячный доход заёмщика(ф)','Dohod_zaem','Dohod_zaem','Целое число',NULL,0,0,0),(267,'Clients','Клиенты','Доходы, расходы~Расходы на проживание заёмщика(ф)','Rashod_na_progiv_zaem','Rashod_na_progiv_zaem','Целое число',NULL,0,0,0),(268,'Clients','Клиенты','Доходы, расходы~Платежи по действующим кредитам заёмщика(ф)','Plategi_po_deystv_kreditam_zaem','Plategi_po_deystv_kreditam_zaem','Целое число',NULL,0,0,0),(269,'Clients','Клиенты','Доходы, расходы~Размер ежемесяч. платежа по кредиту(ф)','Plateg_po_kreditu','Plateg_po_kreditu','Число с плавающей точкой',NULL,0,0,0),(273,'Clients','Клиенты','Активы, собственность~Наличие в собственности заёмщика объекта недвижимости(ф)','Nalichie_nedvig_zaem','Nalichie_nedvig_zaem','Справочник','Yes_No',0,0,0),(274,'Clients','Клиенты','Активы, собственность~Квартира в собственности заёмщика(ф)','Kvartira_zaem','Kvartira_zaem','Строка300',NULL,0,0,0),(275,'Clients','Клиенты','Активы, собственность~Гараж в собственности заёмщика(ф)','Garag_zaem','Garag_zaem','Строка300',NULL,0,0,0),(276,'Clients','Клиенты','Активы, собственность~Дом в собственности заёмщика(ф)','Dom_zaem','Dom_zaem','Строка300',NULL,0,0,0),(277,'Clients','Клиенты','Активы, собственность~Земельный участок в собственности заёмщика(ф)','Zemlya_zaem','Zemlya_zaem','Строка300',NULL,0,0,0),(278,'Clients','Клиенты','Активы, собственность~Наличие в собственности заёмщика ТС(ф)','Nalichie_TC_zaem','Nalichie_TC_zaem','Справочник','Yes_No',0,0,0),(279,'Clients','Клиенты','Активы, собственность~Легковой а/м в собственности заёмщика(ф)','Legkovoe_TC_zaem','Legkovoe_TC_zaem','Строка300',NULL,0,0,0),(280,'Clients','Клиенты','Активы, собственность~Грузовой а/м в собственности заёмщика(ф)','Gruzovoe_TC_zaem','Gruzovoe_TC_zaem','Строка300',NULL,0,0,0),(281,'Clients','Клиенты','Активы, собственность~Прицеп в собственности заёмщика(ф)','Pricep_zaem','Pricep_zaem','Строка300',NULL,0,0,0),(282,'Clients','Клиенты','Активы, собственность~Полуприцеп в собственности заёмщика(ф)','Polupricep_zaem','Polupricep_zaem','Строка300',NULL,0,0,0),(283,'Clients','Клиенты','Активы, собственность~Мотоцикл в собственности заёмщика(ф)','Motocikl_zaem','Motocikl_zaem','Строка300',NULL,0,0,0),(284,'Clients','Клиенты','Активы, собственность~Мотороллер в собственности заёмщика(ф)','Motoroller_zaem','Motoroller_zaem','Строка300',NULL,0,0,0),(285,'Clients','Клиенты','Активы, собственность~Водное ТС в собственности заёмщика(ф)','Vodnoe_TC_zaem','Vodnoe_TC_zaem','Строка300',NULL,0,0,0),(286,'Clients','Клиенты','Активы, собственность~Другое имущество в собственности заёмщика(ф)','Drugoe_imuchestvo_zaem','Drugoe_imuchestvo_zaem','Строка300',NULL,0,0,0),(287,'Clients','Клиенты','Обязательства, кредитная и лизинговая история~Наличие у заёмщика долговых обязательств(ф)(ю)','Nalichie_dolg_obyaz_zaem','Nalichie_dolg_obyaz_zaem','Справочник','Yes_No',0,0,0),(288,'Clients','Клиенты','Обязательства, кредитная и лизинговая история~Кредит заёмщика на покупку а/м(ф)','Kredit_zaem_na_TC','Kredit_zaem_na_TC','Строка300',NULL,0,0,0),(289,'Clients','Клиенты','Обязательства, кредитная и лизинговая история~Ипотечный кредит заёмщика(ф)','Ipoteka_zaem','Ipoteka_zaem','Строка300',NULL,0,0,0),(290,'Clients','Клиенты','Обязательства, кредитная и лизинговая история~Потребительский кредит заёмщика(ф)','Potreb_kredit_zaem','Potreb_kredit_zaem','Строка300',NULL,0,0,0),(291,'Clients','Клиенты','Обязательства поручитель, супруг~Кредитные/дебетовые карты с овердрафтом заёмщика(ф)','Kred_deb_kart_zaem','Kred_deb_kart_zaem','Строка300',NULL,0,0,0),(292,'Clients','Клиенты','Обязательства, кредитная и лизинговая история~Брали ли Вы кредиты за последние 3 года?(ф)(ю)','Kredit_za_3_goda','Kredit_za_3_goda','Справочник','Yes_No',0,0,0),(293,'Clients','Клиенты','Обязательства, кредитная и лизинговая история~Были ли просрочки погашения?(ф)(ю)','Prosrochki_pogashenia','Prosrochki_pogashenia','Справочник','Yes_No',0,0,0),(294,'Clients','Клиенты','Обязательства, кредитная и лизинговая история~Сколько раз были просрочки?(ф)','Skolko_prosrochek','Skolko_prosrochek','Целое число',NULL,0,0,0),(295,'Clients','Клиенты','Обязательства, кредитная и лизинговая история~По сколько дней были просрочки?(ф)(ю)','Skolko_dnei_prosrochki','Skolko_dnei_prosrochki','Целое число',NULL,0,0,0),(298,'Clients','Клиенты','Обязательства, кредитная и лизинговая история~Действующее поручительство заёмщика(ф)','Poruchit_zaem','Poruchit_zaem','Строка300',NULL,0,0,0),(301,'Clients','Клиенты','Общая информация~Отсутствие текущих судебных преследований, исковa(ф)(ю)','Sudeb_resheniya','Sudeb_resheniya','Справочник','Yes_No',0,0,0),(302,'Clients','Клиенты','Общая информация~Были ли судимости?(ф)','Sudimosti','Sudimosti','Справочник','Yes_No',0,0,0),(303,'Clients','Клиенты','Общая информация поручитель, супруг~ФИО поручителя(ф)','FIO_poruch','FIO_poruch','Строка50',NULL,0,0,0),(304,'Clients','Клиенты','Общая информация поручитель, супруг~Пол поручителя(ф)','Pol_poruch','Pol_poruch','Справочник','Gender',0,0,0),(305,'Clients','Клиенты','Общая информация поруитель, супруг~Дата рождения поручителя(ф)','Data_rogdeniaya_poruch','Data_rogdeniaya_poruch','Строка50',NULL,0,0,0),(306,'Clients','Клиенты','Общая информация поручитель, супруг~Расчетный счет поручителя в банке(ф)','Raschetni_schet_v_banke_poruch','Raschetni_schet_v_banke_poruch','Справочник','bank',1,0,0),(307,'Clients','Клиенты','Общая информация поручитель, супруг~Зарплатная карта поручителя в банке(ф)','Zarplatnaya_karta_poruch','Zarplatnaya_karta_poruch','Справочник','bank',1,0,0),(308,'Clients','Клиенты','Общая информация поручитель, супруг~Гражданство поручителя (ф)','Gragdanstvo_poruch','Gragdanstvo_poruch','Справочник','citizenship',0,0,0),(309,'Clients','Клиенты','Общая информация~Необходимость резиденства поручителя(ф)','Rezidenstvo_poruch','Rezidenstvo_poruch','Справочник','Yes_No',0,0,0),(310,'Clients','Клиенты','Общая информация поручитель, супруг~Паспорт поручителя(ф)','Pasport_poruch','Pasport_poruch','Строка300',NULL,0,0,0),(311,'Clients','Клиенты','Общая информация поручитель, супруг~Место рождения поручителя(ф)','Mesto_rogdenia_poruch','Mesto_rogdenia_poruch','Справочник','Regions',0,0,0),(312,'Clients','Клиенты','Общая информация поручитель, супруг~Менялись ли ФИО поручителя(ф)','Smena_FIO_poruch','Smena_FIO_poruch','Справочник','Yes_No',0,0,0),(313,'Clients','Клиенты','Общая информация поручитель, супруг~Прежние ФИО поручителя(ф)','Pregnie_FIO_poruch','Pregnie_FIO_poruch','Строка50',NULL,0,0,0),(314,'Clients','Клиенты','Общая информация поручитель, супруг~Дата изменения ФИО поручителя(ф)','Data_smena_FIO_poruch','Data_smena_FIO_poruch','Строка50',NULL,0,0,0),(315,'Clients','Клиенты','Общая информация поручитель, супруг~Адрес постоянной регистрации, юридический поручителя(ф)(ю)','Adres_post_reg_poruch','Adres_post_reg_poruch','Строка300',NULL,0,0,0),(316,'Clients','Клиенты','Общая информация поручитель, супруг~Адрес временной регистрации поручителя(ф)','Adres_vrem_reg_poruch','Adres_vrem_reg_poruch','Строка300',NULL,0,0,0),(318,'Clients','Клиенты','Общая информация поручитель, супруг~Дата окончания временной регистрации поручителя(ф)','Data_okonchania_vrem_reg_poruch','Data_okonchania_vrem_reg_poruch','Строка50',NULL,0,0,0),(319,'Clients','Клиенты','Общая информация поручитель, супруг~Адрес фактического проживания, местонахождения поручителя(ф)(ю)','Adres_fakt_progiv_poruch','Adres_fakt_progiv_poruch','Строка300',NULL,0,0,0),(320,'Clients','Клиенты','Общая информация поручитель, супруг~Объект, в котором проживает поручитель(ф)','Obekt_progivania_poruch','Obekt_progivania_poruch','Справочник','Obekt_progivania',0,0,0),(321,'Clients','Клиенты','Общая информация поручитель, супруг~Срок проживания поручителя по фактическому адресу(ф)','Srok_progivaniz_poruch_po_fact_adresu','Srok_progivaniz_poruch_po_fact_adresu','Целое число',NULL,0,0,0),(322,'Clients','Клиенты','Общая информация поручитель, супруг~Регион ведения трудовой деят-сти, бизнеса поручителя(ф)(ю)','Region_rabot_poruch','Region_rabot_poruch','Справочник','Regions',0,0,0),(323,'Clients','Клиенты','Общая информация поручитель, супруг~Мобильный телефон поручителя(ф)(ю)','Mobil_tel_poruch','Mobil_tel_poruch','Строка50',NULL,0,0,0),(324,'Clients','Клиенты','Общая информация поручитель, супруг~Домашний телефон поручителя(ф)','Dom_tel_poruch','Dom_tel_poruch','Строка50',NULL,0,0,0),(325,'Clients','Клиенты','Общая информация поручитель, супруг~Рабочий телефон, телефон офиса поручителя(ф)(ю)','Rab_tel_poruch','Rab_tel_poruch','Строка50',NULL,0,0,0),(326,'Clients','Клиенты','Общая информация поручитель, супруг~E-mail поручителя(ф)(ю)','Mail_poruch','Mail_poruch','Строка50',NULL,0,0,0),(328,'Clients','Клиенты','Общая информация поручитель, супруг~Образование поручителя(ф)','Obrazovanie_poruch','Obrazovanie_poruch','Справочник','Obrazovanie',0,0,0),(329,'Clients','Клиенты','Общая информация поручитель, супруг~Название ВУЗа поручителя(ф)','VUZ_poruch','VUZ_poruch','Строка300',NULL,0,0,0),(330,'Clients','Клиенты','Общая информация поручитель, супруг~Специальность поручителя(ф)','Specialnost_poruch','Specialnost_poruch','Строка50',NULL,0,0,0),(331,'Clients','Клиенты','Общая информация поручитель, супруг~Отношение поручителя к воинской службе(ф)','Voinskaya_slugba_poruch','Voinskaya_slugba_poruch','Справочник','Voinskaya_slugba',0,0,0),(332,'Clients','Клиенты','Общая информация поручитель, супруг~Поручитель работает официально(ф)','Oficialno_rab_poruch','Oficialno_rab_poruch','Справочник','Yes_No',0,0,0),(333,'Clients','Клиенты','Общая информация поручитель, супруг~Занимаемая должность поручителя(ф)','Dolgnost_poruch','Dolgnost_poruch','Строка300',NULL,0,0,0),(334,'Clients','Клиенты','Общая информация поручитель, супруг~Категория занимаемой должности поручителя(ф)','Kategoria_dolgnosti_poruch','Kategoria_dolgnosti_poruch','Справочник','Kategorii_dolgnostey',0,0,0),(335,'Clients','Клиенты','Общая информация поручитель, супруг~Название предприятия - работодателя поручителя(ф)','Naimenovanie_org_poruch','Naimenovanie_org_poruch','Строка50',NULL,0,0,0),(336,'Clients','Клиенты','Общая информация поручитель, супруг~ИНН организации- работодателя поручителя(ф)','INN_org_poruch','INN_org_poruch','Строка50',NULL,0,0,0),(337,'Clients','Клиенты','Общая информация поручитель, супруг~Юридический адрес организации-работодателя поручителя(ф)','Ur_adres_org_poruch','Ur_adres_org_poruch','Строка300',NULL,0,0,0),(341,'Clients','Клиенты','Общая информация поручитель, супруг~Фактический адрес организации-работодателя поручителя(ф)','Fakt_adres_org_poruch','Fakt_adres_org_poruch','Строка300',NULL,0,0,0),(343,'Clients','Клиенты','Общая информация поручитель, супруг~Телефон отдела кадров поручителя(ф)','Telefon_otd_kadrov_poruch','Telefon_otd_kadrov_poruch','Строка50',NULL,0,0,0),(344,'Clients','Клиенты','Общая информация поручитель, супруг~Вид деятельности предприятия - работодателя поручителя(ф)','Vid_deyatelnosti_org_poruch','Vid_deyatelnosti_org_poruch','Справочник','Vid_deyatelnosti',1,0,0),(345,'Clients','Клиенты','Общая информация поручитель, супруг~Количество работников в организации - работодателе поручителя(ф)','Kol_vo_sotrudnikov_poruch','Kol_vo_sotrudnikov_poruch','Справочник','Kolichestvo_sotrudnikov',0,0,0),(359,'Clients','Клиенты','Общая информация поручитель, супруг~Работа по трудовому договору поручителя(ф)','Trudovoi_dogovor_poruch','Trudovoi_dogovor_poruch','Справочник','Trudovoi_dogovor',0,0,0),(360,'Clients','Клиенты','Общая информация поручитель, супруг~Дата окончания срочного договора поручителя(ф)','Data_okonch_srochnogo_dog_poruch','Data_okonch_srochnogo_dog_poruch','Строка50',NULL,0,0,0),(361,'Clients','Клиенты','Общая информация поручитель, супруг~Общий трудовой стаж поручителя(ф)','Obchii_trud_stag_poruch','Obchii_trud_stag_poruch','Целое число',NULL,0,0,0),(362,'Clients','Клиенты','Общая информация поручитель, супруг~Трудовой стаж на последнем месте работы поручителя(ф)','Stag_na_posled_meste_poruch','Stag_na_posled_meste_poruch','Целое число',NULL,0,0,0),(363,'Clients','Клиенты','Общая информация поручитель, супруг~Количество мест работы за посл. 3 года поручителя(ф)','Kol_vo_mest_rab_poruch','Kol_vo_mest_rab_poruch','Целое число',NULL,0,0,0),(364,'Clients','Клиенты','Общая информация поручитель, супруг~Подтверждение доходов поручителя(ф)','Podtv_dohod_poruch','Podtv_dohod_poruch','Справочник','Document_list',1,0,0),(365,'Clients','Клиенты','Общая информация порчитель, супруг~Семейное положение поручителя(ф)','Semya_poruch','Semya_poruch','Справочник','Semeinoe_pologenie',0,0,0),(366,'Clients','Клиенты','Обязательства поручитель, супруг~Есть ли брачный контракт у поручителя(ф)','Brak_kontrakt_poruch','Brak_kontrakt_poruch','Справочник','Yes_No',0,0,0),(367,'Clients','Клиенты','Доходы, расходы поручителя, супруга~Количество иждивенцев поручителя(ф)','Kol_vo_igdivencev_poruch','Kol_vo_igdivencev_poruch','Целое число',NULL,0,0,0),(368,'Clients','Клиенты','Доходы, расходы поручителя, супруга~Информация об иждивенцах поручителя(ф)','Info_igdivenci_poruch','Info_igdivenci_poruch','Строка300',NULL,0,0,0),(369,'Clients','Клиенты','Доходы, расходы поручителя, супруга~Среднемесячный доход поручителя(ф)(ю)','Dohod_poruch','Dohod_poruch','Целое число',NULL,0,0,0),(370,'Clients','Клиенты','Доходы, расходы поручителя, супруга~Расходы на проживание поручителя(ф)','Rashod_na_progiv_poruch','Rashod_na_progiv_poruch','Целое число',NULL,0,0,0),(371,'Clients','Клиенты','Доходы, расходы поручитель, супруг~Платежи по действующим кредитам поручителя(ф)','Plategi_po_deystv_kreditam_poruch','Plategi_po_deystv_kreditam_poruch','Целое число',NULL,0,0,0),(373,'Clients','Клиенты','Активы, собственность поручитель, супруг~Наличие в собственности поручителя объекта недвижимости(ф)','Nalichie_nedvig_poruch','Nalichie_nedvig_poruch','Справочник','Yes_No',0,0,0),(374,'Clients','Клиенты','Активы, собственность поручитель, супруг~Квартира в соб-ти поручителя(ф)','Kvartira_poruch','Kvartira_poruch','Строка300',NULL,0,0,0),(375,'Clients','Клиенты','Активы, собственность поручитель, супруг~Гараж в собственности поручителя(ф)','Garag_poruch','Garag_poruch','Строка300',NULL,0,0,0),(376,'Clients','Клиенты','Активы, собственность поручитель, супруг~Дом в собственности поручителя(ф)','Dom_poruch','Dom_poruch','Строка300',NULL,0,0,0),(377,'Clients','Клиенты','Активы, собственность поручитель, супруг~Земельный участок в собственности поручителя(ф)','Zemlya_poruch','Zemlya_poruch','Строка300',NULL,0,0,0),(378,'Clients','Клиенты','Активы, собственность поручитель, супруг~Наличие в собственности поручителя ТС(ф)','Nalichie_TC_poruch','Nalichie_TC_poruch','Справочник','Yes_No',0,0,0),(379,'Clients','Клиенты','Активы, собственность поручитель, супруг~Легковой а/м в собственности поручителя(ф)','Legkovoe_TC_poruch','Legkovoe_TC_poruch','Строка300',NULL,0,0,0),(380,'Clients','Клиенты','Активы, собственность поручитель, супруг~Грузовой а/м в собственности поручителя(ф)','Gruzovoe_TC_poruch','Gruzovoe_TC_poruch','Строка300',NULL,0,0,0),(381,'Clients','Клиенты','Активы, собственность поручитель, супруг~Прицеп в собственности поручителя(ф)','Pricep_poruch','Pricep_poruch','Строка300',NULL,0,0,0),(384,'Clients','Клиенты','Активы, собственность поручитель, супруг~Полуприцеп в собственности поручителя(ф)','Polupricep_poruch','Polupricep_poruch','Строка300',NULL,0,0,0),(386,'Clients','Клиенты','Активы, собственность поручитель, супруг~Мотоцикл в собственности поручителя(ф)','Motocikl_poruch','Motocikl_poruch','Строка300',NULL,0,0,0),(387,'Clients','Клиенты','Активы, собственность поручитель, супруг~Мотороллер в собственности поручителя(ф)','Motoroller_poruch','Motoroller_poruch','Строка300',NULL,0,0,0),(388,'Clients','Клиенты','Активы, собственность поручитель, супруг~Водное ТС в собственности поручителя(ф)','Vodnoe_TC_poruch','Vodnoe_TC_poruch','Строка300',NULL,0,0,0),(389,'Clients','Клиенты','Активы, собственность поручитель, супруг~Другое имущество в собственности поручителя(ф)','Drugoe_imuchestvo_poruch','Drugoe_imuchestvo_poruch','Строка300',NULL,0,0,0),(390,'Clients','Клиенты','Обязательтсва поручитель, супруг~Наличие у поручителя долговых обязательств(ф)(ю)','Nalichie_dolg_obyaz_poruch','Nalichie_dolg_obyaz_poruch','Справочник','Yes_No',0,0,0),(391,'Clients','Клиенты','Обязательства поручитель, супруг~Кредит поручителя  на покупку а/м(ф)','Kredit_poruch_na_TC','Kredit_poruch_na_TC','Строка300',NULL,0,0,0),(392,'Clients','Клиенты','Обязательства поручителя, супруга~Ипотечный кредит поручителя (ф)','Ipoteka_poruch','Ipoteka_poruch','Строка300',NULL,0,0,0),(393,'Clients','Клиенты','Обязательства поручитель, супруг~Потребительский кредит поручителя (ф)','Potreb_kredit_poruch','Potreb_kredit_poruch','Строка300',NULL,0,0,0),(394,'Clients','Клиенты','Обязательства поручитель, супруг~Кредитные/дебетовые карты с овердрафтом поручителя (ф)','Kred_deb_kart_poruch','Kred_deb_kart_poruch','Строка300',NULL,0,0,0),(395,'Clients','Клиенты','Обязательства поручитель, супруг~Действующее поручительство поручителя(ф)','Poruchit_poruch','Poruchit_poruch','Строка300',NULL,0,0,0),(396,'Clients','Клиенты','Общая информация поручитель, супруг~ФИО супруги(ф)','FIO_supr','FIO_supr','Строка50',NULL,0,0,0),(397,'Clients','Клиенты','Общая информация поручитель, супругДата рождения супруги(ф)','Data_rogdeniya_supr','Data_rogdeniya_supr','Строка50',NULL,0,0,0),(398,'Clients','Клиенты','Общая информация поручитель, супруг~Расчетный счет супруга в банке(ф)','Raschetni_schet_v_banke_supr','Raschetni_schet_v_banke_supr','Справочник','bank',1,0,0),(399,'Clients','Клиенты','Общая информация поручитель, супруг~Зарплатная карта супруга в банке(ф)','Zarplatnaya_karta_supr','Zarplatnaya_karta_supr','Справочник','bank',1,0,0),(400,'Clients','Клиенты','Общая информация поручитель, супруг~Гражданство супруга(ф)','Gragdanstvo_supr','Gragdanstvo_supr','Справочник','citizenship',0,0,0),(401,'Clients','Клиенты','Общая информация поручитель, супруг~Паспорт супруги(ф)','Pasport_supr','Pasport_supr','Строка50',NULL,0,0,0),(402,'Clients','Клиенты','Общая информация поручитель, супруг~Место рождения супруги(ф)','Mesto_rogdenia_supr','Mesto_rogdenia_supr','Строка50',NULL,0,0,0),(403,'Clients','Клиенты','Общая информация поручитель, супруг~Менялись ли ФИО супруги(ф)','Smena_FIO_supr','Smena_FIO_supr','Справочник','Yes_No',0,0,0),(404,'Clients','Клиенты','Общая информация поручитель, супруг~Прежние ФИО супруга(ф)','Pregnie_FIO_supr','Pregnie_FIO_supr','Строка50',NULL,0,0,0),(405,'Clients','Клиенты','Общая информация поручитель, супруг~Дата изменения ФИО супруги(ф)','Data_smena_FIO_supr','Data_smena_FIO_supr','Строка50',NULL,0,0,0),(406,'Clients','Клиенты','Общая информация поручитель, супруг~Адрес постоянной регистрации супруга(ф)','Adres_post_reg_supr','Adres_post_reg_supr','Строка300',NULL,0,0,0),(407,'Clients','Клиенты','Общая информация поручитель супруг~Адрес временной регистрации супруги(ф)','Adres_vrem_reg_supr','Adres_vrem_reg_supr','Строка300',NULL,0,0,0),(408,'Clients','Клиенты','Общая информация поручитель, супруг~Дата окончания временной регистрации супруги(ф)','Data_okonchania_vrem_reg_supr','Data_okonchania_vrem_reg_supr','Строка50',NULL,0,0,0),(409,'Clients','Клиенты','Общая информация поручитель, супруг~Адрес фактического проживания супруги(ф)','Adres_fact_progiv_supr','Adres_fact_progiv_supr','Строка300',NULL,0,0,0),(410,'Clients','Клиенты','Общая информация поручитель, супруг~Объект, в котором проживает супруг(ф)','Obekt_progivania_supr','Obekt_progivania_supr','Справочник','Obekt_progivania',0,0,0),(411,'Clients','Клиенты','Общая информация поручитель, супруг~Срок проживания супруга по фактическому адресу(ф)','Srok_progiv_supr_po_fact_adresu','Srok_progiv_supr_po_fact_adresu','Целое число',NULL,0,0,0),(412,'Clients','Клиенты','Общая информация поручитель, супруг~Регион ведения трудовой деят-сти супруга(ф)','Region_rabot_supr','Region_rabot_supr','Справочник','Regions',0,0,0),(413,'Clients','Клиенты','Общая информация поручитель, супруг~Мобильный телефон супруги(ф)','Mobil_tel_supr','Mobil_tel_supr','Строка50',NULL,0,0,0),(414,'Clients','Клиенты','Общая информация поручитель, супруг~Домашний телефон супруги(ф)','Dom_tel_supr','Dom_tel_supr','Строка50',NULL,0,0,0),(415,'Clients','Клиенты','Общая информация поручитель, супруг~Рабочий телефон супруги(ф)','Rab_tel_supr','Rab_tel_supr','Строка50',NULL,0,0,0),(416,'Clients','Клиенты','Общая информация поручитель, супруг~E-mail супруги(ф)','Mail_supr','Mail_supr','Строка50',NULL,0,0,0),(417,'Clients','Клиенты','Общая информация поручитель, супруг~Образование супруга(ф)','Obrazovanie_supr','Obrazovanie_supr','Справочник','Obrazovanie',0,0,0),(418,'Clients','Клиенты','Общая информация поручитель, супруг~Название ВУЗа супруга(ф)','VUZ_supr','VUZ_supr','Строка300','Document_list',0,0,0),(419,'Clients','Клиенты','Общая информация поручитель, супруг~Специальность супруга(ф)','Specialnost_supr','Specialnost_supr','Строка50',NULL,0,0,0),(420,'Clients','Клиенты','Общая информация поручитель, супруг~Отношение супруга к воинской службе(ф)','Voinskaya_slugba_supr','Voinskaya_slugba_supr','Справочник','Voinskaya_slugba',0,0,0),(421,'Clients','Клиенты','Общая информация поручитель, супруг~Супруг(а) работает официально(ф)','Oficialno_rab_supr','Oficialno_rab_supr','Справочник','Yes_No',0,0,0),(422,'Clients','Клиенты','Общая информация поручитель, супруг~Занимаемая должность супруги(ф)','Dolgnost_supr','Dolgnost_supr','Строка50',NULL,0,0,0),(423,'Clients','Клиенты','Общая информация поручитель, супруг~Категория занимаемой должности супруга(ф)','Kategoria_dolgnosti_supr','Kategoria_dolgnosti_supr','Справочник','Kategorii_dolgnostey',0,0,0),(424,'Clients','Клиенты','Общая информация поручитель, супруг~Название предприятия - работодателя супруга(ф)','Naimenovanie_org_supr','Naimenovanie_org_supr','Строка50',NULL,0,0,0),(425,'Clients','Клиенты','Общая информация поручитель, супруг~ИНН организации- работодателя супруги(ф)','INN_org_supr','INN_org_supr','Строка50',NULL,0,0,0),(426,'Clients','Клиенты','Общая информация поручитель, супруг~Юридический адрес организации-работодателя  супруги(ф)','Ur_adres_org_supr','Ur_adres_org_supr','Строка300',NULL,0,0,0),(427,'Clients','Клиенты','Общая информация поручитель, супруг~Фактический адрес организации-работодателя супруги(ф)','Fakt_adres_org_supr','Fakt_adres_org_supr','Строка300',NULL,0,0,0),(428,'Clients','Клиенты','Общая информация поручитель, супруг~Телефон отдела кадров супруги(ф)','Telefon_otd_kadrov_supr','Telefon_otd_kadrov_supr','Строка50',NULL,0,0,0),(429,'Clients','Клиенты','Общая информацяи поручитель, супруг~Вид деятельности предприятия - работодателя супруги(ф)','Vid_deyatelnosti_org_supr','Vid_deyatelnosti_org_supr','Справочник','Vid_deyatelnosti',1,0,0),(430,'Clients','Клиенты','Общая информация поручитель, супруг~Количество работников в организации работодателе супруга(ф)','Kol_vo_sotrudnikov_supr','Kol_vo_sotrudnikov_supr','Справочник','Kolichestvo_sotrudnikov',0,0,0),(431,'Clients','Клиенты','Общая информация поручитель, супруг~Работа по трудовому договору супруга(ф)','Trudovoi_dogovor_supr','Trudovoi_dogovor_supr','Справочник','Trudovoi_dogovor',0,0,0),(432,'Clients','Клиенты','Общая информация поручитель, супруг~Дата окончания срочного договора супруги(ф)','Data_okonch_srochnogo_dog_supr','Data_okonch_srochnogo_dog_supr','Строка50',NULL,0,0,0),(433,'Clients','Клиенты','Общая информация поручитель, супруг~Общий трудовой стаж супруга(ф)','Obchii_trud_stag_supr','Obchii_trud_stag_supr','Целое число',NULL,0,0,0),(434,'Clients','Клиенты','Общая информация поручитель, супруг~Трудовой стаж на последнем месте работы супруги(ф)','Stag_na_posled_meste_supr','Stag_na_posled_meste_supr','Целое число',NULL,0,0,0),(435,'Clients','Клиенты','Общая информация поручитель, супруг~Количество мест работы за посл. 3 года супруга(ф)','Kol_vo_mest_rab_supr','Kol_vo_mest_rab_supr','Целое число',NULL,0,0,0),(436,'Clients','Клиенты','Общая информация поручитель, супруг~Подтверждение доходов супруга(ф)','Podtv_dohod_supr','Podtv_dohod_supr','Справочник','Document_list',1,0,0),(437,'Clients','Клиенты','Доходы, расходы поручителя, супруга~Количество иждивенцев супруга(ф)','Kol_vo_igdivencev_supr','Kol_vo_igdivencev_supr','Целое число',NULL,0,0,0),(438,'Clients','Клиенты','Доходы, расходы поручителя, супруга~Информация об иждивенцах супруга(ф)','Info_igdivenci_supr','Info_igdivenci_supr','Строка300','OPF',0,0,0),(440,'Clients','Клиенты','Доходы, расходы поручителя, супруги~Среднемесячный доход супруга(ф)','Dohod_supr','Dohod_supr','Целое число',NULL,0,0,0),(441,'Clients','Клиенты','Доходы, расходы поручителя, супруга~Расходы на проживание супруга(ф)','Rashod_na_progiv_supr','Rashod_na_progiv_supr','Целое число',NULL,0,0,0),(445,'CredProgr','Кредитные программы','Возможность изменения графика платежей(ю)','Vozm_izm_graf_plat','Vozm_izm_graf_plat','Справочник','Yes_No',0,0,0),(446,'CredProgr','Кредитные программы','Возмож.передачи в аренду/сублизинг(ю)','Vozm_pered_v_arendu_subl','Vozm_pered_v_arendu_subl','Справочник','AddAprove',0,0,0),(447,'Clients','Клиенты','Доходы, расходы поручитель, супруг~Платежи по действующим кредитам супруга(ф)','Plategi_po_deystv_kreditam_supr','Plategi_po_deystv_kreditam_supr','Целое число',NULL,0,0,0),(448,'Clients','Клиенты','Доходы, расходы поручитель, супруг~Доля платежа в чистом доходе супруги(ф)','Dolya_platega_v_chistom_doh_supr','Dolya_platega_v_chistom_doh_supr','Число с плавающей точкой',NULL,0,0,0),(449,'Clients','Клиенты','Активы, собственность поручитель, супруг~Наличие в собственности супруги(а) объекта недвижимости(ф)','Nalichie_nedvig_supr','Nalichie_nedvig_supr','Справочник','Yes_No',0,0,0),(450,'Clients','Клиенты','Активы, собственность поручитель, супруг~Квартира в соб-ти супруга(ф)','Kvartira_supr','Kvartira_supr','Строка300',NULL,0,0,0),(451,'Clients','Клиенты','Активы, собственность поручитель, супруг~Гараж в собственности супруги(ф)','Garag_supr','Garag_supr','Строка300',NULL,0,0,0),(452,'Clients','Клиенты','Активы, собственность поручитель, супруг~Дом в собственности супруги(ф)','Dom_supr','Dom_supr','Строка300',NULL,0,0,0),(455,'Clients','Клиенты','Активы, собственность поручитель, супруг~Земельный участок в собственности супруги(ф)','Zemlya_supr','Zemlya_supr','Строка300',NULL,0,0,0),(456,'Clients','Клиенты','Активы, собственность поручитель, супруг~Наличие в собственности супруга ТС(ф)','Nalichie_TC_supr','Nalichie_TC_supr','Справочник','Yes_No',0,0,0),(457,'Clients','Клиенты','Активы, собственность поручитель, супруг~Легковой а/м в собственности супруга(ф)','Legkovoe_TC_supr','Legkovoe_TC_supr','Строка300',NULL,0,0,0),(458,'Clients','Клиенты','Активы, собственность поручитель, супруг~Грузовой а/м в собственности супруги(ф)','Gruzovoe_TC_supr','Gruzovoe_TC_supr','Строка300',NULL,0,0,0),(460,'Clients','Клиенты','Кредитный продукт~ Аванс более 10% (ф)','Avans_bolee_10','Avans_bolee_10','Справочник','Yes_No',0,0,0),(463,'Clients','Клиенты','Общая информация~Возраст заёмщика(ф)','Vozrast_zaem','Vozrast_zaem','Целое число',NULL,0,1,0),(464,'Clients','Клиенты','Приобретаемое имущество~Тип техники(ф)(ю)','Tip_tehniki','Tip_tehniki','Справочник','Cars',0,0,0),(465,'Clients','Клиенты','Приобретаемое имущество~Страна-производитель ТС(ф)(ю)','Strana_proizvoditel','Strana_proizvoditel','Справочник','cuntry',0,0,0),(466,'Clients','Клиенты','Приобретаемое имущество~Количество единиц техники(ф)(ю)','Skolko_ed_tehniki','Skolko_ed_tehniki','Целое число',NULL,0,1,1),(467,'Clients','Клиенты','Приобретаемое имущество~Новое ТС или Б/У(ф)(ю)','Novoe_ili_bu','Novoe_ili_bu','Справочник','New_am',0,1,0),(468,'Clients','Клиенты','Приобретаемое имущество~Год выпуска приобретаемого ТС(ф)(ю)','God_vipuska_TC','God_vipuska_TC','Целое число',NULL,0,0,0),(469,'Clients','Клиенты','Приобретаемое имущество~Возраст ТС на дату заключения договора(ф)','Vozrast_TC_na_datu_zakluchenia','Vozrast_TC_na_datu_zakluchenia','Целое число',NULL,0,0,0),(470,'Clients','Клиенты','Приобретаемое имущество~Срок эксплуатации ТС на дату погашения(ф)(ю)','Vozrast_TC_na_datu_pogashenia','Vozrast_TC_na_datu_pogashenia','Целое число',NULL,0,1,0),(471,'Clients','Клиенты','Приобретаемое имущество~Наименование торговой организации(ф)(ю)','Name_prodavca','Name_prodavca','Справочник','showroom_car',0,0,0),(473,'Clients','Клиенты','Кредитный продукт~Сумма кредита/инвестиции ЛК(ф)(ю)','Summa_kredita','Summa_kredita','Целое число',NULL,0,0,0),(474,'Clients','Клиенты','Кредитный продукт~Срок кредита/договора лизинга(ф)(ю)','Srok_kredita','Srok_kredita','Целое число',NULL,0,1,0),(475,'Clients','Клиенты','Общая информация~Дата гос.регистрации юрлица(ю)','Data_reg_yurlitsca','Data_reg_yurlitsca','Строка50',NULL,0,0,0),(478,'Clients','Клиенты','Общая информация~Регион ведения трудовой деятельности, бизнеса(ф)(ю)','Region_bisnesa','Region_bisnesa','Справочник','Regions',1,0,0),(479,'Clients','Клиенты','Общая информация~Система налогообложения(ю)','Sistema_NO','Sistema_NO','Справочник','Nalogsystem',0,0,0),(480,'Clients','Клиенты','Доходы, расходы~Доход за последние 6 месяцев (официальная отчетность)(ю)','Dohod_za_posl_6_mes','Dohod_za_posl_6_mes','Целое число',NULL,0,0,0),(481,'Clients','Клиенты','Доходы, расходы~Доход за последние 6 месяцев, не отраженный в официальной отчетности(ю)','Dohod_ne_ofic','Dohod_ne_ofic','Целое число',NULL,0,0,0),(483,'Clients','Клиенты','Общая информация~Возможность предоставления дополнительного залога(ф)(ю)','Dop_zalog','Dop_zalog','Справочник','Yes_No',0,1,0),(484,'Clients','Клиенты','Общая информация~Возможность привлечения поручителя(ф)(ю)','Vozmog_poruch','Vozmog_poruch','Справочник','Yes_No',0,0,0),(493,'Clients','Клиенты','Приобретаемое имушество~Вид деятельности, в котором будет использоваться приобретаемое имущество(ю)','Vid_deyateln_imushestva','Vid_deyateln_imushestva','Справочник','Vid_deyatelnosti',0,0,0),(494,'Clients','Клиенты','Приобретаемое имущество~Использовалось ли имущество, аналогичное приобретаемому ранее(ю)','Opyt_ispolz_analog_imusch','Opyt_ispolz_analog_imusch','Справочник','Yes_No',0,0,0),(495,'Clients','Клиенты','Приобретаемое имущество~Регион, в котором планируется использование приобретаемого имущества(ф)(ю)','Planir_region','Planir_region','Справочник','Regions',1,0,0),(496,'Clients','Клиенты','Обязательства, кредитная и лизинговая история~Сумма текущих обязательств по кредитным договорам(ф)(ю)','Obyaz_po_kreditam','Obyaz_po_kreditam','Целое число',NULL,0,0,0),(497,'Clients','Клиенты','Доходы, расходы~Сумма ежемесячных платежей в погашение обязательств по кредитным договорам(ю)','Plat_po_kred_v_mes','Plat_po_kred_v_mes','Целое число',NULL,0,0,0),(498,'Clients','Клиенты','Обязательства, кредитная и лизинговая история~Сумма текущих обязательств по договорам займа(ф)(ю)','Obyaz_po_zaimam','Obyaz_po_zaimam','Целое число',NULL,0,0,0),(499,'Clients','Клиенты','Доходы, расходы~Сумма ежемесячных платежей в погашение обязательств по договорам займа(ю)','Plat_po_zaim_v_mes','Plat_po_zaim_v_mes','Целое число',NULL,0,0,0),(500,'Clients','Клиенты','Обязательства, кредитная и лизинговая история~Остаток лизинговых платежей(ю)','Ost_lizing_platezhey','Ost_lizing_platezhey','Целое число',NULL,0,0,0),(501,'Clients','Клиенты','Доходы, расходы~Сумма ежемесячных лизинговых платежей(ю)','Ezhemes_liz_plat_sum','Ezhemes_liz_plat_sum','Целое число',NULL,0,0,0),(502,'Clients','Клиенты','Обязательства, кредитная и лизинговая история~Сумма обяз. по договорам поручительства(ф)(ю)','Poruch_tretyih_lic_summ','Poruch_tretyih_lic_summ','Целое число',NULL,0,0,0),(506,'CredProgr','Кредитные программы','Держатель зплатной карты(ф)','Zplatnaya_karta','Zplatnaya_karta','Справочник','Yes_No',0,0,0),(511,'Clients','Клиенты','Активы, собственность~Рыночная стоимость недвижимого имущества(ю)','Stoimost_nedvizh_im','Stoimost_nedvizh_im','Целое число',NULL,0,0,0),(512,'Clients','Клиенты','Активы, собственность~Рыночная стоимость ТС, спецтехники(ю)','Stoimost_TS','Stoimost_TS','Целое число',NULL,0,0,0),(513,'Clients','Клиенты','Активы, собственность~Рыночная стоимость оборудования(ю)','Stoimost_oborud','Stoimost_oborud','Целое число',NULL,0,0,0),(514,'Clients','Клиенты','Активы, собственность~Рыночная стоимость материалов, запасов, товаров на складе(ю)','Stoimost_zapasov','Stoimost_zapasov','Целое число',NULL,0,0,0),(515,'Clients','Клиенты','Общая информация~Вид деятельности предприятия(ю)','Vid_deyateln_predpr','Vid_deyateln_predpr','Справочник','Vid_deyatelnosti',1,0,0),(516,'Clients','Клиенты','Доходы, расходы~Доход за последний отчетный год по данным официальной отчетности(ю)','Dohod_god_ofic','Dohod_god_ofic','Целое число',NULL,0,0,0),(517,'Clients','Клиенты','Общая информация~Стаж работы руководителя в данной отрасли(ю)','Stazh_rukovoditrlya','Stazh_rukovoditrlya','Целое число',NULL,0,0,0),(518,'Clients','Клиенты','Общая информация~Стаж работы руководителя в данной организации(ю)','Stazh_rukovod_v_organiz','Stazh_rukovod_v_organiz','Целое число',NULL,0,0,0),(520,'CredProgr','Кредитные программы','Наличие_положит_кред_истории(ф)(ю)','Nal_pol_kred_istorii','Nal_pol_kred_istorii','Справочник','Yes_No',0,0,0);
+/*!40000 ALTER TABLE `tableconfig` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `before_insert` BEFORE INSERT ON `tableconfig`
+FOR EACH ROW
+BEGIN
+   SET NEW.ColumnDBName_Old = NEW.ColumnDBName;
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `where_clauses`
+--
+
+DROP TABLE IF EXISTS `where_clauses`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `where_clauses` (
+  `TableDBName_Left` varchar(30) NOT NULL,
+  `TableDBName_Right` varchar(45) NOT NULL,
+  `Clause` text,
+  PRIMARY KEY (`TableDBName_Left`,`TableDBName_Right`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `where_clauses`
+--
+
+LOCK TABLES `where_clauses` WRITE;
+/*!40000 ALTER TABLE `where_clauses` DISABLE KEYS */;
+INSERT INTO `where_clauses` VALUES ('table_credprogr','table_clients','Kategoriya_TS = Kateg_TS AND\r\nMarka_model_TC = marki_modeli AND\r\n(Skolko_ed_tehniki <= Max_kolvo_ed OR Skolko_ed_tehniki IS NULL) AND\r\nCASE WHEN Novoe_ili_bu = 4 THEN True ELSE Vozrast_TC_na_datu_pogashenia <= Max_vozrast_avto_RUS END AND\r\nMin_Srok <= Srok_kredita AND Max_Srok >= Srok_kredita AND\r\nCASE WHEN treb_poruchitel = 4 OR Avans = 7 THEN Dop_zalog = 5 OR Dop_zalog = 6 ELSE True END AND\r\nRegion_registr_zaem = region_reistracii_zayomschika AND\r\n(Strah_gizni_v_kredit = Strahov_zhizni OR Strah_gizni_v_kredit = 5) AND\r\n(KACKO_v_kredit = KACKO_in_Credit OR KACKO_v_kredit = 5) AND\r\nmin_vozrast_zayomschika <= Vozrast_zaem AND\r\nCASE WHEN Pol_zaem = 4 THEN\r\nVozrast_zaem <= max_vozrast_zayomschika_M\r\nELSE\r\nVozrast_zaem <= max_vozrast_zayomschika_F\r\nEND AND\r\nStag_na_posled_meste_zaem >= Min_trudovoi_stazh_posl_meste\r\n\r\n');
+/*!40000 ALTER TABLE `where_clauses` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping events for database 'greenlight'
+--
+
+--
+-- Dumping routines for database 'greenlight'
+--
+/*!50003 DROP FUNCTION IF EXISTS `AgeFromDate` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` FUNCTION `AgeFromDate`(stringdate VARCHAR(50)) RETURNS int(11)
+BEGIN
+
+	DECLARE years INT;
+
+	SELECT YEAR(CURDATE())-YEAR(STR_TO_DATE(stringdate,'%d.%m.%Y')) +
+	CASE WHEN MONTH(CURDATE())-MONTH(STR_TO_DATE(stringdate,'%d.%m.%Y')) > 0 THEN 0 ELSE 
+	CASE WHEN MONTH(CURDATE())-MONTH(STR_TO_DATE(stringdate,'%d.%m.%Y')) = 0 
+	AND DAY(CURDATE())-DAY(STR_TO_DATE(stringdate,'%d.%m.%Y')) > 0 THEN 0 ELSE -1 END END INTO years;
+
+	RETURN years;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `create_archive` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `create_archive`(IN current_table VARCHAR(50)
+)
+BEGIN
+DECLARE template,archive_template VARCHAR(50);
+
+-- Если название таблицы было mydata 
+-- то получаем название архивной таблицы mydata_20090226 
+
+SET archive_template=replace(curdate(),"-","");
+SET template=CONCAT(current_table,"_",archive_template);
+
+-- Эта конструкция формирует запрос который будет выглядить так
+-- CREATE TABLE mydata_20090226 ENGINE_ARCHIVE
+-- AS (SELECT * FROM mydata); 
+SET @my_query = CONCAT("DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_",refdbname," WHERE ElemID = pid;");
+
+SET @archive_query:=CONCAT("CREATE TABLE ",template," ENGINE=ARCHIVE AS 
+(SELECT * FROM ",current_table," )");
+
+PREPARE archive_query FROM @archive_query;
+EXECUTE archive_query;
+DEALLOCATE PREPARE archive_query;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `DaysFromDate` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `DaysFromDate`(id1 int(11),id2 int(11))
+BEGIN
+  
+  UPDATE `tableconfig` SET TableConfigID = 999999 WHERE TableConfigID = id1;
+  UPDATE `tableconfig` SET TableConfigID = id1 WHERE TableConfigID = id2;
+  UPDATE `tableconfig` SET TableConfigID = id2 WHERE TableConfigID = 999999;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `DeleteTree` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `DeleteTree`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_regions WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_regions WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_regions WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_regions WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `MoveElem` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `MoveElem`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_regions WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_regions WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_regions VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_regions VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `MoveTree` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `MoveTree`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_regions.ElemID,parentl1.ParentID FROM ref_hierarchy_regions INNER JOIN ref_hierarchy_regions as parentl1 
+  ON ref_hierarchy_regions.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_regions.ParentID = 4 ORDER BY ref_hierarchy_regions.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL MoveElem(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL MoveElem(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `p2` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `p2`(IN var1 VARCHAR(100))
+    COMMENT 'A procedure'
+BEGIN 
+
+    SELECT var1 AS Output; 
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_AddAprove` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_AddAprove`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_AddAprove WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_AddAprove WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_AddAprove WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_AddAprove WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_AddAproved` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_AddAproved`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_AddAproved WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_AddAproved WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_AddAproved WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_AddAproved WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Affiliates` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Affiliates`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Affiliates WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Affiliates WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Affiliates WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Affiliates WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Auto` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_deletetree_Auto`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Auto WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Auto WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Auto WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Auto WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Avans` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Avans`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Avans WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Avans WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Avans WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Avans WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_balans` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_balans`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_balans WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_balans WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_balans WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_balans WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_bank` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_bank`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_bank WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_bank WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_bank WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_bank WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_branch` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_branch`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_branch WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_branch WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_branch WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_branch WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Cantry_of_Manufacture` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Cantry_of_Manufacture`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Cantry_of_Manufacture WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Cantry_of_Manufacture WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Cantry_of_Manufacture WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Cantry_of_Manufacture WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Cars` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Cars`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Cars WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Cars WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Cars WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Cars WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Cel_pokupki` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Cel_pokupki`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Cel_pokupki WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Cel_pokupki WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Cel_pokupki WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Cel_pokupki WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_citizenship` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_deletetree_citizenship`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_citizenship WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_citizenship WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_citizenship WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_citizenship WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_cuntry` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_cuntry`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_cuntry WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_cuntry WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_cuntry WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_cuntry WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Document_list` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Document_list`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Document_list WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Document_list WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Document_list WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Document_list WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Dokumenty_TS` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Dokumenty_TS`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Dokumenty_TS WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Dokumenty_TS WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Dokumenty_TS WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Dokumenty_TS WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Dokument_o_dohodah` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Dokument_o_dohodah`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Dokument_o_dohodah WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Dokument_o_dohodah WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Dokument_o_dohodah WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Dokument_o_dohodah WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_er` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_er`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_er WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_er WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_er WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_er WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Gender` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_deletetree_Gender`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Gender WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Gender WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Gender WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Gender WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Kat` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Kat`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Kat WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Kat WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Kat WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Kat WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Kategorii_dolgnostey` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Kategorii_dolgnostey`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Kategorii_dolgnostey WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Kategorii_dolgnostey WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Kategorii_dolgnostey WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Kategorii_dolgnostey WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_KategoriyaTS` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_KategoriyaTS`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_KategoriyaTS WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_KategoriyaTS WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_KategoriyaTS WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_KategoriyaTS WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Kolichestvo_sotrudnikov` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Kolichestvo_sotrudnikov`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Kolichestvo_sotrudnikov WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Kolichestvo_sotrudnikov WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Kolichestvo_sotrudnikov WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Kolichestvo_sotrudnikov WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_max` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_max`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_max WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_max WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_max WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_max WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_moc` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_moc`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_moc WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_moc WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_moc WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_moc WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_msss` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_msss`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_msss WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_msss WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_msss WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_msss WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Nalogsystem` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Nalogsystem`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Nalogsystem WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Nalogsystem WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Nalogsystem WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Nalogsystem WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_New_am` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_New_am`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_New_am WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_New_am WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_New_am WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_New_am WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_New_used` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_New_used`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_New_used WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_New_used WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_New_used WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_New_used WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Obekt_progivania` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Obekt_progivania`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Obekt_progivania WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Obekt_progivania WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Obekt_progivania WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Obekt_progivania WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Obrazovanie` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Obrazovanie`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Obrazovanie WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Obrazovanie WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Obrazovanie WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Obrazovanie WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_OPF` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_deletetree_OPF`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_OPF WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_OPF WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_OPF WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_OPF WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Partner_Сitizenship` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_deletetree_Partner_Сitizenship`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Partner_Сitizenship WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Partner_Сitizenship WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Partner_Сitizenship WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Partner_Сitizenship WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_pay` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_pay`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_pay WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_pay WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_pay WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_pay WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Pol` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Pol`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Pol WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Pol WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Pol WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Pol WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_PP` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_PP`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_PP WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_PP WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_PP WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_PP WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_predmet_zaloga` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_predmet_zaloga`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_predmet_zaloga WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_predmet_zaloga WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_predmet_zaloga WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_predmet_zaloga WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Regions` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_deletetree_Regions`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Regions WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Regions WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Regions WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Regions WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_sau` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_sau`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_sau WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_sau WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_sau WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_sau WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Semeinoe_pologenie` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Semeinoe_pologenie`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Semeinoe_pologenie WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Semeinoe_pologenie WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Semeinoe_pologenie WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Semeinoe_pologenie WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Showroom` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Showroom`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Showroom WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Showroom WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Showroom WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Showroom WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_showroom_car` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_showroom_car`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_showroom_car WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_showroom_car WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_showroom_car WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_showroom_car WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Sobstvennik_avto` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Sobstvennik_avto`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Sobstvennik_avto WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Sobstvennik_avto WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Sobstvennik_avto WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Sobstvennik_avto WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_spisok_dok_YUL` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_spisok_dok_YUL`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_spisok_dok_YUL WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_spisok_dok_YUL WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_spisok_dok_YUL WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_spisok_dok_YUL WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_srok_bisnesa` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_srok_bisnesa`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_srok_bisnesa WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_srok_bisnesa WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_srok_bisnesa WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_srok_bisnesa WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_supp` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_deletetree_supp`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_supp WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_supp WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_supp WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_supp WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Supplies` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_deletetree_Supplies`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Supplies WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Supplies WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Supplies WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Supplies WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_test2` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_deletetree_test2`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_test2 WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_test2 WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_test2 WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_test2 WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_The_kind_of_activity` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_The_kind_of_activity`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_The_kind_of_activity WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_The_kind_of_activity WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_The_kind_of_activity WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_The_kind_of_activity WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_The_monitoring_system` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_The_monitoring_system`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_The_monitoring_system WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_The_monitoring_system WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_The_monitoring_system WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_The_monitoring_system WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_The_procedure_for_repayment` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_The_procedure_for_repayment`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_The_procedure_for_repayment WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_The_procedure_for_repayment WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_The_procedure_for_repayment WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_The_procedure_for_repayment WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_The_subject_of_mortgage` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_The_subject_of_mortgage`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_The_subject_of_mortgage WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_The_subject_of_mortgage WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_The_subject_of_mortgage WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_The_subject_of_mortgage WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Tip_klienta` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Tip_klienta`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Tip_klienta WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Tip_klienta WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Tip_klienta WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Tip_klienta WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Tip_obespecheniya` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Tip_obespecheniya`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Tip_obespecheniya WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Tip_obespecheniya WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Tip_obespecheniya WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Tip_obespecheniya WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Tip_tehniki` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Tip_tehniki`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Tip_tehniki WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Tip_tehniki WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Tip_tehniki WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Tip_tehniki WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_tp` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_tp`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_tp WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_tp WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_tp WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_tp WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Trudovoi_dogovor` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Trudovoi_dogovor`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Trudovoi_dogovor WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Trudovoi_dogovor WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Trudovoi_dogovor WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Trudovoi_dogovor WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Vid_deyatelnosti` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Vid_deyatelnosti`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Vid_deyatelnosti WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Vid_deyatelnosti WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Vid_deyatelnosti WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Vid_deyatelnosti WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Voinskaya_slugba` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Voinskaya_slugba`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Voinskaya_slugba WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Voinskaya_slugba WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Voinskaya_slugba WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Voinskaya_slugba WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_Yes_No` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_Yes_No`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_Yes_No WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_Yes_No WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_Yes_No WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_Yes_No WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_deletetree_z` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_deletetree_z`(eid int(11))
+BEGIN
+    DECLARE done INT DEFAULT 0;
+    DECLARE e INT(11);
+    DECLARE cur1 CURSOR FOR SELECT DISTINCT ElemID FROM ref_hierarchy_z WHERE ParentID = eid OR ElemID = eid;
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+    DELETE FROM ref_data_z WHERE ID IN (SELECT DISTINCT ElemID FROM ref_hierarchy_z WHERE ParentID = eid OR ElemID = eid);
+
+    OPEN cur1;
+  
+  REPEAT
+     FETCH cur1 INTO e;
+    IF NOT done THEN
+        DELETE FROM ref_hierarchy_z WHERE ElemID = e;
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+    
+   
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_AddAprove` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_AddAprove`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_AddAprove WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_AddAprove WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_AddAprove VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_AddAprove VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_AddAproved` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_AddAproved`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_AddAproved WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_AddAproved WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_AddAproved VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_AddAproved VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Affiliates` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Affiliates`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Affiliates WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Affiliates WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Affiliates VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Affiliates VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Auto` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_moveelem_Auto`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Auto WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Auto WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Auto VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Auto VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Avans` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Avans`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Avans WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Avans WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Avans VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Avans VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_balans` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_balans`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_balans WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_balans WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_balans VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_balans VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_bank` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_bank`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_bank WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_bank WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_bank VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_bank VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_branch` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_branch`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_branch WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_branch WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_branch VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_branch VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Cantry_of_Manufacture` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Cantry_of_Manufacture`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Cantry_of_Manufacture WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Cantry_of_Manufacture WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Cantry_of_Manufacture VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Cantry_of_Manufacture VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Cars` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Cars`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Cars WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Cars WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Cars VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Cars VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Cel_pokupki` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Cel_pokupki`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Cel_pokupki WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Cel_pokupki WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Cel_pokupki VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Cel_pokupki VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_citizenship` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_moveelem_citizenship`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_citizenship WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_citizenship WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_citizenship VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_citizenship VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_cuntry` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_cuntry`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_cuntry WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_cuntry WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_cuntry VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_cuntry VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Document_list` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Document_list`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Document_list WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Document_list WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Document_list VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Document_list VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Dokumenty_TS` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Dokumenty_TS`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Dokumenty_TS WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Dokumenty_TS WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Dokumenty_TS VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Dokumenty_TS VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Dokument_o_dohodah` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Dokument_o_dohodah`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Dokument_o_dohodah WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Dokument_o_dohodah WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Dokument_o_dohodah VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Dokument_o_dohodah VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_er` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_er`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_er WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_er WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_er VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_er VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Gender` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_moveelem_Gender`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Gender WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Gender WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Gender VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Gender VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Kat` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Kat`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Kat WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Kat WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Kat VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Kat VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Kategorii_dolgnostey` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Kategorii_dolgnostey`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Kategorii_dolgnostey WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Kategorii_dolgnostey WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Kategorii_dolgnostey VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Kategorii_dolgnostey VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_KategoriyaTS` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_KategoriyaTS`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_KategoriyaTS WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_KategoriyaTS WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_KategoriyaTS VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_KategoriyaTS VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Kolichestvo_sotrudnikov` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Kolichestvo_sotrudnikov`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Kolichestvo_sotrudnikov WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Kolichestvo_sotrudnikov WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Kolichestvo_sotrudnikov VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Kolichestvo_sotrudnikov VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_max` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_max`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_max WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_max WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_max VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_max VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_moc` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_moc`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_moc WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_moc WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_moc VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_moc VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_msss` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_msss`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_msss WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_msss WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_msss VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_msss VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Nalogsystem` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Nalogsystem`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Nalogsystem WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Nalogsystem WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Nalogsystem VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Nalogsystem VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_New_am` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_New_am`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_New_am WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_New_am WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_New_am VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_New_am VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_New_used` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_New_used`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_New_used WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_New_used WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_New_used VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_New_used VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Obekt_progivania` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Obekt_progivania`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Obekt_progivania WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Obekt_progivania WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Obekt_progivania VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Obekt_progivania VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Obrazovanie` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Obrazovanie`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Obrazovanie WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Obrazovanie WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Obrazovanie VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Obrazovanie VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_OPF` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_moveelem_OPF`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_OPF WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_OPF WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_OPF VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_OPF VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Partner_Сitizenship` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_moveelem_Partner_Сitizenship`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Partner_Сitizenship WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Partner_Сitizenship WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Partner_Сitizenship VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Partner_Сitizenship VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_pay` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_pay`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_pay WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_pay WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_pay VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_pay VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Pol` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Pol`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Pol WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Pol WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Pol VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Pol VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_PP` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_PP`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_PP WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_PP WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_PP VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_PP VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_predmet_zaloga` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_predmet_zaloga`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_predmet_zaloga WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_predmet_zaloga WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_predmet_zaloga VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_predmet_zaloga VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Regions` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_moveelem_Regions`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Regions WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Regions WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Regions VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Regions VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_sau` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_sau`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_sau WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_sau WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_sau VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_sau VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Semeinoe_pologenie` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Semeinoe_pologenie`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Semeinoe_pologenie WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Semeinoe_pologenie WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Semeinoe_pologenie VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Semeinoe_pologenie VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Showroom` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Showroom`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Showroom WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Showroom WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Showroom VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Showroom VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_showroom_car` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_showroom_car`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_showroom_car WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_showroom_car WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_showroom_car VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_showroom_car VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Sobstvennik_avto` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Sobstvennik_avto`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Sobstvennik_avto WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Sobstvennik_avto WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Sobstvennik_avto VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Sobstvennik_avto VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_spisok_dok_YUL` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_spisok_dok_YUL`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_spisok_dok_YUL WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_spisok_dok_YUL WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_spisok_dok_YUL VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_spisok_dok_YUL VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_srok_bisnesa` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_srok_bisnesa`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_srok_bisnesa WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_srok_bisnesa WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_srok_bisnesa VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_srok_bisnesa VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_supp` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_moveelem_supp`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_supp WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_supp WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_supp VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_supp VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Supplies` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_moveelem_Supplies`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Supplies WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Supplies WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Supplies VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Supplies VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_test2` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_moveelem_test2`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_test2 WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_test2 WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_test2 VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_test2 VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_The_kind_of_activity` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_The_kind_of_activity`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_The_kind_of_activity WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_The_kind_of_activity WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_The_kind_of_activity VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_The_kind_of_activity VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_The_monitoring_system` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_The_monitoring_system`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_The_monitoring_system WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_The_monitoring_system WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_The_monitoring_system VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_The_monitoring_system VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_The_procedure_for_repayment` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_The_procedure_for_repayment`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_The_procedure_for_repayment WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_The_procedure_for_repayment WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_The_procedure_for_repayment VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_The_procedure_for_repayment VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_The_subject_of_mortgage` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_The_subject_of_mortgage`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_The_subject_of_mortgage WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_The_subject_of_mortgage WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_The_subject_of_mortgage VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_The_subject_of_mortgage VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Tip_klienta` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Tip_klienta`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Tip_klienta WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Tip_klienta WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Tip_klienta VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Tip_klienta VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Tip_obespecheniya` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Tip_obespecheniya`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Tip_obespecheniya WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Tip_obespecheniya WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Tip_obespecheniya VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Tip_obespecheniya VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Tip_tehniki` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Tip_tehniki`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Tip_tehniki WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Tip_tehniki WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Tip_tehniki VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Tip_tehniki VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_tp` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_tp`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_tp WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_tp WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_tp VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_tp VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Trudovoi_dogovor` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Trudovoi_dogovor`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Trudovoi_dogovor WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Trudovoi_dogovor WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Trudovoi_dogovor VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Trudovoi_dogovor VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Vid_deyatelnosti` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Vid_deyatelnosti`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Vid_deyatelnosti WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Vid_deyatelnosti WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Vid_deyatelnosti VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Vid_deyatelnosti VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Voinskaya_slugba` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Voinskaya_slugba`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Voinskaya_slugba WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Voinskaya_slugba WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Voinskaya_slugba VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Voinskaya_slugba VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_Yes_No` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_Yes_No`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_Yes_No WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_Yes_No WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_Yes_No VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_Yes_No VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_moveelem_z` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_moveelem_z`(eid int(11),pid int(11))
+BEGIN
+  
+  DECLARE e,p,l INT;
+  DECLARE done INT DEFAULT 0;
+  
+  DECLARE cur1 CURSOR FOR SELECT ElemID,ParentID,Level FROM ref_hierarchy_z WHERE ElemID = pid;
+  
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+
+  DELETE FROM ref_hierarchy_z WHERE ElemID = eid;
+
+  OPEN cur1;
+  
+REPEAT
+  FETCH cur1 INTO e, p,l;
+  IF NOT done THEN
+    INSERT INTO ref_hierarchy_z VALUES (eid,p,l+1);
+  END IF;
+UNTIL done END REPEAT;
+
+  INSERT INTO ref_hierarchy_z VALUES (eid,pid,1);
+  
+  CLOSE cur1;
+  
+  SET done = 0;      
+  
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_AddAprove` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_AddAprove`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_AddAprove.ElemID,parentl1.ParentID FROM ref_hierarchy_AddAprove INNER JOIN ref_hierarchy_AddAprove as parentl1 
+  ON ref_hierarchy_AddAprove.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_AddAprove.ParentID = 4 ORDER BY ref_hierarchy_AddAprove.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_AddAprove(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_AddAprove(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_AddAproved` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_AddAproved`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_AddAproved.ElemID,parentl1.ParentID FROM ref_hierarchy_AddAproved INNER JOIN ref_hierarchy_AddAproved as parentl1 
+  ON ref_hierarchy_AddAproved.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_AddAproved.ParentID = 4 ORDER BY ref_hierarchy_AddAproved.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_AddAproved(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_AddAproved(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Affiliates` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Affiliates`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Affiliates.ElemID,parentl1.ParentID FROM ref_hierarchy_Affiliates INNER JOIN ref_hierarchy_Affiliates as parentl1 
+  ON ref_hierarchy_Affiliates.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Affiliates.ParentID = 4 ORDER BY ref_hierarchy_Affiliates.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Affiliates(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Affiliates(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Auto` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_movetree_Auto`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Auto.ElemID,parentl1.ParentID FROM ref_hierarchy_Auto INNER JOIN ref_hierarchy_Auto as parentl1 
+  ON ref_hierarchy_Auto.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Auto.ParentID = 4 ORDER BY ref_hierarchy_Auto.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Auto(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Auto(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Avans` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Avans`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Avans.ElemID,parentl1.ParentID FROM ref_hierarchy_Avans INNER JOIN ref_hierarchy_Avans as parentl1 
+  ON ref_hierarchy_Avans.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Avans.ParentID = 4 ORDER BY ref_hierarchy_Avans.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Avans(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Avans(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_balans` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_balans`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_balans.ElemID,parentl1.ParentID FROM ref_hierarchy_balans INNER JOIN ref_hierarchy_balans as parentl1 
+  ON ref_hierarchy_balans.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_balans.ParentID = 4 ORDER BY ref_hierarchy_balans.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_balans(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_balans(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_bank` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_bank`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_bank.ElemID,parentl1.ParentID FROM ref_hierarchy_bank INNER JOIN ref_hierarchy_bank as parentl1 
+  ON ref_hierarchy_bank.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_bank.ParentID = 4 ORDER BY ref_hierarchy_bank.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_bank(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_bank(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_branch` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_branch`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_branch.ElemID,parentl1.ParentID FROM ref_hierarchy_branch INNER JOIN ref_hierarchy_branch as parentl1 
+  ON ref_hierarchy_branch.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_branch.ParentID = 4 ORDER BY ref_hierarchy_branch.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_branch(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_branch(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Cantry_of_Manufacture` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Cantry_of_Manufacture`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Cantry_of_Manufacture.ElemID,parentl1.ParentID FROM ref_hierarchy_Cantry_of_Manufacture INNER JOIN ref_hierarchy_Cantry_of_Manufacture as parentl1 
+  ON ref_hierarchy_Cantry_of_Manufacture.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Cantry_of_Manufacture.ParentID = 4 ORDER BY ref_hierarchy_Cantry_of_Manufacture.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Cantry_of_Manufacture(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Cantry_of_Manufacture(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Cars` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Cars`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Cars.ElemID,parentl1.ParentID FROM ref_hierarchy_Cars INNER JOIN ref_hierarchy_Cars as parentl1 
+  ON ref_hierarchy_Cars.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Cars.ParentID = 4 ORDER BY ref_hierarchy_Cars.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Cars(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Cars(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Cel_pokupki` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Cel_pokupki`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Cel_pokupki.ElemID,parentl1.ParentID FROM ref_hierarchy_Cel_pokupki INNER JOIN ref_hierarchy_Cel_pokupki as parentl1 
+  ON ref_hierarchy_Cel_pokupki.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Cel_pokupki.ParentID = 4 ORDER BY ref_hierarchy_Cel_pokupki.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Cel_pokupki(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Cel_pokupki(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_citizenship` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_movetree_citizenship`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_citizenship.ElemID,parentl1.ParentID FROM ref_hierarchy_citizenship INNER JOIN ref_hierarchy_citizenship as parentl1 
+  ON ref_hierarchy_citizenship.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_citizenship.ParentID = 4 ORDER BY ref_hierarchy_citizenship.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_citizenship(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_citizenship(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_cuntry` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_cuntry`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_cuntry.ElemID,parentl1.ParentID FROM ref_hierarchy_cuntry INNER JOIN ref_hierarchy_cuntry as parentl1 
+  ON ref_hierarchy_cuntry.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_cuntry.ParentID = 4 ORDER BY ref_hierarchy_cuntry.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_cuntry(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_cuntry(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Document_list` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Document_list`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Document_list.ElemID,parentl1.ParentID FROM ref_hierarchy_Document_list INNER JOIN ref_hierarchy_Document_list as parentl1 
+  ON ref_hierarchy_Document_list.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Document_list.ParentID = 4 ORDER BY ref_hierarchy_Document_list.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Document_list(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Document_list(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Dokumenty_TS` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Dokumenty_TS`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Dokumenty_TS.ElemID,parentl1.ParentID FROM ref_hierarchy_Dokumenty_TS INNER JOIN ref_hierarchy_Dokumenty_TS as parentl1 
+  ON ref_hierarchy_Dokumenty_TS.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Dokumenty_TS.ParentID = 4 ORDER BY ref_hierarchy_Dokumenty_TS.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Dokumenty_TS(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Dokumenty_TS(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Dokument_o_dohodah` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Dokument_o_dohodah`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Dokument_o_dohodah.ElemID,parentl1.ParentID FROM ref_hierarchy_Dokument_o_dohodah INNER JOIN ref_hierarchy_Dokument_o_dohodah as parentl1 
+  ON ref_hierarchy_Dokument_o_dohodah.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Dokument_o_dohodah.ParentID = 4 ORDER BY ref_hierarchy_Dokument_o_dohodah.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Dokument_o_dohodah(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Dokument_o_dohodah(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_er` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_er`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_er.ElemID,parentl1.ParentID FROM ref_hierarchy_er INNER JOIN ref_hierarchy_er as parentl1 
+  ON ref_hierarchy_er.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_er.ParentID = 4 ORDER BY ref_hierarchy_er.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_er(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_er(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Gender` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_movetree_Gender`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Gender.ElemID,parentl1.ParentID FROM ref_hierarchy_Gender INNER JOIN ref_hierarchy_Gender as parentl1 
+  ON ref_hierarchy_Gender.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Gender.ParentID = 4 ORDER BY ref_hierarchy_Gender.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Gender(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Gender(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Kat` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Kat`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Kat.ElemID,parentl1.ParentID FROM ref_hierarchy_Kat INNER JOIN ref_hierarchy_Kat as parentl1 
+  ON ref_hierarchy_Kat.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Kat.ParentID = 4 ORDER BY ref_hierarchy_Kat.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Kat(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Kat(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Kategorii_dolgnostey` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Kategorii_dolgnostey`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Kategorii_dolgnostey.ElemID,parentl1.ParentID FROM ref_hierarchy_Kategorii_dolgnostey INNER JOIN ref_hierarchy_Kategorii_dolgnostey as parentl1 
+  ON ref_hierarchy_Kategorii_dolgnostey.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Kategorii_dolgnostey.ParentID = 4 ORDER BY ref_hierarchy_Kategorii_dolgnostey.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Kategorii_dolgnostey(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Kategorii_dolgnostey(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_KategoriyaTS` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_KategoriyaTS`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_KategoriyaTS.ElemID,parentl1.ParentID FROM ref_hierarchy_KategoriyaTS INNER JOIN ref_hierarchy_KategoriyaTS as parentl1 
+  ON ref_hierarchy_KategoriyaTS.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_KategoriyaTS.ParentID = 4 ORDER BY ref_hierarchy_KategoriyaTS.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_KategoriyaTS(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_KategoriyaTS(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Kolichestvo_sotrudnikov` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Kolichestvo_sotrudnikov`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Kolichestvo_sotrudnikov.ElemID,parentl1.ParentID FROM ref_hierarchy_Kolichestvo_sotrudnikov INNER JOIN ref_hierarchy_Kolichestvo_sotrudnikov as parentl1 
+  ON ref_hierarchy_Kolichestvo_sotrudnikov.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Kolichestvo_sotrudnikov.ParentID = 4 ORDER BY ref_hierarchy_Kolichestvo_sotrudnikov.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Kolichestvo_sotrudnikov(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Kolichestvo_sotrudnikov(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_max` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_max`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_max.ElemID,parentl1.ParentID FROM ref_hierarchy_max INNER JOIN ref_hierarchy_max as parentl1 
+  ON ref_hierarchy_max.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_max.ParentID = 4 ORDER BY ref_hierarchy_max.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_max(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_max(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_moc` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_moc`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_moc.ElemID,parentl1.ParentID FROM ref_hierarchy_moc INNER JOIN ref_hierarchy_moc as parentl1 
+  ON ref_hierarchy_moc.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_moc.ParentID = 4 ORDER BY ref_hierarchy_moc.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_moc(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_moc(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_msss` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_msss`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_msss.ElemID,parentl1.ParentID FROM ref_hierarchy_msss INNER JOIN ref_hierarchy_msss as parentl1 
+  ON ref_hierarchy_msss.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_msss.ParentID = 4 ORDER BY ref_hierarchy_msss.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_msss(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_msss(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Nalogsystem` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Nalogsystem`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Nalogsystem.ElemID,parentl1.ParentID FROM ref_hierarchy_Nalogsystem INNER JOIN ref_hierarchy_Nalogsystem as parentl1 
+  ON ref_hierarchy_Nalogsystem.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Nalogsystem.ParentID = 4 ORDER BY ref_hierarchy_Nalogsystem.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Nalogsystem(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Nalogsystem(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_New_am` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_New_am`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_New_am.ElemID,parentl1.ParentID FROM ref_hierarchy_New_am INNER JOIN ref_hierarchy_New_am as parentl1 
+  ON ref_hierarchy_New_am.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_New_am.ParentID = 4 ORDER BY ref_hierarchy_New_am.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_New_am(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_New_am(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_New_used` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_New_used`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_New_used.ElemID,parentl1.ParentID FROM ref_hierarchy_New_used INNER JOIN ref_hierarchy_New_used as parentl1 
+  ON ref_hierarchy_New_used.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_New_used.ParentID = 4 ORDER BY ref_hierarchy_New_used.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_New_used(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_New_used(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Obekt_progivania` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Obekt_progivania`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Obekt_progivania.ElemID,parentl1.ParentID FROM ref_hierarchy_Obekt_progivania INNER JOIN ref_hierarchy_Obekt_progivania as parentl1 
+  ON ref_hierarchy_Obekt_progivania.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Obekt_progivania.ParentID = 4 ORDER BY ref_hierarchy_Obekt_progivania.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Obekt_progivania(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Obekt_progivania(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Obrazovanie` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Obrazovanie`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Obrazovanie.ElemID,parentl1.ParentID FROM ref_hierarchy_Obrazovanie INNER JOIN ref_hierarchy_Obrazovanie as parentl1 
+  ON ref_hierarchy_Obrazovanie.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Obrazovanie.ParentID = 4 ORDER BY ref_hierarchy_Obrazovanie.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Obrazovanie(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Obrazovanie(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_OPF` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_movetree_OPF`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_OPF.ElemID,parentl1.ParentID FROM ref_hierarchy_OPF INNER JOIN ref_hierarchy_OPF as parentl1 
+  ON ref_hierarchy_OPF.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_OPF.ParentID = 4 ORDER BY ref_hierarchy_OPF.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_OPF(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_OPF(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Partner_Сitizenship` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_movetree_Partner_Сitizenship`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Partner_Сitizenship.ElemID,parentl1.ParentID FROM ref_hierarchy_Partner_Сitizenship INNER JOIN ref_hierarchy_Partner_Сitizenship as parentl1 
+  ON ref_hierarchy_Partner_Сitizenship.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Partner_Сitizenship.ParentID = 4 ORDER BY ref_hierarchy_Partner_Сitizenship.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Partner_Сitizenship(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Partner_Сitizenship(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_pay` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_pay`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_pay.ElemID,parentl1.ParentID FROM ref_hierarchy_pay INNER JOIN ref_hierarchy_pay as parentl1 
+  ON ref_hierarchy_pay.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_pay.ParentID = 4 ORDER BY ref_hierarchy_pay.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_pay(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_pay(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Pol` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Pol`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Pol.ElemID,parentl1.ParentID FROM ref_hierarchy_Pol INNER JOIN ref_hierarchy_Pol as parentl1 
+  ON ref_hierarchy_Pol.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Pol.ParentID = 4 ORDER BY ref_hierarchy_Pol.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Pol(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Pol(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_PP` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_PP`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_PP.ElemID,parentl1.ParentID FROM ref_hierarchy_PP INNER JOIN ref_hierarchy_PP as parentl1 
+  ON ref_hierarchy_PP.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_PP.ParentID = 4 ORDER BY ref_hierarchy_PP.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_PP(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_PP(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_predmet_zaloga` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_predmet_zaloga`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_predmet_zaloga.ElemID,parentl1.ParentID FROM ref_hierarchy_predmet_zaloga INNER JOIN ref_hierarchy_predmet_zaloga as parentl1 
+  ON ref_hierarchy_predmet_zaloga.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_predmet_zaloga.ParentID = 4 ORDER BY ref_hierarchy_predmet_zaloga.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_predmet_zaloga(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_predmet_zaloga(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Regions` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_movetree_Regions`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Regions.ElemID,parentl1.ParentID FROM ref_hierarchy_Regions INNER JOIN ref_hierarchy_Regions as parentl1 
+  ON ref_hierarchy_Regions.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Regions.ParentID = 4 ORDER BY ref_hierarchy_Regions.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Regions(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Regions(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_sau` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_sau`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_sau.ElemID,parentl1.ParentID FROM ref_hierarchy_sau INNER JOIN ref_hierarchy_sau as parentl1 
+  ON ref_hierarchy_sau.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_sau.ParentID = 4 ORDER BY ref_hierarchy_sau.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_sau(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_sau(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Semeinoe_pologenie` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Semeinoe_pologenie`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Semeinoe_pologenie.ElemID,parentl1.ParentID FROM ref_hierarchy_Semeinoe_pologenie INNER JOIN ref_hierarchy_Semeinoe_pologenie as parentl1 
+  ON ref_hierarchy_Semeinoe_pologenie.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Semeinoe_pologenie.ParentID = 4 ORDER BY ref_hierarchy_Semeinoe_pologenie.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Semeinoe_pologenie(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Semeinoe_pologenie(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Showroom` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Showroom`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Showroom.ElemID,parentl1.ParentID FROM ref_hierarchy_Showroom INNER JOIN ref_hierarchy_Showroom as parentl1 
+  ON ref_hierarchy_Showroom.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Showroom.ParentID = 4 ORDER BY ref_hierarchy_Showroom.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Showroom(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Showroom(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_showroom_car` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_showroom_car`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_showroom_car.ElemID,parentl1.ParentID FROM ref_hierarchy_showroom_car INNER JOIN ref_hierarchy_showroom_car as parentl1 
+  ON ref_hierarchy_showroom_car.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_showroom_car.ParentID = 4 ORDER BY ref_hierarchy_showroom_car.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_showroom_car(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_showroom_car(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Sobstvennik_avto` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Sobstvennik_avto`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Sobstvennik_avto.ElemID,parentl1.ParentID FROM ref_hierarchy_Sobstvennik_avto INNER JOIN ref_hierarchy_Sobstvennik_avto as parentl1 
+  ON ref_hierarchy_Sobstvennik_avto.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Sobstvennik_avto.ParentID = 4 ORDER BY ref_hierarchy_Sobstvennik_avto.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Sobstvennik_avto(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Sobstvennik_avto(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_spisok_dok_YUL` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_spisok_dok_YUL`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_spisok_dok_YUL.ElemID,parentl1.ParentID FROM ref_hierarchy_spisok_dok_YUL INNER JOIN ref_hierarchy_spisok_dok_YUL as parentl1 
+  ON ref_hierarchy_spisok_dok_YUL.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_spisok_dok_YUL.ParentID = 4 ORDER BY ref_hierarchy_spisok_dok_YUL.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_spisok_dok_YUL(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_spisok_dok_YUL(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_srok_bisnesa` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_srok_bisnesa`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_srok_bisnesa.ElemID,parentl1.ParentID FROM ref_hierarchy_srok_bisnesa INNER JOIN ref_hierarchy_srok_bisnesa as parentl1 
+  ON ref_hierarchy_srok_bisnesa.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_srok_bisnesa.ParentID = 4 ORDER BY ref_hierarchy_srok_bisnesa.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_srok_bisnesa(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_srok_bisnesa(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_supp` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_movetree_supp`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_supp.ElemID,parentl1.ParentID FROM ref_hierarchy_supp INNER JOIN ref_hierarchy_supp as parentl1 
+  ON ref_hierarchy_supp.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_supp.ParentID = 4 ORDER BY ref_hierarchy_supp.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_supp(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_supp(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Supplies` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_movetree_Supplies`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Supplies.ElemID,parentl1.ParentID FROM ref_hierarchy_Supplies INNER JOIN ref_hierarchy_Supplies as parentl1 
+  ON ref_hierarchy_Supplies.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Supplies.ParentID = 4 ORDER BY ref_hierarchy_Supplies.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Supplies(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Supplies(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_test2` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_movetree_test2`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_test2.ElemID,parentl1.ParentID FROM ref_hierarchy_test2 INNER JOIN ref_hierarchy_test2 as parentl1 
+  ON ref_hierarchy_test2.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_test2.ParentID = 4 ORDER BY ref_hierarchy_test2.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_test2(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_test2(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_The_kind_of_activity` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_The_kind_of_activity`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_The_kind_of_activity.ElemID,parentl1.ParentID FROM ref_hierarchy_The_kind_of_activity INNER JOIN ref_hierarchy_The_kind_of_activity as parentl1 
+  ON ref_hierarchy_The_kind_of_activity.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_The_kind_of_activity.ParentID = 4 ORDER BY ref_hierarchy_The_kind_of_activity.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_The_kind_of_activity(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_The_kind_of_activity(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_The_monitoring_system` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_The_monitoring_system`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_The_monitoring_system.ElemID,parentl1.ParentID FROM ref_hierarchy_The_monitoring_system INNER JOIN ref_hierarchy_The_monitoring_system as parentl1 
+  ON ref_hierarchy_The_monitoring_system.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_The_monitoring_system.ParentID = 4 ORDER BY ref_hierarchy_The_monitoring_system.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_The_monitoring_system(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_The_monitoring_system(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_The_procedure_for_repayment` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_The_procedure_for_repayment`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_The_procedure_for_repayment.ElemID,parentl1.ParentID FROM ref_hierarchy_The_procedure_for_repayment INNER JOIN ref_hierarchy_The_procedure_for_repayment as parentl1 
+  ON ref_hierarchy_The_procedure_for_repayment.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_The_procedure_for_repayment.ParentID = 4 ORDER BY ref_hierarchy_The_procedure_for_repayment.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_The_procedure_for_repayment(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_The_procedure_for_repayment(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_The_subject_of_mortgage` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_The_subject_of_mortgage`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_The_subject_of_mortgage.ElemID,parentl1.ParentID FROM ref_hierarchy_The_subject_of_mortgage INNER JOIN ref_hierarchy_The_subject_of_mortgage as parentl1 
+  ON ref_hierarchy_The_subject_of_mortgage.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_The_subject_of_mortgage.ParentID = 4 ORDER BY ref_hierarchy_The_subject_of_mortgage.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_The_subject_of_mortgage(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_The_subject_of_mortgage(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Tip_klienta` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Tip_klienta`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Tip_klienta.ElemID,parentl1.ParentID FROM ref_hierarchy_Tip_klienta INNER JOIN ref_hierarchy_Tip_klienta as parentl1 
+  ON ref_hierarchy_Tip_klienta.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Tip_klienta.ParentID = 4 ORDER BY ref_hierarchy_Tip_klienta.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Tip_klienta(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Tip_klienta(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Tip_obespecheniya` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Tip_obespecheniya`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Tip_obespecheniya.ElemID,parentl1.ParentID FROM ref_hierarchy_Tip_obespecheniya INNER JOIN ref_hierarchy_Tip_obespecheniya as parentl1 
+  ON ref_hierarchy_Tip_obespecheniya.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Tip_obespecheniya.ParentID = 4 ORDER BY ref_hierarchy_Tip_obespecheniya.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Tip_obespecheniya(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Tip_obespecheniya(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Tip_tehniki` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Tip_tehniki`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Tip_tehniki.ElemID,parentl1.ParentID FROM ref_hierarchy_Tip_tehniki INNER JOIN ref_hierarchy_Tip_tehniki as parentl1 
+  ON ref_hierarchy_Tip_tehniki.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Tip_tehniki.ParentID = 4 ORDER BY ref_hierarchy_Tip_tehniki.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Tip_tehniki(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Tip_tehniki(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_tp` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_tp`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_tp.ElemID,parentl1.ParentID FROM ref_hierarchy_tp INNER JOIN ref_hierarchy_tp as parentl1 
+  ON ref_hierarchy_tp.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_tp.ParentID = 4 ORDER BY ref_hierarchy_tp.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_tp(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_tp(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Trudovoi_dogovor` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Trudovoi_dogovor`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Trudovoi_dogovor.ElemID,parentl1.ParentID FROM ref_hierarchy_Trudovoi_dogovor INNER JOIN ref_hierarchy_Trudovoi_dogovor as parentl1 
+  ON ref_hierarchy_Trudovoi_dogovor.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Trudovoi_dogovor.ParentID = 4 ORDER BY ref_hierarchy_Trudovoi_dogovor.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Trudovoi_dogovor(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Trudovoi_dogovor(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Vid_deyatelnosti` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Vid_deyatelnosti`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Vid_deyatelnosti.ElemID,parentl1.ParentID FROM ref_hierarchy_Vid_deyatelnosti INNER JOIN ref_hierarchy_Vid_deyatelnosti as parentl1 
+  ON ref_hierarchy_Vid_deyatelnosti.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Vid_deyatelnosti.ParentID = 4 ORDER BY ref_hierarchy_Vid_deyatelnosti.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Vid_deyatelnosti(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Vid_deyatelnosti(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Voinskaya_slugba` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Voinskaya_slugba`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Voinskaya_slugba.ElemID,parentl1.ParentID FROM ref_hierarchy_Voinskaya_slugba INNER JOIN ref_hierarchy_Voinskaya_slugba as parentl1 
+  ON ref_hierarchy_Voinskaya_slugba.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Voinskaya_slugba.ParentID = 4 ORDER BY ref_hierarchy_Voinskaya_slugba.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Voinskaya_slugba(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Voinskaya_slugba(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_Yes_No` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_Yes_No`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_Yes_No.ElemID,parentl1.ParentID FROM ref_hierarchy_Yes_No INNER JOIN ref_hierarchy_Yes_No as parentl1 
+  ON ref_hierarchy_Yes_No.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_Yes_No.ParentID = 4 ORDER BY ref_hierarchy_Yes_No.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_Yes_No(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_Yes_No(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_movetree_z` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `sp_movetree_z`(eid int(11),pid int(11))
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE e,p INT;
+  DECLARE cur1 CURSOR FOR SELECT ref_hierarchy_z.ElemID,parentl1.ParentID FROM ref_hierarchy_z INNER JOIN ref_hierarchy_z as parentl1 
+  ON ref_hierarchy_z.ElemID = parentl1.ElemID AND parentl1.Level = 1 WHERE ref_hierarchy_z.ParentID = 4 ORDER BY ref_hierarchy_z.Level;
+  
+  DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+  
+  CALL sp_moveelem_z(eid,pid);
+  
+  OPEN cur1;
+  
+  REPEAT
+    FETCH cur1 INTO e, p;
+    IF NOT done THEN
+        CALL sp_moveelem_z(e,p);
+    END IF;
+  UNTIL done END REPEAT;
+
+CLOSE cur1;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `SwapLinesInTableConfig` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SwapLinesInTableConfig`(id1 int(11),id2 int(11))
+BEGIN
+  
+  UPDATE `tableconfig` SET TableConfigID = 999999 WHERE TableConfigID = id1;
+  UPDATE `tableconfig` SET TableConfigID = id1 WHERE TableConfigID = id2;
+  UPDATE `tableconfig` SET TableConfigID = id2 WHERE TableConfigID = 999999;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2013-11-25 12:36:55

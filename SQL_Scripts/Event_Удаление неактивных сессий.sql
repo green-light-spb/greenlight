@@ -1,0 +1,10 @@
+DELIMITER $$
+DROP EVENT IF EXISTS `not_active_users`
+
+$$
+CREATE DEFINER=`root`@`localhost` 
+EVENT `not_active_users` 
+ON SCHEDULE EVERY 10 SECOND STARTS '2014-02-04 10:20:17' 
+ON COMPLETION NOT PRESERVE ENABLE 
+DO DELETE FROM `active_sessions`
+        WHERE UNIX_TIMESTAMP(`LastActivity`) <= UNIX_TIMESTAMP(NOW()) - 30
