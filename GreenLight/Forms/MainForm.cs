@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace GreenLight
 {
@@ -14,10 +15,31 @@ namespace GreenLight
         Timer update_activity_timer;
         int Session_ID;
         DateTime session_start;
+
+        [DllImport("user32.dll", EntryPoint = "FindWindow", SetLastError = true)]
+        static extern IntPtr FindWindowByCaption(IntPtr ZeroOnly, string lpWindowName);
+
+        [DllImport("user32.Dll")]
+        static extern int PostMessage(IntPtr hWnd, UInt32 msg, int wParam, int lParam);
+
+        private const UInt32 WM_CLOSE = 0x0010;
+
+        public void ShowAutoClosingMessageBox(string message, string caption)
+        {
+            var timer = new System.Timers.Timer(5000) { AutoReset = false };
+            timer.Elapsed += delegate
+            {
+                IntPtr hWnd = FindWindowByCaption(IntPtr.Zero, caption);
+                if (hWnd.ToInt32() != 0) PostMessage(hWnd, WM_CLOSE, 0, 0);
+            };
+            timer.Enabled = true;
+            MessageBox.Show(message, caption);
+        }
+                
         public MainForm()
         {
             InitializeComponent();
-
+                        
             session_start = (DateTime)DBFunctions.ReadScalarFromDB("SELECT current_timestamp()");
             Session_ID = (int)DBFunctions.ReadScalarFromDB("SELECT new_session_id()");
             UpdateSessionInfo();
@@ -131,6 +153,18 @@ namespace GreenLight
         {
             StringReplaseSettings srs = new StringReplaseSettings();
             srs.Show();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            //Если включен режим завершения работы, то не дадим пользователю запустить систему
+            bool shut_down_needed = Convert.ToBoolean(DBFunctions.ReadScalarFromDB("SELECT shutdown FROM force_shutdown"));
+
+            if (shut_down_needed)
+            {
+                ShowAutoClosingMessageBox("На сервере установлен запрет на запуск программы. Программа будет закрыта", "Запрет на запуск");//, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Close();
+            }
         }
 
         
