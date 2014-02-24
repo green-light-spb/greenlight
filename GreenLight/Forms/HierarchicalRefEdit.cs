@@ -22,6 +22,8 @@ namespace GreenLight
         TableStruct ref_table_struct;
         TreeNode new_node;
         public List<int> selected_ids;
+        //Костылёк. Убираем селект из treeview, если ничего не выбрано
+        private bool after_load = true;
 
         public HierarchicalRefEdit()
         {
@@ -82,10 +84,22 @@ namespace GreenLight
         //Смена элемента справочника
         private void tvReference_AfterSelect(object sender, TreeViewEventArgs e)
         {
+            if (after_load)
+            {
+                after_load = false;
+                if (select_mode && selected_ids.Count == 0 && !select_mode_multiselect)
+                {
+                    tvReference.SelectedNode = null;
+                    tsbSelect.Enabled = false;
+                    return;
+                }
+            }
+
             if (e.Node.Tag != null)
             {
                 current_elem_id = (int)e.Node.Tag;
                 FillEditForm();
+                tsbSelect.Enabled = true;
             }
             if (new_node != null && e.Node != new_node)
             {
@@ -332,7 +346,8 @@ namespace GreenLight
             }
 
             if (select_mode && selected_ids.Count > 0 && !select_mode_multiselect)
-                tvReference.SelectedNode = FindTag(tvReference.Nodes, selected_ids[0]);
+                tvReference.SelectedNode = FindTag(tvReference.Nodes, selected_ids[0]);            
+
             if (select_mode_multiselect)
             {
                 List<int> ids_for_remove = new List<int>() ;
