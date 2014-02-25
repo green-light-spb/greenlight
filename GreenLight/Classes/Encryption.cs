@@ -14,7 +14,7 @@ namespace GreenLight
         {
             byte[] bytes = new byte[24];
 
-            byte[] pwd_enc = ASCIIEncoding.ASCII.GetBytes(key);
+            byte[] pwd_enc = ASCIIEncoding.ASCII.GetBytes("^%12%-- sdfg@" + key);
 
             for (int i = 0; i < 24; i++)
             {

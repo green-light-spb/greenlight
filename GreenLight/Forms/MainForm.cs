@@ -202,6 +202,13 @@ namespace GreenLight
             DBFunctions.login_from_parameters = true;
             DBFunctions.Init();
 
+            AuthForm af = new AuthForm();
+            if (af.ShowDialog() != System.Windows.Forms.DialogResult.OK)
+            {
+                Close();
+                return;
+            }
+
             //Если включен режим завершения работы, то не дадим пользователю запустить систему
             bool shut_down_needed = Convert.ToBoolean(DBFunctions.ReadScalarFromDB("SELECT shutdown FROM force_shutdown"));
 

@@ -20,8 +20,8 @@ namespace GreenLight
     {
         public static MainForm m_frm;
         static string connection_string;
-        static string login;
-        static string password;
+        public static string login;
+        public static string password;
         public static bool login_from_parameters = true;
         
         public static void Init()
@@ -50,6 +50,20 @@ namespace GreenLight
                     ";Port=3306;User Id=" + login + ";Password=" + password;            
             }
 
+        }
+
+        public static bool TestConnecion()
+        {
+            try
+            {
+                MySqlConnection connection = new MySqlConnection(connection_string);
+                connection.Open();
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            return true;
         }
 
         private static MySqlConnection Connect()

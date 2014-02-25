@@ -12,8 +12,8 @@ namespace GreenLight
     {
         public static void TestEncryption()
         {
-            string str = Encryption.Encrypt("Мама мыла раму","some password");
-            string str2 = Encryption.Decrypt(str, "some password");
+            string str = Encryption.Encrypt("root%Ijhrby222","Pr0gress");
+            string str2 = Encryption.Decrypt(str, "Pr0gress");
         }
 
         public static void InitLocalParams()
