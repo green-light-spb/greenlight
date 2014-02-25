@@ -79,7 +79,8 @@ namespace GreenLight
             //TestUnit.ReorganizeMultiref();
             //string[] n = "{1}{232}{125}".Split(new char[] { '{', '}' },StringSplitOptions.RemoveEmptyEntries);            
 
-            TestUnit.InitLocalParams();
+            //TestUnit.InitLocalParams();
+            TestUnit.TestEncryption();
         }
 
         private void структураТаблицToolStripMenuItem_Click(object sender, EventArgs e)
