@@ -65,7 +65,7 @@
             // tslOtbor
             // 
             this.tslOtbor.Name = "tslOtbor";
-            this.tslOtbor.Size = new System.Drawing.Size(39, 22);
+            this.tslOtbor.Size = new System.Drawing.Size(42, 22);
             this.tslOtbor.Text = "Отбор";
             // 
             // tscbFields
@@ -85,7 +85,7 @@
             this.tsbApplyOtbor.Image = ((System.Drawing.Image)(resources.GetObject("tsbApplyOtbor.Image")));
             this.tsbApplyOtbor.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbApplyOtbor.Name = "tsbApplyOtbor";
-            this.tsbApplyOtbor.Size = new System.Drawing.Size(99, 22);
+            this.tsbApplyOtbor.Size = new System.Drawing.Size(110, 22);
             this.tsbApplyOtbor.Text = "Применить отбор";
             this.tsbApplyOtbor.Click += new System.EventHandler(this.tsbApplyOtbor_Click);
             // 
@@ -100,7 +100,7 @@
             this.tsbSave.Image = ((System.Drawing.Image)(resources.GetObject("tsbSave.Image")));
             this.tsbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSave.Name = "tsbSave";
-            this.tsbSave.Size = new System.Drawing.Size(66, 22);
+            this.tsbSave.Size = new System.Drawing.Size(69, 22);
             this.tsbSave.Text = "Сохранить";
             this.tsbSave.Click += new System.EventHandler(this.tsbSave_Click);
             // 
@@ -110,7 +110,7 @@
             this.tsbDiscard.Image = ((System.Drawing.Image)(resources.GetObject("tsbDiscard.Image")));
             this.tsbDiscard.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbDiscard.Name = "tsbDiscard";
-            this.tsbDiscard.Size = new System.Drawing.Size(117, 22);
+            this.tsbDiscard.Size = new System.Drawing.Size(128, 22);
             this.tsbDiscard.Text = "Отменить изменения";
             this.tsbDiscard.Click += new System.EventHandler(this.tsbDiscard_Click);
             // 
@@ -125,7 +125,7 @@
             this.tsbDuplicate.Image = ((System.Drawing.Image)(resources.GetObject("tsbDuplicate.Image")));
             this.tsbDuplicate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbDuplicate.Name = "tsbDuplicate";
-            this.tsbDuplicate.Size = new System.Drawing.Size(222, 17);
+            this.tsbDuplicate.Size = new System.Drawing.Size(237, 19);
             this.tsbDuplicate.Text = "Дублировать значения текущей колонки";
             this.tsbDuplicate.Click += new System.EventHandler(this.tsbDuplicate_Click);
             // 
@@ -149,6 +149,7 @@
             this.ClientSize = new System.Drawing.Size(842, 501);
             this.Controls.Add(this.dgFilter);
             this.Controls.Add(this.toolStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "QuestionaryFilterEditor";
             this.Text = "Фильтр анкеты";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.QuestionaryFilterEditor_FormClosing);

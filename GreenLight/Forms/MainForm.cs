@@ -202,7 +202,7 @@ namespace GreenLight
             DBFunctions.login_from_parameters = true;
             DBFunctions.Init();
 
-            AuthForm af = new AuthForm();
+            Auth.AuthForm af = new Auth.AuthForm();
             if (af.ShowDialog() != System.Windows.Forms.DialogResult.OK)
             {
                 Close();

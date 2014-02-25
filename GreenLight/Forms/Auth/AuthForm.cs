@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace GreenLight
+namespace GreenLight.Auth
 {
     public partial class AuthForm : Form
     {

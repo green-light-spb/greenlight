@@ -78,7 +78,7 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(72, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(78, 22);
             this.toolStripLabel1.Text = "Справочник:";
             // 
             // cbReferenceNames
@@ -99,7 +99,7 @@
             this.tsbSave.Image = ((System.Drawing.Image)(resources.GetObject("tsbSave.Image")));
             this.tsbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSave.Name = "tsbSave";
-            this.tsbSave.Size = new System.Drawing.Size(66, 22);
+            this.tsbSave.Size = new System.Drawing.Size(69, 22);
             this.tsbSave.Text = "Сохранить";
             this.tsbSave.Click += new System.EventHandler(this.tsbSave_Click);
             // 
@@ -121,6 +121,7 @@
             this.ClientSize = new System.Drawing.Size(769, 413);
             this.Controls.Add(this.dgReplaceStrings);
             this.Controls.Add(this.toolStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StringReplaseSettings";
             this.Text = "Настройки замены строк";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StringReplaseSettings_FormClosing);

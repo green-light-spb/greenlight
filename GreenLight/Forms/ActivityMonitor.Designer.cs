@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActivityMonitor));
             this.dgActiveSessions = new System.Windows.Forms.DataGridView();
             this.timerUpdate = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgActiveSessions)).BeginInit();
@@ -66,6 +67,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(665, 362);
             this.Controls.Add(this.dgActiveSessions);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ActivityMonitor";
             this.Text = "ActivityMonitor";
             ((System.ComponentModel.ISupportInitialize)(this.dgActiveSessions)).EndInit();

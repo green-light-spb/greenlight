@@ -72,7 +72,7 @@
             this.tsbEdit.Image = ((System.Drawing.Image)(resources.GetObject("tsbEdit.Image")));
             this.tsbEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbEdit.Name = "tsbEdit";
-            this.tsbEdit.Size = new System.Drawing.Size(90, 22);
+            this.tsbEdit.Size = new System.Drawing.Size(91, 22);
             this.tsbEdit.Text = "Редактировать";
             this.tsbEdit.Click += new System.EventHandler(this.tsbEdit_Click);
             // 
@@ -82,7 +82,7 @@
             this.tsbAdd.Image = ((System.Drawing.Image)(resources.GetObject("tsbAdd.Image")));
             this.tsbAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbAdd.Name = "tsbAdd";
-            this.tsbAdd.Size = new System.Drawing.Size(61, 22);
+            this.tsbAdd.Size = new System.Drawing.Size(63, 22);
             this.tsbAdd.Text = "Добавить";
             this.tsbAdd.Click += new System.EventHandler(this.tsbAdd_Click);
             // 
@@ -135,6 +135,7 @@
             this.ClientSize = new System.Drawing.Size(771, 471);
             this.Controls.Add(this.dgTableData);
             this.Controls.Add(this.toolStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TableEditor";
             this.Text = "TableEditor";
             this.Load += new System.EventHandler(this.TableEditor_Load);

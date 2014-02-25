@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TableRecordEditor));
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -65,6 +66,7 @@
             this.ClientSize = new System.Drawing.Size(744, 262);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.btnCancel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TableRecordEditor";
             this.Text = "TableRecordEditor";
             this.Resize += new System.EventHandler(this.TableRecordEditor_Resize);

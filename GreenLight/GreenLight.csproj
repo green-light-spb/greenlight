@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>gl.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data">
@@ -60,6 +63,12 @@
     <Compile Include="Forms\ActivityMonitor.Designer.cs">
       <DependentUpon>ActivityMonitor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Auth\AuthUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Auth\AuthUsers.Designer.cs">
+      <DependentUpon>AuthUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ClauseEditor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,10 +83,10 @@
     <Compile Include="Forms\DataCopy.Designer.cs">
       <DependentUpon>DataCopy.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MiniForms\AuthForm.cs">
+    <Compile Include="Forms\Auth\AuthForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MiniForms\AuthForm.Designer.cs">
+    <Compile Include="Forms\Auth\AuthForm.Designer.cs">
       <DependentUpon>AuthForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MiniForms\FieldsEditForm.cs">
@@ -171,13 +180,16 @@
     <EmbeddedResource Include="Forms\ActivityMonitor.resx">
       <DependentUpon>ActivityMonitor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Auth\AuthUsers.resx">
+      <DependentUpon>AuthUsers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ClauseEditor.resx">
       <DependentUpon>ClauseEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DataCopy.resx">
       <DependentUpon>DataCopy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MiniForms\AuthForm.resx">
+    <EmbeddedResource Include="Forms\Auth\AuthForm.resx">
       <DependentUpon>AuthForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MiniForms\FieldsEditForm.resx">
@@ -242,6 +254,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gl.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
