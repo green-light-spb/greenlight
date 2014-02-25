@@ -233,6 +233,12 @@ namespace GreenLight
             LocalParameters.EditParameters();
         }
 
+        private void управлениеПользователямиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Auth.AuthUsers au = new Auth.AuthUsers();
+            au.Show();
+        }
+
         
     }
 }

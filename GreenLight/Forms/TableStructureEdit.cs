@@ -20,19 +20,7 @@ namespace GreenLight
         {
             InitializeComponent();            
         }
-
-        private DataRow FindCurrentRow(DataGridView dgv)
-        {
-            CurrencyManager cManager =
-                dgv.BindingContext[dgv.DataSource, dgv.DataMember]
-                     as CurrencyManager;
-            if (cManager == null || cManager.Count == 0)
-                return null;
-
-            DataRowView drv = cManager.Current as DataRowView;
-            return drv.Row;
-        } 
-
+        
         private void FillDataGrid()
         {
             dt_tableconfig = DBFunctions.ReadFromDB("SELECT * FROM TableConfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex] + "'");
@@ -176,7 +164,7 @@ namespace GreenLight
 
         private void tsbUp_Click(object sender, EventArgs e)
         {
-            DataRow curr_row = FindCurrentRow(dgTableConfig);
+            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgTableConfig);
             int curr_id = (int)curr_row["TableConfigID"];
             
             //Получим предыдущий номер
@@ -203,7 +191,7 @@ namespace GreenLight
 
         private void tsbDown_Click(object sender, EventArgs e)
         {
-            DataRow curr_row = FindCurrentRow(dgTableConfig);
+            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgTableConfig);
             int curr_id = (int)curr_row["TableConfigID"];
 
             //Получим следующий номер
@@ -230,7 +218,7 @@ namespace GreenLight
 
         private void tsbCopy_Click(object sender, EventArgs e)
         {
-            DataRow curr_row = FindCurrentRow(dgTableConfig);
+            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgTableConfig);
             int curr_id = (int)curr_row["TableConfigID"];
             
             DataTable dt_columns = DBFunctions.ReadFromDB("SELECT ColumnDBName FROM tableConfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex] + "'");

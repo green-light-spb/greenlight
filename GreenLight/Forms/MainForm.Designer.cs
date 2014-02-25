@@ -47,6 +47,7 @@
             this.системаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.активныеСессииToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.локальныеПараметрыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.управлениеПользователямиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -178,7 +179,8 @@
             // 
             this.системаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.активныеСессииToolStripMenuItem1,
-            this.локальныеПараметрыToolStripMenuItem});
+            this.локальныеПараметрыToolStripMenuItem,
+            this.управлениеПользователямиToolStripMenuItem});
             this.системаToolStripMenuItem.Name = "системаToolStripMenuItem";
             this.системаToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.системаToolStripMenuItem.Text = "Система";
@@ -186,16 +188,23 @@
             // активныеСессииToolStripMenuItem1
             // 
             this.активныеСессииToolStripMenuItem1.Name = "активныеСессииToolStripMenuItem1";
-            this.активныеСессииToolStripMenuItem1.Size = new System.Drawing.Size(201, 22);
+            this.активныеСессииToolStripMenuItem1.Size = new System.Drawing.Size(234, 22);
             this.активныеСессииToolStripMenuItem1.Text = "Активные сессии";
             this.активныеСессииToolStripMenuItem1.Click += new System.EventHandler(this.активныеСессииToolStripMenuItem_Click);
             // 
             // локальныеПараметрыToolStripMenuItem
             // 
             this.локальныеПараметрыToolStripMenuItem.Name = "локальныеПараметрыToolStripMenuItem";
-            this.локальныеПараметрыToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.локальныеПараметрыToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.локальныеПараметрыToolStripMenuItem.Text = "Локальные параметры";
             this.локальныеПараметрыToolStripMenuItem.Click += new System.EventHandler(this.локальныеПараметрыToolStripMenuItem_Click);
+            // 
+            // управлениеПользователямиToolStripMenuItem
+            // 
+            this.управлениеПользователямиToolStripMenuItem.Name = "управлениеПользователямиToolStripMenuItem";
+            this.управлениеПользователямиToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.управлениеПользователямиToolStripMenuItem.Text = "Управление пользователями";
+            this.управлениеПользователямиToolStripMenuItem.Click += new System.EventHandler(this.управлениеПользователямиToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -236,6 +245,7 @@
         private System.Windows.Forms.ToolStripMenuItem системаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem активныеСессииToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem локальныеПараметрыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem управлениеПользователямиToolStripMenuItem;
     }
 }
 

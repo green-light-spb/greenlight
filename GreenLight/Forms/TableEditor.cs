@@ -32,21 +32,9 @@ namespace GreenLight
             cbTables.SelectedIndex = 0;            
         }
         
-        private DataRow FindCurrentRow(DataGridView dgv)
-        {
-            CurrencyManager cManager =
-                dgv.BindingContext[dgv.DataSource, dgv.DataMember]
-                     as CurrencyManager;
-            if (cManager == null || cManager.Count == 0)
-                return null;
-
-            DataRowView drv = cManager.Current as DataRowView;
-            return drv.Row;
-        }  
-
         private void tsbEdit_Click(object sender, EventArgs e)
         {
-            DataRow current_row = FindCurrentRow(dgTableData);
+            DataRow current_row = Samoyloff.Tools.FindCurrentRow(dgTableData);
             if (current_row == null)
                 return;
             TableRecordEditor tre = new TableRecordEditor(cbTables.Text, current_row);
@@ -100,7 +88,7 @@ namespace GreenLight
             {
                 return;
             }
-            DataRow current_row = FindCurrentRow(dgTableData);
+            DataRow current_row = Samoyloff.Tools.FindCurrentRow(dgTableData);
             current_row.Delete();
             DBFunctions.WriteToDB(dt_table_data, ts);
         }
@@ -108,7 +96,7 @@ namespace GreenLight
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
 
-            DataRow curr_row = FindCurrentRow(dgTableData);
+            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgTableData);
             int curr_id = (int)curr_row["ID"];
 
             DataTable dt_columns = DBFunctions.ReadFromDB("SELECT ColumnDBName FROM tableConfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex] + "'");

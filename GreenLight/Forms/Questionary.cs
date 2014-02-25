@@ -127,8 +127,11 @@ namespace GreenLight
                 tbAnswer.ReadOnly = true;
 
                 //Самойлов. Подгружаем данные из таблицы в случае их наличия
-                tbAnswer.Tag = (int)row_table_record[(string)row_question["question_dest_column_db_name"]];
-                tbAnswer.Text = Tables.GetRefName((string)row_question["question_reference"], (int)tbAnswer.Tag);
+                if (row_table_record[(string)row_question["question_dest_column_db_name"]] != System.DBNull.Value)
+                {
+                    tbAnswer.Tag = (int)row_table_record[(string)row_question["question_dest_column_db_name"]];
+                    tbAnswer.Text = Tables.GetRefName((string)row_question["question_reference"], (int)tbAnswer.Tag);
+                }
             }
             else
             {

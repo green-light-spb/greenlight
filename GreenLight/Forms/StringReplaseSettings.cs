@@ -27,19 +27,7 @@ namespace GreenLight
         {
             InitializeComponent();
         }
-
-        private DataRow FindCurrentRow(DataGridView dgv)
-        {
-            CurrencyManager cManager =
-                dgv.BindingContext[dgv.DataSource, dgv.DataMember]
-                     as CurrencyManager;
-            if (cManager == null || cManager.Count == 0)
-                return null;
-
-            DataRowView drv = cManager.Current as DataRowView;
-            return drv.Row;
-        }
-
+                
         private void StringReplaseSettings_Load(object sender, EventArgs e)
         {
             //Получим наименование ключевого поля
@@ -202,7 +190,7 @@ namespace GreenLight
 
         private void dgReplaceStrings_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            DataRow curr_row = FindCurrentRow(dgReplaceStrings);
+            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgReplaceStrings);
 
             DataGridViewComboBoxColumn ref_name_column = (DataGridViewComboBoxColumn)dgReplaceStrings.Columns["ref_name"];
 
@@ -226,7 +214,7 @@ namespace GreenLight
             if(e.ColumnIndex == 1)
             {
                 int l = dt_replaces.Select("table_reference_value = '" + e.FormattedValue + "'").Length;
-                if (FindCurrentRow(dgReplaceStrings)[1].Equals(e.FormattedValue))
+                if (Samoyloff.Tools.FindCurrentRow(dgReplaceStrings)[1].Equals(e.FormattedValue))
                 {
                     l--;
                 }

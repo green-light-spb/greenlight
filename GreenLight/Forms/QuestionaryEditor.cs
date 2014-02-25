@@ -27,19 +27,7 @@ namespace GreenLight
         {
             cbQuestionaries.SelectedIndex = 0;
         }
-
-        private DataRow FindCurrentRow(DataGridView dgv)
-        {
-            CurrencyManager cManager =
-                dgv.BindingContext[dgv.DataSource, dgv.DataMember]
-                     as CurrencyManager;
-            if (cManager == null || cManager.Count == 0)
-                return null;
-
-            DataRowView drv = cManager.Current as DataRowView;
-            return drv.Row;
-        }
-
+        
         private void LoadData()
         {
             questionary_id = (int)DBFunctions.ReadScalarFromDB("SELECT id FROM questionary WHERE Name = '" + questionary_names[cbQuestionaries.SelectedIndex] + "'");
@@ -131,7 +119,7 @@ namespace GreenLight
 
         private void dt_TableAnswersNewRow(object sender, DataTableNewRowEventArgs e)
         {
-            DataRow row = FindCurrentRow(dgQuestions);
+            DataRow row = Samoyloff.Tools.FindCurrentRow(dgQuestions);
 
             e.Row["question_id"] = (int)row["question_id"];            
         }
@@ -149,7 +137,7 @@ namespace GreenLight
 
         private void dgQuestions_CurrentCellChanged(object sender, EventArgs e)
         {
-            DataRow row = FindCurrentRow(dgQuestions);
+            DataRow row = Samoyloff.Tools.FindCurrentRow(dgQuestions);
 
             if (splitContainer.Panel2Collapsed == false)
             {

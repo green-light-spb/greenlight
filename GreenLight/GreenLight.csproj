@@ -63,6 +63,12 @@
     <Compile Include="Forms\ActivityMonitor.Designer.cs">
       <DependentUpon>ActivityMonitor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Auth\AuthUserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Auth\AuthUserEdit.Designer.cs">
+      <DependentUpon>AuthUserEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Auth\AuthUsers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +185,9 @@
     <Compile Include="TestUnit.cs" />
     <EmbeddedResource Include="Forms\ActivityMonitor.resx">
       <DependentUpon>ActivityMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Auth\AuthUserEdit.resx">
+      <DependentUpon>AuthUserEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Auth\AuthUsers.resx">
       <DependentUpon>AuthUsers.cs</DependentUpon>
