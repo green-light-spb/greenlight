@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\LocalParameter.cs" />
     <Compile Include="Classes\MyTools.cs" />
     <Compile Include="Classes\Tables.cs" />
     <Compile Include="Forms\ActivityMonitor.cs">
@@ -71,6 +72,12 @@
     </Compile>
     <Compile Include="Forms\DataCopy.Designer.cs">
       <DependentUpon>DataCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FieldsEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FieldsEditForm.designer.cs">
+      <DependentUpon>FieldsEditForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\HierarchicalRefEdit.cs">
       <SubType>Form</SubType>
@@ -156,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DataCopy.resx">
       <DependentUpon>DataCopy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FieldsEditForm.resx">
+      <DependentUpon>FieldsEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\HierarchicalRefEdit.resx">
       <DependentUpon>HierarchicalRefEdit.cs</DependentUpon>

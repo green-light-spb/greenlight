@@ -12,7 +12,7 @@ namespace GreenLight
 {
     public partial class MainForm : Form
     {
-        Timer update_activity_timer;
+        public Timer update_activity_timer;
         int Session_ID;
         DateTime session_start;
 
@@ -39,15 +39,6 @@ namespace GreenLight
         public MainForm()
         {
             InitializeComponent();
-                        
-            session_start = (DateTime)DBFunctions.ReadScalarFromDB("SELECT current_timestamp()");
-            Session_ID = (int)DBFunctions.ReadScalarFromDB("SELECT new_session_id()");
-            UpdateSessionInfo();
-
-            update_activity_timer = new Timer();
-            update_activity_timer.Tick += new EventHandler(update_activity_timer_Tick);
-            update_activity_timer.Interval = 20000;
-            update_activity_timer.Start();
         }
 
         private void UpdateSessionInfo()
@@ -87,6 +78,8 @@ namespace GreenLight
             //TestUnit.ExecuteScriptFromFile("d:\\rocid.sql");
             //TestUnit.ReorganizeMultiref();
             //string[] n = "{1}{232}{125}".Split(new char[] { '{', '}' },StringSplitOptions.RemoveEmptyEntries);            
+
+            TestUnit.InitLocalParams();
         }
 
         private void структураТаблицToolStripMenuItem_Click(object sender, EventArgs e)
@@ -157,6 +150,59 @@ namespace GreenLight
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            //Загрузим параметры, проверим валидность
+            LocalParameters.LoadParameters();
+
+            string parameters_error_text = "Необходимо заполнить следующие параметры: " + Environment.NewLine;
+            bool parameters_error = false;
+            if (LocalParameters.MySQLServer == "")
+            {
+                parameters_error = true;
+                parameters_error_text += "   - Сервер MySQL" + Environment.NewLine;
+            }
+
+            if (LocalParameters.MySQLDatabase == "")
+            {
+                parameters_error = true;
+                parameters_error_text += "   - База данных MySQL" + Environment.NewLine;
+            }
+
+            if (LocalParameters.MySQLUser == "")
+            {
+                parameters_error = true;
+                parameters_error_text += "   - Логин MySQL" + Environment.NewLine;
+            }
+
+            if (LocalParameters.MySQLPassword == "")
+            {
+                parameters_error = true;
+                parameters_error_text += "   - Пароль MySQL" + Environment.NewLine;
+            }
+
+            if (parameters_error)
+            {
+                MessageBox.Show(parameters_error_text, "Необходимо заполнить параметры.");
+                LocalParameters.EditParameters();
+            }
+
+            if (LocalParameters.MySQLServer == "" ||
+                LocalParameters.MySQLDatabase == "" ||
+                LocalParameters.MySQLUser == "" ||
+                LocalParameters.MySQLPassword == "")
+            {
+                MessageBox.Show("Не все обязательные параметры были заполнены. Работа программы будет завершена.");
+                Close();
+            }
+
+            DBFunctions.m_frm = this;
+
+            update_activity_timer = new Timer();
+            update_activity_timer.Tick += new EventHandler(update_activity_timer_Tick);
+            update_activity_timer.Interval = 20000;
+            update_activity_timer.Start();
+
+            DBFunctions.Init(true);
+
             //Если включен режим завершения работы, то не дадим пользователю запустить систему
             bool shut_down_needed = Convert.ToBoolean(DBFunctions.ReadScalarFromDB("SELECT shutdown FROM force_shutdown"));
 
@@ -165,6 +211,11 @@ namespace GreenLight
                 ShowAutoClosingMessageBox("На сервере установлен запрет на запуск программы. Программа будет закрыта", "Запрет на запуск");//, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Close();
             }
+
+            session_start = (DateTime)DBFunctions.ReadScalarFromDB("SELECT current_timestamp()");
+            Session_ID = (int)DBFunctions.ReadScalarFromDB("SELECT new_session_id()");
+            UpdateSessionInfo();
+            
         }
 
         

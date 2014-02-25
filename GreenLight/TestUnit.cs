@@ -10,7 +10,12 @@ namespace GreenLight
 {
     class TestUnit
     {
-        
+        public static void InitLocalParams()
+        {
+            //LocalParameters.SaveParameters();
+            LocalParameters.LoadParameters();
+            LocalParameters.EditParameters();
+        }
 
         public static void UpdateDB()
         {

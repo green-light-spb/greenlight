@@ -18,70 +18,62 @@ namespace GreenLight
 
     class DBFunctions
     {
-        
+        public static MainForm m_frm;
         static string connection_string;
-        public static string db_name;
-
-        static DBFunctions()
+        static string login;
+        static string password;
+        
+        public static void Init(bool login_from_parameters)
         {
-
             try
             {
-                connection_string = LoadConnString();
-                db_name = LoadDBName();
+                connection_string = LoadConnString(login_from_parameters);
             }
             catch (Exception)
             {
                 System.Windows.Forms.MessageBox.Show("Ошибка чтения настроек подключения к базе данных. Работа программы будет завершена.", "Ошибка", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
-                System.Threading.Thread.CurrentThread.Abort();
+                m_frm.Close();
+            }
+        }       
+
+        private static string LoadConnString(bool login_from_parameters)
+        {
+            if (login_from_parameters)
+            {
+                return "Database=" + LocalParameters.MySQLDatabase + ";Data Source=" + LocalParameters.MySQLServer +
+                    ";Port=3306;User Id=" + LocalParameters.MySQLUser + ";Password=" + LocalParameters.MySQLPassword;
+            }
+            else
+            {
+                return "Database=" + LocalParameters.MySQLDatabase + ";Data Source=" + LocalParameters.MySQLServer +
+                    ";Port=3306;User Id=" + login + ";Password=" + password;            
             }
 
-        }
-
-        private static string LoadDBName()
-        {
-
-            FileStream fs = new FileStream("db.cfg", FileMode.Open, FileAccess.Read);
-            StreamReader sr = new StreamReader(fs);
-            string str;
-            str = sr.ReadLine();
-            str = sr.ReadLine();
-
-
-            sr.Close();
-            fs.Close();
-
-            return str;
-        }
-
-        private static string LoadConnString()
-        {
-
-            FileStream fs = new FileStream("db.cfg", FileMode.Open, FileAccess.Read);
-            StreamReader sr = new StreamReader(fs);
-            string str;
-            str = sr.ReadLine();
-
-
-            sr.Close();
-            fs.Close();
-
-            return str;
         }
 
         private static MySqlConnection Connect()
         {
-            try
+            while (true)
             {
-                MySqlConnection connection = new MySqlConnection(connection_string);
-                connection.Open();
-                return connection;
+                try
+                {
+                    //Костылёк. Приостановим на время попытки соединения таймер в mainform. На случай ошибки соединения, чтобы не плодить эти ошибки
+                    m_frm.update_activity_timer.Enabled = false; 
+                    MySqlConnection connection = new MySqlConnection(connection_string);
+                    connection.Open();
+                    m_frm.update_activity_timer.Enabled = true;
+                    return connection;
+                }
+                catch (Exception)
+                {
+                    if (System.Windows.Forms.MessageBox.Show("Ошибка подключения к БД. Повторить попытку? (Нет - закрыть программу)", "Ошибка", System.Windows.Forms.MessageBoxButtons.YesNo, System.Windows.Forms.MessageBoxIcon.Error) == System.Windows.Forms.DialogResult.No)
+                    {
+                        m_frm.Close();
+                        throw (new Exception("База данных недоступна. Программа будет закрыта."));
+                    }
+                }
             }
-            catch (Exception)
-            {
-                System.Windows.Forms.MessageBox.Show("Ошибка подключения к БД. Обратитесь к администратору.", "Ошибка", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
-                return null;
-            }
+            
         }
 
         private static void Disconnect(MySqlConnection connection)
