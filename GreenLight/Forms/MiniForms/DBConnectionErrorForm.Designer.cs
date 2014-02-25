@@ -88,6 +88,7 @@
             this.Controls.Add(this.btnRetry);
             this.Controls.Add(this.lbErrorText);
             this.Name = "DBConnectionErrorForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ошибка подключения к БД";
             this.ResumeLayout(false);
             this.PerformLayout();
