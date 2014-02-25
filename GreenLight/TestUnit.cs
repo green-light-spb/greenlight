@@ -10,6 +10,12 @@ namespace GreenLight
 {
     class TestUnit
     {
+        public static void TestEncryption()
+        {
+            string str = Encryption.Encrypt("Мама мыла раму","some password");
+            string str2 = Encryption.Decrypt(str, "some password");
+        }
+
         public static void InitLocalParams()
         {
             //LocalParameters.SaveParameters();

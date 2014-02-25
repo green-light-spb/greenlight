@@ -50,7 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\LocalParameter.cs" />
+    <Compile Include="Classes\Encryption.cs" />
+    <Compile Include="Classes\LocalParameters.cs" />
     <Compile Include="Classes\MyTools.cs" />
     <Compile Include="Classes\Tables.cs" />
     <Compile Include="Forms\ActivityMonitor.cs">
