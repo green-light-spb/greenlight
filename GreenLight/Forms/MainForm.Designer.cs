@@ -35,7 +35,6 @@
             this.структураСправочниковToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.редакторУсловийToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.анкетыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.активныеСессииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.заменаЗначенийДляАнкетБанковToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.данныеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.редакторСправочниковToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,6 +43,9 @@
             this.анкетыИПодборToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.подборПредложенийToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.анкетированиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.системаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.активныеСессииToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.локальныеПараметрыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,7 +64,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.настройкиToolStripMenuItem,
             this.данныеToolStripMenuItem,
-            this.анкетыИПодборToolStripMenuItem});
+            this.анкетыИПодборToolStripMenuItem,
+            this.системаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(601, 24);
@@ -76,7 +79,6 @@
             this.структураСправочниковToolStripMenuItem,
             this.редакторУсловийToolStripMenuItem,
             this.анкетыToolStripMenuItem,
-            this.активныеСессииToolStripMenuItem,
             this.заменаЗначенийДляАнкетБанковToolStripMenuItem});
             this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
             this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
@@ -109,13 +111,6 @@
             this.анкетыToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.анкетыToolStripMenuItem.Text = "Анкеты";
             this.анкетыToolStripMenuItem.Click += new System.EventHandler(this.анкетыToolStripMenuItem_Click);
-            // 
-            // активныеСессииToolStripMenuItem
-            // 
-            this.активныеСессииToolStripMenuItem.Name = "активныеСессииToolStripMenuItem";
-            this.активныеСессииToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
-            this.активныеСессииToolStripMenuItem.Text = "Активные сессии";
-            this.активныеСессииToolStripMenuItem.Click += new System.EventHandler(this.активныеСессииToolStripMenuItem_Click);
             // 
             // заменаЗначенийДляАнкетБанковToolStripMenuItem
             // 
@@ -178,6 +173,29 @@
             this.анкетированиеToolStripMenuItem.Text = "Анкетирование";
             this.анкетированиеToolStripMenuItem.Click += new System.EventHandler(this.анкетированиеToolStripMenuItem_Click);
             // 
+            // системаToolStripMenuItem
+            // 
+            this.системаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.активныеСессииToolStripMenuItem1,
+            this.локальныеПараметрыToolStripMenuItem});
+            this.системаToolStripMenuItem.Name = "системаToolStripMenuItem";
+            this.системаToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.системаToolStripMenuItem.Text = "Система";
+            // 
+            // активныеСессииToolStripMenuItem1
+            // 
+            this.активныеСессииToolStripMenuItem1.Name = "активныеСессииToolStripMenuItem1";
+            this.активныеСессииToolStripMenuItem1.Size = new System.Drawing.Size(201, 22);
+            this.активныеСессииToolStripMenuItem1.Text = "Активные сессии";
+            this.активныеСессииToolStripMenuItem1.Click += new System.EventHandler(this.активныеСессииToolStripMenuItem_Click);
+            // 
+            // локальныеПараметрыToolStripMenuItem
+            // 
+            this.локальныеПараметрыToolStripMenuItem.Name = "локальныеПараметрыToolStripMenuItem";
+            this.локальныеПараметрыToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.локальныеПараметрыToolStripMenuItem.Text = "Локальные параметры";
+            this.локальныеПараметрыToolStripMenuItem.Click += new System.EventHandler(this.локальныеПараметрыToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,8 +230,10 @@
         private System.Windows.Forms.ToolStripMenuItem подборПредложенийToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem анкетированиеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem копированиеДанныхToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem активныеСессииToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem заменаЗначенийДляАнкетБанковToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem системаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem активныеСессииToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem локальныеПараметрыToolStripMenuItem;
     }
 }
 

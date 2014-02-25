@@ -64,6 +64,9 @@
             this.ClientSize = new System.Drawing.Size(354, 262);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FieldsEditForm";
             this.Text = "FieldsEditForm";
             this.Load += new System.EventHandler(this.FieldsEditForm_Load);

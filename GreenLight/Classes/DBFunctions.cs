@@ -22,12 +22,13 @@ namespace GreenLight
         static string connection_string;
         static string login;
         static string password;
+        public static bool login_from_parameters = true;
         
-        public static void Init(bool login_from_parameters)
+        public static void Init()
         {
             try
             {
-                connection_string = LoadConnString(login_from_parameters);
+                connection_string = LoadConnString();
             }
             catch (Exception)
             {
@@ -36,7 +37,7 @@ namespace GreenLight
             }
         }       
 
-        private static string LoadConnString(bool login_from_parameters)
+        private static string LoadConnString()
         {
             if (login_from_parameters)
             {
@@ -58,18 +59,25 @@ namespace GreenLight
                 try
                 {
                     //Костылёк. Приостановим на время попытки соединения таймер в mainform. На случай ошибки соединения, чтобы не плодить эти ошибки
-                    m_frm.update_activity_timer.Enabled = false; 
+                    bool timer_enabled = m_frm.update_activity_timer.Enabled;
+                    m_frm.update_activity_timer.Enabled = false;
                     MySqlConnection connection = new MySqlConnection(connection_string);
                     connection.Open();
-                    m_frm.update_activity_timer.Enabled = true;
+                    m_frm.update_activity_timer.Enabled = timer_enabled;
                     return connection;
                 }
                 catch (Exception)
                 {
-                    if (System.Windows.Forms.MessageBox.Show("Ошибка подключения к БД. Повторить попытку? (Нет - закрыть программу)", "Ошибка", System.Windows.Forms.MessageBoxButtons.YesNo, System.Windows.Forms.MessageBoxIcon.Error) == System.Windows.Forms.DialogResult.No)
+                    GreenLight.MiniForms.DBConnectionErrorForm err_frm = new MiniForms.DBConnectionErrorForm();
+
+                    if (err_frm.ShowDialog() == System.Windows.Forms.DialogResult.No)
                     {
                         m_frm.Close();
                         throw (new Exception("База данных недоступна. Программа будет закрыта."));
+                    }
+                    else
+                    {
+                        connection_string = LoadConnString();
                     }
                 }
             }

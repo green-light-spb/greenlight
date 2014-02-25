@@ -197,11 +197,9 @@ namespace GreenLight
             DBFunctions.m_frm = this;
 
             update_activity_timer = new Timer();
-            update_activity_timer.Tick += new EventHandler(update_activity_timer_Tick);
-            update_activity_timer.Interval = 20000;
-            update_activity_timer.Start();
-
-            DBFunctions.Init(true);
+            
+            DBFunctions.login_from_parameters = true;
+            DBFunctions.Init();
 
             //Если включен режим завершения работы, то не дадим пользователю запустить систему
             bool shut_down_needed = Convert.ToBoolean(DBFunctions.ReadScalarFromDB("SELECT shutdown FROM force_shutdown"));
@@ -214,8 +212,17 @@ namespace GreenLight
 
             session_start = (DateTime)DBFunctions.ReadScalarFromDB("SELECT current_timestamp()");
             Session_ID = (int)DBFunctions.ReadScalarFromDB("SELECT new_session_id()");
-            UpdateSessionInfo();
             
+            UpdateSessionInfo();
+
+            update_activity_timer.Tick += new EventHandler(update_activity_timer_Tick);
+            update_activity_timer.Interval = 20000;
+            update_activity_timer.Start();            
+        }
+
+        private void локальныеПараметрыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LocalParameters.EditParameters();
         }
 
         

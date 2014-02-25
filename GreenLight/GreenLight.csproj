@@ -73,10 +73,10 @@
     <Compile Include="Forms\DataCopy.Designer.cs">
       <DependentUpon>DataCopy.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FieldsEditForm.cs">
+    <Compile Include="Forms\MiniForms\FieldsEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FieldsEditForm.designer.cs">
+    <Compile Include="Forms\MiniForms\FieldsEditForm.designer.cs">
       <DependentUpon>FieldsEditForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\HierarchicalRefEdit.cs">
@@ -92,6 +92,12 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\OfferSelector.cs" />
+    <Compile Include="Forms\MiniForms\DBConnectionErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MiniForms\DBConnectionErrorForm.Designer.cs">
+      <DependentUpon>DBConnectionErrorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\OfferSelectorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,7 +170,7 @@
     <EmbeddedResource Include="Forms\DataCopy.resx">
       <DependentUpon>DataCopy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FieldsEditForm.resx">
+    <EmbeddedResource Include="Forms\MiniForms\FieldsEditForm.resx">
       <DependentUpon>FieldsEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\HierarchicalRefEdit.resx">
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MiniForms\DBConnectionErrorForm.resx">
+      <DependentUpon>DBConnectionErrorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OfferSelectorForm.resx">
       <DependentUpon>OfferSelectorForm.cs</DependentUpon>
