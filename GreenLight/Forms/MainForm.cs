@@ -13,7 +13,7 @@ namespace GreenLight
     public partial class MainForm : Form
     {
         public Timer update_activity_timer;
-        int Session_ID;
+        int Session_ID;        
         DateTime session_start;
 
         [DllImport("user32.dll", EntryPoint = "FindWindow", SetLastError = true)]
@@ -70,7 +70,7 @@ namespace GreenLight
             //TestUnit.TestWriteToDB();
             //TestUnit.UpdateDB();
             //TestUnit.SelectOffers();
-            //TestUnit.UpdateOfferSelector();
+            TestUnit.UpdateOfferSelector();
             //Questionary qu = new Questionary(7, "Универсальная анкета");
             //qu.Show();
 
@@ -80,7 +80,7 @@ namespace GreenLight
             //string[] n = "{1}{232}{125}".Split(new char[] { '{', '}' },StringSplitOptions.RemoveEmptyEntries);            
 
             //TestUnit.InitLocalParams();
-            TestUnit.TestEncryption();
+            //TestUnit.TestEncryption();
         }
 
         private void структураТаблицToolStripMenuItem_Click(object sender, EventArgs e)

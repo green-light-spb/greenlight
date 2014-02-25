@@ -177,8 +177,7 @@ namespace GreenLight
                 tbAnswer.Tag = hre.selected_ids[0];
                 //current_row[(string)tb.Tag] = hre.selected_ids[0];
                 //current_row[(string)tb.Tag + "_Name"] = tb.Text;
-            }
-            
+            }            
         }
 
         private void Questionary_Load(object sender, EventArgs e)

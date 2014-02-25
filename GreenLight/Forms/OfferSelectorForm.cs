@@ -35,6 +35,11 @@ namespace GreenLight
             OfferSelector os = new OfferSelector(ClientID);
 
             DataTable dt = os.SelectOffers();
+
+            if (dt == null)
+            {
+               return dt;
+            }
             //Преобразуем данные о мультирефах в человеческий вид
             foreach (DataRow row in dt.Rows)
             {
@@ -66,6 +71,13 @@ namespace GreenLight
         {
             client_id = Convert.ToInt32(dgClients[0, e.RowIndex].Value);
             dt_offers = SelectOffers(client_id);
+
+            if (dt_offers == null)
+            {
+                Close();
+                return;
+            }
+
             dgOffers.DataSource = dt_offers;
         }
 
