@@ -64,6 +64,18 @@
     <Compile Include="Forms\ActivityMonitor.Designer.cs">
       <DependentUpon>ActivityMonitor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Auth\AuthRoleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Auth\AuthRoleEdit.Designer.cs">
+      <DependentUpon>AuthRoleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Auth\AuthRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Auth\AuthRoles.Designer.cs">
+      <DependentUpon>AuthRoles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Auth\AuthUserEdit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +198,12 @@
     <Compile Include="TestUnit.cs" />
     <EmbeddedResource Include="Forms\ActivityMonitor.resx">
       <DependentUpon>ActivityMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Auth\AuthRoleEdit.resx">
+      <DependentUpon>AuthRoleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Auth\AuthRoles.resx">
+      <DependentUpon>AuthRoles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Auth\AuthUserEdit.resx">
       <DependentUpon>AuthUserEdit.cs</DependentUpon>

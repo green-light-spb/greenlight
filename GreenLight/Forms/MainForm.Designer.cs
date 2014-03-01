@@ -48,6 +48,7 @@
             this.активныеСессииToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.локальныеПараметрыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.управлениеПользователямиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ролиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -180,7 +181,8 @@
             this.системаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.активныеСессииToolStripMenuItem1,
             this.локальныеПараметрыToolStripMenuItem,
-            this.управлениеПользователямиToolStripMenuItem});
+            this.управлениеПользователямиToolStripMenuItem,
+            this.ролиToolStripMenuItem});
             this.системаToolStripMenuItem.Name = "системаToolStripMenuItem";
             this.системаToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.системаToolStripMenuItem.Text = "Система";
@@ -205,6 +207,13 @@
             this.управлениеПользователямиToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.управлениеПользователямиToolStripMenuItem.Text = "Управление пользователями";
             this.управлениеПользователямиToolStripMenuItem.Click += new System.EventHandler(this.управлениеПользователямиToolStripMenuItem_Click);
+            // 
+            // ролиToolStripMenuItem
+            // 
+            this.ролиToolStripMenuItem.Name = "ролиToolStripMenuItem";
+            this.ролиToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.ролиToolStripMenuItem.Text = "Роли";
+            this.ролиToolStripMenuItem.Click += new System.EventHandler(this.ролиToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -246,6 +255,7 @@
         private System.Windows.Forms.ToolStripMenuItem активныеСессииToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem локальныеПараметрыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem управлениеПользователямиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ролиToolStripMenuItem;
     }
 }
 

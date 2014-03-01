@@ -242,6 +242,12 @@ namespace GreenLight
             au.Show();
         }
 
+        private void ролиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Auth.AuthRoles ar = new Auth.AuthRoles();
+            ar.Show();
+        }
+
         
     }
 }
