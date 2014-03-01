@@ -47,6 +47,8 @@ namespace GreenLight.Auth
             if (encrypted_data == null)
             {
                 System.Windows.Forms.MessageBox.Show("Вход не удался.", "Ошибка", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                tbPassword.Text = "";
+                tbPassword.Focus();
                 return;
             }
 
@@ -58,6 +60,8 @@ namespace GreenLight.Auth
             } catch(Exception)
             {
                 System.Windows.Forms.MessageBox.Show("Вход не удался.", "Ошибка", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                tbPassword.Text = "";
+                tbPassword.Focus();
                 return;
             }
 

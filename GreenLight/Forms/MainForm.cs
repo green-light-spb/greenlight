@@ -41,6 +41,11 @@ namespace GreenLight
             InitializeComponent();
         }
 
+        private void UpdateVisibility()
+        {
+            menuTableConfig.Visible = Auth.AuthModule.rights.table_struct.read;
+        }
+
         private void UpdateSessionInfo()
         {
             DBFunctions.ExecuteScript("DELETE FROM active_sessions WHERE SessionID = " + Convert.ToString(Session_ID));
@@ -230,6 +235,8 @@ namespace GreenLight
                 Close();
                 return;
             }
+
+            UpdateVisibility();
 
             //Если включен режим завершения работы, то не дадим пользователю запустить систему
             bool shut_down_needed = Convert.ToBoolean(DBFunctions.ReadScalarFromDB("SELECT shutdown FROM force_shutdown"));
