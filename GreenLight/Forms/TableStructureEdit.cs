@@ -20,6 +20,14 @@ namespace GreenLight
         {
             InitializeComponent();            
         }
+
+        private void TestRights()
+        {
+            tsbSave.Visible = Auth.AuthModule.rights.table_struct.write;
+            tsbUp.Visible = Auth.AuthModule.rights.table_struct.write;
+            tsbDown.Visible = Auth.AuthModule.rights.table_struct.write;
+            dgTableConfig.ReadOnly = !Auth.AuthModule.rights.string_replace.write;
+        }
         
         private void FillDataGrid()
         {
@@ -119,36 +127,44 @@ namespace GreenLight
 
         private void TableStructureEdit_Load(object sender, EventArgs e)
         {
+
+            TestRights();
             cbTables.SelectedIndex = 0;
             FillDataGrid();
+            
         }
 
         private void TableStructureEdit_FormClosing(object sender, FormClosingEventArgs e)
         {
+            if (!Auth.AuthModule.rights.table_struct.write)
+                return;
             switch (Tools.ProceedWithChanges(dt_tableconfig))
             {
                 case Tools.ProceedWithChangesAnswers.SaveAndProceed:
                     SaveData();
                     break;
                 case Tools.ProceedWithChangesAnswers.Cancel:
-                    cbTables.SelectedIndex = last_table_index;
                     return;
             }
         }
   
         private void cbTables_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
             if (last_table_index == cbTables.SelectedIndex)
                 return;
 
-            switch (Tools.ProceedWithChanges(dt_tableconfig))
+            if (Auth.AuthModule.rights.table_struct.write)
             {
-                case Tools.ProceedWithChangesAnswers.SaveAndProceed:
-                    SaveData();
-                    break;
-                case Tools.ProceedWithChangesAnswers.Cancel:
-                    cbTables.SelectedIndex = last_table_index;
-                    return;
+                switch (Tools.ProceedWithChanges(dt_tableconfig))
+                {
+                    case Tools.ProceedWithChangesAnswers.SaveAndProceed:
+                        SaveData();
+                        break;
+                    case Tools.ProceedWithChangesAnswers.Cancel:
+                        cbTables.SelectedIndex = last_table_index;
+                        return;
+                }
             }
             FillDataGrid();
             last_table_index = cbTables.SelectedIndex;

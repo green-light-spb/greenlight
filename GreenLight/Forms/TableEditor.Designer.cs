@@ -33,8 +33,8 @@
             this.cbTables = new System.Windows.Forms.ToolStripComboBox();
             this.tsbEdit = new System.Windows.Forms.ToolStripButton();
             this.tsbAdd = new System.Windows.Forms.ToolStripButton();
-            this.tbDelete = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.tsbDelete = new System.Windows.Forms.ToolStripButton();
+            this.tsbCopy = new System.Windows.Forms.ToolStripButton();
             this.tstbSearch = new System.Windows.Forms.ToolStripTextBox();
             this.dgTableData = new System.Windows.Forms.DataGridView();
             this.toolStrip1.SuspendLayout();
@@ -47,8 +47,8 @@
             this.cbTables,
             this.tsbEdit,
             this.tsbAdd,
-            this.tbDelete,
-            this.toolStripButton1,
+            this.tsbDelete,
+            this.tsbCopy,
             this.tstbSearch});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -86,25 +86,25 @@
             this.tsbAdd.Text = "Добавить";
             this.tsbAdd.Click += new System.EventHandler(this.tsbAdd_Click);
             // 
-            // tbDelete
+            // tsbDelete
             // 
-            this.tbDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tbDelete.Image = ((System.Drawing.Image)(resources.GetObject("tbDelete.Image")));
-            this.tbDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tbDelete.Name = "tbDelete";
-            this.tbDelete.Size = new System.Drawing.Size(55, 22);
-            this.tbDelete.Text = "Удалить";
-            this.tbDelete.Click += new System.EventHandler(this.tbDelete_Click);
+            this.tsbDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsbDelete.Image = ((System.Drawing.Image)(resources.GetObject("tsbDelete.Image")));
+            this.tsbDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbDelete.Name = "tsbDelete";
+            this.tsbDelete.Size = new System.Drawing.Size(55, 22);
+            this.tsbDelete.Text = "Удалить";
+            this.tsbDelete.Click += new System.EventHandler(this.tbDelete_Click);
             // 
-            // toolStripButton1
+            // tsbCopy
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.tsbCopy.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbCopy.Image = ((System.Drawing.Image)(resources.GetObject("tsbCopy.Image")));
+            this.tsbCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbCopy.Name = "tsbCopy";
+            this.tsbCopy.Size = new System.Drawing.Size(23, 22);
+            this.tsbCopy.Text = "toolStripButton1";
+            this.tsbCopy.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // tstbSearch
             // 
@@ -154,8 +154,8 @@
         private System.Windows.Forms.DataGridView dgTableData;
         private System.Windows.Forms.ToolStripButton tsbEdit;
         private System.Windows.Forms.ToolStripButton tsbAdd;
-        private System.Windows.Forms.ToolStripButton tbDelete;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton tsbDelete;
+        private System.Windows.Forms.ToolStripButton tsbCopy;
         private System.Windows.Forms.ToolStripTextBox tstbSearch;
     }
 }

@@ -20,6 +20,48 @@ namespace GreenLight
             InitializeComponent();
         }
 
+        private void TestReadRights()
+        {
+            if (Auth.AuthModule.rights.table_clients.read && Auth.AuthModule.rights.table_credprogr.read)
+            {
+                cbTables.SelectedIndex = 0;
+            } else if (Auth.AuthModule.rights.table_clients.read)
+            {
+                cbTables.Enabled = false;
+                cbTables.SelectedIndex = 0;
+            }
+            else if (Auth.AuthModule.rights.table_credprogr.read)
+            {
+                cbTables.Enabled = false;
+                cbTables.SelectedIndex = 1;
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("Нет доступа к таблицам.", "Ошибка", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                Close();
+            }
+        }
+
+        private bool HaveWriteRights()
+        {
+            if (cbTables.SelectedIndex == 0)//Клиенты
+            {
+                return Auth.AuthModule.rights.table_clients.write;
+            }
+            else //Кредитные программы
+            {
+                return Auth.AuthModule.rights.table_credprogr.write;
+            }
+        }
+
+        private void TestWriteRights()
+        {
+            dgTableData.ReadOnly = !HaveWriteRights();
+            tsbAdd.Visible = HaveWriteRights();
+            tsbCopy.Visible = HaveWriteRights();
+            tsbDelete.Visible = HaveWriteRights();
+        }
+        
         private void FillDataGrid()
         {
             Cursor.Current = Cursors.WaitCursor;
@@ -29,7 +71,8 @@ namespace GreenLight
 
         private void TableEditor_Load(object sender, EventArgs e)
         {
-            cbTables.SelectedIndex = 0;            
+            //cbTables.SelectedIndex = 0;            
+            TestReadRights();
         }
         
         private void tsbEdit_Click(object sender, EventArgs e)
@@ -37,7 +80,7 @@ namespace GreenLight
             DataRow current_row = Samoyloff.Tools.FindCurrentRow(dgTableData);
             if (current_row == null)
                 return;
-            TableRecordEditor tre = new TableRecordEditor(cbTables.Text, current_row);
+            TableRecordEditor tre = new TableRecordEditor(cbTables.Text, current_row, HaveWriteRights());            
             if (tre.ShowDialog() == DialogResult.OK)
             {
                 bool row_added = false;
@@ -67,6 +110,7 @@ namespace GreenLight
 
         private void cbTables_SelectedIndexChanged(object sender, EventArgs e)
         {
+            TestWriteRights();
             this.Text = "Таблица: " + cbTables.SelectedItem;
             FillDataGrid();
         }

@@ -27,6 +27,12 @@ namespace GreenLight
         {
             InitializeComponent();
         }
+
+        private void TestRights()
+        {
+            tsbSave.Visible = Auth.AuthModule.rights.string_replace.write;
+            dgReplaceStrings.ReadOnly = !Auth.AuthModule.rights.string_replace.write;
+        }
                 
         private void StringReplaseSettings_Load(object sender, EventArgs e)
         {
@@ -99,6 +105,8 @@ namespace GreenLight
 
             cbReferenceNames.SelectedIndex = 0;
             cbKeyFieldValues.SelectedIndex = 0;
+
+            TestRights();
         }
 
         private void FillDataGrid()
@@ -127,6 +135,8 @@ namespace GreenLight
 
         private void SaveData()
         {
+            if (!Auth.AuthModule.rights.string_replace.write)
+                return;
             dgReplaceStrings.EndEdit();
 
             Validate();
@@ -154,6 +164,9 @@ namespace GreenLight
 
         private bool proceedWithChanges()
         {
+            if (!Auth.AuthModule.rights.string_replace.write)
+                return true;
+
             Validate();
             if (dt_replaces.GetChanges() != null)
             {

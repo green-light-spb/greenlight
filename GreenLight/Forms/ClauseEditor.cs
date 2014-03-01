@@ -49,6 +49,16 @@ namespace GreenLight
 
             DBFunctions.WriteToDB(dt, ts);
 
+            try
+            {
+                DBStructure.UpdateSelectorScript();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
             Close();
 
         }
