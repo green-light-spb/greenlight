@@ -64,6 +64,25 @@ namespace GreenLight
             UpdateSessionInfo();
         }
 
+        private void UpdateVisibility()
+        {
+
+            menuTableStruct.Visible = Auth.AuthModule.rights.table_struct.read;
+            menuClauseEditor.Visible = Auth.AuthModule.rights.clause_editor.read;
+            menuTableEditor.Visible = Auth.AuthModule.rights.table_clients.read || Auth.AuthModule.rights.table_credprogr.read;
+            menuReferenceStruct.Visible = Auth.AuthModule.rights.reference_struct.read;
+            menuQuestionaryEditor.Visible = Auth.AuthModule.rights.questionary_editor.read;
+            menuReferenceEditor.Visible = Auth.AuthModule.rights.references.read;
+            menuOfferSelector.Visible = Auth.AuthModule.rights.offer_selector.read;
+            menuQuestionary.Visible = Auth.AuthModule.rights.questionary.write;//Чтение в данном случае лишено смысла
+            menuDataCopy.Visible = Auth.AuthModule.rights.data_copy.write;//Чтение в данном случае лишено смысла
+            menuStringReplace.Visible = Auth.AuthModule.rights.string_replace.read;
+            menuActiveSessions.Visible = Auth.AuthModule.rights.active_session.read;
+            menuUserControl.Visible = Auth.AuthModule.rights.access_control.write;//Только чтение и запись в паре
+            menuRoles.Visible = Auth.AuthModule.rights.access_control.write;//Только чтение и запись в паре
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             //TestUnit.TestReadFromDB();
@@ -86,67 +105,67 @@ namespace GreenLight
             //TestUnit.TestEncryption();
         }
 
-        private void структураТаблицToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuTableStruct_Click(object sender, EventArgs e)
         {
             TableStructureEdit tse = new TableStructureEdit();
             tse.Show();
         }
 
-        private void редакторУсловийToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuClauseEditor_Click(object sender, EventArgs e)
         {
             ClauseEditor ce = new ClauseEditor();
             ce.Show();
         }
 
-        private void редакторТаблицToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuTableEditor_Click(object sender, EventArgs e)
         {
             TableEditor te = new TableEditor();
             te.Show();
         }
 
-        private void подборПредложенийToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuOfferSelector_Click(object sender, EventArgs e)
         {
             OfferSelectorForm osf = new OfferSelectorForm();
             osf.Show();
         }
 
-        private void редакторСправочниковToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuReferenceEditor_Click(object sender, EventArgs e)
         {
             HierarchicalRefEdit hre = new HierarchicalRefEdit();
             hre.Show();
         }
 
-        private void структураСправочниковToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuReferenceStruct_Click(object sender, EventArgs e)
         {
             ReferenceStructureEdit rse = new ReferenceStructureEdit();
             rse.Show();
         }
 
-        private void анкетыToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuQuestionaryEditor_Click(object sender, EventArgs e)
         {
             QuestionaryEditor qe = new QuestionaryEditor();
             qe.Show();
         }
 
-        private void анкетированиеToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuQuestionary_Click(object sender, EventArgs e)
         {
             Questionary q = new Questionary();
             q.Show();
         }
 
-        private void копированиеДанныхToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuDataCopy_Click(object sender, EventArgs e)
         {
             DataCopy dc = new DataCopy();
             dc.Show();
         }
 
-        private void активныеСессииToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuActiveSessions_Click(object sender, EventArgs e)
         {
             ActivityMonitor am = new ActivityMonitor();
             am.Show();
         }
 
-        private void заменаЗначенийДляАнкетБанковToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuStringReplace_Click(object sender, EventArgs e)
         {
             StringReplaseSettings srs = new StringReplaseSettings();
             srs.Show();
@@ -221,6 +240,8 @@ namespace GreenLight
                 Close();
             }
 
+            UpdateVisibility();
+
             session_start = (DateTime)DBFunctions.ReadScalarFromDB("SELECT current_timestamp()");
             Session_ID = (int)DBFunctions.ReadScalarFromDB("SELECT new_session_id()");
             
@@ -231,18 +252,18 @@ namespace GreenLight
             update_activity_timer.Start();            
         }
 
-        private void локальныеПараметрыToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuLocalParameters_Click(object sender, EventArgs e)
         {
             LocalParameters.EditParameters();
         }
 
-        private void управлениеПользователямиToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuUserControl_Click(object sender, EventArgs e)
         {
             Auth.AuthUsers au = new Auth.AuthUsers();
             au.Show();
         }
 
-        private void ролиToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuRoles_Click(object sender, EventArgs e)
         {
             Auth.AuthRoles ar = new Auth.AuthRoles();
             ar.Show();

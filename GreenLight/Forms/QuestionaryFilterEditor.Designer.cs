@@ -153,6 +153,7 @@
             this.Name = "QuestionaryFilterEditor";
             this.Text = "Фильтр анкеты";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.QuestionaryFilterEditor_FormClosing);
+            this.Load += new System.EventHandler(this.QuestionaryFilterEditor_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgFilter)).EndInit();

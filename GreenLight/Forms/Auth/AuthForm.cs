@@ -81,6 +81,11 @@ namespace GreenLight.Auth
             try
             {
                 AuthModule.user_id = (int)DBFunctions.ReadScalarFromDB("SELECT id FROM auth_user WHERE login = @login", parameters);
+                object ob_rigths = DBFunctions.ReadScalarFromDB("SELECT rights FROM auth_user LEFT JOIN auth_roles ON role_id = auth_roles.id WHERE login = @login", parameters);
+                if (ob_rigths != DBNull.Value)
+                    AuthModule.rights.Deserialize((string)ob_rigths);
+                else
+                    AuthModule.rights.Deserialize("");
             }
             catch (Exception ex)
             {

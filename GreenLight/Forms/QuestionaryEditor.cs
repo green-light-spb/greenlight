@@ -23,9 +23,18 @@ namespace GreenLight
             InitializeComponent();
         }
 
+        private void TestRights()
+        {
+            tsbSave.Visible = Auth.AuthModule.rights.questionary_editor.write;
+            dgAnswers.ReadOnly = !Auth.AuthModule.rights.questionary_editor.write;
+            dgQuestions.ReadOnly = !Auth.AuthModule.rights.questionary_editor.write;            
+        }
+
         private void QuestionaryEditor_Load(object sender, EventArgs e)
         {
             cbQuestionaries.SelectedIndex = 0;
+
+            TestRights();
         }
         
         private void LoadData()
@@ -95,6 +104,9 @@ namespace GreenLight
 
         private void SaveData()
         {
+            if (!Auth.AuthModule.rights.questionary_editor.write)
+                return;
+
             TableStruct ts = new TableStruct();
             ts.TableName = "questionary_questions";
             string[] p_keys = { "question_id" };

@@ -31,6 +31,13 @@ namespace GreenLight
             selected_ids = new List<int>();
         }
 
+        private void TestRights()
+        {
+            tsbAdd.Visible = Auth.AuthModule.rights.references.write;
+            tsbDelete.Visible = Auth.AuthModule.rights.references.write;
+            tsbSave.Visible = Auth.AuthModule.rights.references.write;
+        }
+
         #region Обработчики событий
 
         private void HierarchicalRefEdit_Load(object sender, EventArgs e)
@@ -54,6 +61,8 @@ namespace GreenLight
                 cbCurrentReference.Items.Add((string)row["ReferenceName"]);
             }
             cbCurrentReference.SelectedIndex = 0;
+
+            TestRights();
         }
 
         //Смена справочника
@@ -507,10 +516,17 @@ namespace GreenLight
                 new_tb.Width = splitContainer.Panel2.Width - 160;
                 if (select_mode)
                     new_tb.ReadOnly = true;
-                if((string)new_tb.Tag == "ID")
-                    new_tb.Enabled = false;
-                else                    
-                    ref_table_struct.columns[dt_ref_columns.Rows.IndexOf(column_row)-1] = (string)column_row["ColumnDBName"];
+                if ((string)new_tb.Tag == "ID")
+                    new_tb.ReadOnly = true;
+                else
+                {
+                    ref_table_struct.columns[dt_ref_columns.Rows.IndexOf(column_row) - 1] = (string)column_row["ColumnDBName"];
+                    //Проверим право на запись
+                    new_tb.ReadOnly = !Auth.AuthModule.rights.references.write;
+                }
+
+                
+                
                                 
                 edit_controls.Add((string)column_row["ColumnDBName"], new_tb);
                 splitContainer.Panel2.Controls.Add(edit_controls[(string)column_row["ColumnDBName"]]);
