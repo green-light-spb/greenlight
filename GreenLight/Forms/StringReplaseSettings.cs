@@ -28,18 +28,12 @@ namespace GreenLight
             InitializeComponent();
         }
 
-        private DataRow FindCurrentRow(DataGridView dgv)
+        private void TestRights()
         {
-            CurrencyManager cManager =
-                dgv.BindingContext[dgv.DataSource, dgv.DataMember]
-                     as CurrencyManager;
-            if (cManager == null || cManager.Count == 0)
-                return null;
-
-            DataRowView drv = cManager.Current as DataRowView;
-            return drv.Row;
+            tsbSave.Visible = Auth.AuthModule.rights.string_replace.write;
+            dgReplaceStrings.ReadOnly = !Auth.AuthModule.rights.string_replace.write;
         }
-
+                
         private void StringReplaseSettings_Load(object sender, EventArgs e)
         {
             //Получим наименование ключевого поля
@@ -111,6 +105,8 @@ namespace GreenLight
 
             cbReferenceNames.SelectedIndex = 0;
             cbKeyFieldValues.SelectedIndex = 0;
+
+            TestRights();
         }
 
         private void FillDataGrid()
@@ -139,6 +135,8 @@ namespace GreenLight
 
         private void SaveData()
         {
+            if (!Auth.AuthModule.rights.string_replace.write)
+                return;
             dgReplaceStrings.EndEdit();
 
             Validate();
@@ -166,6 +164,9 @@ namespace GreenLight
 
         private bool proceedWithChanges()
         {
+            if (!Auth.AuthModule.rights.string_replace.write)
+                return true;
+
             Validate();
             if (dt_replaces.GetChanges() != null)
             {
@@ -202,7 +203,7 @@ namespace GreenLight
 
         private void dgReplaceStrings_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            DataRow curr_row = FindCurrentRow(dgReplaceStrings);
+            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgReplaceStrings);
 
             DataGridViewComboBoxColumn ref_name_column = (DataGridViewComboBoxColumn)dgReplaceStrings.Columns["ref_name"];
 
@@ -226,7 +227,7 @@ namespace GreenLight
             if(e.ColumnIndex == 1)
             {
                 int l = dt_replaces.Select("table_reference_value = '" + e.FormattedValue + "'").Length;
-                if (FindCurrentRow(dgReplaceStrings)[1].Equals(e.FormattedValue))
+                if (Samoyloff.Tools.FindCurrentRow(dgReplaceStrings)[1].Equals(e.FormattedValue))
                 {
                     l--;
                 }

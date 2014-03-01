@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Questionary));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tbHistory = new System.Windows.Forms.TextBox();
-            this.lbQuestionText = new System.Windows.Forms.Label();
-            this.tbAnswer = new System.Windows.Forms.TextBox();
-            this.btnSelect = new System.Windows.Forms.Button();
-            this.btnPrev = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
+            this.btnPrev = new System.Windows.Forms.Button();
+            this.btnSelect = new System.Windows.Forms.Button();
+            this.tbAnswer = new System.Windows.Forms.TextBox();
+            this.lbQuestionText = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -73,35 +74,16 @@
             this.tbHistory.Size = new System.Drawing.Size(204, 345);
             this.tbHistory.TabIndex = 0;
             // 
-            // lbQuestionText
+            // btnNext
             // 
-            this.lbQuestionText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbQuestionText.Location = new System.Drawing.Point(11, 22);
-            this.lbQuestionText.Name = "lbQuestionText";
-            this.lbQuestionText.Size = new System.Drawing.Size(383, 61);
-            this.lbQuestionText.TabIndex = 0;
-            this.lbQuestionText.Text = "Тут будет текст вопроса";
-            // 
-            // tbAnswer
-            // 
-            this.tbAnswer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbAnswer.Location = new System.Drawing.Point(14, 102);
-            this.tbAnswer.Name = "tbAnswer";
-            this.tbAnswer.Size = new System.Drawing.Size(358, 20);
-            this.tbAnswer.TabIndex = 1;
-            // 
-            // btnSelect
-            // 
-            this.btnSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSelect.Location = new System.Drawing.Point(375, 101);
-            this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(23, 20);
-            this.btnSelect.TabIndex = 2;
-            this.btnSelect.Text = "<";
-            this.btnSelect.UseVisualStyleBackColor = true;
-            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
+            this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNext.Location = new System.Drawing.Point(291, 310);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(103, 23);
+            this.btnNext.TabIndex = 4;
+            this.btnNext.Text = "Следующий >";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnPrev
             // 
@@ -114,16 +96,35 @@
             this.btnPrev.UseVisualStyleBackColor = true;
             this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
-            // btnNext
+            // btnSelect
             // 
-            this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNext.Location = new System.Drawing.Point(291, 310);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(103, 23);
-            this.btnNext.TabIndex = 4;
-            this.btnNext.Text = "Следующий >";
-            this.btnNext.UseVisualStyleBackColor = true;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            this.btnSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSelect.Location = new System.Drawing.Point(375, 101);
+            this.btnSelect.Name = "btnSelect";
+            this.btnSelect.Size = new System.Drawing.Size(23, 20);
+            this.btnSelect.TabIndex = 2;
+            this.btnSelect.Text = "<";
+            this.btnSelect.UseVisualStyleBackColor = true;
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
+            // 
+            // tbAnswer
+            // 
+            this.tbAnswer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbAnswer.Location = new System.Drawing.Point(14, 102);
+            this.tbAnswer.Name = "tbAnswer";
+            this.tbAnswer.Size = new System.Drawing.Size(358, 20);
+            this.tbAnswer.TabIndex = 1;
+            // 
+            // lbQuestionText
+            // 
+            this.lbQuestionText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbQuestionText.Location = new System.Drawing.Point(11, 22);
+            this.lbQuestionText.Name = "lbQuestionText";
+            this.lbQuestionText.Size = new System.Drawing.Size(383, 61);
+            this.lbQuestionText.TabIndex = 0;
+            this.lbQuestionText.Text = "Тут будет текст вопроса";
             // 
             // Questionary
             // 
@@ -131,6 +132,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(614, 345);
             this.Controls.Add(this.splitContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Questionary";
             this.Text = "Анкета";
             this.Load += new System.EventHandler(this.Questionary_Load);

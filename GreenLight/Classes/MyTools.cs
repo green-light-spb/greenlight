@@ -38,5 +38,17 @@ namespace Samoyloff
                 return ProceedWithChangesAnswers.DontSaveAndProceed;
             }
         }
+
+        public static DataRow FindCurrentRow(DataGridView dgv)
+        {
+            CurrencyManager cManager =
+                dgv.BindingContext[dgv.DataSource, dgv.DataMember]
+                     as CurrencyManager;
+            if (cManager == null || cManager.Count == 0)
+                return null;
+
+            DataRowView drv = cManager.Current as DataRowView;
+            return drv.Row;
+        } 
     }
 }

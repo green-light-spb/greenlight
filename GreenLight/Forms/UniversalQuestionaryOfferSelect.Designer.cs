@@ -55,7 +55,7 @@
             this.tsbOk.Image = ((System.Drawing.Image)(resources.GetObject("tsbOk.Image")));
             this.tsbOk.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbOk.Name = "tsbOk";
-            this.tsbOk.Size = new System.Drawing.Size(80, 22);
+            this.tsbOk.Size = new System.Drawing.Size(87, 22);
             this.tsbOk.Text = "Начать опрос";
             this.tsbOk.Click += new System.EventHandler(this.tsbOk_Click);
             // 
@@ -96,6 +96,7 @@
             this.ClientSize = new System.Drawing.Size(679, 406);
             this.Controls.Add(this.dgOffers);
             this.Controls.Add(this.toolStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UniversalQuestionaryOfferSelect";
             this.Text = "Выбор программ для анкеты";
             this.Load += new System.EventHandler(this.UniversalQuestionaryOfferSelect_Load);

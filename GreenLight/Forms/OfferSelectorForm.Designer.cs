@@ -118,7 +118,7 @@
             this.tsbUniversalQuestionary.Image = ((System.Drawing.Image)(resources.GetObject("tsbUniversalQuestionary.Image")));
             this.tsbUniversalQuestionary.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbUniversalQuestionary.Name = "tsbUniversalQuestionary";
-            this.tsbUniversalQuestionary.Size = new System.Drawing.Size(128, 22);
+            this.tsbUniversalQuestionary.Size = new System.Drawing.Size(134, 22);
             this.tsbUniversalQuestionary.Text = "Универсальная анкета";
             this.tsbUniversalQuestionary.Click += new System.EventHandler(this.tsbUniversalQuestionary_Click);
             // 
@@ -129,6 +129,7 @@
             this.ClientSize = new System.Drawing.Size(730, 559);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.splitContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OfferSelectorForm";
             this.Text = "Подбор предложений";
             this.Load += new System.EventHandler(this.OfferSelectorForm_Load);

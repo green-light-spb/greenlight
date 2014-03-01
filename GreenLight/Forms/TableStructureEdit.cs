@@ -21,18 +21,14 @@ namespace GreenLight
             InitializeComponent();            
         }
 
-        private DataRow FindCurrentRow(DataGridView dgv)
+        private void TestRights()
         {
-            CurrencyManager cManager =
-                dgv.BindingContext[dgv.DataSource, dgv.DataMember]
-                     as CurrencyManager;
-            if (cManager == null || cManager.Count == 0)
-                return null;
-
-            DataRowView drv = cManager.Current as DataRowView;
-            return drv.Row;
-        } 
-
+            tsbSave.Visible = Auth.AuthModule.rights.table_struct.write;
+            tsbUp.Visible = Auth.AuthModule.rights.table_struct.write;
+            tsbDown.Visible = Auth.AuthModule.rights.table_struct.write;
+            dgTableConfig.ReadOnly = !Auth.AuthModule.rights.string_replace.write;
+        }
+        
         private void FillDataGrid()
         {
             dt_tableconfig = DBFunctions.ReadFromDB("SELECT * FROM TableConfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex] + "'");
@@ -131,36 +127,44 @@ namespace GreenLight
 
         private void TableStructureEdit_Load(object sender, EventArgs e)
         {
+
+            TestRights();
             cbTables.SelectedIndex = 0;
             FillDataGrid();
+            
         }
 
         private void TableStructureEdit_FormClosing(object sender, FormClosingEventArgs e)
         {
+            if (!Auth.AuthModule.rights.table_struct.write)
+                return;
             switch (Tools.ProceedWithChanges(dt_tableconfig))
             {
                 case Tools.ProceedWithChangesAnswers.SaveAndProceed:
                     SaveData();
                     break;
                 case Tools.ProceedWithChangesAnswers.Cancel:
-                    cbTables.SelectedIndex = last_table_index;
                     return;
             }
         }
   
         private void cbTables_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
             if (last_table_index == cbTables.SelectedIndex)
                 return;
 
-            switch (Tools.ProceedWithChanges(dt_tableconfig))
+            if (Auth.AuthModule.rights.table_struct.write)
             {
-                case Tools.ProceedWithChangesAnswers.SaveAndProceed:
-                    SaveData();
-                    break;
-                case Tools.ProceedWithChangesAnswers.Cancel:
-                    cbTables.SelectedIndex = last_table_index;
-                    return;
+                switch (Tools.ProceedWithChanges(dt_tableconfig))
+                {
+                    case Tools.ProceedWithChangesAnswers.SaveAndProceed:
+                        SaveData();
+                        break;
+                    case Tools.ProceedWithChangesAnswers.Cancel:
+                        cbTables.SelectedIndex = last_table_index;
+                        return;
+                }
             }
             FillDataGrid();
             last_table_index = cbTables.SelectedIndex;
@@ -176,7 +180,7 @@ namespace GreenLight
 
         private void tsbUp_Click(object sender, EventArgs e)
         {
-            DataRow curr_row = FindCurrentRow(dgTableConfig);
+            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgTableConfig);
             int curr_id = (int)curr_row["TableConfigID"];
             
             //Получим предыдущий номер
@@ -203,7 +207,7 @@ namespace GreenLight
 
         private void tsbDown_Click(object sender, EventArgs e)
         {
-            DataRow curr_row = FindCurrentRow(dgTableConfig);
+            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgTableConfig);
             int curr_id = (int)curr_row["TableConfigID"];
 
             //Получим следующий номер
@@ -230,7 +234,7 @@ namespace GreenLight
 
         private void tsbCopy_Click(object sender, EventArgs e)
         {
-            DataRow curr_row = FindCurrentRow(dgTableConfig);
+            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgTableConfig);
             int curr_id = (int)curr_row["TableConfigID"];
             
             DataTable dt_columns = DBFunctions.ReadFromDB("SELECT ColumnDBName FROM tableConfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex] + "'");

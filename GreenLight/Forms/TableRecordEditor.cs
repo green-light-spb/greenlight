@@ -18,7 +18,7 @@ namespace GreenLight
         DataTable dt_table_structure;
 
 
-        public TableRecordEditor(string tn,DataRow row)
+        public TableRecordEditor(string tn,DataRow row, bool write_rights)
         {
             InitializeComponent();
 
@@ -35,6 +35,8 @@ namespace GreenLight
 
             dt_table_structure = DBFunctions.ReadFromDB("SELECT ColumnName,ColumnDBName,ColumnType,ColumnReference,ReferenceMultiSelect FROM tableconfig WHERE TableName = '" + table_name + "'");
 
+            btnOk.Enabled = write_rights;
+
             edit_controls = new Dictionary<string, Control>();
 
             int columns_count = 0;
@@ -49,8 +51,7 @@ namespace GreenLight
                 new_label.Height = 20;
                 new_label.Width = 300;
                 new_label.Top = 12 + columns_count * (new_label.Height + 5);
-                
-
+                                
                 edit_controls.Add("label_" + struct_row["ColumnDBName"], new_label);
                 this.Controls.Add(edit_controls["label_" + struct_row["ColumnDBName"]]);
 
@@ -61,6 +62,9 @@ namespace GreenLight
                     new_tb.Left = 310;
                     new_tb.Top = 10 + columns_count * (new_tb.Height + 5);
                     new_tb.Width = this.ClientRectangle.Width - 315;
+
+                    //Права
+                    new_tb.ReadOnly = !write_rights;
 
                     new_tb.TextChanged += new System.EventHandler(this.TextBox_TextChange);
 
@@ -98,6 +102,9 @@ namespace GreenLight
                     new_btn.Height = new_tb.Height;
                     new_btn.Left = new_tb.Left + new_tb.Width + 1;
                     new_btn.Tag = new_tb;
+
+                    //Права
+                    new_btn.Enabled = write_rights;
 
                     new_btn.Click += new System.EventHandler(this.ReferenceSelect_Click);
 
