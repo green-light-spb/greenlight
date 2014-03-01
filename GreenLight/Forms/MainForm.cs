@@ -70,7 +70,10 @@ namespace GreenLight
             //TestUnit.TestWriteToDB();
             //TestUnit.UpdateDB();
             //TestUnit.SelectOffers();
-            TestUnit.UpdateOfferSelector();
+
+            TestUnit.TestReflection();
+            
+            //TestUnit.UpdateOfferSelector();
             //Questionary qu = new Questionary(7, "Универсальная анкета");
             //qu.Show();
 

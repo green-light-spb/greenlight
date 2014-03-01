@@ -4,12 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.IO;
+using System.Reflection;
 using MySql.Data.MySqlClient;
 
 namespace GreenLight
 {
     class TestUnit
     {
+        public static void TestReflection()
+        {
+            Type t = typeof(Auth.Rights);
+            FieldInfo[] fi = t.GetFields();
+
+            Auth.Rights rt = new Auth.Rights();
+            rt.references.read = true;
+
+            string string_rt = rt.Serialize();
+
+            Auth.Rights r2 = new Auth.Rights();
+            r2.Deserialize("1101");
+
+        }
+
         public static void TestEncryption()
         {
             string str = Encryption.Encrypt("root%Ijhrby222","Pr0gress");

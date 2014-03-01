@@ -77,6 +77,16 @@ namespace GreenLight.Auth
                 System.Windows.Forms.MessageBox.Show("Вход прошел удачно, но не удается установить соединение с БД. Обратитесь к администратору", "Ошибка", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);                
                 return;
             }
+
+            try
+            {
+                AuthModule.user_id = (int)DBFunctions.ReadScalarFromDB("SELECT id FROM auth_user WHERE login = @login", parameters);
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show("Передайте администратору следующее:" + Environment.NewLine + ex.Message, "Ошибка", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                return;
+            }
             
             LocalParameters.Login = tbLogin.Text;
             LocalParameters.SaveParameters();
