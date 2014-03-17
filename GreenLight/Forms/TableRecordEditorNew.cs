@@ -103,18 +103,7 @@ namespace GreenLight.Forms
                         if (rf_text != "")
                             rf_text += " OR ";
                         rf_text += clmn.DataPropertyName + " LIKE '%" + tstbSearch.Text + "%'";
-                    }
-                    else
-                    {
-                        try
-                        {
-                            Convert.ToInt32(tstbSearch.Text);
-                            if (rf_text != "")
-                                rf_text += " OR ";
-                            rf_text += clmn.DataPropertyName + " = '" + tstbSearch.Text + "'";
-                        }
-                        catch (Exception) { };
-                    }
+                    }                    
                 }
 
                 dt_data.DefaultView.RowFilter = rf_text;
