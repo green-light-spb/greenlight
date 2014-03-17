@@ -96,11 +96,11 @@ namespace GreenLight.Forms
                 }
                 else
                 {
-                    dgClauses[0, i].Style.ForeColor = Color.Black;
+                    dgClauses[0, i].Style.ForeColor = Color.Green;
                 }
-
-
             }
+
+            dgClauses.ClearSelection();
             
         }
     }
