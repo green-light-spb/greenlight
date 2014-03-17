@@ -14,10 +14,11 @@ namespace GreenLight
         DataTable dt_clients;
         DataTable dt_offers;
         int client_id;
+        TableStruct ts;
 
         private void FillClients()
         {
-            TableStruct ts = new TableStruct();
+            ts = new TableStruct();
             dt_clients = Tables.GetTable("Clients", ref dgClients, ref ts);
         }
 
