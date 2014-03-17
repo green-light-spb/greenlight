@@ -33,9 +33,9 @@ namespace GreenLight
 
         private void TestRights()
         {
-            tsbAdd.Visible = Auth.AuthModule.rights.references.write;
-            tsbDelete.Visible = Auth.AuthModule.rights.references.write;
-            tsbSave.Visible = Auth.AuthModule.rights.references.write;
+            tsbAdd.Visible = Auth.AuthModule.rights.references.write && !select_mode;
+            tsbDelete.Visible = Auth.AuthModule.rights.references.write && !select_mode;
+            tsbSave.Visible = Auth.AuthModule.rights.references.write && !select_mode;
         }
 
         #region Обработчики событий

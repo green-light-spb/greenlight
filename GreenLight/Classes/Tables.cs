@@ -7,6 +7,55 @@ using System.Windows.Forms;
 
 namespace GreenLight
 {
+    class EditingValue: Object
+    {
+        public string FieldName;
+        public string FieldDBName;
+        public bool isReference;
+        public bool isMultiRef;
+        public string RefDBName;
+        public Object Value;
+        public string DisplayName;
+
+        public void SetDisplayName()
+        {
+            if (Value == System.DBNull.Value)
+            {
+                DisplayName = "";
+                return;
+            }
+            if(!isReference)
+            {
+                DisplayName =  Convert.ToString(Value);
+            }
+            else
+            {
+                if (isMultiRef)
+                {
+                    DisplayName = "";
+
+                    
+                    DataTable dt_selected_ids = DBFunctions.ReadFromDB(@"SELECT RefName
+                                                FROM ref_data_" + RefDBName + @" 
+                                                WHERE LOCATE(concat('{',CAST(ID AS CHAR),'}'),'" + (string)Value + "') > 0 ORDER BY RefName");
+                    
+                    foreach (DataRow ref_id_row in dt_selected_ids.Rows)
+                    {
+                        DisplayName += (string)ref_id_row["RefName"] + ", ";
+                    }
+
+                    char[] trimchars = { ',', ' ' };
+                    DisplayName = DisplayName.TrimEnd(trimchars);
+      
+                } 
+                else
+                {
+                    DisplayName = Tables.GetRefName(RefDBName, (int)Value);
+                }
+            }            
+        }
+    }
+
     class Tables
     {
         public static string GetRefName(string ref_db_name,int id)

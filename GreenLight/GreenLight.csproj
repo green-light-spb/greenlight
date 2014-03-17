@@ -58,6 +58,13 @@
     <Compile Include="Classes\LocalParameters.cs" />
     <Compile Include="Classes\MyTools.cs" />
     <Compile Include="Classes\Tables.cs" />
+    <Compile Include="Controls\ColumnAndCell.cs" />
+    <Compile Include="Controls\SelectableTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SelectableTextBox.Designer.cs">
+      <DependentUpon>SelectableTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ActivityMonitor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,11 +176,11 @@
     <Compile Include="Forms\StringReplaseSettings.Designer.cs">
       <DependentUpon>StringReplaseSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TableRecordEditor.cs">
+    <Compile Include="Forms\TableRecordEditorNew.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TableRecordEditor.Designer.cs">
-      <DependentUpon>TableRecordEditor.cs</DependentUpon>
+    <Compile Include="Forms\TableRecordEditorNew.Designer.cs">
+      <DependentUpon>TableRecordEditorNew.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UniversalQuestionaryOfferSelect.cs">
       <SubType>Form</SubType>
@@ -195,7 +202,16 @@
     <Compile Include="Forms\TableStructureEdit.Designer.cs">
       <DependentUpon>TableStructureEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TestUnit.cs" />
+    <EmbeddedResource Include="Controls\SelectableTextBox.resx">
+      <DependentUpon>SelectableTextBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ActivityMonitor.resx">
       <DependentUpon>ActivityMonitor.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,8 +266,8 @@
     <EmbeddedResource Include="Forms\StringReplaseSettings.resx">
       <DependentUpon>StringReplaseSettings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TableRecordEditor.resx">
-      <DependentUpon>TableRecordEditor.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\TableRecordEditorNew.resx">
+      <DependentUpon>TableRecordEditorNew.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UniversalQuestionaryOfferSelect.resx">
       <DependentUpon>UniversalQuestionaryOfferSelect.cs</DependentUpon>
@@ -271,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TableStructureEdit.resx">
       <DependentUpon>TableStructureEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">

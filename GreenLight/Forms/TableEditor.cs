@@ -66,6 +66,7 @@ namespace GreenLight
         {
             Cursor.Current = Cursors.WaitCursor;
             dt_table_data = Tables.GetTable(table_db_names[cbTables.SelectedIndex], ref dgTableData, ref ts);
+            dgTableData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             Cursor.Current = Cursors.Default;   
         }
 
@@ -80,7 +81,7 @@ namespace GreenLight
             DataRow current_row = Samoyloff.Tools.FindCurrentRow(dgTableData);
             if (current_row == null)
                 return;
-            TableRecordEditor tre = new TableRecordEditor(cbTables.Text, current_row, HaveWriteRights());            
+            var tre = new Forms.TableRecordEditorNew(cbTables.Text, current_row, HaveWriteRights());            
             if (tre.ShowDialog() == DialogResult.OK)
             {
                 bool row_added = false;
@@ -93,8 +94,7 @@ namespace GreenLight
                 if (row_added)
                 {
                    current_row["ID"] = Convert.ToInt32(DBFunctions.ReadScalarFromDB("SELECT LAST_INSERT_ID()"));
-                }
-                
+                }                
             }
             else
             {
