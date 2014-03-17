@@ -48,6 +48,7 @@
             this.menuLocalParameters = new System.Windows.Forms.ToolStripMenuItem();
             this.menuUserControl = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRoles = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuClauseTest = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +71,7 @@
             this.menuTableStruct,
             this.menuReferenceStruct,
             this.menuClauseEditor,
+            this.menuClauseTest,
             this.menuQuestionaryEditor,
             this.menuStringReplace});
             this.menuSettings.Name = "menuSettings";
@@ -204,6 +206,13 @@
             this.menuRoles.Text = "Роли";
             this.menuRoles.Click += new System.EventHandler(this.menuRoles_Click);
             // 
+            // menuClauseTest
+            // 
+            this.menuClauseTest.Name = "menuClauseTest";
+            this.menuClauseTest.Size = new System.Drawing.Size(267, 22);
+            this.menuClauseTest.Text = "Проверка условий";
+            this.menuClauseTest.Click += new System.EventHandler(this.menuClauseTest_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,6 +252,7 @@
         private System.Windows.Forms.ToolStripMenuItem menuLocalParameters;
         private System.Windows.Forms.ToolStripMenuItem menuUserControl;
         private System.Windows.Forms.ToolStripMenuItem menuRoles;
+        private System.Windows.Forms.ToolStripMenuItem menuClauseTest;
     }
 }
 

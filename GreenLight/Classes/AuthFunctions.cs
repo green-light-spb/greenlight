@@ -27,6 +27,7 @@ namespace GreenLight.Auth
         public AccessLevel data_copy;
         public AccessLevel references;
         public AccessLevel access_control;
+        public AccessLevel clause_test;
 
         public Rights()
         {

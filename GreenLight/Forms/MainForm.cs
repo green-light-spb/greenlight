@@ -80,6 +80,7 @@ namespace GreenLight
             menuActiveSessions.Visible = Auth.AuthModule.rights.active_session.read;
             menuUserControl.Visible = Auth.AuthModule.rights.access_control.write;//Только чтение и запись в паре
             menuRoles.Visible = Auth.AuthModule.rights.access_control.write;//Только чтение и запись в паре
+            menuClauseTest.Visible = Auth.AuthModule.rights.clause_test.read;
 
         }
 
@@ -269,6 +270,12 @@ namespace GreenLight
         {
             Auth.AuthRoles ar = new Auth.AuthRoles();
             ar.Show();
+        }
+
+        private void menuClauseTest_Click(object sender, EventArgs e)
+        {
+            Forms.ClauseTest ct = new Forms.ClauseTest();
+            ct.Show();
         }      
         
     }
