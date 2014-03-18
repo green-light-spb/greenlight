@@ -193,6 +193,8 @@ namespace GreenLight.Controls
         {
             if (ev.isReference)
                 return;
+            if (ev.Value == tbText.Text || (ev.Value == System.DBNull.Value && tbText.Text == ""))
+                return;
             ev.DisplayName = tbText.Text;
             ev.Value = tbText.Text;
             valueChanged = true;
