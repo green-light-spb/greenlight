@@ -72,7 +72,7 @@
             this.tsbSave.Image = ((System.Drawing.Image)(resources.GetObject("tsbSave.Image")));
             this.tsbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSave.Name = "tsbSave";
-            this.tsbSave.Size = new System.Drawing.Size(66, 22);
+            this.tsbSave.Size = new System.Drawing.Size(69, 22);
             this.tsbSave.Text = "Сохранить";
             this.tsbSave.Click += new System.EventHandler(this.tsbSave_Click);
             // 
@@ -82,7 +82,7 @@
             this.tsbAdd.Image = ((System.Drawing.Image)(resources.GetObject("tsbAdd.Image")));
             this.tsbAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbAdd.Name = "tsbAdd";
-            this.tsbAdd.Size = new System.Drawing.Size(61, 22);
+            this.tsbAdd.Size = new System.Drawing.Size(63, 22);
             this.tsbAdd.Text = "Добавить";
             this.tsbAdd.Click += new System.EventHandler(this.tsbAdd_Click);
             // 
@@ -102,7 +102,7 @@
             this.tsbSelect.Image = ((System.Drawing.Image)(resources.GetObject("tsbSelect.Image")));
             this.tsbSelect.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSelect.Name = "tsbSelect";
-            this.tsbSelect.Size = new System.Drawing.Size(55, 22);
+            this.tsbSelect.Size = new System.Drawing.Size(58, 22);
             this.tsbSelect.Text = "Выбрать";
             this.tsbSelect.Click += new System.EventHandler(this.tsbSelect_Click);
             // 
@@ -152,6 +152,7 @@
             this.ClientSize = new System.Drawing.Size(562, 430);
             this.Controls.Add(this.splitContainer);
             this.Controls.Add(this.toolStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HierarchicalRefEdit";
             this.Text = "Справочник";
             this.Load += new System.EventHandler(this.HierarchicalRefEdit_Load);

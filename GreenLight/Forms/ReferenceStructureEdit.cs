@@ -17,6 +17,13 @@ namespace GreenLight
             InitializeComponent();
         }
 
+        private void TestRights()
+        {
+            tbAddReference.Visible = Auth.AuthModule.rights.reference_struct.write;
+            tbDeleteReference.Visible = Auth.AuthModule.rights.reference_struct.write;
+            dgRefConfig.ReadOnly = !Auth.AuthModule.rights.reference_struct.write;
+        }
+
         private void FillDataGrid()
         {
             dt_ref_config = DBFunctions.ReadFromDB("SELECT * FROM ReferencesConfig WHERE ReferenceDBName = '" + reference_list.Rows[cbCurrentReference.SelectedIndex]["ReferenceDBName"] + "'");
@@ -59,6 +66,8 @@ namespace GreenLight
                 cbCurrentReference.Items.Add((string)row["ReferenceName"]);
             }
             cbCurrentReference.SelectedIndex = 0;
+
+            TestRights();
         }
 
         private void cbCurrentReference_SelectedIndexChanged(object sender, EventArgs e)
@@ -82,6 +91,8 @@ namespace GreenLight
 
         private void SaveData()
         {
+            if (!Auth.AuthModule.rights.reference_struct.write)
+                return;
             TableStruct ts = new TableStruct();
             ts.TableName = "ReferencesConfig";
             string[] p_keys = { "ReferenceConfigID" };
@@ -104,7 +115,6 @@ namespace GreenLight
         private void ReferenceStructureEdit_FormClosing(object sender, FormClosingEventArgs e)
         {
             SaveData();
-            DBStructure.UpdateDBStructure();
         }
 
         private void tbAddReference_Click(object sender, EventArgs e)

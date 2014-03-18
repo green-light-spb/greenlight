@@ -94,7 +94,7 @@
             this.tsbClear.Image = ((System.Drawing.Image)(resources.GetObject("tsbClear.Image")));
             this.tsbClear.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbClear.Name = "tsbClear";
-            this.tsbClear.Size = new System.Drawing.Size(95, 22);
+            this.tsbClear.Size = new System.Drawing.Size(102, 22);
             this.tsbClear.Text = "Очистить выбор";
             this.tsbClear.Click += new System.EventHandler(this.tsbClear_Click);
             // 
@@ -106,7 +106,7 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(56, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(60, 22);
             this.toolStripLabel1.Text = "Диапазон";
             // 
             // tbFrom
@@ -117,7 +117,7 @@
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(25, 22);
             this.toolStripLabel2.Text = "-->";
             // 
             // tbTo
@@ -131,7 +131,7 @@
             this.tsbFillRange.Image = ((System.Drawing.Image)(resources.GetObject("tsbFillRange.Image")));
             this.tsbFillRange.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbFillRange.Name = "tsbFillRange";
-            this.tsbFillRange.Size = new System.Drawing.Size(116, 22);
+            this.tsbFillRange.Size = new System.Drawing.Size(124, 22);
             this.tsbFillRange.Text = "Заполнить диапазон";
             this.tsbFillRange.Click += new System.EventHandler(this.tsbFillRange_Click);
             // 
@@ -197,6 +197,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.toolStrip1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DataCopy";
             this.Text = "Копирование данных";
             this.Load += new System.EventHandler(this.DataCopy_Load);

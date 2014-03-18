@@ -64,7 +64,7 @@
             this.tsbCancel.Image = ((System.Drawing.Image)(resources.GetObject("tsbCancel.Image")));
             this.tsbCancel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbCancel.Name = "tsbCancel";
-            this.tsbCancel.Size = new System.Drawing.Size(49, 22);
+            this.tsbCancel.Size = new System.Drawing.Size(53, 22);
             this.tsbCancel.Text = "Отмена";
             this.tsbCancel.Click += new System.EventHandler(this.tsbCancel_Click);
             // 
@@ -130,6 +130,7 @@
             this.ClientSize = new System.Drawing.Size(798, 428);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.toolStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ClauseEditor";
             this.Text = "Редактор условий";
             this.Load += new System.EventHandler(this.ClauseEditor_Load);

@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>gl.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data">
@@ -50,13 +53,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\AuthFunctions.cs" />
+    <Compile Include="Classes\Encryption.cs" />
+    <Compile Include="Classes\LocalParameters.cs" />
     <Compile Include="Classes\MyTools.cs" />
     <Compile Include="Classes\Tables.cs" />
+    <Compile Include="Controls\ColumnAndCell.cs" />
+    <Compile Include="Controls\SelectableTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SelectableTextBox.Designer.cs">
+      <DependentUpon>SelectableTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ActivityMonitor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\ActivityMonitor.Designer.cs">
       <DependentUpon>ActivityMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Auth\AuthRoleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Auth\AuthRoleEdit.Designer.cs">
+      <DependentUpon>AuthRoleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Auth\AuthRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Auth\AuthRoles.Designer.cs">
+      <DependentUpon>AuthRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Auth\AuthUserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Auth\AuthUserEdit.Designer.cs">
+      <DependentUpon>AuthUserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Auth\AuthUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Auth\AuthUsers.Designer.cs">
+      <DependentUpon>AuthUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ClauseEditor.cs">
       <SubType>Form</SubType>
@@ -66,11 +103,29 @@
     </Compile>
     <Compile Include="Classes\DBFunctions.cs" />
     <Compile Include="Classes\DBStructure.cs" />
+    <Compile Include="Forms\ClauseTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClauseTest.Designer.cs">
+      <DependentUpon>ClauseTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DataCopy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\DataCopy.Designer.cs">
       <DependentUpon>DataCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Auth\AuthForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Auth\AuthForm.Designer.cs">
+      <DependentUpon>AuthForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MiniForms\FieldsEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MiniForms\FieldsEditForm.designer.cs">
+      <DependentUpon>FieldsEditForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\HierarchicalRefEdit.cs">
       <SubType>Form</SubType>
@@ -85,6 +140,12 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\OfferSelector.cs" />
+    <Compile Include="Forms\MiniForms\DBConnectionErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MiniForms\DBConnectionErrorForm.Designer.cs">
+      <DependentUpon>DBConnectionErrorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\OfferSelectorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,11 +182,11 @@
     <Compile Include="Forms\StringReplaseSettings.Designer.cs">
       <DependentUpon>StringReplaseSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TableRecordEditor.cs">
+    <Compile Include="Forms\TableRecordEditorNew.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TableRecordEditor.Designer.cs">
-      <DependentUpon>TableRecordEditor.cs</DependentUpon>
+    <Compile Include="Forms\TableRecordEditorNew.Designer.cs">
+      <DependentUpon>TableRecordEditorNew.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UniversalQuestionaryOfferSelect.cs">
       <SubType>Form</SubType>
@@ -148,20 +209,47 @@
       <DependentUpon>TableStructureEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="TestUnit.cs" />
+    <EmbeddedResource Include="Controls\SelectableTextBox.resx">
+      <DependentUpon>SelectableTextBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ActivityMonitor.resx">
       <DependentUpon>ActivityMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Auth\AuthRoleEdit.resx">
+      <DependentUpon>AuthRoleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Auth\AuthRoles.resx">
+      <DependentUpon>AuthRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Auth\AuthUserEdit.resx">
+      <DependentUpon>AuthUserEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Auth\AuthUsers.resx">
+      <DependentUpon>AuthUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ClauseEditor.resx">
       <DependentUpon>ClauseEditor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClauseTest.resx">
+      <DependentUpon>ClauseTest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DataCopy.resx">
       <DependentUpon>DataCopy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Auth\AuthForm.resx">
+      <DependentUpon>AuthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MiniForms\FieldsEditForm.resx">
+      <DependentUpon>FieldsEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\HierarchicalRefEdit.resx">
       <DependentUpon>HierarchicalRefEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MiniForms\DBConnectionErrorForm.resx">
+      <DependentUpon>DBConnectionErrorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OfferSelectorForm.resx">
       <DependentUpon>OfferSelectorForm.cs</DependentUpon>
@@ -181,8 +269,8 @@
     <EmbeddedResource Include="Forms\StringReplaseSettings.resx">
       <DependentUpon>StringReplaseSettings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TableRecordEditor.resx">
-      <DependentUpon>TableRecordEditor.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\TableRecordEditorNew.resx">
+      <DependentUpon>TableRecordEditorNew.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UniversalQuestionaryOfferSelect.resx">
       <DependentUpon>UniversalQuestionaryOfferSelect.cs</DependentUpon>
@@ -213,6 +301,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gl.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -20,36 +20,68 @@ namespace GreenLight
             InitializeComponent();
         }
 
+        private void TestReadRights()
+        {
+            if (Auth.AuthModule.rights.table_clients.read && Auth.AuthModule.rights.table_credprogr.read)
+            {
+                cbTables.SelectedIndex = 0;
+            } else if (Auth.AuthModule.rights.table_clients.read)
+            {
+                cbTables.Enabled = false;
+                cbTables.SelectedIndex = 0;
+            }
+            else if (Auth.AuthModule.rights.table_credprogr.read)
+            {
+                cbTables.Enabled = false;
+                cbTables.SelectedIndex = 1;
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("Нет доступа к таблицам.", "Ошибка", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                Close();
+            }
+        }
+
+        private bool HaveWriteRights()
+        {
+            if (cbTables.SelectedIndex == 0)//Клиенты
+            {
+                return Auth.AuthModule.rights.table_clients.write;
+            }
+            else //Кредитные программы
+            {
+                return Auth.AuthModule.rights.table_credprogr.write;
+            }
+        }
+
+        private void TestWriteRights()
+        {
+            dgTableData.ReadOnly = !HaveWriteRights();
+            tsbAdd.Visible = HaveWriteRights();
+            tsbCopy.Visible = HaveWriteRights();
+            tsbDelete.Visible = HaveWriteRights();
+        }
+        
         private void FillDataGrid()
         {
             Cursor.Current = Cursors.WaitCursor;
             dt_table_data = Tables.GetTable(table_db_names[cbTables.SelectedIndex], ref dgTableData, ref ts);
+            dgTableData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             Cursor.Current = Cursors.Default;   
         }
 
         private void TableEditor_Load(object sender, EventArgs e)
         {
-            cbTables.SelectedIndex = 0;            
+            //cbTables.SelectedIndex = 0;            
+            TestReadRights();
         }
         
-        private DataRow FindCurrentRow(DataGridView dgv)
-        {
-            CurrencyManager cManager =
-                dgv.BindingContext[dgv.DataSource, dgv.DataMember]
-                     as CurrencyManager;
-            if (cManager == null || cManager.Count == 0)
-                return null;
-
-            DataRowView drv = cManager.Current as DataRowView;
-            return drv.Row;
-        }  
-
         private void tsbEdit_Click(object sender, EventArgs e)
         {
-            DataRow current_row = FindCurrentRow(dgTableData);
+            DataRow current_row = Samoyloff.Tools.FindCurrentRow(dgTableData);
             if (current_row == null)
                 return;
-            TableRecordEditor tre = new TableRecordEditor(cbTables.Text, current_row);
+            var tre = new Forms.TableRecordEditorNew(cbTables.Text, current_row, HaveWriteRights());            
             if (tre.ShowDialog() == DialogResult.OK)
             {
                 bool row_added = false;
@@ -62,8 +94,7 @@ namespace GreenLight
                 if (row_added)
                 {
                    current_row["ID"] = Convert.ToInt32(DBFunctions.ReadScalarFromDB("SELECT LAST_INSERT_ID()"));
-                }
-                
+                }                
             }
             else
             {
@@ -79,6 +110,7 @@ namespace GreenLight
 
         private void cbTables_SelectedIndexChanged(object sender, EventArgs e)
         {
+            TestWriteRights();
             this.Text = "Таблица: " + cbTables.SelectedItem;
             FillDataGrid();
         }
@@ -100,7 +132,7 @@ namespace GreenLight
             {
                 return;
             }
-            DataRow current_row = FindCurrentRow(dgTableData);
+            DataRow current_row = Samoyloff.Tools.FindCurrentRow(dgTableData);
             current_row.Delete();
             DBFunctions.WriteToDB(dt_table_data, ts);
         }
@@ -108,7 +140,7 @@ namespace GreenLight
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
 
-            DataRow curr_row = FindCurrentRow(dgTableData);
+            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgTableData);
             int curr_id = (int)curr_row["ID"];
 
             DataTable dt_columns = DBFunctions.ReadFromDB("SELECT ColumnDBName FROM tableConfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex] + "'");

@@ -148,6 +148,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.dgTableConfig);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TableStructureEdit";
             this.Text = "Структура таблиц";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TableStructureEdit_FormClosing);

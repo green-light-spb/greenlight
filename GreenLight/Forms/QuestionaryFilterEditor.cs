@@ -25,6 +25,14 @@ namespace GreenLight
             FillDataGrid();
         }
 
+        private void TestRights()
+        {
+            tsbSave.Visible = Auth.AuthModule.rights.questionary_editor.write;
+            tsbDiscard.Visible = Auth.AuthModule.rights.questionary_editor.write;
+            tsbDuplicate.Visible = Auth.AuthModule.rights.questionary_editor.write;
+            dgFilter.ReadOnly = !Auth.AuthModule.rights.questionary_editor.write;            
+        }
+
         private void LoadOtborFields()
         {
             DataTable dt_otbor = DBFunctions.ReadFromDB("SELECT ColumnName FROM tableconfig WHERE tabledbname = 'credprogr' ORDER BY ColumnName");
@@ -116,6 +124,8 @@ namespace GreenLight
 
         private void SaveData()
         {
+            if (!Auth.AuthModule.rights.questionary_editor.write)
+                return;
             foreach (DataRow filter_row in dt_filter.Rows)
             {
                 for (int col_num = 2; col_num < dt_filter.Columns.Count; col_num++)
@@ -157,6 +167,8 @@ namespace GreenLight
 
         private bool proceedWithChanges()
         {
+            if (!Auth.AuthModule.rights.questionary_editor.write)
+                return true;
             if (dt_filter.GetChanges() != null)
             {
                 DialogResult res = System.Windows.Forms.MessageBox.Show("Таблице есть изменения. Сохранить?", "Вопрос", System.Windows.Forms.MessageBoxButtons.YesNoCancel, System.Windows.Forms.MessageBoxIcon.Question);
@@ -210,6 +222,11 @@ namespace GreenLight
         private void tsbDiscard_Click(object sender, EventArgs e)
         {
             dt_filter.RejectChanges();
+        }
+
+        private void QuestionaryFilterEditor_Load(object sender, EventArgs e)
+        {
+            TestRights();
         }
 
     }

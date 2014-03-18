@@ -1,6 +1,6 @@
-﻿namespace GreenLight
+﻿namespace GreenLight.Auth
 {
-    partial class TableRecordEditor
+    partial class AuthRoleEdit
     {
         /// <summary>
         /// Требуется переменная конструктора.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AuthRoleEdit));
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -36,38 +37,40 @@
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(666, 236);
+            this.btnCancel.Location = new System.Drawing.Point(248, 377);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 0;
-            this.btnCancel.Text = "Отмена";
+            this.btnCancel.TabIndex = 11;
+            this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOk
             // 
             this.btnOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOk.Location = new System.Drawing.Point(588, 236);
+            this.btnOk.Location = new System.Drawing.Point(167, 377);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
-            this.btnOk.TabIndex = 1;
-            this.btnOk.Text = "Ok";
+            this.btnOk.TabIndex = 10;
+            this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = true;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
-            // TableRecordEditor
+            // AuthRoleEdit
             // 
             this.AcceptButton = this.btnOk;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(744, 262);
-            this.Controls.Add(this.btnOk);
+            this.ClientSize = new System.Drawing.Size(335, 412);
+            this.ControlBox = false;
             this.Controls.Add(this.btnCancel);
-            this.Name = "TableRecordEditor";
-            this.Text = "TableRecordEditor";
-            this.Resize += new System.EventHandler(this.TableRecordEditor_Resize);
+            this.Controls.Add(this.btnOk);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "AuthRoleEdit";
+            this.Text = "Роль";
+            this.Load += new System.EventHandler(this.AuthRoleEdit_Load);
             this.ResumeLayout(false);
 
         }

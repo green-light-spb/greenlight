@@ -18,6 +18,11 @@ namespace GreenLight
         {
             InitializeComponent();
         }
+
+        private void TestRights()
+        {
+            tsbOk.Enabled = Auth.AuthModule.rights.clause_editor.write;
+        }
                 
         private void tsbCancel_Click(object sender, EventArgs e)
         {
@@ -44,6 +49,16 @@ namespace GreenLight
 
             DBFunctions.WriteToDB(dt, ts);
 
+            try
+            {
+                DBStructure.UpdateSelectorScript();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
             Close();
 
         }
@@ -60,6 +75,8 @@ namespace GreenLight
             dt_column_names = DBFunctions.ReadFromDB("SELECT TableName AS 'Имя таблицы', ColumnName AS 'Имя колонки', ColumnDBName AS 'Наименование колонки в БД', ColumnType AS 'Тип' FROM tableconfig ORDER BY TableName");
 
             dgColumnNames.DataSource = dt_column_names;
+
+            TestRights();
 
         }
 

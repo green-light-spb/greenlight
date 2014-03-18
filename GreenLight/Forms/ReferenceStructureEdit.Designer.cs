@@ -66,7 +66,7 @@
             this.tbAddReference.Image = ((System.Drawing.Image)(resources.GetObject("tbAddReference.Image")));
             this.tbAddReference.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tbAddReference.Name = "tbAddReference";
-            this.tbAddReference.Size = new System.Drawing.Size(123, 22);
+            this.tbAddReference.Size = new System.Drawing.Size(132, 22);
             this.tbAddReference.Text = "Добавить справочник";
             this.tbAddReference.Click += new System.EventHandler(this.tbAddReference_Click);
             // 
@@ -76,7 +76,7 @@
             this.tbDeleteReference.Image = ((System.Drawing.Image)(resources.GetObject("tbDeleteReference.Image")));
             this.tbDeleteReference.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tbDeleteReference.Name = "tbDeleteReference";
-            this.tbDeleteReference.Size = new System.Drawing.Size(117, 22);
+            this.tbDeleteReference.Size = new System.Drawing.Size(124, 22);
             this.tbDeleteReference.Text = "Удалить справочник";
             this.tbDeleteReference.Click += new System.EventHandler(this.tbDeleteReference_Click);
             // 
@@ -125,6 +125,7 @@
             this.ClientSize = new System.Drawing.Size(794, 329);
             this.Controls.Add(this.dgRefConfig);
             this.Controls.Add(this.toolStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ReferenceStructureEdit";
             this.Text = "Структура справочников";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ReferenceStructureEdit_FormClosing);
