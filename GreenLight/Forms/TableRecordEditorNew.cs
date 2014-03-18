@@ -115,8 +115,11 @@ namespace GreenLight.Forms
             foreach (DataRow row in dt_data.Rows)
             {
                 EditingValue ev = (EditingValue)row["Data"];
+
                 try
                 {
+                    if (ev.Value is String && (string)ev.Value == "" && current_row[ev.FieldDBName] == System.DBNull.Value)
+                        continue;
                     current_row[ev.FieldDBName] = ev.Value;
                 }
                 catch (Exception)
