@@ -26,9 +26,16 @@ namespace GreenLight
         {
             string ref_name = in_str.Substring(in_str.IndexOf('[') + 1, in_str.IndexOf(']') - in_str.IndexOf('[') - 1);
 
-            return (string)DBFunctions.ReadScalarFromDB(@"SELECT GROUP_CONCAT(RefName SEPARATOR '" + Environment.NewLine + @"')
+            try
+            {
+                return (string)DBFunctions.ReadScalarFromDB(@"SELECT GROUP_CONCAT(RefName SEPARATOR '" + Environment.NewLine + @"')
                                             FROM ref_data_" + ref_name + @" 
-                                            WHERE LOCATE(concat('{',CAST(ID AS CHAR),'}'),'" + in_str + "') > 0");          
+                                            WHERE LOCATE(concat('{',CAST(ID AS CHAR),'}'),'" + in_str + "') > 0");
+            }
+            catch (Exception)
+            {
+                return "";
+            }
         }
 
         private DataTable SelectOffers(int ClientID)
