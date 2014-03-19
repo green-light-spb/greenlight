@@ -36,6 +36,8 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tbWhereClause = new System.Windows.Forms.TextBox();
             this.dgColumnNames = new System.Windows.Forms.DataGridView();
+            this.tsbInvertUseInWhereClause = new System.Windows.Forms.ToolStripButton();
+            this.tsbSave = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -49,8 +51,10 @@
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbCancel,
+            this.tsbSave,
             this.tsbOk,
-            this.tstbSearch});
+            this.tstbSearch,
+            this.tsbInvertUseInWhereClause});
             this.toolStrip1.Location = new System.Drawing.Point(0, 403);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(798, 25);
@@ -108,6 +112,7 @@
             // tbWhereClause
             // 
             this.tbWhereClause.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbWhereClause.HideSelection = false;
             this.tbWhereClause.Location = new System.Drawing.Point(0, 0);
             this.tbWhereClause.Multiline = true;
             this.tbWhereClause.Name = "tbWhereClause";
@@ -120,8 +125,33 @@
             this.dgColumnNames.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgColumnNames.Location = new System.Drawing.Point(0, 0);
             this.dgColumnNames.Name = "dgColumnNames";
+            this.dgColumnNames.ReadOnly = true;
+            this.dgColumnNames.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgColumnNames.Size = new System.Drawing.Size(798, 133);
             this.dgColumnNames.TabIndex = 0;
+            this.dgColumnNames.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgColumnNames_CellDoubleClick);
+            // 
+            // tsbInvertUseInWhereClause
+            // 
+            this.tsbInvertUseInWhereClause.AutoToolTip = false;
+            this.tsbInvertUseInWhereClause.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsbInvertUseInWhereClause.Image = ((System.Drawing.Image)(resources.GetObject("tsbInvertUseInWhereClause.Image")));
+            this.tsbInvertUseInWhereClause.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbInvertUseInWhereClause.Name = "tsbInvertUseInWhereClause";
+            this.tsbInvertUseInWhereClause.Size = new System.Drawing.Size(155, 22);
+            this.tsbInvertUseInWhereClause.Text = "Использование в условии";
+            this.tsbInvertUseInWhereClause.Click += new System.EventHandler(this.tsbInvertUseInWhereClause_Click);
+            // 
+            // tsbSave
+            // 
+            this.tsbSave.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.tsbSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsbSave.Image = ((System.Drawing.Image)(resources.GetObject("tsbSave.Image")));
+            this.tsbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbSave.Name = "tsbSave";
+            this.tsbSave.Size = new System.Drawing.Size(69, 22);
+            this.tsbSave.Text = "Сохранить";
+            this.tsbSave.Click += new System.EventHandler(this.tsbSave_Click);
             // 
             // ClauseEditor
             // 
@@ -156,5 +186,7 @@
         private System.Windows.Forms.TextBox tbWhereClause;
         private System.Windows.Forms.DataGridView dgColumnNames;
         private System.Windows.Forms.ToolStripTextBox tstbSearch;
+        private System.Windows.Forms.ToolStripButton tsbInvertUseInWhereClause;
+        private System.Windows.Forms.ToolStripButton tsbSave;
     }
 }
