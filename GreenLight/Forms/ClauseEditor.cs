@@ -22,6 +22,8 @@ namespace GreenLight
         private void TestRights()
         {
             tsbOk.Enabled = Auth.AuthModule.rights.clause_editor.write;
+            tsbSave.Enabled = Auth.AuthModule.rights.clause_editor.write;
+            tsbInvertUseInWhereClause.Enabled = Auth.AuthModule.rights.clause_editor.write;
         }
                 
         private void tsbCancel_Click(object sender, EventArgs e)
