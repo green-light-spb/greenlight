@@ -38,9 +38,8 @@
     <ApplicationIcon>gl.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FastColoredTextBox, Version=2.13.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\FastColoredTextBox-master\FastColoredTextBox\bin\Release\FastColoredTextBox.dll</HintPath>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\Прочее\FastColoredTextBox.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data">
