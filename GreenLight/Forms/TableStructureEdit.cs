@@ -26,7 +26,7 @@ namespace GreenLight
             tsbSave.Visible = Auth.AuthModule.rights.table_struct.write;
             tsbUp.Visible = Auth.AuthModule.rights.table_struct.write;
             tsbDown.Visible = Auth.AuthModule.rights.table_struct.write;
-            dgTableConfig.ReadOnly = !Auth.AuthModule.rights.string_replace.write;
+            dgTableConfig.ReadOnly = !Auth.AuthModule.rights.table_struct.write;
         }
         
         private void FillDataGrid()
