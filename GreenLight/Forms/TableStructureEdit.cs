@@ -182,6 +182,11 @@ namespace GreenLight
             e.Row["TableDBName"] = table_db_names[cbTables.SelectedIndex].ToString();
             e.Row["ReferenceMultiSelect"] = false;
             e.Row["ShowInOffer"] = false;
+            e.Row["ShowInOfferShort"] = false;
+            e.Row["ShowInEditor"] = false;
+            e.Row["UseInWhereClause"] = false;
+            e.Row["WebOrder"] = 0;
+
         }
 
         private void tsbUp_Click(object sender, EventArgs e)
@@ -304,5 +309,6 @@ namespace GreenLight
                 dt_tableconfig.DefaultView.RowFilter = rf_text;
             }
         }
+
      }
 }
