@@ -122,7 +122,7 @@ namespace GreenLight
 
         private void tsbInvertUseInWhereClause_Click(object sender, EventArgs e)
         {
-            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgColumnNames);
+            DataRow curr_row = GreenLight.Tools.FindCurrentRow(dgColumnNames);
 
             if (curr_row != null)
             {
@@ -138,7 +138,7 @@ namespace GreenLight
               
         private void dgColumnNames_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgColumnNames);
+            DataRow curr_row = GreenLight.Tools.FindCurrentRow(dgColumnNames);
 
             if (curr_row != null)
             {

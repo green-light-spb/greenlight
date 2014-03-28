@@ -203,7 +203,7 @@ namespace GreenLight
 
         private void dgReplaceStrings_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgReplaceStrings);
+            DataRow curr_row = GreenLight.Tools.FindCurrentRow(dgReplaceStrings);
 
             DataGridViewComboBoxColumn ref_name_column = (DataGridViewComboBoxColumn)dgReplaceStrings.Columns["ref_name"];
 
@@ -227,7 +227,7 @@ namespace GreenLight
             if(e.ColumnIndex == 1)
             {
                 int l = dt_replaces.Select("table_reference_value = '" + e.FormattedValue + "'").Length;
-                if (Samoyloff.Tools.FindCurrentRow(dgReplaceStrings)[1].Equals(e.FormattedValue))
+                if (GreenLight.Tools.FindCurrentRow(dgReplaceStrings)[1].Equals(e.FormattedValue))
                 {
                     l--;
                 }

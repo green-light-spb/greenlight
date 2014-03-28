@@ -132,6 +132,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OfferSelectorForm";
             this.Text = "Подбор предложений";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OfferSelectorForm_FormClosing);
             this.Load += new System.EventHandler(this.OfferSelectorForm_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

@@ -71,14 +71,14 @@ namespace GreenLight.Forms
 
         private void dgClients_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgClients);
+            DataRow curr_row = GreenLight.Tools.FindCurrentRow(dgClients);
             parameters["client_id"] = curr_row["ID"];
             DoClauseTest();
         }
 
         private void dgCredProgr_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgCredProgr);
+            DataRow curr_row = GreenLight.Tools.FindCurrentRow(dgCredProgr);
             parameters["credprogr_id"] = curr_row["ID"];
             DoClauseTest();
         }

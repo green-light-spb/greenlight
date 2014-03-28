@@ -71,12 +71,15 @@ namespace GreenLight
         private void OfferSelectorForm_Load(object sender, EventArgs e)
         {
             dgOffers.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-            dgOffers.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dgOffers.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
             FillClients();
         }
 
         private void dgClients_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
+            if (dt_offers != null)
+                GreenLight.Tools.SaveColumnOrder(dgOffers);
+
             client_id = Convert.ToInt32(dgClients[0, e.RowIndex].Value);
             dt_offers = SelectOffers(client_id);
 
@@ -87,6 +90,13 @@ namespace GreenLight
             }
 
             dgOffers.DataSource = dt_offers;
+
+            GreenLight.Tools.SetColumnOrder(dgOffers);
+
+            foreach (DataGridViewRow dg_row in dgOffers.Rows)
+            {
+                dg_row.Height = 60;
+            }
         }
 
         private void tstbSearch_TextChanged(object sender, EventArgs e)
@@ -135,6 +145,12 @@ namespace GreenLight
         {
             UniversalQuestionaryOfferSelect uqos = new UniversalQuestionaryOfferSelect(client_id, dt_offers);
             uqos.ShowDialog();
+        }
+
+        private void OfferSelectorForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (dt_offers != null)
+                GreenLight.Tools.SaveColumnOrder(dgOffers);
         }
 
 

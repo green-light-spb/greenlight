@@ -78,7 +78,7 @@ namespace GreenLight.Auth
 
         private void tsbEdit_Click(object sender, EventArgs e)
         {
-            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgRoles);
+            DataRow curr_row = GreenLight.Tools.FindCurrentRow(dgRoles);
 
             if (curr_row == null)
                 return;

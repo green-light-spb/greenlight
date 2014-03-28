@@ -131,7 +131,7 @@ namespace GreenLight
 
         private void dt_TableAnswersNewRow(object sender, DataTableNewRowEventArgs e)
         {
-            DataRow row = Samoyloff.Tools.FindCurrentRow(dgQuestions);
+            DataRow row = GreenLight.Tools.FindCurrentRow(dgQuestions);
 
             e.Row["question_id"] = (int)row["question_id"];            
         }
@@ -149,7 +149,7 @@ namespace GreenLight
 
         private void dgQuestions_CurrentCellChanged(object sender, EventArgs e)
         {
-            DataRow row = Samoyloff.Tools.FindCurrentRow(dgQuestions);
+            DataRow row = GreenLight.Tools.FindCurrentRow(dgQuestions);
 
             if (splitContainer.Panel2Collapsed == false)
             {
