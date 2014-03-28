@@ -78,7 +78,7 @@ namespace GreenLight
         
         private void tsbEdit_Click(object sender, EventArgs e)
         {
-            DataRow current_row = Samoyloff.Tools.FindCurrentRow(dgTableData);
+            DataRow current_row = GreenLight.Tools.FindCurrentRow(dgTableData);
             if (current_row == null)
                 return;
             var tre = new Forms.TableRecordEditorNew(cbTables.Text, current_row, HaveWriteRights());            
@@ -132,7 +132,7 @@ namespace GreenLight
             {
                 return;
             }
-            DataRow current_row = Samoyloff.Tools.FindCurrentRow(dgTableData);
+            DataRow current_row = GreenLight.Tools.FindCurrentRow(dgTableData);
             current_row.Delete();
             DBFunctions.WriteToDB(dt_table_data, ts);
         }
@@ -140,7 +140,7 @@ namespace GreenLight
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
 
-            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgTableData);
+            DataRow curr_row = GreenLight.Tools.FindCurrentRow(dgTableData);
             int curr_id = (int)curr_row["ID"];
 
             DataTable dt_columns = DBFunctions.ReadFromDB("SELECT ColumnDBName FROM tableConfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex] + "'");

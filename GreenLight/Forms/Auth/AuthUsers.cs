@@ -40,7 +40,7 @@ namespace GreenLight.Auth
 
         private void tsbEdit_Click(object sender, EventArgs e)
         {
-            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgUsers);
+            DataRow curr_row = GreenLight.Tools.FindCurrentRow(dgUsers);
 
             if (curr_row == null)
                 return;
@@ -76,7 +76,7 @@ namespace GreenLight.Auth
 
         private void tsbDelete_Click(object sender, EventArgs e)
         {
-            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgUsers);
+            DataRow curr_row = GreenLight.Tools.FindCurrentRow(dgUsers);
 
             if (curr_row == null)
                 return;

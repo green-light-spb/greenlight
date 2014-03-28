@@ -105,8 +105,7 @@ namespace GreenLight
                 }*/
                 //if ((bool)dt_table_structure.Rows[i]["ReferenceMultiSelect"] == false)
                 ts.columns[curr_ts_row++] = (string)dt_table_structure.Rows[i]["ColumnDBName"];
-            }
-            
+            }            
 
             return dt_table_data;
         }

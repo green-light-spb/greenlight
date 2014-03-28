@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Samoyloff;
+using GreenLight;
 
 namespace GreenLight
 {
@@ -26,11 +26,14 @@ namespace GreenLight
             tsbSave.Visible = Auth.AuthModule.rights.table_struct.write;
             tsbUp.Visible = Auth.AuthModule.rights.table_struct.write;
             tsbDown.Visible = Auth.AuthModule.rights.table_struct.write;
-            dgTableConfig.ReadOnly = !Auth.AuthModule.rights.string_replace.write;
+            dgTableConfig.ReadOnly = !Auth.AuthModule.rights.table_struct.write;
         }
         
         private void FillDataGrid()
         {
+            if(dt_tableconfig != null)
+                Tools.SaveColumnOrder(dgTableConfig);
+
             dt_tableconfig = DBFunctions.ReadFromDB("SELECT * FROM TableConfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex] + "'");
 
             dt_tableconfig.TableNewRow += new DataTableNewRowEventHandler(dt_TableNewRow); 
@@ -109,6 +112,8 @@ namespace GreenLight
             dgTableConfig.Columns.Remove("UseInWhereClause");
             dgTableConfig.Columns.Add(column_useInWhereClause);
 
+            Tools.SetColumnOrder(dgTableConfig);
+
         }
 
         private void SaveData()
@@ -130,12 +135,12 @@ namespace GreenLight
 
             TestRights();
             cbTables.SelectedIndex = 0;
-            FillDataGrid();
-            
+            FillDataGrid();            
         }
 
         private void TableStructureEdit_FormClosing(object sender, FormClosingEventArgs e)
         {
+            Tools.SaveColumnOrder(dgTableConfig);
             if (!Auth.AuthModule.rights.table_struct.write)
                 return;
             switch (Tools.ProceedWithChanges(dt_tableconfig))
@@ -144,8 +149,9 @@ namespace GreenLight
                     SaveData();
                     break;
                 case Tools.ProceedWithChangesAnswers.Cancel:
+                    e.Cancel = true;
                     return;
-            }
+            }                        
         }
   
         private void cbTables_SelectedIndexChanged(object sender, EventArgs e)
@@ -180,7 +186,7 @@ namespace GreenLight
 
         private void tsbUp_Click(object sender, EventArgs e)
         {
-            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgTableConfig);
+            DataRow curr_row = GreenLight.Tools.FindCurrentRow(dgTableConfig);
             int curr_id = (int)curr_row["TableConfigID"];
             
             //Получим предыдущий номер
@@ -207,7 +213,7 @@ namespace GreenLight
 
         private void tsbDown_Click(object sender, EventArgs e)
         {
-            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgTableConfig);
+            DataRow curr_row = GreenLight.Tools.FindCurrentRow(dgTableConfig);
             int curr_id = (int)curr_row["TableConfigID"];
 
             //Получим следующий номер
@@ -234,7 +240,7 @@ namespace GreenLight
 
         private void tsbCopy_Click(object sender, EventArgs e)
         {
-            DataRow curr_row = Samoyloff.Tools.FindCurrentRow(dgTableConfig);
+            DataRow curr_row = GreenLight.Tools.FindCurrentRow(dgTableConfig);
             int curr_id = (int)curr_row["TableConfigID"];
             
             DataTable dt_columns = DBFunctions.ReadFromDB("SELECT ColumnDBName FROM tableConfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex] + "'");

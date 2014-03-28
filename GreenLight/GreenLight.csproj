@@ -38,6 +38,9 @@
     <ApplicationIcon>gl.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\Прочее\FastColoredTextBox.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data">
       <HintPath>C:\Program Files (x86)\MySQL\Connector NET 6.4.4\Assemblies\v4.0\MySql.Data.dll</HintPath>

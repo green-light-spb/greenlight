@@ -1,7 +1,13 @@
 ﻿using System.Windows.Forms;
 using System.Data;
+using System.Configuration;
+using System.Collections.Generic;
+using System.Linq;
+using System.ComponentModel;
+using System;
 
-namespace Samoyloff
+
+namespace GreenLight
 {
     class Tools
     {
@@ -49,6 +55,80 @@ namespace Samoyloff
 
             DataRowView drv = cManager.Current as DataRowView;
             return drv.Row;
-        } 
+        }
+
+        public static void SetColumnOrder(DataGridView dg)
+        {
+            if (!DataGridViewSetting.Default.ColumnOrder.ContainsKey(dg.Name))
+                return;
+
+            List<ColumnOrderItem> columnOrder =
+                DataGridViewSetting.Default.ColumnOrder[dg.Name];
+
+            if (columnOrder != null)
+            {
+                var sorted = columnOrder.OrderBy(i => i.DisplayIndex);
+                foreach (var item in sorted)
+                {
+                    dg.Columns[item.ColumnIndex].DisplayIndex = item.DisplayIndex;
+                    dg.Columns[item.ColumnIndex].Visible = item.Visible;
+                    dg.Columns[item.ColumnIndex].Width = item.Width;
+                }
+            }
+        }
+        //---------------------------------------------------------------------
+        public static void SaveColumnOrder(DataGridView dg)
+        {
+            if (dg.AllowUserToOrderColumns)
+            {
+                List<ColumnOrderItem> columnOrder = new List<ColumnOrderItem>();
+                DataGridViewColumnCollection columns = dg.Columns;
+                for (int i = 0; i < columns.Count; i++)
+                {
+                    columnOrder.Add(new ColumnOrderItem
+                    {
+                        ColumnIndex = i,
+                        DisplayIndex = columns[i].DisplayIndex,
+                        Visible = columns[i].Visible,
+                        Width = columns[i].Width
+                    });
+                }
+
+                DataGridViewSetting.Default.ColumnOrder[dg.Name] = columnOrder;
+                DataGridViewSetting.Default.Save();
+            }
+        }
+
     }
+
+    internal sealed class DataGridViewSetting : ApplicationSettingsBase
+    {
+        private static DataGridViewSetting _defaultInstace =
+            (DataGridViewSetting)ApplicationSettingsBase.Synchronized(new DataGridViewSetting());
+        //---------------------------------------------------------------------
+        public static DataGridViewSetting Default
+        {
+            get { return _defaultInstace; }
+        }
+        //---------------------------------------------------------------------
+
+        [UserScopedSetting]
+        [SettingsSerializeAs(SettingsSerializeAs.Binary)]
+        [DefaultSettingValue("")]
+
+        public Dictionary<string, List<ColumnOrderItem>> ColumnOrder
+        {
+            get { return this["ColumnOrder"] as Dictionary<string, List<ColumnOrderItem>>; }
+            set { this["ColumnOrder"] = value; }
+        }
+    }
+    //-------------------------------------------------------------------------
+    [Serializable]
+    public sealed class ColumnOrderItem
+    {
+        public int DisplayIndex { get; set; }
+        public int Width { get; set; }
+        public bool Visible { get; set; }
+        public int ColumnIndex { get; set; }
+    }   
 }

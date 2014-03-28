@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using FastColoredTextBoxNS;
 
 namespace GreenLight
 {
@@ -22,6 +23,8 @@ namespace GreenLight
         private void TestRights()
         {
             tsbOk.Enabled = Auth.AuthModule.rights.clause_editor.write;
+            tsbSave.Enabled = Auth.AuthModule.rights.clause_editor.write;
+            tsbInvertUseInWhereClause.Enabled = Auth.AuthModule.rights.clause_editor.write;
         }
                 
         private void tsbCancel_Click(object sender, EventArgs e)
@@ -72,8 +75,9 @@ namespace GreenLight
             }
 
             //Загрузим подсказку с именами столбцов
-            dt_column_names = DBFunctions.ReadFromDB("SELECT TableName AS 'Имя таблицы', ColumnName AS 'Имя колонки', ColumnDBName AS 'Наименование колонки в БД', ColumnType AS 'Тип' FROM tableconfig ORDER BY TableName");
+            dt_column_names = DBFunctions.ReadFromDB("SELECT TableConfigID, TableName AS 'Имя таблицы', ColumnName AS 'Имя колонки', ColumnDBName AS 'Наименование колонки в БД', ColumnType AS 'Тип', UseInWhereClause FROM tableconfig ORDER BY TableName");
 
+            dgColumnNames.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgColumnNames.DataSource = dt_column_names;
 
             TestRights();
@@ -115,5 +119,72 @@ namespace GreenLight
                 dt_column_names.DefaultView.RowFilter = rf_text;
             }
         }
+
+        private void tsbInvertUseInWhereClause_Click(object sender, EventArgs e)
+        {
+            DataRow curr_row = GreenLight.Tools.FindCurrentRow(dgColumnNames);
+
+            if (curr_row != null)
+            {
+                curr_row["UseInWhereClause"] = !((bool)curr_row["UseInWhereClause"]);
+
+                Dictionary<string, object>  parameters = new Dictionary<string, object>();
+                parameters.Add("id", (int)curr_row["TableConfigID"]);
+                parameters.Add("use_in_clause", (bool)curr_row["UseInWhereClause"]);
+
+                DBFunctions.ExecuteCommand("UPDATE tableconfig SET UseInWhereClause = @use_in_clause WHERE TableConfigID = @id",parameters);
+            }
+        }
+              
+        private void dgColumnNames_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataRow curr_row = GreenLight.Tools.FindCurrentRow(dgColumnNames);
+
+            if (curr_row != null)
+            {
+                int ind = tbWhereClause.Text.IndexOf((string)curr_row["Наименование колонки в БД"]);
+
+                if (ind > 0)
+                {
+                    tbWhereClause.SelectionStart = ind;
+                    tbWhereClause.SelectionLength = ((string)curr_row["Наименование колонки в БД"]).Length;
+                }
+                else
+                {
+                    tbWhereClause.SelectionLength = 0;
+                }
+            }
+        }
+
+        private void tsbSave_Click(object sender, EventArgs e)
+        {
+            if (dt.Rows.Count == 0)
+            {
+                DataRow row = dt.Rows.Add("table_credprogr", "table_clients", tbWhereClause.Text);
+            }
+            else
+            {
+                dt.Rows[0]["Clause"] = tbWhereClause.Text;
+            };
+
+            TableStruct ts = new TableStruct();
+            ts.TableName = "where_clauses";
+            string[] p_keys = { "TableDBName_Left", "TableDBName_Right" };
+            ts.p_keys = p_keys;
+            string[] columns = { "Clause" };
+            ts.columns = columns;
+
+            DBFunctions.WriteToDB(dt, ts);
+
+            try
+            {
+                DBStructure.UpdateSelectorScript();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
     }
 }
