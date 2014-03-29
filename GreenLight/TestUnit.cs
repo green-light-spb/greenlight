@@ -44,6 +44,21 @@ namespace GreenLight
             DBStructure.UpdateDBStructure();
         }
 
+        public static void RecreateRefStatements()
+        {
+            DataTable References = DBFunctions.ReadFromDB("SELECT DISTINCT ReferenceDBName FROM referencesconfig");
+            foreach (DataRow row in References.Rows)
+            {
+                //Создадим хранимые процедуры и триггеры
+                string ref_create_script = (string)DBFunctions.ReadScalarFromDB("SELECT script FROM scripts WHERE script_name = 'Reference_Create'");
+
+                ref_create_script = ref_create_script.Replace("[RefDBName]", (string)row["ReferenceDBName"]);
+
+                DBFunctions.ExecuteScript(ref_create_script);
+            }
+
+        }
+
         public static void UpdateOfferSelector()
         {
             DBStructure.UpdateSelectorScript();

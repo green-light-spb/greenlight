@@ -93,7 +93,6 @@
             this.dgOffers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgOffers.Size = new System.Drawing.Size(730, 299);
             this.dgOffers.TabIndex = 0;
-            this.dgOffers.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgOffers_EditingControlShowing);
             // 
             // toolStrip1
             // 

@@ -22,45 +22,11 @@ namespace GreenLight
             dt_clients = Tables.GetTable("Clients", ref dgClients, ref ts);
         }
 
-        private string CorrectMultirefString(string in_str)
-        {
-            string ref_name = in_str.Substring(in_str.IndexOf('[') + 1, in_str.IndexOf(']') - in_str.IndexOf('[') - 1);
-
-            try
-            {
-                return (string)DBFunctions.ReadScalarFromDB(@"SELECT GROUP_CONCAT(RefName SEPARATOR '" + Environment.NewLine + @"')
-                                            FROM ref_data_" + ref_name + @" 
-                                            WHERE LOCATE(concat('{',CAST(ID AS CHAR),'}'),'" + in_str + "') > 0");
-            }
-            catch (Exception)
-            {
-                return "";
-            }
-        }
-
         private DataTable SelectOffers(int ClientID)
         {
             OfferSelector os = new OfferSelector(ClientID);
 
-            DataTable dt = os.SelectOffers();
-
-            if (dt == null)
-            {
-               return dt;
-            }
-            //Преобразуем данные о мультирефах в человеческий вид
-            foreach (DataRow row in dt.Rows)
-            {
-                foreach (DataColumn column in dt.Columns)
-                {
-                    if (row[column] is string && ((string)row[column]).IndexOf("%multise") != -1)
-                    {                        
-                        row[column] = CorrectMultirefString((string)row[column]);
-                    }
-                }
-            }
-
-            return dt;
+            return os.SelectOffers();
         }
 
         public OfferSelectorForm()
@@ -133,12 +99,6 @@ namespace GreenLight
 
                 dt_clients.DefaultView.RowFilter = rf_text;
             }
-        }
-
-        private void dgOffers_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
-        {
-            /*TextBox TB = (TextBox)e.Control;
-            TB.Multiline = true;*/
         }
 
         private void tsbUniversalQuestionary_Click(object sender, EventArgs e)

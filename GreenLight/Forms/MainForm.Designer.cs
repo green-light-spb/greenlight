@@ -34,6 +34,7 @@
             this.menuTableStruct = new System.Windows.Forms.ToolStripMenuItem();
             this.menuReferenceStruct = new System.Windows.Forms.ToolStripMenuItem();
             this.menuClauseEditor = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuClauseTest = new System.Windows.Forms.ToolStripMenuItem();
             this.menuQuestionaryEditor = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStringReplace = new System.Windows.Forms.ToolStripMenuItem();
             this.menuData = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +49,7 @@
             this.menuLocalParameters = new System.Windows.Forms.ToolStripMenuItem();
             this.menuUserControl = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRoles = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuClauseTest = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,6 +99,13 @@
             this.menuClauseEditor.Size = new System.Drawing.Size(267, 22);
             this.menuClauseEditor.Text = "Редактор условий";
             this.menuClauseEditor.Click += new System.EventHandler(this.menuClauseEditor_Click);
+            // 
+            // menuClauseTest
+            // 
+            this.menuClauseTest.Name = "menuClauseTest";
+            this.menuClauseTest.Size = new System.Drawing.Size(267, 22);
+            this.menuClauseTest.Text = "Проверка условий";
+            this.menuClauseTest.Click += new System.EventHandler(this.menuClauseTest_Click);
             // 
             // menuQuestionaryEditor
             // 
@@ -206,18 +214,22 @@
             this.menuRoles.Text = "Роли";
             this.menuRoles.Click += new System.EventHandler(this.menuRoles_Click);
             // 
-            // menuClauseTest
+            // button1
             // 
-            this.menuClauseTest.Name = "menuClauseTest";
-            this.menuClauseTest.Size = new System.Drawing.Size(267, 22);
-            this.menuClauseTest.Text = "Проверка условий";
-            this.menuClauseTest.Click += new System.EventHandler(this.menuClauseTest_Click);
+            this.button1.Location = new System.Drawing.Point(219, 70);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 262);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -253,6 +265,7 @@
         private System.Windows.Forms.ToolStripMenuItem menuUserControl;
         private System.Windows.Forms.ToolStripMenuItem menuRoles;
         private System.Windows.Forms.ToolStripMenuItem menuClauseTest;
+        private System.Windows.Forms.Button button1;
     }
 }
 
