@@ -429,7 +429,7 @@ namespace GreenLight
             query_text += " FROM table_credprogr LEFT JOIN table_clients ON table_clients.id=" + "[ClientID] ";
             
             //Здесь формируем запрос по полям с ShowInOffer = 1
-            DataTable fields_to_show = DBFunctions.ReadFromDB("SELECT ColumnDBName,ColumnName,ColumnType,ColumnReference,ReferenceMultiSelect FROM tableconfig WHERE ShowInOffer = 1 ORDER BY WebOrder");
+            DataTable fields_to_show = DBFunctions.ReadFromDB("SELECT ColumnDBName,ColumnName,ColumnType,ColumnReference,ReferenceMultiSelect,ShowFullName FROM tableconfig WHERE ShowInOffer = 1 ORDER BY WebOrder");
 
             string itog_query = "SELECT DISTINCT inner_select.ID";
 
@@ -441,8 +441,7 @@ namespace GreenLight
 
                 if ((string)row["ColumnType"] == "Справочник" && (bool)row["ReferenceMultiSelect"] == false)
                 {
-                    itog_query += "ref_data_" + Convert.ToString(row["ColumnDBName"]).ToLower() + ".RefName AS '" + row["ColumnName"] + "'";
-                    join_text += " LEFT JOIN ref_data_" + Convert.ToString(row["ColumnReference"]).ToLower() + " AS ref_data_" + Convert.ToString(row["ColumnDBName"]).ToLower() + " ON inner_select." + Convert.ToString(row["ColumnDBName"]).ToLower() + " = ref_data_" + Convert.ToString(row["ColumnDBName"]).ToLower() + ".ID";
+                    itog_query += "ref_name_" + Convert.ToString(row["ColumnReference"]) + "(" + row["ColumnDBName"] + ","+ Convert.ToString(row["ShowFullName"]) +") AS '" + row["ColumnName"] + "'";                    
                 }
                 else if ((string)row["ColumnType"] == "Справочник" && (bool)row["ReferenceMultiSelect"] == true)
                 {
@@ -467,11 +466,9 @@ namespace GreenLight
 
 
             //Здесь формируем запрос по полям с ShowInOfferShort = 1
-            fields_to_show = DBFunctions.ReadFromDB("SELECT ColumnDBName,ColumnName,ColumnType,ColumnReference,ReferenceMultiSelect FROM tableconfig WHERE ShowInOfferShort = 1 ORDER BY WebOrder");
+            fields_to_show = DBFunctions.ReadFromDB("SELECT ColumnDBName,ColumnName,ColumnType,ColumnReference,ReferenceMultiSelect,ShowFullName FROM tableconfig WHERE ShowInOfferShort = 1 ORDER BY WebOrder");
 
             itog_query = "SELECT DISTINCT inner_select.ID";
-
-            join_text = "";
 
             foreach (DataRow row in fields_to_show.Rows)
             {
@@ -479,8 +476,7 @@ namespace GreenLight
 
                 if ((string)row["ColumnType"] == "Справочник" && (bool)row["ReferenceMultiSelect"] == false)
                 {
-                    itog_query += "ref_data_" + Convert.ToString(row["ColumnDBName"]).ToLower() + ".RefName AS '" + row["ColumnName"] + "'";
-                    join_text += " LEFT JOIN ref_data_" + Convert.ToString(row["ColumnReference"]).ToLower() + " AS ref_data_" + Convert.ToString(row["ColumnDBName"]).ToLower() + " ON inner_select." + Convert.ToString(row["ColumnDBName"]).ToLower() + " = ref_data_" + Convert.ToString(row["ColumnDBName"]).ToLower() + ".ID";
+                    itog_query += "ref_name_" + Convert.ToString(row["ColumnReference"]) + "(" + row["ColumnDBName"] + "," + Convert.ToString(row["ShowFullName"]) + ") AS '" + row["ColumnName"] + "'";
                 }
                 else if ((string)row["ColumnType"] == "Справочник" && (bool)row["ReferenceMultiSelect"] == true)
                 {
@@ -492,7 +488,7 @@ namespace GreenLight
                 }
             }
 
-            itog_query += " FROM (" + query_text + ") AS inner_select " + join_text + " WHERE ";
+            itog_query += " FROM (" + query_text + ") AS inner_select  WHERE ";
 
             itog_query += clause_text;
 

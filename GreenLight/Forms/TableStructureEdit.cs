@@ -80,6 +80,14 @@ namespace GreenLight
             dgTableConfig.Columns.Remove("ColumnReference");
             dgTableConfig.Columns.Add(column_ref);
 
+            DataGridViewCheckBoxColumn column_show_full_name = new DataGridViewCheckBoxColumn();
+            column_show_full_name.TrueValue = 1;
+            column_show_full_name.FalseValue = 0;
+            column_show_full_name.Name = "Отображать полное имя в подборе";
+            column_show_full_name.DataPropertyName = "ShowFullName";
+            dgTableConfig.Columns.Remove("ShowFullName");
+            dgTableConfig.Columns.Add(column_show_full_name);
+
             DataGridViewCheckBoxColumn column_show = new DataGridViewCheckBoxColumn();
             column_show.TrueValue = 1;
             column_show.FalseValue = 0;
@@ -122,7 +130,7 @@ namespace GreenLight
             ts.TableName = "TableConfig";
             string[] p_keys = { "TableConfigID" };
             ts.p_keys = p_keys;
-            string[] columns = { "TableName", "TableDBName", "ColumnName", "ColumnDBName", "ColumnType", "ColumnReference", "ReferenceMultiSelect", "ShowInOffer", "ShowInOfferShort", "ShowInEditor", "WebOrder", "UseInWhereClause" };
+            string[] columns = { "TableName", "TableDBName", "ColumnName", "ColumnDBName", "ColumnType", "ColumnReference", "ReferenceMultiSelect", "ShowInOffer", "ShowInOfferShort", "ShowInEditor", "WebOrder", "UseInWhereClause", "ShowFullName"};
             ts.columns = columns;
 
             DBFunctions.WriteToDB(dt_tableconfig, ts);
@@ -186,6 +194,7 @@ namespace GreenLight
             e.Row["ShowInEditor"] = false;
             e.Row["UseInWhereClause"] = false;
             e.Row["WebOrder"] = 0;
+            e.Row["ShowFullName"] = 0;
 
         }
 
