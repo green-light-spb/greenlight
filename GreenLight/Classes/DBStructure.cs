@@ -287,7 +287,7 @@ namespace GreenLight
                     }
 
                 }
-                
+
                 return;
             }
 
@@ -406,9 +406,7 @@ namespace GreenLight
                 System.Windows.Forms.MessageBox.Show("Не выбраны поля для отображения", "Ошибка", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
                 return;
             }
-
-  //          string join_text = "";
-
+              
             foreach (DataRow row in all_fields.Rows)
             {
                 query_text += ",";
@@ -421,13 +419,7 @@ namespace GreenLight
                         query_text += " WHEN " + formula_row["ID"] + " THEN " + formula_row[(string)row["field_name"]];
                     }
                     query_text += " END AS '" + row["ColumnDBName"] + "'";
-                }
-                /*else if ((string)row["ColumnType"] == "Справочник" && (bool)row["ReferenceMultiSelect"] == true)
-                {
-                    string mref_table_name = "multiref_" + (string)row["TableDBName"] + "_" + (string)row["ColumnDBName"];
-                    join_text += "LEFT JOIN " + mref_table_name + " ON table_" + row["TableDBName"] + ".ID = " + mref_table_name + ".TableID ";
-                    query_text += mref_table_name + ".RefID AS '" + row["ColumnDBName"] + "'";
-                }*/
+                }                
                 else
                 {
                     query_text += Convert.ToString(row["field_name"]).ToLower() + " AS '" + row["ColumnDBName"] + "'";
@@ -435,9 +427,6 @@ namespace GreenLight
             }
 
             query_text += " FROM table_credprogr LEFT JOIN table_clients ON table_clients.id=" + "[ClientID] ";
-
-//            query_text += join_text;
-
             
             //Здесь формируем запрос по полям с ShowInOffer = 1
             DataTable fields_to_show = DBFunctions.ReadFromDB("SELECT ColumnDBName,ColumnName,ColumnType,ColumnReference,ReferenceMultiSelect FROM tableconfig WHERE ShowInOffer = 1 ORDER BY WebOrder");
@@ -457,7 +446,7 @@ namespace GreenLight
                 }
                 else if ((string)row["ColumnType"] == "Справочник" && (bool)row["ReferenceMultiSelect"] == true)
                 {
-                    itog_query += "CONCAT('%multisel[" + Convert.ToString(row["ColumnReference"]).ToLower() + "]'," + row["ColumnDBName"] + ")" + " AS '" + row["ColumnName"] + "'";
+                    itog_query += "multiref_names_" + Convert.ToString(row["ColumnReference"]) + "(" + row["ColumnDBName"] + ")" + " AS '" + row["ColumnName"] + "'";
                 }
                 else
                 {
@@ -495,7 +484,7 @@ namespace GreenLight
                 }
                 else if ((string)row["ColumnType"] == "Справочник" && (bool)row["ReferenceMultiSelect"] == true)
                 {
-                    itog_query += "'%multisel[" + Convert.ToString(row["ColumnReference"]).ToLower() + "]'" + row["ColumnDBName"] + " AS '" + row["ColumnName"] + "'";     
+                    itog_query += "multiref_names_" + Convert.ToString(row["ColumnReference"]) + "(" + row["ColumnDBName"] + ")" + " AS '" + row["ColumnName"] + "'";
                 }
                 else
                 {
