@@ -57,12 +57,7 @@ namespace GreenLight
 
             dgOffers.DataSource = dt_offers;
 
-            GreenLight.Tools.SetColumnOrder(dgOffers);
-
-            foreach (DataGridViewRow dg_row in dgOffers.Rows)
-            {
-                dg_row.Height = 60;
-            }
+            GreenLight.Tools.SetColumnOrder(dgOffers);                     
         }
 
         private void tstbSearch_TextChanged(object sender, EventArgs e)
@@ -111,6 +106,11 @@ namespace GreenLight
         {
             if (dt_offers != null)
                 GreenLight.Tools.SaveColumnOrder(dgOffers);
+        }
+
+        private void dgOffers_RowHeightInfoNeeded(object sender, DataGridViewRowHeightInfoNeededEventArgs e)
+        {
+            e.Height = 60;
         }
 
 
