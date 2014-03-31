@@ -76,48 +76,48 @@
             this.menuQuestionaryEditor,
             this.menuStringReplace});
             this.menuSettings.Name = "menuSettings";
-            this.menuSettings.Size = new System.Drawing.Size(79, 20);
+            this.menuSettings.Size = new System.Drawing.Size(73, 20);
             this.menuSettings.Text = "Настройки";
             // 
             // menuTableStruct
             // 
             this.menuTableStruct.Name = "menuTableStruct";
-            this.menuTableStruct.Size = new System.Drawing.Size(267, 22);
+            this.menuTableStruct.Size = new System.Drawing.Size(254, 22);
             this.menuTableStruct.Text = "Структура таблиц";
             this.menuTableStruct.Click += new System.EventHandler(this.menuTableStruct_Click);
             // 
             // menuReferenceStruct
             // 
             this.menuReferenceStruct.Name = "menuReferenceStruct";
-            this.menuReferenceStruct.Size = new System.Drawing.Size(267, 22);
+            this.menuReferenceStruct.Size = new System.Drawing.Size(254, 22);
             this.menuReferenceStruct.Text = "Структура справочников";
             this.menuReferenceStruct.Click += new System.EventHandler(this.menuReferenceStruct_Click);
             // 
             // menuClauseEditor
             // 
             this.menuClauseEditor.Name = "menuClauseEditor";
-            this.menuClauseEditor.Size = new System.Drawing.Size(267, 22);
+            this.menuClauseEditor.Size = new System.Drawing.Size(254, 22);
             this.menuClauseEditor.Text = "Редактор условий";
             this.menuClauseEditor.Click += new System.EventHandler(this.menuClauseEditor_Click);
             // 
             // menuClauseTest
             // 
             this.menuClauseTest.Name = "menuClauseTest";
-            this.menuClauseTest.Size = new System.Drawing.Size(267, 22);
+            this.menuClauseTest.Size = new System.Drawing.Size(254, 22);
             this.menuClauseTest.Text = "Проверка условий";
             this.menuClauseTest.Click += new System.EventHandler(this.menuClauseTest_Click);
             // 
             // menuQuestionaryEditor
             // 
             this.menuQuestionaryEditor.Name = "menuQuestionaryEditor";
-            this.menuQuestionaryEditor.Size = new System.Drawing.Size(267, 22);
+            this.menuQuestionaryEditor.Size = new System.Drawing.Size(254, 22);
             this.menuQuestionaryEditor.Text = "Анкеты";
             this.menuQuestionaryEditor.Click += new System.EventHandler(this.menuQuestionaryEditor_Click);
             // 
             // menuStringReplace
             // 
             this.menuStringReplace.Name = "menuStringReplace";
-            this.menuStringReplace.Size = new System.Drawing.Size(267, 22);
+            this.menuStringReplace.Size = new System.Drawing.Size(254, 22);
             this.menuStringReplace.Text = "Замена значений для анкет банков";
             this.menuStringReplace.Click += new System.EventHandler(this.menuStringReplace_Click);
             // 
@@ -128,27 +128,27 @@
             this.menuTableEditor,
             this.menuDataCopy});
             this.menuData.Name = "menuData";
-            this.menuData.Size = new System.Drawing.Size(62, 20);
+            this.menuData.Size = new System.Drawing.Size(59, 20);
             this.menuData.Text = "Данные";
             // 
             // menuReferenceEditor
             // 
             this.menuReferenceEditor.Name = "menuReferenceEditor";
-            this.menuReferenceEditor.Size = new System.Drawing.Size(206, 22);
+            this.menuReferenceEditor.Size = new System.Drawing.Size(197, 22);
             this.menuReferenceEditor.Text = "Редактор справочников";
             this.menuReferenceEditor.Click += new System.EventHandler(this.menuReferenceEditor_Click);
             // 
             // menuTableEditor
             // 
             this.menuTableEditor.Name = "menuTableEditor";
-            this.menuTableEditor.Size = new System.Drawing.Size(206, 22);
+            this.menuTableEditor.Size = new System.Drawing.Size(197, 22);
             this.menuTableEditor.Text = "Редактор таблиц";
             this.menuTableEditor.Click += new System.EventHandler(this.menuTableEditor_Click);
             // 
             // menuDataCopy
             // 
             this.menuDataCopy.Name = "menuDataCopy";
-            this.menuDataCopy.Size = new System.Drawing.Size(206, 22);
+            this.menuDataCopy.Size = new System.Drawing.Size(197, 22);
             this.menuDataCopy.Text = "Копирование данных";
             this.menuDataCopy.Click += new System.EventHandler(this.menuDataCopy_Click);
             // 
@@ -158,20 +158,20 @@
             this.menuOfferSelector,
             this.menuQuestionary});
             this.menuAnketyAndPodbor.Name = "menuAnketyAndPodbor";
-            this.menuAnketyAndPodbor.Size = new System.Drawing.Size(114, 20);
+            this.menuAnketyAndPodbor.Size = new System.Drawing.Size(107, 20);
             this.menuAnketyAndPodbor.Text = "Анкеты и подбор";
             // 
             // menuOfferSelector
             // 
             this.menuOfferSelector.Name = "menuOfferSelector";
-            this.menuOfferSelector.Size = new System.Drawing.Size(196, 22);
+            this.menuOfferSelector.Size = new System.Drawing.Size(184, 22);
             this.menuOfferSelector.Text = "Подбор предложений";
             this.menuOfferSelector.Click += new System.EventHandler(this.menuOfferSelector_Click);
             // 
             // menuQuestionary
             // 
             this.menuQuestionary.Name = "menuQuestionary";
-            this.menuQuestionary.Size = new System.Drawing.Size(196, 22);
+            this.menuQuestionary.Size = new System.Drawing.Size(184, 22);
             this.menuQuestionary.Text = "Анкетирование";
             this.menuQuestionary.Click += new System.EventHandler(this.menuQuestionary_Click);
             // 
@@ -183,34 +183,34 @@
             this.menuUserControl,
             this.menuRoles});
             this.menuSystem.Name = "menuSystem";
-            this.menuSystem.Size = new System.Drawing.Size(66, 20);
+            this.menuSystem.Size = new System.Drawing.Size(61, 20);
             this.menuSystem.Text = "Система";
             // 
             // menuActiveSessions
             // 
             this.menuActiveSessions.Name = "menuActiveSessions";
-            this.menuActiveSessions.Size = new System.Drawing.Size(234, 22);
+            this.menuActiveSessions.Size = new System.Drawing.Size(221, 22);
             this.menuActiveSessions.Text = "Активные сессии";
             this.menuActiveSessions.Click += new System.EventHandler(this.menuActiveSessions_Click);
             // 
             // menuLocalParameters
             // 
             this.menuLocalParameters.Name = "menuLocalParameters";
-            this.menuLocalParameters.Size = new System.Drawing.Size(234, 22);
+            this.menuLocalParameters.Size = new System.Drawing.Size(221, 22);
             this.menuLocalParameters.Text = "Локальные параметры";
             this.menuLocalParameters.Click += new System.EventHandler(this.menuLocalParameters_Click);
             // 
             // menuUserControl
             // 
             this.menuUserControl.Name = "menuUserControl";
-            this.menuUserControl.Size = new System.Drawing.Size(234, 22);
+            this.menuUserControl.Size = new System.Drawing.Size(221, 22);
             this.menuUserControl.Text = "Управление пользователями";
             this.menuUserControl.Click += new System.EventHandler(this.menuUserControl_Click);
             // 
             // menuRoles
             // 
             this.menuRoles.Name = "menuRoles";
-            this.menuRoles.Size = new System.Drawing.Size(234, 22);
+            this.menuRoles.Size = new System.Drawing.Size(221, 22);
             this.menuRoles.Text = "Роли";
             this.menuRoles.Click += new System.EventHandler(this.menuRoles_Click);
             // 

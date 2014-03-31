@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClauseEditor));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsbCancel = new System.Windows.Forms.ToolStripButton();
@@ -37,15 +36,15 @@
             this.tstbSearch = new System.Windows.Forms.ToolStripTextBox();
             this.tsbInvertUseInWhereClause = new System.Windows.Forms.ToolStripButton();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.dgColumnNames = new System.Windows.Forms.DataGridView();
             this.tbWhereClause = new FastColoredTextBoxNS.FastColoredTextBox();
+            this.dgColumnNames = new System.Windows.Forms.DataGridView();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgColumnNames)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbWhereClause)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgColumnNames)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -70,7 +69,7 @@
             this.tsbCancel.Image = ((System.Drawing.Image)(resources.GetObject("tsbCancel.Image")));
             this.tsbCancel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbCancel.Name = "tsbCancel";
-            this.tsbCancel.Size = new System.Drawing.Size(53, 22);
+            this.tsbCancel.Size = new System.Drawing.Size(49, 22);
             this.tsbCancel.Text = "Отмена";
             this.tsbCancel.Click += new System.EventHandler(this.tsbCancel_Click);
             // 
@@ -81,7 +80,7 @@
             this.tsbSave.Image = ((System.Drawing.Image)(resources.GetObject("tsbSave.Image")));
             this.tsbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSave.Name = "tsbSave";
-            this.tsbSave.Size = new System.Drawing.Size(69, 22);
+            this.tsbSave.Size = new System.Drawing.Size(66, 22);
             this.tsbSave.Text = "Сохранить";
             this.tsbSave.Click += new System.EventHandler(this.tsbSave_Click);
             // 
@@ -111,7 +110,7 @@
             this.tsbInvertUseInWhereClause.Image = ((System.Drawing.Image)(resources.GetObject("tsbInvertUseInWhereClause.Image")));
             this.tsbInvertUseInWhereClause.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbInvertUseInWhereClause.Name = "tsbInvertUseInWhereClause";
-            this.tsbInvertUseInWhereClause.Size = new System.Drawing.Size(155, 22);
+            this.tsbInvertUseInWhereClause.Size = new System.Drawing.Size(141, 22);
             this.tsbInvertUseInWhereClause.Text = "Использование в условии";
             this.tsbInvertUseInWhereClause.Click += new System.EventHandler(this.tsbInvertUseInWhereClause_Click);
             // 
@@ -133,6 +132,28 @@
             this.splitContainer1.SplitterDistance = 266;
             this.splitContainer1.TabIndex = 1;
             // 
+            // tbWhereClause
+            // 
+            this.tbWhereClause.AutoScrollMinSize = new System.Drawing.Size(27, 14);
+            this.tbWhereClause.BackBrush = null;
+            this.tbWhereClause.CharHeight = 14;
+            this.tbWhereClause.CharWidth = 8;
+            this.tbWhereClause.CommentPrefix = "--";
+            this.tbWhereClause.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbWhereClause.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.tbWhereClause.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbWhereClause.IsReplaceMode = false;
+            this.tbWhereClause.Language = FastColoredTextBoxNS.Language.SQL;
+            this.tbWhereClause.LeftBracket = '(';
+            this.tbWhereClause.Location = new System.Drawing.Point(0, 0);
+            this.tbWhereClause.Name = "tbWhereClause";
+            this.tbWhereClause.Paddings = new System.Windows.Forms.Padding(0);
+            this.tbWhereClause.RightBracket = ')';
+            this.tbWhereClause.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.tbWhereClause.Size = new System.Drawing.Size(798, 266);
+            this.tbWhereClause.TabIndex = 0;
+            this.tbWhereClause.Zoom = 100;
+            // 
             // dgColumnNames
             // 
             this.dgColumnNames.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -144,29 +165,6 @@
             this.dgColumnNames.Size = new System.Drawing.Size(798, 133);
             this.dgColumnNames.TabIndex = 0;
             this.dgColumnNames.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgColumnNames_CellDoubleClick);
-            // 
-            // tbWhereClause
-            // 
-            this.tbWhereClause.AutoScrollMinSize = new System.Drawing.Size(179, 14);
-            this.tbWhereClause.BackBrush = null;
-            this.tbWhereClause.CharHeight = 14;
-            this.tbWhereClause.CharWidth = 8;
-            this.tbWhereClause.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbWhereClause.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.tbWhereClause.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbWhereClause.Font = new System.Drawing.Font("Courier New", 9.75F);
-            this.tbWhereClause.IsReplaceMode = false;
-            this.tbWhereClause.Language = FastColoredTextBoxNS.Language.SQL;
-            this.tbWhereClause.LeftBracket = '(';
-            this.tbWhereClause.Location = new System.Drawing.Point(0, 0);
-            this.tbWhereClause.Name = "tbWhereClause";
-            this.tbWhereClause.Paddings = new System.Windows.Forms.Padding(0);
-            this.tbWhereClause.RightBracket = ')';
-            this.tbWhereClause.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.tbWhereClause.Size = new System.Drawing.Size(798, 266);
-            this.tbWhereClause.TabIndex = 0;
-            this.tbWhereClause.Text = "";
-            this.tbWhereClause.Zoom = 100;
             // 
             // ClauseEditor
             // 
@@ -185,8 +183,8 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgColumnNames)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbWhereClause)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgColumnNames)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

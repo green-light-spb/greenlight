@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Collections.Generic;
 
 namespace GreenLight.Forms
 {
@@ -17,7 +18,7 @@ namespace GreenLight.Forms
 
         Dictionary<string, object> parameters;
 
-        string[] clauses;
+        List<string> clauses;
         
 
         public ClauseTest()
@@ -37,22 +38,32 @@ namespace GreenLight.Forms
 
             string clause_text = (string)DBFunctions.ReadScalarFromDB("SELECT Clause FROM where_clauses LIMIT 1");
 
-            clauses = clause_text.Split(Environment.NewLine[0]);
+            string[] clauses_to_parse = clause_text.Split(Environment.NewLine[0]);
 
             char[] trim = { 'A', 'N', 'D' };
-            for(int i = 0 ; i < clauses.Length; i++)
+
+            clauses = new System.Collections.Generic.List<string>();
+
+            for (int i = 0; i < clauses_to_parse.Length; i++)
             {
-                clauses[i] = clauses[i].Trim();
+                clauses_to_parse[i] = clauses_to_parse[i].Trim();
 
-                if (clauses[i].Substring(0, 3) == "AND")
-                    clauses[i] = clauses[i].TrimStart(trim);
+                if (clauses_to_parse[i].Substring(0, 1) == "@")
+                    clauses_to_parse[i] = clauses_to_parse[i].Replace("@", "");
+                else
+                    continue;
 
-                if (clauses[i].Substring(clauses[i].Length-3, 3) == "AND")
-                    clauses[i] = clauses[i].TrimEnd(trim);                
+                if (clauses_to_parse[i].Substring(0, 3) == "AND")
+                    clauses_to_parse[i] = clauses_to_parse[i].TrimStart(trim);
+
+                if (clauses_to_parse[i].Substring(clauses_to_parse[i].Length - 3, 3) == "AND")
+                    clauses_to_parse[i] = clauses_to_parse[i].TrimEnd(trim);
+
+                clauses.Add(clauses_to_parse[i]);
 
                 DataRow new_row = dt_clauses.NewRow();
 
-                new_row["Условие"] = clauses[i];
+                new_row["Условие"] = clauses_to_parse[i];
 
                 dt_clauses.Rows.Add(new_row);
             }
@@ -85,7 +96,7 @@ namespace GreenLight.Forms
 
         private void DoClauseTest()
         {
-            for(int i = 0 ; i < clauses.Length; i++)
+            for(int i = 0 ; i < clauses.Count; i++)
             {
                 DataTable test_result =
                     DBFunctions.ReadFromDB("SELECT Programma FROM (SELECT * FROM table_clients WHERE id = @client_id) AS Cl LEFT JOIN (SELECT * FROM table_credprogr WHERE id = @credprogr_id) AS Cr ON true WHERE " + clauses[i], parameters);
