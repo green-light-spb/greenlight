@@ -19,7 +19,14 @@ namespace GreenLight
         private void FillClients()
         {
             ts = new TableStruct();
-            dt_clients = Tables.GetTable("Clients", ref dgClients, ref ts);
+            dt_clients = DBFunctions.ReadFromDB("SELECT id,fio_zaem FROM table_clients");
+
+            dgClients.DataSource = dt_clients;
+
+            dgClients.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            
+            dgClients.Columns[0].HeaderText = "ID";
+            dgClients.Columns[1].HeaderText = "ФИО";
         }
 
         private DataTable SelectOffers(int ClientID)
@@ -46,7 +53,15 @@ namespace GreenLight
             if (dt_offers != null)
                 GreenLight.Tools.SaveColumnOrder(dgOffers);
 
-            client_id = Convert.ToInt32(dgClients[0, e.RowIndex].Value);
+            DataRow current_client_row = Tools.FindCurrentRow(dgClients);
+
+            if (current_client_row == null)
+            {
+                dt_offers = null;
+                return;
+            }
+
+            client_id = Convert.ToInt32((int)current_client_row["id"]);
             dt_offers = SelectOffers(client_id);
 
             if (dt_offers == null)
