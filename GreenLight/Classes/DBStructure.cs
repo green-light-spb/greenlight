@@ -455,7 +455,7 @@ namespace GreenLight
             
             itog_query += " FROM (" + query_text + ") AS inner_select " + join_text + " WHERE ";
 
-            itog_query += clause_text;
+            itog_query += clause_text.Replace("@", ""); ;
 
             //Занесем результат в базу
 
@@ -490,7 +490,7 @@ namespace GreenLight
 
             itog_query += " FROM (" + query_text + ") AS inner_select  WHERE ";
 
-            itog_query += clause_text;
+            itog_query += clause_text.Replace("@", "");
 
             //Занесем результат в базу
 

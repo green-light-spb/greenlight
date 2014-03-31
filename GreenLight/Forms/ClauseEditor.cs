@@ -75,7 +75,7 @@ namespace GreenLight
             }
 
             //Загрузим подсказку с именами столбцов
-            dt_column_names = DBFunctions.ReadFromDB("SELECT TableConfigID, TableName AS 'Имя таблицы', ColumnName AS 'Имя колонки', ColumnDBName AS 'Наименование колонки в БД', ColumnType AS 'Тип', UseInWhereClause FROM tableconfig ORDER BY TableName");
+            dt_column_names = DBFunctions.ReadFromDB("SELECT TableConfigID, TableName AS 'Имя таблицы', ColumnName AS 'Имя колонки', ColumnDBName AS 'Наименование колонки в БД', ColumnType AS 'Тип', ColumnReference, ReferenceMultiSelect, UseInWhereClause FROM tableconfig ORDER BY TableName");
 
             dgColumnNames.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgColumnNames.DataSource = dt_column_names;
