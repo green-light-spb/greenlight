@@ -88,12 +88,12 @@ namespace GreenLight
         {
             //TestUnit.TestReadFromDB();
             //TestUnit.TestWriteToDB();
-            //TestUnit.UpdateDB();
+            TestUnit.UpdateDB();
             //TestUnit.SelectOffers();
 
             //TestUnit.TestReflection();
 
-            TestUnit.RecreateRefStatements();
+            //TestUnit.RecreateRefStatements();
             
             //TestUnit.UpdateOfferSelector();
             //Questionary qu = new Questionary(7, "Универсальная анкета");

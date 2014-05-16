@@ -288,6 +288,13 @@ namespace GreenLight
 
                 }
 
+                //Создадим хранимые процедуры и триггеры
+                string ref_create_script = (string)DBFunctions.ReadScalarFromDB("SELECT script FROM scripts WHERE script_name = 'Reference_Create'");
+
+                ref_create_script = ref_create_script.Replace("[RefDBName]", ref_db_name);
+
+                DBFunctions.ExecuteScript(ref_create_script);
+
                 return;
             }
 
@@ -343,11 +350,11 @@ namespace GreenLight
             }
 
             //Создадим хранимые процедуры и триггеры
-            string ref_create_script = (string)DBFunctions.ReadScalarFromDB("SELECT script FROM scripts WHERE script_name = 'Reference_Create'");
+            string ref_create_script_inner = (string)DBFunctions.ReadScalarFromDB("SELECT script FROM scripts WHERE script_name = 'Reference_Create'");
 
-            ref_create_script = ref_create_script.Replace("[RefDBName]", ref_db_name);
-                      
-            DBFunctions.ExecuteScript(ref_create_script);
+            ref_create_script_inner = ref_create_script_inner.Replace("[RefDBName]", ref_db_name);
+
+            DBFunctions.ExecuteScript(ref_create_script_inner);
 
         }
 
