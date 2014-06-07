@@ -42,12 +42,14 @@ namespace GreenLight
             if (login_from_parameters)
             {
                 return "Database=" + LocalParameters.MySQLDatabase + ";Data Source=" + LocalParameters.MySQLServer +
-                    ";Port=3306;User Id=" + LocalParameters.MySQLUser + ";Password=" + LocalParameters.MySQLPassword;
+                    ";Port=3306;User Id=" + LocalParameters.MySQLUser + ";Password=" + LocalParameters.MySQLPassword +
+                    ";CharSet=utf8";
             }
             else
             {
                 return "Database=" + LocalParameters.MySQLDatabase + ";Data Source=" + LocalParameters.MySQLServer +
-                    ";Port=3306;User Id=" + login + ";Password=" + password;            
+                    ";Port=3306;User Id=" + login + ";Password=" + password +
+                    ";CharSet=utf8";            
             }
 
         }
