@@ -109,7 +109,7 @@ namespace GreenLight
         {
             MySqlConnection connection = Connect();
 
-            MySqlCommand command = new MySqlCommand(query, connection);
+            MySqlCommand command = new MySqlCommand(query.ToLower(), connection);
             if (parameters != null)
             {
                 foreach (string param_name in parameters.Keys)
@@ -131,7 +131,7 @@ namespace GreenLight
         public static object ReadScalarFromDB(string query, Dictionary<string,object> parameters = null)
         {
             MySqlConnection connection = Connect();
-            MySqlCommand command = new MySqlCommand(query, connection);
+            MySqlCommand command = new MySqlCommand(query.ToLower(), connection);
             if (parameters != null)
             {
                 foreach (string param_name in parameters.Keys)
@@ -150,7 +150,7 @@ namespace GreenLight
         public static void ExecuteCommand(string CommandText, Dictionary<string, object> parameters = null)
         {
             MySqlConnection connection = Connect();
-            MySqlCommand command = new MySqlCommand(CommandText, connection);
+            MySqlCommand command = new MySqlCommand(CommandText.ToLower(), connection);
 
             if (parameters != null)
             {
@@ -169,7 +169,7 @@ namespace GreenLight
         public static void ExecuteScript(string CommandText)
         {
             MySqlConnection connection = Connect();
-            MySqlScript script = new MySqlScript(connection, CommandText);
+            MySqlScript script = new MySqlScript(connection, CommandText.ToLower());
             script.Execute();
 
             Disconnect(connection);
@@ -200,7 +200,7 @@ namespace GreenLight
             MySqlDataAdapter data_adapter = new MySqlDataAdapter("", connection) ;
 
             data_adapter.DeleteCommand = new MySqlCommand("",connection);
-            string DeleteCommandText = "DELETE FROM " + table_struct.TableName + " WHERE";
+            string DeleteCommandText = "DELETE FROM " + table_struct.TableName.ToLower() + " WHERE";
 
             foreach (string pk in table_struct.p_keys)
             {
@@ -214,7 +214,7 @@ namespace GreenLight
             data_adapter.DeleteCommand.CommandText = DeleteCommandText;
 
             data_adapter.UpdateCommand = new MySqlCommand("",connection);
-            string UpdateCommandText = "UPDATE " + table_struct.TableName + " SET";
+            string UpdateCommandText = "UPDATE " + table_struct.TableName.ToLower() + " SET";
 
             foreach (string column in table_struct.columns)
             {
@@ -237,7 +237,7 @@ namespace GreenLight
             data_adapter.UpdateCommand.CommandText = UpdateCommandText;
 
             data_adapter.InsertCommand = new MySqlCommand("", connection);
-            string InsertCommandText = "INSERT INTO " + table_struct.TableName + " SET";
+            string InsertCommandText = "INSERT INTO " + table_struct.TableName.ToLower() + " SET";
 
             foreach (string column in table_struct.columns)
             {

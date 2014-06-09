@@ -361,7 +361,7 @@ namespace GreenLight
         public static void UpdateDBStructure()
         {
             //Получим список главных таблиц
-            DataTable MainTables = DBFunctions.ReadFromDB("SELECT DISTINCT TableDBName FROM TableConfig");
+            DataTable MainTables = DBFunctions.ReadFromDB("SELECT DISTINCT TableDBName FROM tableconfig");
             foreach (DataRow row in MainTables.Rows)
             {
                 UpdateMainTableStructure((string)row["TableDBName"]);
