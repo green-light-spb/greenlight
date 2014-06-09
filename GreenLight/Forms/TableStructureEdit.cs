@@ -34,7 +34,7 @@ namespace GreenLight
             if(dt_tableconfig != null)
                 Tools.SaveColumnOrder(dgTableConfig);
 
-            dt_tableconfig = DBFunctions.ReadFromDB("SELECT * FROM TableConfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex] + "'");
+            dt_tableconfig = DBFunctions.ReadFromDB("SELECT * FROM tableconfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex].ToLower() + "'");
 
             dt_tableconfig.TableNewRow += new DataTableNewRowEventHandler(dt_TableNewRow); 
 
