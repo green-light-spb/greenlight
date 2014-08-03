@@ -10,18 +10,18 @@ namespace GreenLight
     {
         public static string ConvertTypeToSQL(string type)
         {
-            switch (type)
+            switch (type.ToLower())
             {
-                case "Строка50":
+                case "строка50":
                     return "varchar(50)";
-                case "Строка300":
+                case "строка300":
                     return "TEXT";
-                case "Справочник":
-                case "Целое число":
+                case "справочник":
+                case "целое число":
                     return "int(11)";
-                case "Число с плавающей точкой":
+                case "число с плавающей точкой":
                     return "float";
-                case "Формула":
+                case "формула":
                     return "text";
                 default:
                     return null;
@@ -275,9 +275,9 @@ namespace GreenLight
                 //Удалим лишние колонки
                 foreach (DataRow row in CurrentStrurture.Rows)
                 {
-                    if ((string)row["Field"] == "ID")
+                    if ((string)row["Field"] == "id" || (string)row["Field"] == "ID")
                         continue;
-                    if ((string)row["Field"] == "ParentID")
+                    if ((string)row["Field"] == "parentid" || (string)row["Field"] == "ParentID")
                         continue;
                     DataRow[] foundRows = neededStructure.Select("ColumnDBName = '" + row["Field"] + "'");
                     if (foundRows.Length == 0)
