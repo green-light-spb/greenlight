@@ -19,7 +19,7 @@ namespace GreenLight
         private void FillClients()
         {
             ts = new TableStruct();
-            dt_clients = DBFunctions.ReadFromDB("SELECT id,fio_zaem FROM table_clients");
+            dt_clients = DBFunctions.ReadFromDB("SELECT id,CONCAT(familia_zaem,' ',IFNULL(Imya_zaem,''),' ',IFNULL(Otchestvo_zaem,'')) AS fio_zaem FROM table_clients");
 
             dgClients.DataSource = dt_clients;
 
