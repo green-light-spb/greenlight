@@ -115,7 +115,7 @@
             this.tsbEditFilter.Image = ((System.Drawing.Image)(resources.GetObject("tsbEditFilter.Image")));
             this.tsbEditFilter.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbEditFilter.Name = "tsbEditFilter";
-            this.tsbEditFilter.Size = new System.Drawing.Size(135, 22);
+            this.tsbEditFilter.Size = new System.Drawing.Size(131, 22);
             this.tsbEditFilter.Text = "Редактировать фильтр";
             this.tsbEditFilter.Click += new System.EventHandler(this.tsbEditFilter_Click);
             // 
@@ -130,7 +130,7 @@
             this.tsbSave.Image = ((System.Drawing.Image)(resources.GetObject("tsbSave.Image")));
             this.tsbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSave.Name = "tsbSave";
-            this.tsbSave.Size = new System.Drawing.Size(69, 22);
+            this.tsbSave.Size = new System.Drawing.Size(66, 22);
             this.tsbSave.Text = "Сохранить";
             this.tsbSave.Click += new System.EventHandler(this.tsbSave_Click);
             // 
