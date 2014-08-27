@@ -36,6 +36,10 @@ namespace GreenLight
             tsbAdd.Visible = Auth.AuthModule.rights.references.write && !select_mode;
             tsbDelete.Visible = Auth.AuthModule.rights.references.write && !select_mode;
             tsbSave.Visible = Auth.AuthModule.rights.references.write && !select_mode;
+
+            if(Auth.AuthModule.rights.references.write && !select_mode)
+                this.tvReference.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.tvReference_ItemDrag);
+            
         }
 
         #region Обработчики событий

@@ -136,7 +136,7 @@
             // 
             // tbWhereClause
             // 
-            this.tbWhereClause.AutoScrollMinSize = new System.Drawing.Size(2, 14);
+            this.tbWhereClause.AutoScrollMinSize = new System.Drawing.Size(27, 14);
             this.tbWhereClause.BackBrush = null;
             this.tbWhereClause.CharHeight = 14;
             this.tbWhereClause.CharWidth = 8;
@@ -179,7 +179,7 @@
             this.dgColumnNames.Location = new System.Drawing.Point(0, 0);
             this.dgColumnNames.Name = "dgColumnNames";
             this.dgColumnNames.ReadOnly = true;
-            this.dgColumnNames.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgColumnNames.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgColumnNames.Size = new System.Drawing.Size(798, 133);
             this.dgColumnNames.TabIndex = 0;
             this.dgColumnNames.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgColumnNames_CellDoubleClick);

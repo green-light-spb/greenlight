@@ -138,7 +138,6 @@
             this.tvReference.Name = "tvReference";
             this.tvReference.Size = new System.Drawing.Size(187, 405);
             this.tvReference.TabIndex = 1;
-            this.tvReference.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.tvReference_ItemDrag);
             this.tvReference.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvReference_AfterSelect);
             this.tvReference.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.tvReference_NodeMouseDoubleClick);
             this.tvReference.DragDrop += new System.Windows.Forms.DragEventHandler(this.tvReference_DragDrop);
