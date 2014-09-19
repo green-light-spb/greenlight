@@ -424,6 +424,23 @@ namespace GreenLight
             if (tvReference.SelectedNode.Tag == null)
             {
                 tvReference.SelectedNode.Tag = Convert.ToInt32(DBFunctions.ReadScalarFromDB("SELECT LAST_INSERT_ID()"));
+
+                //Добавим этот элемент во все мультирефы, в которых выбран его родитель
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add("ref_db_name", reference_db_name);
+                DataTable dtMultirefFields = DBFunctions.ReadFromDB("SELECT tabledbname,columndbname FROM tableconfig WHERE referencemultiselect=1 and columnreference=@ref_db_name",parameters);
+
+                foreach (DataRow multirefFieldRow in dtMultirefFields.Rows)
+                {
+                    parameters.Clear();
+                    parameters.Add("id_string", "{" + Convert.ToString(tvReference.SelectedNode.Tag) + "}");
+                    parameters.Add("id", dt_elem.Rows[0]["ParentID"]);
+                    string query = @"UPDATE table_" + ((string)multirefFieldRow["tabledbname"]).ToLower() + @" SET " + ((string)multirefFieldRow["columndbname"]).ToLower() + 
+                        @" = CONCAT(" + ((string)multirefFieldRow["columndbname"]).ToLower() + @",@id_string) 
+                        WHERE POSITION(CONCAT('{',(SELECT parentid FROM ref_data_" + reference_db_name.ToLower() + @" WHERE id=@id),'}') IN " + ((string)multirefFieldRow["columndbname"]).ToLower() + ") > 0";
+
+                    DBFunctions.ExecuteCommand(query, parameters);
+                }
             }
 
             tvReference.SelectedNode.Text = (string)dt_elem.Rows[0]["RefName"];
