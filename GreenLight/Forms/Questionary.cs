@@ -216,7 +216,7 @@ namespace GreenLight
                         " AND answer = " + tbAnswer.Tag);
                 };
 
-                if (next_question == DBNull.Value)
+                if (next_question == DBNull.Value || next_question == null)
                 {
                     next_question = row_question["question_next"];
                 }

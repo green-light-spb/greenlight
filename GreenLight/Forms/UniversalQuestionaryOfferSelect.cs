@@ -31,8 +31,14 @@ namespace GreenLight
                 DataRow newrow = dt_offers.Rows.Add();
                 newrow["Selected"] = false;
                 newrow["ID"] = row["ID"];
-                newrow["Bank_LK"] = row["Банк,ЛК(ф)(ю)"];
-                newrow["Programma"] = row["Программа(ф)(ю)"];                
+                //2014_11_08
+                //newrow["Bank_LK"] = row["Банк,ЛК(ф)(ю)"];
+                //newrow["Programma"] = row["Программа(ф)(ю)"];
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add("id", row["ID"]);
+                newrow["Bank_LK"] = DBFunctions.ReadScalarFromDB("SELECT bank_lk FROM table_credprogr WHERE id=@id", parameters);
+                newrow["Programma"] = DBFunctions.ReadScalarFromDB("SELECT programma FROM table_credprogr WHERE id=@id", parameters);
+                //2014_11_08
             }
         }
 
