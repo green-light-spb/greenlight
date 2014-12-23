@@ -13,7 +13,7 @@ namespace GreenLight
     public partial class TableStructureEdit : Form
     {
         DataTable dt_tableconfig;
-        string[] table_db_names = {"Clients","CredProgr"};
+        string[] table_db_names = {"clients","credprogr"};
         int last_table_index = -1;
 
         public TableStructureEdit()
@@ -34,7 +34,7 @@ namespace GreenLight
             if(dt_tableconfig != null)
                 Tools.SaveColumnOrder(dgTableConfig);
 
-            dt_tableconfig = DBFunctions.ReadFromDB("SELECT * FROM tableconfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex].ToLower() + "'");
+            dt_tableconfig = DBFunctions.ReadFromDB("SELECT * FROM tableconfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex] + "'");
 
             dt_tableconfig.TableNewRow += new DataTableNewRowEventHandler(dt_TableNewRow); 
 
@@ -127,7 +127,7 @@ namespace GreenLight
         private void SaveData()
         {
             TableStruct ts = new TableStruct();
-            ts.TableName = "TableConfig";
+            ts.TableName = "tableconfig";
             string[] p_keys = { "TableConfigID" };
             ts.p_keys = p_keys;
             string[] columns = { "TableName", "TableDBName", "ColumnName", "ColumnDBName", "ColumnType", "ColumnReference", "ReferenceMultiSelect", "ShowInOffer", "ShowInOfferShort", "ShowInEditor", "WebOrder", "UseInWhereClause", "ShowFullName"};
@@ -204,7 +204,7 @@ namespace GreenLight
             int curr_id = (int)curr_row["TableConfigID"];
             
             //Получим предыдущий номер
-            object prev_id_obj = DBFunctions.ReadScalarFromDB("SELECT TableConfigID From TableConfig WHERE TableConfigID < " + Convert.ToString(curr_row["TableConfigID"]) +
+            object prev_id_obj = DBFunctions.ReadScalarFromDB("SELECT TableConfigID From tableconfig WHERE TableConfigID < " + Convert.ToString(curr_row["TableConfigID"]) +
                 " AND TableDBName = '" + curr_row["TableDBName"] + "' ORDER BY TableConfigID DESC LIMIT 1");
 
             int prev_id;
@@ -231,7 +231,7 @@ namespace GreenLight
             int curr_id = (int)curr_row["TableConfigID"];
 
             //Получим следующий номер
-            object next_id_obj = DBFunctions.ReadScalarFromDB("SELECT TableConfigID From TableConfig WHERE TableConfigID > " + Convert.ToString(curr_row["TableConfigID"]) +
+            object next_id_obj = DBFunctions.ReadScalarFromDB("SELECT TableConfigID From tableconfig WHERE TableConfigID > " + Convert.ToString(curr_row["TableConfigID"]) +
                 " AND TableDBName = '" + curr_row["TableDBName"] + "' ORDER BY TableConfigID LIMIT 1");
 
             int next_id;
@@ -257,7 +257,7 @@ namespace GreenLight
             DataRow curr_row = GreenLight.Tools.FindCurrentRow(dgTableConfig);
             int curr_id = (int)curr_row["TableConfigID"];
             
-            DataTable dt_columns = DBFunctions.ReadFromDB("SELECT ColumnDBName FROM tableConfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex] + "'");
+            DataTable dt_columns = DBFunctions.ReadFromDB("SELECT ColumnDBName FROM tableconfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex] + "'");
 
             string fields="";
 

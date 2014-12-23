@@ -101,7 +101,7 @@ namespace GreenLight
         public static void ReorganizeMultiref()
         {
 
-            DataTable dt_multirefcolumns = DBFunctions.ReadFromDB("SELECT TableDBName,ColumnDBName FROM TableConfig WHERE ReferenceMultiSelect = 1");
+            DataTable dt_multirefcolumns = DBFunctions.ReadFromDB("SELECT TableDBName,ColumnDBName FROM tableconfig WHERE ReferenceMultiSelect = 1");
 
             DBFunctions.ExecuteCommand("SET group_concat_max_len = 32000");
 
