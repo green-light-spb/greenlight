@@ -308,19 +308,6 @@ namespace GreenLight
 
         #endregion Drag&Drop в TreeView
 
-        //Заменено на более производительный способ
-        /*void LoadNode(TreeNodeCollection nodes, int ID)
-        {
-            DataTable childrens_dt = DBFunctions.ReadFromDB("SELECT ID,RefName FROM ref_data_"+reference_db_name+" INNER JOIN ref_hierarchy_"+reference_db_name+" ON ID = ElemID AND ref_hierarchy_"+reference_db_name+".Level = 1 AND ref_hierarchy_"+reference_db_name+".ParentID = " + Convert.ToString(ID));
-
-            foreach (DataRow row in childrens_dt.Rows)
-            { 
-                TreeNode new_node = nodes.Add(Convert.ToString(row["RefName"]));
-                new_node.Tag = row["ID"];
-                LoadNode(new_node.Nodes,Convert.ToInt32(row["ID"]));
-            }
-        }*/
-
         void LoadData()
         {
             tvReference.Nodes.Clear();
