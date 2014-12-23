@@ -28,7 +28,7 @@ namespace GreenLight.Forms
             table_name = tn;
             current_row = row;
 
-            DataTable dt_table_db_name = DBFunctions.ReadFromDB("SELECT DISTINCT TableDBName FROM TableConfig WHERE TableName = '" + table_name + "'");
+            DataTable dt_table_db_name = DBFunctions.ReadFromDB("SELECT DISTINCT TableDBName FROM tableconfig WHERE TableName = '" + table_name + "'");
             if (dt_table_db_name.Rows.Count != 0)
                 table_db_name = (string)dt_table_db_name.Rows[0]["TableDBName"];
             else

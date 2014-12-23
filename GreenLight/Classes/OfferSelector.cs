@@ -24,7 +24,7 @@ namespace GreenLight
 
             string query_text = (string)DBFunctions.ReadScalarFromDB("SELECT script FROM scripts WHERE script_name = 'OfferSelect'");
 
-            query_text = query_text.ToLower().Replace("[clientid]", Convert.ToString(ClientID));
+            query_text = query_text.Replace("[ClientID]", Convert.ToString(ClientID));
 
             DataTable dt;
             try

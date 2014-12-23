@@ -143,7 +143,7 @@ namespace GreenLight
             DataRow curr_row = GreenLight.Tools.FindCurrentRow(dgTableData);
             int curr_id = (int)curr_row["ID"];
 
-            DataTable dt_columns = DBFunctions.ReadFromDB("SELECT ColumnDBName FROM tableConfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex] + "'");
+            DataTable dt_columns = DBFunctions.ReadFromDB("SELECT ColumnDBName FROM tableconfig WHERE TableDBName = '" + table_db_names[cbTables.SelectedIndex] + "'");
 
             string fields = "";
 

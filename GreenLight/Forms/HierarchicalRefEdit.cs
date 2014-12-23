@@ -422,9 +422,9 @@ namespace GreenLight
                     parameters.Clear();
                     parameters.Add("id_string", "{" + Convert.ToString(tvReference.SelectedNode.Tag) + "}");
                     parameters.Add("id", dt_elem.Rows[0]["ParentID"]);
-                    string query = @"UPDATE table_" + ((string)multirefFieldRow["tabledbname"]).ToLower() + @" SET " + ((string)multirefFieldRow["columndbname"]).ToLower() + 
-                        @" = CONCAT(" + ((string)multirefFieldRow["columndbname"]).ToLower() + @",@id_string) 
-                        WHERE POSITION(CONCAT('{',(SELECT parentid FROM ref_data_" + reference_db_name.ToLower() + @" WHERE id=@id),'}') IN " + ((string)multirefFieldRow["columndbname"]).ToLower() + ") > 0";
+                    string query = @"UPDATE table_" + ((string)multirefFieldRow["tabledbname"]) + @" SET " + ((string)multirefFieldRow["columndbname"]) + 
+                        @" = CONCAT(" + ((string)multirefFieldRow["columndbname"]) + @",@id_string) 
+                        WHERE POSITION(CONCAT('{',(SELECT parentid FROM ref_data_" + reference_db_name + @" WHERE id=@id),'}') IN " + ((string)multirefFieldRow["columndbname"]) + ") > 0";
 
                     DBFunctions.ExecuteCommand(query, parameters);
                 }

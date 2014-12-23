@@ -26,7 +26,7 @@ namespace GreenLight
 
         private void FillDataGrid()
         {
-            dt_ref_config = DBFunctions.ReadFromDB("SELECT * FROM ReferencesConfig WHERE ReferenceDBName = '" + reference_list.Rows[cbCurrentReference.SelectedIndex]["ReferenceDBName"] + "'");
+            dt_ref_config = DBFunctions.ReadFromDB("SELECT * FROM referencesconfig WHERE ReferenceDBName = '" + reference_list.Rows[cbCurrentReference.SelectedIndex]["ReferenceDBName"] + "'");
 
             dt_ref_config.TableNewRow += new DataTableNewRowEventHandler(dt_TableNewRow);
 
@@ -94,7 +94,7 @@ namespace GreenLight
             if (!Auth.AuthModule.rights.reference_struct.write)
                 return;
             TableStruct ts = new TableStruct();
-            ts.TableName = "ReferencesConfig";
+            ts.TableName = "referencesconfig";
             string[] p_keys = { "ReferenceConfigID" };
             ts.p_keys = p_keys;
             string[] columns = { "ReferenceName", "ReferenceDBName", "Hierarchycal", "ColumnName", "ColumnDBName", "ColumnType" };
@@ -126,9 +126,11 @@ namespace GreenLight
             if (ref_db_name == "")
                 return;
 
+            ref_db_name = ref_db_name.ToLower();
+
             SaveData();
-            
-            DBFunctions.ExecuteCommand("INSERT INTO ReferencesConfig SET ReferenceName = '" + ref_name + "',ReferenceDBName = '" +
+
+            DBFunctions.ExecuteCommand("INSERT INTO referencesconfig SET ReferenceName = '" + ref_name + "',ReferenceDBName = '" +
                 ref_db_name + "',Hierarchycal = 1,ColumnName = 'Наименование',ColumnDBName = 'RefName',ColumnType = 'Строка50'");
 
             DBStructure.UpdateDBStructure();
@@ -160,7 +162,7 @@ namespace GreenLight
             }
 
             string ref_db_name = (string)reference_list.Rows[cbCurrentReference.SelectedIndex]["ReferenceDBName"];
-            DBFunctions.ExecuteCommand("DELETE FROM ReferencesConfig WHERE ReferenceDBName='" + 
+            DBFunctions.ExecuteCommand("DELETE FROM referencesconfig WHERE ReferenceDBName='" + 
                 ref_db_name + "';" +
                 "DROP TABLE `ref_data_" + ref_db_name + "`;" + 
                 "DROP TABLE `ref_hierarchy_" + ref_db_name + "`;");

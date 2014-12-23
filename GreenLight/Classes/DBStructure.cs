@@ -50,14 +50,14 @@ namespace GreenLight
         static void UpdateMainTableStructure(string TableDBName)
         {
             //Получим требуемую структуру
-            DataTable neededStructure = DBFunctions.ReadFromDB("SELECT TableConfigID,ColumnDBName,ColumnDBName_Old,ColumnType,ReferenceMultiSelect FROM TableConfig WHERE TableDBName = '" + TableDBName + "'");
+            DataTable neededStructure = DBFunctions.ReadFromDB("SELECT TableConfigID,ColumnDBName,ColumnDBName_Old,ColumnType,ReferenceMultiSelect FROM tableconfig WHERE TableDBName = '" + TableDBName + "'");
 
             //Получим текущую структуру
             DataTable CurrentStrurture = new DataTable();
             bool new_table = false;
             try
             {
-                CurrentStrurture = DBFunctions.ReadFromDB("SHOW COLUMNS FROM Table_" + TableDBName);
+                CurrentStrurture = DBFunctions.ReadFromDB("SHOW COLUMNS FROM table_" + TableDBName);
             }
             catch (Exception)
             {
@@ -67,7 +67,7 @@ namespace GreenLight
 
             if (new_table)
             {
-                string CommandText = "CREATE TABLE `Table_" + TableDBName + "` (";
+                string CommandText = "CREATE TABLE `table_" + TableDBName + "` (";
 
                 //ПК
                 CommandText += "`ID` int(11) NOT NULL AUTO_INCREMENT";
@@ -114,7 +114,7 @@ namespace GreenLight
                         if (foundRows.Length == 0)
                         {
                             //Добавляем колонку
-                            DBFunctions.ExecuteCommand("ALTER TABLE Table_" + TableDBName + " ADD `" + row["ColumnDBName"] + "` " + col_type);
+                            DBFunctions.ExecuteCommand("ALTER TABLE table_" + TableDBName + " ADD `" + row["ColumnDBName"] + "` " + col_type);
                         }
                         else
                         {
@@ -124,7 +124,7 @@ namespace GreenLight
                                 //Переименовываем колонку
                                 try
                                 {
-                                    DBFunctions.ExecuteCommand("ALTER TABLE `Table_" + TableDBName + "` CHANGE `" + row["ColumnDBName_Old"] + "` `" + row["ColumnDBName"] + "` " + col_type);
+                                    DBFunctions.ExecuteCommand("ALTER TABLE `table_" + TableDBName + "` CHANGE `" + row["ColumnDBName_Old"] + "` `" + row["ColumnDBName"] + "` " + col_type);
                                     row["ColumnDBName_Old"] = row["ColumnDBName"];
                                 }
                                 catch (Exception)
@@ -138,7 +138,7 @@ namespace GreenLight
                                 //Меняем тип
                                 try
                                 {
-                                    DBFunctions.ExecuteCommand("ALTER TABLE `Table_" + TableDBName + "` MODIFY `" + row["ColumnDBName"] + "` " + col_type);
+                                    DBFunctions.ExecuteCommand("ALTER TABLE `table_" + TableDBName + "` MODIFY `" + row["ColumnDBName"] + "` " + col_type);
                                 }
                                 catch (Exception)
                                 {
@@ -153,7 +153,7 @@ namespace GreenLight
                 if (neededStructure.GetChanges() != null)
                 {
                     TableStruct ts = new TableStruct();
-                    ts.TableName = "TableConfig";
+                    ts.TableName = "tableconfig";
                     string[] p_keys = { "TableConfigID" };
                     ts.p_keys = p_keys;
                     string[] columns = { "ColumnDBName_Old" };
@@ -171,7 +171,7 @@ namespace GreenLight
                     if (foundRows.Length == 0)
                     {
                         //Удаляем колонку
-                        DBFunctions.ExecuteCommand("ALTER TABLE Table_" + TableDBName + " DROP `" + row["Field"] + "`");
+                        DBFunctions.ExecuteCommand("ALTER TABLE table_" + TableDBName + " DROP `" + row["Field"] + "`");
                     }
 
                 }
@@ -263,7 +263,7 @@ namespace GreenLight
                 if (neededStructure.GetChanges() != null)
                 {
                     TableStruct ts = new TableStruct();
-                    ts.TableName = "ReferencesConfig";
+                    ts.TableName = "referencesconfig";
                     string[] p_keys = { "ReferenceConfigID" };
                     ts.p_keys = p_keys;
                     string[] columns = { "ColumnDBName_Old" };
@@ -291,7 +291,7 @@ namespace GreenLight
                 //Создадим хранимые процедуры и триггеры
                 string ref_create_script = (string)DBFunctions.ReadScalarFromDB("SELECT script FROM scripts WHERE script_name = 'Reference_Create'");
 
-                ref_create_script = ref_create_script.Replace("[RefDBName]", ref_db_name.ToLower());
+                ref_create_script = ref_create_script.Replace("[RefDBName]", ref_db_name);
 
                 DBFunctions.ExecuteScript(ref_create_script);
 
@@ -352,7 +352,7 @@ namespace GreenLight
             //Создадим хранимые процедуры и триггеры
             string ref_create_script_inner = (string)DBFunctions.ReadScalarFromDB("SELECT script FROM scripts WHERE script_name = 'Reference_Create'");
 
-            ref_create_script_inner = ref_create_script_inner.Replace("[RefDBName]", ref_db_name.ToLower());
+            ref_create_script_inner = ref_create_script_inner.Replace("[RefDBName]", ref_db_name);
 
             DBFunctions.ExecuteScript(ref_create_script_inner);
 
@@ -379,13 +379,13 @@ namespace GreenLight
         {
             //Получим таблицу с формулами
             //Список формульных полей
-            DataTable dt_formula_fields = DBFunctions.ReadFromDB("SELECT concat('table_',TableDBName,'.',ColumnDBName) AS field FROM TableConfig WHERE ColumnType = 'Формула'");
+            DataTable dt_formula_fields = DBFunctions.ReadFromDB("SELECT concat('table_',TableDBName,'.',ColumnDBName) AS field FROM tableconfig WHERE ColumnType = 'Формула'");
 
             string formula_query_text = "SELECT ID";
 
             foreach (DataRow row in dt_formula_fields.Rows)
             {
-                formula_query_text += "," + Convert.ToString(row["field"]).ToLower() + " AS '" + Convert.ToString(row["field"]).ToLower() + "'";
+                formula_query_text += "," + Convert.ToString(row["field"]) + " AS '" + Convert.ToString(row["field"]) + "'";
             }
 
             formula_query_text += " FROM table_credprogr";
@@ -429,7 +429,7 @@ namespace GreenLight
                 }                
                 else
                 {
-                    query_text += Convert.ToString(row["field_name"]).ToLower() + " AS '" + row["ColumnDBName"] + "'";
+                    query_text += Convert.ToString(row["field_name"]) + " AS '" + row["ColumnDBName"] + "'";
                 }
             }
 
