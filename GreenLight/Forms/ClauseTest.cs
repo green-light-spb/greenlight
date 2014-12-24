@@ -38,6 +38,24 @@ namespace GreenLight.Forms
 
             string clause_text = (string)DBFunctions.ReadScalarFromDB("SELECT Clause FROM where_clauses LIMIT 1");
 
+            //Заменим макросы в условиях
+            DataTable dtMacros = DBFunctions.ReadFromDB("SELECT * FROM macros");
+
+            bool macros_found = true;
+
+            while (macros_found)
+            {
+                macros_found = false;
+                foreach (DataRow macro in dtMacros.Rows)
+                {
+                    if (clause_text.IndexOf("[" + (string)macro["name"] + "]") != -1)
+                    {
+                        macros_found = true;
+                        clause_text = clause_text.Replace("[" + (string)macro["name"] + "]", (string)macro["macro"]);
+                    }
+                }
+            }
+            
             string[] clauses_to_parse = clause_text.Split(Environment.NewLine[0]);
 
             char[] trim = { 'A', 'N', 'D' };

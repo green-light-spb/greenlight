@@ -404,6 +404,24 @@ namespace GreenLight
                 return;
             }
 
+            //Заменим макросы в условиях
+            DataTable dtMacros = DBFunctions.ReadFromDB("SELECT * FROM macros");
+
+            bool macros_found = true;
+
+            while (macros_found)
+            {
+                macros_found = false;
+                foreach (DataRow macro in dtMacros.Rows)
+                {
+                    if (clause_text.IndexOf("[" + (string)macro["name"] + "]") != -1)
+                    {
+                        macros_found = true;
+                        clause_text = clause_text.Replace("[" + (string)macro["name"] + "]", (string)macro["macro"]);
+                    }
+                }
+            }
+
             //Соберем текст запроса
             string query_text = "SELECT table_credprogr.ID";
             DataTable all_fields = DBFunctions.ReadFromDB("SELECT concat('table_',TableDBName,'.',ColumnDBName) AS field_name,ColumnName,ColumnType,ReferenceMultiSelect,ShowInOffer,TableDBName,ColumnDBName FROM tableconfig WHERE ShowInOffer = 1 OR UseInWhereClause = 1 OR ShowInOfferShort = 1");

@@ -186,5 +186,10 @@ namespace GreenLight
             }
         }
 
+        private void GenerateQuery_Click(object sender, EventArgs e)
+        {
+            Tools.GenerateMacrosValuesQuery(850);  
+        }
+
     }
 }
