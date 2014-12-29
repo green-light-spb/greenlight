@@ -18,6 +18,45 @@ namespace GreenLight
             Cancel
         }
 
+        public static void GenerateMacrosValuesQuery(int clientID)
+        {
+            string query_text = "SELECT ";
+            
+            //Заменим макросы в условиях
+            DataTable dtMacros = DBFunctions.ReadFromDB("SELECT * FROM macros");
+
+            bool first = true;
+            foreach (DataRow macro in dtMacros.Rows)
+            {
+                if (!first)
+                {
+                    query_text = query_text + "," + Environment.NewLine;
+                }
+                first = false;
+
+                query_text = query_text + "[" + macro["name"] + "] AS '" + macro["name"] +"'";
+            }
+
+            query_text = query_text + Environment.NewLine + "FROM table_clients LEFT JOIN table_credprogr WHERE id=" + Convert.ToString(clientID);
+
+            bool macros_found = true;
+
+            while (macros_found)
+            {
+                macros_found = false;
+                foreach (DataRow macro in dtMacros.Rows)
+                {
+                    if (query_text.IndexOf("[" + (string)macro["name"] + "]") != -1)
+                    {
+                        macros_found = true;
+                        query_text = query_text.Replace("[" + (string)macro["name"] + "]", (string)macro["macro"]);
+                    }
+                }
+            }
+
+            query_text = query_text;
+        }
+
         public static ProceedWithChangesAnswers ProceedWithChanges(DataTable dt)
         {
             if (dt == null)

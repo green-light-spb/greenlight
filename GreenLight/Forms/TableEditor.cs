@@ -13,7 +13,7 @@ namespace GreenLight
     {
         DataTable dt_table_data;
         TableStruct ts;
-        string[] table_db_names = { "Clients", "CredProgr" };
+        string[] table_db_names = { "clients", "credprogr" };
 
         public TableEditor()
         {

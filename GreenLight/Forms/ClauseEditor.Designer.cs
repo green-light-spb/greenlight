@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClauseEditor));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -40,6 +41,7 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tbWhereClause = new FastColoredTextBoxNS.FastColoredTextBox();
             this.dgColumnNames = new System.Windows.Forms.DataGridView();
+            this.GenerateQuery = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -57,7 +59,8 @@
             this.tsbSave,
             this.tsbOk,
             this.tstbSearch,
-            this.tsbInvertUseInWhereClause});
+            this.tsbInvertUseInWhereClause,
+            this.GenerateQuery});
             this.toolStrip1.Location = new System.Drawing.Point(0, 403);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(798, 25);
@@ -184,6 +187,16 @@
             this.dgColumnNames.TabIndex = 0;
             this.dgColumnNames.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgColumnNames_CellDoubleClick);
             // 
+            // GenerateQuery
+            // 
+            this.GenerateQuery.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.GenerateQuery.Image = ((System.Drawing.Image)(resources.GetObject("GenerateQuery.Image")));
+            this.GenerateQuery.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.GenerateQuery.Name = "GenerateQuery";
+            this.GenerateQuery.Size = new System.Drawing.Size(56, 22);
+            this.GenerateQuery.Text = "Generate";
+            this.GenerateQuery.Click += new System.EventHandler(this.GenerateQuery_Click);
+            // 
             // ClauseEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -219,5 +232,6 @@
         private System.Windows.Forms.ToolStripButton tsbInvertUseInWhereClause;
         private System.Windows.Forms.ToolStripButton tsbSave;
         private FastColoredTextBoxNS.FastColoredTextBox tbWhereClause;
+        private System.Windows.Forms.ToolStripButton GenerateQuery;
     }
 }
