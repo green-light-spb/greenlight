@@ -37,7 +37,7 @@ namespace GreenLight
                 query_text = query_text + "[" + macro["name"] + "] AS '" + macro["name"] +"'";
             }
 
-            query_text = query_text + Environment.NewLine + "FROM table_clients WHERE id=" + Convert.ToString(clientID);
+            query_text = query_text + Environment.NewLine + "FROM table_clients LEFT JOIN table_credprogr WHERE id=" + Convert.ToString(clientID);
 
             bool macros_found = true;
 
